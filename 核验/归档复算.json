@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "runs": 349,
+  "vehicles_checked": 1919095,
+  "cost_fields_recomputed": 1047,
+  "unique_blobs_hashed": 2849,
+  "human_review": false,
+  "traffic_accuracy_approved": false
+}

@@ -1,0 +1,234 @@
+{
+  "status": "TECHNICAL_MATERIALS_VERIFIED_PENDING_ENTRANT_INDEPENDENT_WORK_AND_DISCLOSURE_NOT_SUBMITTED",
+  "checked_at": "2026-10-18T20:58:54+08:00",
+  "actual_runs": 349,
+  "files": {
+    "AI工具使用详情.docx": {
+      "bytes": 41153,
+      "sha256": "66eb795db091422aa63754ac34d1f647899159c52bd9512b6b40daaacaa23f88"
+    },
+    "AI工具使用详情.pdf": {
+      "bytes": 490042,
+      "sha256": "ed84910cf8626c99e1f0a1a9732d70b45d5e57e21dac07b2f6ab588a002d2c75"
+    },
+    "B题仿真演示_最终修订版.mp4": {
+      "bytes": 3427375,
+      "sha256": "864c6f41a81a03582250c11d3d7f3cfc46b92d7dda84fd5147db5010127cbaf5"
+    },
+    "B题支撑材料_最终修订版.zip": {
+      "bytes": 19889924,
+      "sha256": "9c24dc1c2be0636196199766f06af43474fab82c5a9a752a12d42de958eb749f"
+    },
+    "B题论文_最终修订版.pdf": {
+      "bytes": 1254771,
+      "sha256": "fb71bc7f6cb18603b9b7170ce9975e19248b4e18a7f4934d986ac63417aa9f5d"
+    }
+  },
+  "paper_layout": {
+    "paper_pages": 17,
+    "paper_bytes": 1254771,
+    "first_page_has_abstract": true,
+    "second_page_has_contents": true,
+    "consecutive_centered_footers": true,
+    "text_outside_page": [],
+    "non_simsun_chinese": [],
+    "undefined_or_overflow_log": [],
+    "author": "",
+    "ai_pages_visually_inspected": 3,
+    "paper_pages_visually_inspected": 17,
+    "paper_final_anonymous_author_blank": true,
+    "AI工具使用详情_anonymous_author_blank": true,
+    "docx_author_blank": true,
+    "official_rule_overrides_skill_checker": [
+      "本赛要求目录，使用ctexart和自定标题，不采用国赛模板的无目录、maketitle、固定章节、abstract环境和代码附录规则；工具返回的8项模板错误均逐项按本赛实际版面核查。",
+      "本赛未要求30页，17页不补凑。"
+    ]
+  },
+  "support_verification": {
+    "verified": true,
+    "runs": 349,
+    "vehicles_checked": 1919095,
+    "cost_fields_recomputed": 1047,
+    "unique_blobs_hashed": 2849,
+    "human_review": false,
+    "traffic_accuracy_approved": false
+  },
+  "paper_crosschecks": {
+    "checked": true,
+    "vehicle_fields_vs_published": 206,
+    "paired_changes_vs_published": 98,
+    "crossday_fields_from_windows": 180,
+    "crossday_runs": 36,
+    "all349_runs_retained": true,
+    "identifying_paths_found": [],
+    "credential_fields_found": [],
+    "human_review": false
+  },
+  "representative_replays": [
+    {
+      "run_id": "stage15_conditional_reference_s20261121_conditional",
+      "vehicle_ids_match": true,
+      "depart_and_arrival_times_match": true,
+      "teleports": 0,
+      "collisions": 0,
+      "mode": "frozen_input_NOT_new_HTTP",
+      "controller_mode": "corrected"
+    },
+    {
+      "run_id": "stage15_road_s20261125_guarded_green",
+      "vehicle_ids_match": true,
+      "depart_and_arrival_times_match": true,
+      "teleports": 0,
+      "collisions": 0,
+      "mode": "frozen_input_NOT_new_HTTP",
+      "controller_mode": "corrected"
+    }
+  ],
+  "video": {
+    "file": "B题仿真演示_最终修订版.mp4",
+    "status": "WORKING_DRAFT_HUMAN_REVIEW_AND_TEAM_NUMBER_PENDING",
+    "width": 1280,
+    "height": 720,
+    "fps": 10.0,
+    "frames": 1538,
+    "duration_seconds": 153.8,
+    "bytes": 3427375,
+    "sha256": "864c6f41a81a03582250c11d3d7f3cfc46b92d7dda84fd5147db5010127cbaf5",
+    "narration": "Windows Microsoft Huihui Desktop local TTS; synthesized",
+    "rules_checked": true,
+    "actual_position_frames": 798,
+    "source_runs": [
+      {
+        "source_run": "stage10_main_ordinary_s20261101_prior",
+        "frames": 181,
+        "all_ids_and_depart_arrival_match": true,
+        "planned": 4061,
+        "teleports": 0,
+        "collisions": 0,
+        "input_hashes_unchanged": true,
+        "positions_sha256": "f5c0490a6f36bab1c6563efeb804a294fe9b2916fc02812def8c8355784e335a"
+      },
+      {
+        "source_run": "stage15_conditional_reference_s20261121_conditional",
+        "frames": 241,
+        "all_ids_and_depart_arrival_match": true,
+        "planned": 5689,
+        "teleports": 0,
+        "collisions": 0,
+        "input_hashes_unchanged": true,
+        "positions_sha256": "1f17d155bfd13caa192d2d743d7a85ca9591e67d4285fee46b6524e1a40a16a7"
+      },
+      {
+        "source_run": "stage15_road_s20261125_guarded_green",
+        "frames": 376,
+        "all_ids_and_depart_arrival_match": true,
+        "planned": 5695,
+        "teleports": 0,
+        "collisions": 0,
+        "input_hashes_unchanged": true,
+        "positions_sha256": "c96b6ecc1620f970e5e90db3f5c57ab3f2a59a4841d3f8e2d04b9a26e435f4c5"
+      }
+    ],
+    "scenes": [
+      {
+        "key": "intro",
+        "start": 0.0,
+        "duration": 10,
+        "narration": "本作品研究香港九龙交通数字孪生，把道路、观测、车辆和决策放进同一个平行空间。",
+        "narration_seconds": 9.169931972789115
+      },
+      {
+        "key": "interface",
+        "start": 10.0,
+        "duration": 11,
+        "narration": "管理页集中展示资料、进度、术语和回放。已完成的工程功能，与尚未通过的精度验证分别记录。",
+        "narration_seconds": 10.04249433106576
+      },
+      {
+        "key": "normal",
+        "start": 21.0,
+        "duration": 18.1,
+        "narration": "这里实际重新运行普通交通仿真。圆点为当步车辆，画面显示物理时刻、仿真秒和待发量。这是加速重演，真实交通精度尚未通过。",
+        "narration_seconds": 14.259637188208616
+      },
+      {
+        "key": "wallclock",
+        "start": 39.1,
+        "duration": 14,
+        "narration": "一小时墙钟运行中，六十次请求全部成功，十二次计划均因缺合格约束而保持。这里是归档记录，只证明本次工程运行。",
+        "narration_seconds": 12.742630385487528
+      },
+      {
+        "key": "governance",
+        "start": 53.1,
+        "duration": 24.1,
+        "narration": "治理A先核实占有率单位，再按上一周期状态启停入口反馈。同车辆、同路线、同供给比较。入口外等待和未完成都计入成本；背景车代价不会被隐藏。",
+        "narration_seconds": 16.284580498866212
+      },
+      {
+        "key": "results",
+        "start": 77.2,
+        "duration": 20,
+        "narration": "治理A二十一组中十七组总成本下降、四组上升，所有背景车配对受损。十二次道路任务全到达，但额外协同零触发。三十六次跨日联合精度全部未通过。",
+        "narration_seconds": 16.25845804988662
+      },
+      {
+        "key": "emergency",
+        "start": 97.2,
+        "duration": 37.6,
+        "narration": "八点三十分设置单车道作业，八点三十五分调度。橙色点是合成应急车，终点为公共道路断面。入口治理A下本次耗时九十一秒。额外让行和延绿均未触发，因此不宣称额外协同有效。",
+        "narration_seconds": 19.377959183673468
+      },
+      {
+        "key": "end",
+        "start": 134.8,
+        "duration": 19,
+        "narration": "有限优化没有合格替换，保留正确单位原方案。数据和失败记录可追溯，结论可复算。正式提交前仍需本人复核、补齐真实AI信息并签字。旁白为本地语音合成。",
+        "narration_seconds": 17.663265306122447
+      }
+    ],
+    "decode_samples": [
+      "frame_0.0.png",
+      "frame_22.0.png",
+      "frame_47.0.png",
+      "frame_65.0.png",
+      "frame_99.0.png",
+      "frame_118.0.png",
+      "frame_149.0.png",
+      "frame_152.8.png"
+    ],
+    "new_HTTP_collection": false,
+    "unverified_speed70_used_in_movie": false
+  },
+  "management_page_verification": {
+    "record": "管理中心/验证结果/最终版交付核验/verification.json",
+    "verified": true,
+    "documents": 53,
+    "terms": 81,
+    "mobile_390px_no_overflow": true,
+    "all_document_hashes_match": true,
+    "new_document_auto_tab": true,
+    "mastered_persists_after_reload_and_rebuild": true,
+    "embedded_replay_works": true,
+    "replay_run_id": "stage13_longlive_20261018_162130",
+    "replay_frames": 61,
+    "actual_wallclock_timing_and_offline_record_checked": true,
+    "page_errors": [],
+    "remote_requests": [],
+    "final_video_play_and_seek_verified": true,
+    "scope": "工具验收；不等于交通精度通过或参赛者人工复核"
+  },
+  "human_review_completed": false,
+  "independent_core_work_compliance_confirmed": false,
+  "ai_disclosure_complete": false,
+  "signed_commitment": false,
+  "uploaded": false,
+  "external_template": {
+    "file": "承诺书模板_请本人填写签字.doc",
+    "bytes": 18944,
+    "sha256": "f0a6381319fe47b7f6f79103611643674bd68c5fe33a9f4c010e2f3b13e0a6aa",
+    "identical_to_official_blank": true,
+    "signed": false,
+    "in_anonymous_support": false
+  }
+}

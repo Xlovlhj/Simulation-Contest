@@ -1,0 +1,44 @@
+# Local credentials and private documents
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secrets*.json
+*承诺书*
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.deps/
+.pytest_cache/
+.mypy_cache/
+
+# Regenerated data/results, not the archived support ZIP
+/应用/results/
+/应用/runtime/
+/B题数据工程/raw/
+/B题数据工程/processed/
+/B题数据工程/refined/
+/复现/展开目录/
+/复现/重演*/
+
+# Editor and LaTeX build output
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local certificate stores
+*.p12
+*.pfx

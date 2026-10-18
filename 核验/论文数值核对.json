@@ -1,0 +1,11 @@
+{
+  "checked": true,
+  "vehicle_fields_vs_published": 206,
+  "paired_changes_vs_published": 98,
+  "crossday_fields_from_windows": 180,
+  "crossday_runs": 36,
+  "all349_runs_retained": true,
+  "identifying_paths_found": [],
+  "credential_fields_found": [],
+  "human_review": false
+}
