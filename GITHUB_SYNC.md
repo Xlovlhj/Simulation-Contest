@@ -13,3 +13,5 @@
 Git操作使用工作区内的独立目录.cache/github_xqw_b_checkout。原工作区根目录已有只读空.git，本次不修改它，不修改系统Git配置。提交使用已登录账号的GitHub noreply地址。本分支不需要Git LFS；.gitattributes禁止自动换行转换，以免改变来源摘要。
 
 克隆本分支后，可直接打开outputs/revision_v2/index.html，或运行python3 project_v2.py查看V2结果。完整重算的依赖和已省略大文件说明见manuscript/v2/SUPPORT_README.md。prepare_git_snapshot.py仅生成上传清单及可选本地副本，不自动联网、提交或推送。
+
+首次推送已经完成并远程核验：提交 `e056cc9a6dce1171a15cb8d8020ac0a9c856ec8f`。C题分支ybs-c核验仍为 `1aca8eb9314b1620e1107fb7e60a0c7fb787beb5`，未改变。核验副本148项测试全部通过。此记录后的文档提交仅同步上传进展和当前文件清单。

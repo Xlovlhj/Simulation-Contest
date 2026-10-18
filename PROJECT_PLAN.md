@@ -57,7 +57,7 @@ V2校准和治理输入已冻结；148项测试、独立从零复算、预热敏
 | `outputs/figures/`、`outputs/tables/`、`outputs/video/` | 图、表和视频产物 |
 | `submission/` | 筛选后的正式交付文件；不能把整个工作区直接压缩提交 |
 
-用户已指定GitHub仓库 `Xlovlhj/Simulation-Contest` 和B题分支 `xqw-b`。Git操作使用工作区内独立目录 `.cache/github_xqw_b_checkout`；根目录原有空且只读的 `.git/`保持不动。上传范围、排除规则及检查见 `GITHUB_SYNC.md`和 `outputs/quality/git_upload_inventory.json`；`.gitignore`本身不能代替内容扫描。现有C题分支 `ybs-c`保持不变。
+用户已指定GitHub仓库 `Xlovlhj/Simulation-Contest` 和B题分支 `xqw-b`。 **首次推送已完成并核验，提交 `e056cc9`。**Git操作使用工作区内独立目录 `.cache/github_xqw_b_checkout`；根目录原有空且只读的 `.git/`保持不动。上传范围、排除规则及检查见 `GITHUB_SYNC.md`和 `outputs/quality/git_upload_inventory.json`；`.gitignore`本身不能代替内容扫描。现有C题分支 `ybs-c`保持不变。
 
 ## 4. 赛题要求和评分映射
 

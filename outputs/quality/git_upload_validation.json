@@ -18,5 +18,7 @@
     "Copied launchers initially lacked SUMO data/XSD; copying existing schemas resolved this."
   ],
   "security_scope": "Current exact AK/SK, token/private-key and credential URL patterns, nested archives and PDF text; final counts in git_upload_inventory.json.",
-  "remote_publish_status": "prepared_for_push; final remote receipt is recorded separately after success"
+  "remote_publish_status": "initial_push_verified",
+  "verified_initial_remote_sha": "e056cc9a6dce1171a15cb8d8020ac0a9c856ec8f",
+  "verified_unchanged_ybs_c_sha": "1aca8eb9314b1620e1107fb7e60a0c7fb787beb5"
 }

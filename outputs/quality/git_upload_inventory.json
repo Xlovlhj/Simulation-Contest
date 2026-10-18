@@ -1,6 +1,6 @@
 {
   "purpose": "Current public project snapshot for Git branch xqw-b",
-  "generated_at_utc": "2026-10-18T15:13:52.274669+00:00",
+  "generated_at_utc": "2026-10-18T15:15:57.581631+00:00",
   "selection_sources": [
     {
       "path": "submission/support_manifest.json",
@@ -15,7 +15,7 @@
   ],
   "content_policy": "Read current workspace files. Support manifests provide names only; historical hashes are not asserted for revised current documents.",
   "file_count": 2350,
-  "total_bytes": 97170715,
+  "total_bytes": 97171583,
   "largest_file": {
     "path": "outputs/app/index.html",
     "bytes": 16004515,
@@ -39,18 +39,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 70785,
-      "sha256": "8c2863de853365c5e7e249e258aba8df7e3eb5a1a87bbd56c520d14ad5b1c0ba"
+      "bytes": 71204,
+      "sha256": "b1ac0398affc0672c466745b7e7febb12075f057ef0c7e48eaeb48761d809301"
     },
     {
       "path": "GITHUB_SYNC.md",
-      "bytes": 1683,
-      "sha256": "c2ba24a9d8138213184edb2a5a529ccc765b22f845f02444c2a930aee3cb1784"
+      "bytes": 1975,
+      "sha256": "b646710b16c9ee925397f583902d1f7bd884551d00823021dcce58b505de2897"
     },
     {
       "path": "PROJECT_PLAN.md",
-      "bytes": 42541,
-      "sha256": "79218b391c8e0ac93ac2a48b1e194175effadc89315ec88a03fd95e63f1e201c"
+      "bytes": 42598,
+      "sha256": "90b9cba93c432325160392d9812332b7266b4626b62f06fc3f7820f2ff94550c"
     },
     {
       "path": "README.md",
@@ -10899,8 +10899,8 @@
     },
     {
       "path": "outputs/quality/git_upload_validation.json",
-      "bytes": 1269,
-      "sha256": "fc00216d2d03832cf5f3f7e23b76d835ec7bc7007b5fc8fb7b7a541caa181400"
+      "bytes": 1369,
+      "sha256": "1af3f19232abae6752b52702e46507bf791ce6199034b85b7d9c17387dc3b1a8"
     },
     {
       "path": "outputs/quality/paper_v2_content_review.json",
