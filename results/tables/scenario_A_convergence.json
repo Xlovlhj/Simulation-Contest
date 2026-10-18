@@ -1,0 +1,8 @@
+{
+  "coarse_step_s": 0.5,
+  "fine_step_s": 0.25,
+  "energy_relative_difference": 3.328118322616685e-05,
+  "soc_final_difference_pp": 0.00012815187828696395,
+  "battery_max_difference_c": 2.5623600325985763e-05,
+  "passed": true
+}

@@ -1,0 +1,9 @@
+{
+  "date_beijing": "2026-10-17",
+  "freeze_sha256": "25ee385e76440693675ba007b7cf68e98a8f447a8b71e2cab526e942c0c02c07",
+  "protocol_sha256": "a9deb2666ae6913d72005c05ee334b4916690cf7aba12d94286ec2057f78d185",
+  "test_trip_ids": [
+    600
+  ],
+  "rule": "Frozen deterministic reproduction only; test outcomes must not be used to select settings."
+}

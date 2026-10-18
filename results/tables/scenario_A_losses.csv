@@ -1,0 +1,6 @@
+﻿component,energy_kwh,accounting
+gear_loss_w,0.09670837166908262,Internal loss breakdown; do not add again to DC bus branches.
+motor_loss_w,0.3362607233554461,Internal loss breakdown; do not add again to DC bus branches.
+inverter_loss_w,0.07895920012987834,Internal loss breakdown; do not add again to DC bus branches.
+joule_heat_w,0.03597780172535112,Internal loss breakdown; do not add again to DC bus branches.
+friction_brake_w,0.28296742814634296,Internal loss breakdown; do not add again to DC bus branches.

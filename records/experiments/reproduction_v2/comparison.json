@@ -1,0 +1,12 @@
+{
+  "export_path": "records/experiments/reproduction_v2",
+  "parameter_differences": {
+    "drag_coefficient": 0.0,
+    "rolling_coefficient": 0.0,
+    "resistance_ref_ohm": 0.0,
+    "capacity_ah": 0.0,
+    "ocv_offset_v": 0.0
+  },
+  "parameters_reproduced_within_1e_6": true,
+  "frozen_parameters_unchanged": true
+}

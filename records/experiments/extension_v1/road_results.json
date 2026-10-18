@@ -1,0 +1,118 @@
+{
+  "configurations": 10,
+  "electricity_rows": 458,
+  "proxy_not_pure_Cr": 0.0075480097974832535,
+  "proxy_p10_p90": [
+    0.006341940914279015,
+    0.008660570917523633
+  ],
+  "fit": {
+    "estimate": [
+      0.25788056657440367,
+      0.0797224449126499,
+      72.70550638248322,
+      -6.920431031292303,
+      0.7103199582249615
+    ],
+    "cost": 9.81561743187766,
+    "success": true,
+    "message": "`xtol` termination condition is satisfied.",
+    "nfev": 9,
+    "active_mask": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "runtime_s": 1.7866055000004053
+  },
+  "old_training_cost": 7.22348778617047,
+  "cost_relative_increase": 0.3588473771174475,
+  "training_metrics": [
+    {
+      "trip_id": 575,
+      "variant": "stage8_free_Cr",
+      "role": "train",
+      "energy_ape_pct": 5.405369759400072,
+      "soc_rmse_pp": 1.9956895018566714,
+      "voltage_rmse_v": 3.229655512537572,
+      "max_electrical_balance_residual_w": 5.7980287238024175e-12,
+      "max_thermal_balance_residual_w": 2.841642476880679e-10,
+      "energy_kwh": 2.2706714947728583
+    },
+    {
+      "trip_id": 575,
+      "variant": "EPA_A_proxy_fixed",
+      "role": "train",
+      "energy_ape_pct": 11.53457548950502,
+      "soc_rmse_pp": 1.8766941559054249,
+      "voltage_rmse_v": 3.4623329481699217,
+      "max_electrical_balance_residual_w": 5.6843418860808015e-12,
+      "max_thermal_balance_residual_w": 2.8416025088517927e-10,
+      "energy_kwh": 2.4027085320577317
+    },
+    {
+      "trip_id": 596,
+      "variant": "stage8_free_Cr",
+      "role": "train",
+      "energy_ape_pct": 1.435804590933016,
+      "soc_rmse_pp": 2.1509410581528425,
+      "voltage_rmse_v": 4.382910560158699,
+      "max_electrical_balance_residual_w": 7.503331289626658e-12,
+      "max_thermal_balance_residual_w": 7.082689990056679e-11,
+      "energy_kwh": 2.6660019316015764
+    },
+    {
+      "trip_id": 596,
+      "variant": "EPA_A_proxy_fixed",
+      "role": "train",
+      "energy_ape_pct": 4.135168625764459,
+      "soc_rmse_pp": 2.208775752709231,
+      "voltage_rmse_v": 4.651789225837202,
+      "max_electrical_balance_residual_w": 8.640199666842818e-12,
+      "max_thermal_balance_residual_w": 8.645884008728899e-11,
+      "energy_kwh": 2.592988504148645
+    }
+  ],
+  "force_comparison": [
+    {
+      "speed_kmh": 20,
+      "EPA_p10_N": 136.23611329776676,
+      "EPA_median_N": 156.51976638917813,
+      "EPA_p90_N": 182.05927094334544,
+      "old_model_N": 62.70844409447449
+    },
+    {
+      "speed_kmh": 50,
+      "EPA_p10_N": 210.85300489943933,
+      "EPA_median_N": 221.99044590437282,
+      "EPA_p90_N": 249.97680954620733,
+      "old_model_N": 144.7157755869933
+    },
+    {
+      "speed_kmh": 80,
+      "EPA_p10_N": 315.7528357580812,
+      "EPA_median_N": 356.740175954664,
+      "EPA_p90_N": 392.5820264660158,
+      "old_model_N": 297.0151055016711
+    },
+    {
+      "speed_kmh": 100,
+      "EPA_p10_N": 406.8366743469055,
+      "EPA_median_N": 467.4413160087429,
+      "EPA_p90_N": 521.811008080973,
+      "old_model_N": 437.599102345989
+    },
+    {
+      "speed_kmh": 120,
+      "EPA_p10_N": 514.8410073488469,
+      "EPA_median_N": 591.8565874623962,
+      "EPA_p90_N": 674.0967397751058,
+      "old_model_N": 609.4239873779333
+    }
+  ],
+  "Cr_reliability_solved": false,
+  "adopted_as_target_Cr": false,
+  "limits": "Electricity-mode rows may include PHEV; cohort is not certified BEV-only. Equivalent test weight is not curb mass. Target A includes non-tire contributions."
+}

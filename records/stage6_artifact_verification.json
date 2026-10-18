@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "original_project_and_outer_source_files": 9,
+  "scientific_evidence_source_hashes": 66,
+  "paper_build_sources_checked": 72,
+  "paper_outputs_checked": 7,
+  "ledger_csv_json_rows_checked": 25,
+  "pdf_pages": 18,
+  "pdf_bytes": 2762326,
+  "scientific_freezes_unchanged": true,
+  "new_scientific_experiments": false,
+  "team_review": "pending",
+  "verification_note": "Artifact integrity only, not a scientific validity or independent-work certificate."
+}

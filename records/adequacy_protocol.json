@@ -1,0 +1,46 @@
+{
+  "train_only": true,
+  "trips": [
+    575,
+    596
+  ],
+  "variations": [
+    {
+      "label": "frozen",
+      "field": null,
+      "factor": 1.0
+    },
+    {
+      "label": "voltage_weight_half",
+      "field": "voltage_scale_v",
+      "factor": 2.0
+    },
+    {
+      "label": "voltage_weight_double",
+      "field": "voltage_scale_v",
+      "factor": 0.5
+    },
+    {
+      "label": "soc_weight_half",
+      "field": "soc_scale_fraction",
+      "factor": 2.0
+    },
+    {
+      "label": "soc_weight_double",
+      "field": "soc_scale_fraction",
+      "factor": 0.5
+    },
+    {
+      "label": "energy_weight_half",
+      "field": "net_energy_relative_scale",
+      "factor": 2.0
+    },
+    {
+      "label": "energy_weight_double",
+      "field": "net_energy_relative_scale",
+      "factor": 0.5
+    }
+  ],
+  "selection_rule": "Diagnostic only. No replacement of frozen parameters or test-specific correction.",
+  "interpretation": "Residual scale is divided by weight; halving scale doubles residual weight and quadruples squared weight."
+}

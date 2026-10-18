@@ -1,0 +1,24 @@
+{
+  "date_beijing": "2026-10-18",
+  "original_files_unchanged": [
+    "data/raw/附件1：车辆参数表.xlsx",
+    "data/raw/附件2：4段路程车辆行驶数据.xlsx",
+    "data/raw/附件3：参考工况.xlsx",
+    "data/raw/附件4：部件特性（OCV—SOC、内阻、电机效率）.xlsx",
+    "赛题资料/C题/2026年第二届全国大学生仿真建模应用挑战赛C题.pdf",
+    "赛题资料/通用规范/2026年第二届全国大学生仿真建模应用挑战赛承诺书.doc",
+    "赛题资料/通用规范/2026年第二届全国大学生仿真建模应用挑战赛提交流程.pdf",
+    "赛题资料/通用规范/全国大学生仿真建模应用挑战赛人工智能工具使用规定.pdf",
+    "赛题资料/通用规范/全国大学生仿真建模应用挑战赛论文格式规范.docx"
+  ],
+  "freeze_identities_match": true,
+  "draws": 300,
+  "summary_rows": 15,
+  "multistart_audits": 16,
+  "csv_and_json_agree": true,
+  "quantiles_and_boundary_mass_recomputed": true,
+  "random_signs_reproduced": true,
+  "completed_checkpoint_agrees": true,
+  "primary_Cr_at_lower_count": 104,
+  "point_estimates_replaced": false
+}

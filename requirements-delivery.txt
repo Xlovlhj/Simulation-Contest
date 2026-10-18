@@ -1,0 +1,3 @@
+# Optional editable AI disclosure and PDF export; core simulation uses requirements.txt.
+-r requirements-paper.txt
+python-docx>=1.2,<2

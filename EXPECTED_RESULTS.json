@@ -1,0 +1,199 @@
+{
+  "note": "Numerical tolerances, not PDF byte identity or a new independent-data validation. all reuses frozen expensive results.",
+  "metrics": [
+    {
+      "name": "scenario_A_consumption_kwh_100km",
+      "source": "results/tables/scenario_A_summary.json",
+      "keys": [
+        "consumption_kwh_100km"
+      ],
+      "value": 14.054196673039844,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "scenario_A_soc_final",
+      "source": "results/tables/scenario_A_summary.json",
+      "keys": [
+        "soc_final"
+      ],
+      "value": 0.7653049055076768,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "scenario_A_battery_final_c",
+      "source": "results/tables/scenario_A_summary.json",
+      "keys": [
+        "battery_final_c"
+      ],
+      "value": 25.38931559436692,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "train_energy_mape_pct",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        2,
+        "energy_mape_pct"
+      ],
+      "value": 3.533587582520014,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "train_soc_rmse_macro_pp",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        2,
+        "soc_rmse_macro_pp"
+      ],
+      "value": 2.0784406029710567,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "validation_energy_mape_pct",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        5,
+        "energy_mape_pct"
+      ],
+      "value": 0.8258702428321463,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "validation_soc_rmse_macro_pp",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        5,
+        "soc_rmse_macro_pp"
+      ],
+      "value": 2.6609995664227766,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "test_retrospective_energy_mape_pct",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        8,
+        "energy_mape_pct"
+      ],
+      "value": 4.407433493142145,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "test_retrospective_soc_rmse_macro_pp",
+      "source": "results/tables/calibration_evaluation.json",
+      "keys": [
+        "group_metrics",
+        8,
+        "soc_rmse_macro_pp"
+      ],
+      "value": 2.5594952593064813,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "control_25_saving",
+      "source": "results/tables/control_evaluation.json",
+      "keys": [
+        "nominal",
+        3,
+        "heat_corrected_saving_pct"
+      ],
+      "value": 13.53867833947576,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "control_40_saving",
+      "source": "results/tables/control_evaluation.json",
+      "keys": [
+        "nominal",
+        7,
+        "heat_corrected_saving_pct"
+      ],
+      "value": 11.408529758916933,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "control_-10_saving",
+      "source": "results/tables/control_evaluation.json",
+      "keys": [
+        "nominal",
+        11,
+        "heat_corrected_saving_pct"
+      ],
+      "value": 0.8458291409667753,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "parking_25_saving",
+      "source": "results/tables/durability_evaluation.json",
+      "keys": [
+        "comparisons",
+        5,
+        "raw_saving_pct"
+      ],
+      "value": 11.834610889370934,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "parking_40_saving",
+      "source": "results/tables/durability_evaluation.json",
+      "keys": [
+        "comparisons",
+        14,
+        "raw_saving_pct"
+      ],
+      "value": 9.849856958855364,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "parking_-10_saving",
+      "source": "results/tables/durability_evaluation.json",
+      "keys": [
+        "comparisons",
+        23,
+        "raw_saving_pct"
+      ],
+      "value": 0.6986301970571982,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "nonlinear_refits_accepted",
+      "source": "results/tables/nonlinear_reliability.json",
+      "keys": [
+        "accepted"
+      ],
+      "value": 300.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    },
+    {
+      "name": "scientific_tests",
+      "source": "results/tables/verification.json",
+      "keys": [
+        "tests_run"
+      ],
+      "value": 34.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-08
+    }
+  ]
+}

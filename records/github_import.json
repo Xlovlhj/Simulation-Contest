@@ -1,0 +1,9 @@
+{
+  "date_beijing": "2026-10-18T22:12:53+08:00",
+  "source_package_sha256": "c86b56a41f6eb995ec15ec3647b05abcdc15087818aca84351b80f4e403a0f8e",
+  "source_manifest": "records/github_source_package_manifest.json",
+  "numerical_files_unchanged": 214,
+  "new_scientific_experiments": false,
+  "uploaded": false,
+  "description": "Local Git snapshot from full teammate ZIP; refreshed reading documents/portal and added Git configuration. Original paper and numerical evidence unchanged."
+}

@@ -1,0 +1,404 @@
+{
+  "confidence_level": 0.95,
+  "primary_block_s": 40.0,
+  "method": "local linearized Rademacher block wild approximation; no nonlinear bootstrap refitting",
+  "primary_intervals": [
+    {
+      "parameter": "drag_coefficient",
+      "estimate": 0.36158417026213685,
+      "block_length_s": 40.0,
+      "ci_low": 0.25930902167195063,
+      "ci_high": 0.47270759895106657,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.053787590481356076,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "rolling_coefficient",
+      "estimate": 0.012295835274517851,
+      "block_length_s": 40.0,
+      "ci_low": 0.005949279040999019,
+      "ci_high": 0.01843976456922564,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.003162827627738284,
+      "outside_fit_bounds_fraction": 0.002,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "resistance_ref_ohm",
+      "estimate": 0.06708508691016639,
+      "block_length_s": 40.0,
+      "ci_low": 0.054414473090622376,
+      "ci_high": 0.07887835884991336,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.006386573018100567,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "capacity_ah",
+      "estimate": 88.13548487484323,
+      "block_length_s": 40.0,
+      "ci_low": 79.39430796877885,
+      "ci_high": 96.37863341935831,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 4.498041632170734,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "ocv_offset_v",
+      "estimate": -7.755865278962593,
+      "block_length_s": 40.0,
+      "ci_low": -9.067979374300172,
+      "ci_high": -6.2439719886674006,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.7038904149001401,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    }
+  ],
+  "all_intervals": [
+    {
+      "parameter": "drag_coefficient",
+      "estimate": 0.36158417026213685,
+      "block_length_s": 20.0,
+      "ci_low": 0.2769594376872272,
+      "ci_high": 0.4375796683670121,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.04171692555149217,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 117,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "rolling_coefficient",
+      "estimate": 0.012295835274517851,
+      "block_length_s": 20.0,
+      "ci_low": 0.00781224957691709,
+      "ci_high": 0.017230458240771816,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.0024578356492711553,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 117,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "resistance_ref_ohm",
+      "estimate": 0.06708508691016639,
+      "block_length_s": 20.0,
+      "ci_low": 0.05624209477188344,
+      "ci_high": 0.07823018966050428,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.005610398637549493,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 117,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "capacity_ah",
+      "estimate": 88.13548487484323,
+      "block_length_s": 20.0,
+      "ci_low": 81.01629186889149,
+      "ci_high": 94.74474570301831,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 3.631020473925209,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 117,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "ocv_offset_v",
+      "estimate": -7.755865278962593,
+      "block_length_s": 20.0,
+      "ci_low": -8.821826393844594,
+      "ci_high": -6.5790908744390455,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.5592314365907789,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 117,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "drag_coefficient",
+      "estimate": 0.36158417026213685,
+      "block_length_s": 40.0,
+      "ci_low": 0.25930902167195063,
+      "ci_high": 0.47270759895106657,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.053787590481356076,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "rolling_coefficient",
+      "estimate": 0.012295835274517851,
+      "block_length_s": 40.0,
+      "ci_low": 0.005949279040999019,
+      "ci_high": 0.01843976456922564,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.003162827627738284,
+      "outside_fit_bounds_fraction": 0.002,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "resistance_ref_ohm",
+      "estimate": 0.06708508691016639,
+      "block_length_s": 40.0,
+      "ci_low": 0.054414473090622376,
+      "ci_high": 0.07887835884991336,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.006386573018100567,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "capacity_ah",
+      "estimate": 88.13548487484323,
+      "block_length_s": 40.0,
+      "ci_low": 79.39430796877885,
+      "ci_high": 96.37863341935831,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 4.498041632170734,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "ocv_offset_v",
+      "estimate": -7.755865278962593,
+      "block_length_s": 40.0,
+      "ci_low": -9.067979374300172,
+      "ci_high": -6.2439719886674006,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.7038904149001401,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 59,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "drag_coefficient",
+      "estimate": 0.36158417026213685,
+      "block_length_s": 80.0,
+      "ci_low": 0.22372900442312885,
+      "ci_high": 0.49212841792177847,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.06846327785660691,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 30,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "rolling_coefficient",
+      "estimate": 0.012295835274517851,
+      "block_length_s": 80.0,
+      "ci_low": 0.004242347008313894,
+      "ci_high": 0.020544019236333644,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.004239097980545383,
+      "outside_fit_bounds_fraction": 0.011,
+      "blocks": 30,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "resistance_ref_ohm",
+      "estimate": 0.06708508691016639,
+      "block_length_s": 80.0,
+      "ci_low": 0.05172584308199239,
+      "ci_high": 0.08300072704580909,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.00814464075505249,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 30,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "capacity_ah",
+      "estimate": 88.13548487484323,
+      "block_length_s": 80.0,
+      "ci_low": 77.13442410325692,
+      "ci_high": 98.99626543464481,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 6.024897417843599,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 30,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    },
+    {
+      "parameter": "ocv_offset_v",
+      "estimate": -7.755865278962593,
+      "block_length_s": 80.0,
+      "ci_low": -9.587266452885887,
+      "ci_high": -5.832188811470013,
+      "confidence_level": 0.95,
+      "bootstrap_sd": 0.934344700932205,
+      "outside_fit_bounds_fraction": 0.0,
+      "blocks": 30,
+      "repetitions": 1000,
+      "method": "local_linearized_block_wild_not_refit"
+    }
+  ],
+  "scaled_jacobian_singular_values": [
+    24.955310963747515,
+    12.695650201382948,
+    6.848112545402187,
+    2.957397069013616,
+    1.1564007799193483
+  ],
+  "scaled_jacobian_rank": 5,
+  "scaled_jacobian_condition": 21.580157499969854,
+  "weakest_direction_in_bound_scaled_coordinates": {
+    "drag_coefficient": -0.5495144886618774,
+    "rolling_coefficient": 0.8258115346194812,
+    "resistance_ref_ohm": 0.013894562924314886,
+    "capacity_ah": 0.12416066020332667,
+    "ocv_offset_v": 0.02145245018893839
+  },
+  "correlations_by_block_length": {
+    "20.0": [
+      [
+        1.0,
+        -0.6260968404811064,
+        -0.3791643688692897,
+        0.370876957091642,
+        -0.5934045554134288
+      ],
+      [
+        -0.6260968404811064,
+        1.0,
+        0.2838263177567922,
+        0.23099858396007672,
+        0.6060533240088912
+      ],
+      [
+        -0.3791643688692897,
+        0.2838263177567922,
+        1.0,
+        0.22069739955947965,
+        0.2922869242453953
+      ],
+      [
+        0.370876957091642,
+        0.23099858396007672,
+        0.22069739955947965,
+        1.0,
+        -0.4368629606136201
+      ],
+      [
+        -0.5934045554134288,
+        0.6060533240088912,
+        0.2922869242453953,
+        -0.4368629606136201,
+        0.9999999999999998
+      ]
+    ],
+    "40.0": [
+      [
+        0.9999999999999999,
+        -0.6981492289515583,
+        -0.3629642424632113,
+        0.34152700450996826,
+        -0.6081086980484941
+      ],
+      [
+        -0.6981492289515582,
+        1.0,
+        0.3513361953034501,
+        0.12778353216921606,
+        0.6602384335943046
+      ],
+      [
+        -0.36296424246321135,
+        0.35133619530345017,
+        1.0,
+        0.4136947676806696,
+        0.15781186208089304
+      ],
+      [
+        0.3415270045099682,
+        0.12778353216921604,
+        0.4136947676806696,
+        1.0,
+        -0.480319864863205
+      ],
+      [
+        -0.608108698048494,
+        0.6602384335943047,
+        0.15781186208089304,
+        -0.480319864863205,
+        0.9999999999999999
+      ]
+    ],
+    "80.0": [
+      [
+        1.0,
+        -0.749966262235539,
+        -0.30418972196248856,
+        0.36222224633270317,
+        -0.6893600485481267
+      ],
+      [
+        -0.7499662622355391,
+        1.0,
+        0.4035951409408528,
+        0.08780100039626543,
+        0.7039879683248502
+      ],
+      [
+        -0.30418972196248856,
+        0.40359514094085275,
+        1.0,
+        0.49922701866483854,
+        0.15016520383882692
+      ],
+      [
+        0.3622222463327032,
+        0.08780100039626541,
+        0.4992270186648385,
+        0.9999999999999999,
+        -0.48963132464865594
+      ],
+      [
+        -0.6893600485481267,
+        0.7039879683248502,
+        0.15016520383882692,
+        -0.48963132464865594,
+        1.0
+      ]
+    ]
+  },
+  "limitations": [
+    "Only two training trips; blocks do not establish population coverage across vehicles or weather.",
+    "Local derivative and fixed thermal/OCV structure; structural mismatch is not covered.",
+    "Regen threshold events can make the objective nonsmooth; linearized intervals are conditional.",
+    "No clipping to search bounds; physical-range crossings indicate weak inference."
+  ]
+}

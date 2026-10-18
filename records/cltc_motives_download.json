@@ -1,0 +1,8 @@
+{
+  "repository": "MOTIVES-LAB/generalized-energy-consumption-evaluation-for-ev",
+  "commit": "557a4de432c057b4d7d97a2800e4a48d414e132c",
+  "path": "functions/cycle_data/CLTC_P.csv",
+  "url": "https://raw.githubusercontent.com/MOTIVES-LAB/generalized-energy-consumption-evaluation-for-ev/557a4de432c057b4d7d97a2800e4a48d414e132c/functions/cycle_data/CLTC_P.csv",
+  "local_path": "data/external/cltc_motives.csv",
+  "sha256": "535829394f90ebeb3220e9289a38bac4bea0673539253810385a6b7bad5d7d84"
+}

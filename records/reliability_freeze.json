@@ -1,0 +1,23 @@
+{
+  "status": "protocol_fixed_before_runs",
+  "date_beijing": "2026-10-18T02:12:09+08:00",
+  "fingerprint": {
+    "configs/reliability_protocol.json": "a7d78ad83b151c5e88013bd957d6908003f7b7b504a78e1968f049635e468207",
+    "configs/calibration_protocol.json": "d909fe6ef45f269b6a6bc47870f0c5d36e0eaf6613e502b0a131ba00b7d0ddd2",
+    "configs/calibrated.json": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+    "configs/reference.json": "40914f8d6c634cf3efc5ef3dbe60fec6fed75e6af8f42be3032c3f84540791bc",
+    "configs/split.json": "a33091b46ad6e0ac5d94f93df99e5164a88fd2014a66b2f68c588194cb872248",
+    "records/calibration_freeze.json": "57415c5c2b09d29d3feb81ab819749c3782a013ea7d80be35a5a8feaedcfd9f3",
+    "records/control_freeze.json": "f6932d196ae47f98d28a6fa19388871766f4fcf9b9a9c981607d8e0da3c10ec4",
+    "records/durability_freeze.json": "695c69ff2b992a05cfc739bf67ac94d0a66a12802bda30e365b201a5b9a23332",
+    "records/source_manifest.json": "a8fb0dac56bb77ba328aa87966c66af26613f9bca1d6c43fc9461ec8be9746d7",
+    "results/tables/calibration_linearization.npz": "2fd0001bfcf4258f5416c0d97d8c75e655097a9eb0e1e4a2b05e6bfafba3645e",
+    "src/bev/model.py": "9fc59f63a370c25ad217bcbf84f536d5c21b18347cbabae4a82b80803fbc5d12",
+    "src/bev/calibration.py": "a71ee671af686e60676d2555fe0c6c8d4679970ae63be79709c41ece047d2d36",
+    "src/bev/reliability.py": "374fb736f7d8f7e062a8b2d201cd3f50cbdde2d0a11e587d25c3194d74dc23f0",
+    "checks/test_reliability.py": "921a1f69528aeeaff1459e682a3cc64ce4de59964a84c4625002d98ce89a93bb",
+    "data/processed/component_curves.json": "d7dc7c78703ce1dad2a3e74b53a5195167bd03d8d5414dac60e8612ea061802a"
+  },
+  "train_only": true,
+  "point_estimates_replaced": false
+}

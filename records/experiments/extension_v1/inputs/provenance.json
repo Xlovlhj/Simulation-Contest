@@ -1,0 +1,19 @@
+{
+  "EPA": {
+    "source": "https://www.epa.gov/system/files/documents/2026-01/26-testcar-2026-01-21.xlsx",
+    "raw_xlsx_sha256": "5329ecfdad1b271ae13fec9293fbc81d54a1c0d04af86a610ddca658851c99be",
+    "extract": "458 Test Fuel Type Description=Electricity rows; identity, test weight and Target A/B/C columns; no statistical sampling.",
+    "extract_sha256": "70c1665704984e597ef48229b619e522be472d86ac0bde30b02362e45859badc",
+    "publisher": "US Environmental Protection Agency",
+    "retrieved": "2026-10-18"
+  },
+  "Oxford": {
+    "doi": "10.5287/bodleian:KO2kdmYGg",
+    "publisher": "University of Oxford",
+    "authors": "Christoph R. Birkl; David A. Howey",
+    "citation": "Oxford Battery Degradation Dataset 1 (2017); Birkl, Diagnosis and Prognosis of Degradation in Lithium-Ion Batteries, PhD thesis, Oxford, 2017.",
+    "license": "ODC-ODbL 1.0; contents DbCL 1.0; original README retained",
+    "mat_sha256": "144cdf5aec7467bcce5445e132495e8477f4e08d9963c221d8ba5d7970a7a97d",
+    "object": "Kokam SLPB533459H4 740mAh cell, 40C chamber; not vehicle455 or its pack"
+  }
+}

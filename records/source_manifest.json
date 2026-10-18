@@ -1,0 +1,59 @@
+{
+  "date_beijing": "2026-10-17",
+  "files": [
+    {
+      "project_path": "data/raw/附件1：车辆参数表.xlsx",
+      "bytes": 11773,
+      "sha256": "2bd051219c2cb3d6bb9fb22b2f6a29d1434aa0405aa5168216a747d8f6569abc",
+      "matches_original": true
+    },
+    {
+      "project_path": "data/raw/附件2：4段路程车辆行驶数据.xlsx",
+      "bytes": 328034,
+      "sha256": "c947f403767334b85afc1792eee46f2b74d0271a99af628b3fdd8c95cd7ddd1d",
+      "matches_original": true
+    },
+    {
+      "project_path": "data/raw/附件3：参考工况.xlsx",
+      "bytes": 32664,
+      "sha256": "75fdd54aa2f880b9e4e1e7539e4e4760f582917407afca41a29a6329533e7e49",
+      "matches_original": true
+    },
+    {
+      "project_path": "data/raw/附件4：部件特性（OCV—SOC、内阻、电机效率）.xlsx",
+      "bytes": 15968,
+      "sha256": "375d44e233362586ed4699abe3d95e691ace96fda880a55737f57087189a1776",
+      "matches_original": true
+    },
+    {
+      "project_path": "赛题资料/C题/2026年第二届全国大学生仿真建模应用挑战赛C题.pdf",
+      "bytes": 440176,
+      "sha256": "5f98ef37a4052c58e7e514f77c5fb9463d14f1a3af36468e82489585efebdff0",
+      "matches_original": true
+    },
+    {
+      "project_path": "赛题资料/通用规范/2026年第二届全国大学生仿真建模应用挑战赛承诺书.doc",
+      "bytes": 18944,
+      "sha256": "f0a6381319fe47b7f6f79103611643674bd68c5fe33a9f4c010e2f3b13e0a6aa",
+      "matches_original": true
+    },
+    {
+      "project_path": "赛题资料/通用规范/2026年第二届全国大学生仿真建模应用挑战赛提交流程.pdf",
+      "bytes": 376873,
+      "sha256": "beaa2e206efc0247f9201ef1473b48f5cfd60c6a7a71b7b1582a53f6a05de6b7",
+      "matches_original": true
+    },
+    {
+      "project_path": "赛题资料/通用规范/全国大学生仿真建模应用挑战赛人工智能工具使用规定.pdf",
+      "bytes": 95421,
+      "sha256": "536fed2e3533b448d63703c0460fd47fec506c498af3cfc087e5d72e55f90d6a",
+      "matches_original": true
+    },
+    {
+      "project_path": "赛题资料/通用规范/全国大学生仿真建模应用挑战赛论文格式规范.docx",
+      "bytes": 38248,
+      "sha256": "b8d5a63d39868c2caf5566ffb5a69c9ba4a559345bbf18cc706ea0295262ef0c",
+      "matches_original": true
+    }
+  ]
+}

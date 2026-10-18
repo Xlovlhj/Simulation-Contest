@@ -1,0 +1,174 @@
+{
+  "status": "design_frozen_before_robustness_and_transfer",
+  "fingerprint": {
+    "configs/control_protocol.json": "d30563258e3b6f26d7df51e514c823307be847fdff771ffb7ff0b6b1e2d36439",
+    "configs/calibrated.json": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+    "configs/reference.json": "40914f8d6c634cf3efc5ef3dbe60fec6fed75e6af8f42be3032c3f84540791bc",
+    "records/cltc_downloads.json": "5a81b70a59012eeb4dcff7d0262d66a47b445c3f828bc6014bbd6982337d7f57",
+    "src/bev/model.py": "9fc59f63a370c25ad217bcbf84f536d5c21b18347cbabae4a82b80803fbc5d12",
+    "src/bev/control.py": "144840dd283fc82589ad55e734f261e9ea764745807d50cc5e7dcf1451b981bd"
+  },
+  "selected_rule": {
+    "regen_fraction": 0.95,
+    "cooling_on_c": 40.0,
+    "cooling_hysteresis_c": 2.0,
+    "cabin_economy_offset_c": 0.75
+  },
+  "design_score": 0.9190995131544116,
+  "candidates": 72,
+  "feasible_candidates": 54,
+  "elapsed_s": 17.846415400000296,
+  "design_temperatures_c": [
+    25.0,
+    40.0,
+    -10.0
+  ],
+  "baseline_metrics": [
+    {
+      "cycle": "CLTC",
+      "ambient_c": 25.0,
+      "energy_kwh": 1.757414829409419,
+      "ocv_energy_kwh": 1.7823089569498505,
+      "consumption_kwh_100km": 12.137052293094971,
+      "regen_energy_kwh": 0.4425542134347685,
+      "cooling_energy_kwh": 0.0,
+      "ac_energy_kwh": 0.052,
+      "heater_energy_kwh": 0.0,
+      "battery_final_c": 25.269922929704062,
+      "battery_max_c": 25.27049739843291,
+      "cabin_final_c": 24.0,
+      "cabin_min_c": 24.0,
+      "cabin_max_c": 24.0,
+      "comfort_violation_s": 0.0,
+      "mean_abs_cabin_deviation_c": 0.0,
+      "soc_final": 0.8766267097697305,
+      "time_outside_training_SOC_fraction": 0.04055555555555555,
+      "feasible": true,
+      "constraints": {
+        "cabin_comfort": true,
+        "cabin_terminal": true,
+        "battery_temperature": true,
+        "battery_hot_terminal": true,
+        "minimum_switch_dwell": true,
+        "compressor_budget": true
+      },
+      "dc_balance_residual_kwh": -1.942890293094024e-16,
+      "runtime_s": 0.046177499999885185,
+      "controller": {
+        "decisions": 360,
+        "decision_period_s": 5.0,
+        "decision_median_us": 1.500000053056283,
+        "decision_p95_us": 2.1999999262334313,
+        "decision_max_us": 92.19999992637895,
+        "cooling_switches": 0,
+        "switch_times_s": [],
+        "minimum_observed_dwell_s": null
+      },
+      "rule": {
+        "regen_fraction": 0.65,
+        "cooling_on_c": 35.0,
+        "cooling_hysteresis_c": 3.0,
+        "cabin_economy_offset_c": 0.0
+      }
+    },
+    {
+      "cycle": "CLTC",
+      "ambient_c": 40.0,
+      "energy_kwh": 2.1921547624545346,
+      "ocv_energy_kwh": 2.212586813340851,
+      "consumption_kwh_100km": 15.139451734004625,
+      "regen_energy_kwh": 0.4425542134347685,
+      "cooling_energy_kwh": 0.15473993304511566,
+      "ac_energy_kwh": 0.332,
+      "heater_energy_kwh": 0.0,
+      "battery_final_c": 36.23301964713055,
+      "battery_max_c": 40.0,
+      "cabin_final_c": 24.0,
+      "cabin_min_c": 24.0,
+      "cabin_max_c": 24.0,
+      "comfort_violation_s": 0.0,
+      "mean_abs_cabin_deviation_c": 0.0,
+      "soc_final": 0.8611217222450404,
+      "time_outside_training_SOC_fraction": 0.07388888888888889,
+      "feasible": true,
+      "constraints": {
+        "cabin_comfort": true,
+        "cabin_terminal": true,
+        "battery_temperature": true,
+        "battery_hot_terminal": true,
+        "minimum_switch_dwell": true,
+        "compressor_budget": true
+      },
+      "dc_balance_residual_kwh": -3.3306690738754696e-16,
+      "runtime_s": 0.04575169999998252,
+      "controller": {
+        "decisions": 360,
+        "decision_period_s": 5.0,
+        "decision_median_us": 1.3999997463542968,
+        "decision_p95_us": 1.7000002117129043,
+        "decision_max_us": 9.899999895424116,
+        "cooling_switches": 1,
+        "switch_times_s": [
+          0.0
+        ],
+        "minimum_observed_dwell_s": null
+      },
+      "rule": {
+        "regen_fraction": 0.65,
+        "cooling_on_c": 35.0,
+        "cooling_hysteresis_c": 3.0,
+        "cabin_economy_offset_c": 0.0
+      }
+    },
+    {
+      "cycle": "CLTC",
+      "ambient_c": -10.0,
+      "energy_kwh": 3.1163900954757664,
+      "ocv_energy_kwh": 3.1657500586088174,
+      "consumption_kwh_100km": 21.522402634546633,
+      "regen_energy_kwh": 0.0,
+      "cooling_energy_kwh": 0.0,
+      "ac_energy_kwh": 0.0,
+      "heater_energy_kwh": 0.9684210526315787,
+      "battery_final_c": -9.467281708300696,
+      "battery_max_c": -9.465972553637526,
+      "cabin_final_c": 24.0,
+      "cabin_min_c": 24.0,
+      "cabin_max_c": 24.0,
+      "comfort_violation_s": 0.0,
+      "mean_abs_cabin_deviation_c": 0.0,
+      "soc_final": 0.8265517278093977,
+      "time_outside_training_SOC_fraction": 0.3011111111111111,
+      "feasible": true,
+      "constraints": {
+        "cabin_comfort": true,
+        "cabin_terminal": true,
+        "battery_temperature": true,
+        "battery_hot_terminal": true,
+        "minimum_switch_dwell": true,
+        "compressor_budget": true
+      },
+      "dc_balance_residual_kwh": 0.0,
+      "runtime_s": 0.04434079999964524,
+      "controller": {
+        "decisions": 360,
+        "decision_period_s": 5.0,
+        "decision_median_us": 1.4000002011016477,
+        "decision_p95_us": 1.6050003296186344,
+        "decision_max_us": 3.9000001379463356,
+        "cooling_switches": 0,
+        "switch_times_s": [],
+        "minimum_observed_dwell_s": null
+      },
+      "rule": {
+        "regen_fraction": 0.65,
+        "cooling_on_c": 35.0,
+        "cooling_hysteresis_c": 3.0,
+        "cabin_economy_offset_c": 0.0
+      }
+    }
+  ],
+  "selection": "Minimum equal-scenario heat-corrected energy ratio among feasible finite-grid rules; not a global optimum over all controls.",
+  "empirical_validation": false,
+  "parameter_model": "v2 provisional; OCV and Cr limitations retained"
+}

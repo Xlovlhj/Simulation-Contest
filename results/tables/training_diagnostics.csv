@@ -1,0 +1,3 @@
+﻿trip_id,grid_s,gaussian_sigma_s,raw_distance_km,conditioned_distance_km,distance_relative_change,battery_initial_assumed_environment_c,long_gap_policy,reference_soc_rmse_pp,reference_voltage_rmse_v,reference_energy_kwh,measured_energy_kwh
+575,1.0,1.0,14.332644411348845,14.330977160237154,-0.00011632543610519634,6.5,Interpolate for model input; observed long gaps remain flagged in audit.,3.80685233074579,9.76342732663239,2.7488515439820436,2.15422753125
+596,1.0,1.0,12.669104705263901,12.672377295738299,0.00025831268669186913,1.5,Interpolate for model input; observed long gaps remain flagged in audit.,2.7896729067723927,12.360608533729408,2.844765019750377,2.7048381215277786

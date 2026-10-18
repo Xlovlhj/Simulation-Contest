@@ -1,0 +1,169 @@
+{
+  "mode": "full_original_csv",
+  "files": [
+    {
+      "path": "results/timeseries/control_-10C_baseline.csv",
+      "bytes": 2143521,
+      "sha256": "d356b04c2d3040283900ac0e2c5959c04cea8efeac7db4d67a345c24ea71dded",
+      "source_full_csv_sha256": "d356b04c2d3040283900ac0e2c5959c04cea8efeac7db4d67a345c24ea71dded",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/control_-10C_optimized.csv",
+      "bytes": 2419290,
+      "sha256": "51a6c94f4fcdd8d33eb5d87da639e21b2097c52c074a2d2b6562c6c4967e37c9",
+      "source_full_csv_sha256": "51a6c94f4fcdd8d33eb5d87da639e21b2097c52c074a2d2b6562c6c4967e37c9",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/control_25C_baseline.csv",
+      "bytes": 2124081,
+      "sha256": "9b652cc408da9e365f98c910806a608eb77a675bf81fa1e228298893393e22c8",
+      "source_full_csv_sha256": "9b652cc408da9e365f98c910806a608eb77a675bf81fa1e228298893393e22c8",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/control_25C_optimized.csv",
+      "bytes": 2459813,
+      "sha256": "e35e21b8d4d422257ac3113a744ac773a5f9c11b8a17a5f9920227b09bd5b9fb",
+      "source_full_csv_sha256": "e35e21b8d4d422257ac3113a744ac773a5f9c11b8a17a5f9920227b09bd5b9fb",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/control_40C_baseline.csv",
+      "bytes": 2238312,
+      "sha256": "46ef0147c460477c1aaa3b643645e324219702ed988b9c741a0e9669971ff20f",
+      "source_full_csv_sha256": "46ef0147c460477c1aaa3b643645e324219702ed988b9c741a0e9669971ff20f",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/control_40C_optimized.csv",
+      "bytes": 2504922,
+      "sha256": "ce67c4b23b5b84c4aec342da19dcd071e9877961692429b81a21e1309f159a7d",
+      "source_full_csv_sha256": "ce67c4b23b5b84c4aec342da19dcd071e9877961692429b81a21e1309f159a7d",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_-10C_baseline.csv",
+      "bytes": 13017159,
+      "sha256": "11fe089788209d02e41a505975b57de4f682b9e5f5f1e23d8a78def58ffff527",
+      "source_full_csv_sha256": "11fe089788209d02e41a505975b57de4f682b9e5f5f1e23d8a78def58ffff527",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_-10C_optimized.csv",
+      "bytes": 14991555,
+      "sha256": "66e64266834fda83aa147ec2ec8c95eea4e610b4ed350972286d1f3359097457",
+      "source_full_csv_sha256": "66e64266834fda83aa147ec2ec8c95eea4e610b4ed350972286d1f3359097457",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_25C_baseline.csv",
+      "bytes": 13151329,
+      "sha256": "e637ff24dd33880c91c99cd89b167d130509eea0228105c0817261bc7185148b",
+      "source_full_csv_sha256": "e637ff24dd33880c91c99cd89b167d130509eea0228105c0817261bc7185148b",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_25C_optimized.csv",
+      "bytes": 15572593,
+      "sha256": "589244d80107bd9593cd181dc06438509b1079983320a980fe57f3b90680ce37",
+      "source_full_csv_sha256": "589244d80107bd9593cd181dc06438509b1079983320a980fe57f3b90680ce37",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_40C_baseline.csv",
+      "bytes": 13451604,
+      "sha256": "40d8ae6f2346a0fe29732b2cce3ba8c583df84b73dcf2eb8583c6111bf04d60a",
+      "source_full_csv_sha256": "40d8ae6f2346a0fe29732b2cce3ba8c583df84b73dcf2eb8583c6111bf04d60a",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/durability_40C_optimized.csv",
+      "bytes": 15557100,
+      "sha256": "6a3b2e88db23767dfa9dc3feb37c69d2c093fc16540754fbaa9cb4de2e9605c8",
+      "source_full_csv_sha256": "6a3b2e88db23767dfa9dc3feb37c69d2c093fc16540754fbaa9cb4de2e9605c8",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/reference_E_25C.csv",
+      "bytes": 2366757,
+      "sha256": "f2cc5bd3292bcdb477c1e783ae982e3ecd01ddc93f12e0b56daddf3e181ea7cb",
+      "source_full_csv_sha256": "f2cc5bd3292bcdb477c1e783ae982e3ecd01ddc93f12e0b56daddf3e181ea7cb",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/scenario_A_calibrated.csv",
+      "bytes": 2457934,
+      "sha256": "c4f6070c27e0fab797861bd54de9b8993718f54d1a69f0df38585a97f849d216",
+      "source_full_csv_sha256": "c4f6070c27e0fab797861bd54de9b8993718f54d1a69f0df38585a97f849d216",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/scenario_A_reference.csv",
+      "bytes": 2431201,
+      "sha256": "af74eb801a9a51a3871850f092923a57a09b6a1b6f22ba3a875492696a910dc4",
+      "source_full_csv_sha256": "af74eb801a9a51a3871850f092923a57a09b6a1b6f22ba3a875492696a910dc4",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_575_calibrated.csv",
+      "bytes": 2116961,
+      "sha256": "cb0935d8b24147d54821c0dd55392b79d48270b4663a2df19365aa608e640278",
+      "source_full_csv_sha256": "cb0935d8b24147d54821c0dd55392b79d48270b4663a2df19365aa608e640278",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_575_predictions.csv",
+      "bytes": 261903,
+      "sha256": "077fcc40e84aec685be70c1b24bc5d6da10f9d06067511e80a4761e20813ad3f",
+      "source_full_csv_sha256": "077fcc40e84aec685be70c1b24bc5d6da10f9d06067511e80a4761e20813ad3f",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_588_calibrated.csv",
+      "bytes": 1342559,
+      "sha256": "98cf0298b0595439ae5746976cba6fa2ef48b3c4d5d9d5279af257eaf183f951",
+      "source_full_csv_sha256": "98cf0298b0595439ae5746976cba6fa2ef48b3c4d5d9d5279af257eaf183f951",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_588_predictions.csv",
+      "bytes": 251735,
+      "sha256": "99e4535c2ce797d7566cbaa5a8222e617eb3a6e77a97344aa47ed278ac451b83",
+      "source_full_csv_sha256": "99e4535c2ce797d7566cbaa5a8222e617eb3a6e77a97344aa47ed278ac451b83",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_596_calibrated.csv",
+      "bytes": 1002431,
+      "sha256": "45a965a4c169d480b7c0f3c9e5f37f3773784a2ef43811d9e349cdaf14ff1d76",
+      "source_full_csv_sha256": "45a965a4c169d480b7c0f3c9e5f37f3773784a2ef43811d9e349cdaf14ff1d76",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_596_predictions.csv",
+      "bytes": 217465,
+      "sha256": "a26ae8a249965a25045428998c799b574f052cb1341020cc8fdfe2a324fc083d",
+      "source_full_csv_sha256": "a26ae8a249965a25045428998c799b574f052cb1341020cc8fdfe2a324fc083d",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_600_calibrated.csv",
+      "bytes": 2142409,
+      "sha256": "2fa7ab8788d1d5b0ee495632b23c0c4a514a8ae7e75f66933f3b69b78ab5e2e3",
+      "source_full_csv_sha256": "2fa7ab8788d1d5b0ee495632b23c0c4a514a8ae7e75f66933f3b69b78ab5e2e3",
+      "columns_subset": null
+    },
+    {
+      "path": "results/timeseries/trip_600_predictions.csv",
+      "bytes": 290922,
+      "sha256": "5bf4a5a3295a2b9742bb0dbcb4f6796586ea162a801c055979893c64a72b3cd5",
+      "source_full_csv_sha256": "5bf4a5a3295a2b9742bb0dbcb4f6796586ea162a801c055979893c64a72b3cd5",
+      "columns_subset": null
+    }
+  ],
+  "archive_sha256": "67f580f5217cd7fe6983642f41b112aa975ee4dc1d9e0e4c8b21e554e51269b3",
+  "archive_bytes": 30225848,
+  "note": "Every retained value is an original CSV string. No resampling or rounding. Full long traces can be regenerated with reproduce.py long."
+}

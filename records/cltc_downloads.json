@@ -1,0 +1,21 @@
+{
+  "session_date_beijing": "2026-10-17",
+  "sources": [
+    {
+      "repository": "MOTIVES-LAB/generalized-energy-consumption-evaluation-for-ev",
+      "commit": "557a4de432c057b4d7d97a2800e4a48d414e132c",
+      "path": "functions/cycle_data/CLTC_P.csv",
+      "url": "https://raw.githubusercontent.com/MOTIVES-LAB/generalized-energy-consumption-evaluation-for-ev/557a4de432c057b4d7d97a2800e4a48d414e132c/functions/cycle_data/CLTC_P.csv",
+      "local_path": "data/external/cltc_motives.csv",
+      "sha256": "535829394f90ebeb3220e9289a38bac4bea0673539253810385a6b7bad5d7d84"
+    },
+    {
+      "repository": "LigeZhao/EC-Window-for-Electric-Vehicles",
+      "commit": "1624c1483b66920ccd5f2017a2391f1b0f8ede95",
+      "path": "cycles/cltc.csv",
+      "url": "https://raw.githubusercontent.com/LigeZhao/EC-Window-for-Electric-Vehicles/1624c1483b66920ccd5f2017a2391f1b0f8ede95/cycles/cltc.csv",
+      "local_path": "data/external/cltc_ec_window.csv",
+      "sha256": "6d68ab02306fa5082426417cac7f98f1e89b9f496fb1fbd8a113897c55f811f7"
+    }
+  ]
+}

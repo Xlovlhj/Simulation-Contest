@@ -1,0 +1,63 @@
+{
+  "status": "review_pdf_rendered_not_final",
+  "pages": 18,
+  "bytes": 2762326,
+  "path": "results/paper/C题论文审阅初稿.pdf",
+  "sha256": "dd5691c629fa5156117e5f3ea01163e79780968ce38e51135da0b0507890288b",
+  "formulas_rendered": 45,
+  "figures": 6,
+  "abstract_complete_on_first_page": true,
+  "contents_start_on_second_page": true,
+  "continuous_centered_page_numbers": true,
+  "key_numbers_present": true,
+  "contents_page_numbers_verified": true,
+  "assistive_math_layer_hidden": true,
+  "actual_pdf_font_sizes_pt": {
+    "body": 11.999423027038574,
+    "title": 15.99673080444336,
+    "heading": 13.9943265914917
+  },
+  "global_print_shrink_absent": true,
+  "all_text_inside_page": true,
+  "page_errors": [],
+  "http_requests": [],
+  "unexpected_file_requests": [],
+  "team_review": "pending",
+  "visual_review": "agent_reviewed_all_page_overview_and_key_pages",
+  "font_requirement": "CSS SimSun 12pt; title SimHei16pt; h2 SimHei14pt; no page header",
+  "visual_review_details": {
+    "reviewer": "Codex visual inspection; not team sign-off",
+    "contact_sheet_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "detail_pages": [
+      1,
+      2,
+      9,
+      18
+    ],
+    "checks": [
+      "No duplicated formulas or clipped content",
+      "Long objective split across two lines",
+      "Numbered table bodies kept together",
+      "TOC and final appendix readable"
+    ]
+  }
+}

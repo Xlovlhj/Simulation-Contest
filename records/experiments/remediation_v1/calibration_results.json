@@ -1,0 +1,271 @@
+{
+  "candidate": {
+    "mass_kg": 1600.0,
+    "frontal_area_m2": 2.3,
+    "drag_coefficient": 0.3667408613330034,
+    "rolling_coefficient": 0.003000000000042137,
+    "wheel_radius_m": 0.32,
+    "rotating_mass_factor": 1.05,
+    "gear_ratio": 8.0,
+    "gear_efficiency": 0.96,
+    "inverter_efficiency": 0.97,
+    "motor_power_max_w": 150000.0,
+    "motor_torque_max_nm": 310.0,
+    "motor_speed_max_rpm": 16000.0,
+    "capacity_ah": 71.91257048795896,
+    "nominal_voltage_v": 375.0,
+    "stated_energy_kwh": 30.0,
+    "resistance_ref_ohm": 0.0773488242843743,
+    "battery_heat_capacity_j_k": 320000.0,
+    "battery_environment_w_k": 30.0,
+    "cooler_conductance_w_k": 60.0,
+    "coolant_temperature_c": 25.0,
+    "cooling_cop": 2.5,
+    "heater_efficiency": 0.95,
+    "cabin_heat_capacity_j_k": 80000.0,
+    "cabin_environment_w_k": 60.0,
+    "occupant_heat_w": 200.0,
+    "solar_heat_w": 0.0,
+    "low_voltage_w": 300.0,
+    "ac_max_w": 4000.0,
+    "heater_max_w": 5000.0,
+    "air_density_kg_m3": 1.2,
+    "gravity_m_s2": 9.81,
+    "regen_fraction": 0.65,
+    "regen_dc_cap_w": 50000.0,
+    "regen_soc_cutoff": 0.95,
+    "regen_temperature_zero_c": -10.0,
+    "regen_temperature_full_c": 10.0,
+    "cooling_on_c": 35.0,
+    "cooling_off_c": 32.0,
+    "cabin_target_c": 24.0,
+    "cabin_deadband_c": 1.0,
+    "cabin_gain_w_k": 500.0,
+    "include_entropy_heat": false,
+    "ocv_offset_v": -7.005850852464595,
+    "ocv_scale": 0.6833779626352005,
+    "parameter_status": "stage8_training_corrected_candidate"
+  },
+  "fits": [
+    {
+      "initial_ocv_scale": 0.3,
+      "estimate": [
+        0.36673860840961436,
+        0.0030000000170117367,
+        0.07734194583910366,
+        71.91277510098924,
+        -7.006144868298035,
+        0.6833724234934914
+      ],
+      "cost": 7.223487805336358,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 4,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "runtime_s": 1.6362917000000152
+    },
+    {
+      "initial_ocv_scale": 1.0,
+      "estimate": [
+        0.3667408613330034,
+        0.003000000000042137,
+        0.0773488242843743,
+        71.91257048795896,
+        -7.005850852464595,
+        0.6833779626352005
+      ],
+      "cost": 7.22348778617047,
+      "success": true,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "nfev": 5,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "runtime_s": 2.0112967000000026
+    }
+  ],
+  "metrics": [
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "reference",
+      "energy_ape_pct": 27.605043462803927,
+      "soc_rmse_pp": 3.8067803338394235,
+      "voltage_rmse_v": 9.764048947863674,
+      "dc_balance_residual_kwh": 0.0
+    },
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "frozen_v2",
+      "energy_ape_pct": 5.452570187795739,
+      "soc_rmse_pp": 2.08815803693361,
+      "voltage_rmse_v": 3.6637979899149813,
+      "dc_balance_residual_kwh": -1.1102230246251565e-16
+    },
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "ocv_scaled_candidate",
+      "energy_ape_pct": 5.405369759400072,
+      "soc_rmse_pp": 1.9956895018566714,
+      "voltage_rmse_v": 3.229655512537572,
+      "dc_balance_residual_kwh": -2.220446049250313e-16
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "reference",
+      "energy_ape_pct": 5.174463316696263,
+      "soc_rmse_pp": 2.7896213877995586,
+      "voltage_rmse_v": 12.365922638855636,
+      "dc_balance_residual_kwh": 4.440892098500626e-16
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "frozen_v2",
+      "energy_ape_pct": 1.6146049772442892,
+      "soc_rmse_pp": 2.068723169008504,
+      "voltage_rmse_v": 4.568488922888026,
+      "dc_balance_residual_kwh": -2.220446049250313e-16
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "ocv_scaled_candidate",
+      "energy_ape_pct": 1.435804590933016,
+      "soc_rmse_pp": 2.1509410581528425,
+      "voltage_rmse_v": 4.382910560158699,
+      "dc_balance_residual_kwh": -6.661338147750939e-16
+    },
+    {
+      "trip_id": 588,
+      "role": "retrospective_diagnostic",
+      "variant": "reference",
+      "energy_ape_pct": 16.480238355347076,
+      "soc_rmse_pp": 3.987912075220483,
+      "voltage_rmse_v": 7.720249962534041,
+      "dc_balance_residual_kwh": 2.7755575615628914e-16
+    },
+    {
+      "trip_id": 588,
+      "role": "retrospective_diagnostic",
+      "variant": "frozen_v2",
+      "energy_ape_pct": 0.8258702428321463,
+      "soc_rmse_pp": 2.6609995664227766,
+      "voltage_rmse_v": 15.03779892930574,
+      "dc_balance_residual_kwh": 3.3306690738754696e-16
+    },
+    {
+      "trip_id": 588,
+      "role": "retrospective_diagnostic",
+      "variant": "ocv_scaled_candidate",
+      "energy_ape_pct": 0.9248875052403444,
+      "soc_rmse_pp": 2.6114350128102934,
+      "voltage_rmse_v": 8.539955122535314,
+      "dc_balance_residual_kwh": -5.551115123125783e-17
+    },
+    {
+      "trip_id": 600,
+      "role": "retrospective_diagnostic",
+      "variant": "reference",
+      "energy_ape_pct": 13.904733917233484,
+      "soc_rmse_pp": 3.7083322783858055,
+      "voltage_rmse_v": 17.733453907435806,
+      "dc_balance_residual_kwh": 1.1102230246251565e-16
+    },
+    {
+      "trip_id": 600,
+      "role": "retrospective_diagnostic",
+      "variant": "frozen_v2",
+      "energy_ape_pct": 4.407433493142145,
+      "soc_rmse_pp": 2.5594952593064813,
+      "voltage_rmse_v": 25.65850219432968,
+      "dc_balance_residual_kwh": -1.1102230246251565e-16
+    },
+    {
+      "trip_id": 600,
+      "role": "retrospective_diagnostic",
+      "variant": "ocv_scaled_candidate",
+      "energy_ape_pct": 4.421701537812627,
+      "soc_rmse_pp": 2.560815949092871,
+      "voltage_rmse_v": 13.332737640839465,
+      "dc_balance_residual_kwh": -1.1102230246251565e-16
+    }
+  ],
+  "Cr_profile": [
+    {
+      "fixed_Cr": 0.003,
+      "cost": 7.223487786111991,
+      "relative_cost_increase": -8.095612128456071e-12,
+      "success": true,
+      "estimate": [
+        0.366740887327963,
+        0.003,
+        0.07734815029942281,
+        71.91257762653292,
+        -7.0058797099630965,
+        0.6833780216810307
+      ]
+    },
+    {
+      "fixed_Cr": 0.006,
+      "cost": 8.699019118487634,
+      "relative_cost_increase": 0.20426854394937888,
+      "success": true,
+      "estimate": [
+        0.2977595571028409,
+        0.006,
+        0.07813017736665193,
+        72.6776940421031,
+        -6.959834840207799,
+        0.6960667988730621
+      ]
+    },
+    {
+      "fixed_Cr": 0.01,
+      "cost": 12.142402991821822,
+      "relative_cost_increase": 0.680961240782981,
+      "success": true,
+      "estimate": [
+        0.20407032801808864,
+        0.01,
+        0.07834591356678536,
+        73.86430507651805,
+        -6.940427044979133,
+        0.7105403362586898
+      ]
+    },
+    {
+      "fixed_Cr": 0.015,
+      "cost": 19.39315071585229,
+      "relative_cost_increase": 1.684735032428644,
+      "success": true,
+      "estimate": [
+        0.12000000208233998,
+        0.015,
+        0.07850713089452967,
+        77.10786044270068,
+        -6.816087415205813,
+        0.70923879909043
+      ]
+    }
+  ],
+  "selection_used_trip588_or600": false,
+  "evaluation_is_untouched": false,
+  "thermal_accuracy_measured": false,
+  "old_model_unchanged": true
+}

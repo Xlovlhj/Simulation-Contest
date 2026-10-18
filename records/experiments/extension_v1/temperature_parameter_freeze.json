@@ -1,0 +1,49 @@
+{
+  "a_b": [
+    0.00023231747317247194,
+    0.0038951654407867395
+  ],
+  "runs": [
+    {
+      "estimate": [
+        -8.367405702882895,
+        -5.548019125391575
+      ],
+      "cost": 7.952889744562927,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "active_mask": [
+        0,
+        0
+      ],
+      "runtime_s": 0.11014450000038778,
+      "a_b": [
+        0.00023231747317247194,
+        0.0038951654407867395
+      ]
+    },
+    {
+      "estimate": [
+        -8.367400148616284,
+        -5.548015862182356
+      ],
+      "cost": 7.952889745305828,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 14,
+      "active_mask": [
+        0,
+        0
+      ],
+      "runtime_s": 0.1262950999998793,
+      "a_b": [
+        0.00023231876352923985,
+        0.0038951781515472552
+      ]
+    }
+  ],
+  "train_samples": 1887,
+  "selection": "train_only",
+  "time_utc": "2026-10-18T08:31:57.679397+00:00"
+}

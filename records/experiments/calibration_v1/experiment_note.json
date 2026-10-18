@@ -1,0 +1,5 @@
+{
+  "version": "v1",
+  "finding_train_only": "Joint train MAPE 22.60% exceeds reference 16.39% despite lower composite residual. Revise train objective to explicitly penalize net energy.",
+  "test_status": "Trip600 evaluated under v1; any later v2 evaluation is retrospective, not an untouched confirmatory test."
+}

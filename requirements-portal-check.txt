@@ -1,0 +1,2 @@
+# Optional browser verification; the generated HTML needs no Python or browser extension.
+playwright>=1.50,<2

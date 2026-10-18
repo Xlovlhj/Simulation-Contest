@@ -1,0 +1,570 @@
+{
+  "status": "corrective_experiments_completed_with_explicit_limits",
+  "source_hashes": {
+    "records/experiments/remediation_v1/calibration_results.json": "52ec6764779e792fe0be89116cfef0601e4401154a202e7fddf531a20666a864",
+    "records/experiments/remediation_v1/candidate_freeze.json": "579febf7ab406b0299c4e89405e33bfcbd56d9f7a17c967c599552692f82ed10",
+    "records/experiments/remediation_v1/candidate_parameters.json": "998d10b2d42c7d1ab0632200a791183cbc4ea3b25a680cc436e94e5296ee0088",
+    "records/experiments/remediation_v1/cr_profile_progress.json": "c40392f2c6c9ef28384982a4e39eaabb986bcc47d3071a7df006678cf4549c9c",
+    "records/experiments/remediation_v1/fit_progress.json": "a3dd7098246d29d905e7caace5e212bbda6e65590cabf42be6332e1cf54ff39a",
+    "records/experiments/remediation_v1/protocol_freeze.json": "fa64b99857de337d943a1ed4b59f33e5b320d05832e49d1cf4d78d63bacda69e",
+    "records/experiments/remediation_v1/rolling_bounds_protocol.json": "2b404850057b6203f70988726a55e1500dd104583d7bca839214b98aab067696",
+    "records/experiments/remediation_v1/rolling_bounds_results.json": "ba6035a3ffaa30dad2da618239de1657f3c5f9408ef47f4667b426ac260c454a",
+    "records/experiments/remediation_v1/thermal_results.json": "e8734ce142638f86179dca95d01a45a07aab0526c7ad7043d5dc5d6f9af5d500"
+  },
+  "voltage_metrics": [
+    {
+      "trip_id": 588,
+      "variant": "reference",
+      "voltage_rmse_v": 7.720249962534041,
+      "energy_ape_pct": 16.480238355347076,
+      "soc_rmse_pp": 3.987912075220483
+    },
+    {
+      "trip_id": 588,
+      "variant": "frozen_v2",
+      "voltage_rmse_v": 15.03779892930574,
+      "energy_ape_pct": 0.8258702428321463,
+      "soc_rmse_pp": 2.6609995664227766
+    },
+    {
+      "trip_id": 588,
+      "variant": "ocv_scaled_candidate",
+      "voltage_rmse_v": 8.539955122535314,
+      "energy_ape_pct": 0.9248875052403444,
+      "soc_rmse_pp": 2.6114350128102934
+    },
+    {
+      "trip_id": 600,
+      "variant": "reference",
+      "voltage_rmse_v": 17.733453907435806,
+      "energy_ape_pct": 13.904733917233484,
+      "soc_rmse_pp": 3.7083322783858055
+    },
+    {
+      "trip_id": 600,
+      "variant": "frozen_v2",
+      "voltage_rmse_v": 25.65850219432968,
+      "energy_ape_pct": 4.407433493142145,
+      "soc_rmse_pp": 2.5594952593064813
+    },
+    {
+      "trip_id": 600,
+      "variant": "ocv_scaled_candidate",
+      "voltage_rmse_v": 13.332737640839465,
+      "energy_ape_pct": 4.421701537812627,
+      "soc_rmse_pp": 2.560815949092871
+    }
+  ],
+  "Cr_reliability_solved": false,
+  "rolling_bounds": [
+    {
+      "Cr_lower_bound": 0.0,
+      "parameters": {
+        "drag_coefficient": 0.436038690222408,
+        "rolling_coefficient": 3.4190300102595165e-13,
+        "resistance_ref_ohm": 0.07604643108495358,
+        "capacity_ah": 71.17750103585657,
+        "ocv_offset_v": -7.0751502816664,
+        "ocv_scale": 0.6685510341516299
+      },
+      "cost": 6.6060126168365,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "physically_admissible_Cr": true,
+      "adopt_as_final_parameters": false
+    },
+    {
+      "Cr_lower_bound": -0.01,
+      "parameters": {
+        "drag_coefficient": 0.44845536694610444,
+        "rolling_coefficient": -0.0005289767341482969,
+        "resistance_ref_ohm": 0.07574735636014196,
+        "capacity_ah": 71.05771318452312,
+        "ocv_offset_v": -7.091692228555594,
+        "ocv_scale": 0.6660081907517917
+      },
+      "cost": 6.590933969314649,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "physically_admissible_Cr": false,
+      "adopt_as_final_parameters": false
+    }
+  ],
+  "hot_six_cycle_after_two_hour_parking": {
+    "parameter_set": "calibrated_v2_provisional",
+    "ambient_c": 40.0,
+    "repetitions": 6,
+    "parking_s": 7200.0,
+    "completed": true,
+    "baseline_feasible": true,
+    "optimized_feasible": true,
+    "baseline_energy_kwh": 14.932553796885246,
+    "optimized_energy_kwh": 13.277180400908229,
+    "saved_energy_kwh": 1.6553733959770174,
+    "battery_end_difference_c": -0.06231719581579398,
+    "cabin_end_difference_c": 3.161915174132446e-13,
+    "near_equal_thermal_end": true,
+    "valid_close_end_comparison": true,
+    "baseline_battery_final_c": 31.010839980858247,
+    "optimized_battery_final_c": 30.948522785042453,
+    "baseline_soc_final": 0.37413445550631336,
+    "optimized_soc_final": 0.43911387095771254,
+    "baseline_soc_outside_training_fraction": 0.9073611111111111,
+    "optimized_soc_outside_training_fraction": 0.9054166666666666,
+    "terminal_battery_heat_correction_kwh": 0.0,
+    "terminal_cabin_correction_kwh": 7.396292804988178e-15,
+    "corrected_energy_kwh": 13.277180400908236,
+    "raw_saving_pct": 11.085668389303299,
+    "heat_corrected_saving_pct": 11.085668389303251
+  },
+  "two_hour_parking": {
+    "passed": 18,
+    "total": 18
+  },
+  "sensor_exact_model": {
+    "passed": 30,
+    "total": 30,
+    "max_true_terminal_error_c": 0.001413840293935209
+  },
+  "sensor_mismatch_stress": {
+    "passed": 20,
+    "total": 60,
+    "failures": [
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.3032538289545741,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.26946981938848324,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.16665461614599764,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.1666864396570915,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.8335256315791675,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.8337856823979628,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.8312180526286426,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.8314781034472816,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.498269315787109,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 25.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.4980092649684913,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.5005768947376481,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 25.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.5003168439189771,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.31847508314849193,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.26946981938848324,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 2.666695394874292,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 2.5834110168323434,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 2.6667292287397046,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 2.583444489638694,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.833525631579203,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.8337856823978633,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.8312180526286603,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.831478103447278,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.4982693157870628,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 40.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.49800926496838116,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.5005768947376481,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": 40.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.5003168439191015,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.2694698193884939,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_heat_capacity_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.31876417345114305,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -5.666780575638704,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -5.583495836537601,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -5.666746737130119,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "cabin_conductance_plus20pct",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -5.583462288372452,
+        "failed_constraints": [
+          "cabin_comfort",
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.8335256315791995,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.8332655807606066,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": 0.8312180526286497,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "occupant_heat_plus50W",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": 0.8309580018101137,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.49826931578709477,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": -10.0,
+        "sensor_bias_c": -1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.49852936660568403,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "baseline",
+        "true_cabin_end_error_c": -0.5005768947377156,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      },
+      {
+        "case": "ambient_sensor_plus0.5C",
+        "ambient_c": -10.0,
+        "sensor_bias_c": 1.0,
+        "strategy": "optimized",
+        "true_cabin_end_error_c": -0.5008369455563226,
+        "failed_constraints": [
+          "cabin_terminal"
+        ]
+      }
+    ]
+  },
+  "transfer": {
+    "passed": 6,
+    "total": 9
+  },
+  "step_checks": {
+    "passed": 18,
+    "total": 18
+  },
+  "real_thermal_validation": false,
+  "real_sensor_calibration": false,
+  "capacity_conflict_resolved": false,
+  "no_new_untouched_measurements": true,
+  "old_evidence_retained": true
+}

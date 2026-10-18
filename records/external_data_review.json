@@ -1,0 +1,191 @@
+{
+  "date_beijing": "2026-10-18",
+  "scope": "Data discovery and feasibility; no new model fitting or adoption.",
+  "report": "docs/五项问题的后续方案与外部数据.md",
+  "cache_directory": "records/external_research_20261018",
+  "vehicle_identity": "User confirms no materials beyond official problem/attachments. All 3 problem pages and 4 complete workbooks reviewed: anonymous vehicle 455, no real vehicle/cell model. Attachment4 gives typical NCA/graphite reference only.",
+  "sources": [
+    {
+      "id": "epa_2026",
+      "provider": "US EPA",
+      "url": "https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy",
+      "download_url": "https://www.epa.gov/system/files/documents/2026-01/26-testcar-2026-01-21.xlsx",
+      "verification": "Original XLSX downloaded and parsed; Target/Set A,B,C and units confirmed.",
+      "local_file": "epa_2026_testcar.xlsx",
+      "all_rows": 3901,
+      "electricity_test_rows": 458,
+      "limitation": "Test records are not distinct BEVs. Anonymous vehicle 455 is not matched; target/set and force decomposition must not be conflated.",
+      "bytes": 1441771,
+      "sha256": "5329ecfdad1b271ae13fec9293fbc81d54a1c0d04af86a610ddca658851c99be"
+    },
+    {
+      "id": "oxford_1",
+      "provider": "University of Oxford",
+      "doi": "10.5287/bodleian:KO2kdmYGg",
+      "url": "https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac",
+      "verification": "Original README and first-cycle MAT downloaded; t,i,v,q,T arrays parsed.",
+      "local_file": "oxford_ExampleDC_C1.mat",
+      "license": "ODC-ODbL 1.0; contents DbCL 1.0, per original README.",
+      "limitation": "740mAh Kokam pouch cell at 40C. External cell-method validation only; no calibration uncertainty budget sufficient for a 0.1C project claim.",
+      "bytes": 72593,
+      "sha256": "144cdf5aec7467bcce5445e132495e8477f4e08d9963c221d8ba5d7970a7a97d"
+    },
+    {
+      "id": "nasa_pcoe",
+      "provider": "NASA PCoE",
+      "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+      "download_url": "https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip",
+      "verification": "Official listing read; download HEAD returned HTTP 200 with 209708670 bytes.",
+      "raw_file_downloaded": false,
+      "limitation": "Raw fields not inspected in this review."
+    },
+    {
+      "id": "south_china_cabin_v2",
+      "provider": "figshare / Wang, Zhenyu",
+      "doi": "10.6084/m9.figshare.31198795.v2",
+      "url": "https://doi.org/10.6084/m9.figshare.31198795.v2",
+      "verification": "DataCite registered metadata read; raw landing page and API returned HTTP 403.",
+      "raw_file_downloaded": false,
+      "license": "CC-BY-4.0 per registered metadata.",
+      "reported_fields": [
+        "seven-point cabin air temperatures",
+        "one-minute records",
+        "vehicle identity/model",
+        "occupancy",
+        "weather",
+        "velocity"
+      ],
+      "limitation": "Metadata-level candidate only; no raw file or temperature-accuracy audit completed."
+    },
+    {
+      "id": "pretoria_cabin_v1",
+      "provider": "University of Pretoria",
+      "doi": "10.25403/upresearchdata.31342786.v1",
+      "url": "https://doi.org/10.25403/upresearchdata.31342786.v1",
+      "verification": "DataCite registered metadata read; raw page returned HTTP 403.",
+      "raw_file_downloaded": false,
+      "license": "CC-BY-4.0 per registered metadata.",
+      "limitation": "Some HVAC energy in the description is projected, not measured. Original files not inspected."
+    },
+    {
+      "id": "calce",
+      "provider": "University of Maryland CALCE",
+      "url": "https://calce.umd.edu/battery-data",
+      "verification": "Original research-institution description and OCV/dynamic-test download links read.",
+      "raw_file_downloaded": false,
+      "limitation": "Battery chemistry/type must match; no cell-temperature raw fields verified in this review."
+    },
+    {
+      "id": "argonne_d3",
+      "provider": "Argonne National Laboratory",
+      "url": "https://www.anl.gov/amd/d3",
+      "verification": "HTTP 403; contents not read.",
+      "raw_file_downloaded": false,
+      "limitation": "Fallback lead only, not a verified dataset in this session."
+    }
+  ],
+  "diagnostics": {
+    "training_battery_evidence": [
+      {
+        "trip_id": 575,
+        "soc_min": 0.876829299927,
+        "soc_max": 1.0,
+        "near_zero_current_points": 91,
+        "longest_observed_low_current_span_s": 10.100000000000023,
+        "low_current_spans_at_least_60s": 0,
+        "dt_median_s": 0.8999999999999773,
+        "gaps_over_5s": 26,
+        "definition": "abs(measured discharge current)<2A; a gap>5s breaks the segment. This is an evidence-availability diagnostic, not an OCV relaxation certificate."
+      },
+      {
+        "trip_id": 596,
+        "soc_min": 0.8951219940190001,
+        "soc_max": 1.0,
+        "near_zero_current_points": 4,
+        "longest_observed_low_current_span_s": 0.8999999999999773,
+        "low_current_spans_at_least_60s": 0,
+        "dt_median_s": 0.30000000000001137,
+        "gaps_over_5s": 0,
+        "definition": "abs(measured discharge current)<2A; a gap>5s breaks the segment. This is an evidence-availability diagnostic, not an OCV relaxation certificate."
+      }
+    ],
+    "oxford_sample": {
+      "ch": {
+        "points": 840,
+        "fields": [
+          "T",
+          "i",
+          "q",
+          "t",
+          "v"
+        ],
+        "duration_s": 838.0,
+        "temperature_min_c": 40.1388,
+        "temperature_max_c": 40.9626
+      },
+      "dc": {
+        "points": 3145,
+        "fields": [
+          "T",
+          "i",
+          "q",
+          "t",
+          "v"
+        ],
+        "duration_s": 3144.0,
+        "temperature_min_c": 39.9266,
+        "temperature_max_c": 41.0874
+      }
+    },
+    "epa": {
+      "all_test_rows": 3901,
+      "electricity_test_rows": 458,
+      "displacement_counts": {
+        "0.001": 319,
+        "99.999": 128,
+        "0.01": 11
+      },
+      "road_load_fields": [
+        "Target Coef A (lbf)",
+        "Target Coef B (lbf/mph)",
+        "Target Coef C (lbf/mph**2)",
+        "Set Coef A (lbf)",
+        "Set Coef B (lbf/mph)",
+        "Set Coef C (lbf/mph**2)"
+      ],
+      "note": "Electricity rows are test records, not distinct vehicles; some may be plug-in hybrid electric-mode tests."
+    },
+    "existing_capacity_comparison": {
+      "reference160": {
+        "consumption_kwh_100km": 14.054196673039844,
+        "soc_initial": 0.8,
+        "soc_final": 0.7653049055076768,
+        "capacity_ah": 160.0
+      },
+      "comparison80": {
+        "consumption_kwh_100km": 14.054196673039844,
+        "soc_initial": 0.8,
+        "soc_final": 0.7303617375204787,
+        "capacity_ah": 80.0
+      }
+    },
+    "no_parameter_fit_or_model_replacement": true,
+    "source_hashes": {
+      "epa_2026_testcar.xlsx": "5329ecfdad1b271ae13fec9293fbc81d54a1c0d04af86a610ddca658851c99be",
+      "oxford_ExampleDC_C1.mat": "144cdf5aec7467bcce5445e132495e8477f4e08d9963c221d8ba5d7970a7a97d",
+      "oxford_readme.txt": "f04c8bdae97e98632b9daeaa7c71631990dbf5ecbf38711347fc470baefc0def"
+    }
+  },
+  "optional_research_dependencies": {
+    "requests": "2.32.3",
+    "beautifulsoup4": "4.12.3"
+  },
+  "model_changed": false,
+  "paper_results_changed": false,
+  "voltage_next_route": "1RC polarization and separate battery identification are candidates; no promised or measured improvement.",
+  "sensor_limit": "Unknown heat and bias are confounded; true 0.1C precision not guaranteed. Threshold is self-imposed, not contest-mandated.",
+  "capacity_policy": "Retain 160Ah reference and 80Ah energy-equivalent comparison; official conflict remains unresolved.",
+  "delivery_zip_scope": "Stage8 verified release, unchanged by this source review.",
+  "vehicle_identity_review": "records/external_research_20261018/vehicle_identity_review.json",
+  "additional_vehicle_information_pending": false
+}

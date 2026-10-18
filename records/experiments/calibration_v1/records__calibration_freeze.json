@@ -1,0 +1,40 @@
+{
+  "status": "training_frozen_before_test",
+  "train_trip_ids": [
+    575,
+    596
+  ],
+  "parameters": {
+    "drag_coefficient": 0.36158417026213685,
+    "rolling_coefficient": 0.012295835274517851,
+    "resistance_ref_ohm": 0.06708508691016639,
+    "capacity_ah": 88.13548487484323,
+    "ocv_offset_v": -7.755865278962593
+  },
+  "nuisance_only_parameters": {
+    "drag_coefficient": 0.28,
+    "rolling_coefficient": 0.01,
+    "resistance_ref_ohm": 0.1,
+    "capacity_ah": 80.76901786595447,
+    "ocv_offset_v": -6.565666935625743
+  },
+  "cost": 6.618415356139193,
+  "success": true,
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "active_bounds": {
+    "drag_coefficient": 0,
+    "rolling_coefficient": 0,
+    "resistance_ref_ohm": 0,
+    "capacity_ah": 0,
+    "ocv_offset_v": 0
+  },
+  "residual_calls": 65,
+  "elapsed_s": 5.298199599999862,
+  "multistart_costs": [
+    6.618415356139193,
+    6.619457224091408
+  ],
+  "protocol_sha256": "a9deb2666ae6913d72005c05ee334b4916690cf7aba12d94286ec2057f78d185",
+  "calibrated_sha256": "755010b7b9487baa843234f007e79281af5a2b5527084caa336be51856ee1e12",
+  "note": "No validation or test outcomes used to select these fit settings; nuisance-only comparison separates structure alignment from the requested three-parameter fit."
+}

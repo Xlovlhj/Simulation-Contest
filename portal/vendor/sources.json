@@ -1,0 +1,26 @@
+[
+  {
+    "path": "portal/vendor/mathjax-3.2.2-full.js",
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js",
+    "bytes": 2275113,
+    "sha256": "a4354ff94fd868aea0cc6eaaa79a57fda0588646fc46ee3700a349ee0a11cbe6"
+  },
+  {
+    "path": "portal/vendor/mathjax-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/mathjax/MathJax/3.2.2/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "portal/vendor/mermaid-9.4.3.js",
+    "url": "https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js",
+    "bytes": 2777841,
+    "sha256": "7b4a37258b1d8ea29a8dff5e39edb61618a8612cfd5a87d163874b2a8dc5e9da"
+  },
+  {
+    "path": "portal/vendor/mermaid-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid/v9.4.3/LICENSE",
+    "bytes": 1089,
+    "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+  }
+]

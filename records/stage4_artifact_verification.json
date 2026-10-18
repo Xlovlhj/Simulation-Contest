@@ -1,0 +1,47 @@
+{
+  "date_beijing": "2026-10-18T01:45:35+08:00",
+  "source_copies_and_external_originals": 9,
+  "control_fingerprint_unchanged": true,
+  "durability_fingerprint_unchanged": true,
+  "long_traces": [
+    {
+      "path": "results/timeseries/durability_-10C_baseline.csv",
+      "sha256": "11fe089788209d02e41a505975b57de4f682b9e5f5f1e23d8a78def58ffff527",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    },
+    {
+      "path": "results/timeseries/durability_-10C_optimized.csv",
+      "sha256": "66e64266834fda83aa147ec2ec8c95eea4e610b4ed350972286d1f3359097457",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    },
+    {
+      "path": "results/timeseries/durability_25C_baseline.csv",
+      "sha256": "e637ff24dd33880c91c99cd89b167d130509eea0228105c0817261bc7185148b",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    },
+    {
+      "path": "results/timeseries/durability_25C_optimized.csv",
+      "sha256": "589244d80107bd9593cd181dc06438509b1079983320a980fe57f3b90680ce37",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    },
+    {
+      "path": "results/timeseries/durability_40C_baseline.csv",
+      "sha256": "40d8ae6f2346a0fe29732b2cce3ba8c583df84b73dcf2eb8583c6111bf04d60a",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    },
+    {
+      "path": "results/timeseries/durability_40C_optimized.csv",
+      "sha256": "6a3b2e88db23767dfa9dc3feb37c69d2c093fc16540754fbaa9cb4de2e9605c8",
+      "rows": 25200,
+      "state_and_time_continuity": true
+    }
+  ],
+  "step_checks": 18,
+  "passed": true,
+  "scope": "Artifact identity and continuity; does not upgrade empirical validation or override recorded constraint failures."
+}

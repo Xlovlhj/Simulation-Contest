@@ -1,0 +1,26 @@
+﻿id,question,label,value,unit,source,selector_or_derivation,limitation
+BASE_CONSUMPTION,问题一,场景A百公里电耗,14.054196673039844,kWh/100km,results/tables/scenario_A_summary.json,consumption_kwh_100km,指定模型与条件下；不是实车总体保证
+BASE_SOC,问题一,场景A终SOC,76.53049055076768,%,results/tables/scenario_A_summary.json,soc_final × 100,指定模型与条件下；不是实车总体保证
+DISTANCE,问题一,场景A里程,14.47975,km,results/tables/scenario_A_summary.json,distance_km,指定模型与条件下；不是实车总体保证
+BASE_BALANCE,问题一,场景A母线残差,3.608224830031759e-16,kWh,results/tables/scenario_A_summary.json,dc_balance_residual_kwh,指定模型与条件下；不是实车总体保证
+VAL_ENERGY_BEFORE,问题二,588能耗APE校准前,16.480238355347076,%,results/tables/calibration_metrics.csv,"trip_id=588,variant=reference,column=energy_ape_pct",600为回顾；电压迁移失败须同时报告
+VAL_ENERGY_AFTER,问题二,588能耗APE联合校准后,0.8258702428321463,%,results/tables/calibration_metrics.csv,"trip_id=588,variant=joint_calibrated,column=energy_ape_pct",600为回顾；电压迁移失败须同时报告
+VAL_SOC_BEFORE,问题二,588 SOC RMSE校准前,3.987912075220483,百分点,results/tables/calibration_metrics.csv,"trip_id=588,variant=reference,column=soc_rmse_pp",600为回顾；电压迁移失败须同时报告
+VAL_SOC_AFTER,问题二,588 SOC RMSE联合校准后,2.660999566422777,百分点,results/tables/calibration_metrics.csv,"trip_id=588,variant=joint_calibrated,column=soc_rmse_pp",600为回顾；电压迁移失败须同时报告
+VAL_VOLT_BEFORE,问题二,588电压RMSE校准前,7.720249962534041,V,results/tables/calibration_metrics.csv,"trip_id=588,variant=reference,column=voltage_rmse_v",600为回顾；电压迁移失败须同时报告
+VAL_VOLT_AFTER,问题二,588电压RMSE联合校准后,15.03779892930574,V,results/tables/calibration_metrics.csv,"trip_id=588,variant=joint_calibrated,column=voltage_rmse_v",600为回顾；电压迁移失败须同时报告
+RETRO_VOLT_BEFORE,问题二,600回顾电压RMSE校准前,17.733453907435806,V,results/tables/calibration_metrics.csv,"trip_id=600,variant=reference,column=voltage_rmse_v",600为回顾；电压迁移失败须同时报告
+RETRO_VOLT_AFTER,问题二,600回顾电压RMSE联合校准后,25.65850219432968,V,results/tables/calibration_metrics.csv,"trip_id=600,variant=joint_calibrated,column=voltage_rmse_v",600为回顾；电压迁移失败须同时报告
+FIT_drag_coefficient,问题二,Cd冻结值,0.3644313190653388,见参数名,configs/calibrated.json,drag_coefficient,暂定校准，Cr靠边界，Q不是铭牌容量
+FIT_rolling_coefficient,问题二,Cr冻结值,0.0030244003378797767,见参数名,configs/calibrated.json,rolling_coefficient,暂定校准，Cr靠边界，Q不是铭牌容量
+FIT_resistance_ref_ohm,问题二,Rref / Ω冻结值,0.07128439597648727,见参数名,configs/calibrated.json,resistance_ref_ohm,暂定校准，Cr靠边界，Q不是铭牌容量
+FIT_capacity_ah,问题二,有效Q / Ah冻结值,74.41448629504069,见参数名,configs/calibrated.json,capacity_ah,暂定校准，Cr靠边界，Q不是铭牌容量
+FIT_ocv_offset_v,问题二,OCV偏移 / V冻结值,-8.08903531252147,见参数名,configs/calibrated.json,ocv_offset_v,暂定校准，Cr靠边界，Q不是铭牌容量
+CR_BOUND_PCT,问题二,主Cr落下界比例,52.0,%,results/tables/nonlinear_reliability.json,"summary: block_s=40, parameter=rolling_coefficient, at_lower_bound_fraction ×100",原工程边界；不是准确性或显著性证明
+SAVE_25,问题三,25℃单循环含理想热修正节能率,13.53867833947576,%,results/tables/control_evaluation.json,"nominal: strategy=optimized,ambient_c=25.0,heat_corrected_saving_pct",30分钟；SOC94%，未计预调耗电；理想终态核算
+SAVE_40,问题三,40℃单循环含理想热修正节能率,11.408529758916933,%,results/tables/control_evaluation.json,"nominal: strategy=optimized,ambient_c=40.0,heat_corrected_saving_pct",30分钟；SOC94%，未计预调耗电；理想终态核算
+SAVE_COLD,问题三,-10℃单循环含理想热修正节能率,0.8458291409667753,%,results/tables/control_evaluation.json,"nominal: strategy=optimized,ambient_c=-10.0,heat_corrected_saving_pct",30分钟；SOC94%，未计预调耗电；理想终态核算
+REC_25,问题三,25℃90分钟驾驶+两小时停车节能率,11.834610889370934,%,results/tables/durability_evaluation.json,"comparisons: parameter_set=calibrated_v2_provisional, repetitions=3,ambient_c=25.0,parking_s=7200,raw_saving_pct",含共同带电停车，预设热终态接近；低SOC外推，无实测热验证
+REC_40,问题三,40℃90分钟驾驶+两小时停车节能率,9.849856958855364,%,results/tables/durability_evaluation.json,"comparisons: parameter_set=calibrated_v2_provisional, repetitions=3,ambient_c=40.0,parking_s=7200,raw_saving_pct",含共同带电停车，预设热终态接近；低SOC外推，无实测热验证
+REC_COLD,问题三,-10℃90分钟驾驶+两小时停车节能率,0.6986301970571982,%,results/tables/durability_evaluation.json,"comparisons: parameter_set=calibrated_v2_provisional, repetitions=3,ambient_c=-10.0,parking_s=7200,raw_saving_pct",含共同带电停车，预设热终态接近；低SOC外推，无实测热验证
+FAILED_THERMAL,问题三,高温180分钟后两小时停车余温差,0.22535736092700986,℃,results/tables/durability_evaluation.json,"comparisons: calibrated_v2_provisional,40C,6cycles,parking_s=7200,battery_end_difference_c",超过预设0.2℃条件；不得列作热终态公平比较成功

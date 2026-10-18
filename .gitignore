@@ -1,0 +1,42 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local credentials and temporary files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Generated isolated runs and large duplicate extraction directories
+/reproduced/
+/REPRODUCTION_REPORT.json
+/records/package_checks/
+/records/extension_checks/
+/records/package_payload/
+/records/run_manifest.json
+
+# Original trajectories are retained in payload/trajectories.tar.xz
+/results/timeseries/
+/results/portal_checks/
+/results/final_checks/
+/results/videos/
+
+# Keep the current paper; omit duplicate delivery archives and private forms
+/交付材料/*.zip
+/交付材料/历史版本/
+/交付材料/待填写/
+/交付材料/待提交/
+
+# Retain the existing demonstration used by the offline portal.
+!/results/videos/
+/results/videos/*
+!/results/videos/C题_控制对照_开发样片.mp4

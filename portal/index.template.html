@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>C题 · 项目工作台</title>
+  <style>/*PORTAL:CSS*/</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="项目导航">
+      <a class="brand" href="#p=home"><span class="brand-mark" aria-hidden="true">C</span><span>项目工作台<small>仿真建模应用挑战赛 · 2026</small></span></a>
+      <div class="sidebar-caption">一份入口，接着把事情做好。</div>
+      <nav id="navigation" aria-label="内容页签"></nav>
+      <div class="sidebar-footer"><span class="status-dot"></span>离线可用<span id="build-date"></span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <button id="menu-toggle" type="button" class="button compact mobile-menu" aria-expanded="false" aria-controls="navigation">目录</button>
+        <div class="breadcrumb"><span>C题</span><span aria-hidden="true">/</span><strong id="current-label">首页</strong></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="global-search" type="search" placeholder="搜索计划、原理、结果…" aria-label="全文搜索"><kbd aria-hidden="true">Ctrl K</kbd></label>
+      </header>
+      <main id="main" tabindex="-1"><div id="content"></div></main>
+      <footer class="page-footer"><span>一步一步，留下可以复核的结果。</span><button id="about-button" class="text-button" type="button">使用说明</button></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="detail-dialog" aria-label="查看详情"><div class="dialog-heading"><h2 id="dialog-title"></h2><button class="button compact" id="close-dialog" type="button">关闭</button></div><div id="dialog-body"></div></dialog>
+  <input id="learning-import" type="file" accept="application/json,.json" hidden>
+  <script id="portal-data" type="application/json">/*PORTAL:DATA*/</script>
+  <script>
+    window.MathJax = {startup:{typeset:false}, svg:{fontCache:'local'}, tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true}, options:{enableMenu:false}};
+  </script>
+  <script>/*PORTAL:MATHJAX*/</script>
+  <script>/*PORTAL:MERMAID*/</script>
+  <script>/*PORTAL:APP*/</script>
+</body>
+</html>

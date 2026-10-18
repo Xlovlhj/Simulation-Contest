@@ -1,0 +1,44 @@
+{
+  "date_beijing": "2026-10-18T17:48:41+08:00",
+  "passed": true,
+  "environment": "Same installed Python 3.12 environment, two fresh ZIP extractions; not a fresh OS or virtual environment.",
+  "scope": "Default frozen-evidence reproduction. Team manual review and independent core work have not started.",
+  "results": {
+    "support": {
+      "package_sha256_at_runtime": "dc7a20312eabfe3a2a627b23007ed10a05a78bfbeae778847a23b572140b6530",
+      "exit_code": 0,
+      "scientific_tests_passed": 34,
+      "numeric_metrics_compared": 17,
+      "full_nonlinear_300_refits_recomputed": false
+    },
+    "team": {
+      "package_sha256_at_runtime": "d1ee0f59d7b7b3313cec0c372231c48a31ae10f3beae2507b1a09ede571d4b04",
+      "exit_code": 0,
+      "scientific_tests_passed": 34,
+      "numeric_metrics_compared": 17,
+      "full_nonlinear_300_refits_recomputed": false
+    }
+  },
+  "stage8": {
+    "date_beijing": "2026-10-18T15:45:55+08:00",
+    "passed": true,
+    "analytical_checks_passed": 6,
+    "new_training_and_thermal_experiments_recomputed": true,
+    "numeric_values_compared": 202,
+    "source_record": "records/remediation_runtime_verification.json",
+    "rerun_during_finalization": false,
+    "retained_after_hash_verification": true
+  },
+  "note": "Final ZIPs were freshly extracted and verify/prepare/all passed on this installed environment. Final record/UI-only repacking is checked against the executed numerical code, inputs and frozen results; prior stage8/stage10 full recomputations retained with matching source/result hashes. No new independent data, fresh OS, or human review claimed.",
+  "stage10": {
+    "passed": true,
+    "analytical_checks": 7,
+    "numeric_values_compared": 1791,
+    "full_recompute": true,
+    "environment": "Same installed Python environment; fresh team ZIP extraction and isolated full recompute.",
+    "source_record": "records/extension_package_runtime_verification.json",
+    "date_beijing": "2026-10-18T16:51:53.028207",
+    "rerun_during_finalization": false,
+    "retained_after_hash_verification": true
+  }
+}

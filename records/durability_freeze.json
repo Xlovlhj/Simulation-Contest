@@ -1,0 +1,17 @@
+{
+  "status": "evaluation_protocol_fixed_before_runs",
+  "fingerprint": {
+    "configs/durability_protocol.json": "eaa4d1b94887aa9837e0dc3914bb41c1c6a2e4c2d42b2d7a910f3f559b1fe4a3",
+    "configs/control_protocol.json": "4d522929132cfdd2d60bd81e5044c6271c8007ec667760c02665021c3408390d",
+    "configs/calibrated.json": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+    "configs/reference.json": "40914f8d6c634cf3efc5ef3dbe60fec6fed75e6af8f42be3032c3f84540791bc",
+    "configs/optimized_rule.json": "0197251af6fb6c0b326227171fcb153b00722a203f5a9b7b6f45641e660d623a",
+    "records/control_freeze.json": "f6932d196ae47f98d28a6fa19388871766f4fcf9b9a9c981607d8e0da3c10ec4",
+    "records/cltc_downloads.json": "5a81b70a59012eeb4dcff7d0262d66a47b445c3f828bc6014bbd6982337d7f57",
+    "src/bev/model.py": "9fc59f63a370c25ad217bcbf84f536d5c21b18347cbabae4a82b80803fbc5d12",
+    "src/bev/control.py": "5b0b2e238e76672913d4f06e20eb7d07ca77f2dffb222818424d24258a5332ba",
+    "src/bev/durability.py": "3ce8974fc7d6ae46d12139b03837e13f1e85ef7e236dabdaef447d3afa8204b8",
+    "checks/test_durability.py": "21232dc7363e13e4140590ced0c9933c11b8a3ae23eec16ea5924ffc18e2c2ce"
+  },
+  "retuning": false
+}

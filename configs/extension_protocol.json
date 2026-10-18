@@ -1,0 +1,57 @@
+{
+  "version": "stage10_external_and_RC_v1",
+  "context": "Designed after known failures; existing 588/600 results already viewed; all new evaluation is retrospective.",
+  "execution_order": ["road", "temperature", "sensor", "voltage"],
+  "train_trip_ids": [575, 596],
+  "evaluation_trip_ids": [588, 600],
+  "road": {
+    "source": "EPA 2026 Test Car List, Target A/B/C only",
+    "fuel_type": "Electricity",
+    "mass_ratio_bounds": [0.8, 1.25],
+    "deduplicate_by": ["Represented Test Veh Make", "Represented Test Veh Model", "Test Vehicle ID", "Equivalent Test Weight (lbs.)"],
+    "duplicate_policy": "Median each target coefficient within configuration; each configuration equal weight, not each drive-cycle test.",
+    "require": "Finite A/B/C/weight; A>0, C>0, positive total force at 20/50/80/100/120 km/h",
+    "proxy": "Median A/(test_weight_kg*g); reference constant-road-load equivalent, NOT a measured pure tire Cr.",
+    "experiment": "Fix Cr at this proxy and refit other five stage8 parameters on training only. Compare objective, not claim a same-car rolling-resistance measurement.",
+    "fit_max_nfev": 60,
+    "provenance": "Electricity-mode rows may include PHEV; cohort is not certified BEV-only. Equivalent test weight is not curb mass. Target A includes non-tire contributions."
+  },
+  "temperature": {
+    "data": "Oxford ExampleDC_C1, original measured I/V/T; 740mAh different cell, chamber40C",
+    "fit": "First60% of dynamic-discharge samples",
+    "evaluation": "Last40% of same discharge, continuous forward temperature, no reset or measured-T correction",
+    "model": "dT/dt=a*I^2-b*(T-40), a=R_heat/C, b=H/C positive; measured I is external-cell excitation, no vehicle-model fitting",
+    "bounds_a": [0.000001, 0.1],
+    "bounds_b": [0.000001, 0.1],
+    "starts": [[0.002, 0.002], [0.01, 0.01]],
+    "baselines": ["train_end_temperature_persistence", "train_mean_temperature", "ambient40C"],
+    "claim": "One-cell one-cycle temporal extrapolation only; no independent-cell validation, no target-pack/cabin precision guarantee, no separate R/C/H identification"
+  },
+  "sensor": {
+    "decision": "Use guarded direct sensor feedback; observer is exploratory only. Comfort22-26C and terminal energy accounting; no claim true24+-0.1C.",
+    "bias_c": [-1.0, 1.0],
+    "noise_amplitude_c": 0.05,
+    "guard_margin_c": 1.1,
+    "temperatures_c": [25.0, 40.0, -10.0],
+    "stress_cases": ["nominal", "capacity_plus20pct", "conductance_plus20pct", "occupant_plus50W", "ambient_plus0.5C"],
+    "rules": "Existing baseline and optimized rules, common guard and common pre-arrival cooling, same injected biases for paired strategies",
+    "certification": "Uncertainty values are scenario assumptions, not calibrated error bounds. Sampled cases are not exhaustive robust certification.",
+    "terminal_accounting": "Upper diagnostic adds Cc*(abs(Topt-Tbase)+2*1.05)/min(COP,heater_efficiency) and positive battery excess heat including2*1C in warm/hot cases. Idealized electricity estimate, not a guaranteed hardware bound."
+  },
+  "voltage": {
+    "model": "One-RC Thevenin plus stage8 positive OCV scaling; full forward vehicle current/SOC/voltage; exact constant-current RC average and heat/storage balance each substep",
+    "names": ["drag_coefficient", "rolling_coefficient", "resistance_ref_ohm", "capacity_ah", "ocv_offset_v", "ocv_scale", "polarization_resistance_ohm", "polarization_tau_s"],
+    "lower": [0.12, 0.003, 0.005, 20.0, -30.0, 0.1, 0.0001, 1.0],
+    "upper": [0.6, 0.03, 0.3, 180.0, 15.0, 2.0, 0.3, 1000.0],
+    "starts_rc": [[0.02, 10.0], [0.06, 120.0]],
+    "initial_vp_v": 0.0,
+    "initial_vp_training_sensitivity_v": [-5.0, 5.0],
+    "max_nfev": 65,
+    "diff_step": 0.001,
+    "fit_step_s": 1.0,
+    "evaluation_step_s": 0.5,
+    "training_selection": "Smallest unchanged calibration composite objective among declared starts; freeze before new 588/600 evaluation. No retuning after evaluation.",
+    "adoption_gate": "Retrospective voltage RMSE >=10% lower than stage8 on each evaluated trip; energy APE <= original+0.5pp and SOC RMSE <= original+0.2pp on each trip; no physical failures and energy/step checks pass. Otherwise keep old whole-vehicle model, permit labeling a limited diagnostic winner.",
+    "limits": "Zero initial polarization is an assumption, no long rest confirmed. Bounds are engineering search ranges, not CIs. Does not solve low-SOC extrapolation."
+  }
+}

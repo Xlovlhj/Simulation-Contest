@@ -1,0 +1,104 @@
+{
+  "train_only": true,
+  "fingerprint": {
+    "protocol_sha256": "d909fe6ef45f269b6a6bc47870f0c5d36e0eaf6613e502b0a131ba00b7d0ddd2",
+    "parameters_sha256": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+    "model_sha256": "9fc59f63a370c25ad217bcbf84f536d5c21b18347cbabae4a82b80803fbc5d12",
+    "calibration_code_sha256": "a71ee671af686e60676d2555fe0c6c8d4679970ae63be79709c41ece047d2d36"
+  },
+  "trip_ids": [
+    575,
+    596
+  ],
+  "rows": [
+    {
+      "fixed_Cr": 0.003,
+      "training_cost": 7.530265959364003,
+      "success": true,
+      "nfev": 2,
+      "drag_coefficient": 0.3646562889302204,
+      "rolling_coefficient": 0.003,
+      "resistance_ref_ohm": 0.07148708254891901,
+      "capacity_ah": 74.42561535272215,
+      "ocv_offset_v": -8.081385090093208,
+      "delta_cost_from_frozen": 0.005388453488237133
+    },
+    {
+      "fixed_Cr": 0.0030244003378797767,
+      "training_cost": 7.524877194870498,
+      "success": true,
+      "nfev": 5,
+      "drag_coefficient": 0.36442987044099706,
+      "rolling_coefficient": 0.0030244003378797767,
+      "resistance_ref_ohm": 0.07128681123129278,
+      "capacity_ah": 74.41503292039427,
+      "ocv_offset_v": -8.088996862168331,
+      "delta_cost_from_frozen": -3.1100526776128845e-07
+    },
+    {
+      "fixed_Cr": 0.004,
+      "training_cost": 7.896397380366623,
+      "success": true,
+      "nfev": 4,
+      "drag_coefficient": 0.34216939743896185,
+      "rolling_coefficient": 0.004,
+      "resistance_ref_ohm": 0.0720748656294597,
+      "capacity_ah": 74.63159945924441,
+      "ocv_offset_v": -8.034042154861716,
+      "delta_cost_from_frozen": 0.37151987449085677
+    },
+    {
+      "fixed_Cr": 0.006,
+      "training_cost": 8.976927240176124,
+      "success": true,
+      "nfev": 5,
+      "drag_coefficient": 0.29614971066803714,
+      "rolling_coefficient": 0.006,
+      "resistance_ref_ohm": 0.07323867389905021,
+      "capacity_ah": 75.0834656106094,
+      "ocv_offset_v": -7.942498755409954,
+      "delta_cost_from_frozen": 1.452049734300358
+    },
+    {
+      "fixed_Cr": 0.008,
+      "training_cost": 10.479370791506831,
+      "success": true,
+      "nfev": 5,
+      "drag_coefficient": 0.24986181158916101,
+      "rolling_coefficient": 0.008,
+      "resistance_ref_ohm": 0.07414192679045419,
+      "capacity_ah": 75.59545704187074,
+      "ocv_offset_v": -7.867721441532933,
+      "delta_cost_from_frozen": 2.954493285631065
+    },
+    {
+      "fixed_Cr": 0.012,
+      "training_cost": 14.737977859528803,
+      "success": true,
+      "nfev": 7,
+      "drag_coefficient": 0.1554835498008866,
+      "rolling_coefficient": 0.012,
+      "resistance_ref_ohm": 0.07493957509382307,
+      "capacity_ah": 76.74292737959911,
+      "ocv_offset_v": -7.7796520403838985,
+      "delta_cost_from_frozen": 7.2131003536530365
+    },
+    {
+      "fixed_Cr": 0.02,
+      "training_cost": 36.1357515558468,
+      "success": true,
+      "nfev": 7,
+      "drag_coefficient": 0.12000000000016103,
+      "rolling_coefficient": 0.02,
+      "resistance_ref_ohm": 0.07817586953223592,
+      "capacity_ah": 87.32768161453959,
+      "ocv_offset_v": -7.230162447363349,
+      "delta_cost_from_frozen": 28.610874049971038
+    }
+  ],
+  "frozen_cost": 7.524877505875766,
+  "minimum_profile_cost": 7.524877194870498,
+  "freeze_unchanged": true,
+  "statistical_CI": false,
+  "note": "Each row is a local constrained refit; no chi-square cutoff is justified for the composite, correlated residual objective."
+}

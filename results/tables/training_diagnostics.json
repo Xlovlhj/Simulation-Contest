@@ -1,0 +1,39 @@
+{
+  "train_only": true,
+  "trip_ids": [
+    575,
+    596
+  ],
+  "shared_coulomb_capacity_initial_ah": 71.20615783456402,
+  "initial_capacity_not_true_rating": true,
+  "trip_diagnostics": [
+    {
+      "trip_id": 575,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 14.332644411348845,
+      "conditioned_distance_km": 14.330977160237154,
+      "distance_relative_change": -0.00011632543610519634,
+      "battery_initial_assumed_environment_c": 6.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit.",
+      "reference_soc_rmse_pp": 3.80685233074579,
+      "reference_voltage_rmse_v": 9.76342732663239,
+      "reference_energy_kwh": 2.7488515439820436,
+      "measured_energy_kwh": 2.15422753125
+    },
+    {
+      "trip_id": 596,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 12.669104705263901,
+      "conditioned_distance_km": 12.672377295738299,
+      "distance_relative_change": 0.00025831268669186913,
+      "battery_initial_assumed_environment_c": 1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit.",
+      "reference_soc_rmse_pp": 2.7896729067723927,
+      "reference_voltage_rmse_v": 12.360608533729408,
+      "reference_energy_kwh": 2.844765019750377,
+      "measured_energy_kwh": 2.7048381215277786
+    }
+  ]
+}

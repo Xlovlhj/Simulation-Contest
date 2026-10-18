@@ -1,0 +1,154 @@
+{
+  "date_beijing": "2026-10-18T17:37:12+08:00",
+  "paper_sha256": "5476d2f7a737ba02809c82f0223a6a445765a7953a8537e8b6485027a8109018",
+  "paper_pages": 19,
+  "paper_bytes": 2579901,
+  "paper_under_20_MB": true,
+  "official_inputs_unchanged": 9,
+  "original_scientific_sources_unchanged": 66,
+  "current_build_sources_checked": 120,
+  "tables": 15,
+  "numbered_equations": 12,
+  "reference_first_appearance_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "abstract_no_math_figures_or_tables": true,
+  "appendix_start_page": 19,
+  "appendix_pages": 1,
+  "pdf_metadata_and_visible_identity_pattern_check": true,
+  "continuous_centered_pagination": true,
+  "pdf_first_page_abstract_second_page_contents": true,
+  "word_author_properties_empty": true,
+  "page_summary": [
+    {
+      "page": 1,
+      "text_characters": 809,
+      "images": 0,
+      "footer": "1"
+    },
+    {
+      "page": 2,
+      "text_characters": 662,
+      "images": 0,
+      "footer": "2"
+    },
+    {
+      "page": 3,
+      "text_characters": 1245,
+      "images": 0,
+      "footer": "3"
+    },
+    {
+      "page": 4,
+      "text_characters": 1111,
+      "images": 0,
+      "footer": "4"
+    },
+    {
+      "page": 5,
+      "text_characters": 690,
+      "images": 0,
+      "footer": "5"
+    },
+    {
+      "page": 6,
+      "text_characters": 679,
+      "images": 0,
+      "footer": "6"
+    },
+    {
+      "page": 7,
+      "text_characters": 298,
+      "images": 1,
+      "footer": "7"
+    },
+    {
+      "page": 8,
+      "text_characters": 905,
+      "images": 0,
+      "footer": "8"
+    },
+    {
+      "page": 9,
+      "text_characters": 846,
+      "images": 0,
+      "footer": "9"
+    },
+    {
+      "page": 10,
+      "text_characters": 436,
+      "images": 1,
+      "footer": "10"
+    },
+    {
+      "page": 11,
+      "text_characters": 903,
+      "images": 0,
+      "footer": "11"
+    },
+    {
+      "page": 12,
+      "text_characters": 1213,
+      "images": 1,
+      "footer": "12"
+    },
+    {
+      "page": 13,
+      "text_characters": 1005,
+      "images": 0,
+      "footer": "13"
+    },
+    {
+      "page": 14,
+      "text_characters": 1234,
+      "images": 0,
+      "footer": "14"
+    },
+    {
+      "page": 15,
+      "text_characters": 475,
+      "images": 1,
+      "footer": "15"
+    },
+    {
+      "page": 16,
+      "text_characters": 737,
+      "images": 1,
+      "footer": "16"
+    },
+    {
+      "page": 17,
+      "text_characters": 1185,
+      "images": 1,
+      "footer": "17"
+    },
+    {
+      "page": 18,
+      "text_characters": 2124,
+      "images": 0,
+      "footer": "18"
+    },
+    {
+      "page": 19,
+      "text_characters": 1193,
+      "images": 0,
+      "footer": "19"
+    }
+  ],
+  "visual_review": {
+    "reviewer": "Codex",
+    "paper": "All 19 pages overview and selected full-size details reviewed",
+    "ai_disclosure": "All 5 pages individually reviewed",
+    "team_manual_review": "incomplete_user_confirmed"
+  },
+  "passed_machine_checks": true,
+  "scope": "PDF structure, identity patterns, current source/result consistency and file integrity; not team manual review or real-vehicle validation."
+}

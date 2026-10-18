@@ -1,0 +1,19 @@
+{
+  "train_only": true,
+  "fit_trip_ids": [
+    575,
+    596
+  ],
+  "parameter": "rolling_coefficient",
+  "grid": [
+    0.003,
+    0.0030244003378797767,
+    0.004,
+    0.006,
+    0.008,
+    0.012,
+    0.02
+  ],
+  "rule": "Fix Cr and reoptimize other four parameters from frozen solution; diagnostic only, do not select parameters using evaluation trips.",
+  "statistical_CI": false
+}

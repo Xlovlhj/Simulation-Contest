@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "official_sources_unchanged": 9,
+  "old_evidence_sources_unchanged": 66,
+  "new_numeric_recompute_matches": 1791,
+  "paper_pages": 20,
+  "ai_pages": 5,
+  "pdf_new_values_checked": true,
+  "source_output_hashes_checked": true,
+  "visual_review": "Codex:20-page overview, new5.6/6.7/refs/appendix details; all5 AI PDF pages checked.",
+  "paper_sha256": "a7cd415c914f88e314bc587bb23c6f1600b9b73c44d3630245e8bf7082d4bdd7",
+  "ai_pdf_sha256": "a7e4a8b818a66eb054f483298195ffbfa25f155eda3f6dd52d2f38e7dfc0ceed"
+}

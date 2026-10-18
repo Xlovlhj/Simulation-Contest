@@ -1,0 +1,107 @@
+{
+  "scores": [
+    {
+      "variant": "thermal_I_squared",
+      "role": "train",
+      "rmse_c": 0.0918103258042636,
+      "max_abs_error_c": 0.3613138443925976
+    },
+    {
+      "variant": "thermal_I_squared",
+      "role": "temporal_holdout",
+      "rmse_c": 0.5430878963329612,
+      "max_abs_error_c": 0.9833161363889005
+    },
+    {
+      "variant": "train_end_persistence",
+      "role": "train",
+      "rmse_c": 0.1885085769746419,
+      "max_abs_error_c": 0.827300000000001
+    },
+    {
+      "variant": "train_end_persistence",
+      "role": "temporal_holdout",
+      "rmse_c": 0.5321169564950037,
+      "max_abs_error_c": 0.9861000000000004
+    },
+    {
+      "variant": "train_mean",
+      "role": "train",
+      "rmse_c": 0.1675295915287025,
+      "max_abs_error_c": 0.7408747747747739
+    },
+    {
+      "variant": "train_mean",
+      "role": "temporal_holdout",
+      "rmse_c": 0.46068422836522427,
+      "max_abs_error_c": 0.8996747747747733
+    },
+    {
+      "variant": "ambient40",
+      "role": "train",
+      "rmse_c": 0.25160867279097415,
+      "max_abs_error_c": 0.928600000000003
+    },
+    {
+      "variant": "ambient40",
+      "role": "temporal_holdout",
+      "rmse_c": 0.6207168488439733,
+      "max_abs_error_c": 1.0874000000000024
+    }
+  ],
+  "fit_runs": [
+    {
+      "estimate": [
+        -8.367405702882895,
+        -5.548019125391575
+      ],
+      "cost": 7.952889744562927,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "active_mask": [
+        0,
+        0
+      ],
+      "runtime_s": 0.11014450000038778,
+      "a_b": [
+        0.00023231747317247194,
+        0.0038951654407867395
+      ]
+    },
+    {
+      "estimate": [
+        -8.367400148616284,
+        -5.548015862182356
+      ],
+      "cost": 7.952889745305828,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 14,
+      "active_mask": [
+        0,
+        0
+      ],
+      "runtime_s": 0.1262950999998793,
+      "a_b": [
+        0.00023231876352923985,
+        0.0038951781515472552
+      ]
+    }
+  ],
+  "train_samples": 1887,
+  "holdout_samples": 1258,
+  "train_temperature_range_c": [
+    39.9266,
+    40.9286
+  ],
+  "holdout_temperature_range_c": [
+    40.0639,
+    41.0874
+  ],
+  "a_R_over_C": 0.00023231747317247194,
+  "b_H_over_C": 0.0038951654407867395,
+  "target_vehicle_measured_precision_solved": false,
+  "independent_cell_validation": false,
+  "claim": "One-cell one-cycle temporal extrapolation only; no independent-cell validation, no target-pack/cabin precision guarantee, no separate R/C/H identification"
+}

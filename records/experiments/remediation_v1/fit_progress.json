@@ -1,0 +1,52 @@
+{
+  "runs": [
+    {
+      "initial_ocv_scale": 0.3,
+      "estimate": [
+        0.36673860840961436,
+        0.0030000000170117367,
+        0.07734194583910366,
+        71.91277510098924,
+        -7.006144868298035,
+        0.6833724234934914
+      ],
+      "cost": 7.223487805336358,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 4,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "runtime_s": 1.6362917000000152
+    },
+    {
+      "initial_ocv_scale": 1.0,
+      "estimate": [
+        0.3667408613330034,
+        0.003000000000042137,
+        0.0773488242843743,
+        71.91257048795896,
+        -7.005850852464595,
+        0.6833779626352005
+      ],
+      "cost": 7.22348778617047,
+      "success": true,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "nfev": 5,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "runtime_s": 2.0112967000000026
+    }
+  ]
+}

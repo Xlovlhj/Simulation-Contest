@@ -1,0 +1,122 @@
+{
+  "fingerprint": {
+    "protocol_sha256": "d909fe6ef45f269b6a6bc47870f0c5d36e0eaf6613e502b0a131ba00b7d0ddd2",
+    "parameter_sha256": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+    "code_sha256": "9e509ba4312c3e25fa9d778fa6a56084c60ef5216b3797df6777883b4a183c06",
+    "model_sha256": "9fc59f63a370c25ad217bcbf84f536d5c21b18347cbabae4a82b80803fbc5d12"
+  },
+  "train_only": true,
+  "trips": [
+    575,
+    596
+  ],
+  "battery_diagnostics": [
+    {
+      "trip_id": 575,
+      "soc_min": 0.876829299927,
+      "soc_max": 1.0,
+      "coulomb_least_squares_effective_capacity_ah": 54.64346317375441,
+      "capacity_observation_rmse_pp": 1.4265322721701128,
+      "diagnostic_ocv_at_soc095_v": 387.8757033908985,
+      "diagnostic_ocv_slope_v_per_soc": 59.74499530780103,
+      "diagnostic_ols_Rref_ohm": 0.05173375132919961,
+      "near_zero_current_points": 91,
+      "near_zero_current_SOC_span": 0.12317070007300002,
+      "warning": "Uses measured current/SOC and ambient as a proxy for battery temperature. Diagnostic regression only, not a forward validation or a true OCV measurement."
+    },
+    {
+      "trip_id": 596,
+      "soc_min": 0.8951219940190001,
+      "soc_max": 1.0,
+      "coulomb_least_squares_effective_capacity_ah": 88.72006648875312,
+      "capacity_observation_rmse_pp": 1.8669731895833264,
+      "diagnostic_ocv_at_soc095_v": 383.71725603812604,
+      "diagnostic_ocv_slope_v_per_soc": 98.10895494972672,
+      "diagnostic_ols_Rref_ohm": 0.06417548913723807,
+      "near_zero_current_points": 4,
+      "near_zero_current_SOC_span": 0.10487800598099994,
+      "warning": "Uses measured current/SOC and ambient as a proxy for battery temperature. Diagnostic regression only, not a forward validation or a true OCV measurement."
+    }
+  ],
+  "weight_variations": [
+    {
+      "variation": "frozen",
+      "drag_coefficient": 0.3644313190653388,
+      "rolling_coefficient": 0.0030244003378797767,
+      "resistance_ref_ohm": 0.07128439597648727,
+      "capacity_ah": 74.41448629504069,
+      "ocv_offset_v": -8.08903531252147,
+      "train_soc_rmse_macro_pp": 2.0793057270650124,
+      "train_energy_mape_pct": 3.5116585924927533,
+      "optimizer_success": true
+    },
+    {
+      "variation": "voltage_weight_half",
+      "drag_coefficient": 0.3629171788558997,
+      "rolling_coefficient": 0.0030000000028710633,
+      "resistance_ref_ohm": 0.07065347061101379,
+      "capacity_ah": 72.24416167972765,
+      "ocv_offset_v": -7.906231444503144,
+      "train_soc_rmse_macro_pp": 2.0696060971848134,
+      "train_energy_mape_pct": 3.531125552762184,
+      "optimizer_success": true
+    },
+    {
+      "variation": "voltage_weight_double",
+      "drag_coefficient": 0.3644313735283986,
+      "rolling_coefficient": 0.003024400191390064,
+      "resistance_ref_ohm": 0.07128438886359015,
+      "capacity_ah": 74.41496713781862,
+      "ocv_offset_v": -8.089031830343204,
+      "train_soc_rmse_macro_pp": 2.0793089675694763,
+      "train_energy_mape_pct": 3.5116569504616804,
+      "optimizer_success": true
+    },
+    {
+      "variation": "soc_weight_half",
+      "drag_coefficient": 0.36443114339806054,
+      "rolling_coefficient": 0.003024400072611106,
+      "resistance_ref_ohm": 0.07128439792613506,
+      "capacity_ah": 74.41493516771251,
+      "ocv_offset_v": -8.089032129266407,
+      "train_soc_rmse_macro_pp": 2.0793088267170035,
+      "train_energy_mape_pct": 3.5116636551471765,
+      "optimizer_success": true
+    },
+    {
+      "variation": "soc_weight_double",
+      "drag_coefficient": 0.365048855195787,
+      "rolling_coefficient": 0.003000000067646305,
+      "resistance_ref_ohm": 0.06901599414218877,
+      "capacity_ah": 72.3307757008389,
+      "ocv_offset_v": -7.969511766463089,
+      "train_soc_rmse_macro_pp": 2.0695311564441257,
+      "train_energy_mape_pct": 3.4684825144230924,
+      "optimizer_success": true
+    },
+    {
+      "variation": "energy_weight_half",
+      "drag_coefficient": 0.37723197859014235,
+      "rolling_coefficient": 0.003000000002344701,
+      "resistance_ref_ohm": 0.07082191956650133,
+      "capacity_ah": 75.15160266377221,
+      "ocv_offset_v": -8.088698680448775,
+      "train_soc_rmse_macro_pp": 2.0735489372898135,
+      "train_energy_mape_pct": 3.3182972631238314,
+      "optimizer_success": true
+    },
+    {
+      "variation": "energy_weight_double",
+      "drag_coefficient": 0.3608564993633721,
+      "rolling_coefficient": 0.0030000000000019304,
+      "resistance_ref_ohm": 0.07263434996720956,
+      "capacity_ah": 74.22145786506935,
+      "ocv_offset_v": -8.042468711566299,
+      "train_soc_rmse_macro_pp": 2.080300721344237,
+      "train_energy_mape_pct": 3.591696368565499,
+      "optimizer_success": true
+    }
+  ],
+  "frozen_unchanged": true,
+  "conclusion": "Only high-SOC observations constrain the OCV correction; low-SOC transfer cannot be repaired or certified from these training data. Weight sensitivity is structural evidence, not another confidence interval."
+}

@@ -1,0 +1,202 @@
+{
+  "stage": 10,
+  "road_external_proxy": 0.0075480097974832535,
+  "road_configurations": 10,
+  "road_training_cost_increase_pct": 35.884737711744755,
+  "Cr_reliability_solved": false,
+  "capacity_treatment": "160Ah reference + 80Ah energy-equivalent scenario; conflict disclosed, not resolved",
+  "external_temperature_holdout_rmse_c": {
+    "thermal_I_squared": 0.5430878963329612,
+    "train_end_persistence": 0.5321169564950037,
+    "train_mean": 0.46068422836522427,
+    "ambient40": 0.6207168488439733
+  },
+  "target_real_thermal_precision_solved": false,
+  "guarded_sensor_trials": 60,
+  "guarded_practical_pass": 59,
+  "guarded_strict_terminal_pass": 0,
+  "guarded_pairs_pass": 29,
+  "positive_ideal_adjusted_pairs": 20,
+  "practical_and_positive_ideal_adjusted_pairs": 20,
+  "sensor_failures": [
+    {
+      "ambient_c": -10.0,
+      "case": "conductance_plus20pct",
+      "sensor_bias_c": 1.0,
+      "strategy": "optimized",
+      "constraints": {
+        "cabin_comfort": false,
+        "cabin_terminal": false,
+        "battery_temperature": true,
+        "battery_hot_terminal": true,
+        "compressor_budget": true,
+        "minimum_switch_dwell": true
+      },
+      "cabin_final_c": 22.83130041079915,
+      "battery_final_c": -9.445026919480153
+    }
+  ],
+  "real_sensor_bias_calibrated": false,
+  "voltage_metrics": [
+    {
+      "trip_id": 575,
+      "variant": "original_Rint",
+      "role": "train",
+      "energy_ape_pct": 5.452570187795739,
+      "soc_rmse_pp": 2.08815803693361,
+      "voltage_rmse_v": 3.6637979899149813,
+      "max_electrical_balance_residual_w": 5.5138116294983774e-12,
+      "max_thermal_balance_residual_w": 2.8421265341194157e-10,
+      "energy_kwh": 2.2716882993962257
+    },
+    {
+      "trip_id": 575,
+      "variant": "stage8_OCV_scaled",
+      "role": "train",
+      "energy_ape_pct": 5.405369759400072,
+      "soc_rmse_pp": 1.9956895018566714,
+      "voltage_rmse_v": 3.229655512537572,
+      "max_electrical_balance_residual_w": 5.7980287238024175e-12,
+      "max_thermal_balance_residual_w": 2.841642476880679e-10,
+      "energy_kwh": 2.2706714947728583
+    },
+    {
+      "trip_id": 575,
+      "variant": "new_one_RC",
+      "role": "train",
+      "energy_ape_pct": 5.320616303726468,
+      "soc_rmse_pp": 2.007700752147768,
+      "voltage_rmse_v": 2.3375732932855415,
+      "max_electrical_balance_residual_w": 9.663381206337363e-12,
+      "max_thermal_balance_residual_w": 2.8419400166512787e-10,
+      "energy_kwh": 2.268845712497052
+    },
+    {
+      "trip_id": 596,
+      "variant": "original_Rint",
+      "role": "train",
+      "energy_ape_pct": 1.6146049772442892,
+      "soc_rmse_pp": 2.068723169008504,
+      "voltage_rmse_v": 4.568488922888026,
+      "max_electrical_balance_residual_w": 7.048583938740194e-12,
+      "max_thermal_balance_residual_w": 7.105427357601002e-11,
+      "energy_kwh": 2.66116567059119
+    },
+    {
+      "trip_id": 596,
+      "variant": "stage8_OCV_scaled",
+      "role": "train",
+      "energy_ape_pct": 1.435804590933016,
+      "soc_rmse_pp": 2.1509410581528425,
+      "voltage_rmse_v": 4.382910560158699,
+      "max_electrical_balance_residual_w": 7.503331289626658e-12,
+      "max_thermal_balance_residual_w": 7.082689990056679e-11,
+      "energy_kwh": 2.6660019316015764
+    },
+    {
+      "trip_id": 596,
+      "variant": "new_one_RC",
+      "role": "train",
+      "energy_ape_pct": 1.6789394233805808,
+      "soc_rmse_pp": 2.1529793545592866,
+      "voltage_rmse_v": 3.016962012402646,
+      "max_electrical_balance_residual_w": 1.1027623258996755e-11,
+      "max_thermal_balance_residual_w": 7.116796041373163e-11,
+      "energy_kwh": 2.659425527966822
+    },
+    {
+      "trip_id": 588,
+      "variant": "original_Rint",
+      "role": "retrospective",
+      "energy_ape_pct": 0.8258702428321463,
+      "soc_rmse_pp": 2.6609995664227766,
+      "voltage_rmse_v": 15.03779892930574,
+      "max_electrical_balance_residual_w": 7.503331289626658e-12,
+      "max_thermal_balance_residual_w": 2.8420288344932487e-10,
+      "energy_kwh": 1.3126586178882689
+    },
+    {
+      "trip_id": 588,
+      "variant": "stage8_OCV_scaled",
+      "role": "retrospective",
+      "energy_ape_pct": 0.9248875052403444,
+      "soc_rmse_pp": 2.6114350128102934,
+      "voltage_rmse_v": 8.539955122535314,
+      "max_electrical_balance_residual_w": 6.0254023992456496e-12,
+      "max_thermal_balance_residual_w": 2.837055035342928e-10,
+      "energy_kwh": 1.313947730122131
+    },
+    {
+      "trip_id": 588,
+      "variant": "new_one_RC",
+      "role": "retrospective",
+      "energy_ape_pct": 0.7840865520563177,
+      "soc_rmse_pp": 2.6415248279463834,
+      "voltage_rmse_v": 6.032986253161413,
+      "max_electrical_balance_residual_w": 8.469669410260394e-12,
+      "max_thermal_balance_residual_w": 2.840283563898538e-10,
+      "energy_kwh": 1.3121146332774545
+    },
+    {
+      "trip_id": 600,
+      "variant": "original_Rint",
+      "role": "retrospective",
+      "energy_ape_pct": 4.407433493142145,
+      "soc_rmse_pp": 2.5594952593064813,
+      "voltage_rmse_v": 25.65850219432968,
+      "max_electrical_balance_residual_w": 5.4001247917767614e-12,
+      "max_thermal_balance_residual_w": 7.105249721917062e-11,
+      "energy_kwh": 1.0816568673189313
+    },
+    {
+      "trip_id": 600,
+      "variant": "stage8_OCV_scaled",
+      "role": "retrospective",
+      "energy_ape_pct": 4.421701537812627,
+      "soc_rmse_pp": 2.560815949092871,
+      "voltage_rmse_v": 13.332737640839465,
+      "max_electrical_balance_residual_w": 4.263256414560601e-12,
+      "max_thermal_balance_residual_w": 1.127453685967339e-10,
+      "energy_kwh": 1.0818046836954545
+    },
+    {
+      "trip_id": 600,
+      "variant": "new_one_RC",
+      "role": "retrospective",
+      "energy_ape_pct": 4.362742433482521,
+      "soc_rmse_pp": 2.592296799616804,
+      "voltage_rmse_v": 8.302680470836853,
+      "max_electrical_balance_residual_w": 8.355982572538778e-12,
+      "max_thermal_balance_residual_w": 7.102407550974021e-11,
+      "energy_kwh": 1.081193869714534
+    }
+  ],
+  "preferred_voltage_model": "one_RC",
+  "voltage_comparison_gates": [
+    {
+      "trip_id": 588,
+      "voltage_10pct_better_than_scaled": true,
+      "energy_not_materially_worse_than_original": true,
+      "soc_not_materially_worse_than_original": true,
+      "electrical_and_thermal_balance": true
+    },
+    {
+      "trip_id": 600,
+      "voltage_10pct_better_than_scaled": true,
+      "energy_not_materially_worse_than_original": true,
+      "soc_not_materially_worse_than_original": true,
+      "electrical_and_thermal_balance": true
+    }
+  ],
+  "voltage_step_checks_pass": 4,
+  "low_soc_measured_accuracy_solved": false,
+  "evaluation_is_untouched": false,
+  "old_frozen_physics_and_control_replaced": false,
+  "RC_R0_and_Cr_at_lower_bounds": true,
+  "source_hashes": {
+    "records/experiments/extension_v1/road_results.json": "75f2584ed3a40b668a296df930a4947c9eaa1ab15e78a476da21acf6c2ce20c9",
+    "records/experiments/extension_v1/temperature_results.json": "f5db7e50c34d26bbdd0ba4574eaa2bebca770fd6a4e206ac14a0d14b087c968a",
+    "records/experiments/extension_v1/sensor_results.json": "246ec79d963689de8fec47fd520894468e784b8f8d5fe2eeb4752ce9a3a00e97",
+    "records/experiments/extension_v1/voltage_results.json": "5a29c1b9b7f004214fcac330bd692741e8a702bfc0bd1ba5fa1ea9cbaef5b995"
+  }
+}

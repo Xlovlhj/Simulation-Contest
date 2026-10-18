@@ -1,0 +1,56 @@
+{
+  "date_beijing": "2026-10-18T17:54:55+08:00",
+  "paper": {
+    "sha256": "5476d2f7a737ba02809c82f0223a6a445765a7953a8537e8b6485027a8109018",
+    "pages": 19,
+    "machine_audit_passed": true,
+    "visual_review": "Codex reviewed all 19 pages in overview and full-size abstract, constraint, control, references and appendix details; no team manual review claimed."
+  },
+  "portal": {
+    "path": "C题项目管理.html",
+    "sha256": "1322ce2c40fb241bb2abab22e6f27a234f184f6e770ee02bea255e4592e7d992",
+    "documents": 40,
+    "terms": 72,
+    "figures": 22,
+    "browser_check_passed": true,
+    "checks": [
+      "Offline file opening, homepage and six declared progress bars",
+      "Homepage one-sentence purpose and overview link; new three-question tab, plain explanations, metrics and limitations",
+      "Glossary checkbox fading, reload persistence, learned filter, category and term search",
+      "Learning JSON export/import round trip; invalid import leaves state intact",
+      "Full-text document/term search and result navigation",
+      "All 40 document tabs and their formulas render without math errors; offline Mermaid diagram renders",
+      "Latest nonlinear reliability evidence, boundary mass and conditional-range limits are visible",
+      "Embedded figure enlargement and actual offline MP4 playback",
+      "390px layout, mobile navigation and no page-level horizontal overflow",
+      "Storage-denied mode keeps interaction usable and advises export"
+    ],
+    "page_errors": [],
+    "http_requests": [],
+    "unexpected_file_requests": []
+  },
+  "runtime": {
+    "date_beijing": "2026-10-18T17:48:41+08:00",
+    "passed": true,
+    "results": {
+      "support": {
+        "package_sha256_at_runtime": "dc7a20312eabfe3a2a627b23007ed10a05a78bfbeae778847a23b572140b6530",
+        "exit_code": 0,
+        "scientific_tests_passed": 34,
+        "numeric_metrics_compared": 17,
+        "full_nonlinear_300_refits_recomputed": false
+      },
+      "team": {
+        "package_sha256_at_runtime": "d1ee0f59d7b7b3313cec0c372231c48a31ae10f3beae2507b1a09ede571d4b04",
+        "exit_code": 0,
+        "scientific_tests_passed": 34,
+        "numeric_metrics_compared": 17,
+        "full_nonlinear_300_refits_recomputed": false
+      }
+    },
+    "note": "Final ZIPs were freshly extracted and verify/prepare/all passed on this installed environment. Final record/UI-only repacking is checked against the executed numerical code, inputs and frozen results; prior stage8/stage10 full recomputations retained with matching source/result hashes. No new independent data, fresh OS, or human review claimed."
+  },
+  "manual_review": "incomplete_user_confirmed",
+  "team_number": null,
+  "competition_submission_ready": false
+}

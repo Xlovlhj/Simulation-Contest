@@ -1,0 +1,396 @@
+{
+  "frozen_before_this_evaluation": true,
+  "test_is_untouched": false,
+  "freeze_sha256": "57415c5c2b09d29d3feb81ab819749c3782a013ea7d80be35a5a8feaedcfd9f3",
+  "trip_metrics": [
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "reference",
+      "records": 1795,
+      "soc_rmse_pp": 3.8067803338394235,
+      "soc_time_weighted_rmse_pp": 3.7030055251618266,
+      "voltage_rmse_v": 9.764048947863674,
+      "measured_net_energy_kwh": 2.15422753125,
+      "predicted_net_energy_kwh": 2.7489029775392506,
+      "energy_ape_pct": 27.605043462803927,
+      "predicted_soc_final": 0.9563299014962309,
+      "measured_soc_final": 0.876829299927,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 14.332644411348845,
+      "conditioned_distance_km": 14.330977160237154,
+      "distance_relative_change": -0.00011632543610519634,
+      "battery_initial_assumed_environment_c": 6.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "nuisance_only",
+      "records": 1795,
+      "soc_rmse_pp": 1.9782513410121418,
+      "soc_time_weighted_rmse_pp": 1.9556480203330002,
+      "voltage_rmse_v": 4.139160026773817,
+      "measured_net_energy_kwh": 2.15422753125,
+      "predicted_net_energy_kwh": 2.5614065833773245,
+      "energy_ape_pct": 18.901394872205394,
+      "predicted_soc_final": 0.917035813499142,
+      "measured_soc_final": 0.876829299927,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 14.332644411348845,
+      "conditioned_distance_km": 14.330977160237154,
+      "distance_relative_change": -0.00011632543610519634,
+      "battery_initial_assumed_environment_c": 6.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 575,
+      "role": "train",
+      "variant": "joint_calibrated",
+      "records": 1795,
+      "soc_rmse_pp": 2.08815803693361,
+      "soc_time_weighted_rmse_pp": 2.0629758129272204,
+      "voltage_rmse_v": 3.6637979899149813,
+      "measured_net_energy_kwh": 2.15422753125,
+      "predicted_net_energy_kwh": 2.2716882993962257,
+      "energy_ape_pct": 5.452570187795739,
+      "predicted_soc_final": 0.9203073523046765,
+      "measured_soc_final": 0.876829299927,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 14.332644411348845,
+      "conditioned_distance_km": 14.330977160237154,
+      "distance_relative_change": -0.00011632543610519634,
+      "battery_initial_assumed_environment_c": 6.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "reference",
+      "records": 1515,
+      "soc_rmse_pp": 2.7896213877995586,
+      "soc_time_weighted_rmse_pp": 2.7527698949312764,
+      "voltage_rmse_v": 12.365922638855636,
+      "measured_net_energy_kwh": 2.7048381215277786,
+      "predicted_net_energy_kwh": 2.84479897790225,
+      "energy_ape_pct": 5.174463316696263,
+      "predicted_soc_final": 0.9542400943589905,
+      "measured_soc_final": 0.8951219940190001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 12.669104705263901,
+      "conditioned_distance_km": 12.672377295738299,
+      "distance_relative_change": 0.00025831268669186913,
+      "battery_initial_assumed_environment_c": 1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "nuisance_only",
+      "records": 1515,
+      "soc_rmse_pp": 2.09347127516855,
+      "soc_time_weighted_rmse_pp": 2.0689240546628733,
+      "voltage_rmse_v": 4.810749718328968,
+      "measured_net_energy_kwh": 2.7048381215277786,
+      "predicted_net_energy_kwh": 2.7800080044434834,
+      "energy_ape_pct": 2.7790898951559613,
+      "predicted_soc_final": 0.9087059051847709,
+      "measured_soc_final": 0.8951219940190001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 12.669104705263901,
+      "conditioned_distance_km": 12.672377295738299,
+      "distance_relative_change": 0.00025831268669186913,
+      "battery_initial_assumed_environment_c": 1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 596,
+      "role": "train",
+      "variant": "joint_calibrated",
+      "records": 1515,
+      "soc_rmse_pp": 2.068723169008504,
+      "soc_time_weighted_rmse_pp": 2.0450609244182756,
+      "voltage_rmse_v": 4.568488922888026,
+      "measured_net_energy_kwh": 2.7048381215277786,
+      "predicted_net_energy_kwh": 2.66116567059119,
+      "energy_ape_pct": 1.6146049772442892,
+      "predicted_soc_final": 0.9055047180731386,
+      "measured_soc_final": 0.8951219940190001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 12.669104705263901,
+      "conditioned_distance_km": 12.672377295738299,
+      "distance_relative_change": 0.00025831268669186913,
+      "battery_initial_assumed_environment_c": 1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 588,
+      "role": "validation",
+      "variant": "reference",
+      "records": 1682,
+      "soc_rmse_pp": 3.987912075220483,
+      "soc_time_weighted_rmse_pp": 4.000464486143596,
+      "voltage_rmse_v": 7.720249962534041,
+      "measured_net_energy_kwh": 1.3019065590277785,
+      "predicted_net_energy_kwh": 1.5164638631194538,
+      "energy_ape_pct": 16.480238355347076,
+      "predicted_soc_final": 0.8022590493851224,
+      "measured_soc_final": 0.7231707763670001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 10.190205886019342,
+      "conditioned_distance_km": 10.186175260072458,
+      "distance_relative_change": -0.0003955392061718554,
+      "battery_initial_assumed_environment_c": 7.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 588,
+      "role": "validation",
+      "variant": "nuisance_only",
+      "records": 1682,
+      "soc_rmse_pp": 2.4685410599130315,
+      "soc_time_weighted_rmse_pp": 2.499588439822414,
+      "voltage_rmse_v": 14.897853341903689,
+      "measured_net_energy_kwh": 1.3019065590277785,
+      "predicted_net_energy_kwh": 1.5163626900834561,
+      "energy_ape_pct": 16.472467211151198,
+      "predicted_soc_final": 0.7758525255447302,
+      "measured_soc_final": 0.7231707763670001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 10.190205886019342,
+      "conditioned_distance_km": 10.186175260072458,
+      "distance_relative_change": -0.0003955392061718554,
+      "battery_initial_assumed_environment_c": 7.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 588,
+      "role": "validation",
+      "variant": "joint_calibrated",
+      "records": 1682,
+      "soc_rmse_pp": 2.6609995664227766,
+      "soc_time_weighted_rmse_pp": 2.6942207872313566,
+      "voltage_rmse_v": 15.03779892930574,
+      "measured_net_energy_kwh": 1.3019065590277785,
+      "predicted_net_energy_kwh": 1.3126586178882689,
+      "energy_ape_pct": 0.8258702428321463,
+      "predicted_soc_final": 0.7791400715505886,
+      "measured_soc_final": 0.7231707763670001,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 10.190205886019342,
+      "conditioned_distance_km": 10.186175260072458,
+      "distance_relative_change": -0.0003955392061718554,
+      "battery_initial_assumed_environment_c": 7.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 600,
+      "role": "test_retrospective",
+      "variant": "reference",
+      "records": 1952,
+      "soc_rmse_pp": 3.7083322783858055,
+      "soc_time_weighted_rmse_pp": 3.109132038870513,
+      "voltage_rmse_v": 17.733453907435806,
+      "measured_net_energy_kwh": 1.0359960312499956,
+      "predicted_net_energy_kwh": 1.1800485227884066,
+      "energy_ape_pct": 13.904733917233484,
+      "predicted_soc_final": 0.5462298010060278,
+      "measured_soc_final": 0.482926864624,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 4.690756693032018,
+      "conditioned_distance_km": 4.6888497968064415,
+      "distance_relative_change": -0.00040652209235431477,
+      "battery_initial_assumed_environment_c": -1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 600,
+      "role": "test_retrospective",
+      "variant": "nuisance_only",
+      "records": 1952,
+      "soc_rmse_pp": 2.593386961762463,
+      "soc_time_weighted_rmse_pp": 2.207633549716703,
+      "voltage_rmse_v": 24.727980959321208,
+      "measured_net_energy_kwh": 1.0359960312499956,
+      "predicted_net_energy_kwh": 1.1800212628784739,
+      "energy_ape_pct": 13.90210264171597,
+      "predicted_soc_final": 0.5249312953483956,
+      "measured_soc_final": 0.482926864624,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 4.690756693032018,
+      "conditioned_distance_km": 4.6888497968064415,
+      "distance_relative_change": -0.00040652209235431477,
+      "battery_initial_assumed_environment_c": -1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    },
+    {
+      "trip_id": 600,
+      "role": "test_retrospective",
+      "variant": "joint_calibrated",
+      "records": 1952,
+      "soc_rmse_pp": 2.5594952593064813,
+      "soc_time_weighted_rmse_pp": 2.1729139438973535,
+      "voltage_rmse_v": 25.65850219432968,
+      "measured_net_energy_kwh": 1.0359960312499956,
+      "predicted_net_energy_kwh": 1.0816568673189313,
+      "energy_ape_pct": 4.407433493142145,
+      "predicted_soc_final": 0.5251358338974129,
+      "measured_soc_final": 0.482926864624,
+      "grid_s": 1.0,
+      "gaussian_sigma_s": 1.0,
+      "raw_distance_km": 4.690756693032018,
+      "conditioned_distance_km": 4.6888497968064415,
+      "distance_relative_change": -0.00040652209235431477,
+      "battery_initial_assumed_environment_c": -1.5,
+      "long_gap_policy": "Interpolate for model input; observed long gaps remain flagged in audit."
+    }
+  ],
+  "group_metrics": [
+    {
+      "role": "train",
+      "variant": "reference",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 16.389753389750094,
+      "soc_rmse_macro_pp": 3.298200860819491,
+      "soc_rmse_pooled_pp": 3.3794335712502908
+    },
+    {
+      "role": "train",
+      "variant": "nuisance_only",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 10.840242383680678,
+      "soc_rmse_macro_pp": 2.035861308090346,
+      "soc_rmse_pooled_pp": 2.031799016110476
+    },
+    {
+      "role": "train",
+      "variant": "joint_calibrated",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 3.533587582520014,
+      "soc_rmse_macro_pp": 2.0784406029710567,
+      "soc_rmse_pooled_pp": 2.079285166156832
+    },
+    {
+      "role": "validation",
+      "variant": "reference",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 16.480238355347076,
+      "soc_rmse_macro_pp": 3.987912075220483,
+      "soc_rmse_pooled_pp": 3.987912075220483
+    },
+    {
+      "role": "validation",
+      "variant": "nuisance_only",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 16.472467211151198,
+      "soc_rmse_macro_pp": 2.4685410599130315,
+      "soc_rmse_pooled_pp": 2.4685410599130315
+    },
+    {
+      "role": "validation",
+      "variant": "joint_calibrated",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 0.8258702428321463,
+      "soc_rmse_macro_pp": 2.6609995664227766,
+      "soc_rmse_pooled_pp": 2.6609995664227766
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "reference",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 13.904733917233484,
+      "soc_rmse_macro_pp": 3.7083322783858055,
+      "soc_rmse_pooled_pp": 3.7083322783858055
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "nuisance_only",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 13.90210264171597,
+      "soc_rmse_macro_pp": 2.593386961762463,
+      "soc_rmse_pooled_pp": 2.593386961762463
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "joint_calibrated",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 4.407433493142145,
+      "soc_rmse_macro_pp": 2.5594952593064813,
+      "soc_rmse_pooled_pp": 2.5594952593064813
+    }
+  ],
+  "step_convergence": [
+    {
+      "trip_id": 575,
+      "coarse_step_s": 1.0,
+      "fine_step_s": 0.5,
+      "energy_relative_difference": 0.00043351317119291977,
+      "soc_prediction_max_abs_difference_pp": 0.0037892831617036826
+    },
+    {
+      "trip_id": 596,
+      "coarse_step_s": 1.0,
+      "fine_step_s": 0.5,
+      "energy_relative_difference": 1.8875749369143606e-05,
+      "soc_prediction_max_abs_difference_pp": 0.0009050189936354869
+    },
+    {
+      "trip_id": 588,
+      "coarse_step_s": 1.0,
+      "fine_step_s": 0.5,
+      "energy_relative_difference": 3.63324509966346e-05,
+      "soc_prediction_max_abs_difference_pp": 0.0015293337329191914
+    },
+    {
+      "trip_id": 600,
+      "coarse_step_s": 1.0,
+      "fine_step_s": 0.5,
+      "energy_relative_difference": 1.3936094061272727e-05,
+      "soc_prediction_max_abs_difference_pp": 0.0004452280904287953
+    }
+  ],
+  "energy_definition": "Net integral of terminal voltage times discharge-positive current; group MAPE is the mean of per-trip APEs.",
+  "observed_auxiliary_inputs": [
+    "ac_w",
+    "heater_w"
+  ],
+  "prediction_inputs": "Conditioned speed, ambient, recorded AC/heater load, first SOC and assumed initial temperatures only.",
+  "limitations": [
+    "Measured auxiliary power is supplied as an input; this is not a forecast from speed/ambient alone.",
+    "Trip600 was previously viewed in V1; this V2 evaluation is retrospective, not confirmatory.",
+    "No measured battery/cabin temperature; thermal accuracy is unvalidated.",
+    "Net measured energy uses trapezoidal interpolation across the flagged observation gaps."
+  ]
+}

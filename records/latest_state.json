@@ -1,0 +1,473 @@
+{
+  "date_beijing": "2026-10-18T22:12:37+08:00",
+  "status": "final_technical_paper_complete_submission_preparation",
+  "completed": [
+    "C-specific source archive and immutable hash audit",
+    "four-trip preprocessing",
+    "shared electromechanical and two-node thermal model",
+    "reference E and public CLTC-P scenario A",
+    "seven-parameter sensitivity at two amplitudes",
+    "three-parameter plus shared nuisance calibration v2",
+    "conditional linearized block-wild uncertainty and nonlinear Cr training profile",
+    "frozen validation and retrospective trip600 evaluation",
+    "22 physical/identification/control checks and step convergence",
+    "training-only battery adequacy and seven weight diagnostics",
+    "finite-grid causal control optimization with shared physical plant",
+    "control ablations, thermal terminal accounting, robustness and scenario transfer",
+    "15-second 720p development MP4 rendered and fully decoded",
+    "plain-language control guide and persistent recovery log updated",
+    "offline project management HTML with automatic document tabs, glossary learning state, full-text search and portable learning records",
+    "fixed-rule 1/3/6-cycle continuous driving and common powered parking evaluation",
+    "42 sensor-bias trials with conditional analytic propagation and explicit failures",
+    "18 extended-journey step-halving checks and continuous state handoff tests",
+    "300 centered nonlinear constrained block-wild training refits with boundary and multistart diagnostics",
+    "training speed coverage, road-load excitation and actual residual Jacobian geometry",
+    "34 physical, identification, control, continuity and uncertainty implementation checks",
+    "post-computation three-question evidence ledger with source hashes",
+    "AI-assisted three-question paper review draft with offline HTML and checked PDF",
+    "175-second four-part video storyboard and narration draft, not rendered final video",
+    "18-page technical final paper with checked typesetting and unchanged scientific evidence",
+    "Complete teammate archive and under-20MB compact support archive with isolated reproduction entry point",
+    "Truthful AI details working PDF and editable DOCX; team work not fabricated",
+    "Training-only monotone OCV scaling candidate with frozen retrospective evaluation",
+    "Cr engineering-floor and negative diagnostic: no physical reliability recovery",
+    "Augmented cabin temperature/bias observer: 30 exact-model cases and 60 mismatch stresses",
+    "Common pre-arrival battery cooling: 18/18 two-hour recovery comparisons and 18 step checks",
+    "External source review: EPA road-load XLSX and Oxford measured cell-temperature sample read; metadata-only cabin candidates distinguished.",
+    "Stage10 EPA and Oxford actual trials, guarded sensor60cases and one-RC comparison; RC selected for voltage only.",
+    "Three-question task/results overview tab and homepage one-sentence purpose; existing evidence sufficient for paper finalization with explicit limitations.",
+    "Final 19-page technical paper, 15 tables, 12 numbered equations, 6 figures; PDF source, formatting, identity patterns and references checked without new scientific experiments."
+  ],
+  "not_completed": [
+    "OCV cross-SOC accuracy and Cr reliability",
+    "real sensor calibration and strict true terminal guarantee",
+    "MPC comparison if justified",
+    "untouched real measurement validation",
+    "Team independent core work and manual verification: not started, confirmed by user",
+    "Complete AI disclosure and confirm current-year AI rules",
+    "Submission video deferred by user; no upload or signed commitment",
+    "Observer strict true terminal accuracy with unknown heat and thermal-model mismatch"
+  ],
+  "reference_E_consumption_kwh_100km": 15.264746083068065,
+  "verification": {
+    "tests_run": 34,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "reference_convergence": {
+      "scenario": "E_reference_unverified_CLTC",
+      "coarse_step_s": 0.5,
+      "fine_step_s": 0.25,
+      "net_energy_relative_difference": 1.4827407634625323e-05,
+      "battery_max_abs_difference_c": 0.00010538108240609745,
+      "soc_final_abs_difference": 1.756807905817226e-07,
+      "energy_tolerance": 0.01,
+      "temperature_tolerance_c": 0.1,
+      "passed": true
+    }
+  },
+  "audit_records": 6944,
+  "next": "User completes genuine independent work/manual review, updates truthful AI disclosure, fills team number, signs separate commitment and uploads. Scientific finalization complete with explicit data limitations; video deferred.",
+  "important": [
+    "RC在588/600回顾电压RMSE为6.03/8.30V；宽SOC准确性仍缺证据。",
+    "Cr与RC欧姆内阻贴搜索下界，参数物理可靠性未解决。",
+    "EPA外车参照和牛津实测电芯已试用，未迁移替换本车参数。",
+    "直接反馈误差裕量59/60；低温一组舒适性失败，低温理想保守核算无正节省。",
+    "容量按160Ah参考/80Ah对照透明处理，不认定官方笔误。",
+    "旧控制和长程结果仍由各自冻结Rint模型支持，未冒充RC结论。",
+    "原观测器精确30/30、失配20/60属于历史证据，真实偏差仍未校准。"
+  ],
+  "scenario_A_reference_consumption_kwh_100km": 14.054196673039844,
+  "calibration_version": "v2_provisional",
+  "test600_is_untouched": false,
+  "calibration_metrics": [
+    {
+      "role": "train",
+      "variant": "reference",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 16.389753389750094,
+      "soc_rmse_macro_pp": 3.298200860819491,
+      "soc_rmse_pooled_pp": 3.3794335712502908
+    },
+    {
+      "role": "train",
+      "variant": "nuisance_only",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 10.840242383680678,
+      "soc_rmse_macro_pp": 2.035861308090346,
+      "soc_rmse_pooled_pp": 2.031799016110476
+    },
+    {
+      "role": "train",
+      "variant": "joint_calibrated",
+      "trips": [
+        575,
+        596
+      ],
+      "energy_mape_pct": 3.533587582520014,
+      "soc_rmse_macro_pp": 2.0784406029710567,
+      "soc_rmse_pooled_pp": 2.079285166156832
+    },
+    {
+      "role": "validation",
+      "variant": "reference",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 16.480238355347076,
+      "soc_rmse_macro_pp": 3.987912075220483,
+      "soc_rmse_pooled_pp": 3.987912075220483
+    },
+    {
+      "role": "validation",
+      "variant": "nuisance_only",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 16.472467211151198,
+      "soc_rmse_macro_pp": 2.4685410599130315,
+      "soc_rmse_pooled_pp": 2.4685410599130315
+    },
+    {
+      "role": "validation",
+      "variant": "joint_calibrated",
+      "trips": [
+        588
+      ],
+      "energy_mape_pct": 0.8258702428321463,
+      "soc_rmse_macro_pp": 2.6609995664227766,
+      "soc_rmse_pooled_pp": 2.6609995664227766
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "reference",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 13.904733917233484,
+      "soc_rmse_macro_pp": 3.7083322783858055,
+      "soc_rmse_pooled_pp": 3.7083322783858055
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "nuisance_only",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 13.90210264171597,
+      "soc_rmse_macro_pp": 2.593386961762463,
+      "soc_rmse_pooled_pp": 2.593386961762463
+    },
+    {
+      "role": "test_retrospective",
+      "variant": "joint_calibrated",
+      "trips": [
+        600
+      ],
+      "energy_mape_pct": 4.407433493142145,
+      "soc_rmse_macro_pp": 2.5594952593064813,
+      "soc_rmse_pooled_pp": 2.5594952593064813
+    }
+  ],
+  "report": "docs/提交准备与文件清单.md",
+  "control_rule": {
+    "regen_fraction": 0.95,
+    "cooling_on_c": 42.0,
+    "cooling_hysteresis_c": 2.0,
+    "cabin_economy_offset_c": 1.5
+  },
+  "control_nominal_heat_corrected_savings_pct": {
+    "25.0": 13.53867833947576,
+    "40.0": 11.408529758916933,
+    "-10.0": 0.8458291409667753
+  },
+  "control_robustness": {
+    "paired_cases": 22,
+    "both_feasible": 19,
+    "failed": 3
+  },
+  "development_video": {
+    "type": "development_sample_not_final_submission",
+    "path": "results/videos/C题_控制对照_开发样片.mp4",
+    "duration_s": 15.0,
+    "width": 1280,
+    "height": 720,
+    "fps": 12,
+    "frames": 180,
+    "bytes": 607854,
+    "sha256": "63e93f54507df2cc6ed1323fd70ca4df2e7cdd84d9d7f3921c953a71feecfb1a",
+    "full_decode_passed": true,
+    "audio": false,
+    "imageio_ffmpeg_version": "0.6.0",
+    "control_freeze_sha256": "f6932d196ae47f98d28a6fa19388871766f4fcf9b9a9c981607d8e0da3c10ec4",
+    "sources": [
+      "results/timeseries/control_25C_baseline.csv",
+      "results/timeseries/control_25C_optimized.csv"
+    ],
+    "limits": "No narration and no complete four-part contest narrative. Demonstrates dynamic data and MP4 encoding only."
+  },
+  "project_portal": {
+    "path": "C题项目管理.html",
+    "sync_command": "python run.py portal",
+    "documents_auto_discovered": true,
+    "personal_learning_state": "Browser localStorage with JSON export/import",
+    "documents": 42,
+    "terms": 72,
+    "figures": 22,
+    "browser_check": "results/portal_checks/browser_verification.json",
+    "browser_verification_scope": "Read final browser record and compare its html_sha256 with the delivered HTML; not a claim of team manual review."
+  },
+  "durability": {
+    "journeys": 36,
+    "paired_checkpoints": 54,
+    "both_feasible": 54,
+    "near_equal_feasible": 41,
+    "two_hour_parking_pairs": 18,
+    "two_hour_near_equal_feasible": 17,
+    "sensor_trials": 42,
+    "sensor_passed": 30,
+    "step_checks_passed": true,
+    "ninety_minute_plus_two_hour_parking": [
+      {
+        "ambient_c": 25.0,
+        "raw_saving_pct": 11.834610889370934,
+        "saved_energy_kwh": 0.721209989892114,
+        "battery_end_difference_c": 0.010048214636512398,
+        "valid_close_end_comparison": true
+      },
+      {
+        "ambient_c": 40.0,
+        "raw_saving_pct": 9.849856958855364,
+        "saved_energy_kwh": 0.8546938199961671,
+        "battery_end_difference_c": 0.16507239363754778,
+        "valid_close_end_comparison": true
+      },
+      {
+        "ambient_c": -10.0,
+        "raw_saving_pct": 0.6986301970571982,
+        "saved_energy_kwh": 0.09655376283203232,
+        "battery_end_difference_c": -0.002817039469762861,
+        "valid_close_end_comparison": true
+      }
+    ],
+    "balance_maxima": {
+      "dc_balance_residual_kwh": 0.0,
+      "battery_heat_balance_residual_j": 1.3783574104309082e-07,
+      "cabin_heat_balance_residual_j": 2.549360488046659e-06
+    }
+  },
+  "stage4_artifact_verification": {
+    "path": "records/stage4_artifact_verification.json",
+    "passed": true,
+    "original_sources_checked": 9,
+    "continuous_traces_checked": 6
+  },
+  "reliability": {
+    "requested": 300,
+    "accepted": 300,
+    "multistart_audits": 16,
+    "primary_block_s": 40.0,
+    "primary_repetitions": 200,
+    "Cr_lower_bound_fraction": 0.52,
+    "primary_ranges": [
+      {
+        "parameter": "drag_coefficient",
+        "block_s": 40.0,
+        "frozen_estimate": 0.3644313190653388,
+        "percentile025": 0.16605495410789026,
+        "median": 0.3224855330583346,
+        "percentile975": 0.4331136714857526,
+        "requested": 200,
+        "accepted": 200,
+        "failed": 0,
+        "at_lower_bound_fraction": 0.005,
+        "at_upper_bound_fraction": 0.0,
+        "near_lower_bound_fraction": 0.01,
+        "max_half_sample_tail_difference": 0.025821555321168727,
+        "method": "centered_nonlinear_constrained_block_wild_percentile_range"
+      },
+      {
+        "parameter": "rolling_coefficient",
+        "block_s": 40.0,
+        "frozen_estimate": 0.0030244003378797767,
+        "percentile025": 0.0030000000000000655,
+        "median": 0.0030000000605943473,
+        "percentile975": 0.011666786158739815,
+        "requested": 200,
+        "accepted": 200,
+        "failed": 0,
+        "at_lower_bound_fraction": 0.52,
+        "at_upper_bound_fraction": 0.0,
+        "near_lower_bound_fraction": 0.545,
+        "max_half_sample_tail_difference": 0.0011304700919724225,
+        "method": "centered_nonlinear_constrained_block_wild_percentile_range"
+      },
+      {
+        "parameter": "resistance_ref_ohm",
+        "block_s": 40.0,
+        "frozen_estimate": 0.07128439597648727,
+        "percentile025": 0.06196901675075069,
+        "median": 0.0742335711791677,
+        "percentile975": 0.08564760862811331,
+        "requested": 200,
+        "accepted": 200,
+        "failed": 0,
+        "at_lower_bound_fraction": 0.0,
+        "at_upper_bound_fraction": 0.0,
+        "near_lower_bound_fraction": 0.0,
+        "max_half_sample_tail_difference": 0.001713226284480264,
+        "method": "centered_nonlinear_constrained_block_wild_percentile_range"
+      },
+      {
+        "parameter": "capacity_ah",
+        "block_s": 40.0,
+        "frozen_estimate": 74.41448629504069,
+        "percentile025": 66.18089893700534,
+        "median": 74.99906436501402,
+        "percentile975": 85.14444899323766,
+        "requested": 200,
+        "accepted": 200,
+        "failed": 0,
+        "at_lower_bound_fraction": 0.0,
+        "at_upper_bound_fraction": 0.0,
+        "near_lower_bound_fraction": 0.0,
+        "max_half_sample_tail_difference": 2.0009275065585257,
+        "method": "centered_nonlinear_constrained_block_wild_percentile_range"
+      },
+      {
+        "parameter": "ocv_offset_v",
+        "block_s": 40.0,
+        "frozen_estimate": -8.08903531252147,
+        "percentile025": -9.22631656986625,
+        "median": -7.934837181638294,
+        "percentile975": -6.794632913418714,
+        "requested": 200,
+        "accepted": 200,
+        "failed": 0,
+        "at_lower_bound_fraction": 0.0,
+        "at_upper_bound_fraction": 0.0,
+        "near_lower_bound_fraction": 0.0,
+        "max_half_sample_tail_difference": 0.18501454424120922,
+        "method": "centered_nonlinear_constrained_block_wild_percentile_range"
+      }
+    ],
+    "Cd_Cr_resampling_correlation": -0.6813561077844767,
+    "max_multistart_cost_gap": 0.04017322306907456,
+    "point_estimates_replaced": false,
+    "train_only": true
+  },
+  "paper": {
+    "status": "final_technical_content_complete_not_submission_ready",
+    "markdown": "docs/论文/C题论文_技术定稿.md",
+    "pdf": "交付材料/论文/C题论文_最终稿.pdf",
+    "pdf_pages": 19,
+    "pdf_bytes": 2579901,
+    "pdf_sha256": "5476d2f7a737ba02809c82f0223a6a445765a7953a8537e8b6485027a8109018",
+    "evidence_metrics": 25,
+    "numbered_tables": 15,
+    "numbered_equations": 12,
+    "figures": 6,
+    "visual_review": "Codex reviewed all 19 pages in overview and full-size abstract, constraint, control, references and appendix details; no team manual review claimed.",
+    "team_review": "incomplete_user_confirmed",
+    "team_independent_core_work": "not_started_as_confirmed_by_user",
+    "video_script": "docs/正式视频分镜与讲解稿.md",
+    "evidence_is_post_computation_snapshot": true
+  },
+  "stage6_artifact_verification": {
+    "path": "records/stage6_artifact_verification.json",
+    "passed": true,
+    "original_sources_checked": 9,
+    "paper_metrics_checked": 25
+  },
+  "delivery": {
+    "directory": "交付材料",
+    "guide": "docs/提交准备与文件清单.md",
+    "support_package": "交付材料/C题_支撑材料.zip",
+    "team_package": "交付材料/C题_同学复现包.zip",
+    "competition_submission_ready": false,
+    "ai_details_status": "incomplete_truthful_working_document",
+    "video_status": "deferred_by_user",
+    "runtime_verification": "Final ZIP fresh extractions verify/prepare/all passed, each 34 checks and 17 numerical metrics. Stage8/stage10 full recomputations retained after hash verification.",
+    "runtime_summary": "records/delivery_runtime_summary.json",
+    "manual_work_plan": "User intends to complete personally; no new completion evidence supplied",
+    "stage8_runtime_verification": "records/remediation_runtime_verification.json",
+    "latest_trials_in_current_packages": true,
+    "team_number": null,
+    "manual_review": "incomplete_user_confirmed",
+    "submission_directory": "交付材料/待提交",
+    "final_audit": "records/final_submission_audit.json"
+  },
+  "remediation": {
+    "two_hour_parking": {
+      "passed": 18,
+      "total": 18
+    },
+    "sensor_exact_model": {
+      "passed": 30,
+      "total": 30,
+      "max_true_terminal_error_c": 0.001413840293935209
+    },
+    "sensor_mismatch_stress": {
+      "passed": 20,
+      "total": 60
+    },
+    "step_checks": {
+      "passed": 18,
+      "total": 18
+    },
+    "Cr_reliability_solved": false,
+    "analytic_checks": 6,
+    "report": "docs/问题修复与结果说明.md",
+    "results": "records/experiments/remediation_v1",
+    "full_recomputation_verified": true,
+    "numeric_values_compared": 202
+  },
+  "next_actions": [
+    "User completes genuine independent work and manual review; do not describe automated checks as human review.",
+    "Complete truthful AI disclosure after actual review; retain current evidence and failure limits.",
+    "Fill real team number, rename files, sign separate commitment and upload personally.",
+    "Video remains deferred by user."
+  ],
+  "external_data_review": {
+    "path": "records/external_data_review.json",
+    "original_epa_table_read": true,
+    "original_oxford_temperature_sample_read": true,
+    "cabin_raw_data_obtained": false,
+    "target_vehicle_matched": false,
+    "no_model_replacement": true,
+    "official_identity_review_completed": true,
+    "additional_user_materials_available": false,
+    "review_stage": "Stage9 historical source review; see extension_summary for later actual trials and model choice."
+  },
+  "extension_summary": "records/extension_summary.json",
+  "extension_recomputed": true,
+  "stage10_verification": {
+    "original_checks_passed": 34,
+    "new_analytical_checks_passed": 7,
+    "step_halving_pass": 4,
+    "full_recompute_values_matched": 1791,
+    "paper_pages": 20,
+    "ai_pdf_pages": 5,
+    "pdf_visual_review": "Codex only",
+    "fresh_team_zip_recompute_passed": true
+  },
+  "github_sharing": {
+    "guide": "docs/GitHub上传操作指南.md",
+    "helpers": "docs/github_upload/",
+    "preflight": "records/github_upload_preflight.json",
+    "recommended": "GitHub Desktop; private repository from fresh full teammate ZIP extraction",
+    "local_git_roundtrip_passed": true,
+    "uploaded": false,
+    "existing_delivery_archives_unchanged": true,
+    "local_repository": "c2026-ev-simulation",
+    "local_repository_guide": "docs/GitHub本地仓库使用说明.md",
+    "preparation_script": "scripts/prepare_github_repository.py",
+    "status": "local_snapshot_prepared_for_GitHub_Desktop"
+  }
+}

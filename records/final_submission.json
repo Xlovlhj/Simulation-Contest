@@ -1,0 +1,17 @@
+{
+  "date_beijing": "2026-10-18T17:37:11+08:00",
+  "paper_finalized_with_existing_evidence": true,
+  "new_scientific_experiments": false,
+  "paper_path": "交付材料/论文/C题论文_最终稿.pdf",
+  "paper_sha256": "5476d2f7a737ba02809c82f0223a6a445765a7953a8537e8b6485027a8109018",
+  "paper_pages": 19,
+  "paper_bytes": 2579901,
+  "team_number": null,
+  "manual_review": "incomplete_user_confirmed",
+  "ai_disclosure": "truthful_working_document_incomplete",
+  "signed_commitment": false,
+  "video": "deferred_by_user",
+  "uploaded": false,
+  "competition_submission_ready": false,
+  "scope": "Final technical content and submission preparation; missing target-car measurements are explicit limitations."
+}

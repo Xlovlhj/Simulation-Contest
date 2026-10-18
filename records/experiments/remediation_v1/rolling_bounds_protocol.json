@@ -1,0 +1,19 @@
+{
+  "fingerprint": {
+    "candidate": "998d10b2d42c7d1ab0632200a791183cbc4ea3b25a680cc436e94e5296ee0088",
+    "code": "d265c7b51221025df11c1fa50efa84689c43f53ee14448fd28ed3034fd393c92"
+  },
+  "train_only": true,
+  "trips": [
+    575,
+    596
+  ],
+  "rolling_lower_bounds": [
+    0.0,
+    -0.01
+  ],
+  "purpose": "Check whether removing the engineering floor repairs the boundary issue. Negative Cr is diagnostic only and must not be adopted.",
+  "upper_Cr": 0.03,
+  "max_nfev": 80,
+  "no_retrospective_trip_evaluation": true
+}

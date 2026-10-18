@@ -1,0 +1,7 @@
+{
+  "status": "predeclared_before_calibration",
+  "train_trip_ids": [575, 596],
+  "validation_trip_ids": [588],
+  "test_trip_ids": [600],
+  "policy": "Whole trips; all raw rows may be inspected for quality, but test outcomes must not select model settings."
+}

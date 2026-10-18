@@ -1,0 +1,42 @@
+{
+  "status": "training_frozen_before_retrospective_evaluation",
+  "experiment_version": "v2",
+  "test_is_untouched": false,
+  "train_trip_ids": [
+    575,
+    596
+  ],
+  "parameters": {
+    "drag_coefficient": 0.3644313190653388,
+    "rolling_coefficient": 0.0030244003378797767,
+    "resistance_ref_ohm": 0.07128439597648727,
+    "capacity_ah": 74.41448629504069,
+    "ocv_offset_v": -8.08903531252147
+  },
+  "nuisance_only_parameters": {
+    "drag_coefficient": 0.28,
+    "rolling_coefficient": 0.01,
+    "resistance_ref_ohm": 0.1,
+    "capacity_ah": 80.76931344069934,
+    "ocv_offset_v": -6.569434463672302
+  },
+  "cost": 7.524877505875766,
+  "success": true,
+  "optimizer_message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+  "active_bounds": {
+    "drag_coefficient": 0,
+    "rolling_coefficient": 0,
+    "resistance_ref_ohm": 0,
+    "capacity_ah": 0,
+    "ocv_offset_v": 0
+  },
+  "residual_calls": 93,
+  "elapsed_s": 6.695464599999923,
+  "multistart_costs": [
+    7.524877505875766,
+    7.529723627624593
+  ],
+  "protocol_sha256": "d909fe6ef45f269b6a6bc47870f0c5d36e0eaf6613e502b0a131ba00b7d0ddd2",
+  "calibrated_sha256": "adc31a67b7a898229055cf77292bccf67ac5caa2e2477e551f137dff97512728",
+  "note": "V2 net-energy residual was added due to V1 training energy failure. Trip600 has already been viewed in V1; V2 evaluation is retrospective. Nuisance-only comparison separates structure alignment from three-parameter fitting."
+}
