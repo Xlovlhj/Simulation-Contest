@@ -447,3 +447,5 @@ EPA458个Electricity测试行按0.8—1.25倍质量、配置去重和有效Targe
 用户指定Simulation-Contest仓库，确认ybs-c尚未创建，要求整理README、忽略规则、LFS并给出终端上传命令。本地原main及origin已指向先前仓库；保留旧远程，新目标用contest，在新本地ybs-c分支准备提交。配置LFS仅管理payload/*.tar.xz和MP4，关闭自动换行转换；不重写已发布历史。原快照清单留records/github_pre_lfs_manifest.json，新清单如实记录文档、配置与工作台变化。
 
 新增终端上传指南及分支克隆/LFS拉取说明，更新工作台入口和真实状态。原科学代码、输入、参数、冻结结果和论文PDF保持不变，不重跑科研实验。此前Git连接被重置，公开API也无法读取目标；实际远程上传留给用户执行普通推送，不把读取失败当成分支不存在，不提供强推。LFS本地校验、文件清单及克隆核查结果以记录为准。
+
+本机Git 2.45.1在普通clone时因LFS初始化生成post-checkout钩子而阻止检出；已改为clone --no-checkout、安装本地LFS后再checkout，保留Git保护。该顺序的本地克隆、两份LFS对象传输及完整文件校验已实际通过，并写入README和指南。

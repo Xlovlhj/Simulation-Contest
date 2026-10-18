@@ -60,13 +60,15 @@ git push --set-upstream contest ybs-c
 
 ```powershell
 git lfs install
-git clone --branch ybs-c --single-branch https://github.com/Xlovlhj/Simulation-Contest.git
+git clone --no-checkout --branch ybs-c --single-branch https://github.com/Xlovlhj/Simulation-Contest.git
 Set-Location Simulation-Contest
+git lfs install --local
+git checkout ybs-c
 git lfs pull
 python reproduce.py verify
 ```
 
-随后按README执行prepare、安装依赖和all。LFS未下载时，轨迹文件可能只有百余字节的指针文本，文件校验会明确失败。
+随后按README执行prepare、安装依赖和all。先克隆不检出、安装本地LFS再检出，兼容本机Git 2.45.1的克隆钩子检查；无需关闭Git保护。LFS未下载时，轨迹文件可能只有百余字节的指针文本，文件校验会明确失败。
 
 ## 这次改动的范围
 

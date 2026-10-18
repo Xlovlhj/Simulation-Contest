@@ -20,12 +20,14 @@
 
 ```powershell
 git lfs install
-git clone --branch ybs-c --single-branch https://github.com/Xlovlhj/Simulation-Contest.git
+git clone --no-checkout --branch ybs-c --single-branch https://github.com/Xlovlhj/Simulation-Contest.git
 Set-Location Simulation-Contest
+git lfs install --local
+git checkout ybs-c
 git lfs pull
 ```
 
-如仓库为私有仓库，需要先取得访问权限并登录。轨迹压缩文件和MP4由Git LFS保存，建议使用上述克隆方式；完成`git lfs pull`后再核对文件。
+如仓库为私有仓库，需要先取得访问权限并登录。轨迹压缩文件和MP4由Git LFS保存；先克隆再检出的步骤兼容本机Git 2.45.1与LFS初始化过程。完成`git lfs pull`后再核对文件。
 
 ## 复现
 

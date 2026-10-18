@@ -35,13 +35,13 @@
     },
     {
       "path": "C题开发日志.md",
-      "bytes": 57663,
-      "sha256": "3491358b66b94631f87ed58a2b2c5b16cacc12b1e432990c885b8e1d84ed8185"
+      "bytes": 57953,
+      "sha256": "a2f355db931eab39bbaafe828e1f9d96bf668869e074ee22ecf7bc5067e157d4"
     },
     {
       "path": "C题项目管理.html",
-      "bytes": 15777811,
-      "sha256": "0ce966beb6cb80a41f5197b31a4d366f706c56e9d6bb6147c5a259cf1df9bf7b"
+      "bytes": 15778958,
+      "sha256": "f96138a621185d1485f4370f4c0c50b66cac433c60a4decd6e371a083d55a387"
     },
     {
       "path": "EXPECTED_RESULTS.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4132,
-      "sha256": "f29bdefcb52af32003463407d7bf4b406b98ddf66bde69f7321a62f11d027506"
+      "bytes": 4231,
+      "sha256": "faafd52c5cbf05c1cadb6da91c9aae11e03437aeca9ee093f947c900d14aeefc"
     },
     {
       "path": "checks/extension_checks.py",
@@ -260,8 +260,8 @@
     },
     {
       "path": "docs/GitHub上传到ybs-c分支.md",
-      "bytes": 3093,
-      "sha256": "2dd768e9a7973c1dc5c9863fa50a948cd5f04583295ba85f6ca63c708df1a5a7"
+      "bytes": 3268,
+      "sha256": "3fe5334e938ffa9bee4315813d0516e22f831bc3d1d24ec5abbcb9a048823240"
     },
     {
       "path": "docs/GitHub上传操作指南.md",
@@ -1016,7 +1016,7 @@
     {
       "path": "records/portal_build.json",
       "bytes": 9266,
-      "sha256": "12e8973b56714aa00ac9457f5d7ed325794978500ac9f8fe6154230166fd2686"
+      "sha256": "8ae8a9819ae53a64c4114d0258c482fae63d775eded054915100da74e01da30a"
     },
     {
       "path": "records/profile_protocol.json",
