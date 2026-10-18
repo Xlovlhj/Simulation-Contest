@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="508" viewBox="0 0 1100 508">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="sans-serif" font-size="21">Ordinary traffic: total system vehicle time (s)</text>
+<text x="20" y="55" font-family="sans-serif" font-size="13">Assumed scenarios; all profiles shown; lower is better.</text>
+<text x="20" y="94" font-family="sans-serif" font-size="14">primary / fixed</text>
+<rect x="260" y="77" width="267.94" height="23" fill="#64748b"/>
+<text x="537.94" y="94" font-family="sans-serif" font-size="14">42703</text>
+<text x="20" y="128" font-family="sans-serif" font-size="14">primary / A</text>
+<rect x="260" y="111" width="267.94" height="23" fill="#2563eb"/>
+<text x="537.94" y="128" font-family="sans-serif" font-size="14">42703</text>
+<text x="20" y="162" font-family="sans-serif" font-size="14">primary / B</text>
+<rect x="260" y="145" width="274.19" height="23" fill="#0f766e"/>
+<text x="544.19" y="162" font-family="sans-serif" font-size="14">43698</text>
+<text x="20" y="196" font-family="sans-serif" font-size="14">higher_demand / fixed</text>
+<rect x="260" y="179" width="680.00" height="23" fill="#64748b"/>
+<text x="950.00" y="196" font-family="sans-serif" font-size="14">108374</text>
+<text x="20" y="230" font-family="sans-serif" font-size="14">higher_demand / A</text>
+<rect x="260" y="213" width="680.00" height="23" fill="#2563eb"/>
+<text x="950.00" y="230" font-family="sans-serif" font-size="14">108374</text>
+<text x="20" y="264" font-family="sans-serif" font-size="14">higher_demand / B</text>
+<rect x="260" y="247" width="659.04" height="23" fill="#0f766e"/>
+<text x="929.04" y="264" font-family="sans-serif" font-size="14">105034</text>
+<text x="20" y="298" font-family="sans-serif" font-size="14">severe_event / fixed</text>
+<rect x="260" y="281" width="315.15" height="23" fill="#64748b"/>
+<text x="585.15" y="298" font-family="sans-serif" font-size="14">50226</text>
+<text x="20" y="332" font-family="sans-serif" font-size="14">severe_event / A</text>
+<rect x="260" y="315" width="280.94" height="23" fill="#2563eb"/>
+<text x="550.94" y="332" font-family="sans-serif" font-size="14">44774</text>
+<text x="20" y="366" font-family="sans-serif" font-size="14">severe_event / B</text>
+<rect x="260" y="349" width="287.21" height="23" fill="#0f766e"/>
+<text x="557.21" y="366" font-family="sans-serif" font-size="14">45774</text>
+<text x="20" y="400" font-family="sans-serif" font-size="14">longer_event / fixed</text>
+<rect x="260" y="383" width="269.30" height="23" fill="#64748b"/>
+<text x="539.30" y="400" font-family="sans-serif" font-size="14">42919</text>
+<text x="20" y="434" font-family="sans-serif" font-size="14">longer_event / A</text>
+<rect x="260" y="417" width="269.30" height="23" fill="#2563eb"/>
+<text x="539.30" y="434" font-family="sans-serif" font-size="14">42919</text>
+<text x="20" y="468" font-family="sans-serif" font-size="14">longer_event / B</text>
+<rect x="260" y="451" width="275.54" height="23" fill="#0f766e"/>
+<text x="545.54" y="468" font-family="sans-serif" font-size="14">43914</text>
+</svg>

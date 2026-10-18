@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "conditional_states.json": "f19ab977bab06a11ef2fe4100ae5a5803ff922a688bb0d7c3cf8e682220d78fe",
+    "direct_sumo_times.svg": "e56588414bdbcb3dae4da530805c02deda97fbad83c416293510048815f0c2a2",
+    "report.md": "562044c5e044a5fbcd2b46fb72c413214084f72628bee6bb7173433687edf9eb"
+  },
+  "source_sha256": {
+    "config/inverse_estimation_v2.json": "1261209ff74f04e5cc0af77bcc66ef20fddb4b8708e3c498cede4606d8d03aa7",
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa",
+    "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "outputs/validation/ETA_cc5eba1e5891e909/model.json": "6423e1d7f1581f1076145e4f894d0b282dfc2cd2ce309c8ac3d873207a04a32b",
+    "scripts/summarize_inverse_v2.py": "47dee714215a96d6bad26a93e1ebcc289ff879916db6d638629243eb1720b6e8"
+  }
+}

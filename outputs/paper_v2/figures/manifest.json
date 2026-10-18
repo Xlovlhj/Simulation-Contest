@@ -1,0 +1,660 @@
+{
+  "schema_version": 2,
+  "builder": "scripts/build_paper_figures_v2.py",
+  "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f",
+  "figures": [
+    {
+      "figure": "outputs/paper_v2/figures/network_v2.png",
+      "figure_sha256": "53fce3636375a4f945d1eacc68c465a43a8ddc67e502b54da148d48394c3b9d8",
+      "pixel_dimensions": [
+        1800,
+        1350
+      ],
+      "source_sha256": {
+        "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff",
+        "outputs/governance_v2/route_choice_explanation.json": "99043894b163e19b3a9e6f0b18592eee934f06828a736d6c3c2fc4ee594cbd39",
+        "research/parameter_audit/scenario_basis_v2.json": "ae0ae6461e49496ae0a2fae2b8298636dca2b30fbaa3b44ca6f9fd1716658708"
+      },
+      "values": {
+        "external_edges": 305,
+        "total_connections": 310,
+        "allowed_turns": 308,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_model_length_m": 278.665139,
+        "shared_event_length_m": 209.930048,
+        "avoidable_event_length_m": 68.735091,
+        "alternative_extra_distance_m": 717.1261470000001
+      },
+      "interpretation": "Directed observed subgraph. Endpoint is a research rendezvous, not a verified hospital entrance. Event covers all 19 observed step edges.",
+      "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+    },
+    {
+      "figure": "outputs/paper_v2/figures/calibration_v2.png",
+      "figure_sha256": "29c3b480a5e3796a7120fab8a98dbe39560a7f1137cdac996d4d896f3a625665",
+      "pixel_dimensions": [
+        1800,
+        1080
+      ],
+      "source_sha256": {
+        "data/processed/identification_v2/training_summary.json": "cc64ff1cec4061ec7a698d8e01caac6a9c75eca0458199199de343dc36dd0209",
+        "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+        "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352"
+      },
+      "values": {
+        "selected_profile": "headway_30",
+        "observed_training_median_s": {
+          "east_to_hospital_road": 594.0,
+          "north_to_south": 693.0,
+          "south_to_north": 417.0,
+          "west_to_hospital_road": 476.0
+        },
+        "direct_sumo_s": {
+          "east_to_hospital_road": 567.0,
+          "north_to_south": 745.0,
+          "south_to_north": 438.6666666666667,
+          "west_to_hospital_road": 452.6666666666667
+        },
+        "direct_mae_s": {
+          "training": 69.57638888888889,
+          "same_day_exploratory": 124.75,
+          "cross_day_holdout": 206.29166666666669
+        },
+        "median_baseline_mae_s": {
+          "training": 57.604166666666664,
+          "same_day_exploratory": 119.75,
+          "cross_day_holdout": 200.45833333333334
+        }
+      },
+      "interpretation": "Panel a compares medians with direct SUMO probe means; panel b compares frozen predictors against individual snapshots. These are provider ETA estimates, not measured individual trips. No affine output correction.",
+      "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+    },
+    {
+      "figure": "outputs/paper_v2/figures/governance_v2.png",
+      "figure_sha256": "501d128989f303921bf1096cc8729dfa1445549370aa9ab8fd0cbb231b34114b",
+      "pixel_dimensions": [
+        1800,
+        1040
+      ],
+      "source_sha256": {
+        "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa"
+      },
+      "values": {
+        "accepted_B_minus_A": [
+          {
+            "profile": "headway_60",
+            "preset": "step_q25",
+            "ordinary_system_time_delta_s": 697.0,
+            "task_time_delta_s": 0.0
+          },
+          {
+            "profile": "headway_60",
+            "preset": "step_q10",
+            "ordinary_system_time_delta_s": 631.0,
+            "task_time_delta_s": 0.0
+          },
+          {
+            "profile": "headway_30",
+            "preset": "step_q25",
+            "ordinary_system_time_delta_s": 1437.0,
+            "task_time_delta_s": 30.0
+          },
+          {
+            "profile": "headway_30",
+            "preset": "step_q10",
+            "ordinary_system_time_delta_s": 1496.0,
+            "task_time_delta_s": 25.0
+          }
+        ]
+      },
+      "interpretation": "Only training-screen accepted conditional profiles are plotted. Positive deltas mean worse travel time, not positive benefit. All original release-to-arrival costs are included.",
+      "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+    },
+    {
+      "figure": "outputs/paper_v2/figures/timeseries_v2.png",
+      "figure_sha256": "2b1479ee8603d3ff5d4c6ff6cc288abaef46707d2b216a2df1ac0c796d8ac5ca",
+      "pixel_dimensions": [
+        1800,
+        1200
+      ],
+      "source_sha256": {
+        "outputs/governance_v2/runs/headway_30_step_q10_S3_A/fcd.xml": "cdfa04956303b26f938959e9119dbc5887bccab3ac7f445ed13cba91f26162f9",
+        "outputs/governance_v2/runs/headway_30_step_q10_S3_B/event.json": "586585222a36759d4070282731ea399a38fc454dee9aa018b8ee048384389849",
+        "outputs/governance_v2/runs/headway_30_step_q10_S3_B/fcd.xml": "6fea111a8e99d70387645361dec0b48f0504c3cfaacb626046130495ce79f1f3",
+        "outputs/governance_v2/runs/headway_30_step_q10_S3_B/source_queue_trace.json": "49a0fb086a3f4bd20dba8b1a20561b1db035531f811a590bd63e21147e06fcf2",
+        "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa"
+      },
+      "values": {
+        "fcd_in_network_counts": {
+          "A": [
+            [
+              1500.0,
+              121
+            ],
+            [
+              1530.0,
+              121
+            ],
+            [
+              1560.0,
+              121
+            ],
+            [
+              1590.0,
+              121
+            ],
+            [
+              1620.0,
+              121
+            ],
+            [
+              1650.0,
+              121
+            ],
+            [
+              1680.0,
+              121
+            ],
+            [
+              1710.0,
+              121
+            ],
+            [
+              1740.0,
+              121
+            ],
+            [
+              1770.0,
+              121
+            ],
+            [
+              1800.0,
+              121
+            ],
+            [
+              1830.0,
+              121
+            ],
+            [
+              1860.0,
+              121
+            ],
+            [
+              1890.0,
+              122
+            ],
+            [
+              1920.0,
+              123
+            ],
+            [
+              1950.0,
+              124
+            ],
+            [
+              1980.0,
+              125
+            ],
+            [
+              2010.0,
+              125
+            ],
+            [
+              2040.0,
+              125
+            ],
+            [
+              2070.0,
+              126
+            ],
+            [
+              2100.0,
+              126
+            ],
+            [
+              2130.0,
+              127
+            ],
+            [
+              2160.0,
+              127
+            ],
+            [
+              2190.0,
+              127
+            ],
+            [
+              2220.0,
+              128
+            ],
+            [
+              2250.0,
+              128
+            ],
+            [
+              2280.0,
+              128
+            ],
+            [
+              2310.0,
+              129
+            ],
+            [
+              2340.0,
+              129
+            ],
+            [
+              2370.0,
+              129
+            ],
+            [
+              2400.0,
+              129
+            ],
+            [
+              2430.0,
+              129
+            ],
+            [
+              2460.0,
+              128
+            ],
+            [
+              2490.0,
+              127
+            ],
+            [
+              2520.0,
+              127
+            ],
+            [
+              2550.0,
+              126
+            ],
+            [
+              2580.0,
+              125
+            ],
+            [
+              2610.0,
+              125
+            ],
+            [
+              2640.0,
+              124
+            ],
+            [
+              2670.0,
+              124
+            ],
+            [
+              2700.0,
+              124
+            ]
+          ],
+          "B": [
+            [
+              1500.0,
+              121
+            ],
+            [
+              1530.0,
+              121
+            ],
+            [
+              1560.0,
+              121
+            ],
+            [
+              1590.0,
+              121
+            ],
+            [
+              1620.0,
+              121
+            ],
+            [
+              1650.0,
+              121
+            ],
+            [
+              1680.0,
+              121
+            ],
+            [
+              1710.0,
+              121
+            ],
+            [
+              1740.0,
+              121
+            ],
+            [
+              1770.0,
+              121
+            ],
+            [
+              1800.0,
+              121
+            ],
+            [
+              1830.0,
+              121
+            ],
+            [
+              1860.0,
+              121
+            ],
+            [
+              1890.0,
+              122
+            ],
+            [
+              1920.0,
+              122
+            ],
+            [
+              1950.0,
+              118
+            ],
+            [
+              1980.0,
+              118
+            ],
+            [
+              2010.0,
+              118
+            ],
+            [
+              2040.0,
+              118
+            ],
+            [
+              2070.0,
+              119
+            ],
+            [
+              2100.0,
+              122
+            ],
+            [
+              2130.0,
+              127
+            ],
+            [
+              2160.0,
+              126
+            ],
+            [
+              2190.0,
+              126
+            ],
+            [
+              2220.0,
+              127
+            ],
+            [
+              2250.0,
+              127
+            ],
+            [
+              2280.0,
+              128
+            ],
+            [
+              2310.0,
+              129
+            ],
+            [
+              2340.0,
+              130
+            ],
+            [
+              2370.0,
+              130
+            ],
+            [
+              2400.0,
+              130
+            ],
+            [
+              2430.0,
+              130
+            ],
+            [
+              2460.0,
+              130
+            ],
+            [
+              2490.0,
+              130
+            ],
+            [
+              2520.0,
+              130
+            ],
+            [
+              2550.0,
+              130
+            ],
+            [
+              2580.0,
+              129
+            ],
+            [
+              2610.0,
+              128
+            ],
+            [
+              2640.0,
+              129
+            ],
+            [
+              2670.0,
+              127
+            ],
+            [
+              2700.0,
+              126
+            ]
+          ]
+        },
+        "source_queue_30s_samples": [
+          [
+            1500.0,
+            0
+          ],
+          [
+            1530.0,
+            0
+          ],
+          [
+            1560.0,
+            0
+          ],
+          [
+            1590.0,
+            0
+          ],
+          [
+            1620.0,
+            0
+          ],
+          [
+            1650.0,
+            0
+          ],
+          [
+            1680.0,
+            0
+          ],
+          [
+            1710.0,
+            0
+          ],
+          [
+            1740.0,
+            0
+          ],
+          [
+            1770.0,
+            0
+          ],
+          [
+            1800.0,
+            0
+          ],
+          [
+            1830.0,
+            0
+          ],
+          [
+            1860.0,
+            0
+          ],
+          [
+            1890.0,
+            0
+          ],
+          [
+            1920.0,
+            1
+          ],
+          [
+            1950.0,
+            6
+          ],
+          [
+            1980.0,
+            6
+          ],
+          [
+            2010.0,
+            6
+          ],
+          [
+            2040.0,
+            6
+          ],
+          [
+            2070.0,
+            6
+          ],
+          [
+            2100.0,
+            0
+          ],
+          [
+            2130.0,
+            0
+          ],
+          [
+            2160.0,
+            0
+          ],
+          [
+            2190.0,
+            0
+          ],
+          [
+            2220.0,
+            0
+          ],
+          [
+            2250.0,
+            0
+          ],
+          [
+            2280.0,
+            0
+          ],
+          [
+            2310.0,
+            0
+          ],
+          [
+            2340.0,
+            0
+          ],
+          [
+            2370.0,
+            0
+          ],
+          [
+            2400.0,
+            0
+          ],
+          [
+            2430.0,
+            0
+          ],
+          [
+            2460.0,
+            0
+          ],
+          [
+            2490.0,
+            0
+          ],
+          [
+            2520.0,
+            0
+          ],
+          [
+            2550.0,
+            0
+          ],
+          [
+            2580.0,
+            0
+          ],
+          [
+            2610.0,
+            0
+          ],
+          [
+            2640.0,
+            0
+          ],
+          [
+            2670.0,
+            0
+          ],
+          [
+            2700.0,
+            0
+          ]
+        ],
+        "event_begin_s": 1800,
+        "event_end_s": 2400,
+        "task_release_s": 1920,
+        "control_window_end_s": 2100,
+        "display_window_s": [
+          1500,
+          2700
+        ]
+      },
+      "interpretation": "Counts are actual frozen FCD snapshots (5-second cadence) and source-queue log samples (30-second cadence). Lines connect samples for display, not additional observations. In-network count excludes source queue. These are counterfactual model times, not a recorded real incident.",
+      "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+    }
+  ]
+}

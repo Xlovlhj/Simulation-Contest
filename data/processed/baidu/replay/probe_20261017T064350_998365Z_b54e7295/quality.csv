@@ -1,0 +1,5 @@
+﻿snapshot_id,code,item,message
+probe_20261017T064350_998365Z,missing_source_data_time,2,没有独立源数据时间；采集时刻不能替代观测时刻
+probe_20261017T064350_998365Z,unknown_road_name,request_2_road_1,道路名称未知，保持空白，不与其他道路合并
+probe_20261017T064350_998365Z,missing_source_data_time,3,没有独立源数据时间；采集时刻不能替代观测时刻
+probe_20261017T064350_998365Z,geometry_outside_query_bounds,request_3_route_1,43/111 个点在采样矩形之外；整程 ETA 不能用于仅覆盖矩形内的模型

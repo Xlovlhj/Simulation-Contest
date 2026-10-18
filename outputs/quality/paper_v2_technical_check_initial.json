@@ -1,0 +1,1209 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "checked_at": "2026-10-18T14:31:56.950618+00:00",
+  "checker_sha256": "ccf05daa9800b404f03d9f0d13e57ecd5df4074fb96c0da6a00df33a2508c7b8",
+  "build_manifest_sha256": "4e305467c9a0117058c0fb0af07045535aa59192fcbfbe1e7b3f335626c01bec",
+  "checks_count": 215,
+  "passed_count": 214,
+  "failed_count": 1,
+  "checks": [
+    {
+      "name": "required_file_exists",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "required_file_exists",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf"
+    },
+    {
+      "name": "required_file_exists",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx"
+    },
+    {
+      "name": "required_file_exists",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf"
+    },
+    {
+      "name": "required_file_exists",
+      "passed": true,
+      "path": "outputs/paper_v2/build_manifest.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/fit.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/fit_manifest.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "config/inverse_estimation_v2.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "research/parameter_audit/scenario_basis_v2.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/run_governance_v2.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/run_final_experiments.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "data/processed/baidu/route_catalog_v2_mapping.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/sumo_inverse_engine.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/run_baseline.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/run_scenarios.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "data/processed/baidu/route_catalog_v2.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "config/baseline.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/normalize_network_v2.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "data/processed/baidu/route_catalog_v1.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/protocol.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/summary.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/summary.csv"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/report.md"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/individual_effects.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/evaluation.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/model.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/summarize_inverse_v2.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/conditional_states.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/direct_sumo_times.svg"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/report.md"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": false,
+      "path": "manuscript/v2/paper_core.md"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "manuscript/v2/abstract.md"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "manuscript/v2/references.json"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "manuscript/v2/ai_usage.md"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/build_paper_v2.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/build_paper.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "scripts/build_paper_figures_v2.py"
+    },
+    {
+      "name": "build_source_hash",
+      "passed": true,
+      "path": "outputs/paper_v2/figures/manifest.json"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "paper.docx"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "paper.pdf"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "ai_usage.docx"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "ai_usage.pdf"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "paper_extracted.txt"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "figures/calibration_v2.png"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "figures/governance_v2.png"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "figures/network_v2.png"
+    },
+    {
+      "name": "build_artifact_hash_and_size",
+      "passed": true,
+      "path": "figures/timeseries_v2.png"
+    },
+    {
+      "name": "figure_image_hash",
+      "passed": true,
+      "path": "outputs/paper_v2/figures/network_v2.png"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "data/processed/baidu/route_catalog_v2.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/route_choice_explanation.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "research/parameter_audit/scenario_basis_v2.json"
+    },
+    {
+      "name": "figure_image_hash",
+      "passed": true,
+      "path": "outputs/paper_v2/figures/calibration_v2.png"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "data/processed/identification_v2/training_summary.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/evaluation.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/identification_v2/calibration/fit.json"
+    },
+    {
+      "name": "figure_image_hash",
+      "passed": true,
+      "path": "outputs/paper_v2/figures/governance_v2.png"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/summary.json"
+    },
+    {
+      "name": "figure_image_hash",
+      "passed": true,
+      "path": "outputs/paper_v2/figures/timeseries_v2.png"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/runs/headway_30_step_q10_S3_A/fcd.xml"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/runs/headway_30_step_q10_S3_B/event.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/runs/headway_30_step_q10_S3_B/fcd.xml"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/runs/headway_30_step_q10_S3_B/source_queue_trace.json"
+    },
+    {
+      "name": "figure_source_hash",
+      "passed": true,
+      "path": "outputs/governance_v2/summary.json"
+    },
+    {
+      "name": "docx_anonymous_author_metadata",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_no_header",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_centered_page_field",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_normal_songti_12pt_single",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_title_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 1
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 7
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 22
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 46
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 122
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 161
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 252
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 287
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 332
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 415
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 447
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 457
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 461
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 479
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraph": 482
+    },
+    {
+      "name": "docx_visible_chinese_font_sizes",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "runs_checked": 348,
+      "mismatches": []
+    },
+    {
+      "name": "docx_all_paragraphs_single_spacing",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "paragraphs_checked": 522,
+      "mismatched_paragraphs": []
+    },
+    {
+      "name": "docx_title_present",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx"
+    },
+    {
+      "name": "docx_four_exact_source_figures_embedded",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.docx",
+      "embedded_unique_images": 4
+    },
+    {
+      "name": "docx_anonymous_author_metadata",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx"
+    },
+    {
+      "name": "docx_no_header",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx"
+    },
+    {
+      "name": "docx_centered_page_field",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx"
+    },
+    {
+      "name": "docx_normal_songti_12pt_single",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx"
+    },
+    {
+      "name": "docx_level1_heading_centered",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx",
+      "paragraph": 0
+    },
+    {
+      "name": "docx_visible_chinese_font_sizes",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx",
+      "runs_checked": 44,
+      "mismatches": []
+    },
+    {
+      "name": "docx_all_paragraphs_single_spacing",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.docx",
+      "paragraphs_checked": 46,
+      "mismatched_paragraphs": []
+    },
+    {
+      "name": "pdf_size_below_20mb",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "bytes": 1029587
+    },
+    {
+      "name": "pdf_author_metadata_blank",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf"
+    },
+    {
+      "name": "pdf_info_page_count",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "pages": 19
+    },
+    {
+      "name": "pdf_no_local_user_path",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf"
+    },
+    {
+      "name": "pdf_bbox_page_count",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf"
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 1
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 2
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 3
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 4
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 5
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 6
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 7
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 8
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 9
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 10
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 11
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 12
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 13
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 14
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 15
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 16
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 17
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 18
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/paper.pdf",
+      "page": 19
+    },
+    {
+      "name": "pdf_size_below_20mb",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf",
+      "bytes": 195377
+    },
+    {
+      "name": "pdf_author_metadata_blank",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf"
+    },
+    {
+      "name": "pdf_info_page_count",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf",
+      "pages": 3
+    },
+    {
+      "name": "pdf_no_local_user_path",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf"
+    },
+    {
+      "name": "pdf_bbox_page_count",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf"
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf",
+      "page": 1
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf",
+      "page": 2
+    },
+    {
+      "name": "pdf_continuous_centered_footer",
+      "passed": true,
+      "path": "outputs/paper_v2/ai_usage.pdf",
+      "page": 3
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "305"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "308"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "221"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "44"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "34113"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "745"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "438.67"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "452.67"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "567"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "206.29"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "200.46"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "278.665"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "209.930"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "68.735"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "1437"
+    },
+    {
+      "name": "key_v2_number_in_pdf",
+      "passed": true,
+      "expected_number": "1496"
+    },
+    {
+      "name": "legacy_v1_benefit_number_absent",
+      "passed": true,
+      "obsolete_number": "8.77%"
+    },
+    {
+      "name": "legacy_v1_benefit_number_absent",
+      "passed": true,
+      "obsolete_number": "3340"
+    },
+    {
+      "name": "legacy_v1_task_benefit_pair_absent",
+      "passed": true
+    },
+    {
+      "name": "abstract_is_first_page",
+      "passed": true
+    },
+    {
+      "name": "contents_is_second_page",
+      "passed": true
+    },
+    {
+      "name": "no_unfilled_page_placeholders",
+      "passed": true
+    },
+    {
+      "name": "manifest_page_count_matches_pdf",
+      "passed": true,
+      "actual": 19,
+      "manifest": 19
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "1 问题重述与研究思路",
+      "expected_page": 3,
+      "observed_pages": [
+        3
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "1 问题重述与研究思路",
+      "expected_page": 3
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "2 官方数据与参数来源",
+      "expected_page": 4,
+      "observed_pages": [
+        4
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "2 官方数据与参数来源",
+      "expected_page": 4
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "3 GIS平行空间与微观基准",
+      "expected_page": 6,
+      "observed_pages": [
+        6
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "3 GIS平行空间与微观基准",
+      "expected_page": 6
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "4 问题一：SUMO内部反演与时间验证",
+      "expected_page": 7,
+      "observed_pages": [
+        7
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "4 问题一：SUMO内部反演与时间验证",
+      "expected_page": 7
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "5 缺失交通流与排队的条件估计",
+      "expected_page": 10,
+      "observed_pages": [
+        10
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "5 缺失交通流与排队的条件估计",
+      "expected_page": 10
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "6 问题二：有来源拥堵与路径治理A",
+      "expected_page": 11,
+      "observed_pages": [
+        11
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "6 问题二：有来源拥堵与路径治理A",
+      "expected_page": 11
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "7 问题三：有界源端协调B及公平性",
+      "expected_page": 12,
+      "observed_pages": [
+        12
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "7 问题三：有界源端协调B及公平性",
+      "expected_page": 12
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "8 时空对应、系统封装与复现",
+      "expected_page": 14,
+      "observed_pages": [
+        14
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "8 时空对应、系统封装与复现",
+      "expected_page": 14
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "9 结果讨论与适用边界",
+      "expected_page": 16,
+      "observed_pages": [
+        16
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "9 结果讨论与适用边界",
+      "expected_page": 16
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "10 结论",
+      "expected_page": 17,
+      "observed_pages": [
+        17
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "10 结论",
+      "expected_page": 17
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "参考文献",
+      "expected_page": 17,
+      "observed_pages": [
+        17
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "参考文献",
+      "expected_page": 17
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "AI工具使用声明",
+      "expected_page": 18,
+      "observed_pages": [
+        18
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "AI工具使用声明",
+      "expected_page": 18
+    },
+    {
+      "name": "heading_actual_page_matches_toc",
+      "passed": true,
+      "heading": "附录A 支撑材料目录与结果索引",
+      "expected_page": 18,
+      "observed_pages": [
+        18
+      ]
+    },
+    {
+      "name": "heading_toc_text_and_page_present",
+      "passed": true,
+      "heading": "附录A 支撑材料目录与结果索引",
+      "expected_page": 18
+    },
+    {
+      "name": "saved_extracted_text_matches_actual_pdf",
+      "passed": true
+    },
+    {
+      "name": "pdf_font_listing_matches_manifest",
+      "passed": true
+    },
+    {
+      "name": "font_substitution_is_explicitly_disclosed",
+      "passed": true
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/problem_b/2026年第二届全国大学生仿真建模应用挑战赛B题.pdf"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/A题/2026年第二届全国大学生仿真建模应用挑战赛A题.pdf"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/A题/附件1.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/A题/附件2.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/A题/附件3.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/A题/附件4.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/C题/2026年第二届全国大学生仿真建模应用挑战赛C题.pdf"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/C题/附件1：车辆参数表.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/C题/附件2：4段路程车辆行驶数据.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/C题/附件3：参考工况.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/other_problems/C题/附件4：部件特性（OCV—SOC、内阻、电机效率）.xlsx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/rules/2026年第二届全国大学生仿真建模应用挑战赛承诺书.doc"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/rules/2026年第二届全国大学生仿真建模应用挑战赛提交流程.pdf"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/rules/全国大学生仿真建模应用挑战赛人工智能工具使用规定.pdf"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/rules/全国大学生仿真建模应用挑战赛论文格式规范.docx"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "competition/source_archives/2026年第二届全国大学生仿真建模应用挑战赛赛题.zip"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/additional_download_manifest.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/data_sources.csv"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hk_road_service.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_layer_schema.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_one_feature.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_sample.geojson"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_sample_manifest.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/download_manifest.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/raw_traffic.xml"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/road_segments.csv"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/sample_check.json"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/segment_speeds.csv"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/segment_speeds.xml"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/hong_kong/traffic_detectors.csv"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/shenzhen_history/LINKS.mat"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/shenzhen_history/NODES.mat"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/shenzhen_history/SPEEDS.mat"
+    },
+    {
+      "name": "original_manifest_file_unchanged",
+      "passed": true,
+      "path": "research/archive/alternative_data_sources/shenzhen_metadata.json"
+    },
+    {
+      "name": "original_manifest_entry_count",
+      "passed": true,
+      "entries": 34,
+      "competition_original_entries": 16
+    },
+    {
+      "name": "secret_scan_credentials_loaded",
+      "passed": true,
+      "count": 2
+    },
+    {
+      "name": "private_ak_sk_absent_from_decoded_documents",
+      "passed": true,
+      "decoded_parts_checked": 36,
+      "affected_paths": [],
+      "matched_private_values_recorded": false
+    }
+  ],
+  "limitations": [
+    "PDF使用本机替代字体；DOCX中指定字体名的检查不证明PDF已嵌入规定的宋体/黑体。正式提交需规定字体环境重导出。",
+    "匿名检查覆盖作者/最后修改者等元数据、页眉和已知本地用户名路径；无法凭自动检查排除未知个人身份线索。",
+    "本检查验证给定数值、格式、文件一致性与实际私密值泄露；不替代科学审稿或队员独立核心工作。"
+  ],
+  "writes": [
+    "outputs/quality/paper_v2_technical_check.json",
+    "outputs/quality/paper_v2_technical_check.md"
+  ]
+}

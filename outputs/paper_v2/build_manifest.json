@@ -1,0 +1,98 @@
+{
+  "version": "V2",
+  "generated_at": "2026-10-18T14:32:28.906788+00:00",
+  "title": "观测约束下的街区交通数字孪生标定与治理适用边界研究",
+  "paper_pages": 19,
+  "ai_pages": 3,
+  "heading_pages": {
+    "1 问题重述与研究思路": 3,
+    "2 官方数据与参数来源": 4,
+    "3 GIS平行空间与微观基准": 6,
+    "4 问题一：SUMO内部反演与时间验证": 7,
+    "5 缺失交通流与排队的条件估计": 10,
+    "6 问题二：有来源拥堵与路径治理A": 11,
+    "7 问题三：有界源端协调B及公平性": 12,
+    "8 时空对应、系统封装与复现": 14,
+    "9 结果讨论与适用边界": 16,
+    "10 结论": 17,
+    "参考文献": 17,
+    "AI工具使用声明": 18,
+    "附录A 支撑材料目录与结果索引": 18
+  },
+  "human_review_status": "not_recorded_complete",
+  "font_status": "DOCX指定宋体/黑体；PDF使用本机已有Noto等替代字体，正式提交前需在合法规定字体环境重导出。",
+  "actual_pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+NotoSansCJKjp-Bold-VKana      Type 1            Builtin          yes yes yes    106  0\nCAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    116  0\nDAAAAA+LiberationSerif               TrueType          WinAnsi          yes yes yes     76  0\nEAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    121  0\nFAAAAA+LiberationSerif-Bold          TrueType          WinAnsi          yes yes yes     71  0\nGAAAAA+NotoSerifCJKjp-Bold-VKana     Type 1            Builtin          yes yes yes    111  0\nHAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    126  0\nIAAAAA+DejaVuSerif-Bold              TrueType          WinAnsi          yes yes yes     81  0\nJAAAAA+NimbusRomanRegular            Type 1            Builtin          yes yes yes    101  0\nKAAAAA+DejaVuSerif                   TrueType          WinAnsi          yes yes yes     86  0\nLAAAAA+FreeSans                      TrueType          WinAnsi          yes yes yes     91  0\nMAAAAA+FreeSerif                     TrueType          WinAnsi          yes yes yes     96  0\nNAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    131  0\n",
+  "source_sha256": {
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "outputs/identification_v2/calibration/fit_manifest.json": "5844b4d51a98907b0acd06e6444dadd24dc93ee029700ce6e7f486b17fec105b",
+    "config/inverse_estimation_v2.json": "1261209ff74f04e5cc0af77bcc66ef20fddb4b8708e3c498cede4606d8d03aa7",
+    "research/parameter_audit/scenario_basis_v2.json": "ae0ae6461e49496ae0a2fae2b8298636dca2b30fbaa3b44ca6f9fd1716658708",
+    "scripts/run_governance_v2.py": "4ae7573908c0b26f8b0b806fdfca47d81181936b6a584e6916a7b8535c60ad58",
+    "scripts/run_final_experiments.py": "b5189ba8e742a1ed88fd4468fbbc4511b322b94639545cc82d5018c47701748c",
+    "data/processed/baidu/route_catalog_v2_mapping.json": "4733d2e4c0daf6a248d4f039ba7e09c6edfb4412b658d3d836a429057bf7f095",
+    "scripts/sumo_inverse_engine.py": "0a06500d37c676dd8379747d41d7d5c8364a15cb37b27d54b019fe4c2a955b63",
+    "scripts/run_baseline.py": "38e96558b90dc9d667c94f829179269a8ffab6d9f457f73ce948d59be0590916",
+    "scripts/run_scenarios.py": "f1f0a4641813707e18f59389effff52a79098ef032eeaa9592835206f1bdd551",
+    "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff",
+    "config/baseline.json": "c2da2d3f170e0dfcc96d7d61b2a46486953ac1b1dff1c0f6a39808af39a431e9",
+    "scripts/normalize_network_v2.py": "8319fe0336247034687ed65b5c1b1ed84840689eaa783386afb21e2a6289ec43",
+    "data/processed/baidu/route_catalog_v1.json": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0",
+    "outputs/governance_v2/protocol.json": "7104a7136bdf28ad5ce583d056ab15c96dc7cbe630ce6c407aa962b683ebe591",
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa",
+    "outputs/governance_v2/summary.csv": "ae0063faecc3b2c8d8583c49ad2b39ae61f5b8c20b2f4ba36be471d3bd1e4e0b",
+    "outputs/governance_v2/report.md": "917a23b05932c075fcb0e7b1fbb788f19d5f3cc4570cee6218ed1f0e9afc0cda",
+    "outputs/governance_v2/individual_effects.json": "83f2d5559da7509476f656637e43a35410cb08d0c363af9d7126d2d97111950a",
+    "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+    "outputs/validation/ETA_cc5eba1e5891e909/model.json": "6423e1d7f1581f1076145e4f894d0b282dfc2cd2ce309c8ac3d873207a04a32b",
+    "scripts/summarize_inverse_v2.py": "47dee714215a96d6bad26a93e1ebcc289ff879916db6d638629243eb1720b6e8",
+    "outputs/identification_v2/calibration/conditional_states.json": "f19ab977bab06a11ef2fe4100ae5a5803ff922a688bb0d7c3cf8e682220d78fe",
+    "outputs/identification_v2/calibration/direct_sumo_times.svg": "e56588414bdbcb3dae4da530805c02deda97fbad83c416293510048815f0c2a2",
+    "outputs/identification_v2/calibration/report.md": "562044c5e044a5fbcd2b46fb72c413214084f72628bee6bb7173433687edf9eb",
+    "manuscript/v2/paper_core.md": "dd38161364f4b12fa58bc13a5dc083decf44538cf060141d7bb5b3526517345f",
+    "manuscript/v2/abstract.md": "6e76c89646333e51dcb7eff0618d184ee844182accec3c639fe94d3ccb546ed1",
+    "manuscript/v2/references.json": "dcaf9cf697a94d60881d6f8824edfae18262e80c6eaf1bfd7a3e12c665481560",
+    "manuscript/v2/ai_usage.md": "1795f8a0d7465d81031bda7a363fdedd00b2f987f74f99480f3181160490de3d",
+    "scripts/build_paper_v2.py": "8fdaf5c4b0614d7ff2fb1181be633d48d76c365db726aefca91b0c51cb6e27bf",
+    "scripts/build_paper.py": "218263f36611901bf7754abda33b559bd6b16207d0e9537cc86f2a4f92c4d422",
+    "scripts/build_paper_figures_v2.py": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f",
+    "outputs/paper_v2/figures/manifest.json": "94145a84093aabf38fbe47e9e7c85719c07d38b12bb0930d979cedbaa3ddf4d7"
+  },
+  "artifacts": {
+    "paper.docx": {
+      "sha256": "36d681a7a1cb6285b29195f7d63d373e3b4714440f4062ab0b455579a39f3155",
+      "bytes": 644376
+    },
+    "paper.pdf": {
+      "sha256": "ebdb0c9fae3a00ee7b1e9c19fc621b485475d707510dfa8ee6abb24ec97d0ced",
+      "bytes": 1029778
+    },
+    "ai_usage.docx": {
+      "sha256": "f82c0fcf0977e2f5eed8de085abf409177b1593e26a0904175f16849c2889f31",
+      "bytes": 41224
+    },
+    "ai_usage.pdf": {
+      "sha256": "6166e7d4f224a73443c11d2c09c26ad49515cced99a958824c52f66165d070e1",
+      "bytes": 195377
+    },
+    "paper_extracted.txt": {
+      "sha256": "9ca8fa1e4d8a174e54faeab46a40a7c4e13b7cc2d400aa178c424f18efae9ac3",
+      "bytes": 51177
+    },
+    "figures/calibration_v2.png": {
+      "sha256": "29c3b480a5e3796a7120fab8a98dbe39560a7f1137cdac996d4d896f3a625665",
+      "bytes": 157730
+    },
+    "figures/governance_v2.png": {
+      "sha256": "501d128989f303921bf1096cc8729dfa1445549370aa9ab8fd0cbb231b34114b",
+      "bytes": 171323
+    },
+    "figures/network_v2.png": {
+      "sha256": "53fce3636375a4f945d1eacc68c465a43a8ddc67e502b54da148d48394c3b9d8",
+      "bytes": 162532
+    },
+    "figures/timeseries_v2.png": {
+      "sha256": "2b1479ee8603d3ff5d4c6ff6cc288abaef46707d2b216a2df1ac0c796d8ac5ca",
+      "bytes": 127211
+    }
+  }
+}

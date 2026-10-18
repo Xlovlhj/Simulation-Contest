@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "started_at": "2026-10-18T07:44:27.122330+00:00",
+  "scope": "Actual local HTTP/browser checks; no external API or simulation rerun",
+  "initial_sandbox_attempt": "Socket bind denied with PermissionError before any service started; retried with authorized loopback permission",
+  "source_sha256": {
+    "project.py": "44f783732e160ade7c8c4943e1d434b4814a6f0ec9e20c75d80ebf28423254de",
+    "outputs/app/index.html": "794b30fc14370b1293f5a4bea04710ba9ad87a06c057087d4000162dacc6ecda",
+    "outputs/app/observations.html": "c1a4c24be0074af9b338c1a8532c4f49e8156bab71bb78843f7b4818ca0dec04",
+    "outputs/app/paper.pdf": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6",
+    "outputs/app/paper.docx": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a",
+    "outputs/app/ai_usage.pdf": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57"
+  },
+  "http": [
+    {
+      "path": "/index.html",
+      "status": 200,
+      "bytes": 16004515,
+      "content_type": "text/html",
+      "sha256": "794b30fc14370b1293f5a4bea04710ba9ad87a06c057087d4000162dacc6ecda",
+      "matches_frozen_file": true
+    },
+    {
+      "path": "/observations.html",
+      "status": 200,
+      "bytes": 1981960,
+      "content_type": "text/html",
+      "sha256": "c1a4c24be0074af9b338c1a8532c4f49e8156bab71bb78843f7b4818ca0dec04",
+      "matches_frozen_file": true
+    },
+    {
+      "path": "/paper.pdf",
+      "status": 200,
+      "bytes": 707313,
+      "content_type": "application/pdf",
+      "sha256": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6",
+      "matches_frozen_file": true
+    },
+    {
+      "path": "/paper.docx",
+      "status": 200,
+      "bytes": 350709,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sha256": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a",
+      "matches_frozen_file": true
+    },
+    {
+      "path": "/ai_usage.pdf",
+      "status": 200,
+      "bytes": 193404,
+      "content_type": "application/pdf",
+      "sha256": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57",
+      "matches_frozen_file": true
+    }
+  ],
+  "privacy_head_checks": [
+    {
+      "path": "/config/baidu.local.json",
+      "method": "HEAD",
+      "status": 404,
+      "response_body_read": false
+    },
+    {
+      "path": "/../../../config/baidu.local.json",
+      "method": "HEAD",
+      "status": 404,
+      "response_body_read": false
+    },
+    {
+      "path": "/%2e%2e/%2e%2e/%2e%2e/config/baidu.local.json",
+      "method": "HEAD",
+      "status": 404,
+      "response_body_read": false
+    },
+    {
+      "path": "/%2e%2e%2f%2e%2e%2f%2e%2e%2fconfig%2fbaidu.local.json",
+      "method": "HEAD",
+      "status": 404,
+      "response_body_read": false
+    }
+  ],
+  "bind_address": "127.0.0.1",
+  "port": 40571,
+  "directory_listing_check": {
+    "test": "empty temporary subdirectory without index",
+    "status": 403,
+    "temporary_directory_removed": true
+  },
+  "server_stopped": true,
+  "finished_at": "2026-10-18T07:45:59.274383+00:00",
+  "log_directory": ".cache/app_smoke_20261018T074427_122246Z",
+  "previous_browser_attempt": {
+    "status": "failed_to_launch",
+    "error": "浏览器未启动；查看工作区录制日志",
+    "log_directory": ".cache/app_smoke_20261018T074427_122246Z"
+  },
+  "browser": {
+    "tabs": [
+      {
+        "requested": "overview",
+        "active": "overview"
+      },
+      {
+        "requested": "data",
+        "active": "data"
+      },
+      {
+        "requested": "simulation",
+        "active": "simulation"
+      },
+      {
+        "requested": "results",
+        "active": "results"
+      },
+      {
+        "requested": "delivery",
+        "active": "delivery"
+      }
+    ],
+    "replay_cases": [
+      {
+        "case": "S1_d30",
+        "selected_index": 0,
+        "expected_index": 0,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "S1_d15",
+        "selected_index": 1,
+        "expected_index": 1,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "primary_S2_fixed",
+        "selected_index": 2,
+        "expected_index": 2,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "primary_S2_A",
+        "selected_index": 3,
+        "expected_index": 3,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "primary_S3_fixed",
+        "selected_index": 4,
+        "expected_index": 4,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "primary_S3_A",
+        "selected_index": 5,
+        "expected_index": 5,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "primary_S3_B",
+        "selected_index": 6,
+        "expected_index": 6,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "higher_demand_S2_fixed",
+        "selected_index": 7,
+        "expected_index": 7,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "higher_demand_S2_A",
+        "selected_index": 8,
+        "expected_index": 8,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "higher_demand_S3_fixed",
+        "selected_index": 9,
+        "expected_index": 9,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "higher_demand_S3_A",
+        "selected_index": 10,
+        "expected_index": 10,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "higher_demand_S3_B",
+        "selected_index": 11,
+        "expected_index": 11,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "severe_event_S2_fixed",
+        "selected_index": 12,
+        "expected_index": 12,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "severe_event_S2_A",
+        "selected_index": 13,
+        "expected_index": 13,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "severe_event_S3_fixed",
+        "selected_index": 14,
+        "expected_index": 14,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "severe_event_S3_A",
+        "selected_index": 15,
+        "expected_index": 15,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "severe_event_S3_B",
+        "selected_index": 16,
+        "expected_index": 16,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "longer_event_S2_fixed",
+        "selected_index": 17,
+        "expected_index": 17,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "longer_event_S2_A",
+        "selected_index": 18,
+        "expected_index": 18,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "longer_event_S3_fixed",
+        "selected_index": 19,
+        "expected_index": 19,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "longer_event_S3_A",
+        "selected_index": 20,
+        "expected_index": 20,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      },
+      {
+        "case": "longer_event_S3_B",
+        "selected_index": 21,
+        "expected_index": 21,
+        "frame": 180,
+        "frame_count": 360,
+        "time_text": "t = 900 s",
+        "result_nonempty": true
+      }
+    ],
+    "playback": {
+      "initial_frame": 0,
+      "advanced_frame": 4,
+      "paused_frame": 4,
+      "remained_paused": true,
+      "seek": {
+        "frame": 123,
+        "time": "t = 615 s"
+      },
+      "restart_frame": 0
+    },
+    "observations": {
+      "position": "100 / 100",
+      "route_count": "0",
+      "snapshot_count": 100
+    },
+    "javascript_exception_count": 0,
+    "profile_within_workspace": true,
+    "http_port": 45005
+  },
+  "browser_retry_log_directory": ".cache/smoke_07_ntic7"
+}

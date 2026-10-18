@@ -1,0 +1,1445 @@
+{
+  "status": "content_passed_pending_final_exports",
+  "official_source_sha256": {
+    "competition/rules/全国大学生仿真建模应用挑战赛论文格式规范.docx": "b8d5a63d39868c2caf5566ffb5a69c9ba4a559345bbf18cc706ea0295262ef0c",
+    "competition/problem_b/2026年第二届全国大学生仿真建模应用挑战赛B题.pdf": "104132baece63e54fcc8238d414bd31e8c6c0923402380ba41674b1eda812981",
+    "competition/rules/全国大学生仿真建模应用挑战赛人工智能工具使用规定.pdf": "536fed2e3533b448d63703c0460fd47fec506c498af3cfc087e5d72e55f90d6a"
+  },
+  "requirements": [
+    {
+      "id": "F01",
+      "requirement": "论文单独PDF，不压缩，不含承诺书，≤20 MB；官方文件未规定页数上限"
+    },
+    {
+      "id": "F02",
+      "requirement": "第一页为摘要页，含题目/摘要/关键词，摘要一般≤一页；下一页起目录及正文"
+    },
+    {
+      "id": "F03",
+      "requirement": "从摘要页起页脚居中阿拉伯数字1连续编号，无页眉及参赛者/学校身份标志"
+    },
+    {
+      "id": "F04",
+      "requirement": "题目三号黑体；一级标题四号黑体且居中；其他中文小四宋体；单倍行距"
+    },
+    {
+      "id": "F05",
+      "requirement": "正文方括号数字引用；参考文献按正文首次引用顺序排列；网页列作者/标题/网址/访问年月日"
+    },
+    {
+      "id": "F06",
+      "requirement": "附录列出真实支撑材料文件，所有代码与自主查阅数据需支撑；支撑ZIP或RAR≤20 MB，不含承诺书"
+    },
+    {
+      "id": "F07",
+      "requirement": "视频MP4≤3分钟，≥1280×720，≤300 MB；命名题号-队伍号-fz，实际运行+剪辑"
+    },
+    {
+      "id": "C01",
+      "requirement": "Q1（20分）覆盖实践背景/数字孪生结构、数据条件、平行空间和基准模型、泛化性与结果；数据/平行空间/模型/封装各5分"
+    },
+    {
+      "id": "C02",
+      "requirement": "Q2（25分）覆盖拥堵结构背景、数据条件、A模型、结果、与前项对比；模型10/结果5/时空5/解释理论5"
+    },
+    {
+      "id": "C03",
+      "requirement": "Q3（25分）覆盖应急协同结构背景、数据条件、B模型、结果、与前项对比；模型10/结果5/时空5/解释理论5"
+    },
+    {
+      "id": "C04",
+      "requirement": "论文说明数据—平行空间—仿真系统的封装技术路线，并给结果与时间步长的对应图示及解释理论"
+    },
+    {
+      "id": "A01",
+      "requirement": "参考文献后必须明确AI使用声明，正文AI生成内容/结果/图表/参数优化处注明贡献，并引用工具"
+    },
+    {
+      "id": "A02",
+      "requirement": "支撑材料必须有AI工具详情PDF，含版本、用途环节、关键交互、采纳与人工修改实际状态"
+    },
+    {
+      "id": "A03",
+      "requirement": "不能把AI核查写成队员独立完成；赛方要求核心建模、仿真实现与分析由队员独立完成"
+    },
+    {
+      "id": "A04",
+      "requirement": "AI辅助程序注释需工具/版本/机构/版本发布日期；模型未暴露发布日期时不得编造"
+    }
+  ],
+  "official_version_note": "AI PDF正文标2025年试行；2026论文规范提2026相关要求。以已提供文件实际正文引用，未声称已核实不存在的2026 AI新版本。",
+  "content_checks": [
+    {
+      "id": "N001",
+      "check": "h60 ruijin",
+      "actual": 0.22,
+      "expected": 0.22,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N002",
+      "check": "h60 jianguo_west",
+      "actual": 0.24,
+      "expected": 0.24,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N003",
+      "check": "h60 other_corridors",
+      "actual": 0.33,
+      "expected": 0.33,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N004",
+      "check": "h60 J",
+      "actual": 0.003809,
+      "expected": 0.003809,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N005",
+      "check": "h60筛选",
+      "actual": true,
+      "expected": true,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N006",
+      "check": "h30 ruijin",
+      "actual": 0.215,
+      "expected": 0.215,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N007",
+      "check": "h30 jianguo_west",
+      "actual": 0.28,
+      "expected": 0.28,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N008",
+      "check": "h30 other_corridors",
+      "actual": 0.29,
+      "expected": 0.29,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N009",
+      "check": "h30 J",
+      "actual": 0.0032,
+      "expected": 0.0032,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N010",
+      "check": "h30筛选",
+      "actual": true,
+      "expected": true,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N011",
+      "check": "h18 ruijin",
+      "actual": 0.3,
+      "expected": 0.3,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N012",
+      "check": "h18 jianguo_west",
+      "actual": 0.29,
+      "expected": 0.29,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N013",
+      "check": "h18 other_corridors",
+      "actual": 0.31,
+      "expected": 0.31,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N014",
+      "check": "h18 J",
+      "actual": 0.019898,
+      "expected": 0.019898,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N015",
+      "check": "h18筛选",
+      "actual": false,
+      "expected": false,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N016",
+      "check": "h15 ruijin",
+      "actual": 0.36,
+      "expected": 0.36,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N017",
+      "check": "h15 jianguo_west",
+      "actual": 0.33,
+      "expected": 0.33,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N018",
+      "check": "h15 other_corridors",
+      "actual": 0.34,
+      "expected": 0.34,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N019",
+      "check": "h15 J",
+      "actual": 0.063144,
+      "expected": 0.063144,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N020",
+      "check": "h15筛选",
+      "actual": false,
+      "expected": false,
+      "source": "fit.json",
+      "status": "pass"
+    },
+    {
+      "id": "N021",
+      "check": "north_to_south列1",
+      "actual": 693.0,
+      "expected": 693.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N022",
+      "check": "north_to_south列2",
+      "actual": 745.0,
+      "expected": 745.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N023",
+      "check": "north_to_south列3",
+      "actual": 7.5,
+      "expected": 7.5,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N024",
+      "check": "south_to_north列1",
+      "actual": 417.0,
+      "expected": 417.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N025",
+      "check": "south_to_north列2",
+      "actual": 438.67,
+      "expected": 438.67,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N026",
+      "check": "south_to_north列3",
+      "actual": 5.2,
+      "expected": 5.2,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N027",
+      "check": "west_to_hospital_road列1",
+      "actual": 476.0,
+      "expected": 476.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N028",
+      "check": "west_to_hospital_road列2",
+      "actual": 452.67,
+      "expected": 452.67,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N029",
+      "check": "west_to_hospital_road列3",
+      "actual": -4.9,
+      "expected": -4.9,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N030",
+      "check": "east_to_hospital_road列1",
+      "actual": 594.0,
+      "expected": 594.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N031",
+      "check": "east_to_hospital_road列2",
+      "actual": 567.0,
+      "expected": 567.0,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N032",
+      "check": "east_to_hospital_road列3",
+      "actual": -4.55,
+      "expected": -4.55,
+      "source": "fit/training_summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N033",
+      "check": "training列1",
+      "actual": 48.0,
+      "expected": 48,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N034",
+      "check": "training列2",
+      "actual": 69.58,
+      "expected": 69.58,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N035",
+      "check": "training列3",
+      "actual": 57.6,
+      "expected": 57.6,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N036",
+      "check": "same_day_exploratory列1",
+      "actual": 16.0,
+      "expected": 16,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N037",
+      "check": "same_day_exploratory列2",
+      "actual": 124.75,
+      "expected": 124.75,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N038",
+      "check": "same_day_exploratory列3",
+      "actual": 119.75,
+      "expected": 119.75,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N039",
+      "check": "cross_day_holdout列1",
+      "actual": 96.0,
+      "expected": 96,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N040",
+      "check": "cross_day_holdout列2",
+      "actual": 206.29,
+      "expected": 206.29,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N041",
+      "check": "cross_day_holdout列3",
+      "actual": 200.46,
+      "expected": 200.46,
+      "source": "evaluation.json",
+      "status": "pass"
+    },
+    {
+      "id": "N042",
+      "check": "状态h60列1",
+      "actual": 1.0,
+      "expected": 1.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N043",
+      "check": "状态h60列2",
+      "actual": 6.0,
+      "expected": 6.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N044",
+      "check": "状态h60列3",
+      "actual": 180.0,
+      "expected": 180.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N045",
+      "check": "状态h60列4",
+      "actual": 0.025,
+      "expected": 0.025,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N046",
+      "check": "状态h30列1",
+      "actual": 2.0,
+      "expected": 2.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N047",
+      "check": "状态h30列2",
+      "actual": 12.0,
+      "expected": 12.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N048",
+      "check": "状态h30列3",
+      "actual": 360.0,
+      "expected": 360.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N049",
+      "check": "状态h30列4",
+      "actual": 2.125,
+      "expected": 2.125,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N050",
+      "check": "状态h18列1",
+      "actual": 3.33,
+      "expected": 3.33,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N051",
+      "check": "状态h18列2",
+      "actual": 20.0,
+      "expected": 20.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N052",
+      "check": "状态h18列3",
+      "actual": 573.0,
+      "expected": 573.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N053",
+      "check": "状态h18列4",
+      "actual": 16.634,
+      "expected": 16.634,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N054",
+      "check": "状态h15列1",
+      "actual": 4.0,
+      "expected": 4.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N055",
+      "check": "状态h15列2",
+      "actual": 24.0,
+      "expected": 24.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N056",
+      "check": "状态h15列3",
+      "actual": 690.0,
+      "expected": 690.0,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N057",
+      "check": "状态h15列4",
+      "actual": 40.842,
+      "expected": 40.842,
+      "source": "conditional_states.json",
+      "status": "pass"
+    },
+    {
+      "id": "N058",
+      "check": "S1/S2 headway_60/step_q25列2",
+      "actual": 173643.0,
+      "expected": 173643.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N059",
+      "check": "S1/S2 headway_60/step_q25列3",
+      "actual": 174571.0,
+      "expected": 174571.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N060",
+      "check": "S1/S2 headway_60/step_q25列4",
+      "actual": 928.0,
+      "expected": 928.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N061",
+      "check": "S2 A等于固定 headway_60/step_q25",
+      "actual": 174571.0,
+      "expected": 174571.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N062",
+      "check": "S1/S2 headway_60/step_q10列2",
+      "actual": 173643.0,
+      "expected": 173643.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N063",
+      "check": "S1/S2 headway_60/step_q10列3",
+      "actual": 175299.0,
+      "expected": 175299.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N064",
+      "check": "S1/S2 headway_60/step_q10列4",
+      "actual": 1656.0,
+      "expected": 1656.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N065",
+      "check": "S2 A等于固定 headway_60/step_q10",
+      "actual": 175299.0,
+      "expected": 175299.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N066",
+      "check": "S1/S2 headway_30/step_q25列2",
+      "actual": 365459.0,
+      "expected": 365459.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N067",
+      "check": "S1/S2 headway_30/step_q25列3",
+      "actual": 367262.0,
+      "expected": 367262.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N068",
+      "check": "S1/S2 headway_30/step_q25列4",
+      "actual": 1803.0,
+      "expected": 1803.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N069",
+      "check": "S2 A等于固定 headway_30/step_q25",
+      "actual": 367262.0,
+      "expected": 367262.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N070",
+      "check": "S1/S2 headway_30/step_q10列2",
+      "actual": 365459.0,
+      "expected": 365459.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N071",
+      "check": "S1/S2 headway_30/step_q10列3",
+      "actual": 369164.0,
+      "expected": 369164.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N072",
+      "check": "S1/S2 headway_30/step_q10列4",
+      "actual": 3705.0,
+      "expected": 3705.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N073",
+      "check": "S2 A等于固定 headway_30/step_q10",
+      "actual": 369164.0,
+      "expected": 369164.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N074",
+      "check": "B/A headway_60/step_q25 costA",
+      "actual": 174571.0,
+      "expected": 174571.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N075",
+      "check": "B/A headway_60/step_q25 costB",
+      "actual": 175268.0,
+      "expected": 175268.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N076",
+      "check": "B/A headway_60/step_q25 costDelta",
+      "actual": 697.0,
+      "expected": 697.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N077",
+      "check": "B/A headway_60/step_q25 taskA",
+      "actual": 505.0,
+      "expected": 505.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N078",
+      "check": "B/A headway_60/step_q25 taskB",
+      "actual": 505.0,
+      "expected": 505.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N079",
+      "check": "B/A headway_60/step_q25 taskDelta",
+      "actual": 0.0,
+      "expected": 0.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N080",
+      "check": "B/A headway_60/step_q25 fixedEqualsA",
+      "actual": 174571.0,
+      "expected": 174571.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N081",
+      "check": "B/A headway_60/step_q25 taskFixedEqualsA",
+      "actual": 505.0,
+      "expected": 505.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N082",
+      "check": "B/A headway_60/step_q10 costA",
+      "actual": 175299.0,
+      "expected": 175299.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N083",
+      "check": "B/A headway_60/step_q10 costB",
+      "actual": 175930.0,
+      "expected": 175930.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N084",
+      "check": "B/A headway_60/step_q10 costDelta",
+      "actual": 631.0,
+      "expected": 631.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N085",
+      "check": "B/A headway_60/step_q10 taskA",
+      "actual": 533.0,
+      "expected": 533.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N086",
+      "check": "B/A headway_60/step_q10 taskB",
+      "actual": 533.0,
+      "expected": 533.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N087",
+      "check": "B/A headway_60/step_q10 taskDelta",
+      "actual": 0.0,
+      "expected": 0.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N088",
+      "check": "B/A headway_60/step_q10 fixedEqualsA",
+      "actual": 175299.0,
+      "expected": 175299.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N089",
+      "check": "B/A headway_60/step_q10 taskFixedEqualsA",
+      "actual": 533.0,
+      "expected": 533.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N090",
+      "check": "B/A headway_30/step_q25 costA",
+      "actual": 367441.0,
+      "expected": 367441.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N091",
+      "check": "B/A headway_30/step_q25 costB",
+      "actual": 368878.0,
+      "expected": 368878.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N092",
+      "check": "B/A headway_30/step_q25 costDelta",
+      "actual": 1437.0,
+      "expected": 1437.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N093",
+      "check": "B/A headway_30/step_q25 taskA",
+      "actual": 488.0,
+      "expected": 488.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N094",
+      "check": "B/A headway_30/step_q25 taskB",
+      "actual": 518.0,
+      "expected": 518.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N095",
+      "check": "B/A headway_30/step_q25 taskDelta",
+      "actual": 30.0,
+      "expected": 30.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N096",
+      "check": "B/A headway_30/step_q25 fixedEqualsA",
+      "actual": 367441.0,
+      "expected": 367441.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N097",
+      "check": "B/A headway_30/step_q25 taskFixedEqualsA",
+      "actual": 488.0,
+      "expected": 488.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N098",
+      "check": "B/A headway_30/step_q10 costA",
+      "actual": 369378.0,
+      "expected": 369378.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N099",
+      "check": "B/A headway_30/step_q10 costB",
+      "actual": 370874.0,
+      "expected": 370874.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N100",
+      "check": "B/A headway_30/step_q10 costDelta",
+      "actual": 1496.0,
+      "expected": 1496.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N101",
+      "check": "B/A headway_30/step_q10 taskA",
+      "actual": 515.0,
+      "expected": 515.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N102",
+      "check": "B/A headway_30/step_q10 taskB",
+      "actual": 540.0,
+      "expected": 540.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N103",
+      "check": "B/A headway_30/step_q10 taskDelta",
+      "actual": 25.0,
+      "expected": 25.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N104",
+      "check": "B/A headway_30/step_q10 fixedEqualsA",
+      "actual": 369378.0,
+      "expected": 369378.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N105",
+      "check": "B/A headway_30/step_q10 taskFixedEqualsA",
+      "actual": 515.0,
+      "expected": 515.0,
+      "source": "governance summary.json",
+      "status": "pass"
+    },
+    {
+      "id": "N106",
+      "check": "个体h60/step_q25 benefited",
+      "actual": 0.0,
+      "expected": 0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N107",
+      "check": "个体h60/step_q25 harmed",
+      "actual": 17.0,
+      "expected": 17,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N108",
+      "check": "个体h60/step_q25 unchanged",
+      "actual": 283.0,
+      "expected": 283,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N109",
+      "check": "个体h60/step_q25 maximum_extra_time_s",
+      "actual": 60.0,
+      "expected": 60.0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N110",
+      "check": "个体h60/step_q10 benefited",
+      "actual": 0.0,
+      "expected": 0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N111",
+      "check": "个体h60/step_q10 harmed",
+      "actual": 17.0,
+      "expected": 17,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N112",
+      "check": "个体h60/step_q10 unchanged",
+      "actual": 283.0,
+      "expected": 283,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N113",
+      "check": "个体h60/step_q10 maximum_extra_time_s",
+      "actual": 49.0,
+      "expected": 49.0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N114",
+      "check": "个体h30/step_q25 benefited",
+      "actual": 9.0,
+      "expected": 9,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N115",
+      "check": "个体h30/step_q25 harmed",
+      "actual": 55.0,
+      "expected": 55,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N116",
+      "check": "个体h30/step_q25 unchanged",
+      "actual": 536.0,
+      "expected": 536,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N117",
+      "check": "个体h30/step_q25 maximum_extra_time_s",
+      "actual": 53.0,
+      "expected": 53.0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N118",
+      "check": "个体h30/step_q10 benefited",
+      "actual": 10.0,
+      "expected": 10,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N119",
+      "check": "个体h30/step_q10 harmed",
+      "actual": 57.0,
+      "expected": 57,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N120",
+      "check": "个体h30/step_q10 unchanged",
+      "actual": 533.0,
+      "expected": 533,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N121",
+      "check": "个体h30/step_q10 maximum_extra_time_s",
+      "actual": 49.0,
+      "expected": 49.0,
+      "source": "individual_effects.json",
+      "status": "pass"
+    },
+    {
+      "id": "N122",
+      "check": "EIA瑞金二路列1",
+      "actual": 207.0,
+      "expected": 207.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N123",
+      "check": "EIA瑞金二路列2",
+      "actual": 621.0,
+      "expected": 621.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N124",
+      "check": "EIA瑞金二路列3",
+      "actual": 121.0,
+      "expected": 121.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N125",
+      "check": "EIA瑞金二路列4",
+      "actual": 363.0,
+      "expected": 363.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N126",
+      "check": "EIA建德路列1",
+      "actual": 137.0,
+      "expected": 137.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N127",
+      "check": "EIA建德路列2",
+      "actual": 411.0,
+      "expected": 411.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N128",
+      "check": "EIA建德路列3",
+      "actual": 90.0,
+      "expected": 90.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N129",
+      "check": "EIA建德路列4",
+      "actual": 270.0,
+      "expected": 270.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N130",
+      "check": "EIA思南路列1",
+      "actual": 354.0,
+      "expected": 354.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N131",
+      "check": "EIA思南路列2",
+      "actual": 1062.0,
+      "expected": 1062.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N132",
+      "check": "EIA思南路列3",
+      "actual": 78.0,
+      "expected": 78.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N133",
+      "check": "EIA思南路列4",
+      "actual": 234.0,
+      "expected": 234.0,
+      "source": "local_eia_counts.csv",
+      "status": "pass"
+    },
+    {
+      "id": "N134",
+      "check": "引用顺序",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "source": "paper_core/references",
+      "status": "pass"
+    },
+    {
+      "id": "N135",
+      "check": "参考文献编号",
+      "actual": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "source": "references",
+      "status": "pass"
+    },
+    {
+      "id": "N136",
+      "check": "运行数",
+      "actual": 44,
+      "expected": 44,
+      "source": "gov summary",
+      "status": "pass"
+    },
+    {
+      "id": "N137",
+      "check": "总计划辆次",
+      "actual": 34113,
+      "expected": 34113,
+      "source": "gov summary",
+      "status": "pass"
+    },
+    {
+      "id": "N138",
+      "check": "全部到达",
+      "actual": 34113,
+      "expected": 34113,
+      "source": "gov summary",
+      "status": "pass"
+    },
+    {
+      "id": "N139",
+      "check": "A改道数",
+      "actual": 0,
+      "expected": 0,
+      "source": "gov summary",
+      "status": "pass"
+    },
+    {
+      "id": "N140",
+      "check": "A运行数",
+      "actual": 16,
+      "expected": 16,
+      "source": "gov summary",
+      "status": "pass"
+    },
+    {
+      "id": "N141",
+      "check": "旧仿射系数不作为正文方法",
+      "actual": false,
+      "expected": false,
+      "source": "paper_core",
+      "status": "pass"
+    },
+    {
+      "id": "N142",
+      "check": "旧收益未冒充V2",
+      "actual": false,
+      "expected": false,
+      "source": "paper_core",
+      "status": "pass"
+    },
+    {
+      "id": "N143",
+      "check": "外部边",
+      "actual": 305,
+      "expected": 305,
+      "source": "catalog_v2",
+      "status": "pass"
+    },
+    {
+      "id": "N144",
+      "check": "全部转向",
+      "actual": 310,
+      "expected": 310,
+      "source": "catalog_v2",
+      "status": "pass"
+    },
+    {
+      "id": "N145",
+      "check": "允许转向",
+      "actual": 308,
+      "expected": 308,
+      "source": "catalog_v2",
+      "status": "pass"
+    },
+    {
+      "id": "N146",
+      "check": "时间分区明确实际首采",
+      "actual": true,
+      "expected": true,
+      "source": "paper_core",
+      "status": "pass"
+    },
+    {
+      "id": "N147",
+      "check": "停车全行程口径",
+      "actual": true,
+      "expected": true,
+      "source": "paper_core",
+      "status": "pass"
+    }
+  ],
+  "blocking_findings": [],
+  "pending": [
+    "root检查最终PDF摘要页、目录、页码、字体、溢出、文件大小、匿名元数据",
+    "附录与最终B_support_v2.zip实际成员对账；旧B_support.zip和视频仍V1",
+    "任何后续正文/参考文献修改后需刷新审阅SHA与对应检查"
+  ],
+  "pre_draft_checks": [
+    {
+      "id": "PRE01",
+      "status": "resolved",
+      "finding": "图metadata最初allowed_turns=310，误将含2调头的全部来源转向计为允许转向",
+      "resolution": "图作者现已改为total_connections=310、allowed_turns=308；图像本身未展示错误转向数",
+      "verified_values": {
+        "external_edges": 305,
+        "total_connections": 310,
+        "allowed_turns": 308,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_model_length_m": 278.665139,
+        "shared_event_length_m": 209.930048,
+        "avoidable_event_length_m": 68.735091,
+        "alternative_extra_distance_m": 717.1261470000001
+      }
+    },
+    {
+      "id": "PRE02",
+      "status": "pass",
+      "finding": "直接读取fit/evaluation/route_choice_explanation/summary冻结JSON，主结果与V2交接一致；待核对正文引用"
+    }
+  ],
+  "pre_draft_source_sha256": {
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+    "outputs/governance_v2/route_choice_explanation.json": "99043894b163e19b3a9e6f0b18592eee934f06828a736d6c3c2fc4ee594cbd39",
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa",
+    "outputs/paper_v2/figures/network_v2.json": "e05deca5d17201a4c7fae796bff895a82d26845bf5af1cf926574701fe1ac972"
+  },
+  "numeric_check_count": 147,
+  "numeric_pass_count": 147,
+  "resolved_content_findings": [
+    {
+      "id": "R01",
+      "issue": "h15初稿参数列有误",
+      "resolution": "已改瑞金.360/建国西.330/其他.340，与fit一致"
+    },
+    {
+      "id": "R02",
+      "issue": "时间窗口与停车统计口径可能混淆",
+      "resolution": "已补实际首采14:57:11、预设分区、断面1200≤t<2400、背景车全行程停车均值"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "status": "pass",
+      "check": "通读摘要及10章；Q1结构/数据/基准/泛化，Q2事件/算法/与S1及固定对比/阈值，Q3权限/机制/固定与A对比/公平性均有实际内容"
+    },
+    {
+      "id": "S02",
+      "status": "pass",
+      "check": "平台ETA区别真实车辆计时；历史量级不同时间空间车型，未写为当前真实流量"
+    },
+    {
+      "id": "S03",
+      "status": "pass",
+      "check": "有效约束不冒充限速或信号；有限局部搜索，无全局最优、统计置信或流量唯一恢复宣称"
+    },
+    {
+      "id": "S04",
+      "status": "pass",
+      "check": "训练选择和留出分开，明确回顾性时间留出、相关样本及跨日劣于基准"
+    },
+    {
+      "id": "S05",
+      "status": "pass",
+      "check": "完整19边事件、分位倍率、共享段抵消，阈值只适用于当前代价规则"
+    },
+    {
+      "id": "S06",
+      "status": "pass",
+      "check": "45秒仅限制源端等待；全部成本计入，轨迹前缀配对，B负结果和诊断性-16秒边界均明确"
+    },
+    {
+      "id": "S07",
+      "status": "pass",
+      "check": "各章AI贡献与参考文献后声明存在，没有冒充队员独立完成核心工作"
+    },
+    {
+      "id": "S08",
+      "status": "pass",
+      "check": "未执行时长/随机种子/步长敏感性明确未执行；图表和主表引用冻结结果"
+    }
+  ],
+  "reviewed_source_sha256": {
+    "manuscript/v2/paper_core.md": "dd38161364f4b12fa58bc13a5dc083decf44538cf060141d7bb5b3526517345f",
+    "manuscript/v2/abstract.md": "6e76c89646333e51dcb7eff0618d184ee844182accec3c639fe94d3ccb546ed1",
+    "manuscript/v2/references.json": "dcaf9cf697a94d60881d6f8824edfae18262e80c6eaf1bfd7a3e12c665481560",
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+    "outputs/identification_v2/calibration/conditional_states.json": "f19ab977bab06a11ef2fe4100ae5a5803ff922a688bb0d7c3cf8e682220d78fe",
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa",
+    "outputs/governance_v2/individual_effects.json": "83f2d5559da7509476f656637e43a35410cb08d0c363af9d7126d2d97111950a",
+    "research/parameter_audit/local_eia_counts.csv": "9519f5422a6db63b4fd6482f6bb719632335ad1a60248ecdf2bf56216e5f29e0",
+    "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff"
+  }
+}

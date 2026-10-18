@@ -1,0 +1,23 @@
+[
+  {
+    "path": "research/parameter_audit/downloads/ruijin_hospital_eia_public.txt",
+    "sha256": "46b786e38447520794c1fb37da4460dc1d52e7183018b0afaa8a7417254895ed",
+    "bytes": 540398,
+    "derived_from_sha256": "5dcd4ae597f5bc35abc52da4e44ad6bddd1a5a19b0970f3ff73bc2bf18fd77aa",
+    "method": "pdftotext -layout"
+  },
+  {
+    "path": "research/parameter_audit/downloads/eia_page_110.png",
+    "sha256": "936d5980bdfbeb16e72a2318874726aee2c2dca5ad24f8a4f19020434a7af002",
+    "bytes": 435334,
+    "derived_from_sha256": "5dcd4ae597f5bc35abc52da4e44ad6bddd1a5a19b0970f3ff73bc2bf18fd77aa",
+    "method": "pdftoppm -singlefile -scale-to 1800 -png"
+  },
+  {
+    "path": "research/parameter_audit/downloads/eia_page_168.png",
+    "sha256": "d6fe2d76a94b594fe7be9a8895b95bd3ab05a60699b5c15152678391cb3796a9",
+    "bytes": 322433,
+    "derived_from_sha256": "5dcd4ae597f5bc35abc52da4e44ad6bddd1a5a19b0970f3ff73bc2bf18fd77aa",
+    "method": "pdftoppm -singlefile -scale-to 1800 -png"
+  }
+]

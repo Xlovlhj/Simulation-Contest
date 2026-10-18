@@ -1,0 +1,275 @@
+{
+  "accepted_grid_envelope": {
+    "completed_background_mean_stopped_time_s": {
+      "max": 2.125,
+      "min": 0.025
+    },
+    "conditional_network_demand_vehicles_per_min": {
+      "max": 12.0,
+      "min": 6.0
+    }
+  },
+  "range_status": "Finite tested-profile sensitivity envelope, NOT a confidence/credible interval or guaranteed identification set",
+  "states": [
+    {
+      "all_vehicles_arrived": true,
+      "background_unfinished": 0,
+      "completed_background_mean_in_network_time_s": 578.525,
+      "completed_background_mean_stopped_time_s": 0.025,
+      "completed_means_censored": false,
+      "conditional_background_demand_vph_by_od": {
+        "east_to_hospital_road": 60.0,
+        "east_to_west": 60.0,
+        "north_to_south": 60.0,
+        "south_to_north": 60.0,
+        "west_to_east": 60.0,
+        "west_to_hospital_road": 60.0
+      },
+      "conditional_network_demand_vehicles_per_min": 6.0,
+      "edge_indicator_warning": "Edge waitingTime/window can count a vehicle touching adjacent short edges repeatedly. This is NOT a unique road queue count.",
+      "edge_stopped_occupancy_indicator_by_road": {
+        "复兴中路": 0.0,
+        "建国中路": 0.0,
+        "建国西路": 0.0,
+        "建德路": 0.0125,
+        "思南路": 0.0,
+        "瑞金二路": 0.0,
+        "重庆南路": 0.0,
+        "陕西南路": 0.0225
+      },
+      "effective_running_constraints_kmh": {
+        "jianguo_west": 7.199999999999999,
+        "other_corridors": 9.9,
+        "ruijin": 6.6
+      },
+      "local_traffic_signal_estimate": null,
+      "observed_true_flow_estimate": null,
+      "passes_consistency_screen": true,
+      "physics_valid": true,
+      "probe_max_insertion_delay_s": 3.0,
+      "profile_id": "headway_60",
+      "queue_cause_identification": "Not identified from ETA. Model contains its specified merges, priorities, demand and effective speed constraints only.",
+      "queue_definition": "summary.xml halting: unique in-network vehicles with speed<0.1m/s, excluding explicit stops, every second; includes probes, excludes vehicles waiting for insertion. No street attribution or field queue claim.",
+      "screenline": {
+        "background_flow_vph": 180.0,
+        "crossing_counts": {
+          "background": 60,
+          "probe": 9
+        },
+        "edge_id": "e000095",
+        "meaning": "Simulated directed screenline, not matched to the unspecified 2025 count section",
+        "probe_flow_vph": 27.0,
+        "road_name": "瑞金二路",
+        "window_end_s": 2400,
+        "window_start_s": 1200
+      },
+      "source_sha256": {
+        "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796/edge_summary.json": "b62a5f2554f63c9105f0e302e06a28f8a17e798f8ef53880b0160ae031b1ac2b",
+        "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796/metrics.json": "a0dec731800c21978264e8f29bd96f22ecbaf643cec65dfa03cbe32a865516ca",
+        "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796/summary.xml": "9f58928d26c6b173eac7e8943dfcd0a9522e901449cf59ff9a89715982a54709",
+        "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796/vehicle_outcomes.json": "bc8f619b23027c7cffd1d1bfcf412475a5cf099bc1a70b2857ddcf67214a711e",
+        "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796/vehicle_routes.xml": "aef820a64527c082750481970bf4684384cc2ea1a1d1468cef2b9040adca656f"
+      },
+      "unique_network_halting_vehicles": {
+        "max": 2,
+        "mean": 0.15,
+        "samples": 1200
+      }
+    },
+    {
+      "all_vehicles_arrived": true,
+      "background_unfinished": 0,
+      "completed_background_mean_in_network_time_s": 609.0875,
+      "completed_background_mean_stopped_time_s": 2.125,
+      "completed_means_censored": false,
+      "conditional_background_demand_vph_by_od": {
+        "east_to_hospital_road": 120.0,
+        "east_to_west": 120.0,
+        "north_to_south": 120.0,
+        "south_to_north": 120.0,
+        "west_to_east": 120.0,
+        "west_to_hospital_road": 120.0
+      },
+      "conditional_network_demand_vehicles_per_min": 12.0,
+      "edge_indicator_warning": "Edge waitingTime/window can count a vehicle touching adjacent short edges repeatedly. This is NOT a unique road queue count.",
+      "edge_stopped_occupancy_indicator_by_road": {
+        "复兴中路": 0.0,
+        "建国中路": 0.0,
+        "建国西路": 0.0,
+        "建德路": 0.0,
+        "思南路": 0.0,
+        "瑞金二路": 0.385,
+        "重庆南路": 0.0,
+        "陕西南路": 0.25333333333333335
+      },
+      "effective_running_constraints_kmh": {
+        "jianguo_west": 8.4,
+        "other_corridors": 8.7,
+        "ruijin": 6.45
+      },
+      "local_traffic_signal_estimate": null,
+      "observed_true_flow_estimate": null,
+      "passes_consistency_screen": true,
+      "physics_valid": true,
+      "probe_max_insertion_delay_s": 4.0,
+      "profile_id": "headway_30",
+      "queue_cause_identification": "Not identified from ETA. Model contains its specified merges, priorities, demand and effective speed constraints only.",
+      "queue_definition": "summary.xml halting: unique in-network vehicles with speed<0.1m/s, excluding explicit stops, every second; includes probes, excludes vehicles waiting for insertion. No street attribution or field queue claim.",
+      "screenline": {
+        "background_flow_vph": 360.0,
+        "crossing_counts": {
+          "background": 120,
+          "probe": 9
+        },
+        "edge_id": "e000095",
+        "meaning": "Simulated directed screenline, not matched to the unspecified 2025 count section",
+        "probe_flow_vph": 27.0,
+        "road_name": "瑞金二路",
+        "window_end_s": 2400,
+        "window_start_s": 1200
+      },
+      "source_sha256": {
+        "outputs/identification_v2/calibration/runs/case_43183b900b6a0547/edge_summary.json": "6a2fddcacddea07722164b36783c9db4db1bbfb0154276170178ddf9a5377173",
+        "outputs/identification_v2/calibration/runs/case_43183b900b6a0547/metrics.json": "59a1cd5e2f74fd7e78cb488ad1a80dcdad503a7f7a3fdd2cfd45af2d45d40880",
+        "outputs/identification_v2/calibration/runs/case_43183b900b6a0547/summary.xml": "c649005afd82af4a642393d45ea7bf0be0bcd2d5460af8e9fad01e8f3faed28a",
+        "outputs/identification_v2/calibration/runs/case_43183b900b6a0547/vehicle_outcomes.json": "56f4a28620b88d7597e11374934b373c73f8c9ef6cc6f34884bc52c279486405",
+        "outputs/identification_v2/calibration/runs/case_43183b900b6a0547/vehicle_routes.xml": "f9b9dbee5a361f511c13772a542242366235b097d7eb53f3148e36f038fa0573"
+      },
+      "unique_network_halting_vehicles": {
+        "max": 4,
+        "mean": 0.8283333333333334,
+        "samples": 1200
+      }
+    },
+    {
+      "all_vehicles_arrived": true,
+      "background_unfinished": 0,
+      "completed_background_mean_in_network_time_s": 559.3175,
+      "completed_background_mean_stopped_time_s": 16.63375,
+      "completed_means_censored": false,
+      "conditional_background_demand_vph_by_od": {
+        "east_to_hospital_road": 200.0,
+        "east_to_west": 200.0,
+        "north_to_south": 200.0,
+        "south_to_north": 200.0,
+        "west_to_east": 200.0,
+        "west_to_hospital_road": 200.0
+      },
+      "conditional_network_demand_vehicles_per_min": 20.0,
+      "edge_indicator_warning": "Edge waitingTime/window can count a vehicle touching adjacent short edges repeatedly. This is NOT a unique road queue count.",
+      "edge_stopped_occupancy_indicator_by_road": {
+        "复兴中路": 0.0,
+        "建国中路": 0.0,
+        "建国西路": 0.005833333333333334,
+        "建德路": 0.0033333333333333335,
+        "思南路": 0.0,
+        "瑞金二路": 5.631666666666667,
+        "重庆南路": 0.0,
+        "陕西南路": 3.763333333333333
+      },
+      "effective_running_constraints_kmh": {
+        "jianguo_west": 8.7,
+        "other_corridors": 9.3,
+        "ruijin": 9.0
+      },
+      "local_traffic_signal_estimate": null,
+      "observed_true_flow_estimate": null,
+      "passes_consistency_screen": false,
+      "physics_valid": true,
+      "probe_max_insertion_delay_s": 6.0,
+      "profile_id": "historical_scale_18",
+      "queue_cause_identification": "Not identified from ETA. Model contains its specified merges, priorities, demand and effective speed constraints only.",
+      "queue_definition": "summary.xml halting: unique in-network vehicles with speed<0.1m/s, excluding explicit stops, every second; includes probes, excludes vehicles waiting for insertion. No street attribution or field queue claim.",
+      "screenline": {
+        "background_flow_vph": 573.0,
+        "crossing_counts": {
+          "background": 191,
+          "probe": 9
+        },
+        "edge_id": "e000095",
+        "meaning": "Simulated directed screenline, not matched to the unspecified 2025 count section",
+        "probe_flow_vph": 27.0,
+        "road_name": "瑞金二路",
+        "window_end_s": 2400,
+        "window_start_s": 1200
+      },
+      "source_sha256": {
+        "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c/edge_summary.json": "ac826cc69c4c66042db7ffb097cd50673e759c5884ec299b82eb92ea3b0499ba",
+        "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c/metrics.json": "ecff0b89a70772090dfe975b675dd8b986cd7eb12cc4d36f6a3de29f7af71787",
+        "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c/summary.xml": "30adac6695a7e24ab0aec5221956ae5c08e3dfc3208ee03bb6e3cc9cf541a1c6",
+        "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c/vehicle_outcomes.json": "586430c68ac28553497d5bf4195cda2ab51f53df84ca2fc018cc906f276c133e",
+        "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c/vehicle_routes.xml": "db53819038503facf4939f5043d5971ed475fd0b1bc4caff73278335399880ef"
+      },
+      "unique_network_halting_vehicles": {
+        "max": 16,
+        "mean": 8.330833333333333,
+        "samples": 1200
+      }
+    },
+    {
+      "all_vehicles_arrived": true,
+      "background_unfinished": 0,
+      "completed_background_mean_in_network_time_s": 526.7851929092805,
+      "completed_background_mean_stopped_time_s": 40.8415015641293,
+      "completed_means_censored": false,
+      "conditional_background_demand_vph_by_od": {
+        "east_to_hospital_road": 240.0,
+        "east_to_west": 240.0,
+        "north_to_south": 240.0,
+        "south_to_north": 240.0,
+        "west_to_east": 240.0,
+        "west_to_hospital_road": 240.0
+      },
+      "conditional_network_demand_vehicles_per_min": 24.0,
+      "edge_indicator_warning": "Edge waitingTime/window can count a vehicle touching adjacent short edges repeatedly. This is NOT a unique road queue count.",
+      "edge_stopped_occupancy_indicator_by_road": {
+        "复兴中路": 0.12,
+        "建国中路": 0.0,
+        "建国西路": 0.013333333333333334,
+        "建德路": 7.145833333333333,
+        "思南路": 0.0,
+        "瑞金二路": 0.3125,
+        "重庆南路": 0.0,
+        "陕西南路": 12.9125
+      },
+      "effective_running_constraints_kmh": {
+        "jianguo_west": 9.9,
+        "other_corridors": 10.200000000000001,
+        "ruijin": 10.799999999999999
+      },
+      "local_traffic_signal_estimate": null,
+      "observed_true_flow_estimate": null,
+      "passes_consistency_screen": false,
+      "physics_valid": true,
+      "probe_max_insertion_delay_s": 3.0,
+      "profile_id": "headway_15",
+      "queue_cause_identification": "Not identified from ETA. Model contains its specified merges, priorities, demand and effective speed constraints only.",
+      "queue_definition": "summary.xml halting: unique in-network vehicles with speed<0.1m/s, excluding explicit stops, every second; includes probes, excludes vehicles waiting for insertion. No street attribution or field queue claim.",
+      "screenline": {
+        "background_flow_vph": 690.0,
+        "crossing_counts": {
+          "background": 230,
+          "probe": 9
+        },
+        "edge_id": "e000095",
+        "meaning": "Simulated directed screenline, not matched to the unspecified 2025 count section",
+        "probe_flow_vph": 27.0,
+        "road_name": "瑞金二路",
+        "window_end_s": 2400,
+        "window_start_s": 1200
+      },
+      "source_sha256": {
+        "outputs/identification_v2/calibration/runs/case_dc7c08374c039941/edge_summary.json": "dc62c8553d2408271e242920b3c39158fdbabc1aa765b04b7729b0dfbabfe935",
+        "outputs/identification_v2/calibration/runs/case_dc7c08374c039941/metrics.json": "15fda7c115aebf2cd483df40a41efc84afb65ec8a4a2121c3ab5b09165ea6c6b",
+        "outputs/identification_v2/calibration/runs/case_dc7c08374c039941/summary.xml": "3841f099bd5235b9886df53525f5da71a65e6828a553d2cbd4f69cc1391f0d8d",
+        "outputs/identification_v2/calibration/runs/case_dc7c08374c039941/vehicle_outcomes.json": "dee6b2a42f9496cc1cd9423c1a86780fc7b35757fd2c8c155ee77f6bf1c4276e",
+        "outputs/identification_v2/calibration/runs/case_dc7c08374c039941/vehicle_routes.xml": "8ae505677b95bb40710bfdc87d5a1662cb1ea375b4918ad383bf724d0922f6ae"
+      },
+      "unique_network_halting_vehicles": {
+        "max": 43,
+        "mean": 18.7325,
+        "samples": 1200
+      }
+    }
+  ]
+}

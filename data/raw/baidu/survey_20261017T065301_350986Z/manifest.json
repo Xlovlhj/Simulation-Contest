@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "purpose": "junction_and_route_survey",
+  "phase": "geocode",
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "started_at": "2026-10-17T14:53:01.351+08:00",
+  "max_requests": 10,
+  "requests": [
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "瑞金二路与复兴中路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "RJ_FX",
+      "requested_at": "2026-10-17T14:53:01.351+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:03.226+08:00",
+      "response_file": "01_RJ_FX.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "瑞金二路与建国中路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "RJ_JG",
+      "requested_at": "2026-10-17T14:53:04.327+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:05.990+08:00",
+      "response_file": "02_RJ_JG.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "瑞金二路与永嘉路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "RJ_YJ",
+      "requested_at": "2026-10-17T14:53:07.091+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:08.756+08:00",
+      "response_file": "03_RJ_YJ.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "思南路与复兴中路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "SN_FX",
+      "requested_at": "2026-10-17T14:53:09.857+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:11.537+08:00",
+      "response_file": "04_SN_FX.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "思南路与建国中路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "SN_JG",
+      "requested_at": "2026-10-17T14:53:12.637+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:14.484+08:00",
+      "response_file": "05_SN_JG.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "陕西南路与建国西路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "SX_JG",
+      "requested_at": "2026-10-17T14:53:15.585+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:17.325+08:00",
+      "response_file": "06_SX_JG.json"
+    },
+    {
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "茂名南路与复兴中路交叉口",
+        "city": "上海市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "label": "MM_FX",
+      "requested_at": "2026-10-17T14:53:18.426+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:20.095+08:00",
+      "response_file": "07_MM_FX.json"
+    }
+  ],
+  "formal_experiment": false,
+  "billing_status": "unverified",
+  "source_data_time": null,
+  "finished_at": "2026-10-17T14:53:20.096+08:00"
+}

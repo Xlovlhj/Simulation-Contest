@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-18T07:41:56.424249+00:00",
+  "inputs_sha256": {
+    "src/app_template.html": "5915347439adaaba87e55631dc0b7ce72b822aea635de6a74f6f8f3b41146b6f",
+    "scripts/build_project.py": "6118d8646984a97a5bce9c8cb3b5ef577386ac0451bc8dd87a7457875953371e",
+    "outputs/final_experiments/summary.json": "87e0372ee8351808273c7415465d0a91be0885bfc7a887b3008eea505a5f8e31",
+    "outputs/validation/summary.json": "2e924c620b46a274a827cf67dbaedcc19a3db619d267e87ecb56559232874bb3",
+    "data/processed/final/data_manifest.json": "b53c4a86c182e4fabdfaa4edae68b3b8716062e66947b9ac8465e0121ecfe3ec"
+  },
+  "artifacts": {
+    "paper.docx": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a",
+    "observations.html": "c1a4c24be0074af9b338c1a8532c4f49e8156bab71bb78843f7b4818ca0dec04",
+    "paper.pdf": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6",
+    "ai_usage.pdf": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57",
+    "index.html": "794b30fc14370b1293f5a4bea04710ba9ad87a06c057087d4000162dacc6ecda"
+  },
+  "run_count": 22,
+  "replay_count": 22,
+  "route_sample_count": 160
+}

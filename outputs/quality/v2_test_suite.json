@@ -1,0 +1,26 @@
+{
+  "command": "python3 -B -m unittest discover -s tests",
+  "tests_run": 148,
+  "status": "passed",
+  "duration_s_reported": 2.377,
+  "source_hashes": {
+    "tests/test_baseline.py": "9bf7a0f30df84634ff085cf14b3904437f6fa4699e5227db9f63d7093f4664b0",
+    "tests/test_calibrate_inverse_v2.py": "bdd8fe411c81a3b976e0b3b97a7318bbd7761d15651e8af63eb5c2afe792a1d5",
+    "tests/test_calibration.py": "42561ca1c0e8a35c66b7dd984874c5b8f683db94b435bbc5bc9f66aadf090608",
+    "tests/test_collector.py": "cbbd96cd508e989da70b9df684efcbf70140be5176afc6c31a2ae90eb3183faa",
+    "tests/test_eta_reference.py": "e2626fba220c5dc7db454d86a68dd416df2367554a02a25a9d25463a686fe05b",
+    "tests/test_final_experiments.py": "62396952cd607c0959b2edca009556437d8f27895204c72d3cf552da2369a9f0",
+    "tests/test_final_validation.py": "4753d0fd884e9094dc418f7a35d2e09896e5a83002f38b6204e850c1434f3817",
+    "tests/test_governance_v2.py": "fb6223e5f3d8d19305d2a4aacabe667a41fd06ce5beb8cfc8ba774de45c70980",
+    "tests/test_inverse_engine.py": "55d89483c998e196ddb4eae7f9c875f58f568b5b8144ae551c9bd49da2352c41",
+    "tests/test_network_audit.py": "52d06e7a6aa35b9d8d7bf6a5270026fc8f1f01e02e16f079ee1ba24957d2be3a",
+    "tests/test_normalize_network_v2.py": "277193022018df037587c2e225ac09b9d53383644317ae9c3f3f67ca1a8f1bb6",
+    "tests/test_observations_v2.py": "2bc9dff3dc447acdc141398037151f770e5bbd678fccdf318a7272aa1b8c7095",
+    "tests/test_replay.py": "15d7448f693a87f11c489e86a0819c0ec26b755dbf89aaa7a36b73452ac96c32",
+    "tests/test_route_catalog.py": "65b4f93d95bd87244077027c7e6e5ce36f19c42b70179b7782cc75ef6927be19",
+    "tests/test_scenarios.py": "138af2d5ab2a87946c944cfc353e01ec663d8a6571f0363f52f128b14168c71a",
+    "tests/test_view_baseline.py": "2b017b30f18ecfd9ee681fec7a2183bda5939c7e4e2d36db0429133c3f28a366",
+    "tests/test_view_scenarios.py": "ed458a6db5f486bd83812f42d126b3539f04b85aee3e5c01e0ec8197adb02166"
+  },
+  "scope": "Existing112 plus36 new V2 tests; not field validation; frontend manual checks separate."
+}

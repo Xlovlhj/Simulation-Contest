@@ -1,0 +1,51 @@
+{
+  "provider": "Hong Kong Transport Department",
+  "catalog": "https://data.gov.hk/en-data/dataset/hk-td-sm_4-traffic-data-strategic-major-roads",
+  "terms": "https://data.gov.hk/en/terms-and-conditions",
+  "resources": [
+    {
+      "file": "traffic_detectors.csv",
+      "url": "https://static.data.gov.hk/td/traffic-data-strategic-major-roads/info/traffic_speed_volume_occ_info.csv",
+      "requested_at_utc": "2026-10-17T05:51:46.481908+00:00",
+      "status": 200,
+      "content_type": "text/csv",
+      "http_date": "Sat, 17 Oct 2026 05:25:28 GMT",
+      "last_modified": "Thu, 30 Apr 2026 10:14:59 GMT",
+      "bytes": 171744,
+      "sha256": "f30818ec94984c024f0188e2e45139ac684c4636aae7906561e227f01407423d"
+    },
+    {
+      "file": "road_segments.csv",
+      "url": "https://static.data.gov.hk/td/traffic-data-strategic-major-roads/info/speed_segments_info.csv",
+      "requested_at_utc": "2026-10-17T05:51:47.404384+00:00",
+      "status": 200,
+      "content_type": "text/csv",
+      "http_date": "Sat, 17 Oct 2026 05:51:49 GMT",
+      "last_modified": "Tue, 12 Sep 2023 10:28:18 GMT",
+      "bytes": 89443,
+      "sha256": "28e0c841c9e06083022647da597095ee0158ead317dcdb2d0d59f98fa7c19f16"
+    },
+    {
+      "file": "raw_traffic.xml",
+      "url": "https://resource.data.one.gov.hk/td/traffic-detectors/rawSpeedVol-all.xml",
+      "requested_at_utc": "2026-10-17T05:51:48.793450+00:00",
+      "status": 200,
+      "content_type": "text/xml",
+      "http_date": "Sat, 17 Oct 2026 05:51:49 GMT",
+      "last_modified": "Sat, 17 Oct 2026 05:48:33 GMT",
+      "bytes": 703720,
+      "sha256": "ea363705c4247ac8e73e088ddc2b9030bc66b79481a066a2700f31d9fa964f48"
+    },
+    {
+      "file": "segment_speeds.xml",
+      "url": "https://resource.data.one.gov.hk/td/traffic-detectors/irnAvgSpeed-all.xml",
+      "requested_at_utc": "2026-10-17T05:51:50.579710+00:00",
+      "status": 200,
+      "content_type": "text/xml",
+      "http_date": "Sat, 17 Oct 2026 05:51:51 GMT",
+      "last_modified": "Sat, 17 Oct 2026 05:48:33 GMT",
+      "bytes": 381965,
+      "sha256": "44eb23443a6d41870548a706f86f4ec3468a5208682856b072fdf172fc4be1a0"
+    }
+  ]
+}

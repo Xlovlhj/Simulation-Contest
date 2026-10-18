@@ -1,0 +1,7 @@
+{
+  "created_after_collection": true,
+  "model_id": "ETA_cc5eba1e5891e909",
+  "model_sha256": "6423e1d7f1581f1076145e4f894d0b282dfc2cd2ce309c8ac3d873207a04a32b",
+  "training_sha256": "f2dda55bf9bc9964dacbef5dc9465c829d62439ec276b1feb894fc7fb86b4356",
+  "validation_used_for_fit": false
+}

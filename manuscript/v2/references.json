@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "text": "全国大学生仿真建模应用挑战赛组委会，2026年第二届全国大学生仿真建模应用挑战赛B题：嵌入GIS数据的智慧交通数字孪生建模与治理仿真，赛题文件，第1—5页，2026。",
+    "url": null,
+    "source_id": null
+  },
+  {
+    "id": 2,
+    "text": "百度地图开放平台，驾车路线规划（轻量级路线规划），百度地图开放平台官方文档，访问日期：2026-10-18。",
+    "url": "https://lbsyun.baidu.com/docs/webapi?title=directionlite/guide/webservice-lwrouteplanapi/dirve",
+    "source_id": "BAIDU_DIRECTION"
+  },
+  {
+    "id": 3,
+    "text": "百度地图开放平台，实时路况：矩形区域查询，百度地图开放平台官方文档，访问日期：2026-10-18。",
+    "url": "https://lbsyun.baidu.com/docs/webapi?title=traffic/traffic-rectangleseek",
+    "source_id": "BAIDU_TRAFFIC"
+  },
+  {
+    "id": 4,
+    "text": "上海交通大学医学院附属瑞金医院，上海交通大学医学院附属瑞金医院消化道肿瘤临床诊疗中心项目（调整）环境影响报告，上海市黄浦区政府公示，PDF第107、110、168页（正文第103、106、164页），访问日期：2026-10-18。",
+    "url": "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+    "source_id": "HP_EIA"
+  },
+  {
+    "id": 5,
+    "text": "Eclipse SUMO，PlainXML，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://sumo.dlr.de/docs/Networks/PlainXML.html",
+    "source_id": "SUMO_NETWORK"
+  },
+  {
+    "id": 6,
+    "text": "Eclipse SUMO，Definition of Vehicles, Vehicle Types, and Routes，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+    "source_id": "SUMO_VTYPE"
+  },
+  {
+    "id": 7,
+    "text": "Eclipse SUMO，San Pablo Dam Calibration Tutorial，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://sumo.dlr.de/docs/Tutorials/Calibration/San_Pablo_Dam.html",
+    "source_id": "SUMO_CAL_TUTORIAL"
+  },
+  {
+    "id": 8,
+    "text": "aonurakman，demandify：基于SUMO的交通需求估计项目，作者代码仓库，访问日期：2026-10-18。",
+    "url": "https://github.com/aonurakman/demandify",
+    "source_id": "DEMANDIFY"
+  },
+  {
+    "id": 9,
+    "text": "Federal Highway Administration，Traffic Analysis Toolbox Volume III: Guidelines for Applying Traffic Microsimulation Modeling Software，Chapter 5: Calibration，2019，访问日期：2026-10-18。",
+    "url": "https://ops.fhwa.dot.gov/publications/fhwahop18036/chapter5.htm",
+    "source_id": "FHWA_CAL"
+  },
+  {
+    "id": 10,
+    "text": "Eclipse SUMO，Summary Output，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://sumo.dlr.de/docs/Simulation/Output/Summary.html",
+    "source_id": "V2_METHOD_OR_V1_VERIFIED"
+  },
+  {
+    "id": 11,
+    "text": "Eclipse SUMO，Lane- or Edge-based Traffic Measures，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://sumo.dlr.de/docs/Simulation/Output/Lane-_or_Edge-based_Traffic_Measures.html",
+    "source_id": "V2_METHOD_OR_V1_VERIFIED"
+  },
+  {
+    "id": 12,
+    "text": "Eclipse SUMO，Variable Speed Signs，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/Variable_Speed_Signs.html",
+    "source_id": "V2_METHOD_OR_V1_VERIFIED"
+  },
+  {
+    "id": 13,
+    "text": "Eclipse SUMO，TraCI: Change Vehicle State，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/TraCI/Change_Vehicle_State.html",
+    "source_id": "V2_METHOD_OR_V1_VERIFIED"
+  },
+  {
+    "id": 14,
+    "text": "Eclipse SUMO，FCDOutput，SUMO官方文档，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/Output/FCDOutput.html",
+    "source_id": "V2_METHOD_OR_V1_VERIFIED"
+  },
+  {
+    "id": 15,
+    "text": "Zhao J., Ma R., Wang M.，High-precision vehicle trajectory data from an intersection in Shanghai: A unique dataset for microscopic traffic flow studies collected by drone and GNSS receiver，Data in Brief，57：110864，2024，DOI:10.1016/j.dib.2024.110864。",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11404071/",
+    "source_id": "SH_GNSS_PAPER"
+  },
+  {
+    "id": 16,
+    "text": "Ma R., Zhao J., Wang M.，A high-precision vehicle trajectory dataset in Shanghai，Mendeley Data，Version 1，2024，DOI:10.17632/yx7sy7frnh.1，访问日期：2026-10-18。",
+    "url": "https://data.mendeley.com/datasets/yx7sy7frnh/1",
+    "source_id": "SH_GNSS"
+  },
+  {
+    "id": 17,
+    "text": "OpenAI Codex，具体模型快照与版本发布日期未提供，OpenAI，使用日期：2026-10-17至2026-10-18。",
+    "url": null,
+    "source_id": null
+  }
+]

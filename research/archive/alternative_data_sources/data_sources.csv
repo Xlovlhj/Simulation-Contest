@@ -1,0 +1,7 @@
+﻿来源,入口,时间口径,内容,核查状态,比赛用途及限制,使用条件
+香港运输署二代路网,https://data.gov.hk/en-data/dataset/hk-td-tis_15-road-network-v2,月更新,道路几何、方向、交叉口、转向限制,免Key公开接口；全量KMZ约125.6MB，本次未下载全量,路网底座,按DATA.GOV.HK条款注明来源
+香港运输署主要干道实时交通,https://data.gov.hk/en-data/dataset/hk-td-sm_4-traffic-data-strategic-major-roads,原始数据每1分钟发布；处理后速度每2分钟,车道速度、流量、占有率；路段速度,4个原始CSV/XML已下载；时段见sample_check.json,实时基准/校准；需要继续采集时间序列,按DATA.GOV.HK条款注明来源
+深圳中心区历史路网与速度,https://figshare.com/articles/dataset/Shenzhen_whole_day_Speeds/7212230,2011-09-07至2011-09-09；5分钟,NODES、LINKS、SPEEDS三个MAT文件,已下载3文件且MD5与发布方一致,历史基准/算法验证；不替代实时采集,CC BY 4.0；作者Bellocchi和Geroliminis
+百度实时路况,https://lbsyun.baidu.com/docs/webapi?title=traffic%2Ftraffic-rectangleseek,官方说明每1分钟,普通拥堵状态和部分拥堵段速度；详细link需高级权限,已核查文档，未使用AK实测,大陆城市候选，先核验账号权限及字段,按平台条款及账号权限
+高德交通态势,https://lbs.amap.com/api/webservice/guide/api-advanced/traffic-situation-inquiry,实时接口，未实测延迟,道路状态、速度、polyline等,已核查文档；高级服务需商务申请；未使用Key实测,已有高级权限时适用,按平台条款及账号权限
+OpenStreetMap地图底座,https://download.geofabrik.de/asia/china.html,下载页面显示当前快照时间,开放道路网络，缺实时交通需求/观测,已核查下载页，未下载全国数据,补充底图；不是政府数据，不能单独满足题面官方来源及实时要求,ODbL，须注明OSM贡献者并遵守许可

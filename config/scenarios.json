@@ -1,0 +1,46 @@
+{
+  "purpose": "uncalibrated_engineering_scenarios",
+  "base_config": "config/baseline.json",
+  "route_catalog": "data/processed/baidu/route_catalog_v1.json",
+  "simulation": {
+    "simulation_duration_s": 1800,
+    "departure_duration_s": 1200,
+    "departure_interval_s": 30
+  },
+  "event": {
+    "id": "assumed_ruijin_upstream_slow_segment",
+    "target_od_id": "west_to_hospital_road",
+    "edge_ids": ["e000184", "e000083", "e000084", "e000085", "e000086", "e000087"],
+    "road_name": "瑞金二路",
+    "published_at_s": 600,
+    "begin_s": 600,
+    "end_s": 1200,
+    "speed_m_s": 1.0,
+    "source": "assumed_engineering_event_not_an_observed_incident"
+  },
+  "hospital_task": {
+    "id": "hospital_task_001",
+    "od_id": "west_to_hospital_road",
+    "release_s": 720,
+    "destination_note": "RJ_YJ医院外围公共道路接驳点；不是已核验院内急救入口",
+    "vehicle_note": "与普通车辆使用完全相同的车辆性能、道路权限和安全跟驰参数"
+  },
+  "event_speed_scenarios": [
+    {"id": "primary_1mps", "speed_m_s": 1.0, "purpose": "predeclared_primary_engineering_case"},
+    {"id": "severe_0p5mps", "speed_m_s": 0.5, "purpose": "predeclared_severity_sensitivity_not_selected_for_positive_results"}
+  ],
+  "time_basis": "simulation_seconds_only_no_real_world_clock_mapping",
+  "policy": "minimum_current_known_route_cost_before_departure",
+  "coordination_B_status": "not_implemented",
+  "assumptions": [
+    "Six fixed OD demands are independent of the number of route candidates; each OD requests one vehicle every 30 seconds before 1200 seconds.",
+    "The 600-1200 second speed restriction is an assumed engineering event, not an observed accident, measured capacity reduction or reconstructed real traffic window.",
+    "Only west-to-hospital departures at or after event publication and during its active interval may reconsider their route. Compare the complete same-endpoint candidates, including the default, using sum(external segment length/current known speed); ties retain the default.",
+    "Route-cost estimates use the current known restriction without anticipating its future end; they omit uncalibrated junction/queue delays and are not actual trip-time observations.",
+    "Both the primary 1 m/s event and the predeclared 0.5 m/s severity sensitivity are reported in full, including unchanged policies or worse outcomes.",
+    "All routes are assigned before scheduled departure; vehicles already assigned are not rerouted in the network. Future hospital tasks do not affect earlier decisions.",
+    "Hospital tasks share the same assumed_car type as background traffic; there is no special speed, signal priority, lane privilege or traffic-rule exemption.",
+    "S3 here tests the task interface and independent route guidance only; coordinated governance B is not implemented.",
+    "All findings are engineering diagnostics under assumptions, not validated real-world governance effects. A longer detour may worsen results."
+  ]
+}

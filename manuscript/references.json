@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "text": "全国大学生仿真建模应用挑战赛组委会，2026年第二届全国大学生仿真建模应用挑战赛B题：嵌入GIS数据的智慧交通数字孪生建模与治理仿真，赛题文件，第1—5页，2026。",
+    "url": null
+  },
+  {
+    "id": 2,
+    "text": "百度地图开放平台，驾车路线规划（轻量级路线规划），https://lbsyun.baidu.com/docs/webapi?title=directionlite/guide/webservice-lwrouteplanapi/dirve，访问日期：2026-10-18。",
+    "url": "https://lbsyun.baidu.com/docs/webapi?title=directionlite/guide/webservice-lwrouteplanapi/dirve"
+  },
+  {
+    "id": 3,
+    "text": "百度地图开放平台，实时路况查询：服务概览，https://lbsyun.baidu.com/docs/webapi?title=traffic/traffic，访问日期：2026-10-18。",
+    "url": "https://lbsyun.baidu.com/docs/webapi?title=traffic/traffic"
+  },
+  {
+    "id": 4,
+    "text": "Alvarez Lopez P, Behrisch M, Bieker-Walz L, et al. Microscopic Traffic Simulation using SUMO. 2018 IEEE International Conference on Intelligent Transportation Systems, 2575—2582, 2018. DOI:10.1109/ITSC.2018.8569938。",
+    "url": "https://elib.dlr.de/127994/"
+  },
+  {
+    "id": 5,
+    "text": "Eclipse SUMO，Definition of Vehicles, Vehicle Types, and Routes；VehicleSpeed，https://eclipse.dev/sumo/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html；https://eclipse.dev/sumo/docs/Simulation/VehicleSpeed.html，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/VehicleSpeed.html"
+  },
+  {
+    "id": 6,
+    "text": "Eclipse SUMO，FCDOutput，https://eclipse.dev/sumo/docs/Simulation/Output/FCDOutput.html，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/Output/FCDOutput.html"
+  },
+  {
+    "id": 7,
+    "text": "Eclipse SUMO，Variable Speed Signs，https://eclipse.dev/sumo/docs/Simulation/Variable_Speed_Signs.html，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/Variable_Speed_Signs.html"
+  },
+  {
+    "id": 8,
+    "text": "Eclipse SUMO，TraCI: Change Vehicle State，https://eclipse.dev/sumo/docs/TraCI/Change_Vehicle_State.html，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/TraCI/Change_Vehicle_State.html"
+  },
+  {
+    "id": 9,
+    "text": "Eclipse SUMO，TripInfo，https://eclipse.dev/sumo/docs/Simulation/Output/TripInfo.html，访问日期：2026-10-18。",
+    "url": "https://eclipse.dev/sumo/docs/Simulation/Output/TripInfo.html"
+  },
+  {
+    "id": 10,
+    "text": "OpenAI Codex，具体版本/模型快照及发布日期未提供，OpenAI，使用日期：2026-10-17至2026-10-18。",
+    "url": null
+  }
+]

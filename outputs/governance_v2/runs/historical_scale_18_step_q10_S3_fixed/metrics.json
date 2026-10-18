@@ -1,0 +1,480 @@
+{
+  "model_status": "conditional_inverse_estimated_effective_operation",
+  "observation_status": "simulated_assumed_demand",
+  "simulation_end_s": 6000,
+  "planned": 1001,
+  "departed": 1001,
+  "arrived": 1001,
+  "unfinished_on_network": 0,
+  "not_departed": 0,
+  "unfinished_total": 0,
+  "completion_rate": 1.0,
+  "total_in_network_vehicle_time_s": 556389.0,
+  "total_departure_wait_time_s": 31120.0,
+  "total_system_vehicle_time_s": 587509.0,
+  "completed_trip_count": 1001,
+  "completed_travel_time_mean_s": 555.8331668331668,
+  "completed_travel_time_total_s": 556389.0,
+  "completed_departure_to_arrival_max_s": 909.0,
+  "completed_scheduled_to_arrival_mean_s": 586.922077922078,
+  "count_conservation": true,
+  "final_summary_consistent": true,
+  "final_sumo_summary": {
+    "time": "5999.00",
+    "loaded": "1001",
+    "inserted": "1001",
+    "running": "0",
+    "waiting": "0",
+    "ended": "1001",
+    "arrived": "1001",
+    "collisions": "0",
+    "teleports": "0",
+    "halting": "0",
+    "stopped": "0",
+    "meanWaitingTime": "31.09",
+    "meanTravelTime": "555.83",
+    "meanSpeed": "-1.00",
+    "meanSpeedRelative": "-1.00",
+    "discarded": "0",
+    "duration": "0"
+  },
+  "per_route": {
+    "east_to_hospital_road:observed:east_to_hospital_road": {
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0
+    },
+    "east_to_west:observed:east_to_west": {
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0
+    },
+    "north_to_south:observed:north_to_south": {
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0
+    },
+    "south_to_north:observed:south_to_north": {
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0
+    },
+    "west_to_east:observed:west_to_east": {
+      "planned": 166,
+      "departed": 166,
+      "arrived": 166,
+      "unfinished_on_network": 0
+    },
+    "west_to_hospital_road:observed:west_to_hospital_road": {
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0
+    }
+  },
+  "metric_notes": [
+    "In-network time includes vehicles still driving at the horizon.",
+    "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+    "Completed-only travel times must not be interpreted as all-demand performance."
+  ],
+  "physics_valid": true,
+  "quality_reasons": [],
+  "physics_counters": {
+    "collisions": 0,
+    "teleports": 0,
+    "discarded": 0,
+    "collision_events": 0
+  },
+  "eligible_for_governance": false,
+  "physics_note": "Zero detected collisions/teleports/discards is necessary, not real-world validation.",
+  "ordinary": {
+    "model_status": "conditional_inverse_estimated_effective_operation",
+    "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+    "simulation_end_s": 6000,
+    "planned": 1000,
+    "departed": 1000,
+    "arrived": 1000,
+    "unfinished_on_network": 0,
+    "not_departed": 0,
+    "unfinished_total": 0,
+    "completion_rate": 1.0,
+    "total_in_network_vehicle_time_s": 555870.0,
+    "total_departure_wait_time_s": 31120.0,
+    "total_system_vehicle_time_s": 586990.0,
+    "completed_trip_count": 1000,
+    "completed_travel_time_mean_s": 555.87,
+    "completed_travel_time_total_s": 555870.0,
+    "completed_departure_to_arrival_max_s": 909.0,
+    "completed_scheduled_to_arrival_mean_s": 586.99,
+    "count_conservation": true,
+    "final_summary_consistent": null,
+    "final_sumo_summary": {},
+    "per_route": {
+      "east_to_hospital_road:observed:east_to_hospital_road": {
+        "planned": 167,
+        "departed": 167,
+        "arrived": 167,
+        "unfinished_on_network": 0
+      },
+      "east_to_west:observed:east_to_west": {
+        "planned": 167,
+        "departed": 167,
+        "arrived": 167,
+        "unfinished_on_network": 0
+      },
+      "north_to_south:observed:north_to_south": {
+        "planned": 167,
+        "departed": 167,
+        "arrived": 167,
+        "unfinished_on_network": 0
+      },
+      "south_to_north:observed:south_to_north": {
+        "planned": 167,
+        "departed": 167,
+        "arrived": 167,
+        "unfinished_on_network": 0
+      },
+      "west_to_east:observed:west_to_east": {
+        "planned": 166,
+        "departed": 166,
+        "arrived": 166,
+        "unfinished_on_network": 0
+      },
+      "west_to_hospital_road:observed:west_to_hospital_road": {
+        "planned": 166,
+        "departed": 166,
+        "arrived": 166,
+        "unfinished_on_network": 0
+      }
+    },
+    "metric_notes": [
+      "In-network time includes vehicles still driving at the horizon.",
+      "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+      "Completed-only travel times must not be interpreted as all-demand performance."
+    ]
+  },
+  "hospital_tasks": [
+    {
+      "id": "hospital.task",
+      "release_s": 1920,
+      "route_id": "west_to_hospital_road:observed:west_to_hospital_road",
+      "depart_s": 1920.0,
+      "arrival_s": 2439.0,
+      "completed": true,
+      "release_to_arrival_s": 519.0,
+      "observed_release_to_end_s": 519.0,
+      "insertion_wait_s": 0.0,
+      "in_network_time_s": 519.0,
+      "censored_at_horizon": false
+    }
+  ],
+  "per_od": {
+    "north_to_south": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 116587.0,
+      "total_departure_wait_time_s": 0.0,
+      "total_system_vehicle_time_s": 116587.0,
+      "completed_trip_count": 167,
+      "completed_travel_time_mean_s": 698.125748502994,
+      "completed_travel_time_total_s": 116587.0,
+      "completed_departure_to_arrival_max_s": 703.0,
+      "completed_scheduled_to_arrival_mean_s": 698.125748502994,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "north_to_south:observed:north_to_south": {
+          "planned": 167,
+          "departed": 167,
+          "arrived": 167,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    },
+    "south_to_north": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 57485.0,
+      "total_departure_wait_time_s": 30944.0,
+      "total_system_vehicle_time_s": 88429.0,
+      "completed_trip_count": 167,
+      "completed_travel_time_mean_s": 344.2215568862275,
+      "completed_travel_time_total_s": 57485.0,
+      "completed_departure_to_arrival_max_s": 909.0,
+      "completed_scheduled_to_arrival_mean_s": 529.5149700598803,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "south_to_north:observed:south_to_north": {
+          "planned": 167,
+          "departed": 167,
+          "arrived": 167,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    },
+    "west_to_east": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 166,
+      "departed": 166,
+      "arrived": 166,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 132138.0,
+      "total_departure_wait_time_s": 4.0,
+      "total_system_vehicle_time_s": 132142.0,
+      "completed_trip_count": 166,
+      "completed_travel_time_mean_s": 796.0120481927711,
+      "completed_travel_time_total_s": 132138.0,
+      "completed_departure_to_arrival_max_s": 798.0,
+      "completed_scheduled_to_arrival_mean_s": 796.0361445783133,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "west_to_east:observed:west_to_east": {
+          "planned": 166,
+          "departed": 166,
+          "arrived": 166,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    },
+    "east_to_west": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 98196.0,
+      "total_departure_wait_time_s": 0.0,
+      "total_system_vehicle_time_s": 98196.0,
+      "completed_trip_count": 167,
+      "completed_travel_time_mean_s": 588.0,
+      "completed_travel_time_total_s": 98196.0,
+      "completed_departure_to_arrival_max_s": 588.0,
+      "completed_scheduled_to_arrival_mean_s": 588.0,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "east_to_west:observed:east_to_west": {
+          "planned": 167,
+          "departed": 167,
+          "arrived": 167,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    },
+    "west_to_hospital_road": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 166,
+      "departed": 166,
+      "arrived": 166,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 68271.0,
+      "total_departure_wait_time_s": 172.0,
+      "total_system_vehicle_time_s": 68443.0,
+      "completed_trip_count": 166,
+      "completed_travel_time_mean_s": 411.2710843373494,
+      "completed_travel_time_total_s": 68271.0,
+      "completed_departure_to_arrival_max_s": 524.0,
+      "completed_scheduled_to_arrival_mean_s": 412.3072289156627,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "west_to_hospital_road:observed:west_to_hospital_road": {
+          "planned": 166,
+          "departed": 166,
+          "arrived": 166,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    },
+    "east_to_hospital_road": {
+      "model_status": "conditional_inverse_estimated_effective_operation",
+      "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+      "simulation_end_s": 6000,
+      "planned": 167,
+      "departed": 167,
+      "arrived": 167,
+      "unfinished_on_network": 0,
+      "not_departed": 0,
+      "unfinished_total": 0,
+      "completion_rate": 1.0,
+      "total_in_network_vehicle_time_s": 83193.0,
+      "total_departure_wait_time_s": 0.0,
+      "total_system_vehicle_time_s": 83193.0,
+      "completed_trip_count": 167,
+      "completed_travel_time_mean_s": 498.1616766467066,
+      "completed_travel_time_total_s": 83193.0,
+      "completed_departure_to_arrival_max_s": 528.0,
+      "completed_scheduled_to_arrival_mean_s": 498.1616766467066,
+      "count_conservation": true,
+      "final_summary_consistent": null,
+      "final_sumo_summary": {},
+      "per_route": {
+        "east_to_hospital_road:observed:east_to_hospital_road": {
+          "planned": 167,
+          "departed": 167,
+          "arrived": 167,
+          "unfinished_on_network": 0
+        }
+      },
+      "metric_notes": [
+        "In-network time includes vehicles still driving at the horizon.",
+        "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+        "Completed-only travel times must not be interpreted as all-demand performance."
+      ]
+    }
+  },
+  "ordinary_source_control_wait_s": 0.0,
+  "ordinary_sumo_insertion_wait_s": 31120.0,
+  "maximum_source_control_wait_s": 0.0,
+  "source_held_vehicle_count": 0,
+  "not_submitted_at_horizon": 0,
+  "changed_route_count": 0,
+  "all_waiting_accounted_from_original_release": true,
+  "scope": "Paired counterfactual on fitted effective operating constraints; real traffic counts and signal timings remain unidentified",
+  "ordinary_post_event_release_cohort": {
+    "model_status": "conditional_inverse_estimated_effective_operation",
+    "observation_status": "simulated_conditional_demand_profile_not_measured_counts",
+    "simulation_end_s": 6000,
+    "planned": 400,
+    "departed": 400,
+    "arrived": 400,
+    "unfinished_on_network": 0,
+    "not_departed": 0,
+    "unfinished_total": 0,
+    "completion_rate": 1.0,
+    "total_in_network_vehicle_time_s": 226244.0,
+    "total_departure_wait_time_s": 31020.0,
+    "total_system_vehicle_time_s": 257264.0,
+    "completed_trip_count": 400,
+    "completed_travel_time_mean_s": 565.61,
+    "completed_travel_time_total_s": 226244.0,
+    "completed_departure_to_arrival_max_s": 909.0,
+    "completed_scheduled_to_arrival_mean_s": 643.16,
+    "count_conservation": true,
+    "final_summary_consistent": null,
+    "final_sumo_summary": {},
+    "per_route": {
+      "east_to_hospital_road:observed:east_to_hospital_road": {
+        "planned": 67,
+        "departed": 67,
+        "arrived": 67,
+        "unfinished_on_network": 0
+      },
+      "east_to_west:observed:east_to_west": {
+        "planned": 67,
+        "departed": 67,
+        "arrived": 67,
+        "unfinished_on_network": 0
+      },
+      "north_to_south:observed:north_to_south": {
+        "planned": 67,
+        "departed": 67,
+        "arrived": 67,
+        "unfinished_on_network": 0
+      },
+      "south_to_north:observed:south_to_north": {
+        "planned": 67,
+        "departed": 67,
+        "arrived": 67,
+        "unfinished_on_network": 0
+      },
+      "west_to_east:observed:west_to_east": {
+        "planned": 66,
+        "departed": 66,
+        "arrived": 66,
+        "unfinished_on_network": 0
+      },
+      "west_to_hospital_road:observed:west_to_hospital_road": {
+        "planned": 66,
+        "departed": 66,
+        "arrived": 66,
+        "unfinished_on_network": 0
+      }
+    },
+    "metric_notes": [
+      "In-network time includes vehicles still driving at the horizon.",
+      "System time also includes pre-insertion waiting, including vehicles not yet inserted.",
+      "Completed-only travel times must not be interpreted as all-demand performance."
+    ]
+  },
+  "whole_population_complete": true,
+  "system_time_is_lower_bound_if_unfinished": false,
+  "eligible_for_conditional_pair_comparison": true,
+  "trajectory_prefixes": {
+    "before_event": {
+      "sha256": "ae30bca7e73c3b36638e0d5eabd8fb6f15a9408a4e9dec18e6ab2db7d6ae7da6",
+      "frames": 60
+    },
+    "before_task": {
+      "sha256": "c0398142f1ad3e4d574045506d2a347139576c15d9e8889d2e69451f7547ea97",
+      "frames": 64
+    }
+  }
+}

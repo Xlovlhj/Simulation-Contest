@@ -1,0 +1,36 @@
+{
+  "status": "conditional_historical_magnitude_reference_not_calibration_truth",
+  "origin": "root proposed v2 design; independently audited here",
+  "source_id": "HP_EIA",
+  "historical_count": {
+    "period_minutes": 20,
+    "large": 7,
+    "medium": 32,
+    "small": 168,
+    "total": 207,
+    "equivalent_hourly_total": 621,
+    "equivalent_hourly_small": 504
+  },
+  "conditional_route_count": 3,
+  "conditional_route_count_note": "Assumes three modeled OD routes traverse the same relevant Ruijin screenline; exact historical measurement direction/location and full OD coverage not established",
+  "equal_split_headway_exact_s": 17.391304347826086,
+  "proposed_design_headway_s": 18,
+  "proposed_per_OD_hourly_requests": 200.0,
+  "proposed_three_OD_hourly_requests": 600.0,
+  "relative_difference_to_historical_total": -0.033816425120772944,
+  "rounding_note": "18s is convenient coarse design rounding, not nearest-integer optimum (17s is nearer to17.3913s); do not call this a fitted optimum",
+  "small_vehicle_share": 0.8115942028985508,
+  "retained_wider_design_headways_s": [
+    60,
+    30,
+    15
+  ],
+  "conditions": [
+    "historical 2025 weekday 20min observation cannot determine2026 weekend demand",
+    "equal division among three sample OD routes is a design assumption",
+    "unmodeled traffic/turning movements and measurement direction remain unknown",
+    "all-passenger simulation simplifies large/medium mix; 621all vehicles is not621 measured passenger cars or PCU",
+    "use only an externally sourced order-of-magnitude scenario, not a hard flow-calibration target",
+    "do not sum the three different roads as independent network demand; the same vehicle may be counted across roads"
+  ]
+}

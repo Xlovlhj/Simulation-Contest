@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-10-18T07:39:35.530094+00:00",
+  "paper_pages": 17,
+  "heading_pages": {
+    "1 问题界定与研究设计": 3,
+    "2 官方数据、时间窗口与质量控制": 3,
+    "3 GIS平行空间与数字孪生封装": 5,
+    "4 情景一：微观基准与观测层验证": 7,
+    "5 情景二：基于当前信息的路径治理A": 10,
+    "6 情景三：任务感知的有界源端协同B": 10,
+    "7 仿真实验、结果与证据对账": 11,
+    "8 泛化、局限与可复现性": 14,
+    "9 结论": 15,
+    "参考文献": 15,
+    "AI工具使用声明": 16,
+    "附录A 复现入口与支撑文件清单": 16
+  },
+  "anonymous_metadata": true,
+  "font_status": "DOCX指定宋体黑体；本机缺字体，PDF采用Noto宋体/黑体风格替代；提交前须合法字体环境核对",
+  "actual_pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBAAAAA+NotoSansCJKjp-Bold-VKana      Type 1            Builtin          yes yes yes     83  0\nCAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes     93  0\nDAAAAA+LiberationSerif               TrueType          WinAnsi          yes yes yes     68  0\nEAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes     98  0\nFAAAAA+LiberationSerif-Bold          TrueType          WinAnsi          yes yes yes     63  0\nGAAAAA+NotoSerifCJKjp-Bold-VKana     Type 1            Builtin          yes yes yes     88  0\nHAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    103  0\nIAAAAA+NimbusRomanRegular            Type 1            Builtin          yes yes yes     78  0\nJAAAAA+FreeSerif                     TrueType          WinAnsi          yes yes yes     73  0\nKAAAAA+NotoSerifCJKjp-Regular-VKana  Type 1            Builtin          yes yes yes    108  0\n",
+  "human_review_status": "not_recorded_complete",
+  "source_sha256": {
+    "outputs/validation/summary.json": "2e924c620b46a274a827cf67dbaedcc19a3db619d267e87ecb56559232874bb3",
+    "outputs/final_experiments/summary.json": "87e0372ee8351808273c7415465d0a91be0885bfc7a887b3008eea505a5f8e31",
+    "data/processed/final/data_manifest.json": "b53c4a86c182e4fabdfaa4edae68b3b8716062e66947b9ac8465e0121ecfe3ec",
+    "scripts/build_paper.py": "218263f36611901bf7754abda33b559bd6b16207d0e9537cc86f2a4f92c4d422",
+    "manuscript/paper_core.md": "650014789a24a8dee3708c93a55bd567963a1d415f5b6815361cf553ac112cb5",
+    "manuscript/references.json": "f8c23c6fa2dc73deada70709cd89600c3c5b4abef967589299d98836da89de89",
+    "outputs/quality/fairness_audit.json": "22be308779027a90b27b07ca78005ae9863b4af6a0681cd5d63280e134fb058b"
+  },
+  "artifacts": {
+    "paper.docx": {
+      "sha256": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a",
+      "bytes": 350709
+    },
+    "paper.pdf": {
+      "sha256": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6",
+      "bytes": 707313
+    },
+    "ai_usage.docx": {
+      "sha256": "75b0469680918a31f478eda492c19f68f7a43fd12a39ae4d69ab3e00896e7f6b",
+      "bytes": 41096
+    },
+    "ai_usage.pdf": {
+      "sha256": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57",
+      "bytes": 193404
+    },
+    "figures/network.png": {
+      "sha256": "2ba94c944057970634c0e56e764b3d06650de29b6cb096bfa71a3e25e6721ebe",
+      "bytes": 104405
+    },
+    "figures/scenario_timeseries.png": {
+      "sha256": "9eb6df2b52ac0e25cc7fef35e9bb00dc13216bcab19293577246538b1ce3e221",
+      "bytes": 117110
+    },
+    "figures/validation_holdout.png": {
+      "sha256": "6e23bd77d13b3ca977e6cb212a704e6a6df59094652c083d8fc6828f215aef1e",
+      "bytes": 89286
+    }
+  }
+}

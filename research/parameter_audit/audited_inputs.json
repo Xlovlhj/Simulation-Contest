@@ -1,0 +1,72 @@
+[
+  {
+    "path": "config/baseline.json",
+    "bytes": 1621,
+    "sha256": "c2da2d3f170e0dfcc96d7d61b2a46486953ac1b1dff1c0f6a39808af39a431e9"
+  },
+  {
+    "path": "config/scenarios.json",
+    "bytes": 3001,
+    "sha256": "a9d2286f9d86efda617555a4243a7b402c126c127919cc24ad588a28c0869f59"
+  },
+  {
+    "path": "config/final_experiments.json",
+    "bytes": 3878,
+    "sha256": "ce9492e9f1164d11983fc5bf1c0e5e293fdbbc3f8053f6c7cb3a44b8360c0d1e"
+  },
+  {
+    "path": "config/final_validation.json",
+    "bytes": 2556,
+    "sha256": "b74b6d0736d60976a74159eeceb9793e237bfcd3cb846708846585f3c0bc8bad"
+  },
+  {
+    "path": "config/study_area.json",
+    "bytes": 852,
+    "sha256": "744a3255a2f15e0cfc5be5656e578e26fc4e45bba993b65706a3129341c604f4"
+  },
+  {
+    "path": "config/collection.json",
+    "bytes": 1637,
+    "sha256": "58c9fc0e91fe7e72084916c9b13b200056ee60e8416296048d28f38d970d5054"
+  },
+  {
+    "path": "scripts/run_baseline.py",
+    "bytes": 28815,
+    "sha256": "38e96558b90dc9d667c94f829179269a8ffab6d9f457f73ce948d59be0590916"
+  },
+  {
+    "path": "scripts/run_scenarios.py",
+    "bytes": 28316,
+    "sha256": "f1f0a4641813707e18f59389effff52a79098ef032eeaa9592835206f1bdd551"
+  },
+  {
+    "path": "scripts/run_final_experiments.py",
+    "bytes": 36318,
+    "sha256": "b5189ba8e742a1ed88fd4468fbbc4511b322b94639545cc82d5018c47701748c"
+  },
+  {
+    "path": "scripts/build_route_catalog.py",
+    "bytes": 18627,
+    "sha256": "55a758d5216480730dfab55290eda2ad537ec7def9518747599fc811755dfaf6"
+  },
+  {
+    "path": "scripts/validate_twin.py",
+    "bytes": 27910,
+    "sha256": "fd0e0771b3c2f7cd2e62bd987d867c0707b4b66c15598916acca223d2d202712"
+  },
+  {
+    "path": "scripts/finalize_data.py",
+    "bytes": 15610,
+    "sha256": "aac02278340cd6a0a40a4f8865fd21b3df4c78bce361738daf12d63a27934eb0"
+  },
+  {
+    "path": "scripts/survey_shanghai.py",
+    "bytes": 14295,
+    "sha256": "0c0bbae269db3d8c1777405ab99f572495db2a7aa562ab9d2b5440d24496762d"
+  },
+  {
+    "path": "manuscript/paper_source.md",
+    "bytes": 36132,
+    "sha256": "f1e65695d66332125350f4e2ba74ab46b4296816acb08203c7b541c4bb1ed80c"
+  }
+]

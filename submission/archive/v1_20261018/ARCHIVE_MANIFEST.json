@@ -1,0 +1,46 @@
+{
+  "version": "v1",
+  "reason": "Preserve pre-inverse-calibration deliverables; current v2 under revision",
+  "files": [
+    {
+      "file": "B_ai_usage.pdf",
+      "size": 193404,
+      "sha256": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57"
+    },
+    {
+      "file": "B_demo.mp4",
+      "size": 4105733,
+      "sha256": "a0d9c578bb0d0bbba79a9b935fce62d9e399c6faccdcb7db8cd95777bd8ddcb7"
+    },
+    {
+      "file": "B_paper.docx",
+      "size": 350709,
+      "sha256": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a"
+    },
+    {
+      "file": "B_paper.pdf",
+      "size": 707313,
+      "sha256": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6"
+    },
+    {
+      "file": "B_support.zip",
+      "size": 4091597,
+      "sha256": "d7cd8fb1a6f42a5c00b81ada4052d9febfcb00a9163415bdfc8b06037bc9bbd2"
+    },
+    {
+      "file": "SUBMISSION_CHECKLIST.md",
+      "size": 3234,
+      "sha256": "8e9b176af3a95891c372b3db6f2e12cff762aad3b2653935a2c86e266c4a7a08"
+    },
+    {
+      "file": "support_manifest.json",
+      "size": 208263,
+      "sha256": "3844a80a0aaccfc5c03c9549314a5b2d884b16a0f453ac11c1de4fa1e6433ace"
+    },
+    {
+      "file": "承诺书_待队员填写签署.doc",
+      "size": 18944,
+      "sha256": "f0a6381319fe47b7f6f79103611643674bd68c5fe33a9f4c010e2f3b13e0a6aa"
+    }
+  ]
+}

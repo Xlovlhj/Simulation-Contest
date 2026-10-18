@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "source_id": "HP_EIA",
+  "document_title": "上海交通大学医学院附属瑞金医院消化道肿瘤临床诊疗中心项目（调整）",
+  "publisher": "上海市黄浦区人民政府公示文件",
+  "url": "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+  "file": "research/parameter_audit/downloads/ruijin_hospital_eia_public.pdf",
+  "sha256": "5dcd4ae597f5bc35abc52da4e44ad6bddd1a5a19b0970f3ff73bc2bf18fd77aa",
+  "bytes": 55944256,
+  "pdf_pages": 266,
+  "pdf_metadata_title_inconsistent": true,
+  "metadata_title_note": "PDF metadata says 上海泽顾护理院调整项目; actual正文项目名 differs, use正文 title",
+  "observation_date_range": [
+    "2025-09-09",
+    "2025-09-10"
+  ],
+  "sampling": "声环境监测期间的道路车型计数，昼夜各一次20分钟；不能视为全天均值",
+  "monitoring_organization": "上海市环境监测技术装备有限公司",
+  "source_locations": [
+    {
+      "pdf_page_1_based": 5,
+      "printed_page": 1,
+      "content": "actual project title and address"
+    },
+    {
+      "pdf_page_1_based": 107,
+      "printed_page": 103,
+      "content": "monitoring date and frequency"
+    },
+    {
+      "pdf_page_1_based": 110,
+      "printed_page": 106,
+      "table": 53,
+      "content": "20min counts by road and large/medium/small class"
+    },
+    {
+      "pdf_page_1_based": 168,
+      "printed_page": 164,
+      "table": 82,
+      "content": "noise prediction speed, roadway width and equivalent hourly traffic rate"
+    }
+  ],
+  "verification": "pdftotext extraction plus actual raster review of PDF pages 110 and 168; totals independently added and multiplied by 3 match table82",
+  "observations": [
+    {
+      "road_name": "瑞金二路",
+      "period": "daytime",
+      "large_vehicles_20min": 7,
+      "medium_vehicles_20min": 32,
+      "small_vehicles_20min": 168,
+      "total_vehicles_20min": 207,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.033816425120772944,
+      "medium_vehicle_share": 0.15458937198067632,
+      "small_vehicle_share": 0.8115942028985508,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 26,
+      "table82_redline_width_m": 32,
+      "equivalent_hourly_rate_veh_h": 621
+    },
+    {
+      "road_name": "瑞金二路",
+      "period": "nighttime",
+      "large_vehicles_20min": 3,
+      "medium_vehicles_20min": 12,
+      "small_vehicles_20min": 106,
+      "total_vehicles_20min": 121,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.024793388429752067,
+      "medium_vehicle_share": 0.09917355371900827,
+      "small_vehicle_share": 0.8760330578512396,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 26,
+      "table82_redline_width_m": 32,
+      "equivalent_hourly_rate_veh_h": 363
+    },
+    {
+      "road_name": "建德路",
+      "period": "daytime",
+      "large_vehicles_20min": 7,
+      "medium_vehicles_20min": 9,
+      "small_vehicles_20min": 121,
+      "total_vehicles_20min": 137,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.051094890510948905,
+      "medium_vehicle_share": 0.06569343065693431,
+      "small_vehicle_share": 0.8832116788321168,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 3.8,
+      "table82_redline_width_m": 7.8,
+      "equivalent_hourly_rate_veh_h": 411
+    },
+    {
+      "road_name": "建德路",
+      "period": "nighttime",
+      "large_vehicles_20min": 2,
+      "medium_vehicles_20min": 5,
+      "small_vehicles_20min": 83,
+      "total_vehicles_20min": 90,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.022222222222222223,
+      "medium_vehicle_share": 0.05555555555555555,
+      "small_vehicle_share": 0.9222222222222223,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 3.8,
+      "table82_redline_width_m": 7.8,
+      "equivalent_hourly_rate_veh_h": 270
+    },
+    {
+      "road_name": "思南路",
+      "period": "daytime",
+      "large_vehicles_20min": 25,
+      "medium_vehicles_20min": 17,
+      "small_vehicles_20min": 312,
+      "total_vehicles_20min": 354,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.07062146892655367,
+      "medium_vehicle_share": 0.0480225988700565,
+      "small_vehicle_share": 0.8813559322033898,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 3.8,
+      "table82_redline_width_m": 15.2,
+      "equivalent_hourly_rate_veh_h": 1062
+    },
+    {
+      "road_name": "思南路",
+      "period": "nighttime",
+      "large_vehicles_20min": 7,
+      "medium_vehicles_20min": 2,
+      "small_vehicles_20min": 69,
+      "total_vehicles_20min": 78,
+      "hourly_rate_note": "20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",
+      "large_vehicle_share": 0.08974358974358974,
+      "medium_vehicle_share": 0.02564102564102564,
+      "small_vehicle_share": 0.8846153846153846,
+      "table82_speed_for_noise_prediction_kmh": 30,
+      "table82_motor_vehicle_width_m": 3.8,
+      "table82_redline_width_m": 15.2,
+      "equivalent_hourly_rate_veh_h": 234
+    }
+  ],
+  "uncertainties": [
+    "exact clock time of the 20-minute traffic count not shown in extracted table",
+    "direction split and exact screenline coordinate not supplied in table53",
+    "observations are 2025 weekdays, not the 2026 weekend collection period",
+    "30km/h is a noise-model input/average speed term, not established legal speed limit",
+    "motor-vehicle width does not uniquely determine lane count; do not divide 26m by an assumed lane width",
+    "road screenline rates cannot be directly assigned to six selected OD paths, and summing roads double-counts vehicles crossing more than one road",
+    "traffic vehicle classes follow the report definitions; small vehicle is not automatically identical to SUMO passenger in all cases",
+    "no current signal phases/cycle/split or full turning counts"
+  ]
+}

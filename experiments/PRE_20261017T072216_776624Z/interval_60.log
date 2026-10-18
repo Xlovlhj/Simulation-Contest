@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "output": "outputs/baseline/PRE_20261017T072216_776624Z_interval60",
+  "planned": 120,
+  "departed": 120,
+  "arrived": 120,
+  "unfinished_total": 0,
+  "model_status": "uncalibrated_technical_baseline"
+}

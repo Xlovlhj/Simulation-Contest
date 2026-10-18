@@ -1,0 +1,162 @@
+[
+  {
+    "profile": "headway_60",
+    "preset": "step_q25",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 300,
+    "benefited": 0,
+    "harmed": 17,
+    "unchanged": 283,
+    "total_system_time_delta_s": 697.0,
+    "maximum_extra_time_s": 60.0,
+    "maximum_time_saved_s": 0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": true,
+    "eligible_for_fitted_scenario_conclusion": true,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_60_step_q25_S3_A/vehicle_outcomes.json": "50ffd2933b0bdfcbc439d419b67116da499fb004109b106e8948df4cb2f5364b",
+      "outputs/governance_v2/runs/headway_60_step_q25_S3_B/vehicle_outcomes.json": "5f4ebe3fd8991ed6da5e545571c703de40de9dfda2eaafe7a7b4821b1404c355"
+    }
+  },
+  {
+    "profile": "headway_60",
+    "preset": "step_q10",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 300,
+    "benefited": 0,
+    "harmed": 17,
+    "unchanged": 283,
+    "total_system_time_delta_s": 631.0,
+    "maximum_extra_time_s": 49.0,
+    "maximum_time_saved_s": 0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": true,
+    "eligible_for_fitted_scenario_conclusion": true,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_60_step_q10_S3_A/vehicle_outcomes.json": "68ef99aad222a37088c86f1c3d30e133e169cfcc34cdc597051cd074eccd1e48",
+      "outputs/governance_v2/runs/headway_60_step_q10_S3_B/vehicle_outcomes.json": "a83af81a184a3b32fe6d15736d3eca5f225607447c3e2f6b8b548fe1d298c18f"
+    }
+  },
+  {
+    "profile": "headway_30",
+    "preset": "step_q25",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 600,
+    "benefited": 9,
+    "harmed": 55,
+    "unchanged": 536,
+    "total_system_time_delta_s": 1437.0,
+    "maximum_extra_time_s": 53.0,
+    "maximum_time_saved_s": 22.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": true,
+    "eligible_for_fitted_scenario_conclusion": true,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_30_step_q25_S3_A/vehicle_outcomes.json": "19e00bfa80390d8a5d8dc1722bd01ebf3852bb3cfe9613c7d2c4bdfb19eb7882",
+      "outputs/governance_v2/runs/headway_30_step_q25_S3_B/vehicle_outcomes.json": "d58603e73166125c0e349cf1c526bd0792469e7f08cd7f69c7a750df25d6e73f"
+    }
+  },
+  {
+    "profile": "headway_30",
+    "preset": "step_q10",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 600,
+    "benefited": 10,
+    "harmed": 57,
+    "unchanged": 533,
+    "total_system_time_delta_s": 1496.0,
+    "maximum_extra_time_s": 49.0,
+    "maximum_time_saved_s": 21.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": true,
+    "eligible_for_fitted_scenario_conclusion": true,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_30_step_q10_S3_A/vehicle_outcomes.json": "7eaa68b9b0c26d00111c23f3e99d7ea1874fb458cfdb1a3c38229653f77578f9",
+      "outputs/governance_v2/runs/headway_30_step_q10_S3_B/vehicle_outcomes.json": "12d192e4ecb013557c1633f2b99652b6a461e9dac2fe1aebf50fc02c46a7dbab"
+    }
+  },
+  {
+    "profile": "historical_scale_18",
+    "preset": "step_q25",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 1000,
+    "benefited": 78,
+    "harmed": 165,
+    "unchanged": 757,
+    "total_system_time_delta_s": 264.0,
+    "maximum_extra_time_s": 54.0,
+    "maximum_time_saved_s": 198.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": false,
+    "eligible_for_fitted_scenario_conclusion": false,
+    "source_sha256": {
+      "outputs/governance_v2/runs/historical_scale_18_step_q25_S3_A/vehicle_outcomes.json": "4c452d063b6a887f2176cea7b7bd95fb32dada8ea837cb8fd2e3afb1305a89b3",
+      "outputs/governance_v2/runs/historical_scale_18_step_q25_S3_B/vehicle_outcomes.json": "0d3edd6245dd1a1d89d28d59ed488c93b68d7690c968c90b557ba542165d2892"
+    }
+  },
+  {
+    "profile": "historical_scale_18",
+    "preset": "step_q10",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 1000,
+    "benefited": 79,
+    "harmed": 165,
+    "unchanged": 756,
+    "total_system_time_delta_s": 1325.0,
+    "maximum_extra_time_s": 54.0,
+    "maximum_time_saved_s": 193.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": false,
+    "eligible_for_fitted_scenario_conclusion": false,
+    "source_sha256": {
+      "outputs/governance_v2/runs/historical_scale_18_step_q10_S3_A/vehicle_outcomes.json": "e44bb0ced7df3cc46ae2b3db66b8798fd1582815e24433598d12531f9e4942ac",
+      "outputs/governance_v2/runs/historical_scale_18_step_q10_S3_B/vehicle_outcomes.json": "2422968f75bd0974d06c6232d13d3cb47fae3b899147497f031fbee2e534153c"
+    }
+  },
+  {
+    "profile": "headway_15",
+    "preset": "step_q25",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 1199,
+    "benefited": 29,
+    "harmed": 330,
+    "unchanged": 840,
+    "total_system_time_delta_s": 9362.0,
+    "maximum_extra_time_s": 92.0,
+    "maximum_time_saved_s": 17.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": false,
+    "eligible_for_fitted_scenario_conclusion": false,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_15_step_q25_S3_A/vehicle_outcomes.json": "216cb631ee334733737e8d691119e5259c3d74c7cd30872e45b9db4f046f8abf",
+      "outputs/governance_v2/runs/headway_15_step_q25_S3_B/vehicle_outcomes.json": "9d4772cf4fa4e6e37c68750ffa2d3d861da1ebc1713f9e8c4976104ef6cab471"
+    }
+  },
+  {
+    "profile": "headway_15",
+    "preset": "step_q10",
+    "comparison": "B_minus_A",
+    "comparison_valid": true,
+    "ordinary_count": 1199,
+    "benefited": 79,
+    "harmed": 291,
+    "unchanged": 829,
+    "total_system_time_delta_s": 6135.0,
+    "maximum_extra_time_s": 59.0,
+    "maximum_time_saved_s": 57.0,
+    "note": "The 45-second bound limits source control only, not individual whole-trip loss.",
+    "profile_passes_training_screen": false,
+    "eligible_for_fitted_scenario_conclusion": false,
+    "source_sha256": {
+      "outputs/governance_v2/runs/headway_15_step_q10_S3_A/vehicle_outcomes.json": "eb37ae2764781b0ba68ae3f257205e30a1ae8f32cfffd91edbc1ac8e22060014",
+      "outputs/governance_v2/runs/headway_15_step_q10_S3_B/vehicle_outcomes.json": "7f4b1d51dc58b67031abef4ac3bb5b9ac3b4fe7441df4e825467baf1efb923f7"
+    }
+  }
+]

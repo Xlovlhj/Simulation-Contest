@@ -1,0 +1,3 @@
+# Isolated workspace environment; no installation into the existing Conda env.
+eclipse-sumo==1.28.0
+sumo-data==1.28.0

@@ -1,0 +1,562 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "scope": "outputs/identification_v2/calibration/fit_manifest.json",
+      "path": "outputs/identification_v2/calibration/fit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/fit_manifest.json",
+      "path": "outputs/identification_v2/calibration/partial_fit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/fit_manifest.json",
+      "path": "outputs/identification_v2/calibration/search_trace.jsonl",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/identification_v2/calibration/conditional_states.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/identification_v2/calibration/direct_sumo_times.svg",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/identification_v2/calibration/report.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/governance_v2/protocol.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/governance_v2/summary.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/governance_v2/summary.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/governance_v2/report.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/governance_v2/individual_effects.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/48项参数处置.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/48项参数处置.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/V2方法与结果说明.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/direct_sumo_times.svg",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/一手资料目录.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/为什么没有改道.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/几何与物理复核.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/参数来源登记.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/拥堵设置依据.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/拥堵设置参数.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/改道临界值.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/时间留出评价.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/本地历史交通来源.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/本地历史交通计数.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/条件流量与等待.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/治理完整结果.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/治理完整结果.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/治理结果说明.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/物理反演结果.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/downloads/独立复算检查.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/revision_v2/index.html",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "config/baseline.json",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "data/processed/baidu/route_catalog_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "data/processed/identification_v2/manifest.json",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "data/processed/identification_v2/routes.csv",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "data/processed/identification_v2/training_summary.json",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "research/parameter_audit/downloads/ruijin_hospital_eia_public.pdf",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "scripts/calibrate_inverse_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "scripts/normalize_network_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "config/inverse_estimation_v2.json",
+      "path": "scripts/sumo_inverse_engine.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "config/inverse_estimation_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/governance_v2/summary.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/identification_v2/calibration/evaluation.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/identification_v2/calibration/fit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/model.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/identification_v2/calibration/summary_manifest.json",
+      "path": "scripts/summarize_inverse_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/fit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/fit_manifest.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "config/inverse_estimation_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "research/parameter_audit/scenario_basis_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/run_governance_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/run_final_experiments.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "data/processed/baidu/route_catalog_v2_mapping.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/sumo_inverse_engine.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/run_baseline.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/run_scenarios.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "data/processed/baidu/route_catalog_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "config/baseline.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "scripts/normalize_network_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/governance_v2/manifest.json",
+      "path": "data/processed/baidu/route_catalog_v1.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/fit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/evaluation.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/conditional_states.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "config/inverse_estimation_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/governance_v2/summary.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/audit_validation.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/parameter_register.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/sources.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/scenario_basis_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/local_eia_evidence.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "data/processed/baidu/route_catalog_v2_mapping.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/validation/summary.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/report.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/parameter_resolution_v2.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/parameter_resolution_v2.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/parameter_register.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/scenario_basis_v2.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/parameter_audit/local_eia_counts.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/governance_v2/summary.csv",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/governance_v2/report.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/governance_v2/route_choice_explanation.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/governance_v2/route_choice_explanation.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "research/inverse_engine_geometry_review.md",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/quality/v2_reproduction/audit.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/revision_v2/manifest.json",
+      "path": "outputs/identification_v2/calibration/direct_sumo_times.svg",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_baseline.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_calibrate_inverse_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_calibration.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_collector.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_eta_reference.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_final_experiments.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_final_validation.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_governance_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_inverse_engine.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_network_audit.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_normalize_network_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_observations_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_replay.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_route_catalog.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_scenarios.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_view_baseline.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_test_suite.json",
+      "path": "tests/test_view_scenarios.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "scripts/calibrate_inverse_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "scripts/sumo_inverse_engine.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "scripts/normalize_network_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "scripts/run_governance_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "scripts/summarize_inverse_v2.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "outputs/governance_v2/explain_route_choice.py",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "outputs/governance_v2/route_choice_explanation.json",
+      "ok": true
+    },
+    {
+      "scope": "outputs/quality/v2_method_review.json",
+      "path": "outputs/governance_v2/route_choice_explanation.md",
+      "ok": true
+    }
+  ],
+  "count": 111,
+  "initial_failure": "Report generator snapshot was updated after review; reviewer independently checked29 refresh items and updated its hash. Initial record preserved."
+}

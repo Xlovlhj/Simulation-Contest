@@ -1,0 +1,24 @@
+{
+  "request_number": 17,
+  "endpoint": "/directionlite/v1/driving",
+  "kind": "direction",
+  "route_pair_id": "west_to_hospital_road",
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "params": {
+    "origin": "31.212669,121.468488",
+    "destination": "31.217702,121.472321",
+    "coord_type": "bd09ll",
+    "ret_coordtype": "bd09ll",
+    "steps_info": "1",
+    "tactics": "1",
+    "origin_road_type": "0",
+    "timestamp": "1792224109"
+  },
+  "requested_at": "2026-10-17T16:01:49.322+08:00",
+  "response_file": "000017_direction_west_to_hospital_road.json",
+  "source_observation_time": null,
+  "source_time_note": "Request/receive time is not the platform's independent observation time.",
+  "cycle_id": "cycle_000005",
+  "cycle_start_at": "2026-10-17T16:01:40.567+08:00"
+}

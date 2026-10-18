@@ -1,0 +1,24 @@
+{
+  "request_number": 9,
+  "endpoint": "/directionlite/v1/driving",
+  "kind": "direction",
+  "route_pair_id": "south_to_north",
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "params": {
+    "origin": "31.214555,121.473172",
+    "destination": "31.220908,121.471469",
+    "coord_type": "bd09ll",
+    "ret_coordtype": "bd09ll",
+    "steps_info": "1",
+    "tactics": "1",
+    "origin_road_type": "0",
+    "timestamp": "1792294902"
+  },
+  "requested_at": "2026-10-18T11:41:42.870+08:00",
+  "response_file": "000009_direction_south_to_north.json",
+  "source_observation_time": null,
+  "source_time_note": "Request/receive time is not the platform's independent observation time.",
+  "cycle_id": "cycle_000002",
+  "cycle_start_at": "2026-10-18T11:40:36.844+08:00"
+}

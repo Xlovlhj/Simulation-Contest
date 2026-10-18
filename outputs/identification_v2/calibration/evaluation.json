@@ -1,0 +1,197 @@
+{
+  "fit_sha256": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+  "observations_sha256": "d8d65136d75845e6ea6243678d994344afda9f671c0e2054655de650c36d50a2",
+  "policy": "Evaluation after saving all fits; no refitting. Retrospective temporal holdout: v1 outcomes were already inspected.",
+  "profiles": {
+    "headway_15": {
+      "cross_day_holdout": {
+        "bias_s": 113.79166666666667,
+        "mae_s": 114.66666666666667,
+        "n": 96,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 190.00000000000003,
+          "north_to_south": 191.33333333333334,
+          "south_to_north": 38.416666666666664,
+          "west_to_hospital_road": 38.916666666666664
+        },
+        "rmse_s": 140.92800072692756
+      },
+      "same_day_exploratory": {
+        "bias_s": -152.79166666666666,
+        "mae_s": 179.875,
+        "n": 16,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 53.0,
+          "north_to_south": 36.0,
+          "south_to_north": 476.0,
+          "west_to_hospital_road": 154.5
+        },
+        "rmse_s": 260.1698697219013
+      },
+      "training": {
+        "bias_s": -103.93749999999999,
+        "mae_s": 120.13194444444444,
+        "n": 48,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 71.94444444444441,
+          "north_to_south": 36.0,
+          "south_to_north": 181.08333333333334,
+          "west_to_hospital_road": 191.5
+        },
+        "rmse_s": 156.67019056320544
+      }
+    },
+    "headway_30": {
+      "cross_day_holdout": {
+        "bias_s": 206.29166666666669,
+        "mae_s": 206.29166666666669,
+        "n": 96,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 212.66666666666666,
+          "north_to_south": 229.33333333333334,
+          "south_to_north": 213.91666666666669,
+          "west_to_hospital_road": 169.25000000000003
+        },
+        "rmse_s": 209.89992655231367
+      },
+      "same_day_exploratory": {
+        "bias_s": -60.29166666666666,
+        "mae_s": 124.75,
+        "n": 16,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 61.0,
+          "north_to_south": 73.0,
+          "south_to_north": 300.3333333333333,
+          "west_to_hospital_road": 64.66666666666666
+        },
+        "rmse_s": 169.4468123696112
+      },
+      "training": {
+        "bias_s": -11.437499999999991,
+        "mae_s": 69.57638888888889,
+        "n": 48,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 59.833333333333336,
+          "north_to_south": 64.0,
+          "south_to_north": 61.361111111111114,
+          "west_to_hospital_road": 93.1111111111111
+        },
+        "rmse_s": 90.57367320462264
+      }
+    },
+    "headway_60": {
+      "cross_day_holdout": {
+        "bias_s": 186.70833333333334,
+        "mae_s": 186.70833333333334,
+        "n": 96,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 168.66666666666666,
+          "north_to_south": 197.33333333333334,
+          "south_to_north": 193.25,
+          "west_to_hospital_road": 187.58333333333334
+        },
+        "rmse_s": 189.68861545525957
+      },
+      "same_day_exploratory": {
+        "bias_s": -79.875,
+        "mae_s": 117.625,
+        "n": 16,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 53.0,
+          "north_to_south": 41.0,
+          "south_to_north": 321.0,
+          "west_to_hospital_road": 55.5
+        },
+        "rmse_s": 176.73002008713743
+      },
+      "training": {
+        "bias_s": -31.020833333333332,
+        "mae_s": 68.9375,
+        "n": 48,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 88.66666666666667,
+          "north_to_south": 40.0,
+          "south_to_north": 58.916666666666664,
+          "west_to_hospital_road": 88.16666666666667
+        },
+        "rmse_s": 92.97434682032817
+      }
+    },
+    "historical_scale_18": {
+      "cross_day_holdout": {
+        "bias_s": 148.20833333333331,
+        "mae_s": 148.20833333333331,
+        "n": 96,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 138.99999999999997,
+          "north_to_south": 206.99999999999997,
+          "south_to_north": 120.25,
+          "west_to_hospital_road": 126.58333333333333
+        },
+        "rmse_s": 155.44977306012524
+      },
+      "same_day_exploratory": {
+        "bias_s": -118.37500000000001,
+        "mae_s": 149.33333333333331,
+        "n": 16,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 66.66666666666669,
+          "north_to_south": 50.66666666666663,
+          "south_to_north": 394.0,
+          "west_to_hospital_road": 86.0
+        },
+        "rmse_s": 215.12586754941603
+      },
+      "training": {
+        "bias_s": -69.52083333333334,
+        "mae_s": 93.34027777777777,
+        "n": 48,
+        "per_od_mae_s": {
+          "east_to_hospital_road": 117.66666666666669,
+          "north_to_south": 46.44444444444442,
+          "south_to_north": 99.08333333333333,
+          "west_to_hospital_road": 110.16666666666667
+        },
+        "rmse_s": 121.46944631835979
+      }
+    }
+  },
+  "training_median_reference": {
+    "cross_day_holdout": {
+      "bias_s": 200.45833333333334,
+      "mae_s": 200.45833333333334,
+      "n": 96,
+      "per_od_mae_s": {
+        "east_to_hospital_road": 239.66666666666666,
+        "north_to_south": 177.33333333333334,
+        "south_to_north": 192.25,
+        "west_to_hospital_road": 192.58333333333334
+      },
+      "rmse_s": 204.29191736336512
+    },
+    "same_day_exploratory": {
+      "bias_s": -66.125,
+      "mae_s": 119.75,
+      "n": 16,
+      "per_od_mae_s": {
+        "east_to_hospital_road": 74.5,
+        "north_to_south": 29.5,
+        "south_to_north": 322.0,
+        "west_to_hospital_road": 53.0
+      },
+      "rmse_s": 176.1561807033747
+    },
+    "training": {
+      "bias_s": -17.270833333333332,
+      "mae_s": 57.604166666666664,
+      "n": 48,
+      "per_od_mae_s": {
+        "east_to_hospital_road": 52.5,
+        "north_to_south": 30.833333333333332,
+        "south_to_north": 58.916666666666664,
+        "west_to_hospital_road": 88.16666666666667
+      },
+      "rmse_s": 80.66145816518154
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "ready": false,
+  "calibration_ready": false,
+  "status": "insufficient_compatible_data",
+  "model_fitted": false,
+  "model_validated": false,
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "threshold_authority": "Project sampling gate; not a competition requirement",
+  "thresholds": {
+    "bucket_minutes": 5,
+    "calibration_minutes": 60,
+    "validation_minutes": 30,
+    "required_fixed_od_count": 4,
+    "required_calibration_samples_per_od": 12,
+    "required_validation_samples_per_od": 6
+  },
+  "windows": {
+    "start_at": "2026-10-17T14:55:00+08:00",
+    "calibration_end_at": "2026-10-17T15:55:00+08:00",
+    "validation_end_at": "2026-10-17T16:25:00+08:00",
+    "latest_received_at": "2026-10-17T15:47:47.042000+08:00",
+    "validation_window_elapsed_by_received_data": false,
+    "remaining_until_calibration_end_minutes": 7.215966665744782,
+    "remaining_until_validation_end_minutes": 37.21596666574478,
+    "boundary_rule": "[start, calibration_end), [calibration_end, validation_end); responses received on or after their partition end are excluded; later samples remain holdout"
+  },
+  "missing_samples": {
+    "calibration": 4,
+    "validation": 24
+  },
+  "raw_record_count": 48,
+  "selected_success_count": 44,
+  "duplicate_count": 4,
+  "per_od": {
+    "north_to_south": {
+      "record_count": 12,
+      "selected_success_count": 11,
+      "duplicate_count": 1,
+      "valid_sample_count": 11,
+      "baseline_compatible_sample_count": 11,
+      "valid_sample_span_minutes": 50.414016668001814,
+      "first_valid_request_at": "2026-10-17T14:57:11.497000+08:00",
+      "last_valid_request_at": "2026-10-17T15:47:36.338000+08:00",
+      "outside_model_bounds_record_count": 0,
+      "path_group_count": 1,
+      "path_groups": {
+        "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d": {
+          "record_count": 12,
+          "selected_count": 11,
+          "usable_count": 11,
+          "matches_baseline": true
+        }
+      },
+      "calibration": {
+        "required_samples": 12,
+        "available_samples": 11,
+        "missing_samples": 1,
+        "missing_bucket_coverage_minutes": 5,
+        "missing_bucket_starts": [
+          "2026-10-17T15:50:00+08:00"
+        ],
+        "ready": false
+      },
+      "validation": {
+        "required_samples": 6,
+        "available_samples": 0,
+        "missing_samples": 6,
+        "missing_bucket_coverage_minutes": 30,
+        "missing_bucket_starts": [
+          "2026-10-17T15:55:00+08:00",
+          "2026-10-17T16:00:00+08:00",
+          "2026-10-17T16:05:00+08:00",
+          "2026-10-17T16:10:00+08:00",
+          "2026-10-17T16:15:00+08:00",
+          "2026-10-17T16:20:00+08:00"
+        ],
+        "ready": false
+      }
+    },
+    "south_to_north": {
+      "record_count": 12,
+      "selected_success_count": 11,
+      "duplicate_count": 1,
+      "valid_sample_count": 11,
+      "baseline_compatible_sample_count": 11,
+      "valid_sample_span_minutes": 50.4184999982516,
+      "first_valid_request_at": "2026-10-17T14:57:14.351000+08:00",
+      "last_valid_request_at": "2026-10-17T15:47:39.461000+08:00",
+      "outside_model_bounds_record_count": 0,
+      "path_group_count": 1,
+      "path_groups": {
+        "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa": {
+          "record_count": 12,
+          "selected_count": 11,
+          "usable_count": 11,
+          "matches_baseline": true
+        }
+      },
+      "calibration": {
+        "required_samples": 12,
+        "available_samples": 11,
+        "missing_samples": 1,
+        "missing_bucket_coverage_minutes": 5,
+        "missing_bucket_starts": [
+          "2026-10-17T15:50:00+08:00"
+        ],
+        "ready": false
+      },
+      "validation": {
+        "required_samples": 6,
+        "available_samples": 0,
+        "missing_samples": 6,
+        "missing_bucket_coverage_minutes": 30,
+        "missing_bucket_starts": [
+          "2026-10-17T15:55:00+08:00",
+          "2026-10-17T16:00:00+08:00",
+          "2026-10-17T16:05:00+08:00",
+          "2026-10-17T16:10:00+08:00",
+          "2026-10-17T16:15:00+08:00",
+          "2026-10-17T16:20:00+08:00"
+        ],
+        "ready": false
+      }
+    },
+    "west_to_hospital_road": {
+      "record_count": 12,
+      "selected_success_count": 11,
+      "duplicate_count": 1,
+      "valid_sample_count": 11,
+      "baseline_compatible_sample_count": 11,
+      "valid_sample_span_minutes": 50.41933333476384,
+      "first_valid_request_at": "2026-10-17T14:57:17.244000+08:00",
+      "last_valid_request_at": "2026-10-17T15:47:42.404000+08:00",
+      "outside_model_bounds_record_count": 0,
+      "path_group_count": 1,
+      "path_groups": {
+        "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a": {
+          "record_count": 12,
+          "selected_count": 11,
+          "usable_count": 11,
+          "matches_baseline": true
+        }
+      },
+      "calibration": {
+        "required_samples": 12,
+        "available_samples": 11,
+        "missing_samples": 1,
+        "missing_bucket_coverage_minutes": 5,
+        "missing_bucket_starts": [
+          "2026-10-17T15:50:00+08:00"
+        ],
+        "ready": false
+      },
+      "validation": {
+        "required_samples": 6,
+        "available_samples": 0,
+        "missing_samples": 6,
+        "missing_bucket_coverage_minutes": 30,
+        "missing_bucket_starts": [
+          "2026-10-17T15:55:00+08:00",
+          "2026-10-17T16:00:00+08:00",
+          "2026-10-17T16:05:00+08:00",
+          "2026-10-17T16:10:00+08:00",
+          "2026-10-17T16:15:00+08:00",
+          "2026-10-17T16:20:00+08:00"
+        ],
+        "ready": false
+      }
+    },
+    "east_to_hospital_road": {
+      "record_count": 12,
+      "selected_success_count": 11,
+      "duplicate_count": 1,
+      "valid_sample_count": 11,
+      "baseline_compatible_sample_count": 11,
+      "valid_sample_span_minutes": 50.41408333381017,
+      "first_valid_request_at": "2026-10-17T14:57:20.429000+08:00",
+      "last_valid_request_at": "2026-10-17T15:47:45.274000+08:00",
+      "outside_model_bounds_record_count": 0,
+      "path_group_count": 1,
+      "path_groups": {
+        "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee": {
+          "record_count": 12,
+          "selected_count": 11,
+          "usable_count": 11,
+          "matches_baseline": true
+        }
+      },
+      "calibration": {
+        "required_samples": 12,
+        "available_samples": 11,
+        "missing_samples": 1,
+        "missing_bucket_coverage_minutes": 5,
+        "missing_bucket_starts": [
+          "2026-10-17T15:50:00+08:00"
+        ],
+        "ready": false
+      },
+      "validation": {
+        "required_samples": 6,
+        "available_samples": 0,
+        "missing_samples": 6,
+        "missing_bucket_coverage_minutes": 30,
+        "missing_bucket_starts": [
+          "2026-10-17T15:55:00+08:00",
+          "2026-10-17T16:00:00+08:00",
+          "2026-10-17T16:05:00+08:00",
+          "2026-10-17T16:10:00+08:00",
+          "2026-10-17T16:15:00+08:00",
+          "2026-10-17T16:20:00+08:00"
+        ],
+        "ready": false
+      }
+    }
+  },
+  "notes": [
+    "ETA values are platform estimates, not measured vehicle travel times. Request/receive timestamps are not independent source observation times.",
+    "Within each fixed OD and five-minute bucket (or configured bucket), only the earliest API-success response is selected. Later duplicates remain in the CSV and are not independent observations.",
+    "A selected success lacking duration or geometry remains unusable; later same-bucket records do not replace it.",
+    "Only exact directed geometry matches after six-decimal rounding and removal of consecutive duplicates can be compared to the current baseline path. Changed paths require separate model groups.",
+    "Missing/failed/outside-bounds samples are not filled with zero. CSV empty cells represent missing values.",
+    "Bucket deduplication does not make temporally correlated platform estimates independent. Validation is held out in time; repeated model selection against it would invalidate that holdout.",
+    "Meeting this gate only means enough compatible sampling buckets were collected. It proves neither calibration identifiability nor model accuracy or S1 validation."
+  ],
+  "generated_at": "2026-10-17T15:50:31.353893+08:00",
+  "collection_sources": [
+    {
+      "manifest": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964/manifest.json",
+      "manifest_sha256": "adeaeefd2789ce3081757db5a38eba9dd908197582fdba459a2103b9af8f3049",
+      "requests_index": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964/requests.jsonl",
+      "index_snapshot_sha256": "9f8687867f45081264270df265f078b40a44be7d60adad7b264d992e6385e762",
+      "index_snapshot_bytes": 10230
+    },
+    {
+      "manifest": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/manifest.json",
+      "manifest_sha256": "adf573e92ee729e8b26e027b267f8a29c1d6cd82cf85c8800374710292a2d964",
+      "requests_index": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/requests.jsonl",
+      "index_snapshot_sha256": "6a026685f7de8801fa9a15fdce9edbe5b74d7fb8ab0cdbf4f084c4637bb82ca5",
+      "index_snapshot_bytes": 135218
+    }
+  ],
+  "warnings": [],
+  "input_hashes": {
+    "config/collection.json": "c60f07392de9a0e3ee36d1d1a37e4e87d69571dec6e9e138d40c544f5c3c8e4b",
+    "data/processed/baidu/survey_routes.json": "540e659188e3572b8d73f28c7eee4c254a34e76e92edeaa08d02ddb075c89a97"
+  },
+  "script_sha256": "f035de4028d3c1310f07a4f79595ffc05ce1222f7e56c8c8f1883a6411b7ec44",
+  "samples_sha256": "aec13c6914b421b2a83fd9ee8839572d96c43feeb3d43d5c091e09fdddc87ef8"
+}

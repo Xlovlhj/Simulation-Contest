@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "actual_checks": [
+    {
+      "figure": "outputs/paper_v2/figures/network_v2.png",
+      "source_hash_count": 3,
+      "sha_verified": true
+    },
+    {
+      "figure": "outputs/paper_v2/figures/calibration_v2.png",
+      "source_hash_count": 3,
+      "sha_verified": true
+    },
+    {
+      "figure": "outputs/paper_v2/figures/governance_v2.png",
+      "source_hash_count": 1,
+      "sha_verified": true
+    },
+    {
+      "figure": "outputs/paper_v2/figures/timeseries_v2.png",
+      "source_hash_count": 5,
+      "sha_verified": true
+    }
+  ],
+  "network_allowed_turns": 308,
+  "timeseries_max_sampled_source_waiting": 6,
+  "visual_review": "All four PNG images inspected; numerical labels and legends legible. Time labels moved clear of traces. Only actual source data used."
+}

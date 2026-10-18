@@ -1,0 +1,13 @@
+{
+  "status": 0,
+  "result": {
+    "location": {
+      "lng": 116.32167496896504,
+      "lat": 39.98286705226374
+    },
+    "precise": 1,
+    "confidence": 70,
+    "comprehension": 100,
+    "level": "医疗"
+  }
+}

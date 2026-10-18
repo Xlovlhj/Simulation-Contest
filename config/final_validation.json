@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "protocol_id": "S1_ETA_FINAL_V1_20261018",
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "survey_routes": "data/processed/baidu/survey_routes.json",
+  "collections": [
+    "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964",
+    "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d",
+    "data/raw/baidu/collection_20261017T075140_567886Z_8856fc75",
+    "data/raw/baidu/collection_20261018T033636_844937Z_d7da011f"
+  ],
+  "bucket_minutes": 5,
+  "windows": {
+    "training": {"start": "2026-10-17T14:55:00+08:00", "end": "2026-10-17T15:55:00+08:00", "expected_samples_per_od": 12},
+    "same_day_exploratory": {"start": "2026-10-17T15:55:00+08:00", "end": "2026-10-17T16:15:00+08:00", "expected_samples_per_od": 4},
+    "cross_day_holdout": {"start": "2026-10-18T11:36:00+08:00", "end": "2026-10-18T13:36:00+08:00", "expected_samples_per_od": 24}
+  },
+  "protocol_notes": [
+    "These are project analysis windows, not competition minimum collection durations.",
+    "The original 17 October 30-minute holdout remained incomplete. Its available first 20 minutes are explicitly exploratory here; 18 October never fills its missing buckets.",
+    "This final protocol was documented after collection. It is not a prospectively registered experiment; held-out outcomes are excluded from fitting and model selection.",
+    "Deduplicate by OD and global five-minute wall-clock bucket, keeping the first API-success response. A later duplicate never repairs missing ETA or geometry in that first success.",
+    "The cross-day window starts off the wall-clock bucket grid: its 24 expected samples are cadence slots, not a claim that every partially intersected wall-clock bucket is sampled.",
+    "Default identifiable ETA state is the per-OD training median. The nonnegative shared affine ETA model is a research comparator; holdout results do not choose the deployed model.",
+    "SUMO mechanism parameters remain assumptions. Platform ETA is a route estimate, not observed vehicle travel time, flow or signal timing."
+  ],
+  "model": {"method": "nonnegative_shared_affine", "formula": "predicted_ETA_s = alpha * fixed_SUMO_OD_mean_s + beta_s", "fit_objective": "training_sample_least_squares", "alpha_min": 0, "beta_min_s": 0, "default_eta_state": "per_od_training_median", "physical_time_field": "completed_travel_time_mean_s"},
+  "physical_baseline_directory": "outputs/final_experiments/runs/S1_d30",
+  "output_data": "data/processed/final",
+  "output_validation": "outputs/validation"
+}

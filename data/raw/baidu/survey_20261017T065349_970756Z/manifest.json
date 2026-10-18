@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "purpose": "junction_and_route_survey",
+  "phase": "driving",
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "started_at": "2026-10-17T14:53:49.970+08:00",
+  "max_requests": 10,
+  "requests": [
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.220908,121.471469",
+        "destination": "31.214555,121.473172",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220029"
+      },
+      "label": "north_to_south",
+      "requested_at": "2026-10-17T14:53:49.971+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:52.040+08:00",
+      "response_file": "01_north_to_south.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.214555,121.473172",
+        "destination": "31.220908,121.471469",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220032"
+      },
+      "label": "south_to_north",
+      "requested_at": "2026-10-17T14:53:53.142+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:54.912+08:00",
+      "response_file": "02_south_to_north.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.212669,121.468488",
+        "destination": "31.221280,121.474066",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220034"
+      },
+      "label": "west_to_east",
+      "requested_at": "2026-10-17T14:53:56.014+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:53:57.760+08:00",
+      "response_file": "03_west_to_east.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.221280,121.474066",
+        "destination": "31.212669,121.468488",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220037"
+      },
+      "label": "east_to_west",
+      "requested_at": "2026-10-17T14:53:58.862+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:54:00.621+08:00",
+      "response_file": "04_east_to_west.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.212669,121.468488",
+        "destination": "31.217702,121.472321",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220040"
+      },
+      "label": "west_to_hospital_road",
+      "requested_at": "2026-10-17T14:54:01.723+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:54:03.464+08:00",
+      "response_file": "05_west_to_hospital_road.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.221280,121.474066",
+        "destination": "31.217702,121.472321",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "timestamp": "1792220043"
+      },
+      "label": "east_to_hospital_road",
+      "requested_at": "2026-10-17T14:54:04.566+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:54:06.316+08:00",
+      "response_file": "06_east_to_hospital_road.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.212669,121.468488",
+        "destination": "31.221280,121.474066",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "waypoints": "31.220144,121.468927",
+        "timestamp": "1792220046"
+      },
+      "label": "west_to_east_via_maoming",
+      "requested_at": "2026-10-17T14:54:07.418+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:54:09.195+08:00",
+      "response_file": "07_west_to_east_via_maoming.json"
+    },
+    {
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "31.221280,121.474066",
+        "destination": "31.212669,121.468488",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "tactics": "1",
+        "origin_road_type": "0",
+        "steps_info": "1",
+        "waypoints": "31.215980,121.476640",
+        "timestamp": "1792220049"
+      },
+      "label": "east_to_west_via_jianguo",
+      "requested_at": "2026-10-17T14:54:10.304+08:00",
+      "http_status": 200,
+      "api_status": 0,
+      "source_data_time": null,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:54:12.031+08:00",
+      "response_file": "08_east_to_west_via_jianguo.json"
+    }
+  ],
+  "formal_experiment": false,
+  "billing_status": "unverified",
+  "source_data_time": null,
+  "bounds": {
+    "south": 31.2105,
+    "north": 31.223,
+    "west": 121.466,
+    "east": 121.48
+  },
+  "finished_at": "2026-10-17T14:54:12.035+08:00"
+}

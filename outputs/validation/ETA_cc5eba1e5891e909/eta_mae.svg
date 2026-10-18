@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+<rect width="1000" height="440" fill="white"/>
+<g font-family="DejaVu Sans,Arial,sans-serif" fill="#172033">
+<text x="40" y="32" font-size="21">Held-out error against Baidu route ETA (seconds)</text>
+<text x="40" y="57" font-size="13">Lower is better. ETA estimates are not measured vehicle travel times.</text>
+<line x1="80" y1="340" x2="955" y2="340" stroke="#e2e8f0"/>
+<text x="69" y="345" text-anchor="end" font-size="12">0</text>
+<line x1="80" y1="292" x2="955" y2="292" stroke="#e2e8f0"/>
+<text x="69" y="297" text-anchor="end" font-size="12">107</text>
+<line x1="80" y1="244" x2="955" y2="244" stroke="#e2e8f0"/>
+<text x="69" y="249" text-anchor="end" font-size="12">215</text>
+<line x1="80" y1="196" x2="955" y2="196" stroke="#e2e8f0"/>
+<text x="69" y="201" text-anchor="end" font-size="12">322</text>
+<line x1="80" y1="148" x2="955" y2="148" stroke="#e2e8f0"/>
+<text x="69" y="153" text-anchor="end" font-size="12">430</text>
+<line x1="80" y1="100" x2="955" y2="100" stroke="#e2e8f0"/>
+<text x="69" y="105" text-anchor="end" font-size="12">537</text>
+<rect x="130" y="131.304" width="75" height="208.696" fill="#94a3b8"/>
+<text x="167.5" y="121.304" text-anchor="middle" font-size="14">467.19</text>
+<rect x="235" y="293.096" width="75" height="46.904" fill="#d97706"/>
+<text x="272.5" y="283.096" text-anchor="middle" font-size="14">105.00</text>
+<rect x="340" y="286.507" width="75" height="53.493" fill="#2563eb"/>
+<text x="377.5" y="276.507" text-anchor="middle" font-size="14">119.75</text>
+<text x="272" y="365" text-anchor="middle" font-size="15">same_day_exploratory</text>
+<rect x="560" y="250.389" width="75" height="89.611" fill="#94a3b8"/>
+<text x="597.5" y="240.389" text-anchor="middle" font-size="14">200.60</text>
+<rect x="665" y="242.739" width="75" height="97.261" fill="#d97706"/>
+<text x="702.5" y="232.739" text-anchor="middle" font-size="14">217.73</text>
+<rect x="770" y="250.454" width="75" height="89.546" fill="#2563eb"/>
+<text x="807.5" y="240.454" text-anchor="middle" font-size="14">200.46</text>
+<text x="702" y="365" text-anchor="middle" font-size="15">cross_day_holdout</text>
+<rect x="55" y="400" width="15" height="15" fill="#94a3b8"/>
+<text x="78" y="413" font-size="14">physical_sumo</text>
+<rect x="365" y="400" width="15" height="15" fill="#d97706"/>
+<text x="388" y="413" font-size="14">shared_affine_eta</text>
+<rect x="675" y="400" width="15" height="15" fill="#2563eb"/>
+<text x="698" y="413" font-size="14">per_od_training_median</text></g></svg>

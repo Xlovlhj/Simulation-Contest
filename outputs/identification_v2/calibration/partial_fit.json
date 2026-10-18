@@ -1,0 +1,165 @@
+{
+  "candidates": 221,
+  "profiles": [
+    {
+      "best": {
+        "all_vehicles_arrived": true,
+        "case_id": "case_adc4ab9e2b831796",
+        "eta_usable": true,
+        "objective": 0.0038090203000537095,
+        "parameters": {
+          "default_headway_s": 60,
+          "group_speed_factors": {
+            "jianguo_west": 0.24,
+            "other_corridors": 0.33,
+            "ruijin": 0.22
+          }
+        },
+        "physics_counters": {
+          "collision_events": 0,
+          "collisions": 0,
+          "discarded": 0,
+          "teleports": 0
+        },
+        "physics_valid": true,
+        "predictions_s": {
+          "east_to_hospital_road": 523.0,
+          "north_to_south": 713.0,
+          "south_to_north": 418.0,
+          "west_to_hospital_road": 471.0
+        },
+        "probe_maximum_insertion_delay_s": 3.0,
+        "run_dir": "outputs/identification_v2/calibration/runs/case_adc4ab9e2b831796"
+      },
+      "headway_s": 60,
+      "id": "headway_60",
+      "passes_consistency_screen": true,
+      "relative_errors": {
+        "east_to_hospital_road": -0.11952861952861953,
+        "north_to_south": 0.02886002886002886,
+        "south_to_north": 0.002398081534772182,
+        "west_to_hospital_road": -0.01050420168067227
+      }
+    },
+    {
+      "best": {
+        "all_vehicles_arrived": true,
+        "case_id": "case_43183b900b6a0547",
+        "eta_usable": true,
+        "objective": 0.003199782249635382,
+        "parameters": {
+          "default_headway_s": 30,
+          "group_speed_factors": {
+            "jianguo_west": 0.28,
+            "other_corridors": 0.29,
+            "ruijin": 0.215
+          }
+        },
+        "physics_counters": {
+          "collision_events": 0,
+          "collisions": 0,
+          "discarded": 0,
+          "teleports": 0
+        },
+        "physics_valid": true,
+        "predictions_s": {
+          "east_to_hospital_road": 567.0,
+          "north_to_south": 745.0,
+          "south_to_north": 438.6666666666667,
+          "west_to_hospital_road": 452.6666666666667
+        },
+        "probe_maximum_insertion_delay_s": 4.0,
+        "run_dir": "outputs/identification_v2/calibration/runs/case_43183b900b6a0547"
+      },
+      "headway_s": 30,
+      "id": "headway_30",
+      "passes_consistency_screen": true,
+      "relative_errors": {
+        "east_to_hospital_road": -0.045454545454545456,
+        "north_to_south": 0.07503607503607504,
+        "south_to_north": 0.05195843325339733,
+        "west_to_hospital_road": -0.04901960784313721
+      }
+    },
+    {
+      "best": {
+        "all_vehicles_arrived": true,
+        "case_id": "case_9b7a2ed4c5ddba4c",
+        "eta_usable": true,
+        "objective": 0.01989775051825064,
+        "parameters": {
+          "default_headway_s": 18,
+          "group_speed_factors": {
+            "jianguo_west": 0.29,
+            "other_corridors": 0.31,
+            "ruijin": 0.3
+          }
+        },
+        "physics_counters": {
+          "collision_events": 0,
+          "collisions": 0,
+          "discarded": 0,
+          "teleports": 0
+        },
+        "physics_valid": true,
+        "predictions_s": {
+          "east_to_hospital_road": 493.3333333333333,
+          "north_to_south": 722.6666666666666,
+          "south_to_north": 345.0,
+          "west_to_hospital_road": 410.0
+        },
+        "probe_maximum_insertion_delay_s": 6.0,
+        "run_dir": "outputs/identification_v2/calibration/runs/case_9b7a2ed4c5ddba4c"
+      },
+      "headway_s": 18,
+      "id": "historical_scale_18",
+      "passes_consistency_screen": false,
+      "relative_errors": {
+        "east_to_hospital_road": -0.16947250280583617,
+        "north_to_south": 0.042809042809042755,
+        "south_to_north": -0.17266187050359713,
+        "west_to_hospital_road": -0.13865546218487396
+      }
+    },
+    {
+      "best": {
+        "all_vehicles_arrived": true,
+        "case_id": "case_dc7c08374c039941",
+        "eta_usable": true,
+        "objective": 0.06314359198721267,
+        "parameters": {
+          "default_headway_s": 15,
+          "group_speed_factors": {
+            "jianguo_west": 0.33,
+            "other_corridors": 0.34,
+            "ruijin": 0.36
+          }
+        },
+        "physics_counters": {
+          "collision_events": 0,
+          "collisions": 0,
+          "discarded": 0,
+          "teleports": 0
+        },
+        "physics_valid": true,
+        "predictions_s": {
+          "east_to_hospital_road": 544.3333333333334,
+          "north_to_south": 707.0,
+          "south_to_north": 263.0,
+          "west_to_hospital_road": 319.0
+        },
+        "probe_maximum_insertion_delay_s": 3.0,
+        "run_dir": "outputs/identification_v2/calibration/runs/case_dc7c08374c039941"
+      },
+      "headway_s": 15,
+      "id": "headway_15",
+      "passes_consistency_screen": false,
+      "relative_errors": {
+        "east_to_hospital_road": -0.08361391694725022,
+        "north_to_south": 0.020202020202020204,
+        "south_to_north": -0.36930455635491605,
+        "west_to_hospital_road": -0.32983193277310924
+      }
+    }
+  ]
+}

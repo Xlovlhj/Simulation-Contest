@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "selected_profile": "headway_30",
+  "parameters": {
+    "default_headway_s": 30,
+    "group_speed_factors": {
+      "jianguo_west": 0.28,
+      "other_corridors": 0.29,
+      "ruijin": 0.215
+    }
+  },
+  "fit_sha256": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+  "protocol_sha256": "1261209ff74f04e5cc0af77bcc66ef20fddb4b8708e3c498cede4606d8d03aa7",
+  "original_manifest_sha256": "ff5b6b77e5c592e8998a8de11e8fee69a99c3bf250a447129c249b6635e76c3a",
+  "fresh_manifest_sha256": "087b7668d11d7cb62a4e5695bcd66e8be7cbb731bb228e4f5cd376a3f7ba1a36",
+  "warmup_manifest_sha256": "e9d3cdecb13c0a7e31baf333f80296618e95f0650ea70ff0979c261af088aa46",
+  "reproduction_scope": "Full direct-SUMO metric object, excluding only output folder; fresh independent network cache.",
+  "identical_metric_fields": 21,
+  "differences": {},
+  "source_hashes": {
+    "scripts/sumo_inverse_engine.py": "0a06500d37c676dd8379747d41d7d5c8364a15cb37b27d54b019fe4c2a955b63",
+    "scripts/run_baseline.py": "38e96558b90dc9d667c94f829179269a8ffab6d9f457f73ce948d59be0590916",
+    "scripts/run_scenarios.py": "f1f0a4641813707e18f59389effff52a79098ef032eeaa9592835206f1bdd551",
+    "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff",
+    "config/baseline.json": "c2da2d3f170e0dfcc96d7d61b2a46486953ac1b1dff1c0f6a39808af39a431e9",
+    "data/processed/baidu/route_catalog_v2_mapping.json": "4733d2e4c0daf6a248d4f039ba7e09c6edfb4412b658d3d836a429057bf7f095",
+    "scripts/normalize_network_v2.py": "8319fe0336247034687ed65b5c1b1ed84840689eaa783386afb21e2a6289ec43",
+    "data/processed/baidu/route_catalog_v1.json": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0"
+  },
+  "extended_warmup_s": 1800,
+  "warmup_physics_valid": true,
+  "warmup_all_arrived": true,
+  "warmup_eta_usable": true,
+  "warmup_comparison": {
+    "east_to_hospital_road": {
+      "original_mean_s": 567.0,
+      "extended_mean_s": 567.0,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 4.0,
+      "extended_max_insertion_s": 4.0
+    },
+    "east_to_west": {
+      "original_mean_s": 626.0,
+      "extended_mean_s": 626.0,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 0.0,
+      "extended_max_insertion_s": 0.0
+    },
+    "north_to_south": {
+      "original_mean_s": 745.0,
+      "extended_mean_s": 745.0,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 0.0,
+      "extended_max_insertion_s": 0.0
+    },
+    "south_to_north": {
+      "original_mean_s": 438.6666666666667,
+      "extended_mean_s": 438.6666666666667,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 0.0,
+      "extended_max_insertion_s": 0.0
+    },
+    "west_to_east": {
+      "original_mean_s": 843.0,
+      "extended_mean_s": 843.0,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 0.0,
+      "extended_max_insertion_s": 0.0
+    },
+    "west_to_hospital_road": {
+      "original_mean_s": 452.6666666666667,
+      "extended_mean_s": 452.6666666666667,
+      "difference_s": 0.0,
+      "original_max_insertion_s": 0.0,
+      "extended_max_insertion_s": 0.0
+    }
+  },
+  "review_script_sha256": "015aa21feda4210c22530542e39932d7e9318cc23f72d3f1124f9a26ce5964da"
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "interval_s": 60,
+    "relative_assumed_demand": 1.0,
+    "planned": 120,
+    "departed": 120,
+    "arrived": 120,
+    "not_departed": 0,
+    "unfinished_on_network": 0,
+    "completion_rate": 1.0,
+    "completed_travel_time_mean_s": 160.66666666666666,
+    "total_in_network_vehicle_time_s": 19280.0,
+    "total_departure_wait_time_s": 40.0,
+    "total_system_vehicle_time_s": 19320.0,
+    "collisions": "0",
+    "teleports": "0",
+    "run_directory": "outputs/baseline/PRE_20261017T072216_776624Z_interval60"
+  },
+  {
+    "interval_s": 30,
+    "relative_assumed_demand": 2.0,
+    "planned": 240,
+    "departed": 240,
+    "arrived": 240,
+    "not_departed": 0,
+    "unfinished_on_network": 0,
+    "completion_rate": 1.0,
+    "completed_travel_time_mean_s": 159.85416666666666,
+    "total_in_network_vehicle_time_s": 38365.0,
+    "total_departure_wait_time_s": 80.0,
+    "total_system_vehicle_time_s": 38445.0,
+    "collisions": "39",
+    "teleports": "39",
+    "run_directory": "outputs/baseline/PRE_20261017T072216_776624Z_interval30"
+  },
+  {
+    "interval_s": 15,
+    "relative_assumed_demand": 4.0,
+    "planned": 480,
+    "departed": 480,
+    "arrived": 480,
+    "not_departed": 0,
+    "unfinished_on_network": 0,
+    "completion_rate": 1.0,
+    "completed_travel_time_mean_s": 159.85416666666666,
+    "total_in_network_vehicle_time_s": 76730.0,
+    "total_departure_wait_time_s": 160.0,
+    "total_system_vehicle_time_s": 76890.0,
+    "collisions": "78",
+    "teleports": "78",
+    "run_directory": "outputs/baseline/PRE_20261017T072216_776624Z_interval15"
+  }
+]

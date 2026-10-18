@@ -1,0 +1,8 @@
+{
+  "artifacts": {
+    "fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "partial_fit.json": "6b54e07ca04abbae1a782c7727c12524967b3f3ea103e07cca52368e837ff7ee",
+    "search_trace.jsonl": "bd274841945aac3251ca5a7db89cf6a5e1bd6f9a108373e7e7b51944b40a1bfe"
+  },
+  "config_sha256": "1261209ff74f04e5cc0af77bcc66ef20fddb4b8708e3c498cede4606d8d03aa7"
+}

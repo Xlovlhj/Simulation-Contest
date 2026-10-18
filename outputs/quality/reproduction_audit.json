@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-18T07:30:34.601115+00:00",
+  "workspace": ".cache/reproduction_20261018T073009_742100Z",
+  "simulation_runs": 22,
+  "simulation_numeric_results_identical": true,
+  "paired_comparisons_identical": true,
+  "eta_models_and_metrics_identical": true,
+  "data_snapshot_identical": true,
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-12,
+  "steps": [
+    {
+      "step": "冻结正式数据",
+      "exit_code": 0
+    },
+    {
+      "step": "从零重跑22组仿真",
+      "exit_code": 0
+    },
+    {
+      "step": "重新拟合训练层并评价保留窗口",
+      "exit_code": 0
+    }
+  ],
+  "note": "Fresh isolated computation; outputs are not reused from the original run. Runtime timestamps and manifest hashes may differ."
+}

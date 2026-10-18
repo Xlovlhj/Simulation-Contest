@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "repository": "Xlovlhj/Simulation-Contest",
+  "branch": "xqw-b",
+  "existing_branch_preserved": "ybs-c",
+  "existing_head_sha": "1aca8eb9314b1620e1107fb7e60a0c7fb787beb5",
+  "checkout": ".cache/github_xqw_b_checkout",
+  "test_command": "python3 -B -m unittest discover -s tests -q",
+  "tests_run": 148,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "duration_s": 2.454,
+  "viewer_check": "project_v2.check_artifacts passed",
+  "environment": "Reused existing workspace SUMO/Python installation through copied small launchers and XSD schemas in ignored checkout .venv; no new installation or global settings changed.",
+  "initial_setup_failures": [
+    "No bundled .venv: 136 tests discovered; scenario suite required installed SUMO; 2 integration tests skipped.",
+    "A symlink to the parent workspace environment was correctly rejected by model workspace path checks.",
+    "Copied launchers initially lacked SUMO data/XSD; copying existing schemas resolved this."
+  ],
+  "security_scope": "Current exact AK/SK, token/private-key and credential URL patterns, nested archives and PDF text; final counts in git_upload_inventory.json.",
+  "remote_publish_status": "prepared_for_push; final remote receipt is recorded separately after success"
+}

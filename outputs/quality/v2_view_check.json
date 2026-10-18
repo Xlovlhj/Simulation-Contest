@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "page": "outputs/revision_v2/index.html",
+  "page_sha256": "b5b8c548320dee62a467ddc6be4bc6e5aaee17a084fd4bac36c70e28199518f6",
+  "manifest_sha256": "3b06226766de322aa16d5f04058e14473a2be5f0ae59905ba77f33e6be76ec8a",
+  "http_checks": {
+    "/": 200,
+    "/downloads/": 403,
+    "/%2e%2e/PROJECT_PLAN.md": 404,
+    "/config/baidu.local.json": 404,
+    "/scripts/collect_baidu.py": 404
+  },
+  "profile_checks": [
+    {
+      "profile": "headway_60",
+      "badge": "通过训练一致性筛选",
+      "bars": 12,
+      "errorRows": 3
+    },
+    {
+      "profile": "headway_30",
+      "badge": "通过训练一致性筛选",
+      "bars": 12,
+      "errorRows": 3
+    },
+    {
+      "profile": "historical_scale_18",
+      "badge": "未通过训练一致性筛选",
+      "bars": 12,
+      "errorRows": 3
+    },
+    {
+      "profile": "headway_15",
+      "badge": "未通过训练一致性筛选",
+      "bars": 12,
+      "errorRows": 3
+    }
+  ],
+  "governance_filter_check": {
+    "acceptedRows": 0,
+    "rejectedRows": 6
+  },
+  "download_links_checked": 20,
+  "governance_runs": 44,
+  "offline_file_rendered": true,
+  "mobile_layout": {
+    "viewport": 390,
+    "documentWidth": 390
+  },
+  "javascript_exceptions": [],
+  "screenshots": [
+    "outputs/quality/v2_view_overview.jpg",
+    "outputs/quality/v2_view_times.jpg",
+    "outputs/quality/v2_view_governance.jpg",
+    "outputs/quality/v2_view_mobile.jpg"
+  ],
+  "browser": "Installed Chrome, actual headless rendering via local CDP",
+  "mutations": "Workspace-only static artifacts and local browser profile; no collection or numerical rerun",
+  "visual_review": {
+    "reviewed": [
+      "v2_view_times.jpg",
+      "v2_view_governance.jpg",
+      "v2_view_mobile.jpg"
+    ],
+    "findings": "Charts, selected profile labels, negative governance conclusions and table values are legible; mobile has no page-wide horizontal overflow."
+  },
+  "screenshot_sha256": {
+    "outputs/quality/v2_view_overview.jpg": "b2b3992c233e1bac544b9182313bb52539d3c9516abd8d95380b62327f5985d9",
+    "outputs/quality/v2_view_times.jpg": "a8391a9e447c86a231889d7bc8f54067ff7466f4c2bb68f2e4a177aa9c7e4234",
+    "outputs/quality/v2_view_governance.jpg": "3c7c3e52bdc9bbda5cdce18bf4ff8df6883e077c37db700677c6d27b0a017744",
+    "outputs/quality/v2_view_mobile.jpg": "a1a5c284b21def9ddfffb477af9e18579bcbfa3ff005fcada3e1e1fec4c4688f"
+  },
+  "check_script_sha256": "72fc1de8af7e4bf8bf27d5cb4c78a3f1e37774ce2efd9fb4de7f256169bb2a61"
+}

@@ -1,0 +1,40 @@
+{
+  "figure": "outputs/paper_v2/figures/calibration_v2.png",
+  "figure_sha256": "29c3b480a5e3796a7120fab8a98dbe39560a7f1137cdac996d4d896f3a625665",
+  "pixel_dimensions": [
+    1800,
+    1080
+  ],
+  "source_sha256": {
+    "data/processed/identification_v2/training_summary.json": "cc64ff1cec4061ec7a698d8e01caac6a9c75eca0458199199de343dc36dd0209",
+    "outputs/identification_v2/calibration/evaluation.json": "c0255badcd86b33d0a9a136bdb242eb04e0ca261d9d17a40f8e47d516706672d",
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352"
+  },
+  "values": {
+    "selected_profile": "headway_30",
+    "observed_training_median_s": {
+      "east_to_hospital_road": 594.0,
+      "north_to_south": 693.0,
+      "south_to_north": 417.0,
+      "west_to_hospital_road": 476.0
+    },
+    "direct_sumo_s": {
+      "east_to_hospital_road": 567.0,
+      "north_to_south": 745.0,
+      "south_to_north": 438.6666666666667,
+      "west_to_hospital_road": 452.6666666666667
+    },
+    "direct_mae_s": {
+      "training": 69.57638888888889,
+      "same_day_exploratory": 124.75,
+      "cross_day_holdout": 206.29166666666669
+    },
+    "median_baseline_mae_s": {
+      "training": 57.604166666666664,
+      "same_day_exploratory": 119.75,
+      "cross_day_holdout": 200.45833333333334
+    }
+  },
+  "interpretation": "Panel a compares medians with direct SUMO probe means; panel b compares frozen predictors against individual snapshots. These are provider ETA estimates, not measured individual trips. No affine output correction.",
+  "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+}

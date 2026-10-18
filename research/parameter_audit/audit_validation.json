@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-18T09:03:38.091128+00:00",
+  "checks": {
+    "parameter_rows": 48,
+    "source_rows": 26,
+    "config_leaves": 222,
+    "original_audited_files": 14,
+    "downloaded_public_files_verified": 7,
+    "derived_files_verified": 3,
+    "eia_count_to_hourly_checks": 6
+  },
+  "manual_checks": [
+    "PDF110 page table53 raster visually checked",
+    "PDF168 page table82 raster visually checked",
+    "physical versus algorithm design classification reviewed"
+  ],
+  "not_performed": [
+    "no new Baidu calls",
+    "no field validation",
+    "no downloaded foreign trajectory dataset used as Shanghai measurements",
+    "no installed demandify or other environment change"
+  ]
+}

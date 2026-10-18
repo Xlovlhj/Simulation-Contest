@@ -1,0 +1,18 @@
+﻿table,field,meaning,unit,origin,missing_policy,limitations
+request,requested_at,请求发起时刻,ISO8601+08:00,本地采集器,必填,不等同于平台观测时刻
+request,received_at,响应接收时刻,ISO8601+08:00,本地采集器,未完成请求可空,用于审计网络耗时
+request,source_observation_time,独立源数据时刻,ISO8601或原值,百度返回字段,未提供则空,禁止以采集时刻填补
+traffic,road_name,道路名称,文本,百度路况,UNKNOW等保持未知标记,不能据同名自动合并不同方向
+traffic,evaluation.status,区域路况等级,平台枚举,百度路况,缺失保持空,不是车流量或车辆密度
+traffic,congestion_sections[].speed,拥堵段平台估计速度,km/h,百度路况,无拥堵段或字段不返回则空,不是全路网速度，不能补零
+traffic,congestion_sections[].congestion_distance,拥堵描述覆盖长度,m,百度路况,缺失保持空,可能沿道路延伸至查询矩形外
+traffic,congestion_sections[].section_desc,方向和位置描述,文本,百度路况,缺失保持空,不保证可直接对应唯一几何路段
+traffic,congestion_sections[].congestion_trend,变化趋势,平台枚举,百度路况,缺失保持空,保留原值，兼容历史拼写字段但不臆造趋势
+direction,origin/destination,起终点请求坐标,"纬度,经度 BD09LL",研究配置,必填,坐标可能被服务绑到附近可驾驶道路
+direction,routes[].distance,整条规划路线距离,m,百度轻量驾车,缺失则不用于数值比较,和实际返回完整路径对应
+direction,routes[].duration,整条路线预计耗时,s,百度轻量驾车,缺失则不用于标定,平台估计，不是实测单车旅行时间
+direction,steps[].path,有序路径折线,"经度,纬度 BD09LL",百度轻量驾车,无效点不能直接连接两侧,规划几何，不是实测车辆轨迹
+direction,steps[].road_types,道路类别,平台枚举或列表,百度轻量驾车,未知保持未知,筛查高架仍需结合道路指令，不能据平面交叉判断层级
+derived,geometry_signature,规范化坐标链摘要,SHA256,本地结构化处理,无有效几何则空,不同路径不能当作同一路径的时间误差
+model,OD arrivals/lane count/signal parameters,需求与道路控制参数,按模型配置,当前为研究假设,待标定或可靠来源补足,不属于百度直接观测
+simulation,travel/queue/vehicle trajectories,仿真交通结果,s/辆/模型米制坐标,SUMO输出,按未完成车辆口径统计,与平台观测和模型假设分别标记

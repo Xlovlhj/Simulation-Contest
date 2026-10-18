@@ -1,0 +1,89 @@
+{
+  "snapshot_date": "2026-10-17",
+  "snapshot_time_local_Hong_Kong": "13:45:00",
+  "irn_version_in_feed": "20221210",
+  "speed_segment_count": 4525,
+  "valid_speed_counts": {
+    "Y": 4471,
+    "N": 54
+  },
+  "detector_location_rows": 807,
+  "detector_ids_in_raw": 761,
+  "raw_detector_ids_without_location": [],
+  "raw_lane_period_records": 4118,
+  "raw_validity": {
+    "Y": 4072,
+    "N": 46
+  },
+  "raw_periods": [
+    {
+      "from": "13:44:00",
+      "to": "13:44:30",
+      "detector_count": 761
+    },
+    {
+      "from": "13:44:30",
+      "to": "13:45:00",
+      "detector_count": 760
+    }
+  ],
+  "segment_lookup_rows": 4255,
+  "speed_ids_present_in_lookup": 4240,
+  "speed_ids_missing_from_lookup": 285,
+  "checks_and_limits": [
+    "单次实时响应样本，不是连续时间序列或完整比赛数据集。",
+    "valid=N 的记录不应作为有效观测。",
+    "实时路段编号与下载的路段索引有差异，建模需检查版本及关联率。",
+    "原始检测器数据需通过经纬度与方向映射至道路，不能将检测器ID直接当路段ID。",
+    "道路完整KMZ约125.6MB，本轮只做HEAD确认，未下载全量。"
+  ],
+  "road_geometry_probe": {
+    "feature_count": 20,
+    "requested_route_ids": [
+      "103495",
+      "105500",
+      "105543",
+      "106257",
+      "106550",
+      "106551",
+      "106710",
+      "106816",
+      "106821",
+      "106881",
+      "107168",
+      "261023",
+      "265785",
+      "284026",
+      "284046",
+      "284047",
+      "284081",
+      "284167",
+      "284168",
+      "284170"
+    ],
+    "matched_route_ids": [
+      "103495",
+      "105500",
+      "105543",
+      "106257",
+      "106550",
+      "106551",
+      "106710",
+      "106816",
+      "106821",
+      "106881",
+      "107168",
+      "261023",
+      "265785",
+      "284026",
+      "284046",
+      "284047",
+      "284081",
+      "284167",
+      "284168",
+      "284170"
+    ],
+    "error": null,
+    "geometry_note": "API generalization maxAllowableOffset=0.00001 in output CRS EPSG:4326; precision=6; suitability sample only."
+  }
+}

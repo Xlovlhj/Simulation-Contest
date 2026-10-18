@@ -1,0 +1,112 @@
+{
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "nodes": [
+    {
+      "id": "RJ_FX",
+      "label": "瑞金二路与复兴中路交叉口",
+      "point": [
+        121.4714692281883,
+        31.220908030920974
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/01_RJ_FX.json",
+      "requested_at": "2026-10-17T14:53:01.351+08:00"
+    },
+    {
+      "id": "RJ_JG",
+      "label": "瑞金二路与建国中路交叉口",
+      "point": [
+        121.47317213696051,
+        31.214555031575056
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/02_RJ_JG.json",
+      "requested_at": "2026-10-17T14:53:04.327+08:00"
+    },
+    {
+      "id": "RJ_YJ",
+      "label": "瑞金二路与永嘉路交叉口",
+      "point": [
+        121.47232078947275,
+        31.217701642008944
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/03_RJ_YJ.json",
+      "requested_at": "2026-10-17T14:53:07.091+08:00"
+    },
+    {
+      "id": "SN_FX",
+      "label": "思南路与复兴中路交叉口",
+      "point": [
+        121.47406615016993,
+        31.221280076797875
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/04_SN_FX.json",
+      "requested_at": "2026-10-17T14:53:09.857+08:00"
+    },
+    {
+      "id": "SN_JG",
+      "label": "思南路与建国中路交叉口",
+      "point": [
+        121.47664030499207,
+        31.215979868212198
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/05_SN_JG.json",
+      "requested_at": "2026-10-17T14:53:12.637+08:00"
+    },
+    {
+      "id": "SX_JG",
+      "label": "陕西南路与建国西路交叉口",
+      "point": [
+        121.46848849599763,
+        31.21266939092032
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/06_SX_JG.json",
+      "requested_at": "2026-10-17T14:53:15.585+08:00"
+    },
+    {
+      "id": "MM_FX",
+      "label": "茂名南路与复兴中路交叉口",
+      "point": [
+        121.4689268996289,
+        31.22014352190713
+      ],
+      "geocode_level": "交叉路口",
+      "confidence": 80,
+      "accepted_for_route_probe": true,
+      "near_duplicate_node_ids": [],
+      "topology_verified": false,
+      "source_response": "data/raw/baidu/survey_20261017T065301_350986Z/07_MM_FX.json",
+      "requested_at": "2026-10-17T14:53:18.426+08:00"
+    }
+  ],
+  "generated_at": "2026-10-17T14:53:48.136+08:00"
+}

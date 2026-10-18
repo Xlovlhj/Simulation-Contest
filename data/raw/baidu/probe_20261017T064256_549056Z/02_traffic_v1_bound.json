@@ -1,0 +1,180 @@
+{
+  "status": 0,
+  "message": "成功",
+  "description": "该区域整体拥堵。南北高架路：南向北,延安东路立交桥附近拥堵；南向北,延安东路立交桥附近行驶缓慢；北向南,从天目中路立交桥到鲁班路立交严重拥堵。延安东路立交桥：北向南,延安东路立交桥拥堵。淮海中路：东向西,从重庆中路辅路到茂名南路严重拥堵。重庆南路：南向北,淮海中路附近拥堵。马当路：南向北,从复兴中路到淮海中路拥堵。",
+  "evaluation": {
+    "status": 3,
+    "status_desc": "拥堵"
+  },
+  "road_traffic": [
+    {
+      "road_name": "UNKNOW"
+    },
+    {
+      "road_name": "兴业路"
+    },
+    {
+      "road_name": "兴安路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 2,
+          "congestion_distance": 660,
+          "speed": 32.58,
+          "status": 3,
+          "congestion_trend": "BETTER",
+          "section_desc": "南向北,延安东路立交桥附近",
+          "congection_trend": null
+        },
+        {
+          "road_type": 2,
+          "congestion_distance": 780,
+          "speed": 33.82,
+          "status": 2,
+          "congestion_trend": "BETTER",
+          "section_desc": "南向北,延安东路立交桥附近",
+          "congection_trend": null
+        },
+        {
+          "road_type": 2,
+          "congestion_distance": 5640,
+          "speed": 15.61,
+          "status": 4,
+          "congestion_trend": "SAME",
+          "section_desc": "北向南,从天目中路立交桥到鲁班路立交",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "南北高架路"
+    },
+    {
+      "road_name": "南昌路"
+    },
+    {
+      "road_name": "合肥路"
+    },
+    {
+      "road_name": "复兴中路"
+    },
+    {
+      "road_name": "太仓路"
+    },
+    {
+      "road_name": "崇德路"
+    },
+    {
+      "road_name": "嵩山路"
+    },
+    {
+      "road_name": "巨鹿路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 2,
+          "congestion_distance": 840,
+          "speed": 21.04,
+          "status": 3,
+          "congestion_trend": "SAME",
+          "section_desc": "北向南,延安东路立交桥",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "延安东路立交桥"
+    },
+    {
+      "road_name": "思南路"
+    },
+    {
+      "road_name": "成都南路"
+    },
+    {
+      "road_name": "普安路"
+    },
+    {
+      "road_name": "济南路"
+    },
+    {
+      "road_name": "淡水路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 4,
+          "congestion_distance": 1050,
+          "speed": 2.88,
+          "status": 4,
+          "congestion_trend": "BETTER",
+          "section_desc": "东向西,从重庆中路辅路到茂名南路",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "淮海中路"
+    },
+    {
+      "road_name": "湖滨路"
+    },
+    {
+      "road_name": "皋兰路"
+    },
+    {
+      "road_name": "老重庆中路"
+    },
+    {
+      "road_name": "自忠路"
+    },
+    {
+      "road_name": "重庆中路"
+    },
+    {
+      "road_name": "重庆中路辅路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 4,
+          "congestion_distance": 940,
+          "speed": 10.87,
+          "status": 3,
+          "congestion_trend": "WORSE",
+          "section_desc": "南向北,淮海中路附近",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "重庆南路"
+    },
+    {
+      "road_name": "重庆南路辅路"
+    },
+    {
+      "road_name": "长乐路"
+    },
+    {
+      "road_name": "雁荡路"
+    },
+    {
+      "road_name": "顺昌路"
+    },
+    {
+      "road_name": "香山路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 5,
+          "congestion_distance": 730,
+          "speed": 6.73,
+          "status": 3,
+          "congestion_trend": "BETTER",
+          "section_desc": "南向北,从复兴中路到淮海中路",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "马当路"
+    },
+    {
+      "road_name": "黄陂南路"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# Local API credentials; also exclude these files from contest submission archives.
+/config/*.local.json
+
+# Workspace-only tools, caches, and Python bytecode are not submission inputs.
+/.venv/
+/.cache/
+__pycache__/
+*.pyc
+/logs/
+/runtime/
+
+# Local agent state and optional secrets are never versioned.
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.*
+*.local.json
+*.pem
+*.key
+
+# Large reproducible runs and temporary rendering profiles stay in this workspace.
+/outputs/**/network_cache/
+/outputs/**/edge_states.xml
+/outputs/**/tripinfo.xml
+/outputs/**/vehicle_routes.xml
+/outputs/**/summary.xml
+/outputs/**/network.net.xml
+/outputs/**/inverse.rou.xml
+/outputs/**/inverse.add.xml
+/outputs/**/inverse.sumocfg
+/outputs/**/fcd.xml
+!/outputs/governance_v2/runs/headway_30_step_q10_S3_A/fcd.xml
+!/outputs/governance_v2/runs/headway_30_step_q10_S3_B/fcd.xml
+/outputs/**/.runtime/
+/outputs/**/.font-cache/
+/outputs/**/.lo-profile-*/
+/outputs/**/.lo-temp-*/
+/outputs/**/.chrome-*/
+/outputs/paper_v2/page-*.png
+/outputs/paper_v2/ai-page-*.png
+/outputs/paper_v2/contact-*.jpg
+
+# Preserve the public URL, SHA and extracted evidence rather than the large PDF.
+/research/parameter_audit/downloads/ruijin_hospital_eia_public.pdf

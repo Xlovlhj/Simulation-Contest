@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-18T07:28:17.467304+00:00",
+  "summary_sha256": "87e0372ee8351808273c7415465d0a91be0885bfc7a887b3008eea505a5f8e31",
+  "run_count": 22,
+  "verified_run_artifact_count": 638,
+  "all_arrived": true,
+  "all_physics_valid": true,
+  "paired_control_audits": [
+    {
+      "profile": "primary",
+      "same_original_release_roles_and_routes": true,
+      "identical_FCD_before_task_release": true,
+      "bounded_causal_source_control": true
+    },
+    {
+      "profile": "higher_demand",
+      "same_original_release_roles_and_routes": true,
+      "identical_FCD_before_task_release": true,
+      "bounded_causal_source_control": true
+    },
+    {
+      "profile": "severe_event",
+      "same_original_release_roles_and_routes": true,
+      "identical_FCD_before_task_release": true,
+      "bounded_causal_source_control": true
+    },
+    {
+      "profile": "longer_event",
+      "same_original_release_roles_and_routes": true,
+      "identical_FCD_before_task_release": true,
+      "bounded_causal_source_control": true
+    }
+  ],
+  "scope": "Output integrity and causal-control checks; not real-world validation."
+}

@@ -1,0 +1,623 @@
+{
+  "schema_version": 1,
+  "audited_date": "2026-10-18",
+  "scope": "v1 model inputs and implicit structural assumptions; excludes secret configs, presentation pixels and generic programming constants",
+  "parameters": [
+    {
+      "id": "P01",
+      "name": "地理中心、医院门址",
+      "current_value": "上海黄浦区瑞金二路197号",
+      "classification": "local_observation",
+      "location": "config/study_area.json",
+      "local_evidence": "政府医院地址与百度地理编码，门址不是急救入口",
+      "recommended_action": "保留门址来源；入口维持未核验",
+      "source_ids": [
+        "BAIDU_DIRECTION"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P02",
+      "name": "路线坐标、方向和顺序连接",
+      "current_value": "12条调查；307有向分段、310允许连接",
+      "classification": "local_observation",
+      "location": "data/processed/baidu/route_catalog_v1.json",
+      "local_evidence": "百度原始路径和分步指令，可回溯摘要",
+      "recommended_action": "保留有证据连接，不能推断未采集转向或全域完备",
+      "source_ids": [
+        "BAIDU_DIRECTION"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P03",
+      "name": "有效观测路线时间",
+      "current_value": "160 ETA样本，4 OD",
+      "classification": "local_observation",
+      "location": "data/processed/final/samples.csv",
+      "local_evidence": "每次请求/接收时刻，平台ETA；无独立源采样时刻",
+      "recommended_action": "作为带误差的校准目标；不写成实测车辆时间",
+      "source_ids": [
+        "BAIDU_DIRECTION"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P04",
+      "name": "拥堵段速度/长度/方向",
+      "current_value": "部分路况响应提供，其他缺失",
+      "classification": "local_observation",
+      "location": "data/raw/baidu/collection_*",
+      "local_evidence": "平台局部拥堵段估计，不同记录可能覆盖框外或长道路",
+      "recommended_action": "按道路/方向/几何匹配；采用训练区间统计，不将速度直接等同限速",
+      "source_ids": [
+        "BAIDU_TRAFFIC"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P05",
+      "name": "投影方法、地球半径",
+      "current_value": "局部等距圆柱近似；R=6371008.8m",
+      "classification": "engineering_transform",
+      "location": "scripts/run_baseline.py:project_point; scripts/build_route_catalog.py:projected",
+      "local_evidence": "输入为BD09LL；未作测量级坐标校正",
+      "recommended_action": "核验路线长度与平台距离偏差；报告坐标误差，不当高精度地图",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P06",
+      "name": "坐标保留六位及节点相等判定",
+      "current_value": "round(lng/lat,6)",
+      "classification": "design_variable",
+      "location": "scripts/build_route_catalog.py:points",
+      "local_evidence": "数值实现；非现场精度证明",
+      "recommended_action": "保留为算法容差，避免近邻未经证据自动合并",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P07",
+      "name": "路网边界/采样框/四组OD坐标",
+      "current_value": "config/collection.json数值",
+      "classification": "local_observation_and_design",
+      "location": "config/collection.json; scripts/survey_shanghai.py",
+      "local_evidence": "路口由地理编码定位，边界从选定路线范围加缓冲，OD选择为研究设计",
+      "recommended_action": "保留来源、说明裁剪边界和选择偏差",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P08",
+      "name": "每段车道数",
+      "current_value": "1",
+      "classification": "unverified_local_parameter",
+      "location": "config/baseline.json:lane_count; scripts/run_baseline.py:write_inputs",
+      "local_evidence": "未从百度响应取得车道计数",
+      "recommended_action": "不得声称真实单车道；作为有效单通道模型，外部地图/现场核验后再改",
+      "source_ids": [
+        "SUMO_NETWORK",
+        "HP_POLICE_2011",
+        "HP_EIA"
+      ],
+      "impact": "high",
+      "post_audit_evidence": "历史政府报道提及局部双车道；环评宽度不可直接折算车道数"
+    },
+    {
+      "id": "P09",
+      "name": "基础限速和车辆最大速度",
+      "current_value": "30km/h=8.3333m/s",
+      "classification": "unverified_local_parameter",
+      "location": "config/baseline.json:speed_limit_kmh",
+      "local_evidence": "无现场限速来源，且道路/车辆共用同一值",
+      "recommended_action": "用有效通行速度标定或资料核验；不能将低速平台平均值当法定限速",
+      "source_ids": [
+        "SUMO_NETWORK",
+        "BAIDU_TRAFFIC",
+        "HP_EIA"
+      ],
+      "impact": "high",
+      "post_audit_evidence": "补查本地环评噪声模型也采用30km/h，但非全区法定限速证据；原v1选值时没有引用该来源"
+    },
+    {
+      "id": "P10",
+      "name": "路口优先规则/没有真实信号",
+      "current_value": "priority、所有edge.priority=1",
+      "classification": "unverified_local_structure",
+      "location": "scripts/run_baseline.py:write_inputs",
+      "local_evidence": "netconvert计算让行关系，不是信号周期",
+      "recommended_action": "有相位资料则建真实灯；暂无时只能估计有效控制损失并做结构敏感性",
+      "source_ids": [
+        "SUMO_NETWORK",
+        "SUMO_TLS",
+        "FHWA_CAPACITY"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P11",
+      "name": "真实交叉口与形状点分层",
+      "current_value": "每个折线端点皆node；未显式区分真实路口",
+      "classification": "unverified_local_structure",
+      "location": "scripts/run_baseline.py:prepare_network",
+      "local_evidence": "形状折点来自百度路径；路口类型来自统一代码",
+      "recommended_action": "审计度为2的几何点与真实交叉口，防止内部转弯约束产生人工延误",
+      "source_ids": [
+        "SUMO_NETWORK"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P12",
+      "name": "车长",
+      "current_value": "5m",
+      "classification": "software_default",
+      "location": "config/baseline.json:vehicle_length_m",
+      "local_evidence": "与SUMO passenger默认一致，未测上海车队分布",
+      "recommended_action": "可保留作外部默认先验；别称本地标定",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P13",
+      "name": "静止车间净距",
+      "current_value": "2.5m",
+      "classification": "software_default",
+      "location": "config/baseline.json:min_gap_m",
+      "local_evidence": "与SUMO默认一致",
+      "recommended_action": "保留默认先验并说明车辆密度/容量依赖该值",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P14",
+      "name": "加速度",
+      "current_value": "2.6m/s²",
+      "classification": "software_default",
+      "location": "config/baseline.json:accel_m_s2",
+      "local_evidence": "SUMO passenger默认驾驶加速能力",
+      "recommended_action": "未由本地轨迹识别，避免称车辆极限物理能力",
+      "source_ids": [
+        "SUMO_VTYPE",
+        "SH_GNSS"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P15",
+      "name": "舒适减速度",
+      "current_value": "4.5m/s²",
+      "classification": "software_default",
+      "location": "config/baseline.json:decel_m_s2",
+      "local_evidence": "SUMO passenger默认",
+      "recommended_action": "固定默认或以可比轨迹建立外部先验，不自由调参追ETA",
+      "source_ids": [
+        "SUMO_VTYPE",
+        "SH_GNSS"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P16",
+      "name": "跟驰期望时间间距",
+      "current_value": "tau=1s",
+      "classification": "software_default",
+      "location": "config/baseline.json:reaction_time_s",
+      "local_evidence": "SUMO默认tau；变量名reaction_time不等同完整驾驶感知反应机制",
+      "recommended_action": "论文按期望时间间距解释；tau不小于仿真动作步长",
+      "source_ids": [
+        "SUMO_VTYPE",
+        "SUMO_SAFETY"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P17",
+      "name": "驾驶随机性",
+      "current_value": "sigma=0",
+      "classification": "design_variable",
+      "location": "config/baseline.json:driver_imperfection",
+      "local_evidence": "SUMO默认0.5，当前0人为消除随机性",
+      "recommended_action": "作为确定性诊断；若启用默认随机性需多种子重复",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P18",
+      "name": "个体期望速度分布",
+      "current_value": "speedFactor=1、speedDev=0",
+      "classification": "design_variable",
+      "location": "scripts/run_baseline.py:write_inputs",
+      "local_evidence": "强制同质车辆，未测个体异质性",
+      "recommended_action": "明确同质简化，不当软件整体默认",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P19",
+      "name": "跟驰/换道模型",
+      "current_value": "默认Krauss；未显式carFollowModel",
+      "classification": "software_default",
+      "location": "scripts/run_baseline.py:vType",
+      "local_evidence": "SUMO版本冻结但默认模型未显式写入XML",
+      "recommended_action": "后续显式写Krauss并锁版本，提高审计可见性",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P20",
+      "name": "其他隐含vType/netconvert默认",
+      "current_value": "emergencyDecel、width、junction参数等未覆盖项",
+      "classification": "software_default",
+      "location": "outputs/final_experiments/runs/*/network.net.xml; SUMO1.28.0",
+      "local_evidence": "软件版本/产物冻结，非现场验证",
+      "recommended_action": "登记依赖版本；若参数对机制敏感再逐项显式化",
+      "source_ids": [
+        "SUMO_VTYPE",
+        "SUMO_NETWORK"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P21",
+      "name": "车辆组成",
+      "current_value": "100% passenger；同一vType",
+      "classification": "unverified_local_structure",
+      "location": "scripts/run_baseline.py:write_inputs",
+      "local_evidence": "未采车型比例",
+      "recommended_action": "以小客车等效流解释；无证据不能造公交/货车比例",
+      "source_ids": [
+        "SUMO_VTYPE",
+        "HP_EIA"
+      ],
+      "impact": "high",
+      "post_audit_evidence": "2025历史环评含大/中/小型车比例；当前100%passenger简化不是本地实测组成"
+    },
+    {
+      "id": "P22",
+      "name": "行人/非机动车/公交停靠/停车干扰",
+      "current_value": "未建模",
+      "classification": "unverified_local_structure",
+      "location": "scripts/run_baseline.py:write_inputs",
+      "local_evidence": "现有API未提供这些输入",
+      "recommended_action": "纳入有效通行能力/阻抗含义，不能声称已识别具体原因",
+      "source_ids": [
+        "FHWA_CAPACITY",
+        "HP_POLICE_2024"
+      ],
+      "impact": "high",
+      "post_audit_evidence": "2024黄浦公安正式答复证实本地非机动车/配送停车干扰存在"
+    },
+    {
+      "id": "P23",
+      "name": "六OD流量与时序",
+      "current_value": "初版60s/辆，正式30或15s/辆/OD；等量同步",
+      "classification": "unverified_local_parameter",
+      "location": "config/baseline.json; config/final_experiments.json:profiles",
+      "local_evidence": "没有现场计数依据；等量且同步为人为设计",
+      "recommended_action": "用ETA+可匹配速度反演低维需求；报告区间与多解，避免每OD每时段自由参数",
+      "source_ids": [
+        "DEMANDIFY",
+        "FHWA_CAL",
+        "HP_EIA"
+      ],
+      "impact": "high",
+      "post_audit_evidence": "新找到2025本地历史断面计数可作外部量级筛查，但不能分解当前六OD；本次仍需要有条件反演"
+    },
+    {
+      "id": "P24",
+      "name": "转向与路线分担",
+      "current_value": "固定默认路径；A决策服从率100%",
+      "classification": "design_variable",
+      "location": "scripts/run_final_experiments.py:policy assignment",
+      "local_evidence": "不是现实驾驶选择或服从率调查",
+      "recommended_action": "保留作为策略完全执行实验；现实效果须服从率敏感性",
+      "source_ids": [
+        "DEMANDIFY"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P25",
+      "name": "初始交通状态",
+      "current_value": "空网；无热启动队列",
+      "classification": "unverified_local_parameter",
+      "location": "scripts/run_baseline.py:simulation begin; final runner",
+      "local_evidence": "不是当时街区已有车辆/队列",
+      "recommended_action": "校准应加入预热或明确等效状态；测量窗口与模拟热身分开",
+      "source_ids": [
+        "FHWA_CAL"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P26",
+      "name": "入网位置/速度/车道",
+      "current_value": "默认位置、departSpeed=0、departLane=0",
+      "classification": "design_variable",
+      "location": "scripts/run_baseline.py:write_inputs",
+      "local_evidence": "边界条件由代码规定",
+      "recommended_action": "检验边界延误对短路网时间影响，保留入网等待账目",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P27",
+      "name": "拥堵强度",
+      "current_value": "1m/s、0.5m/s",
+      "classification": "unverified_event_parameter",
+      "location": "config/final_experiments.json:profiles",
+      "local_evidence": "无现场或论文取值依据；先前是工程压力案例",
+      "recommended_action": "由本地训练速度/ETA分位数导出强弱情景，再用仿真反演相应容量/速度参数；不直接冒充实测限速",
+      "source_ids": [
+        "BAIDU_TRAFFIC",
+        "FHWA_CAL"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P28",
+      "name": "拥堵位置与影响长度",
+      "current_value": "瑞金二路上游6分段，68.735091m",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json:event.edge_ids",
+      "local_evidence": "几何长度有百度证据，事件落在这里没有事故证据；该位置可被既有备选绕过",
+      "recommended_action": "保持反事实事件位置说明；如声称回放需能匹配真实拥堵段",
+      "source_ids": [
+        "BAIDU_DIRECTION",
+        "BAIDU_TRAFFIC"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P29",
+      "name": "事件开始/公开/持续时间",
+      "current_value": "t=600，持续600或900s",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json:event; profiles",
+      "local_evidence": "没有事故/管制记录；设计保证控制对照有前后窗口",
+      "recommended_action": "若研究反事实可保留设计值；真实拥堵持续时间只能由有匹配的连续观测给区间",
+      "source_ids": [
+        "BAIDU_TRAFFIC"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P30",
+      "name": "保障任务数量/发布时间/起点",
+      "current_value": "1辆；t=720；west_to_hospital_road",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json:hospital_task",
+      "local_evidence": "没有实际急救任务记录；人为测试任务",
+      "recommended_action": "保留为任务设计；在多个发布时间评估稳健性，不冒充急救案例",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P31",
+      "name": "医院目标与通行权限",
+      "current_value": "RJ_YJ外围公共道路点；院内入口未核验",
+      "classification": "unverified_local_structure",
+      "location": "config/study_area.json:hospital_endpoint; hospital_task",
+      "local_evidence": "门址/历史入口线索不足以证明现行救护路线",
+      "recommended_action": "始终称外围接驳任务；未核验前不称真实院内救援",
+      "source_ids": [
+        "BAIDU_DIRECTION"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P32",
+      "name": "任务车辆性能/权限",
+      "current_value": "与普通车辆相同",
+      "classification": "design_variable",
+      "location": "scripts/run_final_experiments.py:vType assignment",
+      "local_evidence": "公平对照规则，非真实救护车法规/行为",
+      "recommended_action": "保留为机制隔离；不能说明真实救护车全部优势或权限",
+      "source_ids": [
+        "SUMO_VTYPE"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P33",
+      "name": "控制上限",
+      "current_value": "45s/辆、180s任务窗口",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json:coordination",
+      "local_evidence": "算法约束，不是从观测读取的数据",
+      "recommended_action": "无需为人为决策变量伪造来源；由代价预算/多值敏感性或优化选择，并在留出情景评价",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P34",
+      "name": "源端控制权限",
+      "current_value": "可暂缓全部冲突普通请求",
+      "classification": "unverified_governance_authority",
+      "location": "config/final_experiments.json:coordination.authority_status",
+      "local_evidence": "没有真实路权/车队合作证明",
+      "recommended_action": "以可控出发点实验表述；无授权不声称可直接现实部署",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P35",
+      "name": "A路径代价",
+      "current_value": "sum(length/current_speed_limit)",
+      "classification": "design_variable",
+      "location": "scripts/run_scenarios.py:assign_routes",
+      "local_evidence": "几何有来源，忽略队列/信号延误是算法近似",
+      "recommended_action": "以校准后的动态旅行时间代价改进；保留无未来信息边界",
+      "source_ids": [
+        "SUMO_NETWORK"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P36",
+      "name": "B冲突判定",
+      "current_value": "chosen route intersects remaining task corridor",
+      "classification": "design_variable",
+      "location": "scripts/run_final_experiments.py:TraCI controller",
+      "local_evidence": "算法定义，以实时routeIndex更新",
+      "recommended_action": "逐车公平性及因果检查；若改变控制先保持需求/事件相同",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P37",
+      "name": "仿真时长/发车时长",
+      "current_value": "1800s/1200s",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json",
+      "local_evidence": "实验计算预算与观察窗口",
+      "recommended_action": "检验未完成车辆，必要时延长清空时间，不漏计成本",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P38",
+      "name": "步长/FCD周期",
+      "current_value": "1s/5s",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json",
+      "local_evidence": "数值设置，1s亦SUMO常用默认",
+      "recommended_action": "保持安全时间尺度；必要时0.5s收敛检查；FCD稀疏采样不等同求解步长",
+      "source_ids": [
+        "SUMO_SAFETY"
+      ],
+      "impact": "low"
+    },
+    {
+      "id": "P39",
+      "name": "随机种子",
+      "current_value": "20261017",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json",
+      "local_evidence": "任意复现标识；不是实际交通数据",
+      "recommended_action": "不宣称一个种子构成统计重复；确定性当前重复只证明复现",
+      "source_ids": [],
+      "impact": "low"
+    },
+    {
+      "id": "P40",
+      "name": "时钟锚点",
+      "current_value": "2026-10-18 12:00+08:00",
+      "classification": "design_variable",
+      "location": "config/final_experiments.json:experiment_anchor",
+      "local_evidence": "声明实验钟点；不是重建实测事件",
+      "recommended_action": "反事实场景清楚标注；校准实测窗口另按真实采样时间对齐",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P41",
+      "name": "采样与去重协议",
+      "current_value": "120s路况、300s路线；5min首次成功",
+      "classification": "design_variable",
+      "location": "config/collection.json; config/final_validation.json",
+      "local_evidence": "采集调用预算与实际日志可核验",
+      "recommended_action": "保留观测非均匀/重复删除说明；不是赛方最低门槛",
+      "source_ids": [
+        "BAIDU_TRAFFIC"
+      ],
+      "impact": "medium"
+    },
+    {
+      "id": "P42",
+      "name": "训练/评价窗口及样本门槛",
+      "current_value": "60/20/120min；每OD12/4/24",
+      "classification": "design_variable",
+      "location": "config/final_validation.json:windows",
+      "local_evidence": "按实际采集分区，协议在采集后记录",
+      "recommended_action": "不按评价结果挑窗；新v2不能称旧留出从未看过",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P43",
+      "name": "共享仿射ETA形式",
+      "current_value": "alpha*x+beta、alpha>=0、beta>=0",
+      "classification": "design_variable",
+      "location": "config/final_validation.json:model",
+      "local_evidence": "经验校正模型形式，未来自交通机理",
+      "recommended_action": "降级历史参照，主模型应直接校准SUMO/观测过程",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P44",
+      "name": "仿射系数及每OD中位数",
+      "current_value": "1.8659500028、293.6906548s；各OD中位数",
+      "classification": "locally_estimated",
+      "location": "outputs/validation/summary.json",
+      "local_evidence": "48训练样本最小二乘/中位数计算",
+      "recommended_action": "可复算但非交通流/信号参数；不得把截距解释成红灯等待",
+      "source_ids": [],
+      "impact": "high"
+    },
+    {
+      "id": "P45",
+      "name": "数据质量/网络硬门槛",
+      "current_value": "HTTP200/status0、非空正值、同路径/框内、无碰撞/传送",
+      "classification": "design_variable",
+      "location": "scripts/finalize_data.py; scripts/validate_twin.py; final runner",
+      "local_evidence": "质量规则和物理可运行规则",
+      "recommended_action": "分清工程通过与现实标定通过，硬编码307/310/30只绑定v1",
+      "source_ids": [],
+      "impact": "medium"
+    },
+    {
+      "id": "P46",
+      "name": "几何与地理筛选门槛",
+      "current_value": "20m重复定位；地理坐标接受框；<2km矩形对角线",
+      "classification": "design_variable_and_api_constraint",
+      "location": "scripts/survey_shanghai.py",
+      "local_evidence": "20m与接受框为防误定位工程设定；2km为接口限制",
+      "recommended_action": "保留人工阈值性质与API来源，不当路口实际尺寸",
+      "source_ids": [
+        "BAIDU_TRAFFIC"
+      ],
+      "impact": "low"
+    },
+    {
+      "id": "P47",
+      "name": "未显式测量的交通能力",
+      "current_value": "从单车道/默认跟驰/priority间接形成",
+      "classification": "estimated_pending",
+      "location": "SUMO network and vType",
+      "local_evidence": "没有现场饱和流/有效绿比，无法唯一分离",
+      "recommended_action": "若用c=s*g/C，只对有效容量或绿比作有先验范围估计；s=1500–2000只是外部先验",
+      "source_ids": [
+        "FHWA_CAPACITY",
+        "FHWA_CAL"
+      ],
+      "impact": "high"
+    },
+    {
+      "id": "P48",
+      "name": "源端与入网等待计时",
+      "current_value": "从原始请求时间计全部等待",
+      "classification": "design_variable",
+      "location": "scripts/run_final_experiments.py:metrics",
+      "local_evidence": "评价定义，确保控制成本不被移出路网隐藏",
+      "recommended_action": "保持指标定义并报告未完成/个体受损",
+      "source_ids": [],
+      "impact": "medium"
+    }
+  ]
+}

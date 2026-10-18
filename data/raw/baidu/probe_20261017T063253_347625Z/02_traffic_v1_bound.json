@@ -1,0 +1,83 @@
+{
+  "status": 0,
+  "message": "成功",
+  "description": "该区域整体畅通。",
+  "evaluation": {
+    "status": 1,
+    "status_desc": "畅通"
+  },
+  "road_traffic": [
+    {
+      "road_name": "UNKNOW"
+    },
+    {
+      "road_name": "中关村南路"
+    },
+    {
+      "road_name": "中关村大街"
+    },
+    {
+      "road_name": "中关村大街辅路"
+    },
+    {
+      "road_name": "丹棱街"
+    },
+    {
+      "road_name": "人民大学北路"
+    },
+    {
+      "road_name": "双榆树北路"
+    },
+    {
+      "road_name": "善缘街"
+    },
+    {
+      "road_name": "大泥湾路"
+    },
+    {
+      "road_name": "彩和坊西小街"
+    },
+    {
+      "road_name": "榆树林北路"
+    },
+    {
+      "road_name": "榆树林街"
+    },
+    {
+      "road_name": "海淀东一街"
+    },
+    {
+      "road_name": "海淀东三街"
+    },
+    {
+      "road_name": "海淀中街"
+    },
+    {
+      "road_name": "海淀南路"
+    },
+    {
+      "road_name": "海淀南路辅路"
+    },
+    {
+      "road_name": "海淀西街"
+    },
+    {
+      "road_name": "白颐路"
+    },
+    {
+      "road_name": "白颐路辅路"
+    },
+    {
+      "road_name": "知春路"
+    },
+    {
+      "road_name": "知春路辅路"
+    },
+    {
+      "road_name": "知春里弯巷"
+    },
+    {
+      "road_name": "通惠寺街"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "figure": "outputs/paper_v2/figures/governance_v2.png",
+  "figure_sha256": "501d128989f303921bf1096cc8729dfa1445549370aa9ab8fd0cbb231b34114b",
+  "pixel_dimensions": [
+    1800,
+    1040
+  ],
+  "source_sha256": {
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa"
+  },
+  "values": {
+    "accepted_B_minus_A": [
+      {
+        "profile": "headway_60",
+        "preset": "step_q25",
+        "ordinary_system_time_delta_s": 697.0,
+        "task_time_delta_s": 0.0
+      },
+      {
+        "profile": "headway_60",
+        "preset": "step_q10",
+        "ordinary_system_time_delta_s": 631.0,
+        "task_time_delta_s": 0.0
+      },
+      {
+        "profile": "headway_30",
+        "preset": "step_q25",
+        "ordinary_system_time_delta_s": 1437.0,
+        "task_time_delta_s": 30.0
+      },
+      {
+        "profile": "headway_30",
+        "preset": "step_q10",
+        "ordinary_system_time_delta_s": 1496.0,
+        "task_time_delta_s": 25.0
+      }
+    ]
+  },
+  "interpretation": "Only training-screen accepted conditional profiles are plotted. Positive deltas mean worse travel time, not positive benefit. All original release-to-arrival costs are included.",
+  "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+}

@@ -1,0 +1,1502 @@
+{
+  "schema_version": 1,
+  "source_catalog": "data/processed/baidu/route_catalog_v1.json",
+  "source_sha256": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0",
+  "normalized_catalog": "data/processed/baidu/route_catalog_v2.json",
+  "builder_sha256": "8319fe0336247034687ed65b5c1b1ed84840689eaa783386afb21e2a6289ec43",
+  "thresholds": {
+    "maximum_cross_track_m": 0.5,
+    "maximum_length_difference_m": 0.5,
+    "same_named_road_required": true,
+    "same_endpoint_nodes_required": true,
+    "monotone_directed_progress_required": true,
+    "unique_alternative_required": true
+  },
+  "old_edge_to_canonical_chain": {
+    "e000000": [
+      "e000000"
+    ],
+    "e000001": [
+      "e000001"
+    ],
+    "e000002": [
+      "e000002"
+    ],
+    "e000003": [
+      "e000003"
+    ],
+    "e000004": [
+      "e000004"
+    ],
+    "e000005": [
+      "e000005"
+    ],
+    "e000006": [
+      "e000006"
+    ],
+    "e000007": [
+      "e000007"
+    ],
+    "e000008": [
+      "e000008"
+    ],
+    "e000009": [
+      "e000009"
+    ],
+    "e000010": [
+      "e000010"
+    ],
+    "e000011": [
+      "e000011"
+    ],
+    "e000012": [
+      "e000012"
+    ],
+    "e000013": [
+      "e000013"
+    ],
+    "e000014": [
+      "e000014"
+    ],
+    "e000015": [
+      "e000015"
+    ],
+    "e000016": [
+      "e000016"
+    ],
+    "e000017": [
+      "e000017"
+    ],
+    "e000018": [
+      "e000018"
+    ],
+    "e000019": [
+      "e000019"
+    ],
+    "e000020": [
+      "e000020"
+    ],
+    "e000021": [
+      "e000021"
+    ],
+    "e000022": [
+      "e000022"
+    ],
+    "e000023": [
+      "e000023"
+    ],
+    "e000024": [
+      "e000024"
+    ],
+    "e000025": [
+      "e000025"
+    ],
+    "e000026": [
+      "e000026"
+    ],
+    "e000027": [
+      "e000027"
+    ],
+    "e000028": [
+      "e000028"
+    ],
+    "e000029": [
+      "e000029"
+    ],
+    "e000030": [
+      "e000030"
+    ],
+    "e000031": [
+      "e000031"
+    ],
+    "e000032": [
+      "e000032"
+    ],
+    "e000033": [
+      "e000033"
+    ],
+    "e000034": [
+      "e000034"
+    ],
+    "e000035": [
+      "e000035"
+    ],
+    "e000036": [
+      "e000036"
+    ],
+    "e000037": [
+      "e000037"
+    ],
+    "e000038": [
+      "e000038"
+    ],
+    "e000039": [
+      "e000039"
+    ],
+    "e000040": [
+      "e000040"
+    ],
+    "e000041": [
+      "e000041"
+    ],
+    "e000042": [
+      "e000042"
+    ],
+    "e000043": [
+      "e000043"
+    ],
+    "e000044": [
+      "e000044"
+    ],
+    "e000045": [
+      "e000045"
+    ],
+    "e000046": [
+      "e000046"
+    ],
+    "e000047": [
+      "e000047"
+    ],
+    "e000048": [
+      "e000048"
+    ],
+    "e000049": [
+      "e000049"
+    ],
+    "e000050": [
+      "e000050"
+    ],
+    "e000051": [
+      "e000051"
+    ],
+    "e000052": [
+      "e000052"
+    ],
+    "e000053": [
+      "e000053"
+    ],
+    "e000054": [
+      "e000054"
+    ],
+    "e000055": [
+      "e000055"
+    ],
+    "e000056": [
+      "e000056"
+    ],
+    "e000057": [
+      "e000057"
+    ],
+    "e000058": [
+      "e000058"
+    ],
+    "e000059": [
+      "e000059"
+    ],
+    "e000060": [
+      "e000060"
+    ],
+    "e000061": [
+      "e000061"
+    ],
+    "e000062": [
+      "e000062"
+    ],
+    "e000063": [
+      "e000063"
+    ],
+    "e000064": [
+      "e000064"
+    ],
+    "e000065": [
+      "e000065"
+    ],
+    "e000066": [
+      "e000066"
+    ],
+    "e000067": [
+      "e000067"
+    ],
+    "e000068": [
+      "e000068"
+    ],
+    "e000069": [
+      "e000069"
+    ],
+    "e000070": [
+      "e000070"
+    ],
+    "e000071": [
+      "e000071"
+    ],
+    "e000072": [
+      "e000072"
+    ],
+    "e000073": [
+      "e000073"
+    ],
+    "e000074": [
+      "e000074"
+    ],
+    "e000075": [
+      "e000075"
+    ],
+    "e000076": [
+      "e000076"
+    ],
+    "e000077": [
+      "e000077"
+    ],
+    "e000078": [
+      "e000078"
+    ],
+    "e000079": [
+      "e000079"
+    ],
+    "e000080": [
+      "e000080"
+    ],
+    "e000081": [
+      "e000081"
+    ],
+    "e000082": [
+      "e000082"
+    ],
+    "e000083": [
+      "e000083"
+    ],
+    "e000084": [
+      "e000084"
+    ],
+    "e000085": [
+      "e000085"
+    ],
+    "e000086": [
+      "e000086"
+    ],
+    "e000087": [
+      "e000087"
+    ],
+    "e000088": [
+      "e000088"
+    ],
+    "e000089": [
+      "e000089"
+    ],
+    "e000090": [
+      "e000090"
+    ],
+    "e000091": [
+      "e000091"
+    ],
+    "e000092": [
+      "e000092"
+    ],
+    "e000093": [
+      "e000093"
+    ],
+    "e000094": [
+      "e000094"
+    ],
+    "e000095": [
+      "e000095"
+    ],
+    "e000096": [
+      "e000096"
+    ],
+    "e000097": [
+      "e000097"
+    ],
+    "e000098": [
+      "e000098"
+    ],
+    "e000099": [
+      "e000099"
+    ],
+    "e000100": [
+      "e000100"
+    ],
+    "e000101": [
+      "e000101"
+    ],
+    "e000102": [
+      "e000102"
+    ],
+    "e000103": [
+      "e000103"
+    ],
+    "e000104": [
+      "e000104"
+    ],
+    "e000105": [
+      "e000105"
+    ],
+    "e000106": [
+      "e000106"
+    ],
+    "e000107": [
+      "e000107"
+    ],
+    "e000108": [
+      "e000108"
+    ],
+    "e000109": [
+      "e000109"
+    ],
+    "e000110": [
+      "e000110"
+    ],
+    "e000111": [
+      "e000111"
+    ],
+    "e000112": [
+      "e000112"
+    ],
+    "e000113": [
+      "e000113"
+    ],
+    "e000114": [
+      "e000114"
+    ],
+    "e000115": [
+      "e000115"
+    ],
+    "e000116": [
+      "e000116"
+    ],
+    "e000117": [
+      "e000117"
+    ],
+    "e000118": [
+      "e000118"
+    ],
+    "e000119": [
+      "e000119"
+    ],
+    "e000120": [
+      "e000120"
+    ],
+    "e000121": [
+      "e000121"
+    ],
+    "e000122": [
+      "e000122"
+    ],
+    "e000123": [
+      "e000123"
+    ],
+    "e000124": [
+      "e000124"
+    ],
+    "e000125": [
+      "e000125"
+    ],
+    "e000126": [
+      "e000126"
+    ],
+    "e000127": [
+      "e000127"
+    ],
+    "e000128": [
+      "e000128"
+    ],
+    "e000129": [
+      "e000129"
+    ],
+    "e000130": [
+      "e000130"
+    ],
+    "e000131": [
+      "e000131"
+    ],
+    "e000132": [
+      "e000132"
+    ],
+    "e000133": [
+      "e000280",
+      "e000281"
+    ],
+    "e000134": [
+      "e000134"
+    ],
+    "e000135": [
+      "e000135"
+    ],
+    "e000136": [
+      "e000136"
+    ],
+    "e000137": [
+      "e000137"
+    ],
+    "e000138": [
+      "e000138"
+    ],
+    "e000139": [
+      "e000139"
+    ],
+    "e000140": [
+      "e000140"
+    ],
+    "e000141": [
+      "e000141"
+    ],
+    "e000142": [
+      "e000142"
+    ],
+    "e000143": [
+      "e000143"
+    ],
+    "e000144": [
+      "e000144"
+    ],
+    "e000145": [
+      "e000145"
+    ],
+    "e000146": [
+      "e000146"
+    ],
+    "e000147": [
+      "e000147"
+    ],
+    "e000148": [
+      "e000148"
+    ],
+    "e000149": [
+      "e000149"
+    ],
+    "e000150": [
+      "e000150"
+    ],
+    "e000151": [
+      "e000151"
+    ],
+    "e000152": [
+      "e000152"
+    ],
+    "e000153": [
+      "e000153"
+    ],
+    "e000154": [
+      "e000154"
+    ],
+    "e000155": [
+      "e000155"
+    ],
+    "e000156": [
+      "e000156"
+    ],
+    "e000157": [
+      "e000157"
+    ],
+    "e000158": [
+      "e000158"
+    ],
+    "e000159": [
+      "e000159"
+    ],
+    "e000160": [
+      "e000160"
+    ],
+    "e000161": [
+      "e000161"
+    ],
+    "e000162": [
+      "e000162"
+    ],
+    "e000163": [
+      "e000163"
+    ],
+    "e000164": [
+      "e000164"
+    ],
+    "e000165": [
+      "e000165"
+    ],
+    "e000166": [
+      "e000166"
+    ],
+    "e000167": [
+      "e000167"
+    ],
+    "e000168": [
+      "e000168"
+    ],
+    "e000169": [
+      "e000169"
+    ],
+    "e000170": [
+      "e000170"
+    ],
+    "e000171": [
+      "e000171"
+    ],
+    "e000172": [
+      "e000172"
+    ],
+    "e000173": [
+      "e000173"
+    ],
+    "e000174": [
+      "e000174"
+    ],
+    "e000175": [
+      "e000175"
+    ],
+    "e000176": [
+      "e000176"
+    ],
+    "e000177": [
+      "e000177"
+    ],
+    "e000178": [
+      "e000178"
+    ],
+    "e000179": [
+      "e000179"
+    ],
+    "e000180": [
+      "e000180"
+    ],
+    "e000181": [
+      "e000181"
+    ],
+    "e000182": [
+      "e000116",
+      "e000000"
+    ],
+    "e000183": [
+      "e000183"
+    ],
+    "e000184": [
+      "e000184"
+    ],
+    "e000185": [
+      "e000185"
+    ],
+    "e000186": [
+      "e000186"
+    ],
+    "e000187": [
+      "e000187"
+    ],
+    "e000188": [
+      "e000188"
+    ],
+    "e000189": [
+      "e000189"
+    ],
+    "e000190": [
+      "e000190"
+    ],
+    "e000191": [
+      "e000191"
+    ],
+    "e000192": [
+      "e000192"
+    ],
+    "e000193": [
+      "e000193"
+    ],
+    "e000194": [
+      "e000194"
+    ],
+    "e000195": [
+      "e000195"
+    ],
+    "e000196": [
+      "e000196"
+    ],
+    "e000197": [
+      "e000197"
+    ],
+    "e000198": [
+      "e000198"
+    ],
+    "e000199": [
+      "e000199"
+    ],
+    "e000200": [
+      "e000200"
+    ],
+    "e000201": [
+      "e000201"
+    ],
+    "e000202": [
+      "e000202"
+    ],
+    "e000203": [
+      "e000203"
+    ],
+    "e000204": [
+      "e000204"
+    ],
+    "e000205": [
+      "e000205"
+    ],
+    "e000206": [
+      "e000206"
+    ],
+    "e000207": [
+      "e000207"
+    ],
+    "e000208": [
+      "e000208"
+    ],
+    "e000209": [
+      "e000209"
+    ],
+    "e000210": [
+      "e000210"
+    ],
+    "e000211": [
+      "e000211"
+    ],
+    "e000212": [
+      "e000212"
+    ],
+    "e000213": [
+      "e000213"
+    ],
+    "e000214": [
+      "e000214"
+    ],
+    "e000215": [
+      "e000215"
+    ],
+    "e000216": [
+      "e000216"
+    ],
+    "e000217": [
+      "e000217"
+    ],
+    "e000218": [
+      "e000218"
+    ],
+    "e000219": [
+      "e000219"
+    ],
+    "e000220": [
+      "e000220"
+    ],
+    "e000221": [
+      "e000221"
+    ],
+    "e000222": [
+      "e000222"
+    ],
+    "e000223": [
+      "e000223"
+    ],
+    "e000224": [
+      "e000224"
+    ],
+    "e000225": [
+      "e000225"
+    ],
+    "e000226": [
+      "e000226"
+    ],
+    "e000227": [
+      "e000227"
+    ],
+    "e000228": [
+      "e000228"
+    ],
+    "e000229": [
+      "e000229"
+    ],
+    "e000230": [
+      "e000230"
+    ],
+    "e000231": [
+      "e000231"
+    ],
+    "e000232": [
+      "e000232"
+    ],
+    "e000233": [
+      "e000233"
+    ],
+    "e000234": [
+      "e000234"
+    ],
+    "e000235": [
+      "e000235"
+    ],
+    "e000236": [
+      "e000236"
+    ],
+    "e000237": [
+      "e000237"
+    ],
+    "e000238": [
+      "e000238"
+    ],
+    "e000239": [
+      "e000239"
+    ],
+    "e000240": [
+      "e000240"
+    ],
+    "e000241": [
+      "e000241"
+    ],
+    "e000242": [
+      "e000242"
+    ],
+    "e000243": [
+      "e000243"
+    ],
+    "e000244": [
+      "e000244"
+    ],
+    "e000245": [
+      "e000245"
+    ],
+    "e000246": [
+      "e000246"
+    ],
+    "e000247": [
+      "e000247"
+    ],
+    "e000248": [
+      "e000248"
+    ],
+    "e000249": [
+      "e000249"
+    ],
+    "e000250": [
+      "e000250"
+    ],
+    "e000251": [
+      "e000251"
+    ],
+    "e000252": [
+      "e000252"
+    ],
+    "e000253": [
+      "e000253"
+    ],
+    "e000254": [
+      "e000254"
+    ],
+    "e000255": [
+      "e000255"
+    ],
+    "e000256": [
+      "e000256"
+    ],
+    "e000257": [
+      "e000257"
+    ],
+    "e000258": [
+      "e000258"
+    ],
+    "e000259": [
+      "e000259"
+    ],
+    "e000260": [
+      "e000260"
+    ],
+    "e000261": [
+      "e000261"
+    ],
+    "e000262": [
+      "e000262"
+    ],
+    "e000263": [
+      "e000263"
+    ],
+    "e000264": [
+      "e000264"
+    ],
+    "e000265": [
+      "e000265"
+    ],
+    "e000266": [
+      "e000266"
+    ],
+    "e000267": [
+      "e000267"
+    ],
+    "e000268": [
+      "e000268"
+    ],
+    "e000269": [
+      "e000269"
+    ],
+    "e000270": [
+      "e000270"
+    ],
+    "e000271": [
+      "e000271"
+    ],
+    "e000272": [
+      "e000272"
+    ],
+    "e000273": [
+      "e000273"
+    ],
+    "e000274": [
+      "e000274"
+    ],
+    "e000275": [
+      "e000275"
+    ],
+    "e000276": [
+      "e000276"
+    ],
+    "e000277": [
+      "e000277"
+    ],
+    "e000278": [
+      "e000278"
+    ],
+    "e000279": [
+      "e000279"
+    ],
+    "e000280": [
+      "e000280"
+    ],
+    "e000281": [
+      "e000281"
+    ],
+    "e000282": [
+      "e000282"
+    ],
+    "e000283": [
+      "e000283"
+    ],
+    "e000284": [
+      "e000284"
+    ],
+    "e000285": [
+      "e000285"
+    ],
+    "e000286": [
+      "e000286"
+    ],
+    "e000287": [
+      "e000287"
+    ],
+    "e000288": [
+      "e000288"
+    ],
+    "e000289": [
+      "e000289"
+    ],
+    "e000290": [
+      "e000290"
+    ],
+    "e000291": [
+      "e000291"
+    ],
+    "e000292": [
+      "e000292"
+    ],
+    "e000293": [
+      "e000293"
+    ],
+    "e000294": [
+      "e000294"
+    ],
+    "e000295": [
+      "e000295"
+    ],
+    "e000296": [
+      "e000296"
+    ],
+    "e000297": [
+      "e000297"
+    ],
+    "e000298": [
+      "e000298"
+    ],
+    "e000299": [
+      "e000299"
+    ],
+    "e000300": [
+      "e000300"
+    ],
+    "e000301": [
+      "e000301"
+    ],
+    "e000302": [
+      "e000302"
+    ],
+    "e000303": [
+      "e000303"
+    ],
+    "e000304": [
+      "e000304"
+    ],
+    "e000305": [
+      "e000305"
+    ],
+    "e000306": [
+      "e000306"
+    ]
+  },
+  "merged_edges": [
+    {
+      "old_edge_id": "e000182",
+      "old_length_m": 28.316242,
+      "road_names": [
+        "复兴中路"
+      ],
+      "same_start_node": "n000117",
+      "same_end_node": "n000001",
+      "alternatives_found": 1,
+      "replacement_chain": [
+        "e000116",
+        "e000000"
+      ],
+      "chain_length_m": 28.32058,
+      "length_difference_m": 0.004338000000000619,
+      "maximum_cross_track_m": 0.1714014971368839
+    },
+    {
+      "old_edge_id": "e000133",
+      "old_length_m": 30.917136,
+      "road_names": [
+        "建国中路"
+      ],
+      "same_start_node": "n000133",
+      "same_end_node": "n000134",
+      "alternatives_found": 1,
+      "replacement_chain": [
+        "e000280",
+        "e000281"
+      ],
+      "chain_length_m": 30.922203,
+      "length_difference_m": 0.005067000000000377,
+      "maximum_cross_track_m": 0.1946034552623833
+    }
+  ],
+  "unmerged_suspected_overlaps_2m": [],
+  "route_continuity": [
+    {
+      "kind": "demand_ods",
+      "id": "north_to_south",
+      "old_length_m": 1715.36427,
+      "new_length_m": 1715.36427,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "demand_ods",
+      "id": "south_to_north",
+      "old_length_m": 728.919082,
+      "new_length_m": 728.919082,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "demand_ods",
+      "id": "west_to_east",
+      "old_length_m": 1972.48214,
+      "new_length_m": 1972.487207,
+      "length_change_m": 0.005066999999826294,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "demand_ods",
+      "id": "east_to_west",
+      "old_length_m": 1471.273405,
+      "new_length_m": 1471.277743,
+      "length_change_m": 0.004338000000188913,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "demand_ods",
+      "id": "west_to_hospital_road",
+      "old_length_m": 856.396611,
+      "new_length_m": 856.396611,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "demand_ods",
+      "id": "east_to_hospital_road",
+      "old_length_m": 1220.446434,
+      "new_length_m": 1220.446434,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "north_to_south",
+      "old_length_m": 1715.36427,
+      "new_length_m": 1715.36427,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "south_to_north",
+      "old_length_m": 728.919082,
+      "new_length_m": 728.919082,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "west_to_east",
+      "old_length_m": 1972.48214,
+      "new_length_m": 1972.487207,
+      "length_change_m": 0.005066999999826294,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "east_to_west",
+      "old_length_m": 1471.273405,
+      "new_length_m": 1471.277743,
+      "length_change_m": 0.004338000000188913,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "west_to_hospital_road",
+      "old_length_m": 856.396611,
+      "new_length_m": 856.396611,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "east_to_hospital_road",
+      "old_length_m": 1220.446434,
+      "new_length_m": 1220.446434,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "west_to_east_via_maoming",
+      "old_length_m": 2767.217717,
+      "new_length_m": 2767.222055,
+      "length_change_m": 0.004338000000188913,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": false
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "east_to_west_via_jianguo",
+      "old_length_m": 3588.077204,
+      "new_length_m": 3588.081542,
+      "length_change_m": 0.004337999999734166,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "west_reference_0",
+      "old_length_m": 856.396611,
+      "new_length_m": 856.396611,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "west_via_sinnan_0",
+      "old_length_m": 1573.522758,
+      "new_length_m": 1573.522758,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "east_reference_0",
+      "old_length_m": 1220.446434,
+      "new_length_m": 1220.446434,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "topology_evidence_routes",
+      "id": "east_via_maoming_0",
+      "old_length_m": 2498.379796,
+      "new_length_m": 2498.384134,
+      "length_change_m": 0.004337999999734166,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": false
+    },
+    {
+      "kind": "route_candidates",
+      "id": "north_to_south:observed:north_to_south",
+      "old_length_m": 1715.36427,
+      "new_length_m": 1715.36427,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "south_to_north:observed:south_to_north",
+      "old_length_m": 728.919082,
+      "new_length_m": 728.919082,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "west_to_east:observed:west_to_east",
+      "old_length_m": 1972.48214,
+      "new_length_m": 1972.487207,
+      "length_change_m": 0.005066999999826294,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "west_to_east:derived:2",
+      "old_length_m": 2593.292043,
+      "new_length_m": 2593.296381,
+      "length_change_m": 0.004338000000188913,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "east_to_west:observed:east_to_west",
+      "old_length_m": 1471.273405,
+      "new_length_m": 1471.277743,
+      "length_change_m": 0.004338000000188913,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "west_to_hospital_road:observed:west_to_hospital_road",
+      "old_length_m": 856.396611,
+      "new_length_m": 856.396611,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "west_to_hospital_road:observed:west_via_sinnan_0",
+      "old_length_m": 1573.522758,
+      "new_length_m": 1573.522758,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    },
+    {
+      "kind": "route_candidates",
+      "id": "east_to_hospital_road:observed:east_to_hospital_road",
+      "old_length_m": 1220.446434,
+      "new_length_m": 1220.446434,
+      "length_change_m": 0.0,
+      "endpoints_preserved": true,
+      "directed_continuity": true,
+      "all_turns_policy_eligible": true
+    }
+  ],
+  "terminal_reachability_36_pairs": [
+    {
+      "start_od": "north_to_south",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "north_to_south",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "north_to_south",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "north_to_south",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "north_to_south",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "north_to_south",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "south_to_north",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_east",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_west",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "west_to_hospital_road",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "north_to_south",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "south_to_north",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "west_to_east",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "east_to_west",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "west_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    },
+    {
+      "start_od": "east_to_hospital_road",
+      "end_od": "east_to_hospital_road",
+      "before": true,
+      "after": true,
+      "preserved": true
+    }
+  ],
+  "all_terminal_reachability_preserved": true,
+  "all_canonical_turns_have_mapped_source_evidence": true,
+  "interior_turn_source_note": "A from=to old edge in normalization_sources denotes interior continuation supported by traversal of one overlapping long observed segment, not an observed U-turn.",
+  "old_edge_count": 307,
+  "canonical_edge_count": 305,
+  "old_allowed_connection_count": 310,
+  "canonical_allowed_connection_count": 308,
+  "limitation": "Geometry equivalence is inferred from route traces; lane topology and real signal control remain unverified.",
+  "normalized_catalog_sha256": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff"
+}

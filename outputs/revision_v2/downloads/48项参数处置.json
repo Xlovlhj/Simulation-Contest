@@ -1,0 +1,342 @@
+{
+  "source_sha256": "bff7f30c48b13bc6c2768dac6c6468311cff00d3596951010988a348d2aebe43",
+  "parameters": [
+    {
+      "parameter_id": "P01",
+      "name": "地理中心、医院门址",
+      "v1_classification": "local_observation",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "政府医院地址与百度地理编码，门址不是急救入口；保留门址来源；入口维持未核验"
+    },
+    {
+      "parameter_id": "P02",
+      "name": "路线坐标、方向和顺序连接",
+      "v1_classification": "local_observation",
+      "v2_status": "corrected_observed_geometry",
+      "resolution_or_boundary": "V2将两处重复采样边规范为已观测链，305边/308连接；不增加未调查转向。"
+    },
+    {
+      "parameter_id": "P03",
+      "name": "有效观测路线时间",
+      "v1_classification": "local_observation",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "每次请求/接收时刻，平台ETA；无独立源采样时刻；作为带误差的校准目标；不写成实测车辆时间"
+    },
+    {
+      "parameter_id": "P04",
+      "name": "拥堵段速度/长度/方向",
+      "v1_classification": "local_observation",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "平台局部拥堵段估计，不同记录可能覆盖框外或长道路；按道路/方向/几何匹配；采用训练区间统计，不将速度直接等同限速"
+    },
+    {
+      "parameter_id": "P05",
+      "name": "投影方法、地球半径",
+      "v1_classification": "engineering_transform",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "输入为BD09LL；未作测量级坐标校正；核验路线长度与平台距离偏差；报告坐标误差，不当高精度地图"
+    },
+    {
+      "parameter_id": "P06",
+      "name": "坐标保留六位及节点相等判定",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "数值实现；非现场精度证明；保留为算法容差，避免近邻未经证据自动合并"
+    },
+    {
+      "parameter_id": "P07",
+      "name": "路网边界/采样框/四组OD坐标",
+      "v1_classification": "local_observation_and_design",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "路口由地理编码定位，边界从选定路线范围加缓冲，OD选择为研究设计；保留来源、说明裁剪边界和选择偏差"
+    },
+    {
+      "parameter_id": "P08",
+      "name": "每段车道数",
+      "v1_classification": "unverified_local_parameter",
+      "v2_status": "unidentified_effective_simplification",
+      "resolution_or_boundary": "仍采用一条有效通道；没有把历史双车道线索冒充当前车道核验，当前ETA不能反推出真实车道数。"
+    },
+    {
+      "parameter_id": "P09",
+      "name": "基础限速和车辆最大速度",
+      "v1_classification": "unverified_local_parameter",
+      "v2_status": "estimated_effective_constraint",
+      "resolution_or_boundary": "30km/h获本地环评噪声计算值佐证但不是法定限速；内部反演三组有效运行约束，入选约6.45/8.4/8.7kmh。"
+    },
+    {
+      "parameter_id": "P10",
+      "name": "路口优先规则/没有真实信号",
+      "v1_classification": "unverified_local_structure",
+      "v2_status": "unidentified_local_signal",
+      "resolution_or_boundary": "没有现行路口配时，未构造虚假红绿灯。信号与其他损失合并进有效运行约束，不能解释为真实相位/绿比。"
+    },
+    {
+      "parameter_id": "P11",
+      "name": "真实交叉口与形状点分层",
+      "v1_classification": "unverified_local_structure",
+      "v2_status": "partially_corrected_structure",
+      "resolution_or_boundary": "两处重叠归并并核验可达关系；其余几何节点与真实路口的模型粒度仍需保持简化说明。"
+    },
+    {
+      "parameter_id": "P12",
+      "name": "车长",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "与SUMO passenger默认一致，未测上海车队分布；可保留作外部默认先验；别称本地标定"
+    },
+    {
+      "parameter_id": "P13",
+      "name": "静止车间净距",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "与SUMO默认一致；保留默认先验并说明车辆密度/容量依赖该值"
+    },
+    {
+      "parameter_id": "P14",
+      "name": "加速度",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "SUMO passenger默认驾驶加速能力；未由本地轨迹识别，避免称车辆极限物理能力"
+    },
+    {
+      "parameter_id": "P15",
+      "name": "舒适减速度",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "SUMO passenger默认；固定默认或以可比轨迹建立外部先验，不自由调参追ETA"
+    },
+    {
+      "parameter_id": "P16",
+      "name": "跟驰期望时间间距",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "SUMO默认tau；变量名reaction_time不等同完整驾驶感知反应机制；论文按期望时间间距解释；tau不小于仿真动作步长"
+    },
+    {
+      "parameter_id": "P17",
+      "name": "驾驶随机性",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "SUMO默认0.5，当前0人为消除随机性；作为确定性诊断；若启用默认随机性需多种子重复"
+    },
+    {
+      "parameter_id": "P18",
+      "name": "个体期望速度分布",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "强制同质车辆，未测个体异质性；明确同质简化，不当软件整体默认"
+    },
+    {
+      "parameter_id": "P19",
+      "name": "跟驰/换道模型",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "SUMO版本冻结但默认模型未显式写入XML；后续显式写Krauss并锁版本，提高审计可见性"
+    },
+    {
+      "parameter_id": "P20",
+      "name": "其他隐含vType/netconvert默认",
+      "v1_classification": "software_default",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "软件版本/产物冻结，非现场验证；登记依赖版本；若参数对机制敏感再逐项显式化"
+    },
+    {
+      "parameter_id": "P21",
+      "name": "车辆组成",
+      "v1_classification": "unverified_local_structure",
+      "v2_status": "externally_informed_simplification",
+      "resolution_or_boundary": "本地历史车型计数证明混合车流；现模型仍以同类小客车运行，无法由ETA识别车型分布，历史621不是621 pcu/h。"
+    },
+    {
+      "parameter_id": "P22",
+      "name": "行人/非机动车/公交停靠/停车干扰",
+      "v1_classification": "unverified_local_structure",
+      "v2_status": "unidentified_effective_simplification",
+      "resolution_or_boundary": "黄浦公安资料确认非机动车与停车干扰，现有ETA只能限制综合阻抗，不能分解为某种干扰强度。"
+    },
+    {
+      "parameter_id": "P23",
+      "name": "六OD流量与时序",
+      "v1_classification": "unverified_local_parameter",
+      "v2_status": "conditional_grid_estimated",
+      "resolution_or_boundary": "执行60/30/18/15秒四档需求的独立SUMO内部反演；60/30通过时间一致性筛选，范围是有限候选包络，不是实际流量置信区间。"
+    },
+    {
+      "parameter_id": "P24",
+      "name": "转向与路线分担",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "不是现实驾驶选择或服从率调查；保留作为策略完全执行实验；现实效果须服从率敏感性"
+    },
+    {
+      "parameter_id": "P25",
+      "name": "初始交通状态",
+      "v1_classification": "unverified_local_parameter",
+      "v2_status": "engineering_warmup_verified",
+      "resolution_or_boundary": "统一1200秒预热；入选解延长至1800秒，六OD探针时间不变。不是恢复实测初始排队。"
+    },
+    {
+      "parameter_id": "P26",
+      "name": "入网位置/速度/车道",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "边界条件由代码规定；检验边界延误对短路网时间影响，保留入网等待账目"
+    },
+    {
+      "parameter_id": "P27",
+      "name": "拥堵强度",
+      "v1_classification": "unverified_event_parameter",
+      "v2_status": "observation_based_scenario_proxy",
+      "resolution_or_boundary": "12个训练同几何步骤推导中度0.823991789、强度0.704801929倍率乘已拟合运行约束；不将均速当点限速。"
+    },
+    {
+      "parameter_id": "P28",
+      "name": "拥堵位置与影响长度",
+      "v1_classification": "design_variable",
+      "v2_status": "observation_matched_scenario_location",
+      "resolution_or_boundary": "改为百度完整276m步骤（模型278.665139m）19边；其中209.93m共同必经，保留实际绕行限制。"
+    },
+    {
+      "parameter_id": "P29",
+      "name": "事件开始/公开/持续时间",
+      "v1_classification": "design_variable",
+      "v2_status": "declared_experiment_design",
+      "resolution_or_boundary": "事件t=1800、持续600秒；这是反事实实验，不称实际事故。300/900秒本轮未执行。"
+    },
+    {
+      "parameter_id": "P30",
+      "name": "保障任务数量/发布时间/起点",
+      "v1_classification": "design_variable",
+      "v2_status": "declared_experiment_design",
+      "resolution_or_boundary": "任务改t=1920，数量1、公共道路接驳点保留；不称真实急救记录。"
+    },
+    {
+      "parameter_id": "P31",
+      "name": "医院目标与通行权限",
+      "v1_classification": "unverified_local_structure",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "门址/历史入口线索不足以证明现行救护路线；始终称外围接驳任务；未核验前不称真实院内救援"
+    },
+    {
+      "parameter_id": "P32",
+      "name": "任务车辆性能/权限",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "公平对照规则，非真实救护车法规/行为；保留为机制隔离；不能说明真实救护车全部优势或权限"
+    },
+    {
+      "parameter_id": "P33",
+      "name": "控制上限",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "算法约束，不是从观测读取的数据；无需为人为决策变量伪造来源；由代价预算/多值敏感性或优化选择，并在留出情景评价"
+    },
+    {
+      "parameter_id": "P34",
+      "name": "源端控制权限",
+      "v1_classification": "unverified_governance_authority",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "没有真实路权/车队合作证明；以可控出发点实验表述；无授权不声称可直接现实部署"
+    },
+    {
+      "parameter_id": "P35",
+      "name": "A路径代价",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "几何有来源，忽略队列/信号延误是算法近似；以校准后的动态旅行时间代价改进；保留无未来信息边界"
+    },
+    {
+      "parameter_id": "P36",
+      "name": "B冲突判定",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "算法定义，以实时routeIndex更新；逐车公平性及因果检查；若改变控制先保持需求/事件相同"
+    },
+    {
+      "parameter_id": "P37",
+      "name": "仿真时长/发车时长",
+      "v1_classification": "design_variable",
+      "v2_status": "declared_experiment_design",
+      "resolution_or_boundary": "V2反演1200预热/2400停发/4800结束；治理1200预热/3000停发/6000结束。"
+    },
+    {
+      "parameter_id": "P38",
+      "name": "步长/FCD周期",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "数值设置，1s亦SUMO常用默认；保持安全时间尺度；必要时0.5s收敛检查；FCD稀疏采样不等同求解步长"
+    },
+    {
+      "parameter_id": "P39",
+      "name": "随机种子",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "任意复现标识；不是实际交通数据；不宣称一个种子构成统计重复；确定性当前重复只证明复现"
+    },
+    {
+      "parameter_id": "P40",
+      "name": "时钟锚点",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "声明实验钟点；不是重建实测事件；反事实场景清楚标注；校准实测窗口另按真实采样时间对齐"
+    },
+    {
+      "parameter_id": "P41",
+      "name": "采样与去重协议",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "采集调用预算与实际日志可核验；保留观测非均匀/重复删除说明；不是赛方最低门槛"
+    },
+    {
+      "parameter_id": "P42",
+      "name": "训练/评价窗口及样本门槛",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "按实际采集分区，协议在采集后记录；不按评价结果挑窗；新v2不能称旧留出从未看过"
+    },
+    {
+      "parameter_id": "P43",
+      "name": "共享仿射ETA形式",
+      "v1_classification": "design_variable",
+      "v2_status": "retired_as_primary_method",
+      "resolution_or_boundary": "V2没有输出仿射修正；V1公式只保留历史经验预测参照。"
+    },
+    {
+      "parameter_id": "P44",
+      "name": "仿射系数及每OD中位数",
+      "v1_classification": "locally_estimated",
+      "v2_status": "retained_historical_estimate",
+      "resolution_or_boundary": "V1系数来自48训练样本OLS，仍可复核，但不用于V2车辆运动或治理时间。"
+    },
+    {
+      "parameter_id": "P45",
+      "name": "数据质量/网络硬门槛",
+      "v1_classification": "design_variable",
+      "v2_status": "versioned_quality_screen",
+      "resolution_or_boundary": "V2网络305/308；零碰撞传送丢弃/完成/探针入网20s/逐OD中位误差15%分别检查，均非真实性保证。"
+    },
+    {
+      "parameter_id": "P46",
+      "name": "几何与地理筛选门槛",
+      "v1_classification": "design_variable_and_api_constraint",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "20m与接受框为防误定位工程设定；2km为接口限制；保留人工阈值性质与API来源，不当路口实际尺寸"
+    },
+    {
+      "parameter_id": "P47",
+      "name": "未显式测量的交通能力",
+      "v1_classification": "estimated_pending",
+      "v2_status": "not_separately_identified",
+      "resolution_or_boundary": "FHWA容量c=s*g/C有来源，但s、g/C、真实q未被同时识别；只估有效阻抗，不编造绿灯配时。"
+    },
+    {
+      "parameter_id": "P48",
+      "name": "源端与入网等待计时",
+      "v1_classification": "design_variable",
+      "v2_status": "source_or_declared_design_retained",
+      "resolution_or_boundary": "评价定义，确保控制成本不被移出路网隐藏；保持指标定义并报告未完成/个体受损"
+    }
+  ],
+  "note": "完成逐项处置不等于每个现实未知量已测得；未识别项明确保留。"
+}

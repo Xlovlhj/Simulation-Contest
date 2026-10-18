@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-18T07:45:28.888350+00:00",
+  "scope": "Exact private-value scan of final PDF decoded text and DOCX decompressed members; private values not recorded",
+  "documents": {
+    "outputs/paper/paper.pdf": "8382eee72aed10671081dfe3c857a594e2268cb3cdfa85eb3944d40b26c76fd6",
+    "outputs/paper/paper.docx": "028e062cf9fc2dfb801f1a4a88f63ed83689e35f768c71e007da8b664982872a",
+    "outputs/paper/ai_usage.pdf": "1032e8a3842252aad601b81e4e5e3a7c0922825b04df26f7cddc5312336d3f57",
+    "outputs/paper/ai_usage.docx": "75b0469680918a31f478eda492c19f68f7a43fd12a39ae4d69ab3e00896e7f6b"
+  }
+}

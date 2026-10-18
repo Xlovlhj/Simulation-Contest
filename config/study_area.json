@@ -1,0 +1,26 @@
+{
+  "id": "shanghai_ruijin",
+  "city": "上海市",
+  "geocode_address": "上海市黄浦区瑞金二路197号",
+  "expected_geocode_levels": [
+    "医疗",
+    "门址"
+  ],
+  "address_source": "https://rsj.sh.gov.cn/tzpgg_17408/20210809/t0035_1401464.html",
+  "candidate_description": "黄浦区瑞金医院周边，优先核验瑞金二路、复兴中路、建国中路附近道路",
+  "selection_status": "selected_for_collection_partial_topology_evidence",
+  "coordinate_system": "bd09ll",
+  "validation_bounds": {
+    "south": 30.5,
+    "north": 32.0,
+    "west": 120.8,
+    "east": 122.2
+  },
+  "probe_half_extent_degrees": {
+    "latitude": 0.005,
+    "longitude": 0.006
+  },
+  "collection_config": "config/collection.json",
+  "hospital_endpoint_id": "RJ_YJ",
+  "hospital_endpoint_status": "public_road_connection_point_research_assumption"
+}

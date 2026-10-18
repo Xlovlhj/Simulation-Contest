@@ -1,0 +1,265 @@
+{
+  "checked_date": "2026-10-18",
+  "sources": [
+    {
+      "id": "SUMO_VTYPE",
+      "title": "Eclipse SUMO vehicle types and defaults",
+      "url": "https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+      "type": "software_documentation",
+      "access_status": "已下载HTML并SHA-256留档",
+      "license_or_scope": "软件文档；项目不是从文档取得当地实测参数",
+      "usable_evidence": "passenger默认length=5、minGap=2.5、accel=2.6、decel=4.5、tau=1、sigma=0.5；本项目sigma=0为人为简化。",
+      "notes": "下载文件 sumo_vehicle_types.html"
+    },
+    {
+      "id": "SUMO_SAFETY",
+      "title": "SUMO Safety",
+      "url": "https://sumo.dlr.de/docs/Simulation/Safety.html",
+      "type": "software_documentation",
+      "access_status": "网页检索可达",
+      "license_or_scope": "软件文档",
+      "usable_evidence": "tau低于计算步长或动作步长可能造成碰撞；数值步长是实现设定。",
+      "notes": ""
+    },
+    {
+      "id": "SUMO_NETWORK",
+      "title": "SUMO PlainXML",
+      "url": "https://sumo.dlr.de/docs/Networks/PlainXML.html",
+      "type": "software_documentation",
+      "access_status": "网页可读",
+      "license_or_scope": "软件文档",
+      "usable_evidence": "numLanes/speed/priority分别为车道、速度上限和让行优先级；priority不表示真实信号配时。",
+      "notes": ""
+    },
+    {
+      "id": "SUMO_TLS",
+      "title": "SUMO Traffic Lights",
+      "url": "https://sumo.dlr.de/docs/Simulation/Traffic_Lights.html",
+      "type": "software_documentation",
+      "access_status": "网页可读",
+      "license_or_scope": "软件文档",
+      "usable_evidence": "自动生成信号可以支撑仿真，但程序生成周期不是现场观测。",
+      "notes": ""
+    },
+    {
+      "id": "FHWA_CAL",
+      "title": "FHWA Traffic Analysis Toolbox III, 2019, Chapter 5",
+      "url": "https://ops.fhwa.dot.gov/publications/fhwahop18036/chapter5.htm",
+      "type": "method_guidance",
+      "access_status": "已下载HTML并SHA-256留档",
+      "license_or_scope": "美国官方方法指南，可作方法依据；不是上海数据",
+      "usable_evidence": "先修正编码错误，之后按可观测旅行时间/速度、瓶颈行为等标定；工程能运行不等于替代方案预测准确。",
+      "notes": "下载文件 fhwa_calibration.html"
+    },
+    {
+      "id": "FHWA_CAPACITY",
+      "title": "FHWA Traffic Signal Timing Manual, Chapter 3",
+      "url": "https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter3.htm",
+      "type": "transferable_prior",
+      "access_status": "已下载HTML并SHA-256留档",
+      "license_or_scope": "美国官方通用经验，迁移时需明确外部先验",
+      "usable_evidence": "信号通行能力c=s*g/C；常见饱和流率1500–2000 passenger cars/hour/lane；可用1800作初始近似而非上海测量。",
+      "notes": "下载文件 fhwa_signal_capacity.html"
+    },
+    {
+      "id": "FHWA_TIMING",
+      "title": "FHWA Signal Timing on a Shoestring III",
+      "url": "https://ops.fhwa.dot.gov/publications/signal_timing/03.htm",
+      "type": "method_guidance",
+      "access_status": "网页可读",
+      "license_or_scope": "美国官方方法指南",
+      "usable_evidence": "Webster/配时设计依赖转向需求与相位；Poisson到达假设在城市车队中常不成立，不能仅凭ETA倒算唯一配时。",
+      "notes": ""
+    },
+    {
+      "id": "DEMANDIFY",
+      "title": "demandify official repository",
+      "url": "https://github.com/aonurakman/demandify",
+      "type": "open_source_method",
+      "access_status": "README实际下载；未安装运行",
+      "license_or_scope": "MIT软件许可；其TomTom/OSM数据分别受数据协议约束",
+      "usable_evidence": "用遗传算法调整需求使分边分时模拟速度接近观测；支持离线导入。借用标定思想须适配百度观测含义和路段匹配。",
+      "notes": "README下载为 demandify_readme.md"
+    },
+    {
+      "id": "SUMO_CAL_TUTORIAL",
+      "title": "SUMO San Pablo Dam calibration tutorial",
+      "url": "https://sumo.dlr.de/docs/Tutorials/Calibration/San_Pablo_Dam.html",
+      "type": "open_source_method",
+      "access_status": "上轮已核验；本轮登记",
+      "license_or_scope": "SUMO文档/开源示例",
+      "usable_evidence": "用观测通行时间驱动仿真参数优化；原例通行时间来自现场车辆，不等同本项目平台ETA。",
+      "notes": ""
+    },
+    {
+      "id": "SH_PORTAL",
+      "title": "上海市公共数据开放平台",
+      "url": "https://data.sh.gov.cn/view/",
+      "type": "local_catalog",
+      "access_status": "主页可达；未找到瑞金周边逐路口流量/现行信号可直接下载文件",
+      "license_or_scope": "各数据集按开放条件及用户协议",
+      "usable_evidence": "目录有交通指数等，不能将宏观城市指数替代四个OD的计数或红绿灯周期。",
+      "notes": "检索结论是本次未找到，并非断言数据不存在"
+    },
+    {
+      "id": "SH_MAAS",
+      "title": "随申行产学研数据开放",
+      "url": "https://www.shmaas.cn/solution/openResearchData.html",
+      "type": "local_restricted_data",
+      "access_status": "产品页可达；需要签约/沙箱，未申请未付费",
+      "license_or_scope": "向已签约用户开放；具体费用未公布、没有获得使用授权",
+      "usable_evidence": "上海多种交通资源，可考虑后续正式申请；当前不能声称已获可用流量数据。",
+      "notes": ""
+    },
+    {
+      "id": "SH_SIGNAL",
+      "title": "道路智能交通设备运行数据集",
+      "url": "https://www.nbsdc.cn/general/dataLinks/16666.11.nbsdc.XfLd2PNT",
+      "type": "local_catalog",
+      "access_status": "搜索可见114.14MB/2文件；正文动态加载、提示登录，未取得文件",
+      "license_or_scope": "许可字段本次未读出，待提供方核实",
+      "usable_evidence": "2024登记，包含信号倒计时/阶段运行；未核实地理覆盖为瑞金路，也未核实当前配时。",
+      "notes": "不得把目录存在写成已下载可用"
+    },
+    {
+      "id": "SH_GNSS",
+      "title": "A high-precision vehicle trajectory dataset in Shanghai",
+      "url": "https://data.mendeley.com/datasets/yx7sy7frnh/1",
+      "type": "external_observed_dataset",
+      "access_status": "数据页HTTP200实际留档；页面文件树动态加载，本轮两个公开API候选URL404，未下载轨迹",
+      "license_or_scope": "CC BY 4.0，DOI 10.17632/yx7sy7frnh.1",
+      "usable_evidence": "2022-12-12国泓路—政芳路；70次试验车辆过路口、24Hz；原始Time/N_Lat/E_Lon、处理后Time/x/y。可检验轨迹重建/车辆运动；不是当地全量车流。",
+      "notes": "下载文件 mendeley_shanghai_page.html"
+    },
+    {
+      "id": "SH_GNSS_PAPER",
+      "title": "Zhao, Ma, Wang (2024), Data in Brief 57:110864",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11404071/",
+      "type": "primary_paper",
+      "access_status": "PMC全文可读；出版商直访403",
+      "license_or_scope": "论文开放获取，数据许可另见Mendeley",
+      "usable_evidence": "GNSS与无人机同步采样，位置误差和坐标转换有说明；不是瑞金医院路网；单试验车重复运行不用于估计路网总流量。",
+      "notes": "DOI 10.1016/j.dib.2024.110864"
+    },
+    {
+      "id": "PNEUMA",
+      "title": "EPFL pNEUMA dataset",
+      "url": "https://open-traffic.epfl.ch/index.php/downloads/",
+      "type": "external_observed_dataset",
+      "access_status": "下载选择界面可达，未批量下载",
+      "license_or_scope": "主页出现CC BY-NC 4.0与FAQ CC BY 4.0不一致；EPFL学校页支持BY-NC，正式下载需按具体版本条款",
+      "usable_evidence": "雅典2018年10–11月，约0.04s轨迹，多个30min时段；trackID/type/distance/avg_speed及lat/lon/speed/acceleration/time；可研究排队与轨迹方法。",
+      "notes": "信号配时未直接提供，须从轨迹识别；不能迁移为上海真值"
+    },
+    {
+      "id": "PNEUMA_LICENSE",
+      "title": "EPFL pNEUMA Open Data",
+      "url": "https://www.epfl.ch/schools/enac/about/open-science/open-research/neuma/",
+      "type": "license_verification",
+      "access_status": "网页可读",
+      "license_or_scope": "CC BY-NC 4.0",
+      "usable_evidence": "学校页用于记录数据条款差异，不将软件许可混用为数据许可。",
+      "notes": ""
+    },
+    {
+      "id": "NGSIM",
+      "title": "FHWA NGSIM Vehicle Trajectories and Supporting Data",
+      "url": "https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajectories/8ect-6jqj",
+      "type": "external_observed_dataset",
+      "access_status": "官方元数据API HTTP200、56656字节实际留档；CSV/JSON导出入口公开；未下载全量",
+      "license_or_scope": "官方元数据licenseId=CC_30_BY_SA，CC BY-SA 3.0",
+      "usable_evidence": "美国四走廊2005–2006，10Hz；vehicle_id/global_time/local_x/y/v_length/v_vel/v_acc/lane_id/movement/space_headway/time_headway；城市路选Lankershim/Peachtree，勿混高速。",
+      "notes": "下载文件 ngsim_metadata.json；速度/距离单位需依站点字典转换"
+    },
+    {
+      "id": "NGSIM_SITE",
+      "title": "NGSIM Peachtree metadata documentation",
+      "url": "https://data.transportation.gov/api/views/8ect-6jqj/files/8b5a833b-e286-467f-8c55-af45be37c8ab?download=true&filename=4-+Peachtree+Street+Metadata+Documentation.pdf",
+      "type": "primary_dataset_documentation",
+      "access_status": "搜索可读PDF字段；未下载全量轨迹",
+      "license_or_scope": "数据按官方元数据许可",
+      "usable_evidence": "站点资料含检测器、GIS、信号变化/配时、轨迹；官方未承诺无缺失或完成精度评估。",
+      "notes": ""
+    },
+    {
+      "id": "INTERACTION",
+      "title": "INTERACTION official repository",
+      "url": "https://github.com/interaction-dataset/interaction-dataset",
+      "type": "external_observed_dataset",
+      "access_status": "脚本仓库可达；interaction-dataset.com本轮两次无法访问；未下载正式轨迹",
+      "license_or_scope": "脚本BSD-3-Clause；正式数据许可未核验，不能用脚本许可替代",
+      "usable_evidence": "可研究多国交互轨迹/语义地图，但没有证据其覆盖上海瑞金。",
+      "notes": "本轮只登记候选，不纳入参数计算"
+    },
+    {
+      "id": "JIADING_SIM",
+      "title": "Grid and Graph-based Autonomous Transportation System State Awareness Open Dataset",
+      "url": "https://zenodo.org/records/22141918",
+      "type": "external_simulated_dataset",
+      "access_status": "记录页与1.6GB ZIP链接可见，未下载",
+      "license_or_scope": "页面许可字段未展示，正式使用前需核实",
+      "usable_evidence": "上海嘉定30天TESSNG生成，15min流速/OD时间、小时OD；属于仿真数据，不能作为真实流量的独立校准真值。",
+      "notes": "2026-08-28 v2"
+    },
+    {
+      "id": "BAIDU_TRAFFIC",
+      "title": "百度实时路况概览与矩形查询",
+      "url": "https://lbsyun.baidu.com/docs/webapi?title=traffic/traffic-rectangleseek",
+      "type": "api_definition",
+      "access_status": "既有本地原始响应有来源hash，本轮未请求新API",
+      "license_or_scope": "百度接口使用条款；凭据不进入研究产物",
+      "usable_evidence": "congestion_sections只在部分拥堵段出现；缺字段不能当畅通/零速，分段统计速度不等于SUMO限速。",
+      "notes": ""
+    },
+    {
+      "id": "BAIDU_DIRECTION",
+      "title": "百度轻量驾车路线规划",
+      "url": "https://lbsyun.baidu.com/docs/webapi?title=directionlite/guide/webservice-lwrouteplanapi/dirve",
+      "type": "api_definition",
+      "access_status": "既有160有效ETA样本冻结，本轮未请求新API",
+      "license_or_scope": "百度接口使用条款",
+      "usable_evidence": "steps/path/distance/duration为平台规划/估计；没有逐车测量轨迹或实际队列。",
+      "notes": ""
+    },
+    {
+      "id": "HP_POLICE_2024",
+      "title": "上海市公安局黄浦分局：对区三届人大四次会议第66号代表建议的答复",
+      "url": "https://gaj.sh.gov.cn/hpga/list/toGjDetail?lmName=%E5%BB%BA%E8%AE%AE%E6%8F%90%E6%A1%88%E7%BB%93%E6%9E%9C%E5%85%AC%E5%BC%80&lmUrl=list%2FtoGjIndex%3Fpa%3D31a44426d19f0303f05acc709fe72a65e711d31c8204ccc8&pa=c756679f93e8708fdf14606f4a80939db9f44b31b4aecffc89b096520da506c4",
+      "type": "local_government_context",
+      "access_status": "2024-07-17网页可读，文末署2024-03-14；非原始交通时间序列",
+      "license_or_scope": "公开政府信息；引用来源，不假定开放数据库许可",
+      "usable_evidence": "医院周边非机动车、停车、配送干扰确有现实依据；单行描述支持方向谨慎核验；不含当前信号或机动车流量",
+      "notes": "不能将配送停车约200辆次当机动车流量"
+    },
+    {
+      "id": "HP_POLICE_2011",
+      "title": "上海公安：越线、压线交通报道",
+      "url": "https://gaj.sh.gov.cn/shga/wzXxfbGj/detail?pa=110ef360e4374a418cbb755e5efe022cd439e3ca1ecc1877d618896901bcfaad",
+      "type": "local_historical_context",
+      "access_status": "搜索可读，2011历史资料",
+      "license_or_scope": "政府转载交通报道，非现行测绘",
+      "usable_evidence": "瑞金二路局部曾描述为单向双车道；说明统一一车道缺现场依据，但不能据旧闻推断2026所有分段车道",
+      "notes": "不自动更改路网"
+    },
+    {
+      "id": "OSM_LICENSE",
+      "title": "OpenStreetMap Copyright and License",
+      "url": "https://www.openstreetmap.org/copyright",
+      "type": "license_verification",
+      "access_status": "网页可读；研究区Overpass请求502，公共镜像500，未获得道路标签",
+      "license_or_scope": "数据ODbL、文档CC BY-SA 2.0；需署名OSM贡献者",
+      "usable_evidence": "OSM可作为独立的道路属性补核线索；本轮未取得实际标签，无lanes/maxspeed或signal证据写入模型",
+      "notes": "不替换百度正式GIS，不将缺标签当无信号"
+    },
+    {
+      "id": "HP_EIA",
+      "title": "上海交通大学医学院附属瑞金医院消化道肿瘤临床诊疗中心项目（调整）",
+      "url": "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+      "type": "local_historical_observed_prior",
+      "access_status": "PDF HTTP200实际下载；266页；第107/110/168页日期/计数/预测输入已核验，110/168实际截图目检",
+      "license_or_scope": "政府公示报告，可引用；未声明开放数据再分发许可",
+      "usable_evidence": "2025-09-09—10昼夜各20min车型计数；瑞金二路昼间207辆→621辆/h，建德137→411，思南354→1062；30km/h是噪声预测速度，非限速标牌",
+      "notes": "正文标题与PDF元数据标题不一致；源样本非2026周末，无OD/转向/精确计数钟点；见local_eia_evidence.json"
+    }
+  ]
+}

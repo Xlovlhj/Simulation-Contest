@@ -1,0 +1,98 @@
+[
+  {
+    "file": "research/parameter_audit/downloads/mendeley_shanghai_page.html",
+    "url": "https://data.mendeley.com/datasets/yx7sy7frnh/1",
+    "retrieved_at": "2026-10-18T08:51:28.390110+00:00",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://data.mendeley.com/datasets/yx7sy7frnh/1",
+    "bytes": 124241,
+    "sha256": "3c0caf412146227a09ea97b1e15f1682acd2c5daff402440ca9c784ad249eb3e"
+  },
+  {
+    "file": "research/parameter_audit/downloads/sumo_vehicle_types.html",
+    "url": "https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+    "retrieved_at": "2026-10-18T08:51:30.395268+00:00",
+    "status": 200,
+    "content_type": "text/html",
+    "resolved_url": "https://sumo.dlr.de/docs/Definition_of_Vehicles%2C_Vehicle_Types%2C_and_Routes.html",
+    "bytes": 158747,
+    "sha256": "bad11303de7064fc7765ab545d9480cd7eaa4ecefbbaa2b82773f48f8760e0de"
+  },
+  {
+    "file": "research/parameter_audit/downloads/fhwa_signal_capacity.html",
+    "url": "https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter3.htm",
+    "retrieved_at": "2026-10-18T08:51:32.373524+00:00",
+    "status": 200,
+    "content_type": "text/html",
+    "resolved_url": "https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter3.htm",
+    "bytes": 113001,
+    "sha256": "b738b80182cd915aebf513ceebb8739e5f6a76e2a50da42e410bb458bf865d5e"
+  },
+  {
+    "file": "research/parameter_audit/downloads/fhwa_calibration.html",
+    "url": "https://ops.fhwa.dot.gov/publications/fhwahop18036/chapter5.htm",
+    "retrieved_at": "2026-10-18T08:51:34.003595+00:00",
+    "status": 200,
+    "content_type": "text/html",
+    "resolved_url": "https://ops.fhwa.dot.gov/publications/fhwahop18036/chapter5.htm",
+    "bytes": 75732,
+    "sha256": "acf315d3ce6a0a929790a16c5c423cf89981e5b26f0c3df20c81c6fdc7fc0a0a"
+  },
+  {
+    "file": "research/parameter_audit/downloads/demandify_readme.md",
+    "url": "https://raw.githubusercontent.com/aonurakman/demandify/main/README.md",
+    "retrieved_at": "2026-10-18T08:51:35.607663+00:00",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "resolved_url": "https://raw.githubusercontent.com/aonurakman/demandify/main/README.md",
+    "bytes": 21612,
+    "sha256": "e4320f3b14ba1228d9bf8dbe7e8e5ff101108992238a9e53bb9170598b17e3c5"
+  },
+  {
+    "file": "research/parameter_audit/downloads/mendeley_files.json",
+    "url": "https://data.mendeley.com/public-api/datasets/yx7sy7frnh/versions/1/files",
+    "retrieved_at": "2026-10-18T08:52:06.396465+00:00",
+    "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+    "file": "research/parameter_audit/downloads/mendeley_files_v2.json",
+    "url": "https://data.mendeley.com/api/datasets-v2/datasets/yx7sy7frnh/versions/1/files",
+    "retrieved_at": "2026-10-18T08:52:07.718478+00:00",
+    "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+    "file": "research/parameter_audit/downloads/ngsim_metadata.json",
+    "url": "https://data.transportation.gov/api/views/8ect-6jqj.json",
+    "retrieved_at": "2026-10-18T08:52:09.029179+00:00",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "resolved_url": "https://data.transportation.gov/api/views/8ect-6jqj.json",
+    "bytes": 56656,
+    "sha256": "9917285b934356bd975ed45459203ecde595c7ad83ada52e53e2d3203ca7ad94"
+  },
+  {
+    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A30%5D%3B%28way%5Bhighway%5D%5Bname~%22%E7%91%9E%E9%87%91%E4%BA%8C%E8%B7%AF%7C%E5%BB%BA%E5%9B%BD%E4%B8%AD%E8%B7%AF%7C%E5%A4%8D%E5%85%B4%E4%B8%AD%E8%B7%AF%7C%E6%80%9D%E5%8D%97%E8%B7%AF%7C%E5%BB%BA%E5%BE%B7%E8%B7%AF%7C%E6%B0%B8%E5%98%89%E8%B7%AF%22%5D%2831.20%2C121.45%2C31.23%2C121.48%29%3Bnode%5Bhighway%3Dtraffic_signals%5D%2831.20%2C121.45%2C31.23%2C121.48%29%3B%29%3Bout+meta+center%3B",
+    "query": "[out:json][timeout:30];(way[highway][name~\"瑞金二路|建国中路|复兴中路|思南路|建德路|永嘉路\"](31.20,121.45,31.23,121.48);node[highway=traffic_signals](31.20,121.45,31.23,121.48););out meta center;",
+    "file": "research/parameter_audit/downloads/osm_local_road_tags.json",
+    "retrieved_at": "2026-10-18T08:57:14.544986+00:00",
+    "purpose": "read-only supplementary tags, not replacement GIS",
+    "error": "HTTPError: HTTP Error 502: Bad Gateway"
+  },
+  {
+    "url": "https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bway%5Bhighway%5D%5Bname%3D%22%E7%91%9E%E9%87%91%E4%BA%8C%E8%B7%AF%22%5D%2831.20%2C121.45%2C31.23%2C121.48%29%3Bout+meta+center%3B",
+    "query": "[out:json][timeout:25];way[highway][name=\"瑞金二路\"](31.20,121.45,31.23,121.48);out meta center;",
+    "file": "research/parameter_audit/downloads/osm_ruijin_tags.json",
+    "retrieved_at": "2026-10-18T08:59:03.102826+00:00",
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  {
+    "url": "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+    "file": "research/parameter_audit/downloads/ruijin_hospital_eia_public.pdf",
+    "retrieved_at": "2026-10-18T08:56:36.422280+00:00",
+    "status": 200,
+    "resolved_url": "https://www.shhuangpu.gov.cn/uploadfile/48BB468164614FAD9F87540DE160C173_%E6%9C%80%E7%BB%88%E7%89%88%E7%8E%AF%E8%AF%84%E6%8A%A5%E5%91%8A%E5%85%AC%E7%A4%BA%E7%89%88_1.pdf",
+    "bytes": 55944256,
+    "sha256": "5dcd4ae597f5bc35abc52da4e44ad6bddd1a5a19b0970f3ff73bc2bf18fd77aa"
+  }
+]

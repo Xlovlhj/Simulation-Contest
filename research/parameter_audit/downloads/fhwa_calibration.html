@@ -1,0 +1,1220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><!-- InstanceBegin template="/Templates/report.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>title>Traffic Analysis Toolbox Volume III: Guidelines for Applying Traffic Microsimulation Modeling Software 2019 Update to the 2004 Version - Chapter 5. Model Calibration  - FHWA Office of Operations</title>
+<!-- InstanceEndEditable -->
+<link href="hotm_report_css/ops_print_rpt.css" rel="stylesheet" media="print" type="text/css">
+<link href="hotm_report_css/ops_nn4_rpt.css" rel="stylesheet" media="screen" type="text/css" title="FHWA Operations Report Stylee Sheet">
+<style type="text/css">
+@import url(hotm_report_css/ops_rpt.css);
+</style>
+<script type="text/javascript" src="//www.fhwa.dot.gov/includes/fhwaload.js"></script>
+<!-- InstanceBeginEditable name="styles" -->
+<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	  $('.imgdiv').each(function() {
+	  $(this).width($(this).find('img').width());
+		
+    });
+	$('.tabdiv').each(function() {
+	  $(this).width($(this).find('table').width());
+		
+    });
+	
+
+});
+</script>
+
+<!-- InstanceEndEditable --> 
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td class="fhwa-bar" id="dot-logo"><img src="images/ops_images/dotfhwa2.gif" alt="Department of Transportation: Federal Highway Administration" width="210" height="31" border="0"></td>
+    <td class="fhwa-bar" id="fhwa-links"><span id="skiplink"><a href="#content"><img src="images/ops_images/skiplink.gif" alt="Skip to Content" width="1" height="1" border="0"></a></span><a href="https://www.fhwa.dot.gov/"><img src="images/ops_images/fhwahome.gif" width="79" height="18" border="0" alt="FHWA Home"></a><a href="https://ops.fhwa.dot.gov/contactus.htm"><img src="images/ops_images/feedback.gif" width="90" height="18" border="0" alt="Feedback"></a></td>
+  </tr>
+  <tr id="opsbanner"> 
+    <td id="obsbanner1"><a href="https://ops.fhwa.dot.gov/"><img src="images/ops_images/ops_red_banner.gif" alt="Office of Operations" width="243" height="25" border="0"></a></td>
+	<td id="obsbanner2"><div align="right"><img src="images/ops_images/21century.gif" alt="21st Century Operations Using 21st Century Technologies" width="490" height="25"></div></td>
+  </tr>
+  
+ 
+  </table>
+  
+  
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr> <td colspan="2" valign="top"> 
+      <div id="contenttext"><a name="content"></a> 
+	  <div class="breadcrumb"><!-- InstanceBeginEditable name="Breadcrumb" --><a href="index.htm">Table of Contents</a><!-- InstanceEndEditable --></div>
+	  
+        <h1><!-- InstanceBeginEditable name="Heading1" -->Traffic Analysis Toolbox Volume III: Guidelines for Applying Traffic Microsimulation Modeling Software 2019 Update to the 2004 Version<!-- InstanceEndEditable --></h1>
+        
+        
+		<!-- InstanceBeginEditable name="Content" -->
+        <h2>Chapter 5. Model Calibration</h2>
+        <div class="imgdiv floatright ml12">
+       	  <img id="fig9" src="images/figure9.png" alt="Figure 9. Step 5: Model Calibration. Figure 9 is Step 5, which is the Model Calibration, of the Microsimulation Analytical Process. This step includes: identify representative days, prepare variation envelopes (for each operational condition) and calibrate model within acceptability criteria." width="262" height="749">
+<p><span class="fig-caption">Figure 9. Diagram. Step 5: Model Calibration</span><br>
+<span class="tablenote">(Source: FHWA)</span></p>
+        </div>
+<p>Upon completion of the error-checking task, the analyst has a working model of the transportation system. However, without calibration, the analyst has no assurance that the model will function as an accurate predictor of transportation system performance in alternatives analysis.</p>
+<p>This is Step 5 in the Microsimulation Analytical Process (<a href="#fig9">Figure 9</a>). Calibration is the adjustment of model parameters to improve the model's ability to reproduce time-dynamic system performance observed under specific travel conditions. Note that variation in transportation system performance is primarily determined by external variations in travel conditions (e.g., variations in day-to-day travel demand, incident patterns, and weather conditions). Driver behavior (e.g., following distance, gap acceptance, and target maximum speed) and other model parameters are calibrated in each travel condition to create time-dynamic congestion patterns consistent with observed data.</p>
+<p>Calibration is necessary because no single model can be expected to be equally accurate for all possible traffic conditions. Even the most detailed microsimulation model still contains only a portion of all of the variables that affect real-world traffic conditions. Since no single model can include the whole universe of variables, every model should be adapted to local conditions.</p>
+<p>Every microsimulation software program comes with a set of user-adjustable parameters for the purpose of calibrating the model to local conditions. Therefore, the objective of calibration is to find the set of parameter values for the model that best reproduces observed measures of system performance.</p>
+
+<p>For the convenience of the analyst, the software developers provide suggested default values for the model parameters. These default parameters do not represent a calibrated model. The analyst should always perform model calibration and review the calibration criteria to ensure that the model accurately reproduces system performance by travel condition.</p>
+<h3 id="overview-of-the-calibration-process">Overview of the Calibration Process</h3>
+<p>As shown in <a href="#fig9">Figure 9</a>, the calibration process has three steps:</p>
+<ol type="1">
+<li><u>Identify representative days</u>. In this step, the analyst takes the data from the travel conditions identified using cluster analysis or other statistical methods (Chapter 2) and prepares them to support calibration. A key element of this preparation is the identification of one representative day for each travel condition.</li>
+<li><u>Prepare variation envelopes</u>. In this step, the analyst prepares the simulation inputs to model each representative day. For each representative day, the analyst creates a time-dynamic envelope consistent with variation in observed field data for all days in the cluster representing the travel condition. This envelope creates a data-driven calibration target for the calibration of an individual model variant consistent with each travel condition.</li>
+<li><u>Calibrate model variants within acceptability criteria</u>. The analyst then iteratively adjusts specific software parameters within a model variant until key performances measures derived from simulation outputs are acceptably close to the target variation envelope. Calibration of each model variant is complete when the simulation outputs meet four acceptability criteria.</li>
+</ol>
+<p>The calibration process is applied to a single model run for each travel condition or cluster identified in Chapter 2. The analyst does not need to calibrate multiple model runs generated by varying the random number seeds. Variation demonstrated by varying random number seeds in microsimulation tools show differences in driver behaviors (e.g., gap acceptance, lane changing), and vehicles entering the system. These variations are markedly low compared to variation due to changes in travel condition attributes (e.g., demand, weather), which are not represented stochastically in microsimulation tools. If significant variations are seen between runs by changing the random number seeds, a possible reason might be errors in coding or gridlock conditions resulting from vehicles entering into unresolved contention in simulation (e.g., vehicles attempting conflicting parallel lane changes). An analyst should investigate if the network has been coded correctly and is operating realistically or if the model is unstable. The results from an unstable model run should not be used for calibration or alternatives analysis.</p>
+<p>In the remainder of this section, we describe in detail each of the three steps, using the Alligator City hypothetical simulation study as an example.</p>
+<h3 id="identify-representative-days">Identify Representative Days</h3>
+<p>In this step, we prepare and assemble observed data related to our key performance measures and network bottlenecks. Observed data are organized around the travel conditions identified in <a href="chapter2.htm">Chapter 2</a>. Travel conditions and performance measures should be identified in the Analysis Plan. Depending on an assessment of quality of data, there may be a need to adjust the selection of specific measures prior to calibration. Critical locations (bottlenecks) are identified for each travel condition, plus a super set of all bottlenecks maintained comprising all travel conditions.</p>
+<p>It is important to focus calibration on a single observed day, since that day can be characterized in a microsimulation model with specific incident locations, travel times, and other performance data. Attempting to calibrate a model to a synthetic day created by the averaging together of multiple days is not recommended. Synthetic days based on averages create unrealistically smooth time dynamic performance measures like travel time and bottleneck throughput, creating targets that may be difficult for any model variant to replicate. For example, if one day has a major incident in one location and is then averaged with a day with no incident, then the result is the merging of two broadly dissimilar days. The analyst should now attempt to somehow induce a more minor incident in that location to produce a moderated congestion pattern. In fact, the resulting synthetic measures of system performance may not even be consistent with logically consistent traffic flow, and may be exceptionally difficult to reproduce in a valid modern microsimulation. In this case, the analyst wastes resources calibrating to a condition that never existed and will likely never exist.</p>
+<p>For each travel condition, the analyst seeks to identify a single representative day. The representative day is used to typify system performance dynamics associated with the collection of days encompassing a single travel condition. More precisely, the representative day and has observed time-variant performance measures closest to mean time-dependent observed measures considering all days in the travel condition.</p>
+<p>In order to identify the representative day, time-variant data related to the key performance measures are analyzed. For every day used in the analysis across all travel conditions, the analyst prepares a time-variant (15-minute profile) of the key measure. Multiple locations and routes may be required to characterize system performance. For example, in corridor networks with alternatives, travel time and speed measures may be needed on multiple routes. Likewise, there may be multiple bottleneck locations within the system. To identify a representative day:</p>
+<ol type="1">
+<li>For a particular key measure, establish necessary routes and locations.
+<p>Let <span class="math inline">\(M\)</span> be the set of measures, considered over <span class="math inline">\(J\)</span> the set of routes and locations.</p>
+<p>Let <span class="math inline">\(N_{\text{cluster}}\)</span> be the number of days in cluster.</p>
+<p>Let <span class="math inline">\(m_{i,j}(t)\)</span> be the value of the measure on day <span class="math inline">\(i\)</span> in time interval <span class="math inline">\(t\)</span> at location or route <span class="math inline">\(j\)</span></p>
+</li>
+<li>For each measure, calculate the average time-variant value for each 15-minute time interval across all days in the travel condition for each location/route:
+<p><span class="math inline">\({\overline{m}}_{t,j} = \frac{\sum_{i}^{}{m_{i,j}(t)}}{N_{\text{cluster}}}\ \ \forall m,\ t,\ j\)</span><span style="padding-left: 50px;">(5)</span></p>
+</li>
+<li>Calculate the difference between the average value and the value observed on a particular day, expressed as a percentage of the mean value:
+<p><span class="math inline">\({\dot{m}}_{i,j}\left( t \right) = \frac{\sqrt{{({\overline{m}}_{t,j} - {\overline{m}}_{i,j(t)})}^{2}}}{{\overline{m}}_{t,j}}\)</span><span style="padding-left: 50px;">(6)</span></p>
+</li>
+<li>Find the individual day that minimizes the difference between the individual day and the average values considering all routes, locations, and measures:
+<p><span class="math inline">\(i^{*} = \min_{i}\left\lbrack \sum_{m}^{}{\sum_{i}^{}{\sum_{t}^{}{{\dot{m}}_{i,j}(t)}}} \right\rbrack\)</span><span style="padding-left: 50px;">(7)</span></p>
+</li>
+</ol>
+
+<h3 id="prepare-variation-envelopes">Prepare Variation Envelopes</h3>
+<h4 id="select-calibration-performance-measures">Select Calibration Performance Measures</h4>
+<p>An effective calibration requires at least two key performance measures. At least one measure should be related to travel time or speed profiles along one or more key paths in the roadway network. At least one other measure should be related to bottleneck dynamics, e.g., bottleneck throughput or duration. Other calibration measures can also be included that are critical to the purpose and needs of the project or in differentiating alternatives evaluated in the analysis. However, whatever measures are selected, the data required to calculate each measure for the purposes of calibration are required for every day included in the analysis of travel conditions. The ability to meet these data preparation guidelines for calibration should be documented in the accompanying project <em>Methods and Assumptions</em> document.</p>
+<p><strong>Travel time or speed measures</strong>. Travel times or speed profiles should be associated with paths that traverse the study area and intersect at least one bottleneck location on the representative day. Observed data should be available for these measures and paths at 15-minute (or more frequent) intervals. More than one path may be required to capture the system dynamic, or in corridor analyses, the mainline and one alternative path. An interchange analysis might require only one path.</p>
+<p><strong>Bottleneck measures</strong>. For every day across all travel conditions, identify the set of bottleneck locations. Bottleneck locations are defined as the set of network locations where transient demand exceeds facility capacity and resultant approach speeds drop below the bottleneck congestion speed threshold.</p>
+<p>Data for the calculation of bottleneck measures are best derived from data obtained from at least one near upstream (within 0.5 miles and prior to any major intersection or interchange) or near downstream location for at least one bottleneck associated with the travel condition. Near downstream locations are preferred, prior to the next major intersection or interchange.</p>
+<blockquote>
+<p><em>Congestion speed threshold</em>: For this threshold, the analyst requires a value lower than approximate speed-at-capacity and closer to speed-at-congestion, that is, a speed that indicates that the bottleneck has reached or exceeded its capacity. As a rule of thumb, a threshold of one third of observed free-flow speed can be used with visual inspection of time-variant speed and flow rates at the bottleneck for the representative day. However, speed at capacity can be more precisely calculated using other data-driven approaches (For example, <a href="https://www.fhwa.dot.gov/exit.cfm?link=https://www.academia.edu/11327450/An_automated_statistically-principled_bottleneck_identification_algorithm_ASBIA_">https://www.academia.edu/11327450/An_automated_statistically-principled_bottleneck_identification_algorithm_ASBIA</a>). The goal of the analyst is selecting a threshold that is lower than speed-at-capacity and can be applied uniformly across all days in the travel condition.</p>
+</blockquote>
+<p>For each bottleneck location, calculate bottleneck onset and duration. Onset and duration are identified at least within a 15-minute time intervals.</p>
+<blockquote>
+<p><em>Congestion onset</em>: Onset is defined as the 15-minute time period when a location immediately upstream of the bottleneck experiences observed speeds below the congestion speed threshold.</p>
+<p><em>Congestion duration</em>: Total time observed between congestion onset at the bottleneck location and the 15-minute period where average observed speeds exceed the congestion speed threshold.</p>
+</blockquote>
+<p>For bottleneck attributes, it is imperative to focus on a specific observed representative day when conducting calibration. Aggregating bottleneck measures blurs distinctions among bottlenecks and often results in multiple &quot;weak&quot; bottlenecks with inconsistent time-dependent flow rates. These artificial conditions are never observed in a single day, and are difficult for a microsimulation to reproduce.</p>
+<p>Onset and duration speed measurements should, if possible, be collected at a near upstream location. If not possible, document these as a deviation in the Methods and Assumptions document. Average mean space speed or mean point speed may be utilized whichever best characterizes the bottleneck performance. For example, a mean space speed may be preferable for a bottleneck upstream from a signalized intersection.</p>
+<h4 id="creating-variation-envelopes">Creating Variation Envelopes</h4>
+<p>Our goal in calibration is to have the variation of results generated by the simulation fall within the range of variation seen in the observed data. In <a href="chapter2.htm">Chapter 2</a>, we defined travel conditions. From the limited variation resulting from our travel condition analysis, in this step we create a practical range derived from the observed variation to act as a target for model variant calibration.</p>
+<p>To create the time-variant <em>Variation Envelope</em> for our simulation results to fall within, we create a statistical region based on the standard deviation and an acceptable range of variation around both the time variant averages and the observed representative day value.</p>
+<p>Let c<sub>r</sub>(t) be the observed travel times from the representative day. Let the standard deviation in travel time for each time interval be &sigma;(t).</p>
+<p>First, we construct an envelope which describes 95% of the observed variation (the Z-statistic in this case is 1.96). In each time interval, this is expressed as:</p>
+<blockquote>
+<p>~2 Sigma Band Maximum Value: <span class="math inline">\({\widehat{I}}_{\sim 2}\left( t \right) = c_{r}\left( t \right) + Z_{95\%}(\sigma(t))\)</span><span style="padding-left: 50px;">(8)</span></p>
+<p>~2 Sigma Band Minimum Value: <span class="math inline">\({\check{I}}_{\sim 2}\left( t \right) = c_{r}\left( t \right) - Z_{95\%}(\sigma(t))\)</span><span style="padding-left: 50px;">(9)</span></p>
+</blockquote>
+<p>A narrower band is also constructed to describe roughly 2/3 of the observed variation based on a single standard deviation.</p>
+<blockquote>
+<p>1 Sigma Band Maximum Value: <span class="math inline">\({\widehat{I}}_{1}\left( t \right) = c_{r}\left( t \right) + \sigma(t)\)</span><span style="padding-left: 50px;">(10)</span></p>
+<p>1 Sigma Band Minimum Value: <span class="math inline">\({\check{I}}_{1}\left( t \right) = c_{r}\left( t \right) - \sigma(t)\)</span><span style="padding-left: 50px;">(11)</span></p>
+</blockquote>
+<p>These bands will play a crucial role in determining the acceptability of the model variants in our next step.</p>
+<h3 id="calibrate-model-variant-to-meet-acceptability-criteria">Calibrate Model Variant to Meet Acceptability Criteria</h3>
+<p>In this step, the analyst creates variants of the initial working model that has travel demand characteristics, incident patterns, and other features consistent with the each of the representative days. The analyst then conducts individual runs of each model variant and makes adjustments to the model variant input parameters until performance measures based on simulation outputs are <em>acceptably consistent</em> with observed data. Acceptably consistent is defined as meeting all four separate acceptability criteria defined in this chapter.</p>
+<p>This step may be both time consuming and highly iterative. However, if quality data has been assembled for calibration, and the working model is free of major coding errors, this process can be straightforward. Self-calibration features or automated routines assisting calibration can be helpful in reducing analyst time in calibration. However, applying these routines does not replace this step; they merely support the completion of tasks leading up to testing for calibration acceptability.</p>
+<p>The modern microsimulation analyst has several capable tools available to conduct effective analyses. Each of these tools has a specific set of parameters which influence simulated driver behavior. Therefore, we can provide no guidance on specific parameters (by tool) to select for calibration. However, example parameters are indicated in each step. Some helpful references are available regarding parameter sensitivities and calibration (For example, Volume XI: Weather and Traffic Analysis, Modeling and Simulation).</p>
+<p>Calibration involves the review and adjustment of potentially hundreds of model parameters, each of which impacts the simulation results in a manner that is often highly correlated with that of the others. The analyst can easily get trapped in a never-ending circular process, fixing one problem only to find that a new one occurs somewhere else. Therefore, it is essential to break the calibration process into a series of logical, sequential steps&mdash;a strategy for calibration.</p>
+<p>To make calibration practical, the parameters should be divided into categories and each category should be dealt with separately. The analyst should divide the available calibration parameters into the following two basic categories:</p>
+<ul>
+<li>Parameters that the analyst is certain about and does not wish to adjust. [e.g., incident location and number of lanes closed].</li>
+<li>Parameters that the analyst is less certain about and willing to adjust. [e.g., mean vehicle headway under low visibility conditions].</li>
+</ul>
+<p>The analyst should attempt to keep the set of adjustable parameters as small as possible to minimize the effort required to calibrate the model to reflect local conditions characterized by observed data. However, the tradeoff is that more parameters allow the analyst more degrees of freedom to better fit the calibrated model to the specific representative day.</p>
+<p>The set of adjustable parameters is then further subdivided into those that directly impact bottleneck throughput (such as mean headway) and those that directly impact the timing and location of travel demand (such as time-variant origin-destination demand profiles). Although the process will nearly always be iterative, one successful strategy is to calibrate bottleneck throughput parameters first, and then to make adjustments to travel demand inputs and other behavioral parameters related to trip timing and mode/route selection.</p>
+<p>Each set of adjustable parameters can be further subdivided into those that affect the simulation on a <em>global</em> basis and those that affect the simulation on a more <em>localized</em> basis. The global parameters are initially adjusted first. Then local link-specific parameters are modified. This process, like all calibration processes, may be iterative in nature.</p>
+<h4 id="adjust-parameters-influencing-bottleneck-throughput">Adjust Parameters Influencing Bottleneck Throughput</h4>
+<p>Each representative day will have a bottleneck pattern comprising locations of recurrent demand in excess of localized capacity, as well as bottlenecks associated with incidents. The goal of this step is to adjust the model variant to produce bottleneck dynamics consistent with field data. Focus on the bottlenecks is critical because overall system performance will be largely defined based on these critical sections of the transportation network.</p>
+<p>Some typical parameters influencing bottleneck throughput include:</p>
+<ul>
+<li><u>Freeway Facilities</u>: Mean following headway, driver reaction time, and critical gap for lane changing, minimum separation under stop-and-go conditions.</li>
+<li><u>Signalized Intersections</u>: Startup lost time, queue discharge headway, and gap acceptance for unprotected left turns.</li>
+</ul>
+<p>An effective preliminary step in bottleneck throughput calibration is to ensure that maximum throughput rates obtained from the model variant are close to observed rates. For each bottleneck location, recover the maximum bottleneck throughput (over all of time-variant intervals) data from one representative day where the bottleneck appears. Also recover the same maximum throughput data for all of the days in the travel condition. The maximum time-variant bottleneck throughput from the simulation should be within the range of observed maximum bottleneck throughput rates for all days under this travel condition. This can be conducted as a visual test plotting the simulated data against the range of observed data. First adjust global parameters to bring simulated maximum throughput rates as close as possible to the observed range. Then adjust localized parameters so each bottleneck has a simulated maximum throughput rate as close as possible to the observed maximum throughput rate.</p>
+<p>Modifying global parameters related to bottleneck throughput are often required to adjust for specific attributes of the representative day prevailing over the entire network, e.g., low visibility or wet pavement. Modifications of local parameters are often related to impacts or conditions near the bottleneck, e.g., shoulder activity, glare, or rubbernecking.</p>
+
+<h4 id="adjust-parameters-affecting-dynamic-travel-demand-and-assignment">Adjust Parameters Affecting Dynamic Travel Demand and Assignment</h4>
+<p>Each representative day has an underlying travel demand pattern that is different from other days. Attributes of this travel demand pattern include the overall origin-destination demand, the timing of travel demand within the period studied, and how this travel demand is assigned to various alternative modes and routes. The goal of this step is to adjust the model variant to produce network volume data consistent with observed data. Representative travel demand, when combined with accurate bottleneck dynamics, is often the key to calibrating efficiently and effectively.</p>
+<p>Some typical parameters influencing travel demand and assignment include:</p>
+<ul>
+<li><u>Travel Demand Rates</u>: Overall origin-destination flow rates, the number of time steps introduced into a dynamic origin-destination flow rate profile, the number of trips in each time step for each origin-destination pair.</li>
+<li><u>Mode/Route Assignment</u>: Mode choice parameter reflecting traveler preference (e.g., transfer penalties and time/cost valuations), parameters adjusting the method of assignment of travel demand (e.g., indifference thresholds or driver familiarity models).</li>
+</ul>
+<p>An effective preliminary check in the adjustment of dynamic travel demand and assignment is to conduct an average screenline count check. First, identify average bi-directional link flows at two screen lines, one in a general upstream position relative to recurrent congestion and one generally downstream of recurrent congestion. This implies that the queues extending from recurrent bottlenecks do not cross these screenlines. A single screen line bisects the study area, and all links that traverse this screen line should have average flow estimates.</p>
+<p>Run the simulation using the representative day to generate average flow rates to compare against the observed screenline counts. Adjust global travel demand parameters until simulated average flow rates should fall within the range of all observed days associated with expected conditions, close to the actual flow rate observed in this travel condition's representative day. Some adjustment may be required to the simulated origin-destination demand pattern rates in order to bring the simulated model flow rates within the range of the observed data. Depending on the nature of the network and the number of alternative routes and modes, mode/route assignment parameter modifications may be required to bring screenline counts into the observed range.</p>
+<p>In the Alligator City example problem, two useful screenlines might include a western screenline just east of the West Hills city limits intersecting the Marine Causeway and an eastern screenline at the eastern shore of the Chattacola River.</p>
+<h4 id="perform-test-against-acceptability-criteria">Perform Test Against Acceptability Criteria</h4>
+<p>The exact process and parameter adjustments required to calibrate a model variant is highly dependent on the simulation tool and the attributes of the representative day. Whatever the strategy used to calibrate the model variant, the model variant should meet four separate acceptability criteria related to the time-dynamic profiles developed for each measure and travel condition.</p>
+<p>These criteria should all be satisfied individually for each key measure and travel condition in a single model run.</p>
+<h5 id="criterion-i-control-for-time-variant-outliers">Criterion I: Control for Time-Variant Outliers</h5>
+<p>This criterion constrains the number of outliers in simulated results.</p>
+<p><u>CRITERION I</u>: 95% of simulated outputs fall within the ~2 Sigma Band, <span class="math inline">\(c_{r}\left( t \right) \pm 1.96 \times \sigma(t)\)</span>.</p>
+<p>Note that if fewer than 20 time intervals are used to characterize time-dynamics, Criterion I is relaxed to allow for one simulated result outside the ~2 Sigma Band.</p>
+<h5 id="criterion-ii-control-for-time-variant-inliers">Criterion II: Control for Time-Variant &quot;Inliers&quot;</h5>
+<p>This criterion ensures the majority of time-variant simulated results fall close to the representative day, and that during the most congested time periods the simulated results are close to the observed data.</p>
+<p>Two <em>critical time periods</em> are identified that reflect the ability of the model variant to reflect the most congested time periods in the dynamic range. These time periods are determined by examining the observed data profile for the representative day.</p>
+<p>For travel time or speed profiles, the first-time period is the time interval with the highest observed travel time or lowest observed speed. The second critical time interval is the time period with the second highest observed travel time or lowest speed <em>in a non-adjacent time interval</em>. <em>Non-adjacent</em> means that the second-time interval should be more than one time interval earlier or later than the first critical time interval.</p>
+<p>For bottleneck throughput, the critical time intervals are defined by the time of congestion onset (speed falls below the congestion threshold) and dissipation (when speed rises above the congestion threshold). Note that when congestion thresholds are not met, this location cannot be considered a bottleneck for this representative day. In the cases where a bottleneck dissipation threshold is not identified (speeds remain low) the best resolution is to extend the simulation horizon so that the congestion dissipation can be observed (and modeled).</p>
+<p><u>CRITERION II:</u> Two-thirds of the simulated results (and both critical time intervals) fall within the 1 Sigma Band for this travel condition.</p>
+<h5 id="criterion-iii-bounded-dynamic-absolute-error-bdae">Criterion III: Bounded Dynamic Absolute Error (BDAE)</h5>
+<p>This criterion ensures that, on average, simulated results are close to the observed representative day. The criterion involves a test to ensure that the average simulated absolute error from the representative day over all time intervals is less than or equal to differences from the representative day seen across all days in the travel condition. Let:</p>
+<p><span class="math inline">\(c_{r}\left( t \right)\)</span> Observed value of representative day during time interval</p>
+<p><span class="math inline">\(c_{i}\left( t \right)\)</span> Observed value of non-representative day within the cluster during time interval</p>
+<p><span class="math inline">\({\widetilde{c}}_{r}\left( t \right)\)</span> Simulated performance measure during time interval</p>
+<p><span class="math inline">\(N_{T}\)</span> Number of time intervals</p>
+<p><span class="math inline">\(N_{\text{cluster}}\)</span> Number of days in the cluster representing this travel condition</p>
+<p>Next, calculate the BDAE Threshold:</p>
+<p>BDAE Threshold<span class="math inline">\(\  = \ \frac{\sum_{i \neq r}^{}{\sum_{t}^{}\frac{\left| c_{r}\left( t \right) - c_{i}\left( t \right) \right|}{N_{T}}}}{N_{\text{cluster}} - 1}\)</span><span style="padding-left: 50px;">(12)</span></p>
+<p><u>CRITERION III</u> is met when:</p>
+<p><span class="math inline">\(\ \frac{\sum_{t}^{}\left| c_{r}\left( t \right) - {\widetilde{c}}_{i}\left( t \right) \right|}{N_{T}} \leq\)</span> BDAE Threshold<span style="padding-left: 50px;">(13)</span></p>
+<h5 id="criterion-iv-bounded-dynamic-systematic-error">Criterion IV: Bounded Dynamic Systematic Error</h5>
+<p>This criterion ensures that the simulated data are not excessive over- or under-estimators. In this case, the criterion utilizes a similar test to Criterion III but with respect to average simulated error (not absolute).</p>
+<p><u>CRITERION IV</u> is met when:</p>
+<p><span class="math inline">\(\left| \frac{\sum_{t}^{}{c_{r}\left( t \right) - {\widetilde{c}}_{i}\left( t \right)}}{N_{T}} \right| \leq \frac{1}{3} \times\)</span> BDAE Threshold<span style="padding-left: 50px;">(14)</span></p>
+<h3 id="example-problem-model-calibration">Example Problem: Model Calibration</h3>
+<p>In the Alligator City example problem, travel time was identified as the key performance measure (<a href="chapter1.htm">Chapter 1</a>), with emphasis on two routes: West Hills to the Alligator City via the Komodo Tunnel (General Purpose Lanes), and West Hills to Alligator City via the Victory Island Bridge. Further, we select two bottleneck locations: the Komodo Tunnel eastern exit at Osceola Avenue and the Victory Island Bridge where it crosses Moseley Street.</p>
+<h4 id="identify-representative-days-1">Identify Representative Days</h4>
+<p>In <a href="#tab9">Table 9</a>, consider observed time-variant travel times between West Hills and the Alligator City CBD using the Komodo Tunnel general purpose lanes observed in an travel condition composed of 12 AM peak periods. Note that our travel times represent the measured time to complete the trip to Alligator City based on time of departure from West Hills. Each peak period is shown in one column of the table, with the calculated average travel time over all periods in the last column.</p>
+<p>We seek a representative day that minimizes the difference between the time-variant travel times from associated with the average of all peak periods in the travel condition. <a href="#tab10">Table 10</a> shows the distance (difference) between each individual day time-variant travel time and the time-variant average travel time (last column of <a href="#tab9">Table 9</a>), expressed as a percentage of the time-variant average travel time.</p>
+
+<table class="datatable">
+<caption><a id="tab9"></a>Table 9. Time-Variant Travel Times, West Hills Eastbound to Alligator City</caption>
+<colgroup span="1"></colgroup>
+<colgroup span="12"></colgroup>
+<colgroup span="1"></colgroup>
+  <tr>
+    <th scope="colgroup" valign="top"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></th>
+    <th scope="colgroup" colspan="12" valign="top">Observed Travel Times, West Hills to CBD (Komodo GP), 12 Days</th>
+    <th scope="colgroup" valign="top"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></th>
+  </tr>
+  <tr>
+    <th valign="top" scope="col">Time of Trip Start</th>
+    <th valign="top" scope="col">1</th>
+    <th valign="top" scope="col">2</th>
+    <th valign="top" scope="col">3</th>
+    <th valign="top" scope="col">4</th>
+    <th valign="top" scope="col">5</th>
+    <th valign="top" scope="col">6</th>
+    <th valign="top" scope="col">7</th>
+    <th valign="top" scope="col">8</th>
+    <th valign="top" scope="col">9</th>
+    <th valign="top" scope="col">10</th>
+    <th valign="top" scope="col">11</th>
+    <th valign="top" scope="col">12</th>
+    <th valign="top" scope="col">Average Travel Time</th>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">6:00 AM</th>
+    <td valign="top">15.3</td>
+    <td valign="top">14.7</td>
+    <td valign="top">15.6</td>
+    <td valign="top">15.0</td>
+    <td valign="top">15.8</td>
+    <td valign="top">16.3</td>
+    <td valign="top">15.8</td>
+    <td valign="top">16.5</td>
+    <td valign="top">15.5</td>
+    <td valign="top">15.4</td>
+    <td valign="top">14.9</td>
+    <td valign="top">16.1</td>
+    <td valign="top">15.6</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">6:15 AM</th>
+    <td valign="top">15.4</td>
+    <td valign="top">15.2</td>
+    <td valign="top">15.8</td>
+    <td valign="top">15.6</td>
+    <td valign="top">17.5</td>
+    <td valign="top">17.0</td>
+    <td valign="top">16.5</td>
+    <td valign="top">18.9</td>
+    <td valign="top">16.0</td>
+    <td valign="top">16.2</td>
+    <td valign="top">15.5</td>
+    <td valign="top">16.8</td>
+    <td valign="top">16.4</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">6:30 AM</th>
+    <td valign="top">20.5</td>
+    <td valign="top">18.5</td>
+    <td valign="top">25.5</td>
+    <td valign="top">19.8</td>
+    <td valign="top">28.6</td>
+    <td valign="top">28.1</td>
+    <td valign="top">25.5</td>
+    <td valign="top">23.6</td>
+    <td valign="top">22.5</td>
+    <td valign="top">20.7</td>
+    <td valign="top">21.6</td>
+    <td valign="top">22.8</td>
+    <td valign="top">23.1</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">6:45 AM</th>
+    <td valign="top">22.8</td>
+    <td valign="top">25.6</td>
+    <td valign="top">29.8</td>
+    <td valign="top">23.5</td>
+    <td valign="top">30.9</td>
+    <td valign="top">31.8</td>
+    <td valign="top">28.6</td>
+    <td valign="top">29.6</td>
+    <td valign="top">27.4</td>
+    <td valign="top">21.8</td>
+    <td valign="top">25.3</td>
+    <td valign="top">26.9</td>
+    <td valign="top">27.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">7:00 AM</th>
+    <td valign="top">27.6</td>
+    <td valign="top">30.5</td>
+    <td valign="top">36.5</td>
+    <td valign="top">28.3</td>
+    <td valign="top">33.5</td>
+    <td valign="top">36.1</td>
+    <td valign="top">34.5</td>
+    <td valign="top">32.1</td>
+    <td valign="top">30.6</td>
+    <td valign="top">25.3</td>
+    <td valign="top">29.8</td>
+    <td valign="top">31.2</td>
+    <td valign="top">31.3</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">7:15 AM</th>
+    <td valign="top">29.9</td>
+    <td valign="top">33.6</td>
+    <td valign="top">35.2</td>
+    <td valign="top">30.8</td>
+    <td valign="top">34.5</td>
+    <td valign="top">35.2</td>
+    <td valign="top">34.8</td>
+    <td valign="top">33.5</td>
+    <td valign="top">32.6</td>
+    <td valign="top">28.5</td>
+    <td valign="top">30.5</td>
+    <td valign="top">32.1</td>
+    <td valign="top">32.6</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">7:30 AM</th>
+    <td valign="top">30.8</td>
+    <td valign="top">30.4</td>
+    <td valign="top">34.2</td>
+    <td valign="top">31.2</td>
+    <td valign="top">31.5</td>
+    <td valign="top">33.6</td>
+    <td valign="top">33.8</td>
+    <td valign="top">32.2</td>
+    <td valign="top">30.6</td>
+    <td valign="top">28.5</td>
+    <td valign="top">31.5</td>
+    <td valign="top">31.4</td>
+    <td valign="top">31.6</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">7:45 AM</th>
+    <td valign="top">30.4</td>
+    <td valign="top">27.6</td>
+    <td valign="top">33.9</td>
+    <td valign="top">31.5</td>
+    <td valign="top">30.8</td>
+    <td valign="top">32.8</td>
+    <td valign="top">32.1</td>
+    <td valign="top">32.1</td>
+    <td valign="top">29.5</td>
+    <td valign="top">28.6</td>
+    <td valign="top">30.9</td>
+    <td valign="top">31.9</td>
+    <td valign="top">31.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">8:00 AM</th>
+    <td valign="top">30.1</td>
+    <td valign="top">28.5</td>
+    <td valign="top">30.8</td>
+    <td valign="top">31.6</td>
+    <td valign="top">29.3</td>
+    <td valign="top">30.6</td>
+    <td valign="top">31.5</td>
+    <td valign="top">31.8</td>
+    <td valign="top">29.1</td>
+    <td valign="top">28.3</td>
+    <td valign="top">29.9</td>
+    <td valign="top">30.6</td>
+    <td valign="top">30.2</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">8:15 AM</th>
+    <td valign="top">29.9</td>
+    <td valign="top">28.3</td>
+    <td valign="top">29.6</td>
+    <td valign="top">30.2</td>
+    <td valign="top">28.6</td>
+    <td valign="top">29.8</td>
+    <td valign="top">30.4</td>
+    <td valign="top">30.5</td>
+    <td valign="top">28.8</td>
+    <td valign="top">28.3</td>
+    <td valign="top">29.2</td>
+    <td valign="top">29.9</td>
+    <td valign="top">29.5</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">8:30 AM</th>
+    <td valign="top">27.6</td>
+    <td valign="top">27.3</td>
+    <td valign="top">28.5</td>
+    <td valign="top">29.1</td>
+    <td valign="top">27.9</td>
+    <td valign="top">28.6</td>
+    <td valign="top">30.3</td>
+    <td valign="top">30.5</td>
+    <td valign="top">28.5</td>
+    <td valign="top">25.3</td>
+    <td valign="top">26.6</td>
+    <td valign="top">28.3</td>
+    <td valign="top">28.2</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">8:45 AM</th>
+    <td valign="top">24.6</td>
+    <td valign="top">26.9</td>
+    <td valign="top">27.5</td>
+    <td valign="top">26.3</td>
+    <td valign="top">23.6</td>
+    <td valign="top">28.0</td>
+    <td valign="top">27.1</td>
+    <td valign="top">28.6</td>
+    <td valign="top">26.6</td>
+    <td valign="top">22.1</td>
+    <td valign="top">23.9</td>
+    <td valign="top">25.5</td>
+    <td valign="top">25.9</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">9:00 AM</th>
+    <td valign="top">23.6</td>
+    <td valign="top">22.9</td>
+    <td valign="top">27.4</td>
+    <td valign="top">25.5</td>
+    <td valign="top">21.6</td>
+    <td valign="top">27.6</td>
+    <td valign="top">26.6</td>
+    <td valign="top">24.5</td>
+    <td valign="top">22.7</td>
+    <td valign="top">18.9</td>
+    <td valign="top">22.5</td>
+    <td valign="top">23.4</td>
+    <td valign="top">23.9</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">9:15 AM</th>
+    <td valign="top">22.4</td>
+    <td valign="top">22.5</td>
+    <td valign="top">24.3</td>
+    <td valign="top">23.3</td>
+    <td valign="top">21.8</td>
+    <td valign="top">28.5</td>
+    <td valign="top">25.1</td>
+    <td valign="top">23.6</td>
+    <td valign="top">21.8</td>
+    <td valign="top">18.5</td>
+    <td valign="top">20.6</td>
+    <td valign="top">22.1</td>
+    <td valign="top">22.9</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">9:30 AM</th>
+    <td valign="top">21.1</td>
+    <td valign="top">20.8</td>
+    <td valign="top">21.6</td>
+    <td valign="top">22.6</td>
+    <td valign="top">22.8</td>
+    <td valign="top">25.3</td>
+    <td valign="top">24.3</td>
+    <td valign="top">21.3</td>
+    <td valign="top">21.5</td>
+    <td valign="top">20.1</td>
+    <td valign="top">19.2</td>
+    <td valign="top">19.9</td>
+    <td valign="top">21.7</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">9:45 AM</th>
+    <td valign="top">20.1</td>
+    <td valign="top">16.5</td>
+    <td valign="top">19.5</td>
+    <td valign="top">20.0</td>
+    <td valign="top">24.6</td>
+    <td valign="top">23.8</td>
+    <td valign="top">22.6</td>
+    <td valign="top">20.9</td>
+    <td valign="top">20.8</td>
+    <td valign="top">19.8</td>
+    <td valign="top">17.5</td>
+    <td valign="top">17.7</td>
+    <td valign="top">20.3</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top">10:00 AM</th>
+    <td valign="top">18.8</td>
+    <td valign="top">16.8</td>
+    <td valign="top">17.6</td>
+    <td valign="top">18.0</td>
+    <td valign="top">23.6</td>
+    <td valign="top">22.8</td>
+    <td valign="top">21.6</td>
+    <td valign="top">19.3</td>
+    <td valign="top">20.5</td>
+    <td valign="top">17.5</td>
+    <td valign="top">17.2</td>
+    <td valign="top">17.1</td>
+    <td valign="top">19.2</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell"  valign="top"><strong>PEAK AVG</strong></th>
+    <td valign="top">24.2</td>
+    <td valign="top">23.9</td>
+    <td valign="top">26.7</td>
+    <td valign="top">24.8</td>
+    <td valign="top">26.3</td>
+    <td valign="top">28.0</td>
+    <td valign="top">27.1</td>
+    <td valign="top">26.4</td>
+    <td valign="top">25.0</td>
+    <td valign="top">22.6</td>
+    <td valign="top">23.9</td>
+    <td valign="top">24.9</td>
+    <td valign="top">25.3</td>
+  </tr>
+</table>
+
+
+<p>For these travel time data, as highlighted in <a href="#tab10">Table 10</a>, Day 9 has the smallest absolute average difference from the average across all days in the travel condition, 2.8%. A similar analysis is conducted for an additional measure and potentially additional routes. For the Alligator City example problem, Day 9 has the smallest absolute average difference from the average when both the Komodo Tunnel and Victory Island Bridge routes are considered (although the VIB times are not shown here). Although Day 9 may be a good choice for travel times, the analyst should also take into consideration how well all the days in the travel condition reflect our other key measure relating to bottleneck dynamics, bottleneck duration.</p>
+<div class="tabdiv">
+<table class="datatable">
+<caption><a id="tab10"></a>Table 10. Differences Comparing Individual Days and the Average for the Travel Condition, Expressed as a Percentage of the Time Variant Averages</caption>
+<colgroup span="1"></colgroup>
+<colgroup span="12"></colgroup>
+  <tr>
+    <th scope="colgroup"  valign="top"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></th>
+    <th scope="colgroup" colspan="12" valign="top">Euclidean Distance Expressed as a Percentage of Average Travel Time, 12 Days</th>
+  </tr>
+  <tr>
+    <th scope="col" valign="top">Time of Trip Start</th>
+    <th scope="col" valign="top">1</th>
+    <th scope="col" valign="top">2</th>
+    <th scope="col" valign="top">3</th>
+   	<th scope="col" valign="top">4</th>
+    <th scope="col" valign="top">5</th>
+    <th scope="col" valign="top">6</th>
+    <th scope="col" valign="top">7</th>
+    <th scope="col" valign="top">8</th>
+    <th scope="col" valign="top">Rep Day (9)</th>
+    <th scope="col" valign="top">10</th>
+    <th scope="col" valign="top">11</th>
+    <th scope="col" valign="top">12</th>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:00 AM</th>
+    <td valign="top">1.8%</td>
+    <td valign="top">5.6%</td>
+    <td valign="top">0.2%</td>
+    <td valign="top">3.7%</td>
+    <td valign="top">1.4%</td>
+    <td valign="top">4.7%</td>
+    <td valign="top">1.4%</td>
+    <td valign="top">5.9%</td>
+    <td valign="top" class="olivegreen">0.5%</td>
+    <td valign="top">1.1%</td>
+    <td valign="top">4.3%</td>
+    <td valign="top">3.4%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:15 AM</th>
+    <td valign="top">5.9%</td>
+    <td valign="top">7.1%</td>
+    <td valign="top">3.5%</td>
+    <td valign="top">4.7%</td>
+    <td valign="top">6.9%</td>
+    <td valign="top">3.9%</td>
+    <td valign="top">0.8%</td>
+    <td valign="top">15.5%</td>
+    <td valign="top" class="olivegreen">2.2%</td>
+    <td valign="top">1.0%</td>
+    <td valign="top">5.3%</td>
+    <td valign="top">2.6%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:30 AM</th>
+    <td valign="top">11.4%</td>
+    <td valign="top">20.1%</td>
+    <td valign="top">10.2%</td>
+    <td valign="top">14.4%</td>
+    <td valign="top">23.6%</td>
+    <td valign="top">21.4%</td>
+    <td valign="top">10.2%</td>
+    <td valign="top">2.0%</td>
+    <td valign="top" class="olivegreen">2.8%</td>
+    <td valign="top">10.6%</td>
+    <td valign="top">6.7%</td>
+    <td valign="top">1.5%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:45 AM</th>
+    <td valign="top">15.6%</td>
+    <td valign="top">5.2%</td>
+    <td valign="top">10.4%</td>
+    <td valign="top">13.0%</td>
+    <td valign="top">14.4%</td>
+    <td valign="top">17.8%</td>
+    <td valign="top">5.9%</td>
+    <td valign="top">9.6%</td>
+    <td valign="top" class="olivegreen">1.5%</td>
+    <td valign="top">19.3%</td>
+    <td valign="top">6.3%</td>
+    <td valign="top">0.4%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:00 AM</th>
+    <td valign="top">11.9%</td>
+    <td valign="top">2.7%</td>
+    <td valign="top">16.5%</td>
+    <td valign="top">9.7%</td>
+    <td valign="top">6.9%</td>
+    <td valign="top">15.2%</td>
+    <td valign="top">10.1%</td>
+    <td valign="top">2.4%</td>
+    <td valign="top" class="olivegreen">2.3%</td>
+    <td valign="top">19.3%</td>
+    <td valign="top">4.9%</td>
+    <td valign="top">0.4%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:15 AM</th>
+    <td valign="top">8.3%</td>
+    <td valign="top">3.1%</td>
+    <td valign="top">8.0%</td>
+    <td valign="top">5.5%</td>
+    <td valign="top">5.8%</td>
+    <td valign="top">8.0%</td>
+    <td valign="top">6.7%</td>
+    <td valign="top">2.8%</td>
+    <td valign="top" class="olivegreen">0.0%</td>
+    <td valign="top">12.6%</td>
+    <td valign="top">6.4%</td>
+    <td valign="top">1.5%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:30 AM</th>
+    <td valign="top">2.7%</td>
+    <td valign="top">3.9%</td>
+    <td valign="top">8.1%</td>
+    <td valign="top">1.4%</td>
+    <td valign="top">0.4%</td>
+    <td valign="top">6.2%</td>
+    <td valign="top">6.8%</td>
+    <td valign="top">1.8%</td>
+    <td valign="top" class="olivegreen">3.3%</td>
+    <td valign="top">9.9%</td>
+    <td valign="top">0.4%</td>
+    <td valign="top">0.8%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:45 AM</th>
+    <td valign="top">2.0%</td>
+    <td valign="top">11.0%</td>
+    <td valign="top">9.3%</td>
+    <td valign="top">1.6%</td>
+    <td valign="top">0.7%</td>
+    <td valign="top">5.8%</td>
+    <td valign="top">3.5%</td>
+    <td valign="top">3.5%</td>
+    <td valign="top" class="olivegreen">4.9%</td>
+    <td valign="top">7.8%</td>
+    <td valign="top">0.3%</td>
+    <td valign="top">2.9%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:00 AM</th>
+    <td valign="top">0.2%</td>
+    <td valign="top">5.6%</td>
+    <td valign="top">2.1%</td>
+    <td valign="top">4.7%</td>
+    <td valign="top">2.9%</td>
+    <td valign="top">1.4%</td>
+    <td valign="top">4.4%</td>
+    <td valign="top">5.4%</td>
+    <td valign="top" class="olivegreen">3.6%</td>
+    <td valign="top">6.2%</td>
+    <td valign="top">0.9%</td>
+    <td valign="top">1.4%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:15 AM</th>
+    <td valign="top">1.5%</td>
+    <td valign="top">3.9%</td>
+    <td valign="top">0.5%</td>
+    <td valign="top">2.5%</td>
+    <td valign="top">2.9%</td>
+    <td valign="top">1.2%</td>
+    <td valign="top">3.2%</td>
+    <td valign="top">3.5%</td>
+    <td valign="top" class="olivegreen">2.2%</td>
+    <td valign="top">3.9%</td>
+    <td valign="top">0.9%</td>
+    <td valign="top">1.5%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:30 AM</th>
+    <td valign="top">2.2%</td>
+    <td valign="top">3.2%</td>
+    <td valign="top">1.0%</td>
+    <td valign="top">3.2%</td>
+    <td valign="top">1.1%</td>
+    <td valign="top">1.4%</td>
+    <td valign="top">7.4%</td>
+    <td valign="top">8.1%</td>
+    <td valign="top" class="olivegreen">1.0%</td>
+    <td valign="top">10.3%</td>
+    <td valign="top">5.7%</td>
+    <td valign="top">0.3%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:45 AM</th>
+    <td valign="top">5.0%</td>
+    <td valign="top">3.9%</td>
+    <td valign="top">6.2%</td>
+    <td valign="top">1.6%</td>
+    <td valign="top">8.9%</td>
+    <td valign="top">8.1%</td>
+    <td valign="top">4.7%</td>
+    <td valign="top">10.5%</td>
+    <td valign="top" class="olivegreen">2.7%</td>
+    <td valign="top">14.6%</td>
+    <td valign="top">7.7%</td>
+    <td valign="top">1.5%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:00 AM</th>
+    <td valign="top">1.4%</td>
+    <td valign="top">4.3%</td>
+    <td valign="top">14.5%</td>
+    <td valign="top">6.5%</td>
+    <td valign="top">9.7%</td>
+    <td valign="top">15.3%</td>
+    <td valign="top">11.1%</td>
+    <td valign="top">2.4%</td>
+    <td valign="top" class="olivegreen">5.2%</td>
+    <td valign="top">21.0%</td>
+    <td valign="top">6.0%</td>
+    <td valign="top">2.2%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:15 AM</th>
+    <td valign="top">2.1%</td>
+    <td valign="top">1.6%</td>
+    <td valign="top">6.2%</td>
+    <td valign="top">1.9%</td>
+    <td valign="top">4.7%</td>
+    <td valign="top">24.6%</td>
+    <td valign="top">9.7%</td>
+    <td valign="top">3.2%</td>
+    <td valign="top" class="olivegreen">4.7%</td>
+    <td valign="top">19.1%</td>
+    <td valign="top">9.9%</td>
+    <td valign="top">3.4%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:30 AM</th>
+    <td valign="top">2.8%</td>
+    <td valign="top">4.2%</td>
+    <td valign="top">0.5%</td>
+    <td valign="top">4.1%</td>
+    <td valign="top">5.0%</td>
+    <td valign="top">16.5%</td>
+    <td valign="top">11.9%</td>
+    <td valign="top">1.9%</td>
+    <td valign="top" class="olivegreen">1.0%</td>
+    <td valign="top">7.4%</td>
+    <td valign="top">11.6%</td>
+    <td valign="top">8.3%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:45 AM</th>
+    <td valign="top">1.1%</td>
+    <td valign="top">18.8%</td>
+    <td valign="top">4.0%</td>
+    <td valign="top">1.6%</td>
+    <td valign="top">21.1%</td>
+    <td valign="top">17.1%</td>
+    <td valign="top">11.2%</td>
+    <td valign="top">2.9%</td>
+    <td valign="top" class="olivegreen">2.4%</td>
+    <td valign="top">2.5%</td>
+    <td valign="top">13.9%</td>
+    <td valign="top">12.9%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">10:00 AM</th>
+    <td valign="top">2.3%</td>
+    <td valign="top">12.7%</td>
+    <td valign="top">8.5%</td>
+    <td valign="top">6.4%</td>
+    <td valign="top">22.7%</td>
+    <td valign="top">18.5%</td>
+    <td valign="top">12.3%</td>
+    <td valign="top">0.3%</td>
+    <td valign="top" class="olivegreen">6.6%</td>
+    <td valign="top">9.0%</td>
+    <td valign="top">10.6%</td>
+    <td valign="top">11.1%</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top"><strong>AVG</strong></th>
+    <td valign="top">4.6%</td>
+    <td valign="top">6.9%</td>
+    <td valign="top">6.4%</td>
+    <td valign="top">5.1%</td>
+    <td valign="top">8.2%</td>
+    <td valign="top">11.0%</td>
+    <td valign="top">7.2%</td>
+    <td valign="top">4.8%</td>
+    <td valign="top" class="olivegreen">2.8%</td>
+    <td valign="top">10.3%</td>
+    <td valign="top">6.0%</td>
+    <td valign="top">3.3%</td>
+  </tr>
+</table>
+
+<p class="tablenote"><em><strong>Note</strong>: Day 9 has the smallest absolute average difference from the average across all days in the travel condition, 2.8%.</em></p>
+</div>
+<h4 id="preparing-variation-envelopes">Preparing Variation Envelopes</h4>
+<p>In the example of Alligator City, travel times from the West Hills to the CBD over the AM peak are shown below in Table 11, and plotted in <a href="#fig10">Figure 10</a>.</p>
+
+<table class="datatable">
+<caption><a id="tab11"></a>Table 11. Travel Time Variation Envelope Band Calculation, Alligator City</caption>
+  <tr>
+    <th scope="col" valign="top">Time of Trip Start</th>
+    <th scope="col" valign="top">Rep Day Travel Time</th>
+    <th scope="col" valign="top">Standard Deviation (Sigma)</th>
+    <th scope="col" valign="top">~2 Sigma Band (max)</th>
+    <th scope="col" valign="top">~2 Sigma Band (min)</th>
+    <th scope="col" valign="top">1 Sigma Band (max)</th>
+    <th scope="col" valign="top">1 Sigma Band (min)</th>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:00 AM</th>
+    <td valign="top">15.5</td>
+    <td valign="top">0.53</td>
+    <td valign="top">16.5</td>
+    <td valign="top">14.5</td>
+    <td valign="top">16.0</td>
+    <td valign="top">15.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:15 AM</th>
+    <td valign="top">16.0</td>
+    <td valign="top">1.02</td>
+    <td valign="top">18.0</td>
+    <td valign="top">14.0</td>
+    <td valign="top">17.0</td>
+    <td valign="top">15.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:30 AM</th>
+    <td valign="top">22.5</td>
+    <td valign="top">3.09</td>
+    <td valign="top">28.5</td>
+    <td valign="top">16.5</td>
+    <td valign="top">25.6</td>
+    <td valign="top">19.4</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">6:45 AM</th>
+    <td valign="top">27.4</td>
+    <td valign="top">3.13</td>
+    <td valign="top">33.5</td>
+    <td valign="top">21.3</td>
+    <td valign="top">30.5</td>
+    <td valign="top">24.3</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:00 AM</th>
+    <td valign="top">30.6</td>
+    <td valign="top">3.26</td>
+    <td valign="top">37.0</td>
+    <td valign="top">24.2</td>
+    <td valign="top">33.9</td>
+    <td valign="top">27.3</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:15 AM</th>
+    <td valign="top">32.6</td>
+    <td valign="top">2.16</td>
+    <td valign="top">36.8</td>
+    <td valign="top">28.4</td>
+    <td valign="top">34.8</td>
+    <td valign="top">30.4</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:30 AM</th>
+    <td valign="top">30.6</td>
+    <td valign="top">1.55</td>
+    <td valign="top">33.6</td>
+    <td valign="top">27.6</td>
+    <td valign="top">32.2</td>
+    <td valign="top">29.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">7:45 AM</th>
+    <td valign="top">29.5</td>
+    <td valign="top">1.71</td>
+    <td valign="top">32.9</td>
+    <td valign="top">26.1</td>
+    <td valign="top">31.2</td>
+    <td valign="top">27.8</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:00 AM</th>
+    <td valign="top">29.1</td>
+    <td valign="top">1.14</td>
+    <td valign="top">31.3</td>
+    <td valign="top">26.9</td>
+    <td valign="top">30.2</td>
+    <td valign="top">28.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:15 AM</th>
+    <td valign="top">28.8</td>
+    <td valign="top">0.76</td>
+    <td valign="top">30.3</td>
+    <td valign="top">27.3</td>
+    <td valign="top">29.6</td>
+    <td valign="top">28.0</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:30 AM</th>
+    <td valign="top">28.5</td>
+    <td valign="top">1.39</td>
+    <td valign="top">31.2</td>
+    <td valign="top">25.8</td>
+    <td valign="top">29.9</td>
+    <td valign="top">27.1</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">8:45 AM</th>
+    <td valign="top">26.6</td>
+    <td valign="top">1.89</td>
+    <td valign="top">30.3</td>
+    <td valign="top">22.9</td>
+    <td valign="top">28.5</td>
+    <td valign="top">24.7</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:00 AM</th>
+    <td valign="top">22.7</td>
+    <td valign="top">2.44</td>
+    <td valign="top">27.5</td>
+    <td valign="top">17.9</td>
+    <td valign="top">25.1</td>
+    <td valign="top">20.3</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:15 AM</th>
+    <td valign="top">21.8</td>
+    <td valign="top">2.36</td>
+    <td valign="top">26.4</td>
+    <td valign="top">17.2</td>
+    <td valign="top">24.2</td>
+    <td valign="top">19.4</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:30 AM</th>
+    <td valign="top">21.5</td>
+    <td valign="top">1.71</td>
+    <td valign="top">24.9</td>
+    <td valign="top">18.1</td>
+    <td valign="top">23.2</td>
+    <td valign="top">19.8</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">9:45 AM</th>
+    <td valign="top">20.8</td>
+    <td valign="top">2.36</td>
+    <td valign="top">25.4</td>
+    <td valign="top">16.2</td>
+    <td valign="top">23.2</td>
+    <td valign="top">18.4</td>
+  </tr>
+  <tr>
+    <th scope="row" class="normalcell" valign="top">10:00 AM</th>
+    <td valign="top">20.5</td>
+    <td valign="top">2.25</td>
+    <td valign="top">24.9</td>
+    <td valign="top">16.1</td>
+    <td valign="top">22.8</td>
+    <td valign="top">18.2</td>
+  </tr>
+</table>
+<br>
+<div class="imgdiv">
+<img id="fig10" src="images/figure10.png" alt="Figure 10. Plot of Variation Envelope for Eastbound AM Travel Times, West Hills to Alligator City. Figure 10 illustrates the plot of the travel time variation envelope from the West Hills to the CBD over the AM peak in our example from Alligator City. The red solid line is the travel time of the representative day. The green dash lines are the min. and max. 1 sigma bands. The two purple dash lines are the min. and max. 2 sigma bands." width="576" height="384">
+<p><span class="fig-caption">Figure 10. Chart. Plot of Variation Envelope for Eastbound AM Travel Times, West Hills to Alligator City</span><br>
+<span class="tablenote">(Source: FHWA)</span></p>
+</div>
+<h4 id="calibrate-model-variants-within-acceptability-criteria">Calibrate Model Variants within Acceptability Criteria</h4>
+<p>In the Alligator City example, consider the situation where an analyst is in the midst of calibrating the eastbound travel times from West Hills to Alligator City via the Komodo Tunnel. After a series of adjustments to the input parameters, the analyst calculates the simulated travel times for each of the 17 time intervals in the AM peak.</p>
+<p>First, the analyst considers Criterion I to control for outliers (<a href="#fig11">Figure 11</a>). All of the points fall within the ~2 Sigma Band except for one point (8 AM). Given that there are 17 time intervals, at most one-time period can be outside the band. The model variant passes Criterion I.</p>
+
+<div class="imgdiv">
+<img id="fig11" src="images/figure11.png" alt="Figure 11. Assessing Criterion I, Alligator City. Figure 11 shows that the analyst first considers Criterion I to control for outliers. All of the points fall within the ~2 Sigma Band except for one point, which is at 8 AM." width="624" height="398">
+<p><span class="fig-caption">Figure 11. Chart. Assessing Criterion I, Alligator City</span><br>
+<span class="tablenote">(Source: FHWA)</span></p>
+</div>
+
+<p>Second, the analyst considers Criterion II to control for inliers (<a href="#fig12">Figure 12</a>). All of the points fall within the 1 Sigma Band except for three points (6:00 AM, 8:00 AM, 8:15 AM). The percentage of time periods within the 1 Sigma Band is 82% (14 of 17), higher than the 66.7% requirement. Critical time periods should also be considered. For this particular measure and representative day, the peak travel time occurs at 7:15 AM. The second highest non-adjacent travel time occurs at 7:45 AM. Both the 7:15 AM and 7:45 AM simulated travel times fall within the 1 Sigma Band. Therefore, the model variant passes Criterion II.</p>
+
+<div class="imgdiv">
+<img id="fig12" src="images/figure12.png" alt="Figure 12. Assessing Criterion II, Alligator City. Figure 12 shows that the analyst considers Criterion II to control for inliers as the 2nd step. All of the points fall within the 1 Sigma Band except for three points, which are 6:00 AM, 8:00 AM, and 8:15 AM." width="624" height="372">
+<p><span class="fig-caption">Figure 12. Chart. Assessing Criterion II, Alligator City</span><br>
+<span class="tablenote">(Source: FHWA)</span></p>
+</div>
+
+<p>Third, the analyst computes Bounded Dynamic Absolute Error threshold for this data set using the observed travel time data from each of the other days in the cluster and the representative day. These travel times were shown previously in <a href="#fig11">Figure 11</a>, above. The BDAE threshold for these data is 1.84 minutes. Differences between the simulated travel time and observed travel time are shown in <a href="#tab12">Table 12</a>. The average absolute difference between the simulated travel times and the representative day is 1.1 minutes, less than the BDAE Threshold of 1.84. Criterion III is met.</p>
+<p>Fourth, the analyst considers the final criteria to determine if the simulation is an unacceptably large over or under estimator of the representative day. In this case, the threshold is set to one-third of the BDAE or 0.61 minutes. If the simulation does not, on average, overestimate travel times in excess of this threshold then the criterion is met. However, the simulation does indeed provide travel times that are on average 1.0 minutes longer than the representative day. Criterion IV is not met, because the current model is an unacceptably large over-estimator of travel time. The analyst will have to continue to alter model variant parameters to meet this criterion. For some simulation models, this may mean considering a slight reduction in target vehicle speeds, either globally or along the links of this specific route. This may influence other measures and locations, however. Note that the calibration criteria are only met when a single run meets all the calibration criteria for all measures and locations. Thus, the analyst should re-examine each criterion (I, II, and III) after making an adjustment to satisfy Criterion IV.</p>
+
+<table class="datatable">
+<caption><a id="tab12"></a>Table 12. Assessing Criteria III and IV, Alligator City</caption>
+  <tr>
+    <th valign="top" id="c1">Time of Trip Start</th>
+    <th valign="top" id="c2">Simulation</th>
+    <th valign="top" id="c3">Rep. Day</th>
+    <th valign="top" id="c4">Absolute Diff.</th>
+    <th valign="top" id="c5">Diff.</th>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">6:00 AM</td>
+    <td valign="top" headers="c2">16.1</td>
+    <td valign="top" headers="c3">15.5</td>
+    <td valign="top" headers="c4">0.6</td>
+    <td valign="top" headers="c5">-0.6</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">6:15 AM</td>
+    <td valign="top" headers="c2">16.6</td>
+    <td valign="top" headers="c3">16.0</td>
+    <td valign="top" headers="c4">0.55</td>
+    <td valign="top" headers="c5">-0.5</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">6:30 AM</td>
+    <td valign="top" headers="c2">23.8</td>
+    <td valign="top" headers="c3">22.5</td>
+    <td valign="top" headers="c4">1.27</td>
+    <td valign="top" headers="c5">-1.3</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">6:45 AM</td>
+    <td valign="top" headers="c2">28.0</td>
+    <td valign="top" headers="c3">27.4</td>
+    <td valign="top" headers="c4">0.63</td>
+    <td valign="top" headers="c5">-0.6</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">7:00 AM</td>
+    <td valign="top" headers="c2">31.7</td>
+    <td valign="top" headers="c3">30.6</td>
+    <td valign="top" headers="c4">1.12</td>
+    <td valign="top" headers="c5">-1.1</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">7:15 AM</td>
+    <td valign="top" headers="c2">32.7</td>
+    <td valign="top" headers="c3">32.6</td>
+    <td valign="top" headers="c4">0.14</td>
+    <td valign="top" headers="c5">-0.1</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">7:30 AM</td>
+    <td valign="top" headers="c2">32.0</td>
+    <td valign="top" headers="c3">30.6</td>
+    <td valign="top" headers="c4">1.4</td>
+    <td valign="top" headers="c5">-1.4</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">7:45 AM</td>
+    <td valign="top" headers="c2">31.2</td>
+    <td valign="top" headers="c3">29.5</td>
+    <td valign="top" headers="c4">1.7</td>
+    <td valign="top" headers="c5">-1.7</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">8:00 AM</td>
+    <td valign="top" headers="c2">32.8</td>
+    <td valign="top" headers="c3">29.1</td>
+    <td valign="top" headers="c4">3.7</td>
+    <td valign="top" headers="c5">-3.7</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">8:15 AM</td>
+    <td valign="top" headers="c2">30.2</td>
+    <td valign="top" headers="c3">28.8</td>
+    <td valign="top" headers="c4">1.4</td>
+    <td valign="top" headers="c5">-1.4</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">8:30 AM</td>
+    <td valign="top" headers="c2">28.9</td>
+    <td valign="top" headers="c3">28.5</td>
+    <td valign="top" headers="c4">0.37</td>
+    <td valign="top" headers="c5">-0.4</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">8:45 AM</td>
+    <td valign="top" headers="c2">26.9</td>
+    <td valign="top" headers="c3">26.6</td>
+    <td valign="top" headers="c4">0.27</td>
+    <td valign="top" headers="c5">-0.3</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">9:00 AM</td>
+    <td valign="top" headers="c2">24.9</td>
+    <td valign="top" headers="c3">22.7</td>
+    <td valign="top" headers="c4">2.21</td>
+    <td valign="top" headers="c5">-2.2</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">9:15 AM</td>
+    <td valign="top" headers="c2">23.1</td>
+    <td valign="top" headers="c3">21.8</td>
+    <td valign="top" headers="c4">1.31</td>
+    <td valign="top" headers="c5">-1.3</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">9:30 AM</td>
+    <td valign="top" headers="c2">22.5</td>
+    <td valign="top" headers="c3">21.5</td>
+    <td valign="top" headers="c4">0.96</td>
+    <td valign="top" headers="c5">-1.0</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">9:45 AM</td>
+    <td valign="top" headers="c2">20.4</td>
+    <td valign="top" headers="c3">20.8</td>
+    <td valign="top" headers="c4">0.42</td>
+    <td valign="top" headers="c5">0.4</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1">10:00 AM</td>
+    <td valign="top" headers="c2">19.7</td>
+    <td valign="top" headers="c3">20.5</td>
+    <td valign="top" headers="c4">0.84</td>
+    <td valign="top" headers="c5">0.8</td>
+  </tr>
+  <tr>
+    <td valign="top" headers="c1"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></td>
+    <td valign="top" headers="c2"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></td>
+    <th valign="top" id="c6" class="normalcell">AVERAGE</th>
+    <td valign="top" headers="c6 c4">1.1</td>
+    <td valign="top" headers="c6 c5">-1.0</td>
+  </tr>
+</table>
+
+<h3 id="key-points-4">Key Points</h3>
+<p>In summary, when calibrating a microsimulation study:</p>
+<ul>
+<li>Calibrate selectively, only for key performance measures.</li>
+<li>Performance measures for calibration should have good observed data.</li>
+<li>Calibrate a model variant for each travel condition.</li>
+<li>Use a representative day approach for calibration rather than a synthetic day combining multiple days.</li>
+<li>Calibration should be focused on bottleneck dynamics as well as time-variant performance measures.</li>
+</ul>
+
+        <!-- InstanceEndEditable -->
+         <div id="nextprevious"><!-- InstanceBeginEditable name="next_previous" --><a href="chapter4.htm" title="Chapter 4. Error Checking">previous</a> | <a href="chapter6.htm" title="Chapter 6. Alternatives Analysis">next</a><!-- InstanceEndEditable --></div>
+      </div>
+    </td></tr>
+   
+</table>
+  
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" id="footer-bar"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></td>
+  </tr>
+  <tr valign="top"> 
+    <td id="footer-logo"><img src="images/ops_images/fhwatag.gif" alt="FHWA" width="89" height="18"></td>
+    <td id="footer-links"><p class="footer-links"><a href="https://www.transportation.gov/">US DOT Home</a> | <a href="https://www.fhwa.dot.gov/">FHWA Home</a> | <a href="https://ops.fhwa.dot.gov/">Operations Home</a> | <a href="https://www.fhwa.dot.gov/privacy.cfm">Privacy Policy</a></p>
+      <p>United States Department of Transportation - Federal Highway Administration</p></td>
+    <td id="javadate">
+      <script language="JAVASCRIPT" type="text/javascript"><!--
+revdate = new Date(document.lastModified);
+if (revdate.getYear() == 69) {
+	// workaround for .asp pages (some browsers do not interpret the lastModified date properly);
+	// just reset the date to today
+	revdate = new Date();
+}
+year = revdate.getYear();
+if (year > 1999)
+ year = year
+else
+ if (year < 90)
+ year = year+2000
+ else
+ year = year+1900;
+month = revdate.getMonth() + 1;
+day = revdate.getDate();
+var mon;
+
+if (month==0) mon = "January";
+if (month==1) mon = "January";
+if (month==2) mon = "February";
+if (month==3) mon = "March";
+if (month==4) mon = "April";
+if (month==5) mon = "May";
+if (month==6) mon = "June";
+if (month==7) mon = "July";
+if (month==8) mon = "August";
+if (month==9) mon = "September";
+if (month==10) mon = "October";
+if (month==11) mon = "November";
+if (month==12) mon = "December";
+
+document.write("&nbsp;&nbsp;Last modified: " + mon + " " + day + ", " + year + "&nbsp;&nbsp;");
+// -->
+</script>
+    </td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="4,4,182,21" href="https://ops.fhwa.dot.gov/" alt="Office of Operations" title="Office of Operations">
+</map>
+</body>
+
+<!-- InstanceEnd --></html>
+

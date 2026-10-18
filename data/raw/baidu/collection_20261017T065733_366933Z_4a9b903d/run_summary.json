@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "stopped",
+  "stop_reason": "stop_requested",
+  "pid": 17387,
+  "pid_start_ticks": "559425",
+  "process_token": "4a9b903de692461597b37d13289587ae",
+  "config_path": "config/collection.json",
+  "config_sha256": "ddccd456b57b1a6ca91cc5c7e2814831700f81dd9e4508e8f1ca7f4e56b54af8",
+  "study_area_id": "shanghai_ruijin",
+  "started_at": "2026-10-17T14:57:33.367+08:00",
+  "stop_at": "2026-10-19T20:00:00+08:00",
+  "session_counts": {
+    "traffic": 27,
+    "direction": 44
+  },
+  "success_counts": {
+    "traffic": 27,
+    "direction": 44
+  },
+  "consecutive_failures": 0,
+  "error_count": 0,
+  "last_success_at": "2026-10-17T15:49:35.134+08:00",
+  "last_result": {
+    "request_number": 71,
+    "kind": "traffic",
+    "route_pair_id": null,
+    "http_status": 200,
+    "api_status": 0,
+    "transport_status": "received",
+    "received_at": "2026-10-17T15:49:35.134+08:00"
+  },
+  "output_directory": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d",
+  "billing_status": "unverified",
+  "daily_limits": {
+    "traffic": 900,
+    "direction": 1500
+  },
+  "budget_scope": "This collector/workspace only; probes and other clients are not counted.",
+  "updated_at": "2026-10-17T15:51:22.320+08:00",
+  "budget_day": "2026-10-17",
+  "daily_counts": {
+    "traffic": 28,
+    "direction": 48
+  },
+  "remaining_budget": {
+    "traffic": 872,
+    "direction": 1452
+  },
+  "next_requests": {
+    "traffic:traffic": "2026-10-17T15:51:33.382+08:00",
+    "direction:north_to_south": "2026-10-17T15:52:36.338+08:00",
+    "direction:south_to_north": "2026-10-17T15:52:39.461+08:00",
+    "direction:west_to_hospital_road": "2026-10-17T15:52:42.404+08:00",
+    "direction:east_to_hospital_road": "2026-10-17T15:52:45.274+08:00"
+  },
+  "finished_at": "2026-10-17T15:51:22.320+08:00"
+}

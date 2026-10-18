@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="820" viewBox="0 0 1160 820">
+<rect width="1160" height="820" fill="white"/><g font-family="DejaVu Sans,Arial,sans-serif" fill="#172033">
+<text x="30" y="30" font-size="21">Frozen predictions and held-out platform ETA</text>
+<text x="30" y="54" font-size="13">Dots: platform ETA; blue: training median; orange: shared affine. Actual request time, UTC+08.</text>
+<text x="75" y="82" font-size="13">east_to_hospital_road / same_day_exploratory</text>
+<line x1="75" x2="530" y1="215.000" y2="215.000" stroke="#e2e8f0"/>
+<text x="67" y="219.000" text-anchor="end" font-size="11">481s</text>
+<line x1="75" x2="530" y1="155.000" y2="155.000" stroke="#e2e8f0"/>
+<text x="67" y="159.000" text-anchor="end" font-size="11">588s</text>
+<line x1="75" x2="530" y1="95.000" y2="95.000" stroke="#e2e8f0"/>
+<text x="67" y="99.000" text-anchor="end" font-size="11">695s</text>
+<line x1="75" x2="530" y1="151.636" y2="151.636" stroke="#2563eb" stroke-width="2"/>
+<line x1="75" x2="530" y1="159.945" y2="159.945" stroke="#d97706" stroke-width="2"/>
+<circle cx="117.602" cy="203.785" r="2.8" fill="#111827"/>
+<circle cx="231.352" cy="197.056" r="2.8" fill="#111827"/>
+<circle cx="345.102" cy="175.748" r="2.8" fill="#111827"/>
+<circle cx="458.980" cy="106.215" r="2.8" fill="#111827"/>
+<text x="75" y="233" text-anchor="middle" font-size="11">10-17 15:55</text>
+<text x="530" y="233" text-anchor="middle" font-size="11">10-17 16:15</text>
+<text x="640" y="82" font-size="13">east_to_hospital_road / cross_day_holdout</text>
+<line x1="640" x2="1095" y1="215.000" y2="215.000" stroke="#e2e8f0"/>
+<text x="632" y="219.000" text-anchor="end" font-size="11">286s</text>
+<line x1="640" x2="1095" y1="155.000" y2="155.000" stroke="#e2e8f0"/>
+<text x="632" y="159.000" text-anchor="end" font-size="11">450s</text>
+<line x1="640" x2="1095" y1="95.000" y2="95.000" stroke="#e2e8f0"/>
+<text x="632" y="99.000" text-anchor="end" font-size="11">614s</text>
+<line x1="640" x2="1095" y1="102.317" y2="102.317" stroke="#2563eb" stroke-width="2"/>
+<line x1="640" x2="1095" y1="107.739" y2="107.739" stroke="#d97706" stroke-width="2"/>
+<circle cx="643.064" cy="163.780" r="2.8" fill="#111827"/>
+<circle cx="662.034" cy="167.439" r="2.8" fill="#111827"/>
+<circle cx="681.001" cy="178.415" r="2.8" fill="#111827"/>
+<circle cx="699.980" cy="197.073" r="2.8" fill="#111827"/>
+<circle cx="718.939" cy="207.317" r="2.8" fill="#111827"/>
+<circle cx="737.897" cy="182.439" r="2.8" fill="#111827"/>
+<circle cx="756.855" cy="199.634" r="2.8" fill="#111827"/>
+<circle cx="775.816" cy="200.000" r="2.8" fill="#111827"/>
+<circle cx="794.793" cy="192.683" r="2.8" fill="#111827"/>
+<circle cx="813.752" cy="188.293" r="2.8" fill="#111827"/>
+<circle cx="832.710" cy="165.244" r="2.8" fill="#111827"/>
+<circle cx="851.668" cy="182.073" r="2.8" fill="#111827"/>
+<circle cx="870.627" cy="188.293" r="2.8" fill="#111827"/>
+<circle cx="889.585" cy="169.634" r="2.8" fill="#111827"/>
+<circle cx="908.543" cy="188.659" r="2.8" fill="#111827"/>
+<circle cx="927.502" cy="203.659" r="2.8" fill="#111827"/>
+<circle cx="946.460" cy="202.927" r="2.8" fill="#111827"/>
+<circle cx="965.418" cy="202.927" r="2.8" fill="#111827"/>
+<circle cx="984.377" cy="200.366" r="2.8" fill="#111827"/>
+<circle cx="1003.335" cy="199.634" r="2.8" fill="#111827"/>
+<circle cx="1022.293" cy="190.122" r="2.8" fill="#111827"/>
+<circle cx="1041.252" cy="182.439" r="2.8" fill="#111827"/>
+<circle cx="1060.210" cy="207.683" r="2.8" fill="#111827"/>
+<circle cx="1079.169" cy="199.268" r="2.8" fill="#111827"/>
+<text x="640" y="233" text-anchor="middle" font-size="11">10-18 11:36</text>
+<text x="1095" y="233" text-anchor="middle" font-size="11">10-18 13:36</text>
+<text x="75" y="257" font-size="13">north_to_south / same_day_exploratory</text>
+<line x1="75" x2="530" y1="390.000" y2="390.000" stroke="#e2e8f0"/>
+<text x="67" y="394.000" text-anchor="end" font-size="11">606s</text>
+<line x1="75" x2="530" y1="330.000" y2="330.000" stroke="#e2e8f0"/>
+<text x="67" y="334.000" text-anchor="end" font-size="11">668s</text>
+<line x1="75" x2="530" y1="270.000" y2="270.000" stroke="#e2e8f0"/>
+<text x="67" y="274.000" text-anchor="end" font-size="11">729s</text>
+<line x1="75" x2="530" y1="305.122" y2="305.122" stroke="#2563eb" stroke-width="2"/>
+<line x1="75" x2="530" y1="298.291" y2="298.291" stroke="#d97706" stroke-width="2"/>
+<circle cx="114.223" cy="370.488" r="2.8" fill="#111827"/>
+<circle cx="227.995" cy="289.512" r="2.8" fill="#111827"/>
+<circle cx="341.745" cy="304.146" r="2.8" fill="#111827"/>
+<circle cx="455.495" cy="338.293" r="2.8" fill="#111827"/>
+<text x="75" y="408" text-anchor="middle" font-size="11">10-17 15:55</text>
+<text x="530" y="408" text-anchor="middle" font-size="11">10-17 16:15</text>
+<text x="640" y="257" font-size="13">north_to_south / cross_day_holdout</text>
+<line x1="640" x2="1095" y1="390.000" y2="390.000" stroke="#e2e8f0"/>
+<text x="632" y="394.000" text-anchor="end" font-size="11">433s</text>
+<line x1="640" x2="1095" y1="330.000" y2="330.000" stroke="#e2e8f0"/>
+<text x="632" y="334.000" text-anchor="end" font-size="11">577s</text>
+<line x1="640" x2="1095" y1="270.000" y2="270.000" stroke="#e2e8f0"/>
+<text x="632" y="274.000" text-anchor="end" font-size="11">720s</text>
+<line x1="640" x2="1095" y1="281.290" y2="281.290" stroke="#2563eb" stroke-width="2"/>
+<line x1="640" x2="1095" y1="278.362" y2="278.362" stroke="#d97706" stroke-width="2"/>
+<circle cx="642.523" cy="376.620" r="2.8" fill="#111827"/>
+<circle cx="661.481" cy="372.857" r="2.8" fill="#111827"/>
+<circle cx="680.439" cy="355.714" r="2.8" fill="#111827"/>
+<circle cx="699.398" cy="354.042" r="2.8" fill="#111827"/>
+<circle cx="718.356" cy="377.038" r="2.8" fill="#111827"/>
+<circle cx="737.314" cy="375.784" r="2.8" fill="#111827"/>
+<circle cx="756.273" cy="381.638" r="2.8" fill="#111827"/>
+<circle cx="775.231" cy="361.568" r="2.8" fill="#111827"/>
+<circle cx="794.189" cy="372.857" r="2.8" fill="#111827"/>
+<circle cx="813.148" cy="346.934" r="2.8" fill="#111827"/>
+<circle cx="832.106" cy="341.498" r="2.8" fill="#111827"/>
+<circle cx="851.064" cy="336.899" r="2.8" fill="#111827"/>
+<circle cx="870.023" cy="354.042" r="2.8" fill="#111827"/>
+<circle cx="888.981" cy="356.133" r="2.8" fill="#111827"/>
+<circle cx="907.939" cy="346.934" r="2.8" fill="#111827"/>
+<circle cx="926.898" cy="351.533" r="2.8" fill="#111827"/>
+<circle cx="945.856" cy="308.049" r="2.8" fill="#111827"/>
+<circle cx="964.814" cy="336.899" r="2.8" fill="#111827"/>
+<circle cx="983.773" cy="344.007" r="2.8" fill="#111827"/>
+<circle cx="1002.731" cy="339.826" r="2.8" fill="#111827"/>
+<circle cx="1021.689" cy="361.150" r="2.8" fill="#111827"/>
+<circle cx="1040.648" cy="350.279" r="2.8" fill="#111827"/>
+<circle cx="1059.606" cy="371.603" r="2.8" fill="#111827"/>
+<circle cx="1078.565" cy="356.551" r="2.8" fill="#111827"/>
+<text x="640" y="408" text-anchor="middle" font-size="11">10-18 11:36</text>
+<text x="1095" y="408" text-anchor="middle" font-size="11">10-18 13:36</text>
+<text x="75" y="432" font-size="13">south_to_north / same_day_exploratory</text>
+<line x1="75" x2="530" y1="565.000" y2="565.000" stroke="#e2e8f0"/>
+<text x="67" y="569.000" text-anchor="end" font-size="11">397s</text>
+<line x1="75" x2="530" y1="505.000" y2="505.000" stroke="#e2e8f0"/>
+<text x="67" y="509.000" text-anchor="end" font-size="11">658s</text>
+<line x1="75" x2="530" y1="445.000" y2="445.000" stroke="#e2e8f0"/>
+<text x="67" y="449.000" text-anchor="end" font-size="11">918s</text>
+<line x1="75" x2="530" y1="560.393" y2="560.393" stroke="#2563eb" stroke-width="2"/>
+<line x1="75" x2="530" y1="548.396" y2="548.396" stroke="#d97706" stroke-width="2"/>
+<circle cx="115.317" cy="502.351" r="2.8" fill="#111827"/>
+<circle cx="229.107" cy="499.818" r="2.8" fill="#111827"/>
+<circle cx="342.857" cy="493.138" r="2.8" fill="#111827"/>
+<circle cx="456.634" cy="449.607" r="2.8" fill="#111827"/>
+<text x="75" y="583" text-anchor="middle" font-size="11">10-17 15:55</text>
+<text x="530" y="583" text-anchor="middle" font-size="11">10-17 16:15</text>
+<text x="640" y="432" font-size="13">south_to_north / cross_day_holdout</text>
+<line x1="640" x2="1095" y1="565.000" y2="565.000" stroke="#e2e8f0"/>
+<text x="632" y="569.000" text-anchor="end" font-size="11">182s</text>
+<line x1="640" x2="1095" y1="505.000" y2="505.000" stroke="#e2e8f0"/>
+<text x="632" y="509.000" text-anchor="end" font-size="11">336s</text>
+<line x1="640" x2="1095" y1="445.000" y2="445.000" stroke="#e2e8f0"/>
+<text x="632" y="449.000" text-anchor="end" font-size="11">489s</text>
+<line x1="640" x2="1095" y1="473.170" y2="473.170" stroke="#2563eb" stroke-width="2"/>
+<line x1="640" x2="1095" y1="452.815" y2="452.815" stroke="#d97706" stroke-width="2"/>
+<circle cx="642.706" cy="539.600" r="2.8" fill="#111827"/>
+<circle cx="661.667" cy="549.369" r="2.8" fill="#111827"/>
+<circle cx="680.627" cy="550.932" r="2.8" fill="#111827"/>
+<circle cx="699.585" cy="538.037" r="2.8" fill="#111827"/>
+<circle cx="718.552" cy="540.773" r="2.8" fill="#111827"/>
+<circle cx="737.510" cy="552.105" r="2.8" fill="#111827"/>
+<circle cx="756.480" cy="557.185" r="2.8" fill="#111827"/>
+<circle cx="775.439" cy="550.932" r="2.8" fill="#111827"/>
+<circle cx="794.397" cy="550.932" r="2.8" fill="#111827"/>
+<circle cx="813.356" cy="553.668" r="2.8" fill="#111827"/>
+<circle cx="832.314" cy="553.668" r="2.8" fill="#111827"/>
+<circle cx="851.272" cy="555.622" r="2.8" fill="#111827"/>
+<circle cx="870.231" cy="546.243" r="2.8" fill="#111827"/>
+<circle cx="889.189" cy="543.899" r="2.8" fill="#111827"/>
+<circle cx="908.147" cy="553.277" r="2.8" fill="#111827"/>
+<circle cx="927.106" cy="550.542" r="2.8" fill="#111827"/>
+<circle cx="946.064" cy="545.071" r="2.8" fill="#111827"/>
+<circle cx="965.022" cy="548.979" r="2.8" fill="#111827"/>
+<circle cx="983.981" cy="550.542" r="2.8" fill="#111827"/>
+<circle cx="1002.939" cy="556.012" r="2.8" fill="#111827"/>
+<circle cx="1021.897" cy="548.197" r="2.8" fill="#111827"/>
+<circle cx="1040.856" cy="542.726" r="2.8" fill="#111827"/>
+<circle cx="1059.814" cy="532.567" r="2.8" fill="#111827"/>
+<circle cx="1078.772" cy="548.197" r="2.8" fill="#111827"/>
+<text x="640" y="583" text-anchor="middle" font-size="11">10-18 11:36</text>
+<text x="1095" y="583" text-anchor="middle" font-size="11">10-18 13:36</text>
+<text x="75" y="607" font-size="13">west_to_hospital_road / same_day_exploratory</text>
+<line x1="75" x2="530" y1="740.000" y2="740.000" stroke="#e2e8f0"/>
+<text x="67" y="744.000" text-anchor="end" font-size="11">345s</text>
+<line x1="75" x2="530" y1="680.000" y2="680.000" stroke="#e2e8f0"/>
+<text x="67" y="684.000" text-anchor="end" font-size="11">454s</text>
+<line x1="75" x2="530" y1="620.000" y2="620.000" stroke="#e2e8f0"/>
+<text x="67" y="624.000" text-anchor="end" font-size="11">563s</text>
+<line x1="75" x2="530" y1="667.890" y2="667.890" stroke="#2563eb" stroke-width="2"/>
+<line x1="75" x2="530" y1="654.232" y2="654.232" stroke="#d97706" stroke-width="2"/>
+<circle cx="116.451" cy="728.991" r="2.8" fill="#111827"/>
+<circle cx="230.201" cy="651.927" r="2.8" fill="#111827"/>
+<circle cx="343.951" cy="665.138" r="2.8" fill="#111827"/>
+<circle cx="457.842" cy="631.009" r="2.8" fill="#111827"/>
+<text x="75" y="758" text-anchor="middle" font-size="11">10-17 15:55</text>
+<text x="530" y="758" text-anchor="middle" font-size="11">10-17 16:15</text>
+<text x="640" y="607" font-size="13">west_to_hospital_road / cross_day_holdout</text>
+<line x1="640" x2="1095" y1="740.000" y2="740.000" stroke="#e2e8f0"/>
+<text x="632" y="744.000" text-anchor="end" font-size="11">207s</text>
+<line x1="640" x2="1095" y1="680.000" y2="680.000" stroke="#e2e8f0"/>
+<text x="632" y="684.000" text-anchor="end" font-size="11">364s</text>
+<line x1="640" x2="1095" y1="620.000" y2="620.000" stroke="#e2e8f0"/>
+<text x="632" y="624.000" text-anchor="end" font-size="11">521s</text>
+<line x1="640" x2="1095" y1="637.136" y2="637.136" stroke="#2563eb" stroke-width="2"/>
+<line x1="640" x2="1095" y1="627.648" y2="627.648" stroke="#d97706" stroke-width="2"/>
+<circle cx="642.884" cy="711.703" r="2.8" fill="#111827"/>
+<circle cx="661.850" cy="719.733" r="2.8" fill="#111827"/>
+<circle cx="680.813" cy="717.821" r="2.8" fill="#111827"/>
+<circle cx="699.771" cy="707.114" r="2.8" fill="#111827"/>
+<circle cx="718.740" cy="732.352" r="2.8" fill="#111827"/>
+<circle cx="737.698" cy="730.823" r="2.8" fill="#111827"/>
+<circle cx="756.662" cy="720.115" r="2.8" fill="#111827"/>
+<circle cx="775.637" cy="723.939" r="2.8" fill="#111827"/>
+<circle cx="794.595" cy="714.762" r="2.8" fill="#111827"/>
+<circle cx="813.553" cy="710.556" r="2.8" fill="#111827"/>
+<circle cx="832.512" cy="705.202" r="2.8" fill="#111827"/>
+<circle cx="851.470" cy="710.938" r="2.8" fill="#111827"/>
+<circle cx="870.428" cy="708.644" r="2.8" fill="#111827"/>
+<circle cx="889.387" cy="687.612" r="2.8" fill="#111827"/>
+<circle cx="908.345" cy="721.263" r="2.8" fill="#111827"/>
+<circle cx="927.303" cy="717.821" r="2.8" fill="#111827"/>
+<circle cx="946.262" cy="696.789" r="2.8" fill="#111827"/>
+<circle cx="965.220" cy="702.525" r="2.8" fill="#111827"/>
+<circle cx="984.178" cy="700.613" r="2.8" fill="#111827"/>
+<circle cx="1003.137" cy="705.202" r="2.8" fill="#111827"/>
+<circle cx="1022.095" cy="699.848" r="2.8" fill="#111827"/>
+<circle cx="1041.053" cy="691.818" r="2.8" fill="#111827"/>
+<circle cx="1060.012" cy="719.733" r="2.8" fill="#111827"/>
+<circle cx="1078.970" cy="701.760" r="2.8" fill="#111827"/>
+<text x="640" y="758" text-anchor="middle" font-size="11">10-18 11:36</text>
+<text x="1095" y="758" text-anchor="middle" font-size="11">10-18 13:36</text></g></svg>

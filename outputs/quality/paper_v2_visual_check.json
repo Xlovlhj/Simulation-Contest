@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "reviewer": "root AI visual inspection",
+  "paper_pages": 19,
+  "ai_pages": 3,
+  "paper_sha256": "ebdb0c9fae3a00ee7b1e9c19fc621b485475d707510dfa8ee6abb24ec97d0ced",
+  "ai_pdf_sha256": "6166e7d4f224a73443c11d2c09c26ad49515cced99a958824c52f66165d070e1",
+  "scope": "All 19 paper page contact views inspected; final changed pages 10/11 re-inspected; all 4 figures and 3 AI pages inspected. No visible clipping, overlap or blank unintended pages. PDF uses disclosed substitute fonts.",
+  "submission_copies_identical": true
+}

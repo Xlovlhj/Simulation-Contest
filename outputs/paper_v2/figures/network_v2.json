@@ -1,0 +1,45 @@
+{
+  "figure": "outputs/paper_v2/figures/network_v2.png",
+  "figure_sha256": "53fce3636375a4f945d1eacc68c465a43a8ddc67e502b54da148d48394c3b9d8",
+  "pixel_dimensions": [
+    1800,
+    1350
+  ],
+  "source_sha256": {
+    "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff",
+    "outputs/governance_v2/route_choice_explanation.json": "99043894b163e19b3a9e6f0b18592eee934f06828a736d6c3c2fc4ee594cbd39",
+    "research/parameter_audit/scenario_basis_v2.json": "ae0ae6461e49496ae0a2fae2b8298636dca2b30fbaa3b44ca6f9fd1716658708"
+  },
+  "values": {
+    "external_edges": 305,
+    "total_connections": 310,
+    "allowed_turns": 308,
+    "event_edge_ids": [
+      "e000184",
+      "e000083",
+      "e000084",
+      "e000085",
+      "e000086",
+      "e000087",
+      "e000088",
+      "e000089",
+      "e000090",
+      "e000091",
+      "e000092",
+      "e000093",
+      "e000094",
+      "e000095",
+      "e000096",
+      "e000097",
+      "e000098",
+      "e000099",
+      "e000100"
+    ],
+    "event_model_length_m": 278.665139,
+    "shared_event_length_m": 209.930048,
+    "avoidable_event_length_m": 68.735091,
+    "alternative_extra_distance_m": 717.1261470000001
+  },
+  "interpretation": "Directed observed subgraph. Endpoint is a research rendezvous, not a verified hospital entrance. Event covers all 19 observed step edges.",
+  "builder_sha256": "33f6c597d4113067c2b79b3d26db6702eaabfac8fb86898b7b4a6fa532e1319f"
+}

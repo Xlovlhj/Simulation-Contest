@@ -1,0 +1,43 @@
+[
+  {
+    "file": "shenzhen_history/LINKS.mat",
+    "url": "https://ndownloader.figshare.com/files/13276874",
+    "requested_at_utc": "2026-10-17T05:53:36.830352+00:00",
+    "status": 200,
+    "http_date": "Sat, 17 Oct 2026 05:53:38 GMT",
+    "content_type": "application/octet-stream",
+    "bytes": 23577,
+    "sha256": "66ab83f9d735914794ddf27bd25b417176241c10bed93607af6da5a83305c02d"
+  },
+  {
+    "file": "shenzhen_history/NODES.mat",
+    "url": "https://ndownloader.figshare.com/files/13276880",
+    "requested_at_utc": "2026-10-17T05:53:36.830788+00:00",
+    "status": 200,
+    "http_date": "Sat, 17 Oct 2026 05:53:38 GMT",
+    "content_type": "application/octet-stream",
+    "bytes": 131590,
+    "sha256": "7f0550fe08a4af3e37fa0acab4e51136202aef4791e18f8f953f0d398c86a273"
+  },
+  {
+    "file": "shenzhen_history/SPEEDS.mat",
+    "url": "https://ndownloader.figshare.com/files/14579981",
+    "requested_at_utc": "2026-10-17T05:53:36.831173+00:00",
+    "status": 200,
+    "http_date": "Sat, 17 Oct 2026 05:53:38 GMT",
+    "content_type": "application/octet-stream",
+    "bytes": 9628693,
+    "sha256": "e674c7bdbaa3915b17521be5aa256443b87198c86c4ba163e852c26b852b1d46"
+  },
+  {
+    "file": "hong_kong/centerline_sample.geojson",
+    "url": "https://portal.csdi.gov.hk/server/rest/services/common/td_rcd_1638949160594_2844/FeatureServer/10/query?where=ROUTE_ID+IN+%28%27103495%27%2C%27105500%27%2C%27105543%27%2C%27106257%27%2C%27106550%27%2C%27106551%27%2C%27106710%27%2C%27106816%27%2C%27106821%27%2C%27106881%27%2C%27107168%27%2C%27261023%27%2C%27265785%27%2C%27284026%27%2C%27284046%27%2C%27284047%27%2C%27284081%27%2C%27284167%27%2C%27284168%27%2C%27284170%27%29&outFields=%2A&outSR=4326&returnGeometry=true&resultRecordCount=100&f=geojson",
+    "requested_at_utc": "2026-10-17T05:53:36.831519+00:00",
+    "status": 200,
+    "http_date": "Sat, 17 Oct 2026 05:53:38 GMT",
+    "content_type": "application/geo+json;charset=UTF-8",
+    "bytes": 113,
+    "sha256": "b6d0819923f24325b2dbe4bf74521a2591fab7dd7a6c84c7188b5349163cfe7b",
+    "error": "{'code': 400, 'message': 'Unable to complete operation.', 'details': ['Unable to perform query operation.']}"
+  }
+]

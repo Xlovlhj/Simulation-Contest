@@ -1,0 +1,1263 @@
+{
+  "artifacts": {
+    "eta_holdout_timeseries.svg": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/eta_holdout_timeseries.svg",
+      "sha256": "9c9d60a1cf4edd9c0032106d562fcebd1a010fae05c3a24063ac28ea36baf279"
+    },
+    "eta_mae.svg": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/eta_mae.svg",
+      "sha256": "ff4bec9f16b60b511a165721bfd08d5caa25bc5b746df3005b450a28cd274a27"
+    },
+    "metrics.csv": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/metrics.csv",
+      "sha256": "2b7f2d9732d5cdc0db0f4c35e394d1e6d0df8ced23bd797e43816dc56756fd15"
+    },
+    "model.json": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/model.json",
+      "sha256": "6423e1d7f1581f1076145e4f894d0b282dfc2cd2ce309c8ac3d873207a04a32b"
+    },
+    "predictions.csv": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/predictions.csv",
+      "sha256": "86ba02603150b769d6c84aa0c7278bbac30f29b4e3d7c9b65bc7d66d8ab316be"
+    },
+    "report.md": {
+      "path": "outputs/validation/ETA_cc5eba1e5891e909/report.md",
+      "sha256": "95f81f2cc604b1aac4d4fc2c6f27d39232342f0f3a2acf36e4f63e4464616b4c"
+    }
+  },
+  "collections": [
+    {
+      "counts": {
+        "direction": 4,
+        "traffic": 1
+      },
+      "directory": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964",
+      "finished_at": "2026-10-17T14:57:22.252+08:00",
+      "first_request_at": "2026-10-17T14:57:08.670000+08:00",
+      "last_request_at": "2026-10-17T14:57:20.429000+08:00",
+      "started_at": "2026-10-17T14:57:08.658+08:00",
+      "stop_reason": "once_complete",
+      "successes": {
+        "direction": 4,
+        "traffic": 1
+      }
+    },
+    {
+      "counts": {
+        "direction": 44,
+        "traffic": 27
+      },
+      "directory": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d",
+      "finished_at": "2026-10-17T15:51:22.320+08:00",
+      "first_request_at": "2026-10-17T14:57:33.380000+08:00",
+      "last_request_at": "2026-10-17T15:49:33.382000+08:00",
+      "started_at": "2026-10-17T14:57:33.367+08:00",
+      "stop_reason": "stop_requested",
+      "successes": {
+        "direction": 44,
+        "traffic": 27
+      }
+    },
+    {
+      "counts": {
+        "direction": 20,
+        "traffic": 12
+      },
+      "directory": "data/raw/baidu/collection_20261017T075140_567886Z_8856fc75",
+      "finished_at": "2026-10-17T16:15:00.000+08:00",
+      "first_request_at": "2026-10-17T15:51:40.580000+08:00",
+      "last_request_at": "2026-10-17T16:13:40.582000+08:00",
+      "started_at": "2026-10-17T15:51:40.568+08:00",
+      "stop_reason": "configured_deadline_reached",
+      "successes": {
+        "direction": 20,
+        "traffic": 12
+      }
+    },
+    {
+      "counts": {
+        "direction": 96,
+        "traffic": 60
+      },
+      "directory": "data/raw/baidu/collection_20261018T033636_844937Z_d7da011f",
+      "finished_at": "2026-10-18T13:36:33.000+08:00",
+      "first_request_at": "2026-10-18T11:36:36.857000+08:00",
+      "last_request_at": "2026-10-18T13:34:36.866000+08:00",
+      "started_at": "2026-10-18T11:36:36.845+08:00",
+      "stop_reason": "configured_deadline_reached",
+      "successes": {
+        "direction": 96,
+        "traffic": 60
+      }
+    }
+  ],
+  "comparison": {
+    "cross_day_holdout": {
+      "model_selection_changed": false,
+      "relative_mae_reduction_percent": -8.615672417376864,
+      "shared_affine_lower_mae": false,
+      "shared_affine_minus_median_mae_s": 17.27083333333337
+    },
+    "same_day_exploratory": {
+      "model_selection_changed": false,
+      "relative_mae_reduction_percent": 12.317081105763428,
+      "shared_affine_lower_mae": true,
+      "shared_affine_minus_median_mae_s": -14.749704624151704
+    },
+    "training": {
+      "model_selection_changed": false,
+      "relative_mae_reduction_percent": -7.843952675067499,
+      "shared_affine_lower_mae": false,
+      "shared_affine_minus_median_mae_s": 4.51844357220034
+    }
+  },
+  "data_audit": {
+    "changed_path_count": 0,
+    "duplicate_count": 4,
+    "failure_count": 0,
+    "missing_duration_count": 0,
+    "outside_bounds_count": 0,
+    "phases": {
+      "cross_day_holdout": {
+        "eligible_count": 96,
+        "per_od": {
+          "east_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 24,
+            "expected_count": 24,
+            "failure_count": 0,
+            "first_request_at": "2026-10-18T11:36:48.490000+08:00",
+            "last_request_at": "2026-10-18T13:31:49.480000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee": 24
+            },
+            "raw_count": 24,
+            "ready": true,
+            "request_span_minutes": 115.01650000015894
+          },
+          "north_to_south": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 24,
+            "expected_count": 24,
+            "failure_count": 0,
+            "first_request_at": "2026-10-18T11:36:39.919000+08:00",
+            "last_request_at": "2026-10-18T13:31:39.922000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d": 24
+            },
+            "raw_count": 24,
+            "ready": true,
+            "request_span_minutes": 115.00005000034967
+          },
+          "south_to_north": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 24,
+            "expected_count": 24,
+            "failure_count": 0,
+            "first_request_at": "2026-10-18T11:36:42.821000+08:00",
+            "last_request_at": "2026-10-18T13:31:43.209000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa": 24
+            },
+            "raw_count": 24,
+            "ready": true,
+            "request_span_minutes": 115.0064666668574
+          },
+          "west_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 24,
+            "expected_count": 24,
+            "failure_count": 0,
+            "first_request_at": "2026-10-18T11:36:45.631000+08:00",
+            "last_request_at": "2026-10-18T13:31:46.338000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a": 24
+            },
+            "raw_count": 24,
+            "ready": true,
+            "request_span_minutes": 115.01178333361943
+          }
+        },
+        "ready": true,
+        "window": {
+          "end": "2026-10-18T13:36:00+08:00",
+          "expected_samples_per_od": 24,
+          "start": "2026-10-18T11:36:00+08:00"
+        }
+      },
+      "same_day_exploratory": {
+        "eligible_count": 16,
+        "per_od": {
+          "east_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 4,
+            "expected_count": 4,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T15:56:52.358000+08:00",
+            "last_request_at": "2026-10-17T16:11:52.695000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee": 4
+            },
+            "raw_count": 4,
+            "ready": true,
+            "request_span_minutes": 15.005616664886475
+          },
+          "north_to_south": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 4,
+            "expected_count": 4,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T15:56:43.444000+08:00",
+            "last_request_at": "2026-10-17T16:11:43.503000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d": 4
+            },
+            "raw_count": 4,
+            "ready": true,
+            "request_span_minutes": 15.000983333587646
+          },
+          "south_to_north": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 4,
+            "expected_count": 4,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T15:56:46.330000+08:00",
+            "last_request_at": "2026-10-17T16:11:46.507000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa": 4
+            },
+            "raw_count": 4,
+            "ready": true,
+            "request_span_minutes": 15.00295000076294
+          },
+          "west_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 0,
+            "eligible_count": 4,
+            "expected_count": 4,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T15:56:49.322000+08:00",
+            "last_request_at": "2026-10-17T16:11:49.693000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a": 4
+            },
+            "raw_count": 4,
+            "ready": true,
+            "request_span_minutes": 15.00618333419164
+          }
+        },
+        "ready": true,
+        "window": {
+          "end": "2026-10-17T16:15:00+08:00",
+          "expected_samples_per_od": 4,
+          "start": "2026-10-17T15:55:00+08:00"
+        }
+      },
+      "training": {
+        "eligible_count": 48,
+        "per_od": {
+          "east_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 1,
+            "eligible_count": 12,
+            "expected_count": 12,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T14:57:20.429000+08:00",
+            "last_request_at": "2026-10-17T15:51:52.358000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee": 13
+            },
+            "raw_count": 13,
+            "ready": true,
+            "request_span_minutes": 54.532150002320606
+          },
+          "north_to_south": {
+            "changed_path_count": 0,
+            "duplicate_count": 1,
+            "eligible_count": 12,
+            "expected_count": 12,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T14:57:11.497000+08:00",
+            "last_request_at": "2026-10-17T15:51:43.443000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d": 13
+            },
+            "raw_count": 13,
+            "ready": true,
+            "request_span_minutes": 54.53243333498637
+          },
+          "south_to_north": {
+            "changed_path_count": 0,
+            "duplicate_count": 1,
+            "eligible_count": 12,
+            "expected_count": 12,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T14:57:14.351000+08:00",
+            "last_request_at": "2026-10-17T15:51:46.330000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa": 13
+            },
+            "raw_count": 13,
+            "ready": true,
+            "request_span_minutes": 54.53298333088557
+          },
+          "west_to_hospital_road": {
+            "changed_path_count": 0,
+            "duplicate_count": 1,
+            "eligible_count": 12,
+            "expected_count": 12,
+            "failure_count": 0,
+            "first_request_at": "2026-10-17T14:57:17.244000+08:00",
+            "last_request_at": "2026-10-17T15:51:49.322000+08:00",
+            "missing_cadence_slots": [],
+            "missing_count": 0,
+            "observed_cadence_slots": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "outside_bounds_count": 0,
+            "path_group_counts": {
+              "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a": 13
+            },
+            "raw_count": 13,
+            "ready": true,
+            "request_span_minutes": 54.53463333447774
+          }
+        },
+        "ready": true,
+        "window": {
+          "end": "2026-10-17T15:55:00+08:00",
+          "expected_samples_per_od": 12,
+          "start": "2026-10-17T14:55:00+08:00"
+        }
+      }
+    },
+    "raw_direction_count": 164,
+    "selected_direction_count": 160,
+    "source_observation_time_present_count": 0
+  },
+  "data_snapshot_id": "DATA_c6680fa324491ca5",
+  "input_hashes": {
+    "data_manifest_sha256": "b53c4a86c182e4fabdfaa4edae68b3b8716062e66947b9ac8465e0121ecfe3ec",
+    "model_sha256": "6423e1d7f1581f1076145e4f894d0b282dfc2cd2ce309c8ac3d873207a04a32b",
+    "samples_sha256": "47a8b9c6fef2918f5575ea919b3fb66fbec27fc7b4d24653bc09aa664dee7c6e",
+    "validation_source_sha256": "fd0e0771b3c2f7cd2e62bd987d867c0707b4b66c15598916acca223d2d202712"
+  },
+  "limitations": [
+    "Validation target is provider-estimated route ETA; no observed vehicle trajectories, counts or measured signal plans are available.",
+    "The ETA observation layer is fitted; SUMO lane count, demand, speed and priority rules remain uncalibrated assumptions.",
+    "Only four fixed routes and two short weekend windows are observed. Cross-day holdout also changes time of day; day and time-of-day effects cannot be separated.",
+    "Repeated five-minute estimates are serially dependent; the 96 cross-day rows are not 96 independent traffic experiments.",
+    "Both dates were already collected when this final protocol was documented. No holdout response enters the fitting objective or selection rule.",
+    "The original 30-minute same-day validation was incomplete. This report explicitly labels the available 20 minutes exploratory.",
+    "The source observation timestamp is absent; request/receive times bound API access, not the age of underlying traffic observations.",
+    "No accuracy pass threshold is asserted, and a worse-than-median affine result is retained."
+  ],
+  "metrics": {
+    "cross_day_holdout": {
+      "per_od_training_median": {
+        "bias_s": 200.45833333333334,
+        "mae_s": 200.45833333333334,
+        "max_absolute_error_s": 288.0,
+        "method": "per_od_training_median",
+        "phase": "cross_day_holdout",
+        "rmse_s": 204.29191736336512,
+        "route_pair_id": "ALL",
+        "sample_count": 96,
+        "wape_percent": 58.18115854395936
+      },
+      "physical_sumo": {
+        "bias_s": -200.60416666666666,
+        "mae_s": 200.60416666666666,
+        "max_absolute_error_s": 411.25,
+        "method": "physical_sumo",
+        "phase": "cross_day_holdout",
+        "rmse_s": 212.20134650452465,
+        "route_pair_id": "ALL",
+        "sample_count": 96,
+        "wape_percent": 58.223485306566694
+      },
+      "shared_affine_eta": {
+        "bias_s": 217.7291666666667,
+        "mae_s": 217.7291666666667,
+        "max_absolute_error_s": 273.811105116994,
+        "method": "shared_affine_eta",
+        "phase": "cross_day_holdout",
+        "rmse_s": 221.07871974040864,
+        "route_pair_id": "ALL",
+        "sample_count": 96,
+        "wape_percent": 63.19385657274158
+      }
+    },
+    "same_day_exploratory": {
+      "per_od_training_median": {
+        "bias_s": -66.125,
+        "mae_s": 119.75,
+        "max_absolute_error_s": 481.0,
+        "method": "per_od_training_median",
+        "phase": "same_day_exploratory",
+        "rmse_s": 176.1561807033747,
+        "route_pair_id": "ALL",
+        "sample_count": 16,
+        "wape_percent": 19.595009204336264
+      },
+      "physical_sumo": {
+        "bias_s": -467.1875,
+        "mae_s": 467.1875,
+        "max_absolute_error_s": 804.0,
+        "method": "physical_sumo",
+        "phase": "same_day_exploratory",
+        "rmse_s": 484.31912580962563,
+        "route_pair_id": "ALL",
+        "sample_count": 16,
+        "wape_percent": 76.44712620167724
+      },
+      "shared_affine_eta": {
+        "bias_s": -48.85416666666663,
+        "mae_s": 105.0002953758483,
+        "max_absolute_error_s": 428.91004493014896,
+        "method": "shared_affine_eta",
+        "phase": "same_day_exploratory",
+        "rmse_s": 152.95919454499102,
+        "route_pair_id": "ALL",
+        "sample_count": 16,
+        "wape_percent": 17.181476027956357
+      }
+    },
+    "training": {
+      "per_od_training_median": {
+        "bias_s": -17.270833333333332,
+        "mae_s": 57.604166666666664,
+        "max_absolute_error_s": 250.0,
+        "method": "per_od_training_median",
+        "phase": "training",
+        "rmse_s": 80.66145816518154,
+        "route_pair_id": "ALL",
+        "sample_count": 48,
+        "wape_percent": 10.244914594834933
+      },
+      "physical_sumo": {
+        "bias_s": -418.3333333333333,
+        "mae_s": 418.3333333333333,
+        "max_absolute_error_s": 615.0,
+        "method": "physical_sumo",
+        "phase": "training",
+        "rmse_s": 427.9508526591186,
+        "route_pair_id": "ALL",
+        "sample_count": 48,
+        "wape_percent": 74.40068175923524
+      },
+      "shared_affine_eta": {
+        "bias_s": 3.789561257387201e-14,
+        "mae_s": 62.122610238867004,
+        "max_absolute_error_s": 225.18889488300601,
+        "method": "shared_affine_eta",
+        "phase": "training",
+        "rmse_s": 80.19666837579086,
+        "route_pair_id": "ALL",
+        "sample_count": 48,
+        "wape_percent": 11.048520847254869
+      }
+    }
+  },
+  "model_refitted_during_evaluation": false,
+  "models": {
+    "default_eta_state": "per_od_training_median",
+    "equivalent_residual_interpretation": "Median platform ETA minus fixed hypothetical SUMO time. It aggregates unresolved route costs, signal/geometry/flow assumptions and provider estimation; it is not measured queue delay.",
+    "model_selection": "Predeclared median ETA state plus shared affine research comparator; holdout does not select or tune either.",
+    "per_od": {
+      "east_to_hospital_road": {
+        "equivalent_route_residual_s": 441.0,
+        "physical_sumo_s": 153.0,
+        "shared_affine_eta_s": 579.1810052334647,
+        "training_count": 12,
+        "training_median_s": 594.0
+      },
+      "north_to_south": {
+        "equivalent_route_residual_s": 475.25,
+        "physical_sumo_s": 217.75,
+        "shared_affine_eta_s": 700.0012679130238,
+        "training_count": 12,
+        "training_median_s": 693.0
+      },
+      "south_to_north": {
+        "equivalent_route_residual_s": 323.0,
+        "physical_sumo_s": 94.0,
+        "shared_affine_eta_s": 469.08995506985104,
+        "training_count": 12,
+        "training_median_s": 417.0
+      },
+      "west_to_hospital_road": {
+        "equivalent_route_residual_s": 365.0,
+        "physical_sumo_s": 111.0,
+        "shared_affine_eta_s": 500.811105116994,
+        "training_count": 12,
+        "training_median_s": 476.0
+      }
+    },
+    "shared_affine": {
+      "active_constraint": "interior",
+      "alpha": 1.865950002773113,
+      "beta_s": 293.6906548091784,
+      "design_rank": 2,
+      "physical_time_centered_sum_of_squares_s2": 109308.5625,
+      "training_count": 48,
+      "training_sse_s2": 308712.26969167555,
+      "uncertainty_note": "Four fixed OD predictor levels; repeated ETA samples are serially dependent. No IID confidence interval or physical-parameter identification is claimed.",
+      "unique_physical_times": 4
+    },
+    "validation_used_for_fitting": false
+  },
+  "per_od_metrics": [
+    {
+      "bias_s": -458.0,
+      "mae_s": 458.0,
+      "max_absolute_error_s": 563.0,
+      "method": "physical_sumo",
+      "phase": "training",
+      "rmse_s": 462.17727479110584,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 74.95908346972176
+    },
+    {
+      "bias_s": -31.818994766535297,
+      "mae_s": 55.272998255511766,
+      "max_absolute_error_s": 136.8189947665353,
+      "method": "shared_affine_eta",
+      "phase": "training",
+      "rmse_s": 69.68702720941778,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 9.046317226761335
+    },
+    {
+      "bias_s": -17.0,
+      "mae_s": 52.5,
+      "max_absolute_error_s": 122.0,
+      "method": "per_od_training_median",
+      "phase": "training",
+      "rmse_s": 64.28711638682617,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 8.592471358428805
+    },
+    {
+      "bias_s": -465.75,
+      "mae_s": 465.75,
+      "max_absolute_error_s": 542.25,
+      "method": "physical_sumo",
+      "phase": "training",
+      "rmse_s": 467.7563245608408,
+      "route_pair_id": "north_to_south",
+      "sample_count": 12,
+      "wape_percent": 68.14191660570593
+    },
+    {
+      "bias_s": 16.501267913023753,
+      "mae_s": 32.16708930434125,
+      "max_absolute_error_s": 100.00126791302375,
+      "method": "shared_affine_eta",
+      "phase": "training",
+      "rmse_s": 46.316395686668606,
+      "route_pair_id": "north_to_south",
+      "sample_count": 12,
+      "wape_percent": 4.706231061352049
+    },
+    {
+      "bias_s": 9.5,
+      "mae_s": 30.833333333333332,
+      "max_absolute_error_s": 93.0,
+      "method": "per_od_training_median",
+      "phase": "training",
+      "rmse_s": 44.307636663070475,
+      "route_pair_id": "north_to_south",
+      "sample_count": 12,
+      "wape_percent": 4.511094854913436
+    },
+    {
+      "bias_s": -350.0833333333333,
+      "mae_s": 350.0833333333333,
+      "max_absolute_error_s": 468.0,
+      "method": "physical_sumo",
+      "phase": "training",
+      "rmse_s": 357.15834490227627,
+      "route_pair_id": "south_to_north",
+      "sample_count": 12,
+      "wape_percent": 78.83280165134171
+    },
+    {
+      "bias_s": 25.00662173651771,
+      "mae_s": 67.61331835661701,
+      "max_absolute_error_s": 112.08995506985104,
+      "method": "shared_affine_eta",
+      "phase": "training",
+      "rmse_s": 75.02715632508561,
+      "route_pair_id": "south_to_north",
+      "sample_count": 12,
+      "wape_percent": 15.22536724112224
+    },
+    {
+      "bias_s": -27.083333333333332,
+      "mae_s": 58.916666666666664,
+      "max_absolute_error_s": 145.0,
+      "method": "per_od_training_median",
+      "phase": "training",
+      "rmse_s": 75.74463677383369,
+      "route_pair_id": "south_to_north",
+      "sample_count": 12,
+      "wape_percent": 13.267029461437417
+    },
+    {
+      "bias_s": -399.5,
+      "mae_s": 399.5,
+      "max_absolute_error_s": 615.0,
+      "method": "physical_sumo",
+      "phase": "training",
+      "rmse_s": 415.45376798548034,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 78.25661116552399
+    },
+    {
+      "bias_s": -9.688894883006014,
+      "mae_s": 93.43703503899799,
+      "max_absolute_error_s": 225.18889488300601,
+      "method": "shared_affine_eta",
+      "phase": "training",
+      "rmse_s": 114.43538795926403,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 18.303043102644075
+    },
+    {
+      "bias_s": -34.5,
+      "mae_s": 88.16666666666667,
+      "max_absolute_error_s": 250.0,
+      "method": "per_od_training_median",
+      "phase": "training",
+      "rmse_s": 119.12948137775693,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 12,
+      "wape_percent": 17.270649689846557
+    },
+    {
+      "bias_s": -407.0,
+      "mae_s": 407.0,
+      "max_absolute_error_s": 522.0,
+      "method": "physical_sumo",
+      "phase": "same_day_exploratory",
+      "rmse_s": 412.79292629598194,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 72.67857142857143
+    },
+    {
+      "bias_s": 19.181005233464703,
+      "mae_s": 67.09050261673235,
+      "max_absolute_error_s": 95.8189947665353,
+      "method": "shared_affine_eta",
+      "phase": "same_day_exploratory",
+      "rmse_s": 71.53258671239423,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 11.980446895845063
+    },
+    {
+      "bias_s": 34.0,
+      "mae_s": 74.5,
+      "max_absolute_error_s": 93.0,
+      "method": "per_od_training_median",
+      "phase": "same_day_exploratory",
+      "rmse_s": 76.84399781375251,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 13.303571428571429
+    },
+    {
+      "bias_s": -454.25,
+      "mae_s": 454.25,
+      "max_absolute_error_s": 491.25,
+      "method": "physical_sumo",
+      "phase": "same_day_exploratory",
+      "rmse_s": 455.38726651060415,
+      "route_pair_id": "north_to_south",
+      "sample_count": 4,
+      "wape_percent": 67.59672619047619
+    },
+    {
+      "bias_s": 28.001267913023753,
+      "mae_s": 32.50063395651188,
+      "max_absolute_error_s": 74.00126791302375,
+      "method": "shared_affine_eta",
+      "phase": "same_day_exploratory",
+      "rmse_s": 42.64470664381376,
+      "route_pair_id": "north_to_south",
+      "sample_count": 4,
+      "wape_percent": 4.836403862576172
+    },
+    {
+      "bias_s": 21.0,
+      "mae_s": 29.5,
+      "max_absolute_error_s": 67.0,
+      "method": "per_od_training_median",
+      "phase": "same_day_exploratory",
+      "rmse_s": 38.41223763333763,
+      "route_pair_id": "north_to_south",
+      "sample_count": 4,
+      "wape_percent": 4.3898809523809526
+    },
+    {
+      "bias_s": -645.0,
+      "mae_s": 645.0,
+      "max_absolute_error_s": 804.0,
+      "method": "physical_sumo",
+      "phase": "same_day_exploratory",
+      "rmse_s": 651.6636402316766,
+      "route_pair_id": "south_to_north",
+      "sample_count": 4,
+      "wape_percent": 87.28010825439783
+    },
+    {
+      "bias_s": -269.91004493014896,
+      "mae_s": 269.91004493014896,
+      "max_absolute_error_s": 428.91004493014896,
+      "method": "shared_affine_eta",
+      "phase": "same_day_exploratory",
+      "rmse_s": 285.46791825736744,
+      "route_pair_id": "south_to_north",
+      "sample_count": 4,
+      "wape_percent": 36.52368672938416
+    },
+    {
+      "bias_s": -322.0,
+      "mae_s": 322.0,
+      "max_absolute_error_s": 481.0,
+      "method": "per_od_training_median",
+      "phase": "same_day_exploratory",
+      "rmse_s": 335.14847456015667,
+      "route_pair_id": "south_to_north",
+      "sample_count": 4,
+      "wape_percent": 43.572395128552095
+    },
+    {
+      "bias_s": -362.5,
+      "mae_s": 362.5,
+      "max_absolute_error_s": 432.0,
+      "method": "physical_sumo",
+      "phase": "same_day_exploratory",
+      "rmse_s": 368.53629400643837,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 76.55755015839493
+    },
+    {
+      "bias_s": 27.311105116993986,
+      "mae_s": 50.5,
+      "max_absolute_error_s": 135.81110511699399,
+      "method": "shared_affine_eta",
+      "phase": "same_day_exploratory",
+      "rmse_s": 71.82371796775418,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 10.665258711721226
+    },
+    {
+      "bias_s": 2.5,
+      "mae_s": 53.0,
+      "max_absolute_error_s": 111.0,
+      "method": "per_od_training_median",
+      "phase": "same_day_exploratory",
+      "rmse_s": 66.47555941848101,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 4,
+      "wape_percent": 11.19324181626188
+    },
+    {
+      "bias_s": -201.33333333333334,
+      "mae_s": 201.33333333333334,
+      "max_absolute_error_s": 273.0,
+      "method": "physical_sumo",
+      "phase": "cross_day_holdout",
+      "rmse_s": 204.5641708608817,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 56.820319849482594
+    },
+    {
+      "bias_s": 224.84767190013136,
+      "mae_s": 224.84767190013136,
+      "max_absolute_error_s": 273.1810052334647,
+      "method": "shared_affine_eta",
+      "phase": "cross_day_holdout",
+      "rmse_s": 227.74517436775255,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 63.45653957670688
+    },
+    {
+      "bias_s": 239.66666666666666,
+      "mae_s": 239.66666666666666,
+      "max_absolute_error_s": 288.0,
+      "method": "per_od_training_median",
+      "phase": "cross_day_holdout",
+      "rmse_s": 242.38708711480487,
+      "route_pair_id": "east_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 67.63875823142051
+    },
+    {
+      "bias_s": -297.9166666666667,
+      "mae_s": 297.9166666666667,
+      "max_absolute_error_s": 411.25,
+      "method": "physical_sumo",
+      "phase": "cross_day_holdout",
+      "rmse_s": 300.5641570447148,
+      "route_pair_id": "north_to_south",
+      "sample_count": 24,
+      "wape_percent": 57.773109243697476
+    },
+    {
+      "bias_s": 184.3346012463571,
+      "mae_s": 184.3346012463571,
+      "max_absolute_error_s": 247.00126791302375,
+      "method": "shared_affine_eta",
+      "phase": "cross_day_holdout",
+      "rmse_s": 188.58344953594334,
+      "route_pair_id": "north_to_south",
+      "sample_count": 24,
+      "wape_percent": 35.746852213256055
+    },
+    {
+      "bias_s": 177.33333333333334,
+      "mae_s": 177.33333333333334,
+      "max_absolute_error_s": 240.0,
+      "method": "per_od_training_median",
+      "phase": "cross_day_holdout",
+      "rmse_s": 181.74593072014937,
+      "route_pair_id": "north_to_south",
+      "sample_count": 24,
+      "wape_percent": 34.38914027149321
+    },
+    {
+      "bias_s": -130.75,
+      "mae_s": 130.75,
+      "max_absolute_error_s": 171.0,
+      "method": "physical_sumo",
+      "phase": "cross_day_holdout",
+      "rmse_s": 131.6564342015485,
+      "route_pair_id": "south_to_north",
+      "sample_count": 24,
+      "wape_percent": 58.17575083426029
+    },
+    {
+      "bias_s": 244.33995506985104,
+      "mae_s": 244.33995506985104,
+      "max_absolute_error_s": 267.08995506985104,
+      "method": "shared_affine_eta",
+      "phase": "cross_day_holdout",
+      "rmse_s": 244.82619919078002,
+      "route_pair_id": "south_to_north",
+      "sample_count": 24,
+      "wape_percent": 108.71633151050102
+    },
+    {
+      "bias_s": 192.25,
+      "mae_s": 192.25,
+      "max_absolute_error_s": 215.0,
+      "method": "per_od_training_median",
+      "phase": "cross_day_holdout",
+      "rmse_s": 192.86761435416435,
+      "route_pair_id": "south_to_north",
+      "sample_count": 24,
+      "wape_percent": 85.53948832035596
+    },
+    {
+      "bias_s": -172.41666666666666,
+      "mae_s": 172.41666666666666,
+      "max_absolute_error_s": 233.0,
+      "method": "physical_sumo",
+      "phase": "cross_day_holdout",
+      "rmse_s": 174.9254603157204,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 60.8350485151426
+    },
+    {
+      "bias_s": 217.39443845032733,
+      "mae_s": 217.39443845032733,
+      "max_absolute_error_s": 273.811105116994,
+      "method": "shared_affine_eta",
+      "phase": "cross_day_holdout",
+      "rmse_s": 219.38949744998135,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 76.70488860346744
+    },
+    {
+      "bias_s": 192.58333333333334,
+      "mae_s": 192.58333333333334,
+      "max_absolute_error_s": 249.0,
+      "method": "per_od_training_median",
+      "phase": "cross_day_holdout",
+      "rmse_s": 194.83262047203493,
+      "route_pair_id": "west_to_hospital_road",
+      "sample_count": 24,
+      "wape_percent": 67.95060276389297
+    }
+  ],
+  "physical_baseline": {
+    "assumptions": "Fixed 307-edge hypothetical SUMO S1 network, six OD demands at 30-second intervals. Four matching OD means are predictors, not observed travel times.",
+    "directory": "outputs/final_experiments/runs/S1_d30",
+    "field": "completed_travel_time_mean_s",
+    "network": {
+      "connection_count": 310,
+      "directed_edge_set_preserved": true,
+      "edge_count": 307,
+      "internal_edge_count": 316,
+      "internal_movements_preserved": true,
+      "junction_types": {
+        "dead_end": 8,
+        "internal": 6,
+        "priority": 292
+      },
+      "node_count": 300,
+      "observed_connection_set_preserved": true
+    },
+    "physics_valid": true,
+    "simulation_config": {
+      "accel_m_s2": 2.6,
+      "assumptions": [
+        "The same observed directed topology and unchanged SUMO vehicle/junction parameters are used in every comparison; the microscopic model is not calibrated field truth.",
+        "The six original OD release schedules are independent of the number of candidate routes. All request IDs, original release times and vehicle properties are fixed within paired groups.",
+        "A selects a same-endpoint candidate at release using current known external-edge speed costs. The default participates, ties retain default, and future event recovery or future tasks are not consulted.",
+        "B adds bounded source admission after task publication. It acts only on ordinary requests released at/after the task and not yet submitted to SUMO whose chosen path intersects the task's currently remaining corridor.",
+        "Task corridor updates use current TraCI vehicle route position; before task insertion its already assigned route is used. Each ordinary request waits at most 45 seconds at source, and task-related control expires 180 seconds after release.",
+        "Source admission authority is an explicit hypothetical governance action. All source control and SUMO insertion waiting remain charged from the unchanged original release time.",
+        "Task and ordinary vehicles share exactly one vType and the same road permissions. There is no special speed, red-light override, lane priority, repositioning or vehicle removal.",
+        "Slow-event speeds and durations are predeclared assumptions, not observed accidents or measured capacity. All profile results, including no benefit or harm, are retained.",
+        "The fixed experiment anchor maps simulation seconds to a declared wall clock only; the counterfactual traffic demand and event are not a reconstruction of the live collection window.",
+        "A fitted ETA observation layer, if supplied separately, is a statistical reference and does not identify or validate the microscopic parameters."
+      ],
+      "binary_timeout_s": 180,
+      "decel_m_s2": 4.5,
+      "departure_duration_s": 1200,
+      "departure_interval_s": 30,
+      "driver_imperfection": 0,
+      "fcd_period_s": 5,
+      "input_routes": "data/processed/baidu/survey_routes.json",
+      "lane_count": 1,
+      "min_gap_m": 2.5,
+      "model_status": "uncalibrated_technical_baseline",
+      "reaction_time_s": 1,
+      "seed": 20261017,
+      "simulation_duration_s": 1800,
+      "speed_limit_kmh": 30,
+      "step_length_s": 1,
+      "study_area_id": "shanghai_ruijin",
+      "vehicle_length_m": 5
+    },
+    "source_files": [
+      {
+        "bytes": 13266,
+        "path": "outputs/final_experiments/runs/S1_d30/metrics.json",
+        "sha256": "180f28d5f39f569694db3232b122d42ebd02ff5197d2d25a86f5e1e461e37033"
+      },
+      {
+        "bytes": 13818,
+        "path": "outputs/final_experiments/runs/S1_d30/run_manifest.json",
+        "sha256": "4c321f513b592076509e59204d81cc9d64cf8040b05512828aed2a1b4a86f69f"
+      },
+      {
+        "bytes": 5315,
+        "path": "outputs/final_experiments/runs/S1_d30/demand.rou.xml",
+        "sha256": "c6928b19b4d1be2abd50a13f398b97ec58d8704be83721c6e60620f0c9a39252"
+      },
+      {
+        "bytes": 267032,
+        "path": "outputs/final_experiments/runs/S1_d30/network.net.xml",
+        "sha256": "4ba138bccc2d7f6a3814e942d5e0cebf1a1af67f2183b3bd357b856093af9837"
+      },
+      {
+        "bytes": 27717,
+        "path": "outputs/final_experiments/runs/S1_d30/route_manifest.json",
+        "sha256": "98ea614851df6b176313af05b44fa99d8fb24bd2c655d323ecfb82a33b869bae"
+      },
+      {
+        "bytes": 118257,
+        "path": "outputs/final_experiments/runs/S1_d30/tripinfo.xml",
+        "sha256": "55e9568fce3a5f560d604ee8889092803cdf6cbfdb37a1e8c43aed97ed521e51"
+      }
+    ],
+    "time_definition": "Actual vehicle departure to arrival; scheduled-release queue delay excluded.",
+    "values_s": {
+      "east_to_hospital_road": 153.0,
+      "north_to_south": 217.75,
+      "south_to_north": 94.0,
+      "west_to_hospital_road": 111.0
+    }
+  },
+  "physical_mechanism_calibrated": false,
+  "protocol": {
+    "bucket_minutes": 5,
+    "coordinate_system": "bd09ll",
+    "protocol_id": "S1_ETA_FINAL_V1_20261018",
+    "protocol_notes": [
+      "These are project analysis windows, not competition minimum collection durations.",
+      "The original 17 October 30-minute holdout remained incomplete. Its available first 20 minutes are explicitly exploratory here; 18 October never fills its missing buckets.",
+      "This final protocol was documented after collection. It is not a prospectively registered experiment; held-out outcomes are excluded from fitting and model selection.",
+      "Deduplicate by OD and global five-minute wall-clock bucket, keeping the first API-success response. A later duplicate never repairs missing ETA or geometry in that first success.",
+      "The cross-day window starts off the wall-clock bucket grid: its 24 expected samples are cadence slots, not a claim that every partially intersected wall-clock bucket is sampled.",
+      "Default identifiable ETA state is the per-OD training median. The nonnegative shared affine ETA model is a research comparator; holdout results do not choose the deployed model.",
+      "SUMO mechanism parameters remain assumptions. Platform ETA is a route estimate, not observed vehicle travel time, flow or signal timing."
+    ],
+    "study_area_id": "shanghai_ruijin",
+    "windows": {
+      "cross_day_holdout": {
+        "end": "2026-10-18T13:36:00+08:00",
+        "expected_samples_per_od": 24,
+        "start": "2026-10-18T11:36:00+08:00"
+      },
+      "same_day_exploratory": {
+        "end": "2026-10-17T16:15:00+08:00",
+        "expected_samples_per_od": 4,
+        "start": "2026-10-17T15:55:00+08:00"
+      },
+      "training": {
+        "end": "2026-10-17T15:55:00+08:00",
+        "expected_samples_per_od": 12,
+        "start": "2026-10-17T14:55:00+08:00"
+      }
+    }
+  },
+  "real_vehicle_validation_completed": false,
+  "run_dir": "outputs/validation/ETA_cc5eba1e5891e909",
+  "run_id": "ETA_cc5eba1e5891e909",
+  "schema_version": 1,
+  "status": "eta_layer_evaluated",
+  "time_mapping": {
+    "conditional_display_only": "t_display = declared_real_anchor + t_sim is a visualization convention, not an observed trajectory alignment.",
+    "data_time": "Actual +08:00 request and receive clock; eligibility uses request plus receipt before window end.",
+    "simulation_time": "SUMO scenario seconds are a separate synthetic clock. No observed incident or vehicle is reconstructed."
+  }
+}

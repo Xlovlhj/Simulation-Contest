@@ -1,0 +1,4 @@
+interval_s,relative_assumed_demand,planned,departed,arrived,not_departed,unfinished_on_network,completion_rate,completed_travel_time_mean_s,total_in_network_vehicle_time_s,total_departure_wait_time_s,total_system_vehicle_time_s,collisions,teleports,discarded,physics_valid,quality_reasons,run_directory
+60,1.0,120,120,120,0,0,1.0,166.33333333333334,19960.0,40.0,20000.0,0,0,0,True,,outputs/baseline/PRE_20261017T072822_097085Z_interval60
+30,2.0,240,240,240,0,0,1.0,167.09583333333333,40103.0,80.0,40183.0,0,0,0,True,,outputs/baseline/PRE_20261017T072822_097085Z_interval30
+15,4.0,480,480,480,0,0,1.0,167.55208333333334,80425.0,160.0,80585.0,0,0,0,True,,outputs/baseline/PRE_20261017T072822_097085Z_interval15

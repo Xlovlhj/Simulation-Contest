@@ -1,0 +1,10 @@
+# Install into this workspace's .venv only. Runtime model is otherwise stdlib.
+eclipse-sumo==1.28.0
+sumo-data==1.28.0
+# Document generation and browser-based MP4 recording; not needed to view HTML.
+python-docx==1.2.0
+lxml==6.1.3
+typing_extensions==4.16.0
+Pillow==13.0.0
+imageio-ffmpeg==0.6.0
+websocket-client==1.9.2

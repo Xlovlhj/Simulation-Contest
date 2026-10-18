@@ -1,0 +1,563 @@
+{
+  "application": {
+    "baseline_required": "Use each event edge effective operating speed from the fitted SUMO baseline being compared, not a new 30km/h network",
+    "do_not_use": "Do not set all edges to Q25(u)/3.6 or Q10(u)/3.6 as purported observed speed limits; do not calibrate eta and then apply the full observed delay again.",
+    "formula": "event_speed_m_s[edge] = fitted_baseline_effective_speed_m_s[edge] * preset.speed_multiplier",
+    "limitations": "The ratio transports observed variability into one chosen effective operating mechanism. It does not identify whether real variability was due to demand, signals, weather, or capacity loss.",
+    "preserve_pairs": [
+      "same demands and release times",
+      "same initial simulation state",
+      "same events and vehicle physics across fixed/A/B",
+      "no extra vehicles on alternate routes",
+      "all source control wait remains in system time"
+    ],
+    "restore": "Restore the same per-edge baseline speeds after the designed window"
+  },
+  "created_date": "2026-10-18",
+  "duration_design": {
+    "actual_incident_duration_identified": false,
+    "basis": "one/two/three 300-second observation cadences as explicit experimental design scales, not estimated observed incident durations",
+    "interpretation": "The initial two low-state samples span about 325s of request clock and are left-censored; another is isolated. No independent source observation timestamp or continuous event onset/recovery was observed.",
+    "low_state_threshold": "training u <= Q25(u)",
+    "main_duration_s": 600,
+    "sensitivity_duration_s": [
+      300,
+      900
+    ],
+    "source_cadence_s": 300,
+    "training_low_state_runs": [
+      {
+        "continuous_low_state_between_queries_verified": false,
+        "first_request_at": "2026-10-17T14:57:17.244+08:00",
+        "last_request_at": "2026-10-17T15:02:42.346+08:00",
+        "left_censored_by_training_window": true,
+        "request_time_span_s": 325.102,
+        "right_censored_by_training_window": false,
+        "sample_ids": [
+          "collection_20261017T065708_658611Z_6fd29964/line_000004",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000010"
+        ]
+      },
+      {
+        "continuous_low_state_between_queries_verified": false,
+        "first_request_at": "2026-10-17T15:27:42.404+08:00",
+        "last_request_at": "2026-10-17T15:27:42.404+08:00",
+        "left_censored_by_training_window": false,
+        "request_time_span_s": 0.0,
+        "right_censored_by_training_window": false,
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000043"
+        ]
+      }
+    ]
+  },
+  "estimator": {
+    "duration_quantiles_s": {
+      "median": 165.5,
+      "p75": 202.25,
+      "p90": 234.8
+    },
+    "effective_speed_formula": "u_i_kmh = 3.6 * step_distance_m / step_duration_s",
+    "maximum_speed_kmh": 7.584732824427481,
+    "median_speed_kmh": 6.004118592084124,
+    "minimum_speed_kmh": 3.9272727272727272,
+    "n": 12,
+    "p10_speed_kmh": 4.2317143639850245,
+    "p25_speed_kmh": 4.947344420600858,
+    "quantile_method": "type 7, interpolate at (n-1)*p",
+    "quantile_reciprocal_note": "The interpolated quantile of 1/t is not exactly 1/interpolated_quantile(t); use this declared speed-quantile formula consistently.",
+    "reference": "median of twelve eligible training effective step speeds",
+    "speed_multiplier_formula": "rho_q = Q_q(u_training) / Q_0.5(u_training)"
+  },
+  "event_geometry": {
+    "coordinate_system": "bd09ll",
+    "direction": "northbound",
+    "edge_ids": [
+      "e000184",
+      "e000083",
+      "e000084",
+      "e000085",
+      "e000086",
+      "e000087",
+      "e000088",
+      "e000089",
+      "e000090",
+      "e000091",
+      "e000092",
+      "e000093",
+      "e000094",
+      "e000095",
+      "e000096",
+      "e000097",
+      "e000098",
+      "e000099",
+      "e000100"
+    ],
+    "from_coordinate": [
+      121.473142,
+      31.214526
+    ],
+    "geometry_signature": "38edf23a501718351011833166b74c27a12a6396012976c7eb473fa6c8fcad0a",
+    "mapping": "all directed step segments match exactly; no nearest-road interpolation",
+    "model_length_m": 278.665139,
+    "normalization": "six decimal places, directed consecutive geometry pairs",
+    "platform_distance_m": 276.0,
+    "road_name": "瑞金二路",
+    "route_pair_id": "west_to_hospital_road",
+    "step_index": 1,
+    "to_coordinate": [
+      121.472551,
+      31.216977
+    ]
+  },
+  "holdout_used_for_range_or_model_selection": false,
+  "method_id": "TRAIN_STEP_GEOMETRY_QUANTILE_RATIO_V2",
+  "observation_snapshot_id": "OBS2_5e1de1d99746ca6d",
+  "presets": [
+    {
+      "duration_s": 600,
+      "id": "step_q25",
+      "interpretation": "data-anchored relative operating constraint, not a physical speed-limit observation",
+      "label": "training lower-quartile effective-operation perturbation",
+      "quantile": 0.25,
+      "speed_multiplier": 0.8239917890901547
+    },
+    {
+      "duration_s": 600,
+      "id": "step_q10",
+      "interpretation": "stronger data-anchored relative operating constraint, not a physical speed-limit observation",
+      "label": "training lower-decile effective-operation perturbation",
+      "quantile": 0.1,
+      "speed_multiplier": 0.7048019287234182
+    }
+  ],
+  "schema_version": 2,
+  "scope_notes": [
+    "Platform step ETA includes unresolved junction and terminal effects and is not an observed point speed.",
+    "The twelve observations are serially related platform estimates, not independent measured vehicle trajectories.",
+    "Step-duration fractions of route ETA are nearly fixed; route and steps must not be counted as independent fitting targets.",
+    "This design chooses a northbound path segment from collected geometry; it does not claim a real incident occurred there.",
+    "No holdout response or A/B experimental result is used to choose percentiles, the segment, or duration.",
+    "Quantile levels, event timing, and control rules remain explicit scenario-design choices; numerical magnitudes now have traceable training-data anchors."
+  ],
+  "source_files": [
+    {
+      "path": "data/processed/identification_v2/route_steps.csv",
+      "sha256": "94910d145b74920d0aff447cb847a33f43945b593fbdff19e7e417a1f761d3e8"
+    },
+    {
+      "path": "data/processed/identification_v2/training_summary.json",
+      "sha256": "cc64ff1cec4061ec7a698d8e01caac6a9c75eca0458199199de343dc36dd0209"
+    },
+    {
+      "path": "data/processed/identification_v2/manifest.json",
+      "sha256": "65b83bf9873d886102430a6c9cfa6adbf5c5737025e3a7a7de5f1f26e203de19"
+    },
+    {
+      "path": "config/final_validation.json",
+      "sha256": "b74b6d0736d60976a74159eeceb9793e237bfcd3cb846708846585f3c0bc8bad"
+    },
+    {
+      "path": "data/processed/baidu/route_catalog_v1.json",
+      "sha256": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964/000004_direction_west_to_hospital_road.json",
+      "sha256": "8d447274abe49658674f05f55a1f4864f2bd4092647d690a55166dce73919617"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000010_direction_west_to_hospital_road.json",
+      "sha256": "b95a88b971f0ce909a3f73d234f7453886a1b656da79bf0f32ef97182a51794c"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000017_direction_west_to_hospital_road.json",
+      "sha256": "3b54988656b29dc91f18d8d972ff5010daea43cfe6bce7d21ceb31299efde411"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000023_direction_west_to_hospital_road.json",
+      "sha256": "ab3e68a84b918a1fcf29e1ffde996ac3c4afa70a53482e15395f406a3c295e2c"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000030_direction_west_to_hospital_road.json",
+      "sha256": "0449461e9edb3406701b6e41c4abcd425762e3f1adaf90f298d4f9c883124e36"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000036_direction_west_to_hospital_road.json",
+      "sha256": "486886b17168b1b4b2a86fe5b1a09d4c73a65984f6e7db9180689d6f21814331"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000043_direction_west_to_hospital_road.json",
+      "sha256": "e4b1100d5e77dc9bb2c50fd4fc1ff48a4b90a1b1cf89bd248425f200a5b59c2c"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000049_direction_west_to_hospital_road.json",
+      "sha256": "19b1362f56594055d2b91cdde9e3ea4a57ee719685db5fa858b6e2273be9deb5"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000056_direction_west_to_hospital_road.json",
+      "sha256": "b71e9fd6c81852902a0ef7dbec605cee1b4166a7aa28d91dd81e14485c2d883e"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000062_direction_west_to_hospital_road.json",
+      "sha256": "fe1c9fedd7a26deba61bca0efb96f8da2329e9cefc8312362496f9763e18242e"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000069_direction_west_to_hospital_road.json",
+      "sha256": "7502e40e3d2f75b657ae1eb23c391bbcbdf28de25a2e37bf16335ae67123d58a"
+    },
+    {
+      "path": "data/raw/baidu/collection_20261017T075140_567886Z_8856fc75/000004_direction_west_to_hospital_road.json",
+      "sha256": "99360197f9200587412b6386a2cb0874e201b7911ceee3f69d342705932c4d07"
+    }
+  ],
+  "source_observations": [
+    {
+      "effective_step_speed_kmh": 3.9272727272727272,
+      "low_state_q25": true,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 253.0,
+      "received_at": "2026-10-17T14:57:19.359+08:00",
+      "requested_at": "2026-10-17T14:57:17.244+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964/000004_direction_west_to_hospital_road.json",
+      "response_sha256": "8d447274abe49658674f05f55a1f4864f2bd4092647d690a55166dce73919617",
+      "sample_id": "collection_20261017T065708_658611Z_6fd29964/line_000004"
+    },
+    {
+      "effective_step_speed_kmh": 4.264377682403434,
+      "low_state_q25": true,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 233.0,
+      "received_at": "2026-10-17T15:02:44.096+08:00",
+      "requested_at": "2026-10-17T15:02:42.346+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000010_direction_west_to_hospital_road.json",
+      "response_sha256": "b95a88b971f0ce909a3f73d234f7453886a1b656da79bf0f32ef97182a51794c",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000010"
+    },
+    {
+      "effective_step_speed_kmh": 5.949700598802395,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 167.0,
+      "received_at": "2026-10-17T15:07:44.085+08:00",
+      "requested_at": "2026-10-17T15:07:42.346+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000017_direction_west_to_hospital_road.json",
+      "response_sha256": "3b54988656b29dc91f18d8d972ff5010daea43cfe6bce7d21ceb31299efde411",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000017"
+    },
+    {
+      "effective_step_speed_kmh": 6.171428571428571,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 161.0,
+      "received_at": "2026-10-17T15:12:44.105+08:00",
+      "requested_at": "2026-10-17T15:12:42.346+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000023_direction_west_to_hospital_road.json",
+      "response_sha256": "ab3e68a84b918a1fcf29e1ffde996ac3c4afa70a53482e15395f406a3c295e2c",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000023"
+    },
+    {
+      "effective_step_speed_kmh": 5.175,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 192.0,
+      "received_at": "2026-10-17T15:17:44.166+08:00",
+      "requested_at": "2026-10-17T15:17:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000030_direction_west_to_hospital_road.json",
+      "response_sha256": "0449461e9edb3406701b6e41c4abcd425762e3f1adaf90f298d4f9c883124e36",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000030"
+    },
+    {
+      "effective_step_speed_kmh": 5.844705882352941,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 170.0,
+      "received_at": "2026-10-17T15:22:44.155+08:00",
+      "requested_at": "2026-10-17T15:22:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000036_direction_west_to_hospital_road.json",
+      "response_sha256": "486886b17168b1b4b2a86fe5b1a09d4c73a65984f6e7db9180689d6f21814331",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000036"
+    },
+    {
+      "effective_step_speed_kmh": 4.228085106382979,
+      "low_state_q25": true,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 235.0,
+      "received_at": "2026-10-17T15:27:44.141+08:00",
+      "requested_at": "2026-10-17T15:27:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000043_direction_west_to_hospital_road.json",
+      "response_sha256": "e4b1100d5e77dc9bb2c50fd4fc1ff48a4b90a1b1cf89bd248425f200a5b59c2c",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000043"
+    },
+    {
+      "effective_step_speed_kmh": 6.058536585365854,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 164.0,
+      "received_at": "2026-10-17T15:32:44.168+08:00",
+      "requested_at": "2026-10-17T15:32:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000049_direction_west_to_hospital_road.json",
+      "response_sha256": "19b1362f56594055d2b91cdde9e3ea4a57ee719685db5fa858b6e2273be9deb5",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000049"
+    },
+    {
+      "effective_step_speed_kmh": 6.713513513513514,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 148.0,
+      "received_at": "2026-10-17T15:37:44.172+08:00",
+      "requested_at": "2026-10-17T15:37:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000056_direction_west_to_hospital_road.json",
+      "response_sha256": "b71e9fd6c81852902a0ef7dbec605cee1b4166a7aa28d91dd81e14485c2d883e",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000056"
+    },
+    {
+      "effective_step_speed_kmh": 7.148201438848921,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 139.0,
+      "received_at": "2026-10-17T15:42:44.140+08:00",
+      "requested_at": "2026-10-17T15:42:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000062_direction_west_to_hospital_road.json",
+      "response_sha256": "fe1c9fedd7a26deba61bca0efb96f8da2329e9cefc8312362496f9763e18242e",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000062"
+    },
+    {
+      "effective_step_speed_kmh": 7.584732824427481,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 131.0,
+      "received_at": "2026-10-17T15:47:44.151+08:00",
+      "requested_at": "2026-10-17T15:47:42.404+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d/000069_direction_west_to_hospital_road.json",
+      "response_sha256": "7502e40e3d2f75b657ae1eb23c391bbcbdf28de25a2e37bf16335ae67123d58a",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000069"
+    },
+    {
+      "effective_step_speed_kmh": 7.2,
+      "low_state_q25": false,
+      "platform_distance_m": 276.0,
+      "platform_step_duration_s": 138.0,
+      "received_at": "2026-10-17T15:51:51.266+08:00",
+      "requested_at": "2026-10-17T15:51:49.322+08:00",
+      "response_file": "data/raw/baidu/collection_20261017T075140_567886Z_8856fc75/000004_direction_west_to_hospital_road.json",
+      "response_sha256": "99360197f9200587412b6386a2cb0874e201b7911ceee3f69d342705932c4d07",
+      "sample_id": "collection_20261017T075140_567886Z_8856fc75/line_000004"
+    }
+  ],
+  "status": "source_based_counterfactual_design_not_observed_incident",
+  "topology_consequence": {
+    "candidate_event_overlaps": [
+      {
+        "candidate_id": "west_to_hospital_road:observed:west_to_hospital_road",
+        "event_overlap_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_overlap_model_length_m": 278.665139
+      },
+      {
+        "candidate_id": "west_to_hospital_road:observed:west_via_sinnan_0",
+        "event_overlap_edge_ids": [
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_overlap_model_length_m": 209.930048
+      }
+    ],
+    "hospital_common_event_edge_ids": [
+      "e000088",
+      "e000089",
+      "e000090",
+      "e000091",
+      "e000092",
+      "e000093",
+      "e000094",
+      "e000095",
+      "e000096",
+      "e000097",
+      "e000098",
+      "e000099",
+      "e000100"
+    ],
+    "hospital_common_event_length_m": 209.930048,
+    "interpretation": "A large part of the full observed step is mandatory for hospital-bound alternatives. A can only avoid the upstream part; no policy benefit is assumed and the event is not relocated after seeing results."
+  },
+  "traffic_speed_context": {
+    "not_used_in_multiplier": true,
+    "reason": "Traffic sections have varying descriptions and 510–1440m training lengths without exact geometry; cannot assign their section-mean speeds to this 276m step. Their role is contextual corroboration only.",
+    "training_groups": [
+      {
+        "congestion_distance_m": 510,
+        "reported_speed_kmh": {
+          "count": 1,
+          "max": 10.6,
+          "mean": 10.6,
+          "median": 10.6,
+          "min": 10.6,
+          "p10": 10.6,
+          "p25": 10.6,
+          "p75": 10.6,
+          "p90": 10.6
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000058"
+        ],
+        "section_desc": "南向北,从博爱路到南昌路"
+      },
+      {
+        "congestion_distance_m": 1040,
+        "reported_speed_kmh": {
+          "count": 1,
+          "max": 2.77,
+          "mean": 2.77,
+          "median": 2.77,
+          "min": 2.77,
+          "p10": 2.77,
+          "p25": 2.77,
+          "p75": 2.77,
+          "p90": 2.77
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000006"
+        ],
+        "section_desc": "南向北,从建国西路到南昌路"
+      },
+      {
+        "congestion_distance_m": 1440,
+        "reported_speed_kmh": {
+          "count": 2,
+          "max": 2.83,
+          "mean": 2.83,
+          "median": 2.83,
+          "min": 2.83,
+          "p10": 2.83,
+          "p25": 2.83,
+          "p75": 2.83,
+          "p90": 2.83
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065708_658611Z_6fd29964/line_000001",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000001"
+        ],
+        "section_desc": "南向北,从徐家汇路到南昌路"
+      },
+      {
+        "congestion_distance_m": 670,
+        "reported_speed_kmh": {
+          "count": 17,
+          "max": 10.37,
+          "mean": 4.31,
+          "median": 4.98,
+          "min": 1.52,
+          "p10": 1.532,
+          "p25": 1.78,
+          "p75": 5.03,
+          "p90": 7.266000000000001
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000038",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000051",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000064",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000065",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000066",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000071",
+          "collection_20261017T075140_567886Z_8856fc75/line_000001",
+          "collection_20261017T075140_567886Z_8856fc75/line_000006"
+        ],
+        "section_desc": "南向北,从永嘉路到南昌路"
+      },
+      {
+        "congestion_distance_m": 800,
+        "reported_speed_kmh": {
+          "count": 1,
+          "max": 2.42,
+          "mean": 2.42,
+          "median": 2.42,
+          "min": 2.42,
+          "p10": 2.42,
+          "p25": 2.42,
+          "p75": 2.42,
+          "p90": 2.42
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000039"
+        ],
+        "section_desc": "南向北,从永嘉路到淮海中路"
+      },
+      {
+        "congestion_distance_m": 830,
+        "reported_speed_kmh": {
+          "count": 8,
+          "max": 4.02,
+          "mean": 2.2512499999999998,
+          "median": 2.135,
+          "min": 1.29,
+          "p10": 1.2970000000000002,
+          "p25": 1.9224999999999999,
+          "p75": 2.475,
+          "p90": 2.9909999999999997
+        },
+        "road_name": "瑞金二路",
+        "sample_ids": [
+          "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+          "collection_20261017T065733_366933Z_4a9b903d/line_000046"
+        ],
+        "section_desc": "南向北,南昌路附近"
+      }
+    ]
+  },
+  "training_only": true,
+  "training_partition": {
+    "end": "2026-10-17T15:55:00+08:00",
+    "expected_samples_per_od": 12,
+    "start": "2026-10-17T14:55:00+08:00"
+  }
+}

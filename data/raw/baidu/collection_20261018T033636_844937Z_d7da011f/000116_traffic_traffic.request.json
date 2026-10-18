@@ -1,0 +1,19 @@
+{
+  "request_number": 116,
+  "endpoint": "/traffic/v1/bound",
+  "kind": "traffic",
+  "route_pair_id": null,
+  "study_area_id": "shanghai_ruijin",
+  "coordinate_system": "bd09ll",
+  "params": {
+    "bounds": "31.212270,121.466849;31.224624,121.479001",
+    "coord_type_input": "bd09ll",
+    "coord_type_output": "bd09ll"
+  },
+  "requested_at": "2026-10-18T13:02:36.864+08:00",
+  "response_file": "000116_traffic_traffic.json",
+  "source_observation_time": null,
+  "source_time_note": "Request/receive time is not the platform's independent observation time.",
+  "cycle_id": "cycle_000043",
+  "cycle_start_at": "2026-10-18T13:02:36.844+08:00"
+}

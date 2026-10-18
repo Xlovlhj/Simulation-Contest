@@ -1,0 +1,13 @@
+{
+  "status": 0,
+  "result": {
+    "location": {
+      "lng": 121.47232078947275,
+      "lat": 31.217701642008944
+    },
+    "precise": 0,
+    "confidence": 80,
+    "comprehension": 100,
+    "level": "交叉路口"
+  }
+}

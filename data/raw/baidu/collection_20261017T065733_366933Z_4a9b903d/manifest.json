@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "study_area_id": "shanghai_ruijin",
+  "purpose": "observational_collection",
+  "source": "Baidu Web API",
+  "coordinate_system": "bd09ll",
+  "config": {
+    "study_area_id": "shanghai_ruijin",
+    "bounds": {
+      "south": 31.21227022526,
+      "north": 31.224623506585,
+      "west": 121.46684884369,
+      "east": 121.47900080165999
+    },
+    "coordinate_system": "bd09ll",
+    "traffic_interval_seconds": 120,
+    "routes_interval_seconds": 300,
+    "minimum_request_gap_seconds": 1.1,
+    "route_pairs": [
+      {
+        "id": "north_to_south",
+        "origin": [
+          31.220908030920974,
+          121.4714692281883
+        ],
+        "destination": [
+          31.214555031575056,
+          121.47317213696051
+        ]
+      },
+      {
+        "id": "south_to_north",
+        "origin": [
+          31.214555031575056,
+          121.47317213696051
+        ],
+        "destination": [
+          31.220908030920974,
+          121.4714692281883
+        ]
+      },
+      {
+        "id": "west_to_hospital_road",
+        "origin": [
+          31.21266939092032,
+          121.46848849599763
+        ],
+        "destination": [
+          31.217701642008944,
+          121.47232078947275
+        ]
+      },
+      {
+        "id": "east_to_hospital_road",
+        "origin": [
+          31.221280076797875,
+          121.47406615016993
+        ],
+        "destination": [
+          31.217701642008944,
+          121.47232078947275
+        ]
+      }
+    ],
+    "stop_at": "2026-10-19T20:00:00+08:00",
+    "daily_limits": {
+      "traffic": 900,
+      "direction": 1500
+    },
+    "maximum_consecutive_failures": 5
+  },
+  "bounds": {
+    "south": 31.21227022526,
+    "north": 31.224623506585,
+    "west": 121.46684884369,
+    "east": 121.47900080165999
+  },
+  "sampling_cycle_seconds": 120,
+  "cycle_note": "Time buckets for replay; requests in a bucket are not simultaneous observations.",
+  "started_at": "2026-10-17T14:57:33.367+08:00",
+  "requests_index": "requests.jsonl",
+  "billing_status": "unverified",
+  "config_sha256": "ddccd456b57b1a6ca91cc5c7e2814831700f81dd9e4508e8f1ca7f4e56b54af8",
+  "budget_scope": "This collector/workspace only; probes and other clients are not counted."
+}

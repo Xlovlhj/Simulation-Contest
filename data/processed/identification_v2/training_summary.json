@@ -1,0 +1,2378 @@
+{
+  "quantile_method": "type 7 linear interpolation at (n-1)*p",
+  "route_eta": {
+    "east_to_hospital_road": {
+      "eta_s": {
+        "count": 12,
+        "max": 716.0,
+        "mean": 611.0,
+        "median": 594.0,
+        "min": 519.0,
+        "p10": 539.1,
+        "p25": 564.75,
+        "p75": 670.0,
+        "p90": 691.9
+      },
+      "lag_one_eta_correlation": 0.48299214141258523,
+      "platform_distance_m": {
+        "count": 12,
+        "max": 1219.0,
+        "mean": 1219.0,
+        "median": 1219.0,
+        "min": 1219.0,
+        "p10": 1219.0,
+        "p25": 1219.0,
+        "p75": 1219.0,
+        "p90": 1219.0
+      },
+      "repeated_observation_note": "Twelve sequential provider estimates of the same path, not twelve independent vehicle trips. Lag-one correlation is descriptive only; no IID confidence interval or inferred sample-size correction.",
+      "route_mean_speed_kmh": {
+        "count": 12,
+        "max": 8.455491329479768,
+        "mean": 7.255840677353858,
+        "median": 7.388213820078227,
+        "min": 6.1290502793296096,
+        "p10": 6.343074024433587,
+        "p25": 6.549894388955151,
+        "p75": 7.772571182053495,
+        "p90": 8.14053385337315
+      },
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000005",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+        "collection_20261017T075140_567886Z_8856fc75/line_000005"
+      ]
+    },
+    "north_to_south": {
+      "eta_s": {
+        "count": 12,
+        "max": 760.0,
+        "mean": 683.5,
+        "median": 693.0,
+        "min": 600.0,
+        "p10": 617.0,
+        "p25": 669.5,
+        "p75": 701.75,
+        "p90": 726.5
+      },
+      "lag_one_eta_correlation": 0.3132221269454309,
+      "platform_distance_m": {
+        "count": 12,
+        "max": 1717.0,
+        "mean": 1717.0,
+        "median": 1717.0,
+        "min": 1717.0,
+        "p10": 1717.0,
+        "p25": 1717.0,
+        "p75": 1717.0,
+        "p90": 1717.0
+      },
+      "repeated_observation_note": "Twelve sequential provider estimates of the same path, not twelve independent vehicle trips. Lag-one correlation is descriptive only; no IID confidence interval or inferred sample-size correction.",
+      "route_mean_speed_kmh": {
+        "count": 12,
+        "max": 10.302000000000001,
+        "mean": 9.081107006790438,
+        "median": 8.91948051948052,
+        "min": 8.133157894736843,
+        "p10": 8.509122474747475,
+        "p25": 8.808295170859811,
+        "p75": 9.23714478095971,
+        "p90": 10.020204544075101
+      },
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ]
+    },
+    "south_to_north": {
+      "eta_s": {
+        "count": 12,
+        "max": 562.0,
+        "mean": 444.0833333333333,
+        "median": 417.0,
+        "min": 357.0,
+        "p10": 362.4,
+        "p25": 392.25,
+        "p75": 494.5,
+        "p90": 552.1
+      },
+      "lag_one_eta_correlation": 0.054318497308680276,
+      "platform_distance_m": {
+        "count": 12,
+        "max": 725.0,
+        "mean": 725.0,
+        "median": 725.0,
+        "min": 725.0,
+        "p10": 725.0,
+        "p25": 725.0,
+        "p75": 725.0,
+        "p90": 725.0
+      },
+      "repeated_observation_note": "Twelve sequential provider estimates of the same path, not twelve independent vehicle trips. Lag-one correlation is descriptive only; no IID confidence interval or inferred sample-size correction.",
+      "route_mean_speed_kmh": {
+        "count": 12,
+        "max": 7.310924369747899,
+        "mean": 6.021280675372704,
+        "median": 6.2607570179475385,
+        "min": 4.644128113879003,
+        "p10": 4.7279226694557845,
+        "p25": 5.289272737870869,
+        "p75": 6.658341708542714,
+        "p90": 7.202925207756233
+      },
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000003",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000009",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000016",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000022",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000029",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000035",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000042",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000048",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000055",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000061",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000068",
+        "collection_20261017T075140_567886Z_8856fc75/line_000003"
+      ]
+    },
+    "west_to_hospital_road": {
+      "eta_s": {
+        "count": 12,
+        "max": 726.0,
+        "mean": 510.5,
+        "median": 476.0,
+        "min": 376.0,
+        "p10": 396.4,
+        "p25": 420.25,
+        "p75": 580.75,
+        "p90": 674.5
+      },
+      "lag_one_eta_correlation": 0.5178814595119124,
+      "platform_distance_m": {
+        "count": 12,
+        "max": 860.0,
+        "mean": 860.0,
+        "median": 860.0,
+        "min": 860.0,
+        "p10": 860.0,
+        "p25": 860.0,
+        "p75": 860.0,
+        "p90": 860.0
+      },
+      "repeated_observation_note": "Twelve sequential provider estimates of the same path, not twelve independent vehicle trips. Lag-one correlation is descriptive only; no IID confidence interval or inferred sample-size correction.",
+      "route_mean_speed_kmh": {
+        "count": 12,
+        "max": 8.23404255319149,
+        "mean": 6.345604217039525,
+        "median": 6.504919422116875,
+        "min": 4.264462809917355,
+        "p10": 4.5900895522388065,
+        "p25": 5.369379960451824,
+        "p75": 7.3729391100702575,
+        "p90": 7.810363636363636
+      },
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000004",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000010",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000017",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000023",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000030",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000036",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000043",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000049",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000056",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000062",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000069",
+        "collection_20261017T075140_567886Z_8856fc75/line_000004"
+      ]
+    }
+  },
+  "route_steps": [
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 329.0,
+        "mean": 280.6666666666667,
+        "median": 273.0,
+        "min": 238.0,
+        "p10": 247.5,
+        "p25": 259.5,
+        "p75": 307.5,
+        "p90": 318.0
+      },
+      "edge_ids": [
+        "e000186",
+        "e000187",
+        "e000188",
+        "e000189",
+        "e000190",
+        "e000191",
+        "e000192",
+        "e000193",
+        "e000194",
+        "e000195",
+        "e000196",
+        "e000197",
+        "e000198",
+        "e000199",
+        "e000200",
+        "e000201",
+        "e000202",
+        "e000203",
+        "e000204",
+        "e000205",
+        "e000206",
+        "e000207",
+        "e000208"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 8.68235294117647,
+        "mean": 7.438238393216391,
+        "median": 7.569637034552164,
+        "min": 6.280851063829788,
+        "p10": 6.498706516115288,
+        "p25": 6.72005312924955,
+        "p75": 7.96526717557252,
+        "p90": 8.349392712550607
+      },
+      "geometry_signature": "564f96fd642a986fef20216a3a33b36dd3ac5023946015b7dd7a8596c8c624d3",
+      "model_length_m": 578.343584,
+      "platform_distance_m": 574.0,
+      "road_name": "思南路",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000005",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+        "collection_20261017T075140_567886Z_8856fc75/line_000005"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.459866220735786,
+        "mean": 0.45934468484977914,
+        "median": 0.4594096203011078,
+        "min": 0.45857418111753373,
+        "p10": 0.45890612364919503,
+        "p25": 0.4590849533792431,
+        "p75": 0.45965038677385106,
+        "p90": 0.459811571713589
+      },
+      "step_fraction_population_sd": 0.0003853008406510058,
+      "step_index": 0
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 195.0,
+        "mean": 166.16666666666666,
+        "median": 161.5,
+        "min": 141.0,
+        "p10": 146.3,
+        "p25": 153.5,
+        "p75": 182.25,
+        "p90": 188.4
+      },
+      "edge_ids": [
+        "e000209",
+        "e000210",
+        "e000211",
+        "e000212",
+        "e000213",
+        "e000214",
+        "e000215",
+        "e000216"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 9.012765957446808,
+        "mean": 7.727625058679911,
+        "median": 7.869409509202454,
+        "min": 6.516923076923077,
+        "p10": 6.745854800936768,
+        "p25": 6.972878760583678,
+        "p75": 8.281247023165188,
+        "p90": 8.686584536177255
+      },
+      "geometry_signature": "c672e0fb8fccab00fc645ad8a5991f2a9b67152e855f78d7c318b6d0533a4a8d",
+      "model_length_m": 350.101134,
+      "platform_distance_m": 353.0,
+      "road_name": "建德路",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000005",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+        "collection_20261017T075140_567886Z_8856fc75/line_000005"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.27258320126782887,
+        "mean": 0.27193076585256803,
+        "median": 0.2719233075258726,
+        "min": 0.2711864406779661,
+        "p10": 0.27137817322472085,
+        "p25": 0.2716078629562947,
+        "p75": 0.27233731263986605,
+        "p90": 0.2725523626240167
+      },
+      "step_fraction_population_sd": 0.0004486187468296254,
+      "step_index": 1
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 145.0,
+        "mean": 123.91666666666667,
+        "median": 120.5,
+        "min": 105.0,
+        "p10": 109.2,
+        "p25": 114.75,
+        "p75": 136.0,
+        "p90": 140.5
+      },
+      "edge_ids": [
+        "e000088",
+        "e000089",
+        "e000090",
+        "e000091",
+        "e000092",
+        "e000093",
+        "e000094",
+        "e000095",
+        "e000096",
+        "e000097",
+        "e000098",
+        "e000099",
+        "e000100"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 7.131428571428572,
+        "mean": 6.104973280287919,
+        "median": 6.214214876033058,
+        "min": 5.164137931034483,
+        "p10": 5.330162703379224,
+        "p25": 5.5058823529411764,
+        "p75": 6.527865796831314,
+        "p90": 6.857346888172577
+      },
+      "geometry_signature": "a02b971b22f5d6cac93d7fa34c987de11efce5ae79ee5ef45af5fe92960786bb",
+      "model_length_m": 209.930048,
+      "platform_distance_m": 208.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000005",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+        "collection_20261017T075140_567886Z_8856fc75/line_000005"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.20350877192982456,
+        "mean": 0.20280533689695934,
+        "median": 0.20272742269013014,
+        "min": 0.20208023774145617,
+        "p10": 0.20219842698758647,
+        "p25": 0.2023338875248903,
+        "p75": 0.20331382534012313,
+        "p90": 0.20341590612777052
+      },
+      "step_fraction_population_sd": 0.0005062893138890556,
+      "step_index": 2
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 46.0,
+        "mean": 39.333333333333336,
+        "median": 38.0,
+        "min": 33.0,
+        "p10": 35.0,
+        "p25": 36.5,
+        "p75": 43.0,
+        "p90": 44.8
+      },
+      "edge_ids": [
+        "e000101",
+        "e000102",
+        "e000103",
+        "e000104",
+        "e000185"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 9.163636363636364,
+        "mean": 7.768744385481771,
+        "median": 7.957894736842106,
+        "min": 6.57391304347826,
+        "p10": 6.751255813953489,
+        "p25": 7.032558139534884,
+        "p75": 8.28972972972973,
+        "p90": 8.64
+      },
+      "geometry_signature": "1c41c8be556c84ebf43677b54a163e2ee45a6889bc9c10bbbc715c9dc1da12f9",
+      "model_length_m": 82.071668,
+      "platform_distance_m": 84.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000005",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+        "collection_20261017T075140_567886Z_8856fc75/line_000005"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.06505576208178439,
+        "mean": 0.0643704100281245,
+        "median": 0.06434090851511236,
+        "min": 0.06354515050167224,
+        "p10": 0.06360066121271465,
+        "p25": 0.06385783147530158,
+        "p75": 0.06492352676563203,
+        "p90": 0.06497433188399908
+      },
+      "step_fraction_population_sd": 0.0005501811977815266,
+      "step_index": 3
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 212.0,
+        "mean": 190.58333333333334,
+        "median": 193.0,
+        "min": 167.0,
+        "p10": 171.9,
+        "p25": 186.75,
+        "p75": 196.0,
+        "p90": 202.3
+      },
+      "edge_ids": [
+        "e000000",
+        "e000001",
+        "e000002",
+        "e000003",
+        "e000004",
+        "e000005",
+        "e000006",
+        "e000007",
+        "e000008",
+        "e000009",
+        "e000010",
+        "e000011",
+        "e000012",
+        "e000013",
+        "e000014",
+        "e000015",
+        "e000016",
+        "e000017",
+        "e000018",
+        "e000019"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 9.398802395209582,
+        "mean": 8.270345602638999,
+        "median": 8.132642487046633,
+        "min": 7.403773584905661,
+        "p10": 7.75963406052076,
+        "p25": 8.008163265306123,
+        "p75": 8.40857142857143,
+        "p90": 9.133052631578948
+      },
+      "geometry_signature": "bd552c3d67d1dc3f4893707d372a15faa302d5101d5a6db1e9685e95f9551f78",
+      "model_length_m": 432.239669,
+      "platform_distance_m": 436.0,
+      "road_name": "复兴中路",
+      "route_pair_id": "north_to_south",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.2796005706134094,
+        "mean": 0.2788303587437682,
+        "median": 0.2786313453056989,
+        "min": 0.2783333333333333,
+        "p10": 0.2784145467015837,
+        "p25": 0.2784903710829637,
+        "p75": 0.2790964634443466,
+        "p90": 0.27950039328433096
+      },
+      "step_fraction_population_sd": 0.0004459908868127855,
+      "step_index": 0
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 173.0,
+        "mean": 155.58333333333334,
+        "median": 158.0,
+        "min": 136.0,
+        "p10": 140.7,
+        "p25": 152.25,
+        "p75": 160.0,
+        "p90": 165.4
+      },
+      "edge_ids": [
+        "e000020",
+        "e000021",
+        "e000022",
+        "e000023",
+        "e000024",
+        "e000025",
+        "e000026",
+        "e000027",
+        "e000028",
+        "e000029",
+        "e000030",
+        "e000031",
+        "e000032",
+        "e000033"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 11.382352941176471,
+        "mean": 9.991599738928231,
+        "median": 9.797468354430379,
+        "min": 8.947976878612717,
+        "p10": 9.360271084337349,
+        "p25": 9.675,
+        "p75": 10.17161410018553,
+        "p90": 11.004489795918369
+      },
+      "geometry_signature": "d4df1f38b6bd65cef4fb396595a5ba15c1ab53ed680c1872397a7a22145adb8f",
+      "model_length_m": 433.23537,
+      "platform_distance_m": 430.0,
+      "road_name": "陕西南路",
+      "route_pair_id": "north_to_south",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.22826086956521738,
+        "mean": 0.22762238101909202,
+        "median": 0.22767038480976104,
+        "min": 0.22666666666666666,
+        "p10": 0.2270806765338589,
+        "p25": 0.22723920622150712,
+        "p75": 0.22799892832466123,
+        "p90": 0.22822213032103975
+      },
+      "step_fraction_population_sd": 0.0004853304001340628,
+      "step_index": 1
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 156.0,
+        "mean": 140.33333333333334,
+        "median": 142.0,
+        "min": 123.0,
+        "p10": 126.6,
+        "p25": 137.25,
+        "p75": 144.25,
+        "p90": 149.5
+      },
+      "edge_ids": [
+        "e000034",
+        "e000035",
+        "e000036",
+        "e000037",
+        "e000038",
+        "e000039",
+        "e000040",
+        "e000041",
+        "e000042",
+        "e000043",
+        "e000044",
+        "e000045",
+        "e000046",
+        "e000047",
+        "e000048",
+        "e000049",
+        "e000050",
+        "e000051",
+        "e000052",
+        "e000053"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 10.331707317073171,
+        "mean": 9.094232471429715,
+        "median": 8.949295774647888,
+        "min": 8.146153846153846,
+        "p10": 8.50121379310345,
+        "p25": 8.80978448275862,
+        "p75": 9.263652714192283,
+        "p90": 10.03987012987013
+      },
+      "geometry_signature": "350e2b637a562569eb68da02c2ff97a7ac7dafdb2c4a8c7c2d548c9302728d80",
+      "model_length_m": 356.486486,
+      "platform_distance_m": 353.0,
+      "road_name": "陕西南路",
+      "route_pair_id": "north_to_south",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.20600858369098712,
+        "mean": 0.20530564993080702,
+        "median": 0.20522595052842696,
+        "min": 0.2049062049062049,
+        "p10": 0.2049124788255223,
+        "p25": 0.2049922360248447,
+        "p75": 0.20550594976018974,
+        "p90": 0.205945449869061
+      },
+      "step_fraction_population_sd": 0.0003847508939560928,
+      "step_index": 2
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 195.0,
+        "mean": 175.58333333333334,
+        "median": 178.0,
+        "min": 154.0,
+        "p10": 158.7,
+        "p25": 171.75,
+        "p75": 180.25,
+        "p90": 186.4
+      },
+      "edge_ids": [
+        "e000054",
+        "e000055",
+        "e000056",
+        "e000057",
+        "e000058",
+        "e000059",
+        "e000060",
+        "e000061",
+        "e000062",
+        "e000063",
+        "e000064",
+        "e000065",
+        "e000066",
+        "e000067",
+        "e000068",
+        "e000069",
+        "e000070",
+        "e000071",
+        "e000072",
+        "e000073",
+        "e000074",
+        "e000075",
+        "e000076",
+        "e000077",
+        "e000078",
+        "e000079",
+        "e000080"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 11.571428571428573,
+        "mean": 10.191227882107018,
+        "median": 10.011235955056181,
+        "min": 9.138461538461538,
+        "p10": 9.561000974975626,
+        "p25": 9.88632596685083,
+        "p75": 10.38103448275862,
+        "p90": 11.230632911392405
+      },
+      "geometry_signature": "b14fc8a6414f3efa21b9bc339e4435e4976173798b9fa02dcc040c36970d3c1a",
+      "model_length_m": 491.253643,
+      "platform_distance_m": 495.0,
+      "road_name": "建国西路",
+      "route_pair_id": "north_to_south",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.2576419213973799,
+        "mean": 0.25688984993724295,
+        "median": 0.2568151455455307,
+        "min": 0.2562111801242236,
+        "p10": 0.25652209226770634,
+        "p25": 0.25662261294829997,
+        "p75": 0.25715895210245776,
+        "p90": 0.2574925556751618
+      },
+      "step_fraction_population_sd": 0.0004098172821363257,
+      "step_index": 3
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 22.0,
+        "mean": 19.583333333333332,
+        "median": 20.0,
+        "min": 17.0,
+        "p10": 18.0,
+        "p25": 18.75,
+        "p75": 20.0,
+        "p90": 20.9
+      },
+      "edge_ids": [
+        "e000081"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 0.6352941176470589,
+        "mean": 0.5540758312894536,
+        "median": 0.54,
+        "min": 0.4909090909090909,
+        "p10": 0.5168571428571428,
+        "p25": 0.54,
+        "p75": 0.5763157894736842,
+        "p90": 0.6
+      },
+      "geometry_signature": "366142df08c63ff9426dba21d68e0f2d87c18e470e730b065ff05ec60f04ba94",
+      "model_length_m": 2.149102,
+      "platform_distance_m": 3.0,
+      "road_name": "建国中路",
+      "route_pair_id": "north_to_south",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000002",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+        "collection_20261017T075140_567886Z_8856fc75/line_000002"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.029315960912052116,
+        "mean": 0.028646780025982584,
+        "median": 0.0287094438262774,
+        "min": 0.027950310559006212,
+        "p10": 0.02805457227138643,
+        "p25": 0.028390151515151514,
+        "p75": 0.028881863750284804,
+        "p90": 0.02909561020455068
+      },
+      "step_fraction_population_sd": 0.00039937336601652006,
+      "step_index": 4
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 242.0,
+        "mean": 190.91666666666666,
+        "median": 179.0,
+        "min": 154.0,
+        "p10": 155.6,
+        "p25": 168.5,
+        "p75": 212.75,
+        "p90": 237.2
+      },
+      "edge_ids": [
+        "e000082",
+        "e000083",
+        "e000084",
+        "e000085",
+        "e000086",
+        "e000087",
+        "e000088",
+        "e000089",
+        "e000090",
+        "e000091",
+        "e000092",
+        "e000093",
+        "e000094",
+        "e000095",
+        "e000096",
+        "e000097",
+        "e000098",
+        "e000099",
+        "e000100"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 6.428571428571429,
+        "mean": 5.3130145416309205,
+        "median": 5.53228021978022,
+        "min": 4.090909090909092,
+        "p10": 4.174132261600292,
+        "p25": 4.663043478260869,
+        "p75": 5.879372343903237,
+        "p90": 6.36329392907233
+      },
+      "geometry_signature": "d7fe531b9962ec6baf67ebeb02d52d0916d14219025fcb69868fab2cd0a35417",
+      "model_length_m": 277.468686,
+      "platform_distance_m": 275.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "south_to_north",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000003",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000009",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000016",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000022",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000029",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000035",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000042",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000048",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000055",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000061",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000068",
+        "collection_20261017T075140_567886Z_8856fc75/line_000003"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.43137254901960786,
+        "mean": 0.4298918871890503,
+        "median": 0.4296255646463364,
+        "min": 0.42924528301886794,
+        "p10": 0.4292682926829268,
+        "p25": 0.4293170731707317,
+        "p75": 0.4304163183166742,
+        "p90": 0.43072283588297827
+      },
+      "step_fraction_population_sd": 0.0006805060261923577,
+      "step_index": 0
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 269.0,
+        "mean": 212.58333333333334,
+        "median": 199.5,
+        "min": 171.0,
+        "p10": 173.7,
+        "p25": 188.25,
+        "p75": 236.5,
+        "p90": 264.1
+      },
+      "edge_ids": [
+        "e000101",
+        "e000102",
+        "e000103",
+        "e000104",
+        "e000105",
+        "e000106",
+        "e000107",
+        "e000108",
+        "e000109",
+        "e000110",
+        "e000111",
+        "e000112",
+        "e000113",
+        "e000114",
+        "e000115"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 9.368421052631579,
+        "mean": 7.718925635736739,
+        "median": 8.032547501759325,
+        "min": 5.955390334572491,
+        "p10": 6.0665359669811325,
+        "p25": 6.788366168478261,
+        "p75": 8.515575916230366,
+        "p90": 9.224104046242775
+      },
+      "geometry_signature": "150082e656908e339673762d640ef8474b4017c9778817667f4ec1c73394bb5d",
+      "model_length_m": 447.517201,
+      "platform_distance_m": 445.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "south_to_north",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000003",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000009",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000016",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000022",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000029",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000035",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000042",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000048",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000055",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000061",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000068",
+        "collection_20261017T075140_567886Z_8856fc75/line_000003"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.48,
+        "mean": 0.4787503152645469,
+        "median": 0.47857617986496825,
+        "min": 0.47804878048780486,
+        "p10": 0.4780609502560722,
+        "p25": 0.47829713217799863,
+        "p75": 0.4790497916618171,
+        "p90": 0.4798319854118237
+      },
+      "step_fraction_population_sd": 0.0006378605942928093,
+      "step_index": 1
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 51.0,
+        "mean": 40.0,
+        "median": 37.5,
+        "min": 32.0,
+        "p10": 32.2,
+        "p25": 35.5,
+        "p75": 44.25,
+        "p90": 49.8
+      },
+      "edge_ids": [
+        "e000116"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 0.5625,
+        "mean": 0.46134885036749823,
+        "median": 0.48008534850640117,
+        "min": 0.35294117647058826,
+        "p10": 0.36150000000000004,
+        "p25": 0.407703488372093,
+        "p75": 0.5073529411764706,
+        "p90": 0.5591911764705882
+      },
+      "geometry_signature": "1e120b544c4175cadd0480a7cfb479789cb59f88c8e1a9c95cd34d3814246b0a",
+      "model_length_m": 3.933195,
+      "platform_distance_m": 5.0,
+      "road_name": "复兴中路",
+      "route_pair_id": "south_to_north",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000003",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000009",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000016",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000022",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000029",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000035",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000042",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000048",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000055",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000061",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000068",
+        "collection_20261017T075140_567886Z_8856fc75/line_000003"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.09090909090909091,
+        "mean": 0.09004447774989027,
+        "median": 0.09024390243902439,
+        "min": 0.0886426592797784,
+        "p10": 0.08941964460832386,
+        "p25": 0.089632551133661,
+        "p75": 0.09050586264656617,
+        "p90": 0.09073926453143535
+      },
+      "step_fraction_population_sd": 0.0006293196895879471,
+      "step_index": 2
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 416.0,
+        "mean": 292.75,
+        "median": 273.0,
+        "min": 216.0,
+        "p10": 227.2,
+        "p25": 241.0,
+        "p75": 333.0,
+        "p90": 386.7
+      },
+      "edge_ids": [
+        "e000117",
+        "e000054",
+        "e000055",
+        "e000056",
+        "e000057",
+        "e000058",
+        "e000059",
+        "e000060",
+        "e000061",
+        "e000062",
+        "e000063",
+        "e000064",
+        "e000065",
+        "e000066",
+        "e000067",
+        "e000068",
+        "e000069",
+        "e000070",
+        "e000071",
+        "e000072",
+        "e000073",
+        "e000074",
+        "e000075",
+        "e000076",
+        "e000077",
+        "e000078",
+        "e000079",
+        "e000080"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 8.333333333333334,
+        "mean": 6.4327379146548465,
+        "median": 6.594202898550725,
+        "min": 4.326923076923077,
+        "p10": 4.654796511627907,
+        "p25": 5.444026898734178,
+        "p75": 7.475269583816059,
+        "p90": 7.922590077525345
+      },
+      "geometry_signature": "5877c92f1436ab5d7638779fb3f00f16475dd09306abc6305f3bd8f4a0b21e1d",
+      "model_length_m": 495.659804,
+      "platform_distance_m": 500.0,
+      "road_name": "建国西路",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000004",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000010",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000017",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000023",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000030",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000036",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000043",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000049",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000056",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000062",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000069",
+        "collection_20261017T075140_567886Z_8856fc75/line_000004"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.5746421267893661,
+        "mean": 0.5734929174403108,
+        "median": 0.5733045977011495,
+        "min": 0.5725,
+        "p10": 0.5730159121746639,
+        "p25": 0.5732078245137946,
+        "p75": 0.5737790123036024,
+        "p90": 0.5744017339762021
+      },
+      "step_fraction_population_sd": 0.0005774161213976873,
+      "step_index": 0
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 253.0,
+        "mean": 177.58333333333334,
+        "median": 165.5,
+        "min": 131.0,
+        "p10": 138.1,
+        "p25": 145.75,
+        "p75": 202.25,
+        "p90": 234.8
+      },
+      "edge_ids": [
+        "e000184",
+        "e000083",
+        "e000084",
+        "e000085",
+        "e000086",
+        "e000087",
+        "e000088",
+        "e000089",
+        "e000090",
+        "e000091",
+        "e000092",
+        "e000093",
+        "e000094",
+        "e000095",
+        "e000096",
+        "e000097",
+        "e000098",
+        "e000099",
+        "e000100"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 7.584732824427481,
+        "mean": 5.8554629108999015,
+        "median": 6.004118592084124,
+        "min": 3.9272727272727272,
+        "p10": 4.2317143639850245,
+        "p25": 4.947344420600858,
+        "p75": 6.822185494847366,
+        "p90": 7.194820143884892
+      },
+      "geometry_signature": "38edf23a501718351011833166b74c27a12a6396012976c7eb473fa6c8fcad0a",
+      "model_length_m": 278.665139,
+      "platform_distance_m": 276.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000004",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000010",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000017",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000023",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000030",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000036",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000043",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000049",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000056",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000062",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000069",
+        "collection_20261017T075140_567886Z_8856fc75/line_000004"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.3484848484848485,
+        "mean": 0.3478220464046274,
+        "median": 0.34795467108899947,
+        "min": 0.34660421545667447,
+        "p10": 0.34700381747795545,
+        "p25": 0.3474233367983368,
+        "p75": 0.34841752905741974,
+        "p90": 0.34848209866358687
+      },
+      "step_fraction_population_sd": 0.0006182819360461618,
+      "step_index": 1
+    },
+    {
+      "duration_s": {
+        "count": 12,
+        "max": 57.0,
+        "mean": 39.75,
+        "median": 37.0,
+        "min": 29.0,
+        "p10": 31.0,
+        "p25": 32.5,
+        "p75": 45.25,
+        "p90": 52.9
+      },
+      "edge_ids": [
+        "e000101",
+        "e000102",
+        "e000103",
+        "e000104",
+        "e000185"
+      ],
+      "effective_step_speed_kmh": {
+        "count": 12,
+        "max": 10.427586206896551,
+        "mean": 7.971967246904044,
+        "median": 8.172972972972973,
+        "min": 5.3052631578947365,
+        "p10": 5.716632801161103,
+        "p25": 6.728264758497317,
+        "p75": 9.311436950146629,
+        "p90": 9.754838709677419
+      },
+      "geometry_signature": "1c41c8be556c84ebf43677b54a163e2ee45a6889bc9c10bbbc715c9dc1da12f9",
+      "model_length_m": 82.071668,
+      "platform_distance_m": 84.0,
+      "road_name": "瑞金二路",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000004",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000010",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000017",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000023",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000030",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000036",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000043",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000049",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000056",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000062",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000069",
+        "collection_20261017T075140_567886Z_8856fc75/line_000004"
+      ],
+      "step_fraction_of_route_eta": {
+        "count": 12,
+        "max": 0.07855626326963906,
+        "mean": 0.0778043168066505,
+        "median": 0.0776607758752251,
+        "min": 0.07692307692307693,
+        "p10": 0.07714323085355523,
+        "p25": 0.0774458430913349,
+        "p75": 0.07834022038567494,
+        "p90": 0.07851790633608816
+      },
+      "step_fraction_population_sd": 0.0005441630126742394,
+      "step_index": 2
+    }
+  ],
+  "scope": "training only; descriptive ranges, not independently measured physical parameters",
+  "traffic_sections": [
+    {
+      "congestion_distance_m": 1540,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 18.09,
+        "mean": 18.09,
+        "median": 18.09,
+        "min": 18.09,
+        "p10": 18.09,
+        "p25": 18.09,
+        "p75": 18.09,
+        "p90": 18.09
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 1560,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 19.93,
+        "mean": 19.93,
+        "median": 19.93,
+        "min": 19.93,
+        "p10": 19.93,
+        "p25": 19.93,
+        "p75": 19.93,
+        "p90": 19.93
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 1900,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 18.18,
+        "mean": 18.18,
+        "median": 18.18,
+        "min": 18.18,
+        "p10": 18.18,
+        "p25": 18.18,
+        "p75": 18.18,
+        "p90": 18.18
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2060,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 22.59,
+        "mean": 22.14,
+        "median": 22.14,
+        "min": 21.69,
+        "p10": 21.78,
+        "p25": 21.915,
+        "p75": 22.365000000000002,
+        "p90": 22.5
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000051"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2070,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 23.37,
+        "mean": 23.37,
+        "median": 23.37,
+        "min": 23.37,
+        "p10": 23.37,
+        "p25": 23.37,
+        "p75": 23.37,
+        "p90": 23.37
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2080,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 24.19,
+        "mean": 23.060000000000002,
+        "median": 23.060000000000002,
+        "min": 21.93,
+        "p10": 22.156,
+        "p25": 22.495,
+        "p75": 23.625,
+        "p90": 23.964000000000002
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2500,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 17.23,
+        "mean": 17.23,
+        "median": 17.23,
+        "min": 17.23,
+        "p10": 17.23,
+        "p25": 17.23,
+        "p75": 17.23,
+        "p90": 17.23
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2520,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 17.36,
+        "mean": 17.36,
+        "median": 17.36,
+        "min": 17.36,
+        "p10": 17.36,
+        "p25": 17.36,
+        "p75": 17.36,
+        "p90": 17.36
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2540,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 16.05,
+        "mean": 16.05,
+        "median": 16.05,
+        "min": 16.05,
+        "p10": 16.05,
+        "p25": 16.05,
+        "p75": 16.05,
+        "p90": 16.05
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2570,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 18.42,
+        "mean": 17.25,
+        "median": 17.25,
+        "min": 16.08,
+        "p10": 16.314,
+        "p25": 16.665,
+        "p75": 17.835,
+        "p90": 18.186
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2990,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 18.74,
+        "mean": 18.74,
+        "median": 18.74,
+        "min": 18.74,
+        "p10": 18.74,
+        "p25": 18.74,
+        "p75": 18.74,
+        "p90": 18.74
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032"
+      ],
+      "section_desc": "南向北,从鲁班路立交到延安东路立交桥"
+    },
+    {
+      "congestion_distance_m": 2470,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 29.79,
+        "mean": 29.79,
+        "median": 29.79,
+        "min": 29.79,
+        "p10": 29.79,
+        "p25": 29.79,
+        "p75": 29.79,
+        "p90": 29.79
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001"
+      ],
+      "section_desc": "南向北,延安东路立交桥附近"
+    },
+    {
+      "congestion_distance_m": 3520,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 18.24,
+        "mean": 18.24,
+        "median": 18.24,
+        "min": 18.24,
+        "p10": 18.24,
+        "p25": 18.24,
+        "p75": 18.24,
+        "p90": 18.24
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033"
+      ],
+      "section_desc": "南向北,延安东路立交桥附近"
+    },
+    {
+      "congestion_distance_m": 4060,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 22.64,
+        "mean": 22.64,
+        "median": 22.64,
+        "min": 22.64,
+        "p10": 22.64,
+        "p25": 22.64,
+        "p75": 22.64,
+        "p90": 22.64
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038"
+      ],
+      "section_desc": "南向北,延安东路立交桥附近"
+    },
+    {
+      "congestion_distance_m": 2550,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 23.29,
+        "mean": 23.29,
+        "median": 23.29,
+        "min": 23.29,
+        "p10": 23.29,
+        "p25": 23.29,
+        "p75": 23.29,
+        "p90": 23.29
+      },
+      "road_name": "南北高架路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058"
+      ],
+      "section_desc": "南向北,鲁班路立交附近"
+    },
+    {
+      "congestion_distance_m": 810,
+      "reported_speed_kmh": {
+        "count": 30,
+        "max": 4.38,
+        "mean": 2.1616666666666666,
+        "median": 2.04,
+        "min": 1.2,
+        "p10": 1.3670000000000002,
+        "p25": 1.52,
+        "p75": 2.325,
+        "p90": 3.152000000000001
+      },
+      "road_name": "南昌路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000051",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000065",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000066",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000071",
+        "collection_20261017T075140_567886Z_8856fc75/line_000001",
+        "collection_20261017T075140_567886Z_8856fc75/line_000006"
+      ],
+      "section_desc": "西向东,从襄阳南路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 560,
+      "reported_speed_kmh": {
+        "count": 6,
+        "max": 10.65,
+        "mean": 5.101666666666667,
+        "median": 3.1450000000000005,
+        "min": 1.42,
+        "p10": 1.51,
+        "p25": 1.6,
+        "p75": 9.16,
+        "p90": 10.65
+      },
+      "road_name": "复兴中路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027"
+      ],
+      "section_desc": "东向西,从淡水路到思南路"
+    },
+    {
+      "congestion_distance_m": 780,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 2.12,
+        "mean": 2.12,
+        "median": 2.12,
+        "min": 2.12,
+        "p10": 2.12,
+        "p25": 2.12,
+        "p75": 2.12,
+        "p90": 2.12
+      },
+      "road_name": "复兴中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059"
+      ],
+      "section_desc": "东向西,从淡水路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 800,
+      "reported_speed_kmh": {
+        "count": 12,
+        "max": 10.71,
+        "mean": 4.315,
+        "median": 3.8099999999999996,
+        "min": 1.91,
+        "p10": 1.9409999999999998,
+        "p25": 2.1375,
+        "p75": 5.6525,
+        "p90": 6.221
+      },
+      "road_name": "复兴中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000065"
+      ],
+      "section_desc": "东向西,从淡水路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 570,
+      "reported_speed_kmh": {
+        "count": 9,
+        "max": 10.73,
+        "mean": 7.316666666666666,
+        "median": 10.23,
+        "min": 1.63,
+        "p10": 1.63,
+        "p25": 4.97,
+        "p75": 10.34,
+        "p90": 10.65
+      },
+      "road_name": "复兴中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000051",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000066",
+        "collection_20261017T075140_567886Z_8856fc75/line_000001",
+        "collection_20261017T075140_567886Z_8856fc75/line_000006"
+      ],
+      "section_desc": "东向西,从重庆南路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 980,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 10.74,
+        "mean": 10.74,
+        "median": 10.74,
+        "min": 10.74,
+        "p10": 10.74,
+        "p25": 10.74,
+        "p75": 10.74,
+        "p90": 10.74
+      },
+      "road_name": "复兴中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006"
+      ],
+      "section_desc": "东向西,从马当路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 680,
+      "reported_speed_kmh": {
+        "count": 6,
+        "max": 15.58,
+        "mean": 6.123333333333334,
+        "median": 4.33,
+        "min": 1.75,
+        "p10": 1.965,
+        "p25": 2.18,
+        "p75": 8.0475,
+        "p90": 12.075
+      },
+      "road_name": "建国西路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046"
+      ],
+      "section_desc": "西向东,从嘉善路到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 520,
+      "reported_speed_kmh": {
+        "count": 7,
+        "max": 9.63,
+        "mean": 8.277142857142858,
+        "median": 8.25,
+        "min": 6.46,
+        "p10": 6.724,
+        "p25": 7.495,
+        "p75": 9.305,
+        "p90": 9.474
+      },
+      "road_name": "徐家汇路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045"
+      ],
+      "section_desc": "东向南,泰康路附近"
+    },
+    {
+      "congestion_distance_m": 530,
+      "reported_speed_kmh": {
+        "count": 5,
+        "max": 9.98,
+        "mean": 9.236,
+        "median": 9.14,
+        "min": 8.86,
+        "p10": 8.94,
+        "p25": 9.06,
+        "p75": 9.14,
+        "p90": 9.644
+      },
+      "road_name": "徐家汇路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046"
+      ],
+      "section_desc": "东向南,泰康路附近"
+    },
+    {
+      "congestion_distance_m": 580,
+      "reported_speed_kmh": {
+        "count": 3,
+        "max": 7.35,
+        "mean": 6.933333333333334,
+        "median": 6.79,
+        "min": 6.66,
+        "p10": 6.686,
+        "p25": 6.725,
+        "p75": 7.07,
+        "p90": 7.2379999999999995
+      },
+      "road_name": "徐家汇路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038"
+      ],
+      "section_desc": "东向南,泰康路附近"
+    },
+    {
+      "congestion_distance_m": 550,
+      "reported_speed_kmh": {
+        "count": 5,
+        "max": 14.51,
+        "mean": 14.437999999999999,
+        "median": 14.5,
+        "min": 14.17,
+        "p10": 14.302,
+        "p25": 14.5,
+        "p75": 14.51,
+        "p90": 14.51
+      },
+      "road_name": "徐家汇路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046"
+      ],
+      "section_desc": "东向西,从徐家汇路地道到瑞金二路"
+    },
+    {
+      "congestion_distance_m": 590,
+      "reported_speed_kmh": {
+        "count": 5,
+        "max": 14.68,
+        "mean": 9.248000000000001,
+        "median": 12.4,
+        "min": 1.0,
+        "p10": 2.744,
+        "p25": 5.36,
+        "p75": 12.8,
+        "p90": 13.928
+      },
+      "road_name": "徐家汇路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000065"
+      ],
+      "section_desc": "东向西,瑞金二路附近"
+    },
+    {
+      "congestion_distance_m": 640,
+      "reported_speed_kmh": {
+        "count": 4,
+        "max": 8.34,
+        "mean": 6.6075,
+        "median": 7.095,
+        "min": 3.9,
+        "p10": 4.845,
+        "p25": 6.262499999999999,
+        "p75": 7.4399999999999995,
+        "p90": 7.98
+      },
+      "road_name": "思南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040"
+      ],
+      "section_desc": "北向南,从复兴中路到建国中路"
+    },
+    {
+      "congestion_distance_m": 1050,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 2.34,
+        "mean": 2.34,
+        "median": 2.34,
+        "min": 2.34,
+        "p10": 2.34,
+        "p25": 2.34,
+        "p75": 2.34,
+        "p90": 2.34
+      },
+      "road_name": "淮海中路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001"
+      ],
+      "section_desc": "东向西,从重庆中路辅路到茂名南路"
+    },
+    {
+      "congestion_distance_m": 670,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 2.52,
+        "mean": 2.52,
+        "median": 2.52,
+        "min": 2.52,
+        "p10": 2.52,
+        "p25": 2.52,
+        "p75": 2.52,
+        "p90": 2.52
+      },
+      "road_name": "淮海中路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001"
+      ],
+      "section_desc": "西向东,襄阳南路附近"
+    },
+    {
+      "congestion_distance_m": 720,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 2.05,
+        "mean": 2.05,
+        "median": 2.05,
+        "min": 2.05,
+        "p10": 2.05,
+        "p25": 2.05,
+        "p75": 2.05,
+        "p90": 2.05
+      },
+      "road_name": "淮海中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027"
+      ],
+      "section_desc": "西向东,襄阳南路附近"
+    },
+    {
+      "congestion_distance_m": 770,
+      "reported_speed_kmh": {
+        "count": 13,
+        "max": 6.95,
+        "mean": 3.2492307692307696,
+        "median": 2.6,
+        "min": 2.36,
+        "p10": 2.384,
+        "p25": 2.46,
+        "p75": 2.85,
+        "p90": 6.132000000000003
+      },
+      "road_name": "淮海中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064"
+      ],
+      "section_desc": "西向东,襄阳南路附近"
+    },
+    {
+      "congestion_distance_m": 520,
+      "reported_speed_kmh": {
+        "count": 13,
+        "max": 7.5,
+        "mean": 2.977692307692308,
+        "median": 2.03,
+        "min": 1.12,
+        "p10": 1.13,
+        "p25": 1.68,
+        "p75": 3.45,
+        "p90": 6.888000000000002
+      },
+      "road_name": "淮海中路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000051",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000065",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000066",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000071",
+        "collection_20261017T075140_567886Z_8856fc75/line_000001",
+        "collection_20261017T075140_567886Z_8856fc75/line_000006"
+      ],
+      "section_desc": "西向东,陕西南路附近"
+    },
+    {
+      "congestion_distance_m": 510,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 10.6,
+        "mean": 10.6,
+        "median": 10.6,
+        "min": 10.6,
+        "p10": 10.6,
+        "p25": 10.6,
+        "p75": 10.6,
+        "p90": 10.6
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058"
+      ],
+      "section_desc": "南向北,从博爱路到南昌路"
+    },
+    {
+      "congestion_distance_m": 1040,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 2.77,
+        "mean": 2.77,
+        "median": 2.77,
+        "min": 2.77,
+        "p10": 2.77,
+        "p25": 2.77,
+        "p75": 2.77,
+        "p90": 2.77
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006"
+      ],
+      "section_desc": "南向北,从建国西路到南昌路"
+    },
+    {
+      "congestion_distance_m": 1440,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 2.83,
+        "mean": 2.83,
+        "median": 2.83,
+        "min": 2.83,
+        "p10": 2.83,
+        "p25": 2.83,
+        "p75": 2.83,
+        "p90": 2.83
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065708_658611Z_6fd29964/line_000001",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000001"
+      ],
+      "section_desc": "南向北,从徐家汇路到南昌路"
+    },
+    {
+      "congestion_distance_m": 670,
+      "reported_speed_kmh": {
+        "count": 17,
+        "max": 10.37,
+        "mean": 4.31,
+        "median": 4.98,
+        "min": 1.52,
+        "p10": 1.532,
+        "p25": 1.78,
+        "p75": 5.03,
+        "p90": 7.266000000000001
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000038",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000051",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000065",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000066",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000071",
+        "collection_20261017T075140_567886Z_8856fc75/line_000001",
+        "collection_20261017T075140_567886Z_8856fc75/line_000006"
+      ],
+      "section_desc": "南向北,从永嘉路到南昌路"
+    },
+    {
+      "congestion_distance_m": 800,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 2.42,
+        "mean": 2.42,
+        "median": 2.42,
+        "min": 2.42,
+        "p10": 2.42,
+        "p25": 2.42,
+        "p75": 2.42,
+        "p90": 2.42
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039"
+      ],
+      "section_desc": "南向北,从永嘉路到淮海中路"
+    },
+    {
+      "congestion_distance_m": 830,
+      "reported_speed_kmh": {
+        "count": 8,
+        "max": 4.02,
+        "mean": 2.2512499999999998,
+        "median": 2.135,
+        "min": 1.29,
+        "p10": 1.2970000000000002,
+        "p25": 1.9224999999999999,
+        "p75": 2.475,
+        "p90": 2.9909999999999997
+      },
+      "road_name": "瑞金二路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000040",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000045",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000046"
+      ],
+      "section_desc": "南向北,南昌路附近"
+    },
+    {
+      "congestion_distance_m": 590,
+      "reported_speed_kmh": {
+        "count": 8,
+        "max": 8.63,
+        "mean": 7.20125,
+        "median": 7.455,
+        "min": 5.72,
+        "p10": 5.7829999999999995,
+        "p25": 6.8525,
+        "p75": 7.615,
+        "p90": 8.035
+      },
+      "road_name": "茂名南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000013",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039"
+      ],
+      "section_desc": "北向南,从巨鹿路到淮海中路"
+    },
+    {
+      "congestion_distance_m": 770,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 8.52,
+        "mean": 5.615,
+        "median": 5.615,
+        "min": 2.71,
+        "p10": 3.291,
+        "p25": 4.1625,
+        "p75": 7.0675,
+        "p90": 7.939
+      },
+      "road_name": "茂名南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025"
+      ],
+      "section_desc": "北向南,巨鹿路附近"
+    },
+    {
+      "congestion_distance_m": 870,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 2.83,
+        "mean": 2.8049999999999997,
+        "median": 2.8049999999999997,
+        "min": 2.78,
+        "p10": 2.7849999999999997,
+        "p25": 2.7925,
+        "p75": 2.8175,
+        "p90": 2.825
+      },
+      "road_name": "茂名南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053"
+      ],
+      "section_desc": "南向北,从南昌路到延安中路"
+    },
+    {
+      "congestion_distance_m": 1130,
+      "reported_speed_kmh": {
+        "count": 4,
+        "max": 4.32,
+        "mean": 3.835,
+        "median": 3.7649999999999997,
+        "min": 3.49,
+        "p10": 3.5620000000000003,
+        "p25": 3.67,
+        "p75": 3.9299999999999997,
+        "p90": 4.164000000000001
+      },
+      "road_name": "茂名南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033"
+      ],
+      "section_desc": "南向北,从复兴中路到延安中路"
+    },
+    {
+      "congestion_distance_m": 710,
+      "reported_speed_kmh": {
+        "count": 5,
+        "max": 14.86,
+        "mean": 11.495999999999999,
+        "median": 13.53,
+        "min": 2.04,
+        "p10": 6.62,
+        "p25": 13.49,
+        "p75": 13.56,
+        "p90": 14.34
+      },
+      "road_name": "重庆南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000052",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000058",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000059",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000064"
+      ],
+      "section_desc": "北向南,从淮海中路到复兴中路"
+    },
+    {
+      "congestion_distance_m": 730,
+      "reported_speed_kmh": {
+        "count": 2,
+        "max": 16.9,
+        "mean": 13.879999999999999,
+        "median": 13.879999999999999,
+        "min": 10.86,
+        "p10": 11.463999999999999,
+        "p25": 12.37,
+        "p75": 15.389999999999999,
+        "p90": 16.296
+      },
+      "road_name": "重庆南路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000012",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019"
+      ],
+      "section_desc": "南向北,从复兴中路到淮海中路"
+    },
+    {
+      "congestion_distance_m": 560,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 13.37,
+        "mean": 13.37,
+        "median": 13.37,
+        "min": 13.37,
+        "p10": 13.37,
+        "p25": 13.37,
+        "p75": 13.37,
+        "p90": 13.37
+      },
+      "road_name": "重庆南路辅路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000053"
+      ],
+      "section_desc": "南向北,从徐家汇路到重庆南路路口"
+    },
+    {
+      "congestion_distance_m": 570,
+      "reported_speed_kmh": {
+        "count": 13,
+        "max": 14.24,
+        "mean": 12.09,
+        "median": 12.43,
+        "min": 7.93,
+        "p10": 10.058,
+        "p25": 11.62,
+        "p75": 13.64,
+        "p90": 13.988000000000001
+      },
+      "road_name": "重庆南路辅路",
+      "sample_ids": [
+        "collection_20261017T065733_366933Z_4a9b903d/line_000006",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000007",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000014",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000019",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000020",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000025",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000026",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000027",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000032",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000033",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000039",
+        "collection_20261017T065733_366933Z_4a9b903d/line_000071",
+        "collection_20261017T075140_567886Z_8856fc75/line_000001"
+      ],
+      "section_desc": "南向北,从徐家汇路到重庆南路路口"
+    },
+    {
+      "congestion_distance_m": 610,
+      "reported_speed_kmh": {
+        "count": 1,
+        "max": 4.5,
+        "mean": 4.5,
+        "median": 4.5,
+        "min": 4.5,
+        "p10": 4.5,
+        "p25": 4.5,
+        "p75": 4.5,
+        "p90": 4.5
+      },
+      "road_name": "陕西南路",
+      "sample_ids": [
+        "collection_20261017T075140_567886Z_8856fc75/line_000001"
+      ],
+      "section_desc": "北向南,从绍兴路到肇嘉浜路"
+    }
+  ]
+}

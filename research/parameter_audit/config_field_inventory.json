@@ -1,0 +1,1112 @@
+[
+  {
+    "file": "config/baseline.json",
+    "field": "study_area_id",
+    "value": "shanghai_ruijin"
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "input_routes",
+    "value": "data/processed/baidu/survey_routes.json"
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "simulation_duration_s",
+    "value": 1800
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "departure_duration_s",
+    "value": 1200
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "departure_interval_s",
+    "value": 60
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "step_length_s",
+    "value": 1
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "fcd_period_s",
+    "value": 5
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "seed",
+    "value": 20261017
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "lane_count",
+    "value": 1
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "speed_limit_kmh",
+    "value": 30
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "vehicle_length_m",
+    "value": 5
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "min_gap_m",
+    "value": 2.5
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "accel_m_s2",
+    "value": 2.6
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "decel_m_s2",
+    "value": 4.5
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "reaction_time_s",
+    "value": 1
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "driver_imperfection",
+    "value": 0
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "binary_timeout_s",
+    "value": 180
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "model_status",
+    "value": "uncalibrated_technical_baseline"
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.0",
+    "value": "Only surface-accepted Baidu paths selected with use_for_baseline are driven; these are planned paths, not observed vehicle trajectories. Surface acceptance does not establish full topology validation."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.1",
+    "value": "Roads have one assumed lane, a 30 km/h assumed speed limit, and equal-edge-priority junction rules computed by netconvert; these priority rules are hypotheses, not observed signal control."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.2",
+    "value": "Each candidate route receives an assumed vehicle every 60 seconds during the first 1200 seconds; these are not observed OD flows."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.3",
+    "value": "Vehicle dimensions and car-following parameters are uncalibrated SUMO model assumptions."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.4",
+    "value": "Only explicitly observed successive edge connections are permitted, without inferred turns or reverse edges. Internal junction links implement these same movements, audited independently."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.5",
+    "value": "BD-09 coordinates are projected locally for approximate engineering distances without claiming survey-grade geometry."
+  },
+  {
+    "file": "config/baseline.json",
+    "field": "assumptions.6",
+    "value": "This run verifies executable integration and conservation only; it is not an independently validated S1 model."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "purpose",
+    "value": "uncalibrated_engineering_scenarios"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "base_config",
+    "value": "config/baseline.json"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "route_catalog",
+    "value": "data/processed/baidu/route_catalog_v1.json"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "simulation.simulation_duration_s",
+    "value": 1800
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "simulation.departure_duration_s",
+    "value": 1200
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "simulation.departure_interval_s",
+    "value": 30
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.id",
+    "value": "assumed_ruijin_upstream_slow_segment"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.target_od_id",
+    "value": "west_to_hospital_road"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.0",
+    "value": "e000184"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.1",
+    "value": "e000083"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.2",
+    "value": "e000084"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.3",
+    "value": "e000085"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.4",
+    "value": "e000086"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.edge_ids.5",
+    "value": "e000087"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.road_name",
+    "value": "瑞金二路"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.published_at_s",
+    "value": 600
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.begin_s",
+    "value": 600
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.end_s",
+    "value": 1200
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.speed_m_s",
+    "value": 1.0
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event.source",
+    "value": "assumed_engineering_event_not_an_observed_incident"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "hospital_task.id",
+    "value": "hospital_task_001"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "hospital_task.od_id",
+    "value": "west_to_hospital_road"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "hospital_task.release_s",
+    "value": 720
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "hospital_task.destination_note",
+    "value": "RJ_YJ医院外围公共道路接驳点；不是已核验院内急救入口"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "hospital_task.vehicle_note",
+    "value": "与普通车辆使用完全相同的车辆性能、道路权限和安全跟驰参数"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.0.id",
+    "value": "primary_1mps"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.0.speed_m_s",
+    "value": 1.0
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.0.purpose",
+    "value": "predeclared_primary_engineering_case"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.1.id",
+    "value": "severe_0p5mps"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.1.speed_m_s",
+    "value": 0.5
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "event_speed_scenarios.1.purpose",
+    "value": "predeclared_severity_sensitivity_not_selected_for_positive_results"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "time_basis",
+    "value": "simulation_seconds_only_no_real_world_clock_mapping"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "policy",
+    "value": "minimum_current_known_route_cost_before_departure"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "coordination_B_status",
+    "value": "not_implemented"
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.0",
+    "value": "Six fixed OD demands are independent of the number of route candidates; each OD requests one vehicle every 30 seconds before 1200 seconds."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.1",
+    "value": "The 600-1200 second speed restriction is an assumed engineering event, not an observed accident, measured capacity reduction or reconstructed real traffic window."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.2",
+    "value": "Only west-to-hospital departures at or after event publication and during its active interval may reconsider their route. Compare the complete same-endpoint candidates, including the default, using sum(external segment length/current known speed); ties retain the default."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.3",
+    "value": "Route-cost estimates use the current known restriction without anticipating its future end; they omit uncalibrated junction/queue delays and are not actual trip-time observations."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.4",
+    "value": "Both the primary 1 m/s event and the predeclared 0.5 m/s severity sensitivity are reported in full, including unchanged policies or worse outcomes."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.5",
+    "value": "All routes are assigned before scheduled departure; vehicles already assigned are not rerouted in the network. Future hospital tasks do not affect earlier decisions."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.6",
+    "value": "Hospital tasks share the same assumed_car type as background traffic; there is no special speed, signal priority, lane privilege or traffic-rule exemption."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.7",
+    "value": "S3 here tests the task interface and independent route guidance only; coordinated governance B is not implemented."
+  },
+  {
+    "file": "config/scenarios.json",
+    "field": "assumptions.8",
+    "value": "All findings are engineering diagnostics under assumptions, not validated real-world governance effects. A longer detour may worsen results."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "protocol_version",
+    "value": 1
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "purpose",
+    "value": "final_reproducible_assumption_based_simulation_experiments"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "base_config",
+    "value": "config/baseline.json"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "route_catalog",
+    "value": "data/processed/baidu/route_catalog_v1.json"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "experiment_anchor",
+    "value": "2026-10-18T12:00:00+08:00"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "anchor_status",
+    "value": "declared_counterfactual_experiment_clock_not_reconstructed_observation"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "simulation_duration_s",
+    "value": 1800
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "departure_duration_s",
+    "value": 1200
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "step_length_s",
+    "value": 1
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "fcd_period_s",
+    "value": 5
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "seed",
+    "value": 20261017
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.id",
+    "value": "assumed_ruijin_upstream_slow_segment"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.target_od_id",
+    "value": "west_to_hospital_road"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.0",
+    "value": "e000184"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.1",
+    "value": "e000083"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.2",
+    "value": "e000084"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.3",
+    "value": "e000085"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.4",
+    "value": "e000086"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.edge_ids.5",
+    "value": "e000087"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.road_name",
+    "value": "瑞金二路"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.published_at_s",
+    "value": 600
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.begin_s",
+    "value": 600
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "event.source",
+    "value": "assumed_event_not_observed_incident"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "hospital_task.id",
+    "value": "hospital_task_001"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "hospital_task.od_id",
+    "value": "west_to_hospital_road"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "hospital_task.release_s",
+    "value": 720
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "hospital_task.destination_note",
+    "value": "RJ_YJ医院外围公共道路接驳点，未核验院内急救入口"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "coordination.maximum_source_hold_s",
+    "value": 45
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "coordination.maximum_task_control_window_s",
+    "value": 180
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "coordination.mechanism",
+    "value": "release_time_bounded_origin_admission_when_route_intersects_current_remaining_task_corridor"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "coordination.authority_status",
+    "value": "assumed_controllable_origin_admission_not_actual_road_authority"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.0.id",
+    "value": "primary"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.0.departure_interval_s",
+    "value": 30
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.0.event_speed_m_s",
+    "value": 1.0
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.0.event_duration_s",
+    "value": 600
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.0.role",
+    "value": "primary_predeclared"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.1.id",
+    "value": "higher_demand"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.1.departure_interval_s",
+    "value": 15
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.1.event_speed_m_s",
+    "value": 1.0
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.1.event_duration_s",
+    "value": 600
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.1.role",
+    "value": "one_factor_demand_sensitivity"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.2.id",
+    "value": "severe_event"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.2.departure_interval_s",
+    "value": 30
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.2.event_speed_m_s",
+    "value": 0.5
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.2.event_duration_s",
+    "value": 600
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.2.role",
+    "value": "one_factor_event_speed_sensitivity"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.3.id",
+    "value": "longer_event"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.3.departure_interval_s",
+    "value": 30
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.3.event_speed_m_s",
+    "value": 1.0
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.3.event_duration_s",
+    "value": 900
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "profiles.3.role",
+    "value": "one_factor_duration_sensitivity"
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.0",
+    "value": "The same observed directed topology and unchanged SUMO vehicle/junction parameters are used in every comparison; the microscopic model is not calibrated field truth."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.1",
+    "value": "The six original OD release schedules are independent of the number of candidate routes. All request IDs, original release times and vehicle properties are fixed within paired groups."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.2",
+    "value": "A selects a same-endpoint candidate at release using current known external-edge speed costs. The default participates, ties retain default, and future event recovery or future tasks are not consulted."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.3",
+    "value": "B adds bounded source admission after task publication. It acts only on ordinary requests released at/after the task and not yet submitted to SUMO whose chosen path intersects the task's currently remaining corridor."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.4",
+    "value": "Task corridor updates use current TraCI vehicle route position; before task insertion its already assigned route is used. Each ordinary request waits at most 45 seconds at source, and task-related control expires 180 seconds after release."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.5",
+    "value": "Source admission authority is an explicit hypothetical governance action. All source control and SUMO insertion waiting remain charged from the unchanged original release time."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.6",
+    "value": "Task and ordinary vehicles share exactly one vType and the same road permissions. There is no special speed, red-light override, lane priority, repositioning or vehicle removal."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.7",
+    "value": "Slow-event speeds and durations are predeclared assumptions, not observed accidents or measured capacity. All profile results, including no benefit or harm, are retained."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.8",
+    "value": "The fixed experiment anchor maps simulation seconds to a declared wall clock only; the counterfactual traffic demand and event are not a reconstruction of the live collection window."
+  },
+  {
+    "file": "config/final_experiments.json",
+    "field": "assumptions.9",
+    "value": "A fitted ETA observation layer, if supplied separately, is a statistical reference and does not identify or validate the microscopic parameters."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "schema_version",
+    "value": 1
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_id",
+    "value": "S1_ETA_FINAL_V1_20261018"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "study_area_id",
+    "value": "shanghai_ruijin"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "coordinate_system",
+    "value": "bd09ll"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "survey_routes",
+    "value": "data/processed/baidu/survey_routes.json"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "collections.0",
+    "value": "data/raw/baidu/collection_20261017T065708_658611Z_6fd29964"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "collections.1",
+    "value": "data/raw/baidu/collection_20261017T065733_366933Z_4a9b903d"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "collections.2",
+    "value": "data/raw/baidu/collection_20261017T075140_567886Z_8856fc75"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "collections.3",
+    "value": "data/raw/baidu/collection_20261018T033636_844937Z_d7da011f"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "bucket_minutes",
+    "value": 5
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.training.start",
+    "value": "2026-10-17T14:55:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.training.end",
+    "value": "2026-10-17T15:55:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.training.expected_samples_per_od",
+    "value": 12
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.same_day_exploratory.start",
+    "value": "2026-10-17T15:55:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.same_day_exploratory.end",
+    "value": "2026-10-17T16:15:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.same_day_exploratory.expected_samples_per_od",
+    "value": 4
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.cross_day_holdout.start",
+    "value": "2026-10-18T11:36:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.cross_day_holdout.end",
+    "value": "2026-10-18T13:36:00+08:00"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "windows.cross_day_holdout.expected_samples_per_od",
+    "value": 24
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.0",
+    "value": "These are project analysis windows, not competition minimum collection durations."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.1",
+    "value": "The original 17 October 30-minute holdout remained incomplete. Its available first 20 minutes are explicitly exploratory here; 18 October never fills its missing buckets."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.2",
+    "value": "This final protocol was documented after collection. It is not a prospectively registered experiment; held-out outcomes are excluded from fitting and model selection."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.3",
+    "value": "Deduplicate by OD and global five-minute wall-clock bucket, keeping the first API-success response. A later duplicate never repairs missing ETA or geometry in that first success."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.4",
+    "value": "The cross-day window starts off the wall-clock bucket grid: its 24 expected samples are cadence slots, not a claim that every partially intersected wall-clock bucket is sampled."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.5",
+    "value": "Default identifiable ETA state is the per-OD training median. The nonnegative shared affine ETA model is a research comparator; holdout results do not choose the deployed model."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "protocol_notes.6",
+    "value": "SUMO mechanism parameters remain assumptions. Platform ETA is a route estimate, not observed vehicle travel time, flow or signal timing."
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.method",
+    "value": "nonnegative_shared_affine"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.formula",
+    "value": "predicted_ETA_s = alpha * fixed_SUMO_OD_mean_s + beta_s"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.fit_objective",
+    "value": "training_sample_least_squares"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.alpha_min",
+    "value": 0
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.beta_min_s",
+    "value": 0
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.default_eta_state",
+    "value": "per_od_training_median"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "model.physical_time_field",
+    "value": "completed_travel_time_mean_s"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "physical_baseline_directory",
+    "value": "outputs/final_experiments/runs/S1_d30"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "output_data",
+    "value": "data/processed/final"
+  },
+  {
+    "file": "config/final_validation.json",
+    "field": "output_validation",
+    "value": "outputs/validation"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "id",
+    "value": "shanghai_ruijin"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "city",
+    "value": "上海市"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "geocode_address",
+    "value": "上海市黄浦区瑞金二路197号"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "expected_geocode_levels.0",
+    "value": "医疗"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "expected_geocode_levels.1",
+    "value": "门址"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "address_source",
+    "value": "https://rsj.sh.gov.cn/tzpgg_17408/20210809/t0035_1401464.html"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "candidate_description",
+    "value": "黄浦区瑞金医院周边，优先核验瑞金二路、复兴中路、建国中路附近道路"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "selection_status",
+    "value": "selected_for_collection_partial_topology_evidence"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "coordinate_system",
+    "value": "bd09ll"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "validation_bounds.south",
+    "value": 30.5
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "validation_bounds.north",
+    "value": 32.0
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "validation_bounds.west",
+    "value": 120.8
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "validation_bounds.east",
+    "value": 122.2
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "probe_half_extent_degrees.latitude",
+    "value": 0.005
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "probe_half_extent_degrees.longitude",
+    "value": 0.006
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "collection_config",
+    "value": "config/collection.json"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "hospital_endpoint_id",
+    "value": "RJ_YJ"
+  },
+  {
+    "file": "config/study_area.json",
+    "field": "hospital_endpoint_status",
+    "value": "public_road_connection_point_research_assumption"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "study_area_id",
+    "value": "shanghai_ruijin"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "bounds.south",
+    "value": 31.21227022526
+  },
+  {
+    "file": "config/collection.json",
+    "field": "bounds.north",
+    "value": 31.224623506585
+  },
+  {
+    "file": "config/collection.json",
+    "field": "bounds.west",
+    "value": 121.46684884369
+  },
+  {
+    "file": "config/collection.json",
+    "field": "bounds.east",
+    "value": 121.47900080165999
+  },
+  {
+    "file": "config/collection.json",
+    "field": "coordinate_system",
+    "value": "bd09ll"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "traffic_interval_seconds",
+    "value": 120
+  },
+  {
+    "file": "config/collection.json",
+    "field": "routes_interval_seconds",
+    "value": 300
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.0.id",
+    "value": "north_to_south"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.0.origin.0",
+    "value": 31.220908030920974
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.0.origin.1",
+    "value": 121.4714692281883
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.0.destination.0",
+    "value": 31.214555031575056
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.0.destination.1",
+    "value": 121.47317213696051
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.1.id",
+    "value": "south_to_north"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.1.origin.0",
+    "value": 31.214555031575056
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.1.origin.1",
+    "value": 121.47317213696051
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.1.destination.0",
+    "value": 31.220908030920974
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.1.destination.1",
+    "value": 121.4714692281883
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.2.id",
+    "value": "west_to_hospital_road"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.2.origin.0",
+    "value": 31.21266939092032
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.2.origin.1",
+    "value": 121.46848849599763
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.2.destination.0",
+    "value": 31.217701642008944
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.2.destination.1",
+    "value": 121.47232078947275
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.3.id",
+    "value": "east_to_hospital_road"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.3.origin.0",
+    "value": 31.221280076797875
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.3.origin.1",
+    "value": 121.47406615016993
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.3.destination.0",
+    "value": 31.217701642008944
+  },
+  {
+    "file": "config/collection.json",
+    "field": "route_pairs.3.destination.1",
+    "value": 121.47232078947275
+  },
+  {
+    "file": "config/collection.json",
+    "field": "stop_at",
+    "value": "2026-10-18T13:36:33+08:00"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "daily_limits.traffic",
+    "value": 900
+  },
+  {
+    "file": "config/collection.json",
+    "field": "daily_limits.direction",
+    "value": 1500
+  },
+  {
+    "file": "config/collection.json",
+    "field": "minimum_request_gap_seconds",
+    "value": 1.1
+  },
+  {
+    "file": "config/collection.json",
+    "field": "maximum_consecutive_failures",
+    "value": 5
+  },
+  {
+    "file": "config/collection.json",
+    "field": "source_model_bounds.west",
+    "value": 121.46709884369
+  },
+  {
+    "file": "config/collection.json",
+    "field": "source_model_bounds.east",
+    "value": 121.47875080166
+  },
+  {
+    "file": "config/collection.json",
+    "field": "source_model_bounds.south",
+    "value": 31.21252022526
+  },
+  {
+    "file": "config/collection.json",
+    "field": "source_model_bounds.north",
+    "value": 31.224373506585
+  },
+  {
+    "file": "config/collection.json",
+    "field": "hospital_endpoint_note",
+    "value": "外围接驳点为研究设定，急救入口尚未核验"
+  },
+  {
+    "file": "config/collection.json",
+    "field": "billing_status",
+    "value": "unverified_no_purchase_authorized"
+  }
+]

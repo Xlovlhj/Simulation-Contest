@@ -1,0 +1,212 @@
+{
+  "coordinate_system": "bd09ll",
+  "counts": {
+    "eligible_route_steps": 600,
+    "exactly_mapped_route_steps": 615,
+    "missing_source_observation_timestamps": 264,
+    "numeric_speed_sections": 364,
+    "raw_direction_responses": 164,
+    "raw_route_steps": 615,
+    "traffic_road_entries": 2500,
+    "traffic_sections": 364,
+    "traffic_snapshots": 100
+  },
+  "identifiability": [
+    "Step ETA supplies finer spatial constraints than route ETA and can be matched by full directed geometry.",
+    "Step distance/ETA is an effective travel speed including unresolved delay, not a measured cruise speed.",
+    "Ordinary traffic responses report selected congestion sections. Missing numerical speed is censored/not returned, not zero or known free flow.",
+    "Route ETA and its constituent step ETAs come from one provider response; do not count them as independent observations or double their statistical weight.",
+    "No actual traffic counts, vehicle trajectories, traffic-signal cycles, phase splits or observed physical incidents are recovered by this extraction.",
+    "All quantiles/range summaries in training_summary.json exclude duplicates and all held-out phases."
+  ],
+  "original_data_snapshot_id": "DATA_c6680fa324491ca5",
+  "phases": {
+    "cross_day_holdout": {
+      "congestion_speed_sections": 92,
+      "eligible_direction_responses": 96,
+      "raw_direction_responses": 96,
+      "traffic_snapshots": 60
+    },
+    "same_day_exploratory": {
+      "congestion_speed_sections": 60,
+      "eligible_direction_responses": 16,
+      "raw_direction_responses": 16,
+      "traffic_snapshots": 10
+    },
+    "training": {
+      "congestion_speed_sections": 212,
+      "eligible_direction_responses": 48,
+      "raw_direction_responses": 52,
+      "traffic_snapshots": 30
+    }
+  },
+  "ruijin_road_speed_mapping": {
+    "candidate_northbound_model_edge_ids": [
+      "e000082",
+      "e000083",
+      "e000084",
+      "e000085",
+      "e000086",
+      "e000087",
+      "e000088",
+      "e000089",
+      "e000090",
+      "e000091",
+      "e000092",
+      "e000093",
+      "e000094",
+      "e000095",
+      "e000096",
+      "e000097",
+      "e000098",
+      "e000099",
+      "e000100",
+      "e000101",
+      "e000102",
+      "e000103",
+      "e000104",
+      "e000105",
+      "e000106",
+      "e000107",
+      "e000108",
+      "e000109",
+      "e000110",
+      "e000111",
+      "e000112",
+      "e000113",
+      "e000114",
+      "e000115",
+      "e000184",
+      "e000185"
+    ],
+    "candidate_union_length_m": 759.768841,
+    "descriptions_and_lengths": [
+      {
+        "congestion_distance_m": 510,
+        "count": 1,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从博爱路到南昌路"
+      },
+      {
+        "congestion_distance_m": 1040,
+        "count": 3,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从建国西路到南昌路"
+      },
+      {
+        "congestion_distance_m": 1440,
+        "count": 3,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从徐家汇路到南昌路"
+      },
+      {
+        "congestion_distance_m": 1580,
+        "count": 1,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从徐家汇路到淮海中路"
+      },
+      {
+        "congestion_distance_m": 670,
+        "count": 21,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从永嘉路到南昌路"
+      },
+      {
+        "congestion_distance_m": 800,
+        "count": 1,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,从永嘉路到淮海中路"
+      },
+      {
+        "congestion_distance_m": 830,
+        "count": 10,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,南昌路附近"
+      },
+      {
+        "congestion_distance_m": 1190,
+        "count": 1,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,南昌路附近"
+      },
+      {
+        "congestion_distance_m": 960,
+        "count": 1,
+        "road_name": "瑞金二路",
+        "section_desc": "南向北,淮海中路附近"
+      }
+    ],
+    "exact_spatial_match": false,
+    "interpretation": "Road name and direction identify plausible overlapping model edges only. Text section endpoints vary and lack geometry; reported 510–1580m sections cannot be treated as the old 68.735m event speed limit.",
+    "returned_sections": 42,
+    "snapshots_with_speed": 42
+  },
+  "schema_version": 2,
+  "step_route_consistency": {
+    "all_route_distances_equal_sum_of_steps": true,
+    "duration_residual_counts": {
+      "0.0": 48,
+      "1.0": 88,
+      "2.0": 24,
+      "3.0": 3,
+      "4.0": 1
+    },
+    "interpretation": "Retain route total and step totals separately. No allocation of residual seconds to an arbitrary edge.",
+    "route_minus_step_duration_s": {
+      "count": 164,
+      "max": 4.0,
+      "mean": 0.9085365853658537,
+      "median": 1.0,
+      "min": 0.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p75": 1.0,
+      "p90": 2.0
+    },
+    "step_dependence_observation": "Within each training OD, step-duration / route-duration fractions vary very little (see exact summaries). The source algorithm is unknown; steps are not independent sensors.",
+    "training_step_fraction_population_sd": {
+      "count": 15,
+      "max": 0.0006805060261923577,
+      "mean": 0.0005135466872265469,
+      "median": 0.0005062893138890556,
+      "min": 0.0003847508939560928,
+      "p10": 0.00039092985079721153,
+      "p25": 0.0004279040844745556,
+      "p75": 0.0005978490287219246,
+      "p90": 0.0006344442324108644
+    }
+  },
+  "temporal_alignment": {
+    "clock": "Request and receive timestamps are available; independent source observation times are absent",
+    "join": "Latest already received traffic response in the same phase, never a future response; age retained, no imposed cutoff",
+    "sampling": "traffic approximately 120s; four OD queries approximately 300s each; session restarts shift cadence",
+    "traffic_receipt_to_route_request_age_s": {
+      "count": 164,
+      "max": 70.82,
+      "mean": 33.60158536585366,
+      "median": 10.7905,
+      "min": 1.088,
+      "p10": 1.258,
+      "p25": 4.5535,
+      "p75": 64.53175,
+      "p90": 70.0137
+    }
+  },
+  "windows": {
+    "cross_day_holdout": {
+      "end": "2026-10-18T13:36:00+08:00",
+      "expected_samples_per_od": 24,
+      "start": "2026-10-18T11:36:00+08:00"
+    },
+    "same_day_exploratory": {
+      "end": "2026-10-17T16:15:00+08:00",
+      "expected_samples_per_od": 4,
+      "start": "2026-10-17T15:55:00+08:00"
+    },
+    "training": {
+      "end": "2026-10-17T15:55:00+08:00",
+      "expected_samples_per_od": 12,
+      "start": "2026-10-17T14:55:00+08:00"
+    }
+  }
+}

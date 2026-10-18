@@ -1,0 +1,1202 @@
+[
+  {
+    "time_s": 0.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 30.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 60.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 90.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 120.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 150.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 180.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 210.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 240.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 270.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 300.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 330.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 360.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 390.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 420.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 450.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 480.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 510.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 540.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 570.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 600.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 630.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 660.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 690.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 720.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 750.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 780.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 810.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 840.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 870.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 900.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 930.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 960.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 990.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1020.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1050.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1080.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1110.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1140.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1170.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1200.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1230.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1260.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1290.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1320.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1350.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1380.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1410.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1440.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1470.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1500.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1530.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1560.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1590.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1620.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1650.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1680.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1710.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1740.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1770.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1800.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1830.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1860.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1890.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 1920.0,
+    "source_waiting": 1,
+    "task_active": true,
+    "task_route_index": 0
+  },
+  {
+    "time_s": 1950.0,
+    "source_waiting": 9,
+    "task_active": true,
+    "task_route_index": 5
+  },
+  {
+    "time_s": 1980.0,
+    "source_waiting": 13,
+    "task_active": true,
+    "task_route_index": 9
+  },
+  {
+    "time_s": 2010.0,
+    "source_waiting": 13,
+    "task_active": true,
+    "task_route_index": 13
+  },
+  {
+    "time_s": 2040.0,
+    "source_waiting": 12,
+    "task_active": true,
+    "task_route_index": 17
+  },
+  {
+    "time_s": 2070.0,
+    "source_waiting": 13,
+    "task_active": true,
+    "task_route_index": 20
+  },
+  {
+    "time_s": 2100.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 23
+  },
+  {
+    "time_s": 2130.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 27
+  },
+  {
+    "time_s": 2160.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 29
+  },
+  {
+    "time_s": 2190.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 30
+  },
+  {
+    "time_s": 2220.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 31
+  },
+  {
+    "time_s": 2250.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 33
+  },
+  {
+    "time_s": 2280.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 33
+  },
+  {
+    "time_s": 2310.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 35
+  },
+  {
+    "time_s": 2340.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 39
+  },
+  {
+    "time_s": 2370.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 41
+  },
+  {
+    "time_s": 2400.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 46
+  },
+  {
+    "time_s": 2430.0,
+    "source_waiting": 0,
+    "task_active": true,
+    "task_route_index": 50
+  },
+  {
+    "time_s": 2460.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2490.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2520.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2550.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2580.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2610.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2640.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2670.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2700.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2730.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2760.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2790.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2820.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2850.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2880.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2910.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2940.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 2970.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3000.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3030.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3060.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3090.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3120.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3150.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3180.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3210.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3240.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3270.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3300.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3330.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3360.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3390.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3420.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3450.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3480.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3510.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3540.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3570.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3600.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3630.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3660.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3690.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3720.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3750.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3780.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3810.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3840.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3870.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3900.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3930.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3960.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 3990.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4020.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4050.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4080.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4110.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4140.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4170.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4200.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4230.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4260.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4290.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4320.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4350.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4380.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4410.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4440.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4470.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4500.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4530.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4560.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4590.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4620.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4650.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4680.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4710.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4740.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4770.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4800.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4830.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4860.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4890.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4920.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4950.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 4980.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5010.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5040.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5070.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5100.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5130.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5160.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5190.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5220.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5250.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5280.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5310.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5340.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5370.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5400.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5430.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5460.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5490.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5520.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5550.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5580.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5610.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5640.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5670.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5700.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5730.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5760.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5790.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5820.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5850.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5880.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5910.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5940.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  },
+  {
+    "time_s": 5970.0,
+    "source_waiting": 0,
+    "task_active": false,
+    "task_route_index": null
+  }
+]

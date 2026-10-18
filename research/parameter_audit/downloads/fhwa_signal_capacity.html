@@ -1,0 +1,954 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><!-- InstanceBegin template="/Templates/report.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Traffic Signal Timing Manual: Chapter 3 - Office of Operations</title>
+<!-- InstanceEndEditable -->
+<link href="hotm_report_css/ops_print_rpt.css" rel="stylesheet" media="print" type="text/css">
+<link href="hotm_report_css/ops_nn4_rpt.css" rel="stylesheet" media="screen" type="text/css" title="FHWA Operations Report Stylee Sheet">
+<style type="text/css">
+@import url(hotm_report_css/ops_rpt.css);
+</style>
+<script type="text/javascript" src="//www.fhwa.dot.gov/includes/fhwaload.js"></script>
+<!-- InstanceBeginEditable name="styles" --><!-- InstanceEndEditable --> 
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr> 
+    <td  class="fhwa-bar" id="dot-logo"><img src="images/ops_images/dotfhwa2.gif" alt="Department of Transportation: Federal Highway Administration" width="210" height="31" border="0"></td>
+    <td class="fhwa-bar" id="fhwa-links"><span id="skiplink"><a href="#contenttext"><img src="images/ops_images/skiplink.gif" alt="Skip to Content" width="1" height="1" border="0"></a></span><a href="//highways.dot.gov" title="Go to FHWA Home"><img src="images/ops_images/fhwahome.gif" width="79" 
+height="18" border="0" alt="FHWA Home"></a><a href="//ops.fhwa.dot.gov/contactus.htm"><img src="images/ops_images/feedback.gif" width="90" height="18" border="0" alt="Feedback"></a></td>
+  </tr>
+  <tr id="opsbanner"> 
+    <td id="obsbanner1"><a href="//ops.fhwa.dot.gov/index.asp" title="Go to Office of Operations">
+	<img src="images/ops_images/ops_red_banner.gif" alt="Office of Operations" width="243" height="25" border="0"></a></td>
+	<td id="obsbanner2"><div align="right"><img src="images/ops_images/21century.gif" alt="21st Century Operations Using 21st Century Technologies" width="490" height="25"></div></td>
+  </tr>
+  
+ 
+  </table>
+  
+  
+<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+<tr> <td colspan="2" valign="top"> 
+      <div id="content"> <a id="contenttext" role="link" tabindex="0" title="Content begins"></a> 
+	  <div class="breadcrumb"><!-- InstanceBeginEditable name="Breadcrumb" --><a href="index.htm#toc" title="Go to Table of Contents">Table of Contents</a><!-- InstanceEndEditable --></div>
+	  
+        <h1><!-- InstanceBeginEditable name="Heading1" -->Traffic Signal Timing Manual<!-- InstanceEndEditable --></h1>
+        
+        
+		<!-- InstanceBeginEditable name="Content" -->
+        <p>Contact Information: Operations Feedback at <a href="mailto:OperationsFeedback@dot.gov">OperationsFeedback@dot.gov</a></p>
+        <h2>This publication is an archived publication and replaced with the <a href="https://www.fhwa.dot.gov/exit.cfm?link=http://www.trb.org/OperationsTrafficManagement/Blurbs/173121.aspx">Signal Timing Manual - Second Edition</a>.</h2>
+        <hr>
+		<div class="header">
+		      <h2>CHAPTER 3</h2>
+		      <h2>OPERATIONAL AND SAFETY ANALYSIS</h2>
+	        </div>
+            <h3>TABLE OF CONTENTS</h3>
+            <ul class="toc">
+              <li><a href="#3.0">3.0 Operational and Safety Analysis</a></li>
+              <li><a href="#3.1">3.1 Terminology</a></li>
+              <li><a href="#3.2">3.2 Characteristics Affecting Signal Timing</a>
+                <ul>
+                  <li>3.2.1 Location</li>
+                  <li>3.2.2 Transportation Network Characteristics</li>
+                  <li>3.2.3 Intersection Geometry</li>
+                  <li>3.2.4 User Characteristics</li>
+                </ul>
+              </li>
+              <li><a href="#3.3">3.3 Capacity and Critical Movement Analysis</a>
+                <ul>
+                  <li>3.3.1 Basic Operational Principles </li>
+                  <li>3.3.2 Saturation Flow Rate</li>
+                  <li>3.3.3 Lost Time</li>
+                  <li>3.3.4 Capacity</li>
+                  <li>3.3.5 Volume-to-Capacity Ratio</li>
+                  <li>3.3.6 Critical Movement Analysis</li>
+                </ul>
+              </li>
+              <li><a href="#3.4">3.4 Intersection-Level Performance Measures and Analysis Techniques</a>
+                <ul>
+                  <li>3.4.1 Performance Measures</li>
+                  <li>3.4.2 Evaluation Techniques: The HCM Procedure for Signalized Intersections</li>
+                  <li>3.4.3 Practical Operational Approximations</li>
+                  <li>3.4.4 Intersection-Level Field Measurement</li>
+                </ul>
+              </li>
+              <li><a href="#3.5">3.5 Arterial- and Network-Level Performance Measures and Prediction Techniques</a>
+                <ul>
+                  <li>3.5.1 Arterial- and Network-Level Performance Measures</li>
+                  <li>3.5.2 Evaluation Techniques</li>
+                  <li>3.5.3 Arterial and Network Field Measurement Techniques</li>
+                </ul>
+              </li>
+              <li><a href="#3.6">3.6 Safety Assessment</a>
+                <ul>
+                  <li>3.6.1 Crash Data Review</li>
+                  <li>3.6.2 Quantitative Safety Assessment</li>
+                </ul>
+              </li>
+              <li><a href="#3.7">3.7 Signal Warrants</a></li>
+              <li><a href="#3.8">3.8 References</a></li>
+            </ul>
+            <h3>LIST OF TABLES</h3>
+            <ul class="toc">
+              <li>Table 3-1 Steps of the Quick Estimation Method (QEM) (2, with HCM corrections)</li>
+              <li>Table 3-2 Volume-to-capacity ratio threshold descriptions for the Quick Estimation Method</li>
+              <li>Table 3-3 Motor vehicle LOS thresholds at signalized intersections</li>
+              <li>Table 3-4 Planning-level cycle length assumptions</li>
+              <li>Table 3-5 HCM arterial class definitions</li>
+              <li>Table 3-6 Arterial level of service</li>
+              <li>Table 3-7 Guidelines for bandwidth efficiency</li>
+              <li>Table 3-8 Guidelines for bandwidth attainability</li>
+              <li>Table 3-9 Evaluation Techniques for Performance Measures</li>
+              <li>Table 3-10 Summary of crash types and possible signal modifications to benefit safety</li>
+            </ul>
+            <h3>LIST OF FIGURES</h3>
+            <ul class="toc">
+              <li>Figure 3-1 Effect of intersection skew on signalized intersection width</li>
+              <li>Figure 3-2 Figure 3-2 Typical flow rates at a signalized movement</li>
+              <li>Figure 3-3 Illustration of volume and capacity of a signalized movement</li>
+              <li>Figure 3-4 Overview of signalized intersection analysis methods</li>
+              <li>Figure 3-5 Graphical summary of Critical Movement Analysis/Quick Estimation Method (1)</li>
+              <li>Figure 3-6 Sample travel time run result graph</li>
+            </ul>
+            <a id="3.0" role="link" tabindex="0" title="3.0"></a>
+            <h3>3.0 OPERATIONAL AND SAFETY ANALYSIS</h3>
+            <p>The purpose of this chapter is to summarize some of the common techniques used to assess the operational and safety performance of signal timing. The chapter begins by presenting an overview of the characteristics that affect signal timing, including both system and user characteristics. It then presents discussions of operational and safety performance measures and techniques to evaluate those performance measures. Finally, the chapter presents a discussion of signal warrants as presented in the Manual on Uniform Traffic Control Devices and how those warrants relate to signal timing.</p>
+            <a id="3.1" role="link" tabindex="0" title="3.1"></a>
+            <h3>3.1 TERMINOLOGY</h3>
+            <p>This section identifies and describes basic terminology used within this chapter. Additional terms can be found in the Glossary section of the Manual.</p>
+            <p><strong>Capacity</strong><br>
+              The maximum rate at which vehicles can pass through the intersection under prevailing conditions.</p>
+            <p><strong>Clearance lost time</strong><br>
+              The time, in seconds, between signal phases during which an intersection is not used by any critical movements.</p>
+            <p><strong>Control Delay</strong><br>
+              The amount of additional travel time experienced by a user attributable to a control device.</p>
+            <p><strong>Critical movement analysis</strong><br>
+              A simplified technique for estimating phasing needs and signal timing parameters.</p>
+            <p><strong>Delay</strong><br>
+              The additional travel time experienced by a driver, passenger, or pedestrian.</p>
+            <p><strong>Effective green time</strong><br>
+              The time during which a given traffic movement or set of movements may proceed; it is equal to the cycle length minus the effective red time.</p>
+            <p><strong>Flow rate</strong><br>
+              The equivalent hourly rate at which vehicles, bicycles, or persons pass a point on a lane, roadway, or other trafficway, computed as the number of vehicles, bicycles, or persons passing the point, divided by the time interval (usually less than 1 hour) in which they pass; expressed as vehicles, bicycles, or persons per hour.</p>
+            <p><strong>Level of service</strong><br>
+              A qualitative measure describing operational conditions within a traffic stream, based on service measures such as speed and travel time, freedom to maneuver, traffic interruptions, comfort, and convenience.</p>
+            <p><strong>Lost Time</strong><br>
+              The portion of time at the beginning of each green period and a portion of each yellow change plus red clearance period that is not usable by vehicles.</p>
+            <p><strong>Saturation Flow Rate</strong><br>
+              The equivalent hourly rate at which vehicles can traverse an intersection approach under prevailing conditions, assuming a constant green indication at all time and no loss time, in vehicles per hour or vehicles per hour per lane.</p>
+            <p><strong>Start-up lost time</strong><br>
+              The additional time, in seconds, consumed by the first few vehicles in a queue at a signalized intersection above and beyond the saturation headway due to the need to react to the initiation of the green phase and to accelerate to a steady flow condition.</p>
+            <p><strong>Stopped Delay</strong><br>
+              A measurement of the aggregate sum of stopped vehicles for a particular time interval divided by the total entering volume for that movement.</p>
+            <p><strong>Total delay</strong><br>
+              The sum of all components of delay for any lane group, including control delay, geometric delay, and incident delay.</p>
+            <p><strong>Travel Time (Average)</strong><br>
+              The total elapsed time spent traversing a specified distance. The average travel time represents an average of the runs for a particular link or corridor.</p>
+            <a id="3.2" role="link" tabindex="0" title="3.2"></a>
+            <h3>3.2 CHARACTERISTICS AFFECTING SIGNAL TIMING</h3>
+            <p>Several overall features affect implementation of signal timing including:</p>
+            <ul>
+              <li>Location</li>
+              <li>Transportation network characteristics</li>
+              <li>Intersection geometry</li>
+              <li>User characteristics</li>
+            </ul>
+            <p>The following sections further describe many characteristics and dynamic nature influencing signal timing.</p>
+            <h4>3.2.1 Location</h4>
+            <p>One of the primary factors affecting overall signal timing is the environment in which the intersection or intersections being timed are located. Urban environments are frequently characterized by lower speeds and higher degrees of congestion. In addition, urban environments are frequently characterized by higher pedestrian, cyclist, and transit use that often require priority in consideration. Rural environments, on the other hand, are typically higher speed but with lower levels of traffic volumes and fewer, if any, pedestrians, cyclists, and transit vehicles. As a result, signal timing for rural environments is typically dominated by efforts to safely manage high speed approaches; capacity is seldom a constraint. Suburban environments often present a challenging mix of these characteristics. Suburban environments are often characterized by high speeds during the off-peak periods and capacity-constrained conditions during the peak periods. This requires a careful consideration and balance of both safety aspects and operational efficiency.</p>
+            <h4>3.2.2 Transportation Network Characteristics</h4>
+            <p>The configuration of the transportation network under consideration can have a significant impact on the way its traffic signals are timed. Isolated intersections can be timed without the explicit consideration of other traffic signals, allowing the flexibility to either set or target cycle lengths that are optimal for the individual intersection. In these cases, good detection design often yields measurable operational and safety benefits. These are discussed further in Chapters 4 and 5.</p>
+            <p>For intersections located along arterial streets, isolated operation can often be improved by considering coordination of the major street movements along the arterial. Common cycle lengths are often employed to facilitate this coordination. Coordinated operations are discussed in detail in Chapter 6.</p>
+            <p>Signalized intersections are often located in grid networks with either crossing arterials or a series of intersecting streets with comparable function and traffic volumes. In these cases, the entire network is often timed together to ensure consistent behavior between intersections. Grid networks, particularly downtown environments with short block spacing, are frequently timed using fixed settings and no detection.</p>
+            <p>Within these categories, the spacing of signalized intersections affects how one times the signals. For signals that are sufficiently far apart that they can be considered independent of one another, intersections may be operated freely without need for or benefit from coordination, depending on the degree of congestion on the facility. For most arterial streets with signal spacing between 500 feet and 0.5 mile (2,640 feet), coordinated operation can often yield benefits by improving progression between signals. On arterials with higher speeds, it can be beneficial to coordinate signals spaced a mile (5,280 feet) apart or even longer. Signals that are located very close together (less than 500 feet) often require settings that manage queues rather than progression as the dominant policy. It may also be beneficial to operate two intersections with very close spacing with a single controller.</p>
+            <h4>3.2.3 Intersection Geometry</h4>
+            <p> The overall geometry of an intersection determines its ability to efficiently and safely serve user demand. Pedestrians are often crossing lanes of traffic, whereas transit, bicycles, and vehicular traffic are using the travel lanes provided at the intersection. The number of lanes provided for each approach has a significant impact on the capacity of the intersection and, therefore, the ability for signal timing to efficiently serve demand. For example, a movement served by two lanes rather than one has a higher capacity and thus requires less green time to serve demand. However, increasing the number of lanes on a particular leg of the intersection also increases the minimum pedestrian crossing time across that leg, which by increasing clearance times will offset some of the increase in capacity.</p>
+            <p>Subtle details of intersection geometry have a significant influence on signal timing. The size and geometry of the intersection, coupled with the speed of approaching vehicles and walking pedestrians, affect vehicular and pedestrian clearance intervals, which in turn have an effect on the efficiency of the intersection&rsquo;s operation. For example, the skew of an intersection (the angle at which two roadways intersect) influences the length of crosswalks and thus pedestrian clearance time. The crosswalk length for an intersection at right angles (90 degrees) with a crosswalk length of 61 feet can extend to 76 feet if the intersection is skewed to 60 degrees, as shown in Figure 3-1 below. If a pedestrian walking speed of 4.0 ft/s, for example, is used for pedestrian clearance interval timing, the skew increases the pedestrian clearance interval from 16 seconds to 19 seconds; for a pedestrian walking speed of 3.5 ft/s, the clearance interval increases from 18 seconds to 22 seconds. Reverse effects can be seen when smaller curb radii and/or curb extensions are used to shorten pedestrian crosswalks, thus reducing pedestrian clearance time requirements (1). Although curb extensions can shorten pedestrian crossing times, the resulting narrow width may restrict the ability for through vehicles in shared lanes to bypass right-turning vehicles that are waiting for pedestrians or left-turning vehicles waiting for gaps in opposing traffic.</p>
+            <p>Regardless of the angle of skew, care should be taken to ensure that good visibility of the signal heads is maintained for approaching vehicles.</p>
+            <p class="fig-caption">Figure 3-1 Effect of Intersection skew on signalized intersection width</p>
+            <ol style="list-style:lower-alpha">
+              <li><img src="images/3_1a.png" width="500" height="209" alt="Figure 3-1" longdesc="#long_fig31"><br>
+              <div class="sr-only" id="long_fig31">Figure 3-1 illustrates the impact of skewed intersection geometry on signal operations. As the angle between two typical four lane intersecting arterials decreases from 90 degrees, to 75 degrees, and then to 60 degrees, the crosswalk lengthens from 61 feet, to 63 feet, and then to 76 feet respectively.  The greater the skew, the greater the pedestrian crosswalk distance, resulting in longer clearance times.</div>
+                Intersection skew at 90 degrees.</li>
+              <li><img src="images/3_1b.png" width="500" height="201" alt="3 1b" ><br>
+                Intersection skew at 75 degrees</li>
+              <li><img src="images/3_1c.png" width="500" height="199" alt="3 1c" ><br>
+                Intersection skew at 60 degrees.</li>
+            </ol>
+            <p><em>Source: Figure 15, FHWA Signalized Intersections: Informational Guide</em></p>
+            <h4>3.2.4 User Characteristics</h4>
+            <p>User characteristics clearly influence the effectiveness of signal timing and should be accounted for early in the planning and analysis process. Some of the important factors include the following:</p>
+            <ul>
+              <li>Mix of users: The mix of users at an intersection has a significant influence on signal timing. Pedestrians with slower walking speeds, persons using wheelchairs, and pedestrians with visual impairments need more time to cross the street; pedestrian walk times and clearance intervals need to be adjusted accordingly. High bicycle use may benefit from special bicycle detection and associated bicycle minimum green timing. Emergency vehicle and/or transit use may justify the use of preemption and/or priority. Truck traffic requires accounting for reduced performance (longer acceleration and deceleration times) and larger size of heavy vehicles.</li>
+              <li>User demand versus measured volume: Traffic demand represents the arrival pattern of vehicles at an intersection (or the system, if one considers a group of intersections together), while traffic volume is the measured departure rate from the intersection. If more vehicles arrive for a movement than can be served, the movement is considered to be operating over capacity (oversaturated). However, unless the analyst has measured demand arriving at the intersection through either queue observation or through measurement of departure rates from an upstream undersaturated intersection, the true demand at an intersection may be unknown. This can cause problems when developing signal timing plans for a given intersection, as one may add time to a given movement, only to have it used up by the latent demand for that movement. Traffic volume at an intersection may also be less than the traffic demand due to an overcapacity condition at an upstream signal that &ldquo;starves&rdquo; demand at the subject intersection. These effects are often best analyzed using microsimulation.</li>
+            </ul>
+            <a id="3.3" role="link" tabindex="0" title="3.3"></a>
+            <h3>3.3 CAPACITY AND CRITICAL MOVEMENT ANALYSIS</h3>
+            <p>An important principle behind effective signal timing is a basic understanding of how signal timing affects the capacity of the intersection. Capacity is discussed in detail in the Highway Capacity Manual (2), but often only the basic elements are particularly relevant to practical signal timing implementation. This section presents a discussion of the operation of a signalized intersection movement, the definition of capacity and its component elements, and a discussion of techniques to estimate capacity.</p>
+            <h4> 3.3.1 Basic Operational Principles</h4>
+            <p>The basic operation of vehicular movement through a signalized intersection is presented in Figure 3-2 below. The signal display is presented on the horizontal axis, the instantaneous flow of vehicles on the vertical axis. During the time while the movement is receiving a red indication, vehicles arrive and form a queue, and there is no flow. Upon receiving a green indication, it takes a few seconds for the driver of the first vehicle to recognize that the signal has turned green and to get the vehicle in motion. The next few vehicles also take some time to accelerate. This is defined as the start-up lost time or start-up delay and is commonly assumed to be approximately 2 seconds. After approximately the fourth vehicle in the queue, the flow rate tends to stabilize at the maximum flow rate that the conditions will allow, known as the saturation flow rate. This is generally sustained until the last vehicle in the queue departs the intersection. Upon termination of the green indication, some vehicles continue to pass through the intersection during the yellow change interval; this is known as yellow extension. The usable amount of green time, that is, the duration of time between the end of the start-up delay and the end of the yellow extension, is referred to as the effective green time for the movement. The unused portion of the yellow change interval and red clearance interval is called clearance lost time.</p>
+            <p class="fig-caption">Figure 3-2 Typical flow rates at a signalized movement</p>
+            <div class="figure"> <img src="images/3_2web.png" width="500" height="279" alt="Figure 3-2 illustrates the operation of a signal phase as explained in detail paragraph 3.3.1 The color display (red, green, or yellow) is shown on horizontal axis, and instantaneous flow vehicles vertical axis." > </div>
+            <h4>3.3.2 Saturation Flow Rate</h4>
+            <p>The saturation flow rate, s, is an important parameter for estimating the performance of a particular movement. Saturation flow rate is simply the headway in seconds between vehicles moving from a queued condition, divided into 3600 seconds per hour. For example, vehicles departing from a queue with an average headway of 2.2 seconds have a saturation flow rate of 3600 / 2.2 = 1636 vehicles per hour per lane. Saturation flow rate for a lane group is a direct function of vehicle speed and separation distance. These are in turn functions of a variety of parameters, including the number and width of lanes, lane use (e.g., exclusive versus shared lane use, aggregated in the HCM as lane groups), grades, and factors that constrain vehicle movement such as presence or absence of conflicting vehicle and/or pedestrian traffic, on-street parking, and bus movements. As a result, saturation flow rates vary by movement, time, and location and commonly range from 1,500 to 2,000 passenger cars per hour per lane (2). The HCM provides a series of detailed techniques for estimating and measuring saturation flow rate. It should be noted that this is significantly different than the ideal saturation flow rate, which is typically assumed to be 1,900 passenger cars per hour per lane.</p>
+            <p> The ideal saturation flow rate may not be achieved (observed) or sustained during each signal cycle. There are numerous situations where actual flow rates will not reach the average saturation flow rate on an approach including situations where demand is not able to reach the stop bar, queues are less than five vehicles in a lane, or during cycles with a high proportion of heavy vehicles. To achieve optimal efficiency and maximize vehicular throughput at the signalized intersection, traffic flow must be sustained at or near saturation flow rate on each approach. In most HCM analyses, the value of saturation flow rate is a constant based on the parameters input by the user, but in reality, this is a value that varies depending on the cycle by cycle variation of situations and users.</p>
+            <p>The HCM provides a standardized technique for measuring saturation flow rate. It is based on measuring the headway between vehicles departing from the stop bar, limited to those vehicles between the fourth position in the queue (to minimize the effect of startup lost time) and the end of the queue. The detailed procedure can be found in Chapter 16 of the HCM. For signal timing work, it is often not necessary to place heavy emphasis on this parameter due to the high degree of fluctuation in this parameter from cycle to cycle.</p>
+            <h4>3.3.3 Lost Time</h4>
+            <p>As noted in the previous section, a portion of the beginning of each green period and a portion of each yellow change plus red clearance period is not usable by vehicles. The sum of these two periods comprises the lost time (or loss time) for the phase. This value is used in estimating the overall capacity of the intersection by deducting the sum of the lost times for each of the critical movements from the overall cycle length. The HCM defines a default value of 4 seconds per phase for total lost time (the sum of start-up lost time and clearance lost time).</p>
+            <p> The resulting effective green time can therefore be defined as follows in Equation 3-1:</p>
+            <h5>Equation 3-1</h5>
+            <div class="figure"> <img src="images/eq3_1.png" width="171" height="33" alt="g = G + Y + R - (l sub 1 + l sub 2)" ><br>
+              <img src="images/eq3_1v.png" width="616" height="51" alt="where g is the effective green time, G is the actual green interval, Y is the actual yellow change interval, R is the actual red clearance interval, l sub 1 is the start-up lost time, and l sub 2 is the clearance lost time (all values in seconds)" > </div>
+            <h4> 3.3.4 Capacity</h4>
+            <p>At signalized intersections, capacity for a particular movement is defined by two elements: the maximum rate at which vehicles can pass through a given point in an hour under prevailing conditions (known as saturation flow rate), and the ratio of time during which vehicles may enter the intersection. These are shown in Equation 3-2 (2).</p>
+            <h5>Equation 3-2</h5>
+            <div class="figure"> <img src="images/eq3_2.png" width="80" height="52" alt="c = s(g/C)" ><br>
+              <img src="images/eq3_2v.png" width="613" height="66" alt="Equation 3-2 explanation" longdesc="#long_eq32" ></div>
+              <div class="sr-only" id="long_eq32">where c is the capacity, s is the saturation flow rate of the lane group in vehicles per hour, g is the effective green time for the movement in seconds, and C is the cycle length in seconds. Capacity is shown graphically in Figure 3-3 as the area bounded by saturation flow rate and effective green time, and volume is shown as the area under the flow rate curve.</div>
+            <p class="fig-caption">Figure 3-3 Illustration of volume and capacity of a signalized movement</p>
+            <div class="figure"> <img src="images/3_3web.png" width="500" height="239" alt="Figure 3-3" longdesc="#long_fig33"> </div>
+            <div class="sr-only" id="long_fig33">Figure 3-3 illustrates the vehicle flow for a particular movement at signalized intersection as explained in detail paragraph 3.3.4. As previous figure, color of signal display (red, green, or yellow) is shown on horizontal axis, and instantaneous vehicles vertical axis. A shaded rectangular region bounded by saturation rate effect green time indicates that capacity specified movement.</div>
+        <p> For the purposes of signal timing, the factors within a practitioner&rsquo;s control that directly influence capacity are somewhat limited. In most cases, the number, width, and assignment of lanes are fixed, as are grades and the presence of on-street parking and bus movements. The practitioner has some control over the effect of conflicting vehicle and/or pedestrian traffic through the use of permissive versus protected left-turn and right-turn phasing and/or exclusive pedestrian phases. For signal timing purposes, the most readily accessible parameter is the effective green time for a particular movement.</p>
+            <h4>3.3.5 Volume-to-Capacity Ratio</h4>
+            <p>The volume-to-capacity ratio, also known as the v/c ratio or the degree of saturation, is calculated for each movement using Equation 3-3:</p>
+            <div class="figure"> <img src="images/eq3_3.png" width="143" height="74" alt="v/c = (v/(s(g/C))) = vC / sg" ><br>
+              <img src="images/eq3_3v.png" width="613" height="55" alt="Equation 3-3 description" longdesc="#long_eq33"> </div>
+              <div class="sr-only" id="long_eq33">where v is the demand volume of the subject movement in vehicles per hour and the remaining variables are as defined previously. Using the graphical tool from the previous section, the volume-to-capacity ration represents the proportion of the area defining capacity that is occupied by volume.</div>
+            <p> where v is the demand volume of the subject movement in vehicles per hour and the remaining variables are as defined previously. Using the graphical tool from the previous section, the volume-to-capacity ratio represents the proportion of the area defining capacity that is occupied by volume.</p>
+            <p> Movements or lane groups with volume-to-capacity ratios less than 0.85 are considered undersaturated and typically have sufficient capacity and stable operations. For movements or lane groups with a volume-to-capacity ratio of 0.85 to 1.00, traffic flow becomes less stable due to natural cycle-to-cycle variations in traffic flow. The closer a movement is to capacity, the more likely that a natural fluctuation in traffic flow (higher demand, large truck, timid driver, etc.) may cause the demand during the cycle to exceed the green time for that cycle. The result would be a queue that is carried over to the next cycle, even though the overall demand over the analysis period is below capacity. In cases where the projected volume-to-capacity ratios exceed 1.00 (demand exceeding capacity) over the entire analysis period, queues of vehicles not served by the signal each cycle are likely to accumulate and either affect adjacent intersections or cause shifts in demand patterns. These conditions are described as oversaturated and require significantly different approaches for signal timing.</p>
+            <h4>3.3.6 Critical Movement Analysis</h4>
+            <p>A variety of analysis procedures, ranging from simple to complex, are used to evaluate signalized intersection performance. These are summarized in Figure 3-4.</p>
+            <p>Critical movement analysis is a simplified technique that has broad application for estimating phasing needs and signal timing parameters. The most current implementation of the critical movement analysis method is provided in Chapter 10 of the HCM 2000 as the Quick Estimation Method. This method allows an analyst to identify the critical movements at an intersection; estimate whether the intersection is operating below, near, at, or over capacity; and approximate the amount of green time needed for each critical movement. The method is generally simple enough to be conducted by hand, although some of the more complicated refinements are aided considerably with the use of a simple spreadsheet. In many cases, the lack of precision of future volume forecasts or estimated trip generation of land uses minimizes the precision of more complicated analysis methods; in these cases, critical movement analysis is often as precise as one can achieve.</p>
+            <p>Critical movement analysis is based on the following fundamental basic principle:</p>
+            <p class="callout">The amount of time in an hour is fixed, as is the fact that two vehicles (or a vehicle and a pedestrian) cannot safely occupy the same space at the same time. Critical movement analysis identifies the set of movements that cannot time concurrently and require the most time to serve demand.</p>
+            <p>Critical movement analysis is an effective tool to quickly estimate green times for various movements at an intersection and to estimate its overall performance in terms of volume-to-capacity ratios. Appendix A provides step-by-step details for using the procedure, including a sample worksheet. The basic procedure for conducting a critical movement analysis/quick-estimation method analysis is given in Figure 3-5 and Table 3-1. Table 3-2 identifies the various thresholds recommended in the HCM for volume-to-capacity ratios.</p>
+            <p class="fig-caption">Figure 3-4 Overview of signalized intersection analysis methods</p>
+            <div class="figure"> <img src="images/3_4real.png" width="500" height="499" alt="Figure 3-4" longdesc="#long_fig34">
+            <div class="sr-only" id="long_fig34">Figure 3-4 summarizes the four signalized intersection analysis methods discussed in this manual, and indicates their interaction. The include quick estimation method paragraph 3.3.6, Highway Capacity Manual Operational Procedures that provide estimated performance measures for each lane group, Timing models can optimize signal timing plans estimates of fuel consumption, sophisticated micro simulation capable impact on air quality.</div>
+              <p>A simple example is provided in Example 3-1 to illustrate the basic elements of the procedure.</p>
+            </div>
+            <h5>Application</h5>
+            <p>From a signal timing perspective, the volume-to-capacity ratio is an important measure that defines how well progression can be achieved. For coordinated through movements, a volume-to-capacity ratio approaching capacity means that virtually all vehicles departing on green will be departing from a queue at the saturation flow rate. This type of operation is efficient in terms of maximizing the throughput of an intersection, but it greatly limits the ability to have vehicles arrive and depart on green without stopping (a typically desirable objective of progression). Therefore, if one desires to minimize stops for through vehicles along an arterial, the volume-to-capacity ratio for through movements must be kept sufficiently low (this has not be documented, but it is likely to be around 0.85 or lower) to allow a portion of the through movement&rsquo;s green time to remain undersaturated. If overall volume levels are too high to permit a large enough undersaturated period for the coordinated through movements to pass through without stopping, the objective of progression through the intersection without stopping may be infeasible.</p>
+            <h5>Limitations</h5>
+            <p>The critical movement analysis procedure is simple and cannot accommodate all real-world conditions encountered when developing signal timing. These include vehicle and pedestrian minimum times (as noted above), assumed constant values of capacity for each lane, and complex signal phasing. For these conditions, more advanced analysis methods are likely to be more accurate. However, the critical movement analysis procedure is still often a good first approximation.</p>
+            <p class="fig-caption">Figure 3-5 Graphical summary of Critical Movement Analysis/Quick Estimation Method (1)</p>
+            <div class="figure"> 
+              <p><img src="images/3_4web.png" width="500" height="350" alt="Figure 3-5 illustrates the steps in Critical Movement Analysis Quick Estimation Method as described Table 1." > </p>
+              <p>&nbsp;</p>
+            </div>
+            <table border="2">
+              <caption>
+                Table 3-1 Steps of the Quick Estimation Method (QEM) (2, with HCM corrections)
+              </caption>
+              <tr>
+                <th scope="col">Step</th>
+                <th scope="col">Process</th>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Identify movements to be served and assign hourly traffic volumes per lane. This is the only site-specific data that must be provided. The hourly traffic volumes are usually adjusted to represent the peak 15-minute period. The number of lanes must be known to compute the hourly volumes per lane.</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Arrange the movements into a desired sequence of phases that can be run concurrently based on the design of the signal. This is based in part on the treatment of each left turn (protected, permissive, etc.).</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Determine the critical volume per lane that must be accommodated during each interval. This step determines which movements are critical. The critical movement volume determines the amount of time that must be assigned to the phase on each signal cycle.</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Sum the critical phase volumes to determine the overall critical volume that must be accommodated by the intersection. This is a simple mathematical step that produces an estimate of how much traffic the intersection needs to accommodate.</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Determine the maximum critical volume that the intersection can accommodate: This represents the overall intersection capacity. The HCM QEM suggests 1,530 vphpl for most purposes</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Determine the critical volume-to-capacity ratio, which is computed by dividing the overall critical volume by the overall intersection capacity, after adjusting the intersection capacity to account for time lost due to starting and stopping traffic on each cycle. The lost time will be a function of the cycle length and the number of protected left turns.</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Determine the intersection status from the critical volume-to-capacity ratio. The status thresholds are given in Table 3-2.</td>
+              </tr>
+            </table>
+            <table border="2">
+              <caption>
+                <br>
+              Table 3-2 Volume-to-capacity ratio threshold descriptions for the Quick Estimation Method
+</caption>
+              <tr>
+                <th scope="col">Critical Volume-to-Capacity Ratio</th>
+                <th scope="col">Assessment</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">&lt; 0.85</th>
+                <td>Intersection is operating under capacity. Excessive delays are not experienced.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.85&ndash;0.95</th>
+                <td>Intersection is operating near its capacity. Higher delays may be expected, but continuously increasing queues should not occur.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.95&ndash;1.00</th>
+                <td>Unstable flow results in a wide range of delay. Intersection improvements will be required soon to avoid excessive delays.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">&gt; 1.00</th>
+                <td>The demand exceeds the available capacity of the intersection. Excessive delays and queuing are anticipated.</td>
+              </tr>
+              
+            </table>
+            <p class="tablenote">Source: (2)</p>
+            <div class="figure"> <a id="ex31" role="link" tabindex="0" title="ex31"></a> <img src="images/ex3_1.png" width="631" height="570" alt="Example 3-1: Critical Movement Analysis" longdesc="ex31ld.htm" > <a href="ex31ld.htm" style="display:none">[D]</a> <br>
+              <img src="images/ex3_1c.png" width="623" height="355" alt="Calculate and assess intersection volume-to-capacity ratio: &rarr; Near capacity" > </div>
+            <a id="3.4" role="link" tabindex="0" title="3.4"></a>
+            <h3>3.4 INTERSECTION-LEVEL PERFORMANCE MEASURES AND ANALYSIS TECHNIQUES</h3>
+            <p>The capacity measures discussed above are essential for determining the sufficiency of the intersection to accommodate existing or projected demand. However, capacity by itself is not easily perceived by the user. This section presents the most common user-perceived operational performance measures and analysis techniques used in timing individual intersections.</p>
+            <h4>3.4.1 Performance Measures</h4>
+            <p>The two primary user-perceived performance measures used to evaluate the performance of individual intersections are delays and queues.</p>
+            <h5>Control Delay and Intersection Level of Service</h5>
+            <p>Delay is defined in HCM 2000 as &ldquo;the additional travel time experienced by a driver, passenger, or pedestrian.&rdquo; Delay can be divided into a number of components, with total delay and control delay being of most interest for signal timing purposes.</p>
+            <p>The total delay experienced by a road user can be defined as the difference between the travel time actually experienced and the reference travel time that would result in the absence of traffic control, changes in speed due to geometric conditions, any incidents, and the interaction with any other road users (adapted from the HCM definition). Control delay is the portion of delay that is attributable to the control device (the signal, its assignment of right-of-way, and the timing used to transition right-of-way in a safe manner) plus the time decelerating to a queue, waiting in queue, and accelerating from a queue. For typical through movements at a signalized intersection, total delay and control delay are the same in the absence of any incidents.</p>
+            <p>Chapter 16 of the HCM provides equations for calculating control delay; primary contributing factors are lane group volume, lane group capacity, cycle length, and effective green time. The HCM control delay equation also includes factors that account for elements such as pretimed versus actuated control, the effect of upstream metering, and oversaturated conditions. Control delay is calculated separately for each movement; intersection control delay consists of an average across all movements, weighted by volume. The HCM defines Level of Service for signalized intersections in terms of control delay using delay thresholds given in Table 3-3.</p>
+            <table border="1">
+              <caption>
+                Table 3-3 Motor vehicle LOS thresholds at signalized intersections
+              </caption>
+              <tr>
+                <th scope="col"><abbr title="line of sight">LOS</abbr></th>
+                <th scope="col">Control Delay per Vehicle (seconds per vehicle)</th>
+              </tr>
+              <tr>
+                <th scope="row">A</th>
+                <td>&le; 10</td>
+              </tr>
+              <tr>
+                <th scope="row">B</th>
+                <td>&gt; 10-20</td>
+              </tr>
+              <tr>
+                <th scope="row">C</th>
+                <td>&gt; 20-35</td>
+              </tr>
+              <tr>
+                <th scope="row">D</th>
+                <td>&gt; 35-55</td>
+              </tr>
+              <tr>
+                <th scope="row">E</th>
+                <td>&gt; 55-80</td>
+              </tr>
+              <tr>
+                <th scope="row">F</th>
+                <td>&gt; 80</td>
+              </tr>
+              <tr>
+                <td colspan="2">Source: (2)</td>
+              </tr>
+            </table>
+            <h5>Queue Length</h5>
+            <p>Queue length is a measurement of the physical space vehicles will occupy while waiting to proceed through an intersection. It is commonly used to assess the amount of storage required for turn lanes and to determine whether the vehicles from one intersection will physically spill over into an adjacent intersection.
+              Several queue length estimations are commonly used with signalized intersections. Average queue and 95th-percentile queue are commonly estimated for the time period for which the signal is red. However, it is sometimes useful to include the queue formation that occurs during green while the front of the queue is discharging and vehicles are arriving at the back of queue. Queues measured in this way are often noted as average back of queue or some percentile of back of queue. Appendix G to chapter 16 of the HCM 2000 provides procedures for calculating back of queue.</p>
+            <h4>3.4.2 Evaluation Techniques: The HCM Procedure for Signalized Intersections</h4>
+            <p>To calculate the user-based performance measures described above, the critical movement analysis procedures described previously are insufficient. The most commonly used procedure for estimating intersection-level performance measures is provided by the HCM operational analysis methodology for signalized intersections (Chapter 16 of the HCM)</p>
+            <h5>Capabilities</h5>
+            <p>The HCM procedure addresses many of the limitations of critical movement analysis, including the assumption of constant values of capacity for each lane and the ability to analyze different types of signal phasing. In addition, some software packages implement procedures that are adequate for many signal timing applications, even though they may or may not be exact replications of the HCM procedure</p>
+            <h5>Known Limitations</h5>
+            <p>Known limitations of the HCM analysis procedures for signalized intersections exist under the following conditions (adapted from 1)</p>
+            <ul>
+              <li>Available software products that perform HCM analyses generally do not accommodate intersections with more than four approaches;</li>
+              <li>The analysis may not be appropriate for alternative intersection designs;</li>
+              <li>The effect of queues that exceed the available storage bay length is not treated in sufficient detail, nor is the backup of queues that block a stop line during a portion of the green time;</li>
+              <li>Driveways located within the influence area of signalized intersections are not recognized;</li>
+              <li>The effect of arterial progression in coordinated systems is recognized, but only in terms of a coarse approximation;</li>
+              <li>Heterogeneous effects on individual lanes within multilane lane groups (e.g., downstream taper, freeway on-ramp, driveways) are not recognized; and</li>
+              <li>The procedure accounts for right turns on red by reducing the right-turn volume without regard to when the turns can actually be made within the signal cycle.</li>
+            </ul>
+            <p>If any of these conditions exist, it may be necessary to proceed to arterial models or to simulation discussed in the next section to obtain a more accurate analysis</p>
+            <h4>3.4.3 Practical Operational Approximations</h4>
+            <p>In many cases, a variety of practical approximations can be used at varying stages in signal timing development. Some practitioners often rely primarily on these practical approximations and then observe and fine-tune their implementation in the field. In all cases, these practical approximations are often simple enough to be calculated in one&rsquo;s head, thus providing a method ready to be used in the field or as a quick check on calculations done using more advanced techniques</p>
+            <h5>Cycle length</h5>
+            <p>At a planning level, it is common to assume a cycle length for a given intersection to estimate its capacity performance. If the cycle length for an intersection is unknown, common planning-level assumptions for cycle length based on the complexity of the intersection are given in Table 3-4. These assumptions do not account for cycle length requirements for coordinated operation (see Chapter 6), nor do they account for the ability for actuated intersections to vary the effective cycle length from cycle to cycle. These approximations, however, are useful in the procedures for estimating approximate queue lengths and for identifying whether a movement is substantially under or over capacity</p>
+            <table border="2">
+              <caption>
+                Table 3-4 Planning-level cycle length assumptions
+              </caption>
+              <tr>
+                <th scope="col">Signal Complexity</th>
+                <th scope="col">Commonly Assumed Cycle Length(s)</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Permissive left turns on both streets</th>
+                <td>60</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Protected left-turns, protected-permissive left turns, or split phasing on one street</th>
+                <td>90</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Protected left-turns, protected-permissive left turn phasing, and / or split phasing on both streets</th>
+                <td>120</td>
+              </tr>
+            </table>
+            <p>If an analysis is to be completed for an intersection in an existing coordinated system, the user should use the current cycle length. Choosing a different cycle length would require changing the coordinated plan for adjacent intersections and could have implications throughout the system</p>
+            <h5>Average and 95th-Percentile Green Time</h5>
+            <p>Green time for individual movements can be approximated in many cases through estimating the number of vehicles per lane expected to be served in a given cycle and then setting an appropriate green time to serve that amount of traffic. This technique is useful for estimating green times for minor movements for which queue clearance is the primary objective and there is no intention to hold green time for vehicles to arrive and depart on green as one might do for coordinated through movements. For movements also serving pedestrians (e.g., minor-street through movements), this technique can provide an estimate of green time needed for cycles in which no pedestrian calls are placed, but it does not account for the additional time that may be required to provide pedestrian walk and clearance time</p>
+            <p> The process for estimating the average queue length for each cycle is given in Equation 3-4. It makes the simplifying and conservative assumption that the movement is timed so that all arriving vehicles for the movement arrive on red and that there is no residual queue at the end of the green. This assumption is realistic if the green time for the movement is a small percentage of the cycle length (e.g., less than 10 to 15 percent of the cycle) and thus would not apply to particularly high-volume movements. </p>
+            <h6>Equation 3-4</h6>
+            <div class="figure"> <img src="images/eq3_4.png" width="147" height="53" alt="Queue sub avg = v / (3600 / C)" ><br><img src="images/eq3_4v.png" width="611" height="85" alt="Equation 3-4 explanation" longdesc="#long_eq34v">
+            </div>
+              <div class="sr-only" id="long_eq34v">where Queue sub avg is the average queue in vehicles per lane; v is the volume of the movement in vehicles per hour per lane, and C is the cycle length in seconds. For example, a volume of 150 vehicles per hour per lane under a cycle length of 90 seconds will result in an average queue length of approximately 150 / (3600 / 90) = 3.75 vehicles. If using this value for timing or design, this queue length should be rounded up to the nearest vehicle, in this case 4 vehicles. For movements where the green time is a larger proportion of the cycle, the above formula does not account for the proportion of vehicles that arrive on green. In these cases, it is more accurate to account for the green time for the subject movement as shown in Equation 3-5.</div>
+            
+            <h6>Equation 3-5</h6>
+            <div class="figure"> <img src="images/eq3_5.png" width="178" height="50" alt="Queue sub avg = v / (3600 / (C-g))" ><br>
+              <img src="images/eq3_5v.png" width="613" height="99" alt="Equation 3-5 explanation" longdesc="#long_eq35v"> </div>
+              <div class="sr-only" id="long_eq35v">where Queue sub avg is the average queue in vehicles per lane; v is the volume of the movement in vehicles per hour per lane, C is the cycle length in seconds, and g is the effective green time in seconds. For example, a volume of 300 vehicles per hour per lane under a cycle length of 90 seconds and an effective green time of 20 seconds will result in an average queue length of approximately 300 / (3600 / (90-20)) = 5.83 vehicles. If using this value for timing or design, this queue length should be rounded up to the nearest vehicle, in this case 6 vehicles.</div>
+            <p> </p>
+            <p class="callout">A useful approximation for saturation flow rate is to assume a value of 1800 vehicles per hour for each lane, which results in a numerically simple value of 2 seconds of green time per vehicle. It is also useful to assume a startup lost time of approximately 2 seconds. Therefore, a queue of 4 vehicles can be assumed to take 2 + (4 &times; 2) = 10 seconds to clear.</p>
+            <p>One may use a Poisson distribution to estimate 95th-percentile queue from the average queue. In practice, the 95th-percentile queue is approximately 1.6 times the average queue for high-volume movements to approximately 2.0 times the average queue for low-volume movements. The following practical and simplifying approximation is useful in many cases for the purposes of signal timing, recognizing that it is overly conservative in some cases.</p>
+            <h6>Equation 3-6</h6>
+            <div class="figure"> <img src="images/eq3_6.png" width="164" height="29" alt="Queue sub 95th is approximately equal to 2 * Queue sub avg" ><br>
+            </div>
+            <p>Using the example in the previous paragraph, a movement with an average queue length of 3.75 vehicles has a 95th-percentile queue length of approximately 7.5 vehicles, rounded up for timing or design purposes to 8 vehicles. This movement would need a 95th-percentile green time of 2 + (8 &times; 2) = 18 seconds. Some practitioners use the 95th-percentile queue for estimating green time for protected left turns and the average queue for estimating green time for protected-permissive left turns under the assumption that under protected-permissive operation, vehicles not served during the protected phase can be served during the permissive phase. This depends in part on the availability of gaps in the opposing through vehicle stream and thus may not be applicable in cases where the opposing through movement is approaching capacity. In these cases, a more detailed analysis is advisable. Another useful planning-level procedure used in design for estimating 95th-percentile queue length is to assume a value of 1 foot per vehicle being served during the hour. For example, a left-turn movement with a volume of 150 vehicles per hour would have a 95th-percentile queue length of approximately 150 feet. This procedure is most accurate for cycle lengths around 90 seconds. For shorter cycle lengths, the queue length should be shortened (e.g., by 10 to 20 percent for a cycle length of 60 seconds); for longer cycle lengths, the queue length should be extended (e.g., by 10 to 20 percent for a cycle length of 120 seconds). One could then use the value from this estimation		method by assuming that each vehicle occupies a space of 25 feet and then using the techniques described above to estimate the 95th-percentile green time for the movement. </p>
+            <p class="callout">One must use caution using these practical approximations where queue length is critical. For example, if the queue from a left-turn lane exceeds available storage, it could block a through lane. If the blocked through lane is a critical movement, the performance of the entire intersection will be adversely affected, and field observations will not match office calculations.</p>
+            <h4>3.4.4 Intersection-Level Field Measurement</h4>
+            <p>Several field techniques can be used to measure some of the key intersection-level operational measures of effectiveness. The most common in practice is an intersection delay study. The FHWA/NTOC performance measures project selected delay (both recurring and non-recurring) as one of the measures to be considered for national standardization. Since non-recurring delay is the delay that occurs in the presence of an incident, recurring delay is the measure that is applied to evaluate signal timing. Some (but not all) of the more commonly used performance measures can be calculated from each of these techniques. These and others are described in more detail in the ITE Manual of Transportation Engineering Studies (3) and other references. This section discusses some of the more commonly used methods</p>
+            <h5>Stopped Delay</h5>
+            <p>A common intersection delay study is the method to estimate stopped delay. This procedure surveys a specified movement over a period of time. There are two data points collected during the survey, the total volume and the number of stopped vehicles at a given time interval. The aggregate sum of the stopped vehicles at the time interval is divided by the total entering volume to determine an average stopped delay. This method has been superseded in the HCM by the method to estimate control delay, described in the next section</p>
+            <h5>Control Delay</h5>
+            <p>Control delay can be measured in the field by recording the arrival and departure time of vehicles for a movement or approach. This procedure is described in detail in the HCM in Appendix A of Chapter 16. A detailed description of the methodology and a worksheet are provided. This method does not directly capture all of the deceleration and acceleration associated with control delay but is indicated in the HCM to yield a reasonable estimate of control delay. Queue formation during oversaturated conditions can make it difficult to use this method, as queues often extend beyond the measurement area and can spill into other intersections, confounding any measurements. In these cases, travel time estimates for selected origin-destination pairs (as described in the following section) may be more useful</p>
+            <h5>Delay Weighting for Specific User Types</h5>
+            <p>Delays can be focused primarily on vehicular traffic or can be weighted by particular vehicle types. To improve freight mobility, data collection could weight trucks more heavily than other traffic. Person delay is sometimes used by weighting the person carrying capacity of the vehicle. In these cases, transit vehicle capacity is calculated into the overall delay on the system</p>
+            <a id="3.5" role="link" tabindex="0" title="3.5"></a>
+            <h3>3.5 ARTERIAL- AND NETWORK-LEVEL PERFORMANCE MEASURES AND PREDICTION TECHNIQUES</h3>
+            <p>When considering signal timing among a series of signalized intersections, as for coordinated signal operation, performance measures and models that account for the relative interaction of adjacent intersections become important. This section presents the most common performance measures, prediction techniques, and field measurements used for evaluating signal timing performance along arterial streets and coordinated networks. The measures and methodologies in		this section, along with the measures for individual intersections described previously in this chapter, support the signal timing policies, the coordination techniques, and the signal timing process presented in Chapters 2, 6, and 7, respectively.</p>
+            <h4>3.5.1 Arterial- and Network-Level Performance Measures</h4>
+            <p>In addition to the estimation of intersection-level performance measures at each intersection along an arterial or within a network, a number of performance measures are used to assess how well the intersections fit together in terms of signal timing. These include stops, travel speed, and bandwidth and are described below. Other arterial- and network-level measures of effectiveness, including transit level of service, bicycle level of service, and pedestrian level of service, are sometimes used in developing and evaluating the effectiveness of signal timing. These are outside the scope of this document but are provided in the HCM</p>
+            <h5>Stops</h5>
+            <p>Stops are also used frequently to measure signal system effectiveness. Although this measure has not been identified as a candidate for standardization nationally, it is very important for two reasons: </p>
+            <ul>
+              <li>Stops have a higher impact on emissions than delay does because an accelerating vehicle emits more pollutants and uses more fuel than an idling vehicle. In other words, an idling vehicle must idle for many minutes before it emits as many pollutants as those emitted for a single stop. </li>
+              <li>Stops are a measure of the quality of progression along an arterial. Motorists are often frustrated when they have to make multiple stops. In some of the signal timing software, the user is given the option of defining the relative importance of stops and delays through the use of weighting factors. If stops are assigned a high level of importance, progression on arterials will be improved, even though this may result in higher overall delay. </li>
+            </ul>
+            <p>Motor vehicle stops can often play a larger role than delay in the perception of the effectiveness of a signal timing plan along an arterial street or a network. Stops tend to be used more frequently in arterial applications where progression between intersections (and thus reduction of stops) is a desired objective. Many software packages, including signal timing optimization programs and simulation packages, include estimates of stops.</p>
+            <h5>Travel Time, Travel Speed, and Arterial Level of Service</h5>
+            <p>Travel time and travel speed is one of the most popular measures used to assess how well arterial traffic progresses. Travel speed accounts for both the delay at intersections and the travel time between intersections. The HCM can be used to determine arterial level of service (LOS) based on travel speed. The HCM defines arterial LOS as a function of the class of arterial under study and the travel speed along the arterial. This speed is based on intersection spacing, the running time between intersections, and the control delay to through vehicles at each signalized intersection. Because arterial level of service is calculated using delay for through vehicles regardless of origin or destination, the resulting speed estimates may not necessarily correspond to speed measurements made from end-to-end travel time runs that measure a small subset of the possible origin-destination combinations along an arterial. Table 3-5 presents the HCM&rsquo;s definitions of classes of arterials based on design and functional categories, and 0 presents the threshold speeds for each class of arterial. Further detail can be found in Chapters 10 and 15 in the HCM. Note that these level of service thresholds only reflect the perspective of vehicular travel time; they do not account for the effects on transit, bicycles, and pedestrians. A broader, multimodal perspective on arterial level of service is being considered for the next edition of the HCM. </p>
+            <table border="1">
+              <caption>
+                Table 3-5 HCM  Arterial Class Definitions
+              </caption>
+              <tr>
+                <th scope="colgroup">&nbsp;</th>
+                <th colspan="2" scope="colgroup">Functional Category</th>
+              </tr>
+              <tr>
+                <th  scope="col">Design Category</th>
+                <th scope="col">Principal Arterial</th>
+                <th scope="col">Minor Arterial</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">High-Speed</th>
+                <td>I</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Suburban</th>
+                <td>II</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Immediate</th>
+                <td>II</td>
+                <td>III or IV</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Urban</th>
+                <td>III or IV</td>
+                <td>IV</td>
+              </tr>
+              <tr>
+                <td colspan="3">Source: (2)</td>
+              </tr>
+            </table>
+            <table border="1">
+              <caption>
+                <br>
+              Table 3-6 Arterial level of service
+</caption>
+              <tr style="background-color:#eee">
+                <th id="c1a">Urban Street Class</th>
+                <th id="c2a">I</th>
+                <th id="c3a">II</th>
+                <th id="c4a">III</th>
+                <th id="c5a">IV</th>
+              </tr>
+              <tr>
+                <th id="c1b" headers="c1a">Range of free-flow speeds (FFS)</th>
+                <th id="c2b" headers="c2a">55 to 45 mph</th>
+                <th id="c3b" headers="c3a">45 to 35 mph</th>
+                <th id="c4b" headers="c4a">35 to 30 mph</th>
+                <th id="c5b" headers="c5a">35 to 25 mph</th>
+              </tr>
+              <tr>
+                <th id="c1c" headers="c1a c1b">Typical FFS</th>
+                <th id="c2c" headers="c2a c2b">50 mph</th>
+                <th id="c3c" headers="c3a c3b">40 mph</th>
+                <th id="c4c" headers="c4a c4b">35 mph</th>
+                <th id="c5c" headers="c5a c5b">30 mph</th>
+              </tr>
+              <tr style="background-color:#eee">
+                <th scope="col" id="s1">LOS</th>
+                <th scope="col" colspan="4" id="s2">Average Travel Speed (mph)</th>
+              </tr>
+              <tr>
+                <th id="r1" headers="c1a c1b c1c s1">A</th>
+                <td headers="c2a c2b c2c s2 r1">&gt; 42</td>
+                <td headers="c3a c3b c3c s2 r1">&gt; 35</td>
+                <td headers="c4a c4b c4c s2 r1">&gt; 30</td>
+                <td headers="c5a c5b c5c s2 r1">&gt; 25</td>
+              </tr>
+              <tr>
+                <th id="r2" headers="c1a c1b c1c s1">B</th>
+                <td headers="c2a c2b c2c s2 r2">&gt; 34-42</td>
+                <td headers="c3a c3b c3c s2 r2">&gt; 28-35</td>
+                <td headers="c4a c4b c4c s2 r2">&gt; 24-30</td>
+                <td headers="c5a c5b c5c s2 r2">&gt; 19-25</td>
+              </tr>
+              <tr>
+                <th id="r3" headers="c1a c1b c1c s1">C</th>
+                <td headers="c2a c2b c2c s2 r3">&gt; 27-34</td>
+                <td headers="c3a c3b c3c s2 r3">&gt; 22-28</td>
+                <td headers="c4a c4b c4c s2 r3">&gt; 18-24</td>
+                <td headers="c5a c5b c5c s2 r3">&gt; 13-19</td>
+              </tr>
+              <tr>
+                <th id="r4" headers="c1a c1b c1c s1">D</th>
+                <td headers="c2a c2b c2c s2 r4">&gt; 21-27</td>
+                <td headers="c3a c3b c3c s2 r4">&gt; 17-22</td>
+                <td headers="c4a c4b c4c s2 r4">&gt; 14-18</td>
+                <td headers="c5a c5b c5c s2 r4">&gt; 9-13</td>
+              </tr>
+              <tr>
+                <th id="r5" headers="c1a c1b c1c s1">E</th>
+                <td headers="c2a c2b c2c s2 r5">&gt; 16-21</td>
+                <td headers="c3a c3b c3c s2 r5">&gt; 13-17</td>
+                <td headers="c4a c4b c4c s2 r5">&gt; 10-14</td>
+                <td headers="c5a c5b c5c s2 r5">&gt; 7-9</td>
+              </tr>
+              <tr>
+                <th id="r6" headers="c1a c1b c1c s1">F</th>
+                <td headers="c2a c2b c2c s2 r6">&le; 16</td>
+                <td headers="c3a c3b c3c s2 r6">&le; 13</td>
+                <td headers="c4a c4b c4c s2 r6">&le; 10</td>
+                <td headers="c5a c5b c5c s2 r6">&le; 7</td>
+              </tr>
+              <tr>
+                <td colspan="5">Source: (2)</td>
+              </tr>
+            </table>
+            <h5>Bandwidth, Bandwidth Efficiency, and Bandwidth Attainability</h5>
+            <p>Bandwidth, along with its associated measures of efficiency and attainability, are measures that are sometimes used to assess the effectiveness of a coordinated signal timing plan. Unlike the preceding measures, bandwidth is purely a function of the signal timing plan as it is oriented in time and space; the effect of traffic is not explicitly accounted for in the calculation. As a result, bandwidth is not directly tied to actual traffic performance, although it is sometimes used as a surrogate for potential traffic performance. The use of bandwidth in developing coordinated signal timing plans is described in more detail in Chapter 6. Bandwidth is defined as the maximum amount of green time for a designated movement as it passes through a corridor. It can be defined in terms of two consecutive intersections (sometimes referred to as link bandwidth) or in terms of an entire arterial (sometimes referred to as arterial bandwidth). Bandwidth is typically measured in seconds. Two related bandwidth measures, bandwidth efficiency and bandwidth attainability, are sometimes used to normalize bandwidth measures. Bandwidth efficiency is a measure that normalizes bandwidth against the cycle length for the arterial under study. The specific formula is given in Equation 3-6</p>
+            <h6>Equation 3-7</h6>
+            <div class="figure"> <img src="images/eq3_7.png" width="101" height="48" alt="E = (B sub A + B sub B) / 2C" ><br>
+              <img src="images/eq3_7v.png" width="609" height="37" alt="Equation 3-7 explained" longdesc="#long_eq37v"> </div><br>
+<div class="sr-only" id="long_eq37v">where E is bandwidth efficiency; BA and BB are the bandwidths in the forward and reverse directions, respectively, in seconds; and C is the cycle length in seconds. Efficiency is typically reported as a unitless decimal or percentage. The software program PASSER II provides guidelines to determine the quality of a particular efficiency; these are given in Table 3-7.</div>
+            <table border="1">
+              <caption>
+                Table 3-7 Guidelines for bandwidth efficiency
+              </caption>
+              <tr>
+                <th scope="col">Efficiency Range</th>
+                <th scope="col">PASSER II Assessment</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.00 - 0.12</th>
+                <td>Poor progression.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.13 - 0.24</th>
+                <td>Fair progression.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.25 - 0.36</th>
+                <td>Good progression.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.37 - 1.00</th>
+                <td>Great progression.</td>
+              </tr>
+              <tr class="normalcell">
+                <td colspan="2">Source: (4)</td>
+              </tr>
+            </table>
+            <p>Bandwidth attainability is a measure of how well the bandwidth makes use of the available green time for the coordinated movements at the most critical intersection in the corridor. It is given in Equation 3-7 as follows:</p>
+            <h6>Equation 3-7</h6>
+            <div class="figure"> <img src="images/eq3_7.png" width="101" height="48" alt="E = (B sub A + B sub B) / 2C" ><br>
+              <img src="images/eq3_7v.png" width="609" height="37" alt="Equation 3-7 explanation" longdesc="#long_eq37vb"> </div>
+              <div class="sr-only" id="long_eq37vb">where gcrit is the green time for the coordinated movements at the intersection with the least amount of green time available for the coordinated movements.</div>
+            <p>Attainability, as with efficiency, is typically reported as a unitless decimal or percentage. The software program PASSER II provides guidelines to determine the quality of a particular attainability; these are given in Table 3-8. An attainability of 100 percent suggests that all available green time through the most constrained intersection is being used by the green band.</p>
+            <table border="1">
+              <caption>
+                Table 3-8 Guidelines for bandwidth attainability
+              </caption>
+              <tr>
+                <th scope="col">Attainability Range</th>
+                <th scope="col">PASSER II Guidance</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">1.00 - 0.99</th>
+                <td>Increase minimum through phase.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.99 - 0.70</th>
+                <td>Fine-tuning needed.</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">0.69 - 0.00</th>
+                <td>Major changes needed.</td>
+              </tr>
+              <tr class="normalcell">
+                <td colspan="2">Source: (4)</td>
+              </tr>
+            </table>
+            <p>Bandwidth is highly dependent on the demands on the non-coordinated phases (actuated intersections) and the offsets along the arterial. Bandwidth importance also varies based on traveler origin and destinations along a coordinated corridor. The more vehicles traveling the length of a coordinated corridor, without making turning movements, the more important bandwidth becomes as a measurement tool, and vice versa. In addition, bandwidth, travel time, and stops are related to one another; a large bandwidth will result in shorter travel times and less stops to vehicles traveling the length of the corridor</p>
+            <h5>Emissions</h5>
+            <p>Emissions are an important measure because they directly affect air quality. Emissions may be particularly important in the case of programs funded by Congestion Mitigation and Air Quality (CMAQ) funds, which (as the name implies) use funds allocated with the objective of improved air quality. Emissions can be estimated by some of the software packages in use</p>
+            <h5>Fuel Consumption</h5>
+            <p>Improved fuel efficiency of the transportation system is an important measure for reducing the costs to consumers and use of this energy source. Fuel consumption can be estimated by some of the software packages in use</p>
+            <h5>Performance Index</h5>
+            <p>Some software packages allow several measures of effectiveness to be mathematically combined into a single performance index, or PI. This allows an optimization routine within the software package to search for combinations of cycle lengths, offsets, and splits that achieve an optimal value of the performance index. The performance index itself is unlikely to be observable in the field, although its component measures may be observable.</p>
+            <h5>3.5.2 Evaluation Techniques</h5>
+            <p>Measures of effectiveness can be measured directly in the field or estimated using an analysis tool. Table 3-9 indicates the variety of field data collection and analytical techniques that can be used</p>
+            <table border="1">
+              <caption>
+                Table 3-9 Evaluation Techniques for Performance Measures
+              </caption>
+              <tr>
+                <th scope="col">Measure</th>
+                <th scope="col">Primary Evaluation Technique</th>
+                <th scope="col">Supplemental Technique</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Delays</th>
+                <td>Deterministic traffic analysis tool</td>
+                <td>Floating car runs (through movement or intersection observation)</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Stops</th>
+                <td>Field data collection using manual observers or floating car runs (See text on the next page)</td>
+                <td>Floating car runs or simulation</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Emissions</th>
+                <td>Microscopic traffic simulation</td>
+                <td>Environmental or planning models</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Fuel Efficiency</th>
+                <td>Microscopic traffic simulation</td>
+                <td>Environmental or planning models</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Travel Time</th>
+                <td>Floating car runs</td>
+                <td>Microscopic traffic simulation</td>
+              </tr>
+            </table>
+            <h5>Arterial and Network Signal Timing Models</h5>
+            <p>For many practitioners, arterial and network signal timing models are the models of choice when developing signal timing plans, particularly for coordinated systems. Arterial and network signal timing models are distinguished from the isolated intersection methods described previously by the way they account for the arrival and departure of vehicles from one intersection to the next. Traffic progression is treated explicitly through using time-space diagrams or platoon progression techniques. Some models deterministically estimate the effect of actuated parameters for both vehicles and pedestrians, typically by using a combination of scaling factors for vehicle demand and the presence or absence of vehicle and/or pedestrian calls.</p>
+            <p>A key feature of arterial and network signal timing models is the explicit effort to &ldquo;optimize&rdquo; signal timing to achieve a particular policy (see Chapter 2). To accomplish this, each model uses some type of algorithm to test a variety of combinations of cycle length, splits, and offsets to achieve a calculated value of one or more performance indices and then attempt to find an optimal value for those performance indices. In addition, most arterial and network signal timing models use elements of the HCM procedures to estimate certain parameters, such as saturation flow rate.</p>
+            <p>Arterial and network signal timing models are frequently the most advanced type of model needed for most signal timing applications. However, because the models described in this section are deterministic, they lose validity in cases where demand exceeds capacity or where the queues from one intersection interact with the operation of an adjacent intersection. Therefore, cases with closely spaced intersections or with intersections exceeding capacity may not be well served by these types of deterministic models. In these cases, it may be necessary to use microscopic simulation models to obtain more realistic assessments of these effects.</p>
+            <h5>Microscopic Simulation Models</h5>
+            <p>In the context of signal timing, microscopic simulation models can be thought of as an advanced evaluation tool of a proposed signal timing plan. Most simulation models do not have any inherent signal timing optimization algorithms and instead depend on other programs to provide a fully specified signal timing plan for evaluation. However, simulation models typically can directly evaluate the effects of interactions between intersections or the effects of oversaturated conditions or demand starvation caused by upstream oversaturated conditions. Simulation models can also be useful to estimate the effects of short lanes where either the queue in the lane affects the operation of an adjacent lane or where the queue in the adjacent lane prevents volume from reaching the subject lane.</p>
+            <p>Recent advances in technology have allowed direct linkages between simulation models and either actual signal controllers or software emulations of those controllers, known as hardware-in-the-loop (HITL) and software-in-the-loop (SITL), respectively. These in-the-loop simulations allow actual controllers and/or their algorithms to replace the approximation used in simulation models to more accurately reflect how a controller will operate. The simulation model is used to generate traffic flows and send vehicle and pedestrian calls to one or more controllers based on a detection design implemented in the simulation. The controller receives the calls as if it was operating in the field and uses its own internal algorithms to set signal indications based on the calls received and the implemented signal timing. The signal displays are passed back to the simulation model, to which traffic responds.</p>
+            <p>When running simulation analyses to compare alternatives, care is needed to ensure that the resolution of the model is sufficient to model the type of control anticipated. A simulation model, for example, typically requires precision on the order of a tenth of a second to accurately replicate gap detection. Therefore, the use of coarser resolution settings to speed up simulation run time may yield incorrect results</p>
+            <h4>3.5.3 Arterial and Network Field Measurement Techniques</h4>
+            <p>Data collection of arterial and network measures of effectiveness can be conducted either manually or using automated techniques. The following sections discuss some of the more commonly employed techniques in more detail</p>
+            <h5>Travel Time Runs</h5>
+            <p>Travel time studies evaluate the quality of traffic movements along an arterial and determine the locations, types, and extent of traffic delays. Common measures extracted from travel time runs include overall travel time, delay for through vehicles at individual intersections, number of stops, and the variability of delays and/or stops at intersections. The latter measure is often useful in demonstrating a change between uncoordinated and coordinated operation.</p>
+            <p>The floating car method is the most commonly employed technique used for travel time runs. The vehicle driver is instructed to &ldquo;float&rdquo; with the traffic stream, which is defined as traveling at a speed that is representative of the other vehicles on the roadway. This is accomplished by passing as many vehicles as pass the floating car (within reasonable safety limits). The floating car data is then reduced to determine the number of stops, delay time, and travel time over the route traversed by the vehicle. This process must be repeated several times to obtain good representative data.</p>
+            <p>A variety of techniques have been used to collect travel time runs, ranging from manual measurements with stop watches to more advanced techniques using portable Global Positioning System (GPS) devices. GPS output provides the vehicle&rsquo;s location (latitude and longitude) and velocity. The probe vehicle begins traveling along the corridor with the GPS set to record position and speed for each second of travel. The vehicle location and instantaneous velocity allows for an estimate of the performance measures of delay, percent runs stopped, and travel time. Special inputs can also be coded to denote an event such as the location of a stop bar or bus stop, or when a parking maneuver occurs</p>
+            <p>Of the variety of performance measures that can be used to evaluate arterial performance, four can be determined by travel time runs:</p>
+            <ul>
+              <li>Travel Time is the total elapsed time spent driving a specific distance. The average travel time represents an average of the runs for a particular link or for the entire corridor.</li>
+              <li>Delay is the elapsed time spent driving in a stopped or near-stopped condition, often defined as speeds less than 5 mph. The average delay represents an average of the runs for a particular intersection or for the entire corridor.</li>
+              <li>Percent Runs Stopped is the percentage of the total number of travel time runs conducted during which a vehicle stops.</li>
+              <li>Average Speed is the average distance a vehicle travels within a measured amount of time (this is affected by the amount of time experienced in delay).</li>
+            </ul>
+            <p> A sample travel time graph is shown in Figure 3-6 where distance along the corridor is represented along the x-axis and performance measures are plotted along the y-axis. This type of graphical display allows for ready comparison of before and after data along the corridor.</p>
+            <p>A critical factor in the success of a travel time study using vehicle probes is the skill level of the driver(s) involved. Inexperienced personnel may suddenly realize they are no longer traveling as part of the platoon and may adversely affect the platoon by inducing braking reactions in response to lane changes. This is more likely to occur in flows at or near capacity</p>
+            <p class="fig-caption">Figure 3-6 Sample travel time run result graph</p>
+            <div class="figure"> <img src="images/3_6real.png" width="550" height="392" alt="A sample travel time graph."> </div>
+            <div class="sr-only" id="long_fig36">Figure 3-6 is a sample travel time graph where distance along the corridor is represented along the x-axis and performance measures of speed and delay are plotted along the y-axis.  The plot shows the impact of a signal timing change by contrasting before and after measures. This type of graphical display allows for ready comparison of before and after data along a corridor.</div>
+        <p> Figure 3-6 is a sample travel time graph where distance along the corridor represented x-axis and performance measures of speed delay are plotted y-axis. The plot shows impact signal timing change by contrasting before after measures. This type graphical display allows for ready comparison data corridor.</p>
+            <h5>Automated Collection of Measures of Effectiveness</h5>
+            <p>It is ideal to use a traffic signal system for automated collection of performance measures, but few agencies currently have that capability. In many cases, vehicle detectors are used to perform two different types of functions</p>
+            <p>The first function is to provide inputs for actuated signal control. When detectors are used for this purpose, they are typically installed near the intersection on the approaches under actuated control, which makes them less effective for performance measurements.</p>
+            <p>The second function is to act as system sensors. These detectors are typically installed at a mid-block location, which provides accurate measures of vehicle volumes and speeds. The information provided by system sensors can be used to support the following system functions:</p>
+            <ul>
+              <li>acquiring traffic flow information to compute signal timing</li>
+              <li>identifying critical intersection control (CIC)</li>
+              <li>selecting timing plans</li>
+              <li>developing on-line and off-line timing plans through optimization programs.</li>
+            </ul>
+            <p>Thus, the local intersection detectors are used directly by actuated controllers, whereas the system sensors are used to support the functions of the central computer or arterial master (5)</p>
+            <p>To acquire data, the loop detector is best suited to computerized traffic signal control because it is reliable, accurate, and able to detect both presence and passage. Using the presence and passage outputs, a number of variables, such as volume, occupancy, speed, delay, stops, queue lengths and travel time, can be defined to a varying degree of accuracy. These variables are related to either traffic flow along the length of the detectorized roadway or in the immediate vicinity of the detectors (5). Some of these measures of effectiveness that can be collected through loop detectors are described below.</p>
+            <ul>
+              <li>Volume is the quantity that is most easy to obtain. This quantity is the number of pulses measured during a given period.</li>
+              <li>Occupancy is the percent of time that a detector indicates a vehicle is present over a total time period. Occupancy can range from zero to 100 percent, depending on vehicle spacing. Volume and occupancy are the most important variables for use in selecting traffic responsive timing plans and for many operating thresholds. In some cases, volume can be used without occupancy. It generally follows that occupancies of over 25 percent are a reliable indicator of the onset of congestion. (5)</li>
+              <li>Speed is another useful variable used for on-line or offline computation of signal timing plans using optimization programs. For a single inductive loop detector, speed is inversely proportional to occupancy at a fixed volume. Two loops (dual loop detectors&mdash;also known as speed traps) provide much more accurate speed measurements.</li>
+            </ul>
+            <a id="3.6" role="link" tabindex="0" title="3.6"></a>
+            <h3>3.6 SAFETY ASSESSMENT</h3>
+            <p>The safety performance of signal timing is often implicitly considered but seldom explicitly evaluated. The transportation profession is in the process of developing increasingly quantitative safety methodologies to allow analysis of safety measures of effectiveness comparable to their operational counterparts. The forthcoming Highway Safety Manual (6) represents a major step in this direction. In addition, further discussion on safety analysis as applied to signalized intersections may be found in FHWA&rsquo;s Signalized Intersections: Informational Guide (1); the content in this section is largely adapted from that document</p>
+            <p>Statistical techniques for evaluating collision performance vary from basic to complex. They may compare the safety performance of a single signalized intersection to another group of similar intersections, or they may serve as a screening tool for sifting through a large group of sites and determining which site has the most promise for improvement. This section provides information about safety analyses focusing exclusively on whether or not there are safety issues at an intersection that will respond to signal timing; it also provides quantitative information about estimated safety impacts of signal timing changes.</p>
+            <p>There are many factors in addition to signal timing that contribute to the safety performance of an intersection. There are also many new tools being developed to support quantitative safety analyses. Therefore, in the situation where it has been determined an intersection may respond to safety improvements, the analyst should be sure to consider more than signal timing changes as a possibility for improving safety</p>
+            <p>Crash data is of widely varying quality. In general, the less severe the collision, the less likely it is for a crash to be reported to the local jurisdiction. As a result, it is common to experience systematic underreporting of property damage only (PDO) crashes. Crashes are sometimes reported inaccurately or subsequently inaccurately entered into the database, making it difficult for the analyst to accurately identify factors contributing to crashes. It is also notable that the number of crashes that		occur at a given location will vary from year to year partially due to changes in traffic volumes, weather conditions, travel patterns, and surrounding land uses, and partially due to regression to the mean. Regression to the mean is caused by the tendency for crashes at a location to fluctuate up and down over time as the average number of crashes per year converges to a long-term average. Therefore, the observed number of crashes in any given year may actually be higher or lower then the long-term average for the site.</p>
+            <p>The evaluation of crash frequency, crash patterns, and crash severity remains an important part of a safety analysis. The analyst should obtain three to five years of crash data; summarize the crashes by type, severity, and environmental collisions; and prepare a collision diagram of the crashes to help identify trends. A site visit can also be helpful in identifying causal factors. It is also possible to statistically determine if any of the crashes by type, severity, or other environmental conditions (e.g. weather, pavement, time of day) are over-represented as compared to other comparable facilities. A variety of tests and other evaluative tools are discussed further in FHWA&rsquo;s Signalized Intersections: Informational Guide (1)</p>
+            <h4>3.6.2 Quantitative Safety Assessment</h4>
+            <p>Signal timing is one of many factors which may contribute to crashes. Other factors may be horizontal and vertical alignment conditions, roadside features, sight distance, driver compliance with traffic control, access management near intersections, driver expectations, and roadway maintenance and lighting. If the purpose of the project is to update intersection signal timing, the analyst should be aware of the potential impacts to safety. Alternatively, if the site has been identified as one needing safety improvements the analyst should be aware that signal timing is one of many possible countermeasures for improving safety at an intersection. Table 3-10 provides a summary of crash types and possible signal timing changes to benefit safety.</p>
+            <table border="1">
+              <caption>
+                Table 3-10 Summary of crash types and possible signal modifications to benefit safety
+              </caption>
+              <tr style="background-color:#eee">
+                <th scope="colgroup">&nbsp;</th>
+                <th scope="colgroup" colspan="5">Collision with Another Vehicle</th>
+                <th scope="colgroup" colspan="5">Single-Vehicle Collision</th>
+              </tr>
+              <tr style="font-size:80%">
+                <th style="background-color:#eee" scope="col">Signal Timing Change</th>
+                <th scope="col">Angle</th>
+                <th scope="col">Head-On</th>
+                <th scope="col">Rear-End</th>
+                <th scope="col">Sideswipe&mdash;Same Direction</th>
+                <th scope="col">Sideswipe&mdash;Opposite Direction</th>
+                <th scope="col">Collision with Bicycle</th>
+                <th scope="col">Collision with Parking Vehicle</th>
+                <th scope="col">Collision with Pedestrian</th>
+                <th scope="col">Overturned</th>
+                <th scope="col">Run Off Road</th>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Provide left-turn signal phasing</th>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Optimize clearance intervals</th>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Restrict or eliminate turning maneuvers (including right turns on reds)</th>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Employ signal coordination</th>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Implement emergency vehicle pre-emption</th>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Improve traffic control of pedestrians and bicycles</th>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Remove unwarranted signal</th>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Provide/improve left-turn lane channelization*</th>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+              <tr>
+                <th class="normalcell" scope="row">Provide/improve right turn lane channelization*</th>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">x</td>
+                <td align="center">&nbsp;</td>
+                <td align="center">&nbsp;</td>
+              </tr>
+            </table>
+            <p><em>* While not technically part of signal timing, these have a significant impact on safety and should be considered. See the FHWA Signalized Intersections: Informational Guide (1) for more information. Ref: 9, Appendix 10</em></p>
+            <p>Accident modification factors (AMFs) are used as a way to quantify crash reductions associated with safety improvements. These factors are developed based on rigorous before-after statistical analysis techniques that account for, among many factors, regression to the mean, sample size, and the effects of other treatments from the estimation process. AMFs which have been calculated using reliable before-after analyses will be quantified and will often also include a confidence interval. AMFs below 1.0 will likely have a safety benefit, and AMFs greater than 1.0 may degrade safety conditions. For example, studies have found that converting a 4-legged urban intersection from stop control to signal control will have an AMF for all fatal and injury crashes of 0.77. This means that there will be an anticipated reduction in crashes of 23 percent if a traffic signal were installed</p>
+            <p> Quantitative AMFs can be found in many sources (7, 8, 9). The most reliable sources are those that estimate AMFs using the more sophisticated before-after analytical techniques. In the future, the Highway Safety Manual (6) and the final report for NCHRP 17-25 &ldquo;Crash Reduction Factors for Traffic Engineering and ITS Improvements&rdquo; will also contain numerous AMFs. In addition, local jurisdictions can also develop their own AMFs based on studies conducted locally.</p>
+            <a id="3.7" role="link" tabindex="0" title="3.7"></a>
+            <h3>3.7 SIGNAL WARRANTS</h3>
+            <p>Warrants for signalization are intended to create a minimum condition for which signalization may be the most appropriate treatment. Each of the warrants is based on simple volume, delay, or crash experience at the location before signalization is installed. None accounts for the specific design of the signal or the way it may be timed (e.g., pre-timed versus actuated). As a result, an engineering		evaluation should be conducted in conjunction with the evaluation of signal warrants to determine that the proposed signalization plan actually represents an improvement over existing conditions.</p>
+            <p>The eight warrants presented in Chapter 4C of the 2003 MUTCD are as follows (10)</p>
+            <ul>
+              <li>Warrant 1, Eight-Hour Vehicular Volume. This warrant consists of two volume-based conditions, Minimum Vehicular Volume and Interruption of Continuous Traffic, of which one or both must be met over an eight-hour period.</li>
+              <li>Warrant 2, Four-Hour Vehicular Volume. This warrant is similar to Warrant 1 but relies on volume conditions over a four-hour period.</li>
+              <li>Warrant 3, Peak Hour. This warrant is primarily based on delay to minor movements during peak hour conditions.</li>
+              <li>Warrant 4, Pedestrian Volume. This warrant is intended for conditions where delay to pedestrians attempting to cross a street is excessive due to heavy traffic on that street. It consists of minimum pedestrian volumes and available gaps in traffic.</li>
+              <li>Warrant 5, School Crossing. This warrant is similar to Warrant 4 except that it is specifically intended for school crossing locations.</li>
+              <li>Warrant 6, Coordinated Signal System. This warrant is intended to allow signals that may assist in progression of traffic. It is only intended for use where the resulting signal spacing is not less than 1,000 feet (300 m).</li>
+              <li>Warrant 7, Crash Experience. This is the only specific safety-related warrant and is satisfied by a frequency of crashes over a specific period of time that can be corrected through the use of signalization.</li>
+              <li>Warrant 8, Roadway Network. This warrant may be used to support the use of a signal to concentrate traffic at specific locations.</li>
+            </ul>
+            <p>As noted in the MUTCD, &ldquo;the satisfaction of a traffic signal warrant or warrants shall not in itself require the installation of a traffic control signal&rdquo; (Section 4C.01, 10).</p>
+            <p class="callout">Signalization is not always the most appropriate form of traffic control for an intersection, and it is sometimes possible to create a larger benefit by removing a traffic signal than by retiming it</p>
+            <p>The MUTCD acknowledges this by stating that &ldquo;since vehicular delay and the frequency of some types of crashes are sometimes greater under traffic signal control than under STOP sign control, consideration should be given to providing alternatives to traffic control signals even if one or more of the signal warrants has been satisfied.&rdquo; (10). Potential alternatives include the use of warning signs, flashing beacons, geometric modifications, and/or conversion of the intersection to a stop-controlled intersection or a roundabout. </p>
+            <a id="3.8" role="link" tabindex="0" title="3.8"></a>
+            <h3>3.8 REFERENCES</h3>
+            <ol>
+              <li>Rodegerdts, L., B. Nevers, B. Robinson, J. Ringert, P. Koonce, J. Bansen, T. Nguyen, J. McGill, D. Stewart, J. Suggett, T. Neuman, N. Antonucci, K. Hardy, and K. Courage. Signalized Intersections: Informational Guide. Report No. FHWA-HRT-04-091. Federal Highway Administration, Washington, D.C., August 2004.</li>
+              <li>Transportation Research Board. Highway Capacity Manual 2000. National Academy of Sciences, Transportation Research Board, Washington, D.C., 2000.</li>
+              <li>Institute of Transportation Engineers. Manual of Transportation Engineering Studies. H. D. Roberson, ed. Institute of Transportation Engineers, Washington, D.C., 2000.</li>
+              <li>Wallace, C. E., E.C.P. Chang, C. J. Messer, and K. G. Courage, &quot;Methodology for Optimizing Signal Timing (M&brvbar;O&brvbar;S&brvbar;T), Volume 3: PASSER II-90 Users Guide,&quot; prepared for the Federal Highway Administration, COURAGE AND WALLACE, Gainesville, FL, December 1991.</li>
+              <li>Traffic Detector Handbook, 2nd ed. Report No. FHWA-IP-90-002. Federal Highway Administration, Washington, D.C., July 1990.</li>
+              <li>Transportation Research Board. Highway Safety Manual. Anticipated publication 2009.</li>
+              <li>National Cooperative Highway Research Program (NCHRP). NCHRP Research Results Digest 299. Washington, DC: Transportation Research Board of the National Academies, November 2005.</li>
+              <li>Elvik, R. and T. Vaa. The Handbook of Road Safety Measures. Amsterdam: Elsevier Ltd., 2004.</li>
+              <li>Antonucci, N.D., Hardy, K.K., Slack, K. L., Pfefer, R., and Neuman, T. R., &ldquo;NCHRP Report 500 Volume 12: A Guide for Addressing Collisions at Signalized Intersections.&rdquo; Washington, D.C., Transportation Research Board, National Research Council, 2004.</li>
+              <li>Federal Highway Administration. Manual on Uniform Traffic Control Devices. Washington, DC: Federal Highway Administration, 2003. </li>
+            </ol>
+           <!-- InstanceEndEditable -->
+         <div id="nextprevious"><!-- InstanceBeginEditable name="next_previous" --><span class="navigation"><a href="chapter2.htm">Previous</a> | <a href="index.htm" title="Table of Contents">Table of Contents</a> | <a href="chapter4.htm">Next</a></span><!-- InstanceEndEditable --></div>
+      </div>
+    </td></tr>
+   
+</table>
+  
+<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td colspan="3" id="footer-bar"><img src="images/ops_images/empty_cell.gif" width="10" height="10" alt="No Value"></td>
+  </tr>
+  <tr valign="top"> 
+    <td id="footer-logo"><img src="images/ops_images/fhwatag.gif" alt="FHWA" width="89" height="18"></td>
+    <td id="footer-links"><p class="footer-links"><a href="//www.transportation.gov" title="US DOT Home">US DOT Home</a>&nbsp;| <a href="//highways.dot.gov/" title="FHWA Home">FHWA 
+        Home</a>&nbsp;| <a href="//ops.fhwa.dot.gov/" title="Operations Home">Operations Home</a>&nbsp;| 
+        <a href="//www.fhwa.dot.gov/privacy.cfm">Privacy Policy</a></p>
+      <p>United States Department of Transportation - Federal Highway Administration</p></td>
+    <td id="javadate">
+      <script language="JAVASCRIPT" type="text/javascript"><!--
+revdate = new Date(document.lastModified);
+if (revdate.getYear() == 69) {
+	// workaround for .asp pages (some browsers do not interpret the lastModified date properly);
+	// just reset the date to today
+	revdate = new Date();
+}
+year = revdate.getYear();
+if (year > 1999)
+ year = year
+else
+ if (year < 90)
+ year = year+2000
+ else
+ year = year+1900;
+month = revdate.getMonth() + 1;
+day = revdate.getDate();
+var mon;
+
+if (month==0) mon = "January";
+if (month==1) mon = "January";
+if (month==2) mon = "February";
+if (month==3) mon = "March";
+if (month==4) mon = "April";
+if (month==5) mon = "May";
+if (month==6) mon = "June";
+if (month==7) mon = "July";
+if (month==8) mon = "August";
+if (month==9) mon = "September";
+if (month==10) mon = "October";
+if (month==11) mon = "November";
+if (month==12) mon = "December";
+
+document.write("&nbsp;&nbsp;Last modified: " + mon + " " + day + ", " + year + "&nbsp;&nbsp;");
+// -->
+</script>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+<!-- InstanceEnd --></html>
+

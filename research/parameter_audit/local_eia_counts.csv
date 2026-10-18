@@ -1,0 +1,7 @@
+﻿road_name,period,large_vehicles_20min,medium_vehicles_20min,small_vehicles_20min,total_vehicles_20min,hourly_rate_note,large_vehicle_share,medium_vehicle_share,small_vehicle_share,table82_speed_for_noise_prediction_kmh,table82_motor_vehicle_width_m,table82_redline_width_m,equivalent_hourly_rate_veh_h
+瑞金二路,daytime,7,32,168,207,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.033816425120772944,0.15458937198067632,0.8115942028985508,30,26,32,621
+瑞金二路,nighttime,3,12,106,121,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.024793388429752067,0.09917355371900827,0.8760330578512396,30,26,32,363
+建德路,daytime,7,9,121,137,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.051094890510948905,0.06569343065693431,0.8832116788321168,30,3.8,7.8,411
+建德路,nighttime,2,5,83,90,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.022222222222222223,0.05555555555555555,0.9222222222222223,30,3.8,7.8,270
+思南路,daytime,25,17,312,354,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.07062146892655367,0.0480225988700565,0.8813559322033898,30,3.8,15.2,1062
+思南路,nighttime,7,2,69,78,"20-minute sample extrapolated to hourly rate, not an hour-long count or annual rate",0.08974358974358974,0.02564102564102564,0.8846153846153846,30,3.8,15.2,234

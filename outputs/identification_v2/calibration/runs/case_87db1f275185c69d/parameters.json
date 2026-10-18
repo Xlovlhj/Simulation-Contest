@@ -1,0 +1,8 @@
+{
+  "default_headway_s": 60,
+  "group_speed_factors": {
+    "jianguo_west": 0.27,
+    "other_corridors": 0.33,
+    "ruijin": 0.21
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "purpose": "capability_probe",
+  "formal_experiment": false,
+  "billing_status": "unverified",
+  "coordinate_system": "bd09ll",
+  "started_at": "2026-10-17T14:32:53.347+08:00",
+  "max_requests": 3,
+  "timeout_seconds": 15,
+  "retries": 0,
+  "requests": [
+    {
+      "request_number": 1,
+      "endpoint": "/geocoding/v3/",
+      "params": {
+        "address": "海淀医院",
+        "city": "北京市",
+        "output": "json",
+        "ret_coordtype": "bd09ll"
+      },
+      "coordinate_system": "bd09ll",
+      "requested_at": "2026-10-17T14:32:53.348+08:00",
+      "http_status": 200,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:32:55.220+08:00",
+      "response_format": "json",
+      "response_file": "01_geocoding_v3.json",
+      "api_status": 0,
+      "field_names": [
+        "result",
+        "result.comprehension",
+        "result.confidence",
+        "result.level",
+        "result.location",
+        "result.location.lat",
+        "result.location.lng",
+        "result.precise",
+        "status"
+      ],
+      "array_counts": {},
+      "response_time_fields": {}
+    },
+    {
+      "request_number": 2,
+      "endpoint": "/traffic/v1/bound",
+      "params": {
+        "bounds": "39.977867,116.315675;39.987867,116.327675",
+        "coord_type_input": "bd09ll",
+        "coord_type_output": "bd09ll"
+      },
+      "coordinate_system": "bd09ll",
+      "requested_at": "2026-10-17T14:32:55.221+08:00",
+      "http_status": 200,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:32:56.988+08:00",
+      "response_format": "json",
+      "response_file": "02_traffic_v1_bound.json",
+      "api_status": 0,
+      "field_names": [
+        "description",
+        "evaluation",
+        "evaluation.status",
+        "evaluation.status_desc",
+        "message",
+        "road_traffic",
+        "road_traffic[].road_name",
+        "status"
+      ],
+      "array_counts": {
+        "road_traffic": 24
+      },
+      "response_time_fields": {}
+    },
+    {
+      "request_number": 3,
+      "endpoint": "/directionlite/v1/driving",
+      "params": {
+        "origin": "39.977867,116.315675",
+        "destination": "39.987867,116.327675",
+        "coord_type": "bd09ll",
+        "ret_coordtype": "bd09ll",
+        "steps_info": "1",
+        "timestamp": "1792218776"
+      },
+      "coordinate_system": "bd09ll",
+      "requested_at": "2026-10-17T14:32:56.989+08:00",
+      "http_status": 200,
+      "transport_status": "received",
+      "received_at": "2026-10-17T14:32:59.193+08:00",
+      "response_format": "json",
+      "response_file": "03_directionlite_v1_driving.json",
+      "api_status": 0,
+      "field_names": [
+        "message",
+        "result",
+        "result.destination",
+        "result.destination.lat",
+        "result.destination.lng",
+        "result.origin",
+        "result.origin.lat",
+        "result.origin.lng",
+        "result.routes",
+        "result.routes[].distance",
+        "result.routes[].duration",
+        "result.routes[].restriction_info",
+        "result.routes[].restriction_info.status",
+        "result.routes[].route_md5",
+        "result.routes[].steps",
+        "result.routes[].steps[].direction",
+        "result.routes[].steps[].distance",
+        "result.routes[].steps[].duration",
+        "result.routes[].steps[].end_location",
+        "result.routes[].steps[].end_location.lat",
+        "result.routes[].steps[].end_location.lng",
+        "result.routes[].steps[].instruction",
+        "result.routes[].steps[].leg_index",
+        "result.routes[].steps[].path",
+        "result.routes[].steps[].road_type",
+        "result.routes[].steps[].road_types",
+        "result.routes[].steps[].start_location",
+        "result.routes[].steps[].start_location.lat",
+        "result.routes[].steps[].start_location.lng",
+        "result.routes[].steps[].traffic_condition",
+        "result.routes[].steps[].traffic_condition[].geo_cnt",
+        "result.routes[].steps[].traffic_condition[].status",
+        "result.routes[].steps[].turn",
+        "result.routes[].toll",
+        "result.routes[].traffic_condition",
+        "status"
+      ],
+      "array_counts": {
+        "result.routes": 1,
+        "result.routes[].steps": 9,
+        "result.routes[].steps[].traffic_condition": 10
+      },
+      "response_time_fields": {}
+    }
+  ],
+  "source_data_time_note": "Response time fields are reported verbatim; request time is not observation time.",
+  "bounds_diagonal_metres": 1510.56,
+  "completion_status": "completed",
+  "finished_at": "2026-10-17T14:32:59.194+08:00"
+}

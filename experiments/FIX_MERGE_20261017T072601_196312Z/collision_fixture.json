@@ -1,0 +1,1 @@
+{"study_area_id": "shanghai_ruijin", "coordinate_system": "bd09ll", "collection_bounds": {"west": 120, "east": 122, "south": 30, "north": 32}, "routes": [{"id": "west", "accepted_surface": true, "points": [[120.999, 31], [121, 31], [121, 31.001]]}, {"id": "east", "accepted_surface": true, "points": [[121.001, 31], [121, 31], [121, 31.001]]}]}

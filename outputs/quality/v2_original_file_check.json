@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "path": "competition/problem_b/2026年第二届全国大学生仿真建模应用挑战赛B题.pdf",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/A题/2026年第二届全国大学生仿真建模应用挑战赛A题.pdf",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/A题/附件1.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/A题/附件2.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/A题/附件3.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/A题/附件4.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/C题/2026年第二届全国大学生仿真建模应用挑战赛C题.pdf",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/C题/附件1：车辆参数表.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/C题/附件2：4段路程车辆行驶数据.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/C题/附件3：参考工况.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/other_problems/C题/附件4：部件特性（OCV—SOC、内阻、电机效率）.xlsx",
+      "ok": true
+    },
+    {
+      "path": "competition/rules/2026年第二届全国大学生仿真建模应用挑战赛承诺书.doc",
+      "ok": true
+    },
+    {
+      "path": "competition/rules/2026年第二届全国大学生仿真建模应用挑战赛提交流程.pdf",
+      "ok": true
+    },
+    {
+      "path": "competition/rules/全国大学生仿真建模应用挑战赛人工智能工具使用规定.pdf",
+      "ok": true
+    },
+    {
+      "path": "competition/rules/全国大学生仿真建模应用挑战赛论文格式规范.docx",
+      "ok": true
+    },
+    {
+      "path": "competition/source_archives/2026年第二届全国大学生仿真建模应用挑战赛赛题.zip",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/additional_download_manifest.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/data_sources.csv",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hk_road_service.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_layer_schema.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_one_feature.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_sample.geojson",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/centerline_sample_manifest.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/download_manifest.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/raw_traffic.xml",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/road_segments.csv",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/sample_check.json",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/segment_speeds.csv",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/segment_speeds.xml",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/hong_kong/traffic_detectors.csv",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/shenzhen_history/LINKS.mat",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/shenzhen_history/NODES.mat",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/shenzhen_history/SPEEDS.mat",
+      "ok": true
+    },
+    {
+      "path": "research/archive/alternative_data_sources/shenzhen_metadata.json",
+      "ok": true
+    }
+  ]
+}

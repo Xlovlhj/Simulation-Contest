@@ -1,0 +1,759 @@
+{
+  "data_snapshot_id": "DATA_c6680fa324491ca5",
+  "method": {
+    "alpha_min": 0,
+    "beta_min_s": 0,
+    "default_eta_state": "per_od_training_median",
+    "fit_objective": "training_sample_least_squares",
+    "formula": "predicted_ETA_s = alpha * fixed_SUMO_OD_mean_s + beta_s",
+    "method": "nonnegative_shared_affine",
+    "physical_time_field": "completed_travel_time_mean_s"
+  },
+  "model_id": "ETA_cc5eba1e5891e909",
+  "models": {
+    "default_eta_state": "per_od_training_median",
+    "equivalent_residual_interpretation": "Median platform ETA minus fixed hypothetical SUMO time. It aggregates unresolved route costs, signal/geometry/flow assumptions and provider estimation; it is not measured queue delay.",
+    "model_selection": "Predeclared median ETA state plus shared affine research comparator; holdout does not select or tune either.",
+    "per_od": {
+      "east_to_hospital_road": {
+        "equivalent_route_residual_s": 441.0,
+        "physical_sumo_s": 153.0,
+        "shared_affine_eta_s": 579.1810052334647,
+        "training_count": 12,
+        "training_median_s": 594.0
+      },
+      "north_to_south": {
+        "equivalent_route_residual_s": 475.25,
+        "physical_sumo_s": 217.75,
+        "shared_affine_eta_s": 700.0012679130238,
+        "training_count": 12,
+        "training_median_s": 693.0
+      },
+      "south_to_north": {
+        "equivalent_route_residual_s": 323.0,
+        "physical_sumo_s": 94.0,
+        "shared_affine_eta_s": 469.08995506985104,
+        "training_count": 12,
+        "training_median_s": 417.0
+      },
+      "west_to_hospital_road": {
+        "equivalent_route_residual_s": 365.0,
+        "physical_sumo_s": 111.0,
+        "shared_affine_eta_s": 500.811105116994,
+        "training_count": 12,
+        "training_median_s": 476.0
+      }
+    },
+    "shared_affine": {
+      "active_constraint": "interior",
+      "alpha": 1.865950002773113,
+      "beta_s": 293.6906548091784,
+      "design_rank": 2,
+      "physical_time_centered_sum_of_squares_s2": 109308.5625,
+      "training_count": 48,
+      "training_sse_s2": 308712.26969167555,
+      "uncertainty_note": "Four fixed OD predictor levels; repeated ETA samples are serially dependent. No IID confidence interval or physical-parameter identification is claimed.",
+      "unique_physical_times": 4
+    },
+    "validation_used_for_fitting": false
+  },
+  "physical_baseline": {
+    "assumptions": "Fixed 307-edge hypothetical SUMO S1 network, six OD demands at 30-second intervals. Four matching OD means are predictors, not observed travel times.",
+    "directory": "outputs/final_experiments/runs/S1_d30",
+    "field": "completed_travel_time_mean_s",
+    "network": {
+      "connection_count": 310,
+      "directed_edge_set_preserved": true,
+      "edge_count": 307,
+      "internal_edge_count": 316,
+      "internal_movements_preserved": true,
+      "junction_types": {
+        "dead_end": 8,
+        "internal": 6,
+        "priority": 292
+      },
+      "node_count": 300,
+      "observed_connection_set_preserved": true
+    },
+    "physics_valid": true,
+    "simulation_config": {
+      "accel_m_s2": 2.6,
+      "assumptions": [
+        "The same observed directed topology and unchanged SUMO vehicle/junction parameters are used in every comparison; the microscopic model is not calibrated field truth.",
+        "The six original OD release schedules are independent of the number of candidate routes. All request IDs, original release times and vehicle properties are fixed within paired groups.",
+        "A selects a same-endpoint candidate at release using current known external-edge speed costs. The default participates, ties retain default, and future event recovery or future tasks are not consulted.",
+        "B adds bounded source admission after task publication. It acts only on ordinary requests released at/after the task and not yet submitted to SUMO whose chosen path intersects the task's currently remaining corridor.",
+        "Task corridor updates use current TraCI vehicle route position; before task insertion its already assigned route is used. Each ordinary request waits at most 45 seconds at source, and task-related control expires 180 seconds after release.",
+        "Source admission authority is an explicit hypothetical governance action. All source control and SUMO insertion waiting remain charged from the unchanged original release time.",
+        "Task and ordinary vehicles share exactly one vType and the same road permissions. There is no special speed, red-light override, lane priority, repositioning or vehicle removal.",
+        "Slow-event speeds and durations are predeclared assumptions, not observed accidents or measured capacity. All profile results, including no benefit or harm, are retained.",
+        "The fixed experiment anchor maps simulation seconds to a declared wall clock only; the counterfactual traffic demand and event are not a reconstruction of the live collection window.",
+        "A fitted ETA observation layer, if supplied separately, is a statistical reference and does not identify or validate the microscopic parameters."
+      ],
+      "binary_timeout_s": 180,
+      "decel_m_s2": 4.5,
+      "departure_duration_s": 1200,
+      "departure_interval_s": 30,
+      "driver_imperfection": 0,
+      "fcd_period_s": 5,
+      "input_routes": "data/processed/baidu/survey_routes.json",
+      "lane_count": 1,
+      "min_gap_m": 2.5,
+      "model_status": "uncalibrated_technical_baseline",
+      "reaction_time_s": 1,
+      "seed": 20261017,
+      "simulation_duration_s": 1800,
+      "speed_limit_kmh": 30,
+      "step_length_s": 1,
+      "study_area_id": "shanghai_ruijin",
+      "vehicle_length_m": 5
+    },
+    "source_files": [
+      {
+        "bytes": 13266,
+        "path": "outputs/final_experiments/runs/S1_d30/metrics.json",
+        "sha256": "180f28d5f39f569694db3232b122d42ebd02ff5197d2d25a86f5e1e461e37033"
+      },
+      {
+        "bytes": 13818,
+        "path": "outputs/final_experiments/runs/S1_d30/run_manifest.json",
+        "sha256": "4c321f513b592076509e59204d81cc9d64cf8040b05512828aed2a1b4a86f69f"
+      },
+      {
+        "bytes": 5315,
+        "path": "outputs/final_experiments/runs/S1_d30/demand.rou.xml",
+        "sha256": "c6928b19b4d1be2abd50a13f398b97ec58d8704be83721c6e60620f0c9a39252"
+      },
+      {
+        "bytes": 267032,
+        "path": "outputs/final_experiments/runs/S1_d30/network.net.xml",
+        "sha256": "4ba138bccc2d7f6a3814e942d5e0cebf1a1af67f2183b3bd357b856093af9837"
+      },
+      {
+        "bytes": 27717,
+        "path": "outputs/final_experiments/runs/S1_d30/route_manifest.json",
+        "sha256": "98ea614851df6b176313af05b44fa99d8fb24bd2c655d323ecfb82a33b869bae"
+      },
+      {
+        "bytes": 118257,
+        "path": "outputs/final_experiments/runs/S1_d30/tripinfo.xml",
+        "sha256": "55e9568fce3a5f560d604ee8889092803cdf6cbfdb37a1e8c43aed97ed521e51"
+      }
+    ],
+    "time_definition": "Actual vehicle departure to arrival; scheduled-release queue delay excluded.",
+    "values_s": {
+      "east_to_hospital_road": 153.0,
+      "north_to_south": 217.75,
+      "south_to_north": 94.0,
+      "west_to_hospital_road": 111.0
+    }
+  },
+  "physical_mechanism_calibrated": false,
+  "protocol_id": "S1_ETA_FINAL_V1_20261018",
+  "samples_sha256": "47a8b9c6fef2918f5575ea919b3fb66fbec27fc7b4d24653bc09aa664dee7c6e",
+  "schema_version": 1,
+  "source_code": {
+    "bytes": 27910,
+    "path": "scripts/validate_twin.py",
+    "sha256": "fd0e0771b3c2f7cd2e62bd987d867c0707b4b66c15598916acca223d2d202712"
+  },
+  "target": "Route-level platform ETA, not measured vehicle travel time",
+  "training_sample_ids": [
+    "collection_20261017T065708_658611Z_6fd29964/line_000002",
+    "collection_20261017T065708_658611Z_6fd29964/line_000003",
+    "collection_20261017T065708_658611Z_6fd29964/line_000004",
+    "collection_20261017T065708_658611Z_6fd29964/line_000005",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000008",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000009",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000010",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000011",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000015",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000016",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000017",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000018",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000021",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000022",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000023",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000024",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000028",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000029",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000030",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000031",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000034",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000035",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000036",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000037",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000041",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000042",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000043",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000044",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000047",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000048",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000049",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000050",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000054",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000055",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000056",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000057",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000060",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000061",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000062",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000063",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000067",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000068",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000069",
+    "collection_20261017T065733_366933Z_4a9b903d/line_000070",
+    "collection_20261017T075140_567886Z_8856fc75/line_000002",
+    "collection_20261017T075140_567886Z_8856fc75/line_000003",
+    "collection_20261017T075140_567886Z_8856fc75/line_000004",
+    "collection_20261017T075140_567886Z_8856fc75/line_000005"
+  ],
+  "training_samples": [
+    {
+      "bucket_start_at": "2026-10-17T14:55:00+08:00",
+      "estimated_duration_s": 729.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T14:57:13.260+08:00",
+      "requested_at": "2026-10-17T14:57:11.497+08:00",
+      "response_sha256": "fc68a77d281c27d4829f0a75bef7e683cb6d286c3716372222948c7ec8e1ebeb",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065708_658611Z_6fd29964/line_000002"
+    },
+    {
+      "bucket_start_at": "2026-10-17T14:55:00+08:00",
+      "estimated_duration_s": 462.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T14:57:16.152+08:00",
+      "requested_at": "2026-10-17T14:57:14.351+08:00",
+      "response_sha256": "fd425bc4536eeae443025be0f71e86097ddea499fa6ebdc14020584bbe320bec",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065708_658611Z_6fd29964/line_000003"
+    },
+    {
+      "bucket_start_at": "2026-10-17T14:55:00+08:00",
+      "estimated_duration_s": 726.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T14:57:19.359+08:00",
+      "requested_at": "2026-10-17T14:57:17.244+08:00",
+      "response_sha256": "8d447274abe49658674f05f55a1f4864f2bd4092647d690a55166dce73919617",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065708_658611Z_6fd29964/line_000004"
+    },
+    {
+      "bucket_start_at": "2026-10-17T14:55:00+08:00",
+      "estimated_duration_s": 716.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T14:57:22.232+08:00",
+      "requested_at": "2026-10-17T14:57:20.429+08:00",
+      "response_sha256": "90861b967fb8bfd52b62e98cd8a829d0444bac92e778e4d80cecf0e0b36b990c",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065708_658611Z_6fd29964/line_000005"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:00:00+08:00",
+      "estimated_duration_s": 701.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:02:38.057+08:00",
+      "requested_at": "2026-10-17T15:02:36.337+08:00",
+      "response_sha256": "d49c874dc9ee089f57829bb6174c3f75b1286d1a007f0c6ff8f76807d2efef40",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000008"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:00:00+08:00",
+      "estimated_duration_s": 481.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:02:41.207+08:00",
+      "requested_at": "2026-10-17T15:02:39.460+08:00",
+      "response_sha256": "3f699381bcbc308102e989b2f58bc761c4d4ab433fcb6221dd8c6a4fa93fccc0",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000009"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:00:00+08:00",
+      "estimated_duration_s": 670.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:02:44.096+08:00",
+      "requested_at": "2026-10-17T15:02:42.346+08:00",
+      "response_sha256": "b95a88b971f0ce909a3f73d234f7453886a1b656da79bf0f32ef97182a51794c",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000010"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:00:00+08:00",
+      "estimated_duration_s": 673.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:02:46.996+08:00",
+      "requested_at": "2026-10-17T15:02:45.273+08:00",
+      "response_sha256": "7d815b96cf90318c6a49a4e4320e86ad8ae70dd2768ce615047efe6a4ea530fd",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000011"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:05:00+08:00",
+      "estimated_duration_s": 678.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:07:38.057+08:00",
+      "requested_at": "2026-10-17T15:07:36.337+08:00",
+      "response_sha256": "5435c67d8d3a3b201511a7920f7ce8643fac4661436f578bab2c22f02dbf4b79",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000015"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:05:00+08:00",
+      "estimated_duration_s": 554.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:07:41.189+08:00",
+      "requested_at": "2026-10-17T15:07:39.460+08:00",
+      "response_sha256": "677305b79840d2b2959a387d7cdf59aca97b366339c2236ffc3b83b05b0ab42f",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000016"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:05:00+08:00",
+      "estimated_duration_s": 481.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:07:44.085+08:00",
+      "requested_at": "2026-10-17T15:07:42.346+08:00",
+      "response_sha256": "3b54988656b29dc91f18d8d972ff5010daea43cfe6bce7d21ceb31299efde411",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000017"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:05:00+08:00",
+      "estimated_duration_s": 631.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:07:47.008+08:00",
+      "requested_at": "2026-10-17T15:07:45.273+08:00",
+      "response_sha256": "85e8cc4a6b62f38a1a0c0d7abc447bd3f00c90e89bed5ce2742c8587a8b9b333",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000018"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:10:00+08:00",
+      "estimated_duration_s": 693.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:12:38.118+08:00",
+      "requested_at": "2026-10-17T15:12:36.337+08:00",
+      "response_sha256": "f2c444dddf387d32acc691a627834ce618fa917604360ccadc94469ca86da62f",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000021"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:10:00+08:00",
+      "estimated_duration_s": 424.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:12:41.185+08:00",
+      "requested_at": "2026-10-17T15:12:39.460+08:00",
+      "response_sha256": "4cf69a3034c2b5c951db1ec293d497f091bb2a836864c318e90a1cf749dabf77",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000022"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:10:00+08:00",
+      "estimated_duration_s": 464.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:12:44.105+08:00",
+      "requested_at": "2026-10-17T15:12:42.346+08:00",
+      "response_sha256": "ab3e68a84b918a1fcf29e1ffde996ac3c4afa70a53482e15395f406a3c295e2c",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000023"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:10:00+08:00",
+      "estimated_duration_s": 694.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:12:47.035+08:00",
+      "requested_at": "2026-10-17T15:12:45.273+08:00",
+      "response_sha256": "f914a1a5d645bb3c8d92a69149cad7ed62de0e33660b4b648e63feb336095898",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000024"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:15:00+08:00",
+      "estimated_duration_s": 760.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:17:38.099+08:00",
+      "requested_at": "2026-10-17T15:17:36.337+08:00",
+      "response_sha256": "30d39a5cfacca8f2cdd6a3c7dd620c7cbaee563c40ceb9bb41347165169734d7",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000028"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:15:00+08:00",
+      "estimated_duration_s": 410.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:17:41.313+08:00",
+      "requested_at": "2026-10-17T15:17:39.460+08:00",
+      "response_sha256": "2ec320117a264fc8c7f2a3eb8fb675a958979980fb869aff06f6c18b80239d29",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000029"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:15:00+08:00",
+      "estimated_duration_s": 551.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:17:44.166+08:00",
+      "requested_at": "2026-10-17T15:17:42.404+08:00",
+      "response_sha256": "0449461e9edb3406701b6e41c4abcd425762e3f1adaf90f298d4f9c883124e36",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000030"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:15:00+08:00",
+      "estimated_duration_s": 598.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:17:47.038+08:00",
+      "requested_at": "2026-10-17T15:17:45.273+08:00",
+      "response_sha256": "3751fe7d41bc771b962d07d789e05cde7fd791bcd00b38fa3d84b45656e4cd12",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000031"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:20:00+08:00",
+      "estimated_duration_s": 699.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:22:38.089+08:00",
+      "requested_at": "2026-10-17T15:22:36.337+08:00",
+      "response_sha256": "d9eecc1a8545b9215a0565af14dc6d0dac3ea328cf570d11d04882f7596fd623",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000034"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:20:00+08:00",
+      "estimated_duration_s": 410.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:22:41.234+08:00",
+      "requested_at": "2026-10-17T15:22:39.461+08:00",
+      "response_sha256": "2ec320117a264fc8c7f2a3eb8fb675a958979980fb869aff06f6c18b80239d29",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000035"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:20:00+08:00",
+      "estimated_duration_s": 489.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:22:44.155+08:00",
+      "requested_at": "2026-10-17T15:22:42.404+08:00",
+      "response_sha256": "486886b17168b1b4b2a86fe5b1a09d4c73a65984f6e7db9180689d6f21814331",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000036"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:20:00+08:00",
+      "estimated_duration_s": 585.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:22:46.996+08:00",
+      "requested_at": "2026-10-17T15:22:45.274+08:00",
+      "response_sha256": "162fc5471099727dd9ed00bbf52074075e060ab87cf80f47f8a5a9bd5c0e554b",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000037"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:25:00+08:00",
+      "estimated_duration_s": 687.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:27:38.145+08:00",
+      "requested_at": "2026-10-17T15:27:36.338+08:00",
+      "response_sha256": "1d6bd4ebcdf2b1ef5b57c9a2190bceced1f121313f535211fa8b8b38f84d265f",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000041"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:25:00+08:00",
+      "estimated_duration_s": 562.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:27:41.211+08:00",
+      "requested_at": "2026-10-17T15:27:39.461+08:00",
+      "response_sha256": "de0744a0fd478c6366724febb52d88b0fe15770634b172843db524393689b0ab",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000042"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:25:00+08:00",
+      "estimated_duration_s": 675.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:27:44.141+08:00",
+      "requested_at": "2026-10-17T15:27:42.404+08:00",
+      "response_sha256": "e4b1100d5e77dc9bb2c50fd4fc1ff48a4b90a1b1cf89bd248425f200a5b59c2c",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000043"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:25:00+08:00",
+      "estimated_duration_s": 669.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:27:47.030+08:00",
+      "requested_at": "2026-10-17T15:27:45.274+08:00",
+      "response_sha256": "319744601d806d1a8b8ddf079e9964954ec780039d1d178feb95df299bfa1301",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000044"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:30:00+08:00",
+      "estimated_duration_s": 693.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:32:38.105+08:00",
+      "requested_at": "2026-10-17T15:32:36.338+08:00",
+      "response_sha256": "1d0b6bf37aa025b405966ab7c6c1b62a5de8e19185daaeba2233af5ef2aca944",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000047"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:30:00+08:00",
+      "estimated_duration_s": 398.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:32:41.187+08:00",
+      "requested_at": "2026-10-17T15:32:39.461+08:00",
+      "response_sha256": "da2d425fda4cf59f05b4a8279f0279a2a6fb3710a175f1dddd4c0f45f4864cf8",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000048"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:30:00+08:00",
+      "estimated_duration_s": 471.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:32:44.168+08:00",
+      "requested_at": "2026-10-17T15:32:42.404+08:00",
+      "response_sha256": "19b1362f56594055d2b91cdde9e3ea4a57ee719685db5fa858b6e2273be9deb5",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000049"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:30:00+08:00",
+      "estimated_duration_s": 549.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:32:47.047+08:00",
+      "requested_at": "2026-10-17T15:32:45.274+08:00",
+      "response_sha256": "6922d47ae90eb8c4e54abe606631fd6a72c0c4fe1181c5c0c4e72fd578ad64f6",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000050"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:35:00+08:00",
+      "estimated_duration_s": 644.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:37:38.087+08:00",
+      "requested_at": "2026-10-17T15:37:36.338+08:00",
+      "response_sha256": "f01198177963a408b23083f31eda5884b3babda01b80c1f8ea959ab0c3638005",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000054"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:35:00+08:00",
+      "estimated_duration_s": 375.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:37:41.207+08:00",
+      "requested_at": "2026-10-17T15:37:39.461+08:00",
+      "response_sha256": "5e64075ea9fc07e0db1ecc8655bcdf0b85e6e0f397d355782f144b4164fdd309",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000055"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:35:00+08:00",
+      "estimated_duration_s": 427.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:37:44.172+08:00",
+      "requested_at": "2026-10-17T15:37:42.404+08:00",
+      "response_sha256": "b71e9fd6c81852902a0ef7dbec605cee1b4166a7aa28d91dd81e14485c2d883e",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000056"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:35:00+08:00",
+      "estimated_duration_s": 519.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:37:47.018+08:00",
+      "requested_at": "2026-10-17T15:37:45.274+08:00",
+      "response_sha256": "5b3c2efb2f1a6ed88e3dfb09aff0ff892755bb942ada652d88c920c2c6e8a6e4",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000057"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:40:00+08:00",
+      "estimated_duration_s": 704.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:42:38.300+08:00",
+      "requested_at": "2026-10-17T15:42:36.338+08:00",
+      "response_sha256": "758e694ff6e02e8fe9f74e960bd1f60ef22edb151f165e78a9b1a4bec62e845b",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000060"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:40:00+08:00",
+      "estimated_duration_s": 361.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:42:41.302+08:00",
+      "requested_at": "2026-10-17T15:42:39.461+08:00",
+      "response_sha256": "b4ab85e3f31a41c4d44d5d3b511cfd773e77897b3a0cb95d7f3763225fa14aaa",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000061"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:40:00+08:00",
+      "estimated_duration_s": 400.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:42:44.140+08:00",
+      "requested_at": "2026-10-17T15:42:42.404+08:00",
+      "response_sha256": "fe1c9fedd7a26deba61bca0efb96f8da2329e9cefc8312362496f9763e18242e",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000062"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:40:00+08:00",
+      "estimated_duration_s": 538.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:42:46.995+08:00",
+      "requested_at": "2026-10-17T15:42:45.274+08:00",
+      "response_sha256": "fe9d817bbf9c8ed634af58c7e56592f1cb4eb8487962aec461e5dd3f79baf466",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000063"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:45:00+08:00",
+      "estimated_duration_s": 600.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:47:38.078+08:00",
+      "requested_at": "2026-10-17T15:47:36.338+08:00",
+      "response_sha256": "044c1abde3442a5daa05713651998398f8f29515aa68cdbb952fec84b9e76b21",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000067"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:45:00+08:00",
+      "estimated_duration_s": 357.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:47:41.259+08:00",
+      "requested_at": "2026-10-17T15:47:39.461+08:00",
+      "response_sha256": "fd57ac914e7425ac85a667a6ba8f6e720af6c8c5459f6a13ce17b7ea659e0d19",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000068"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:45:00+08:00",
+      "estimated_duration_s": 376.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:47:44.151+08:00",
+      "requested_at": "2026-10-17T15:47:42.404+08:00",
+      "response_sha256": "7502e40e3d2f75b657ae1eb23c391bbcbdf28de25a2e37bf16335ae67123d58a",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000069"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:45:00+08:00",
+      "estimated_duration_s": 590.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:47:47.042+08:00",
+      "requested_at": "2026-10-17T15:47:45.274+08:00",
+      "response_sha256": "efc40d56a5e0048141bcea062e3c6706f0c0f9a94aa662649c471aee28035314",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T065733_366933Z_4a9b903d/line_000070"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:50:00+08:00",
+      "estimated_duration_s": 614.0,
+      "geometry_signature": "483fc31fe170f465bc9a4604cd69427c4111145bb4cd95ed5e8683a22f77be7d",
+      "phase": "training",
+      "received_at": "2026-10-17T15:51:45.240+08:00",
+      "requested_at": "2026-10-17T15:51:43.443+08:00",
+      "response_sha256": "8506bd837357f24fc980d96529a6cbdbc4bd9cb0bf963ccb1584649f2ba69726",
+      "route_pair_id": "north_to_south",
+      "sample_id": "collection_20261017T075140_567886Z_8856fc75/line_000002"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:50:00+08:00",
+      "estimated_duration_s": 535.0,
+      "geometry_signature": "84ab60e3d9a62774cf9fce3922e9645de2644c630451ae375dfe85f1d18b64fa",
+      "phase": "training",
+      "received_at": "2026-10-17T15:51:48.230+08:00",
+      "requested_at": "2026-10-17T15:51:46.330+08:00",
+      "response_sha256": "e6952c4cff641664ac8e2c9ece727415403baf87d388b4fd6d2421957fed1e28",
+      "route_pair_id": "south_to_north",
+      "sample_id": "collection_20261017T075140_567886Z_8856fc75/line_000003"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:50:00+08:00",
+      "estimated_duration_s": 396.0,
+      "geometry_signature": "78d25c708eafaa5844ca66b3362f9976ffc11f28cc69f5d5a51aa2d1c1bb994a",
+      "phase": "training",
+      "received_at": "2026-10-17T15:51:51.266+08:00",
+      "requested_at": "2026-10-17T15:51:49.322+08:00",
+      "response_sha256": "99360197f9200587412b6386a2cb0874e201b7911ceee3f69d342705932c4d07",
+      "route_pair_id": "west_to_hospital_road",
+      "sample_id": "collection_20261017T075140_567886Z_8856fc75/line_000004"
+    },
+    {
+      "bucket_start_at": "2026-10-17T15:50:00+08:00",
+      "estimated_duration_s": 570.0,
+      "geometry_signature": "185a960e68edf7939fa80489597b42ddffa752362dcf6a03c5526342f517deee",
+      "phase": "training",
+      "received_at": "2026-10-17T15:51:54.088+08:00",
+      "requested_at": "2026-10-17T15:51:52.358+08:00",
+      "response_sha256": "46ba6211adf901787446beab8ba94793325d83e9ebc207d2cef8a63af20941d5",
+      "route_pair_id": "east_to_hospital_road",
+      "sample_id": "collection_20261017T075140_567886Z_8856fc75/line_000005"
+    }
+  ],
+  "training_sha256": "f2dda55bf9bc9964dacbef5dc9465c829d62439ec276b1feb894fc7fb86b4356",
+  "windows": {
+    "cross_day_holdout": {
+      "end": "2026-10-18T13:36:00+08:00",
+      "expected_samples_per_od": 24,
+      "start": "2026-10-18T11:36:00+08:00"
+    },
+    "same_day_exploratory": {
+      "end": "2026-10-17T16:15:00+08:00",
+      "expected_samples_per_od": 4,
+      "start": "2026-10-17T15:55:00+08:00"
+    },
+    "training": {
+      "end": "2026-10-17T15:55:00+08:00",
+      "expected_samples_per_od": 12,
+      "start": "2026-10-17T14:55:00+08:00"
+    }
+  }
+}

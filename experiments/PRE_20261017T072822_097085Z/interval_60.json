@@ -1,0 +1,29 @@
+{
+  "study_area_id": "shanghai_ruijin",
+  "input_routes": "data/processed/baidu/survey_routes.json",
+  "simulation_duration_s": 1800,
+  "departure_duration_s": 1200,
+  "departure_interval_s": 60,
+  "step_length_s": 1,
+  "fcd_period_s": 5,
+  "seed": 20261017,
+  "lane_count": 1,
+  "speed_limit_kmh": 30,
+  "vehicle_length_m": 5,
+  "min_gap_m": 2.5,
+  "accel_m_s2": 2.6,
+  "decel_m_s2": 4.5,
+  "reaction_time_s": 1,
+  "driver_imperfection": 0,
+  "binary_timeout_s": 180,
+  "model_status": "uncalibrated_technical_baseline",
+  "assumptions": [
+    "Only surface-accepted Baidu paths selected with use_for_baseline are driven; these are planned paths, not observed vehicle trajectories. Surface acceptance does not establish full topology validation.",
+    "Roads have one assumed lane, a 30 km/h assumed speed limit, and equal-edge-priority junction rules computed by netconvert; these priority rules are hypotheses, not observed signal control.",
+    "Vehicle dimensions and car-following parameters are uncalibrated SUMO model assumptions.",
+    "Only explicitly observed successive edge connections are permitted, without inferred turns or reverse edges. Internal junction links implement these same movements, audited independently.",
+    "BD-09 coordinates are projected locally for approximate engineering distances without claiming survey-grade geometry.",
+    "This run verifies executable integration and conservation only; it is not an independently validated S1 model.",
+    "Each selected route receives an assumed vehicle every 60 seconds for the first 1200 seconds; no observed OD flow is used."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-10-17T14:45:31+08:00",
+  "active_study_area": "shanghai_ruijin",
+  "records": [
+    {
+      "probe_directory": "data/raw/baidu/probe_20261017T063253_347625Z",
+      "study_area_id": "beijing_haidian",
+      "geocode_level": "医疗",
+      "formal_experiment": false,
+      "assessment": "historical_capability_probe",
+      "use_for_current_shanghai_model": false,
+      "reason": "Research city changed to Shanghai by user."
+    },
+    {
+      "probe_directory": "data/raw/baidu/probe_20261017T064256_549056Z",
+      "study_area_id": "shanghai_ruijin",
+      "geocode_level": "餐饮",
+      "formal_experiment": false,
+      "assessment": "rejected_location_semantics",
+      "use_for_current_shanghai_model": false,
+      "reason": "Hospital-name query returned a catering-category location; retain for audit only."
+    },
+    {
+      "probe_directory": "data/raw/baidu/probe_20261017T064350_998365Z",
+      "study_area_id": "shanghai_ruijin",
+      "geocode_level": "门址",
+      "formal_experiment": false,
+      "assessment": "candidate_sample_requires_spatial_validation",
+      "use_for_current_shanghai_model": "pending_spatial_validation",
+      "road_entries": 21,
+      "unknown_road_names": 1,
+      "congestion_records": 4,
+      "records_with_numeric_speed": 4,
+      "has_advanced_traffic_detail": false,
+      "route_distance_m": 2100,
+      "route_estimated_duration_s": 883,
+      "route_point_count": 111,
+      "route_points_outside_probe_box": 43,
+      "limitations": [
+        "No independent source data timestamp returned.",
+        "Congestion descriptions are not guaranteed to be clipped to the query rectangle.",
+        "Route crosses probe rectangle; cannot use full ETA against only the in-box simulation path.",
+        "Street address is not a verified ambulance entrance.",
+        "Do not merge elevated and surface road intersections without topology evidence."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "purpose": "post_run_physics_audit",
+  "original_execution_completed": true,
+  "eligible_for_governance": false,
+  "all_scenarios_physics_valid": false,
+  "runs": [
+    {
+      "interval_s": 60,
+      "metrics_sha256": "8920a42132be6f316039a36a66c9c65ac0c87a76833989c47583320e23619aed",
+      "physics_valid": true,
+      "quality_reasons": ""
+    },
+    {
+      "interval_s": 30,
+      "metrics_sha256": "41d357c99cb7dd18ae6ec44f0852c5c7dd71d63c287eca868a1e85fde57e9efe",
+      "physics_valid": false,
+      "quality_reasons": "collisions=39;teleports=39"
+    },
+    {
+      "interval_s": 15,
+      "metrics_sha256": "aa60de08f39a1177322f1390b6e23b8eeae9e4fb6a4a4c42394dd7071406781d",
+      "physics_valid": false,
+      "quality_reasons": "collisions=78;teleports=78"
+    }
+  ],
+  "note": "Preserve all original results; collision/teleport scenarios cannot support congestion or governance conclusions."
+}

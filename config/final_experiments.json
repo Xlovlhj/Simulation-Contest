@@ -1,0 +1,52 @@
+{
+  "protocol_version": 1,
+  "purpose": "final_reproducible_assumption_based_simulation_experiments",
+  "base_config": "config/baseline.json",
+  "route_catalog": "data/processed/baidu/route_catalog_v1.json",
+  "experiment_anchor": "2026-10-18T12:00:00+08:00",
+  "anchor_status": "declared_counterfactual_experiment_clock_not_reconstructed_observation",
+  "simulation_duration_s": 1800,
+  "departure_duration_s": 1200,
+  "step_length_s": 1,
+  "fcd_period_s": 5,
+  "seed": 20261017,
+  "event": {
+    "id": "assumed_ruijin_upstream_slow_segment",
+    "target_od_id": "west_to_hospital_road",
+    "edge_ids": ["e000184", "e000083", "e000084", "e000085", "e000086", "e000087"],
+    "road_name": "瑞金二路",
+    "published_at_s": 600,
+    "begin_s": 600,
+    "source": "assumed_event_not_observed_incident"
+  },
+  "hospital_task": {
+    "id": "hospital_task_001",
+    "od_id": "west_to_hospital_road",
+    "release_s": 720,
+    "destination_note": "RJ_YJ医院外围公共道路接驳点，未核验院内急救入口"
+  },
+  "coordination": {
+    "maximum_source_hold_s": 45,
+    "maximum_task_control_window_s": 180,
+    "mechanism": "release_time_bounded_origin_admission_when_route_intersects_current_remaining_task_corridor",
+    "authority_status": "assumed_controllable_origin_admission_not_actual_road_authority"
+  },
+  "profiles": [
+    {"id": "primary", "departure_interval_s": 30, "event_speed_m_s": 1.0, "event_duration_s": 600, "role": "primary_predeclared"},
+    {"id": "higher_demand", "departure_interval_s": 15, "event_speed_m_s": 1.0, "event_duration_s": 600, "role": "one_factor_demand_sensitivity"},
+    {"id": "severe_event", "departure_interval_s": 30, "event_speed_m_s": 0.5, "event_duration_s": 600, "role": "one_factor_event_speed_sensitivity"},
+    {"id": "longer_event", "departure_interval_s": 30, "event_speed_m_s": 1.0, "event_duration_s": 900, "role": "one_factor_duration_sensitivity"}
+  ],
+  "assumptions": [
+    "The same observed directed topology and unchanged SUMO vehicle/junction parameters are used in every comparison; the microscopic model is not calibrated field truth.",
+    "The six original OD release schedules are independent of the number of candidate routes. All request IDs, original release times and vehicle properties are fixed within paired groups.",
+    "A selects a same-endpoint candidate at release using current known external-edge speed costs. The default participates, ties retain default, and future event recovery or future tasks are not consulted.",
+    "B adds bounded source admission after task publication. It acts only on ordinary requests released at/after the task and not yet submitted to SUMO whose chosen path intersects the task's currently remaining corridor.",
+    "Task corridor updates use current TraCI vehicle route position; before task insertion its already assigned route is used. Each ordinary request waits at most 45 seconds at source, and task-related control expires 180 seconds after release.",
+    "Source admission authority is an explicit hypothetical governance action. All source control and SUMO insertion waiting remain charged from the unchanged original release time.",
+    "Task and ordinary vehicles share exactly one vType and the same road permissions. There is no special speed, red-light override, lane priority, repositioning or vehicle removal.",
+    "Slow-event speeds and durations are predeclared assumptions, not observed accidents or measured capacity. All profile results, including no benefit or harm, are retained.",
+    "The fixed experiment anchor maps simulation seconds to a declared wall clock only; the counterfactual traffic demand and event are not a reconstruction of the live collection window.",
+    "A fitted ETA observation layer, if supplied separately, is a statistical reference and does not identify or validate the microscopic parameters."
+  ]
+}

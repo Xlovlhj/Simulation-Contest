@@ -1,0 +1,108 @@
+{
+  "status": 0,
+  "message": "成功",
+  "description": "该区域整体拥堵。复兴中路：东向西,从淡水路到思南路严重拥堵。重庆南路辅路：南向北,从徐家汇路到重庆南路路口拥堵。",
+  "evaluation": {
+    "status": 3,
+    "status_desc": "拥堵"
+  },
+  "road_traffic": [
+    {
+      "road_name": "UNKNOW"
+    },
+    {
+      "road_name": "南北高架路"
+    },
+    {
+      "road_name": "南昌路"
+    },
+    {
+      "road_name": "合肥路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 4,
+          "congestion_distance": 560,
+          "speed": 3.36,
+          "status": 4,
+          "congestion_trend": "WORSE",
+          "section_desc": "东向西,从淡水路到思南路",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "复兴中路"
+    },
+    {
+      "road_name": "建国东路"
+    },
+    {
+      "road_name": "建国中路"
+    },
+    {
+      "road_name": "建国西路"
+    },
+    {
+      "road_name": "建德路"
+    },
+    {
+      "road_name": "徐家汇路"
+    },
+    {
+      "road_name": "徐家汇路地道"
+    },
+    {
+      "road_name": "思南路"
+    },
+    {
+      "road_name": "永嘉路"
+    },
+    {
+      "road_name": "泰康路"
+    },
+    {
+      "road_name": "淮海中路"
+    },
+    {
+      "road_name": "瑞金二路"
+    },
+    {
+      "road_name": "皋兰路"
+    },
+    {
+      "road_name": "绍兴路"
+    },
+    {
+      "road_name": "自忠路"
+    },
+    {
+      "road_name": "茂名南路"
+    },
+    {
+      "road_name": "重庆南路"
+    },
+    {
+      "congestion_sections": [
+        {
+          "road_type": 4,
+          "congestion_distance": 570,
+          "speed": 12.96,
+          "status": 3,
+          "congestion_trend": "WORSE",
+          "section_desc": "南向北,从徐家汇路到重庆南路路口",
+          "congection_trend": null
+        }
+      ],
+      "road_name": "重庆南路辅路"
+    },
+    {
+      "road_name": "陕西南路"
+    },
+    {
+      "road_name": "雁荡路"
+    },
+    {
+      "road_name": "香山路"
+    }
+  ]
+}

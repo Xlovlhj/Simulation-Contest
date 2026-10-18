@@ -1,0 +1,489 @@
+{
+  "declared_preset_multipliers": {
+    "step_q10": 0.7048019287234182,
+    "step_q25": 0.8239917890901547
+  },
+  "derivation": {
+    "critical_multiplier": "rho_star=(E_default-E_alternative)/(O_alternative-O_default), when numerator and denominator are positive",
+    "definitions": "E_r=sum(length/fitted_effective_speed) on event edges; O_r same sum on all other edges",
+    "difference": "C_alternative-C_default = (O_alternative-O_default) - (E_default-E_alternative)/rho",
+    "route_cost": "C_r(rho) = O_r + E_r / rho",
+    "shared_edge_cancellation": "Identical shared event edges have identical fitted speed and multiplier, hence cancel exactly in the route-cost difference",
+    "tie_break": "Default route retained when costs tie; alternate requires a strictly lower current known cost"
+  },
+  "limitations": [
+    "Costs are algorithm A's static estimates, not simulated trip outcomes or observed vehicle times.",
+    "Both declared severity levels remain above the computed switching thresholds; thresholds below the training minimum ratio have no support in this observation window.",
+    "No parameter, event edge, or governance output is modified to create a positive result.",
+    "Profiles failing the training consistency screen are shown only as diagnostics; thresholds are not unique true-traffic quantities."
+  ],
+  "profiles": [
+    {
+      "comparisons": [
+        {
+          "alternative": {
+            "event_baseline_cost_s": 114.5072989090909,
+            "event_edge_ids": [
+              "e000088",
+              "e000089",
+              "e000090",
+              "e000091",
+              "e000092",
+              "e000093",
+              "e000094",
+              "e000095",
+              "e000096",
+              "e000097",
+              "e000098",
+              "e000099",
+              "e000100"
+            ],
+            "event_length_m": 209.930048,
+            "outside_event_cost_s": 578.3639892727272,
+            "outside_event_length_m": 1363.59271,
+            "route_id": "west_to_hospital_road:observed:west_via_sinnan_0",
+            "route_length_m": 1573.522758
+          },
+          "alternative_additional_full_route_length_m": 717.1261470000001,
+          "avoidable_default_event_edges": [
+            "e000184",
+            "e000083",
+            "e000084",
+            "e000085",
+            "e000086",
+            "e000087"
+          ],
+          "avoidable_default_event_length_m": 68.735091,
+          "costs_at_declared_presets": [
+            {
+              "alternative_estimated_cost_s": 717.3305426112368,
+              "alternative_minus_default_s": 240.26742992731238,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 477.0631126839244,
+              "preset": "step_q25",
+              "speed_multiplier": 0.8239917890901547
+            },
+            {
+              "alternative_estimated_cost_s": 740.831335405695,
+              "alternative_minus_default_s": 232.57282333483812,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 508.25851207085685,
+              "preset": "step_q10",
+              "speed_multiplier": 0.7048019287234182
+            }
+          ],
+          "critical_speed_multiplier": 0.13119699956495376,
+          "delta_event_cost_s": 37.49186781818182,
+          "delta_outside_cost_s": 285.7677229090908,
+          "shared_event_edges": [
+            "e000088",
+            "e000089",
+            "e000090",
+            "e000091",
+            "e000092",
+            "e000093",
+            "e000094",
+            "e000095",
+            "e000096",
+            "e000097",
+            "e000098",
+            "e000099",
+            "e000100"
+          ],
+          "shared_event_length_m": 209.930048,
+          "threshold_meaning": "Alternative wins only below critical multiplier; equality retains default. Derived only for this static complete-path cost rule, not a physical queue-optimal threshold."
+        }
+      ],
+      "default": {
+        "event_baseline_cost_s": 151.99916672727272,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_length_m": 278.665139,
+        "outside_event_cost_s": 292.59626636363635,
+        "outside_event_length_m": 577.731472,
+        "route_id": "west_to_hospital_road:observed:west_to_hospital_road",
+        "route_length_m": 856.396611
+      },
+      "observed_changed_route_count": 0,
+      "observed_guided_run_count": 4,
+      "profile": "headway_60",
+      "profile_passes_training_screen": true
+    },
+    {
+      "comparisons": [
+        {
+          "alternative": {
+            "event_baseline_cost_s": 117.1702593488372,
+            "event_edge_ids": [
+              "e000088",
+              "e000089",
+              "e000090",
+              "e000091",
+              "e000092",
+              "e000093",
+              "e000094",
+              "e000095",
+              "e000096",
+              "e000097",
+              "e000098",
+              "e000099",
+              "e000100"
+            ],
+            "event_length_m": 209.930048,
+            "outside_event_cost_s": 583.4170334420895,
+            "outside_event_length_m": 1363.59271,
+            "route_id": "west_to_hospital_road:observed:west_via_sinnan_0",
+            "route_length_m": 1573.522758
+          },
+          "alternative_additional_full_route_length_m": 717.1261470000001,
+          "avoidable_default_event_edges": [
+            "e000184",
+            "e000083",
+            "e000084",
+            "e000085",
+            "e000086",
+            "e000087"
+          ],
+          "avoidable_default_event_length_m": 68.735091,
+          "costs_at_declared_presets": [
+            {
+              "alternative_estimated_cost_s": 725.615367090797,
+              "alternative_minus_default_s": 278.62552122153227,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 446.98984586926474,
+              "preset": "step_q25",
+              "speed_multiplier": 0.8239917890901547
+            },
+            {
+              "alternative_estimated_cost_s": 749.6626899502427,
+              "alternative_minus_default_s": 270.75197028969814,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 478.91071966054454,
+              "preset": "step_q10",
+              "speed_multiplier": 0.7048019287234182
+            }
+          ],
+          "critical_speed_multiplier": 0.11797559650802046,
+          "delta_event_cost_s": 38.363771720930245,
+          "delta_outside_cost_s": 325.1839605517241,
+          "shared_event_edges": [
+            "e000088",
+            "e000089",
+            "e000090",
+            "e000091",
+            "e000092",
+            "e000093",
+            "e000094",
+            "e000095",
+            "e000096",
+            "e000097",
+            "e000098",
+            "e000099",
+            "e000100"
+          ],
+          "shared_event_length_m": 209.930048,
+          "threshold_meaning": "Alternative wins only below critical multiplier; equality retains default. Derived only for this static complete-path cost rule, not a physical queue-optimal threshold."
+        }
+      ],
+      "default": {
+        "event_baseline_cost_s": 155.53403106976745,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_length_m": 278.665139,
+        "outside_event_cost_s": 258.2330728903654,
+        "outside_event_length_m": 577.731472,
+        "route_id": "west_to_hospital_road:observed:west_to_hospital_road",
+        "route_length_m": 856.396611
+      },
+      "observed_changed_route_count": 0,
+      "observed_guided_run_count": 4,
+      "profile": "headway_30",
+      "profile_passes_training_screen": true
+    },
+    {
+      "comparisons": [
+        {
+          "alternative": {
+            "event_baseline_cost_s": 83.9720192,
+            "event_edge_ids": [
+              "e000088",
+              "e000089",
+              "e000090",
+              "e000091",
+              "e000092",
+              "e000093",
+              "e000094",
+              "e000095",
+              "e000096",
+              "e000097",
+              "e000098",
+              "e000099",
+              "e000100"
+            ],
+            "event_length_m": 209.930048,
+            "outside_event_cost_s": 542.1336259452726,
+            "outside_event_length_m": 1363.59271,
+            "route_id": "west_to_hospital_road:observed:west_via_sinnan_0",
+            "route_length_m": 1573.522758
+          },
+          "alternative_additional_full_route_length_m": 717.1261470000001,
+          "avoidable_default_event_edges": [
+            "e000184",
+            "e000083",
+            "e000084",
+            "e000085",
+            "e000086",
+            "e000087"
+          ],
+          "avoidable_default_event_length_m": 68.735091,
+          "costs_at_declared_presets": [
+            {
+              "alternative_estimated_cost_s": 644.0424317268463,
+              "alternative_minus_default_s": 270.83746867357763,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 373.20496305326867,
+              "preset": "step_q25",
+              "speed_multiplier": 0.8239917890901547
+            },
+            {
+              "alternative_estimated_cost_s": 661.2763464427824,
+              "alternative_minus_default_s": 265.19475717242983,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 396.08158927035254,
+              "preset": "step_q10",
+              "speed_multiplier": 0.7048019287234182
+            }
+          ],
+          "critical_speed_multiplier": 0.090380155255857,
+          "delta_event_cost_s": 27.4940364,
+          "delta_outside_cost_s": 304.2043501935484,
+          "shared_event_edges": [
+            "e000088",
+            "e000089",
+            "e000090",
+            "e000091",
+            "e000092",
+            "e000093",
+            "e000094",
+            "e000095",
+            "e000096",
+            "e000097",
+            "e000098",
+            "e000099",
+            "e000100"
+          ],
+          "shared_event_length_m": 209.930048,
+          "threshold_meaning": "Alternative wins only below critical multiplier; equality retains default. Derived only for this static complete-path cost rule, not a physical queue-optimal threshold."
+        }
+      ],
+      "default": {
+        "event_baseline_cost_s": 111.4660556,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_length_m": 278.665139,
+        "outside_event_cost_s": 237.92927575172413,
+        "outside_event_length_m": 577.731472,
+        "route_id": "west_to_hospital_road:observed:west_to_hospital_road",
+        "route_length_m": 856.396611
+      },
+      "observed_changed_route_count": 0,
+      "observed_guided_run_count": 4,
+      "profile": "historical_scale_18",
+      "profile_passes_training_screen": false
+    },
+    {
+      "comparisons": [
+        {
+          "alternative": {
+            "event_baseline_cost_s": 69.97668266666668,
+            "event_edge_ids": [
+              "e000088",
+              "e000089",
+              "e000090",
+              "e000091",
+              "e000092",
+              "e000093",
+              "e000094",
+              "e000095",
+              "e000096",
+              "e000097",
+              "e000098",
+              "e000099",
+              "e000100"
+            ],
+            "event_length_m": 209.930048,
+            "outside_event_cost_s": 484.9599412762922,
+            "outside_event_length_m": 1363.59271,
+            "route_id": "west_to_hospital_road:observed:west_via_sinnan_0",
+            "route_length_m": 1573.522758
+          },
+          "alternative_additional_full_route_length_m": 717.1261470000001,
+          "avoidable_default_event_edges": [
+            "e000184",
+            "e000083",
+            "e000084",
+            "e000085",
+            "e000086",
+            "e000087"
+          ],
+          "avoidable_default_event_length_m": 68.735091,
+          "costs_at_declared_presets": [
+            {
+              "alternative_estimated_cost_s": 569.8839460942703,
+              "alternative_minus_default_s": 249.55705528237718,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 320.3268908118931,
+              "preset": "step_q25",
+              "speed_multiplier": 0.8239917890901547
+            },
+            {
+              "alternative_estimated_cost_s": 584.2455416908837,
+              "alternative_minus_default_s": 244.85479569808734,
+              "chosen_route": "west_to_hospital_road:observed:west_to_hospital_road",
+              "default_estimated_cost_s": 339.3907459927963,
+              "preset": "step_q10",
+              "speed_multiplier": 0.7048019287234182
+            }
+          ],
+          "critical_speed_multiplier": 0.08260551824460047,
+          "delta_event_cost_s": 22.91169699999999,
+          "delta_outside_cost_s": 277.3627898823529,
+          "shared_event_edges": [
+            "e000088",
+            "e000089",
+            "e000090",
+            "e000091",
+            "e000092",
+            "e000093",
+            "e000094",
+            "e000095",
+            "e000096",
+            "e000097",
+            "e000098",
+            "e000099",
+            "e000100"
+          ],
+          "shared_event_length_m": 209.930048,
+          "threshold_meaning": "Alternative wins only below critical multiplier; equality retains default. Derived only for this static complete-path cost rule, not a physical queue-optimal threshold."
+        }
+      ],
+      "default": {
+        "event_baseline_cost_s": 92.88837966666667,
+        "event_edge_ids": [
+          "e000184",
+          "e000083",
+          "e000084",
+          "e000085",
+          "e000086",
+          "e000087",
+          "e000088",
+          "e000089",
+          "e000090",
+          "e000091",
+          "e000092",
+          "e000093",
+          "e000094",
+          "e000095",
+          "e000096",
+          "e000097",
+          "e000098",
+          "e000099",
+          "e000100"
+        ],
+        "event_length_m": 278.665139,
+        "outside_event_cost_s": 207.59715139393936,
+        "outside_event_length_m": 577.731472,
+        "route_id": "west_to_hospital_road:observed:west_to_hospital_road",
+        "route_length_m": 856.396611
+      },
+      "observed_changed_route_count": 0,
+      "observed_guided_run_count": 4,
+      "profile": "headway_15",
+      "profile_passes_training_screen": false
+    }
+  ],
+  "purpose": "Analytic explanation of the retained default route in frozen governance V2",
+  "schema_version": 1,
+  "source_sha256": {
+    "config/inverse_estimation_v2.json": "1261209ff74f04e5cc0af77bcc66ef20fddb4b8708e3c498cede4606d8d03aa7",
+    "data/processed/baidu/route_catalog_v2.json": "fe6cc5caf6a111912101933af3677ac29c6b9b973e66314604d7dc1c0fbe62ff",
+    "outputs/governance_v2/explain_route_choice.py": "c39cff70458d1c97333849765c687ee73e286fbdf8dd5fd6d4ab91b793012f6e",
+    "outputs/governance_v2/manifest.json": "a19622fdf9e4dd58f6984775d4377252664ab2f5b2a98abbde6f7420aa1153bb",
+    "outputs/governance_v2/runs/headway_15_step_q25_S2_fixed/event.json": "fbf4345656284635a8c0aca1aeb16d91fde20f26be486c5e9a46b11a904e0f1d",
+    "outputs/governance_v2/runs/headway_15_step_q25_S2_fixed/expanded_parameters.json": "d139ddec5fa75032076599004cd4bdd8f01c0879b4e1cb510e449b6e5765c006",
+    "outputs/governance_v2/runs/headway_15_step_q25_S2_fixed/run_manifest.json": "83e50826af7269d141165bd286abe8ffbe8aa9d05ce8d1e14b198ecebc151d9f",
+    "outputs/governance_v2/runs/headway_30_step_q25_S2_fixed/event.json": "fbf4345656284635a8c0aca1aeb16d91fde20f26be486c5e9a46b11a904e0f1d",
+    "outputs/governance_v2/runs/headway_30_step_q25_S2_fixed/expanded_parameters.json": "3d4e0d6cf3abbbc3b173b4e9c78d5edea4767cf8480c278ea9a4a6216788e5c0",
+    "outputs/governance_v2/runs/headway_30_step_q25_S2_fixed/run_manifest.json": "4a88cf346f0d85f006993414d39b68278289cc4e4d5330392fe0d0853fb60317",
+    "outputs/governance_v2/runs/headway_60_step_q25_S2_fixed/event.json": "fbf4345656284635a8c0aca1aeb16d91fde20f26be486c5e9a46b11a904e0f1d",
+    "outputs/governance_v2/runs/headway_60_step_q25_S2_fixed/expanded_parameters.json": "54ca82a38f57a3782f459c47539a1bbce429c6c0ce771a72e2a3469793526cc0",
+    "outputs/governance_v2/runs/headway_60_step_q25_S2_fixed/run_manifest.json": "cf021e8546727970579d56b4f718a1bc09d31b5b8ce24c042b9507ae2039d71f",
+    "outputs/governance_v2/runs/historical_scale_18_step_q25_S2_fixed/event.json": "fbf4345656284635a8c0aca1aeb16d91fde20f26be486c5e9a46b11a904e0f1d",
+    "outputs/governance_v2/runs/historical_scale_18_step_q25_S2_fixed/expanded_parameters.json": "effc49439847d5d5849335188901a0b8c7fb077e88b956153c58ec121b26d1b1",
+    "outputs/governance_v2/runs/historical_scale_18_step_q25_S2_fixed/run_manifest.json": "ece40e5ff88dc2cb7a3a84f9bca6cb9eb7a2cd74dc814fa481b5817decfe51ec",
+    "outputs/governance_v2/summary.json": "4117f8ee558d4a6e987b5a723c5a0645dba35fda826b0b9087854036776a9ffa",
+    "outputs/identification_v2/calibration/fit.json": "9970474211255c32b74b9e6d5e957ba577f892318b5553c2c9802ea81f42d352",
+    "research/parameter_audit/scenario_basis_v2.json": "ae0ae6461e49496ae0a2fae2b8298636dca2b30fbaa3b44ca6f9fd1716658708"
+  },
+  "training_observed_effective_speed_ratio_range": [
+    0.6540964617938216,
+    1.263254998731579
+  ]
+}

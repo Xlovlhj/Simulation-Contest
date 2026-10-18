@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "inputs_sha256": {
+    "config/final_experiments.json": "ce9492e9f1164d11983fc5bf1c0e5e293fdbbc3f8053f6c7cb3a44b8360c0d1e",
+    "config/baseline.json": "c2da2d3f170e0dfcc96d7d61b2a46486953ac1b1dff1c0f6a39808af39a431e9",
+    "data/processed/baidu/route_catalog_v1.json": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0",
+    "data/processed/baidu/survey_routes.json": "540e659188e3572b8d73f28c7eee4c254a34e76e92edeaa08d02ddb075c89a97",
+    "data/processed/baidu/route_candidates_survey_20261017T074000_186794Z.json": "dd78ea2a1652892b07ca6289ea36922c0d2221dc5ad5474ceafc97a06ffb357d",
+    "data/raw/baidu/survey_20261017T065349_970756Z/01_north_to_south.json": "3afcad89084858c64b044876f0ca06b9ff76538dbd4534e918ab259450733baa",
+    "data/raw/baidu/survey_20261017T065349_970756Z/02_south_to_north.json": "a04378bbfa1040bbea2bd280ead14f3b80ea34d985dd395f695a33007008b170",
+    "data/raw/baidu/survey_20261017T065349_970756Z/03_west_to_east.json": "f04b9d38c9eb5e82601edd29ea0c29ea1c9444648aa21953cbfd529d55b48dbe",
+    "data/raw/baidu/survey_20261017T065349_970756Z/04_east_to_west.json": "a1bef648a18875f78c128a3a7510a17942c1092f8ee6a9ab7b2be100aa4ecdb1",
+    "data/raw/baidu/survey_20261017T065349_970756Z/05_west_to_hospital_road.json": "a13af281ae579809611ba9741e87d13dd9405ddf0b10f20b366c335ddc600692",
+    "data/raw/baidu/survey_20261017T065349_970756Z/06_east_to_hospital_road.json": "3230b2514b2dddad342b00d20c8393e956b314134aff0ab432a49ad280db470c",
+    "data/raw/baidu/survey_20261017T065349_970756Z/07_west_to_east_via_maoming.json": "204cd8be7ec1a599b10fbb8e8b51e67fd04cb21972be94f682ea6e426603d307",
+    "data/raw/baidu/survey_20261017T065349_970756Z/08_east_to_west_via_jianguo.json": "2240be98569946c924c8a57a16963ef10a183ad625ae99ee8408f1e8e719ffd5",
+    "data/raw/baidu/survey_20261017T074000_186794Z/01_west_reference.json": "26f8d1a1be4988b554b72c543623c205f9758e76d2b1224de8aad5e5475b83e7",
+    "data/raw/baidu/survey_20261017T074000_186794Z/02_west_via_sinnan.json": "9049b20e6d6adf174eb34c13bcd923e3275d7cc9e6e961cd50b8e76b39a6bfbc",
+    "data/raw/baidu/survey_20261017T074000_186794Z/03_east_reference.json": "8ac034e46c562acb9e7939317c0020ae367b7986a8ca300f37b07c2258da307a",
+    "data/raw/baidu/survey_20261017T074000_186794Z/04_east_via_maoming.json": "9775953c4e96421d60a276c265c7069004d14466ac9933185878e6738bf228ef",
+    "scripts/run_final_experiments.py": "b5189ba8e742a1ed88fd4468fbbc4511b322b94639545cc82d5018c47701748c",
+    "scripts/run_baseline.py": "38e96558b90dc9d667c94f829179269a8ffab6d9f457f73ce948d59be0590916",
+    "scripts/run_scenarios.py": "f1f0a4641813707e18f59389effff52a79098ef032eeaa9592835206f1bdd551"
+  },
+  "artifacts": {
+    "summary.json": "87e0372ee8351808273c7415465d0a91be0885bfc7a887b3008eea505a5f8e31",
+    "summary.csv": "bd731c26d4931ccaedcc31311b60ddada359e914558a6e6752a7cdd0b3ce0dea",
+    "frozen_protocol.json": "ce9492e9f1164d11983fc5bf1c0e5e293fdbbc3f8053f6c7cb3a44b8360c0d1e",
+    "frozen_route_catalog.json": "7ec5c4fc58f6c49ecd3b5f4a1c1fba2a3b3d5650cb3a1645f0d7441724599dc0",
+    "report.md": "5f2caff4bbc7685f0f096ca073be27e9d3e9e2387333171550ef010b8a0ff725",
+    "task_times.svg": "d9fa7bd4c9a0be79dafe5b1039d45d461940dda00bac0d888c1dfff9b411e747",
+    "ordinary_times.svg": "5d54bcc33bc5924dfa86ceae8513ee4ec93462e7c25a4b915adaca0067fde61d",
+    "integrity_audit.json": "290ba44236c87605cbf4071ffcb4ec037dcfa9524a4aa9278322853650351e79"
+  },
+  "run_count": 22,
+  "all_physics_valid": true,
+  "inputs_unchanged": true,
+  "updated_at": "2026-10-18T07:24:53.309884+00:00",
+  "post_run_audit_added_at": "2026-10-18T07:28:17.467304+00:00"
+}
