@@ -1,20 +1,22 @@
 {
-  "type": "github_initial_snapshot",
+  "type": "github_ybs_c_lfs_snapshot",
   "status": "technical_release_not_submission_ready",
   "source_package_sha256": "c86b56a41f6eb995ec15ec3647b05abcdc15087818aca84351b80f4e403a0f8e",
+  "previous_manifest": "records/github_pre_lfs_manifest.json",
   "official_inputs_included": true,
   "ai_disclosure_complete": false,
   "team_manual_review": "incomplete_user_confirmed",
+  "lfs_note": "Hashes refer to complete working files after git lfs pull; Git index stores LFS pointers.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 141,
-      "sha256": "62e63c81b81e4c4461b75e7ad9fd325a931cd3a1938fb7431b272b477e2352c1"
+      "bytes": 236,
+      "sha256": "e72657b1f4f77c03d94135455608f2a6ef7dec5bf9732f06ebe06f7368c4d10f"
     },
     {
       "path": ".gitignore",
-      "bytes": 917,
-      "sha256": "72a358efd9807a137c255f36d0dcaac23e24afb05b2b2bf01665c13cc61d1b25"
+      "bytes": 986,
+      "sha256": "95e71a55619f24222c32ed400e29fb73447d4cb8556fc4b8e9ee1d3b2d1f083f"
     },
     {
       "path": "AGENTS.md",
@@ -33,13 +35,13 @@
     },
     {
       "path": "C题开发日志.md",
-      "bytes": 56694,
-      "sha256": "34f10cb14adaa2731a7ebeda13c851d27baed1ec5a3aca16a007d81f52641b35"
+      "bytes": 57663,
+      "sha256": "3491358b66b94631f87ed58a2b2c5b16cacc12b1e432990c885b8e1d84ed8185"
     },
     {
       "path": "C题项目管理.html",
-      "bytes": 15760695,
-      "sha256": "7a3107b4e61c8da1a60008d41540689b5954d06c67f65136f1dbc2e02b0c4ce8"
+      "bytes": 15777811,
+      "sha256": "0ce966beb6cb80a41f5197b31a4d366f706c56e9d6bb6147c5a259cf1df9bf7b"
     },
     {
       "path": "EXPECTED_RESULTS.json",
@@ -48,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2170,
-      "sha256": "8c65cac7bfe2f8eb902ba1787a734e1926bf1ec0073c0fa301006d65cfdcfeb5"
+      "bytes": 4132,
+      "sha256": "f29bdefcb52af32003463407d7bf4b406b98ddf66bde69f7321a62f11d027506"
     },
     {
       "path": "checks/extension_checks.py",
@@ -257,24 +259,29 @@
       "sha256": "e17bc66cf7373f5dadc8874673db6b7e0dbd6354af81a6422bd0def37e1a9f86"
     },
     {
+      "path": "docs/GitHub上传到ybs-c分支.md",
+      "bytes": 3093,
+      "sha256": "2dd768e9a7973c1dc5c9863fa50a948cd5f04583295ba85f6ca63c708df1a5a7"
+    },
+    {
       "path": "docs/GitHub上传操作指南.md",
       "bytes": 8700,
       "sha256": "eebc900cf2f3095275780746554247082ea278d59f64c28966e55071c64224f2"
     },
     {
       "path": "docs/GitHub本地仓库使用说明.md",
-      "bytes": 2479,
-      "sha256": "0019d4846e0df127625ceba41d032492f88345849283830dcfe5ff6dfc4faa61"
+      "bytes": 2665,
+      "sha256": "6754737f77317d40c02ec5230bf756857fc8d2f36c1f88cc921a1054bd781afc"
     },
     {
       "path": "docs/github_upload/.gitattributes",
-      "bytes": 141,
-      "sha256": "62e63c81b81e4c4461b75e7ad9fd325a931cd3a1938fb7431b272b477e2352c1"
+      "bytes": 236,
+      "sha256": "e72657b1f4f77c03d94135455608f2a6ef7dec5bf9732f06ebe06f7368c4d10f"
     },
     {
       "path": "docs/github_upload/.gitignore",
-      "bytes": 759,
-      "sha256": "5ba7cbe621586b107bb38f85014b653fb5fd642118138dc49aeeb3fb6a43a7e8"
+      "bytes": 986,
+      "sha256": "95e71a55619f24222c32ed400e29fb73447d4cb8556fc4b8e9ee1d3b2d1f083f"
     },
     {
       "path": "docs/三问任务与成果速览.md",
@@ -418,8 +425,8 @@
     },
     {
       "path": "portal/project.json",
-      "bytes": 7616,
-      "sha256": "87639a64d2257ad6fd6b09eff95db9ac3f99524551b431b988fc2f142ae605ee"
+      "bytes": 7610,
+      "sha256": "dc52ab6a22022b6fd106b96d6a33165a7f47350771a551f139ee00e6bb452387"
     },
     {
       "path": "portal/terms.json",
@@ -458,8 +465,8 @@
     },
     {
       "path": "records/ai_usage.md",
-      "bytes": 10388,
-      "sha256": "1d094a26bab8d5f8113ab0111ec0a2c929d63b355bd9c5876bb106da3a8004c7"
+      "bytes": 10655,
+      "sha256": "7b4b868b2eb9f089591ad957d14c837a7e643aa6466aa31dac13528d5ae517e3"
     },
     {
       "path": "records/assumptions.md",
@@ -967,14 +974,24 @@
       "sha256": "388afddabdeb1eb73f77b4950bc5c18238187e76cf2a506ca1591cf92d155707"
     },
     {
+      "path": "records/github_lfs_preparation.json",
+      "bytes": 875,
+      "sha256": "b14ad44c3f67846b7c6d36427c0b008310cf3fde1d12ff185944995227acf3a5"
+    },
+    {
+      "path": "records/github_pre_lfs_manifest.json",
+      "bytes": 63160,
+      "sha256": "c3107a7e568713e9e6d8b51b6ee941454586923f261422f892ef82af321ddba9"
+    },
+    {
       "path": "records/github_source_package_manifest.json",
       "bytes": 59158,
       "sha256": "b45c494868c7727529fc97b9dd6f217660a95140b1515a13e930ad848643af77"
     },
     {
       "path": "records/latest_state.json",
-      "bytes": 19359,
-      "sha256": "e4ecf0e13cbbface0edb5925066c12ea943fd43eeb75f34589dd257e70ad7c8b"
+      "bytes": 19616,
+      "sha256": "d2a484d4b5d96f86f4209b4c6604f938b9047d98e18736c807470e82324bfb84"
     },
     {
       "path": "records/literature/scipy_least_squares.html",
@@ -998,8 +1015,8 @@
     },
     {
       "path": "records/portal_build.json",
-      "bytes": 9155,
-      "sha256": "a154ea4d467e80be97e22dcbb7b09014efd7f4f7599a647b8ca26f839f0f6b3f"
+      "bytes": 9266,
+      "sha256": "12e8973b56714aa00ac9457f5d7ed325794978500ac9f8fe6154230166fd2686"
     },
     {
       "path": "records/profile_protocol.json",

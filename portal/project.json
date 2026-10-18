@@ -22,9 +22,9 @@
       "link": "docs/交付与复现说明.md"
     },
     {
-      "title": "添加GitHub本地仓库",
-      "detail": "选择已整理的c2026-ev-simulation，再发布为私有仓库。",
-      "link": "docs/GitHub本地仓库使用说明.md"
+      "title": "上传到ybs-c分支",
+      "detail": "README、忽略规则及LFS已整理；终端推送至指定仓库。",
+      "link": "docs/GitHub上传到ybs-c分支.md"
     }
   ],
   "deadlines": [

@@ -4,6 +4,8 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .ipynb_checkpoints/
 
 # Local credentials and temporary files
@@ -22,6 +24,7 @@ Desktop.ini
 /records/package_checks/
 /records/extension_checks/
 /records/package_payload/
+/records/github_local_checks/
 /records/run_manifest.json
 
 # Original trajectories are retained in payload/trajectories.tar.xz
@@ -35,3 +38,8 @@ Desktop.ini
 /交付材料/历史版本/
 /交付材料/待填写/
 /交付材料/待提交/
+
+# Retain the existing demonstration used by the offline portal (via Git LFS).
+!/results/videos/
+/results/videos/*
+!/results/videos/C题_控制对照_开发样片.mp4

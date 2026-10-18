@@ -1,0 +1,23 @@
+{
+  "date_beijing": "2026-10-18T22:32:14+08:00",
+  "target_repository": "https://github.com/Xlovlhj/Simulation-Contest.git",
+  "target_branch": "ybs-c",
+  "remote": "contest",
+  "remote_branch_not_created_user_confirmed": true,
+  "original_manifest": "records/github_pre_lfs_manifest.json",
+  "lfs_patterns": [
+    "payload/*.tar.xz",
+    "*.mp4"
+  ],
+  "lfs_full_content_sha256": {
+    "payload/trajectories.tar.xz": "67f580f5217cd7fe6983642f41b112aa975ee4dc1d9e0e4c8b21e554e51269b3",
+    "results/videos/C题_控制对照_开发样片.mp4": "63e93f54507df2cc6ed1323fd70ca4df2e7cdd84d9d7f3921c953a71feecfb1a"
+  },
+  "critical_files_unchanged": 221,
+  "official_inputs_verified": 9,
+  "original_scientific_sources_verified": 66,
+  "portal_documents": 43,
+  "portal_browser_verified": true,
+  "history_rewritten": false,
+  "uploaded_to_target": false
+}

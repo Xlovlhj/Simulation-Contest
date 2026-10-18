@@ -1,3 +1,6 @@
-# Preserve the exact delivered bytes required by PACKAGE_MANIFEST.json.
-# In particular, do not convert LF/CRLF on Windows checkout.
+# Preserve the bytes required by PACKAGE_MANIFEST.json across Windows checkout.
 * -text
+
+# Large trajectory archives and videos use Git LFS.
+payload/*.tar.xz filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text

@@ -1,5 +1,5 @@
 {
-  "date_beijing": "2026-10-18T22:12:37+08:00",
+  "date_beijing": "2026-10-18T22:31:07+08:00",
   "status": "final_technical_paper_complete_submission_preparation",
   "completed": [
     "C-specific source archive and immutable hash audit",
@@ -217,7 +217,7 @@
     "sync_command": "python run.py portal",
     "documents_auto_discovered": true,
     "personal_learning_state": "Browser localStorage with JSON export/import",
-    "documents": 42,
+    "documents": 43,
     "terms": 72,
     "figures": 22,
     "browser_check": "results/portal_checks/browser_verification.json",
@@ -468,6 +468,14 @@
     "local_repository": "c2026-ev-simulation",
     "local_repository_guide": "docs/GitHub本地仓库使用说明.md",
     "preparation_script": "scripts/prepare_github_repository.py",
-    "status": "local_snapshot_prepared_for_GitHub_Desktop"
+    "status": "local_ybs_c_preparation",
+    "target_repository": "https://github.com/Xlovlhj/Simulation-Contest.git",
+    "target_branch": "ybs-c",
+    "remote_name": "contest",
+    "remote_branch_existence": "not_created_user_confirmed",
+    "lfs_patterns": [
+      "payload/*.tar.xz",
+      "*.mp4"
+    ]
   }
 }

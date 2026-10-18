@@ -440,3 +440,10 @@ EPA458个Electricity测试行按0.8—1.25倍质量、配置去重和有效Targe
 `scripts/prepare_github_repository.py`拒绝覆盖已存在目标，核对原包与科学文件哈希，生成新Git初始快照清单，原包清单另行留档；本地初始化main分支并建立首次提交，远程地址留空，由用户在Desktop发布到自己的私有仓库。换行转换关闭，缓存/重复副本被忽略；原论文、交付ZIP和开发目录保留。15秒既有样片仅供离线工作台演示，正式视频仍暂缓。
 
 验证入口：`python -X utf8 scripts/prepare_github_repository.py`，以及从新Git仓库克隆后运行verify/prepare/all。实际提交、文件数、哈希和运行结果见`records/github_repository_ready.json`及`records/github_local_checks/`，不把本地准备或自动核验记作GitHub已上传、人工已完成或比赛已提交。
+
+
+### 2026-10-18：指定仓库ybs-c分支与Git LFS
+
+用户指定Simulation-Contest仓库，确认ybs-c尚未创建，要求整理README、忽略规则、LFS并给出终端上传命令。本地原main及origin已指向先前仓库；保留旧远程，新目标用contest，在新本地ybs-c分支准备提交。配置LFS仅管理payload/*.tar.xz和MP4，关闭自动换行转换；不重写已发布历史。原快照清单留records/github_pre_lfs_manifest.json，新清单如实记录文档、配置与工作台变化。
+
+新增终端上传指南及分支克隆/LFS拉取说明，更新工作台入口和真实状态。原科学代码、输入、参数、冻结结果和论文PDF保持不变，不重跑科研实验。此前Git连接被重置，公开API也无法读取目标；实际远程上传留给用户执行普通推送，不把读取失败当成分支不存在，不提供强推。LFS本地校验、文件清单及克隆核查结果以记录为准。
