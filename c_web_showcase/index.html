@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-6RkvnLhc+Dxs3DRMSy+Rs0us73msKNskVUvxIBn7gdw='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>电动车节能研究 · C题成果展示</title>
+<meta name="description" content="展示电动汽车能量与温度联合建模、实测数据校准和三温度节能策略比较，说明研究方法与论文结论。">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080c'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23ff7a59'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/research.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.min.js",
+    "three/addons/": "./vendor/three/addons/"
+  }
+}
+</script>
+</head>
+<body style="--c:#ff7a59">
+<header class="top">
+  <a class="home" href="#about" id="aboutProject" title="研究与源码说明" aria-label="研究与源码说明"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>研究说明</span></a>
+  <a class="brand" href="#anatomy" title="电动汽车能量流与热管理系统建模及节能优化"><span class="logo" aria-hidden="true"></span><span class="name">电动车节能研究 <small>C题</small></span></a>
+  <button id="btnSound" class="icon-btn" aria-label="开启或关闭交互音效">♪</button>
+</header>
+<div class="layout">
+  <aside class="menu" aria-label="研究过程与结论">
+    <div class="menu-head"><h4>研究与成果</h4><span id="menuProgress"></span></div>
+    <nav id="chapters" class="chapters"></nav>
+  </aside>
+  <main class="stage-wrap">
+    <div id="stage" class="stage"></div>
+    <div class="stage-title"><span id="kicker"></span><strong id="title"></strong></div>
+    <div id="readout" class="readout" aria-live="polite" hidden></div>
+    <p id="hint" class="hint">拖动旋转 · 滚轮或双指缩放</p>
+    <button id="reset" class="chip reset">重置视角</button>
+    <p id="noGL" class="nogl" hidden>浏览器未能启动WebGL，请使用支持三维显示的Chrome或Edge。</p>
+  </main>
+  <aside id="panel" class="panel"></aside>
+</div>
+<div id="toasts" class="toasts"></div>
+<div class="modal" id="modal" hidden><div class="modal-card" id="modalCard" role="dialog" aria-modal="true"></div></div>
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

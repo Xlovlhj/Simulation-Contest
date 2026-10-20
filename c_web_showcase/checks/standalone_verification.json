@@ -1,0 +1,144 @@
+{
+  "purpose": "Standalone web snapshot without original support materials or scientific dependencies",
+  "checks": [
+    {
+      "name": "System Python isolated startup",
+      "passed": true,
+      "detail": {
+        "isolated": true,
+        "site_packages_disabled": true
+      }
+    },
+    {
+      "name": "Original support package absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Snapshot scientific dependencies absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Optional Q1 unavailable does not prevent service",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded anatomy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded drive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded battery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded electric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded climate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chapter loaded research-results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Temperature button and snow work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Both bundled data files fetched",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No retired trajectory payload requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript exception or request failure",
+      "passed": true,
+      "detail": {
+        "javascript_errors": 0,
+        "failed_requests": 0,
+        "http_errors": 0
+      }
+    }
+  ],
+  "source_hashes": {
+    "c_web_showcase/.gitignore": "313a121c2f592a82c1f3dcb59c777477fde3c8545ea7e1050526fb2599446b37",
+    "c_web_showcase/LICENSE": "25ef108aeda07f4bfd5c2baacdbfcf21f9a818698f78fc6f2e1f11d337f0e793",
+    "c_web_showcase/LICENSE-CONTENT.md": "466b57b7efb9aa14c6ea67f392f585c08a2ff6867c7f2a6721170026d9c0e47f",
+    "c_web_showcase/README.md": "62ff9400b92f39d87a5a09c8e45deba8294deac8186eb186205c39d575199326",
+    "c_web_showcase/SOURCE_VERSION.json": "680a676a0ad4fab602ed7fd51bdf64683d8ecbc3f4f8b4e4a889746df21fd952",
+    "c_web_showcase/THIRD_PARTY_NOTICES.md": "96b9136a605609f736a609ac499823d80b7977eda1c138e4a1d3aadaa473be4c",
+    "c_web_showcase/browser_session.py": "1b9acc6b5caf2e324f139e87029fd094ee207be1819566347ba4b4e015ba9546",
+    "c_web_showcase/compute.py": "33a5572b0bfc20a7adda2393ea786a7b833d8c0d0cf97316d86bcb7edecd4517",
+    "c_web_showcase/css/app.css": "e1fb755628cc50078e516d3123668f97164499054a17c29c9e98a326a820bde4",
+    "c_web_showcase/css/research.css": "79441caf8584a797cb3feb5d23867082a95022c21ff726ae59a8dfc41a8356c7",
+    "c_web_showcase/data/README.md": "b7e788f3f722223e9d8de88b146176018592eb2ad0ebd37b3d041177bbc172be",
+    "c_web_showcase/data/physics-validation.json": "99a01f51e212b52a6344216555fd3b34a737e6dff5086ea77a9028b16657619c",
+    "c_web_showcase/data/research-parameters.json": "1566fac6f32af13e39a7f3ead64cdfb421f0999ec444e501d5359fc693e69c7f",
+    "c_web_showcase/data/research-results.json": "45b00d2c797e2324b8b8a30105309b62b507347cf019459bd8c944396a6a5347",
+    "c_web_showcase/fonts/OFL.txt": "00134bcaf1aff473272bdb78e947e142192ea87621eaafb1c36f8534ff2d2022",
+    "c_web_showcase/fonts/fonts.css": "0752e66dde6b424ff92009d430311beb5718206ac4d5bf69f8ce853aee00c13f",
+    "c_web_showcase/fonts/geist-latin-1.woff2": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608",
+    "c_web_showcase/fonts/geist-latin-ext-0.woff2": "58a6b173d5ca1dec92166ea3c6cb1a84a4144556d10928ac14e8e6b40e4787bd",
+    "c_web_showcase/fonts/geist-mono-latin-3.woff2": "5f3d6ad60f29d6cb708414ec6887163d63bf197377ef5417d2483ff31ace6c3b",
+    "c_web_showcase/fonts/geist-mono-latin-ext-2.woff2": "745994b5cd950ec201b66526375f057d540847cccfc70f4f24f5f571d26d3923",
+    "c_web_showcase/fonts/instrument-serif-latin-5.woff2": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702",
+    "c_web_showcase/fonts/instrument-serif-latin-7.woff2": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d",
+    "c_web_showcase/fonts/instrument-serif-latin-ext-4.woff2": "a04fc7ed18a8037149ce0bfda58076709d8e0840e136ed00abbdc196b7992443",
+    "c_web_showcase/fonts/instrument-serif-latin-ext-6.woff2": "a8c4bd7cd7073180e740d2d83a616b5cb0845579b73207eeafeae8532e70c901",
+    "c_web_showcase/index.html": "f9e9510e66528e5ffaec25fee0c504f598d7d7a34e23740092c9987d4269b3c2",
+    "c_web_showcase/interaction_checks.py": "bf8084d982cb76bcae7bf9a333f576825c657a58654c95415c171bdc214415ac",
+    "c_web_showcase/js/app.js": "9a09b1919ec676730e36eff7eba7c49afbe617625689e0f65d700704b47bb813",
+    "c_web_showcase/js/car.js": "c24f3ce6be4cb38a39cc38563ebf8e294bc4ec0b852cee98302ab1a81c3f5046",
+    "c_web_showcase/js/chapters/index.js": "2fc89e9608da62364f4e76d3db43f5adea79f484941fb035ab7bca3e267c3fd5",
+    "c_web_showcase/js/chapters/research-anatomy.js": "e5e59d467893e7a10ca8f3b45d3fb92453ebbd08ad767f6ce6a437b8cfaf9e54",
+    "c_web_showcase/js/chapters/research-battery.js": "8660981c4d8d960bad03903a9952c93c0b51bda0c9bdeb05a2b7dad271647476",
+    "c_web_showcase/js/chapters/research-climate.js": "41c60b867a89883483ad3c713921bdd0a6e4474f4735e94ce8aaafe0407a7195",
+    "c_web_showcase/js/chapters/research-drive.js": "c7bece13d8886783f6b5ab82258a2c8cc1d127de48aa3d20c2d2d653a586d0ff",
+    "c_web_showcase/js/chapters/research-electric.js": "8139be8fc1108f271a62c9019105f71e9aef26de37972d860133cd75315aabee",
+    "c_web_showcase/js/chapters/research-results.js": "fa3f6ffe23bdaf1200dcf06f342dc93022603b9fe02c6fb2f3f7992b076b19a2",
+    "c_web_showcase/js/kit.js": "582429d950020bb5fa54d6c76246b90c194067d5ac947a65e062be070b0ccd52",
+    "c_web_showcase/js/research/physics.js": "114d969992e5d052e114a92c6725d80303e4354b92bb2b142d54faae5859101f",
+    "c_web_showcase/js/research/results.js": "acebc3a20c524abc5fd0d24e1ceec9476d8b0c963a340d75862618d04b37868b",
+    "c_web_showcase/js/research/vehicle.js": "45975a717cd181359abf750028d4685d224a6e54141a74a1e1e4b66e3ef2ccae",
+    "c_web_showcase/js/research/weather.js": "3362f92c1b17df825b0106e8d5743494895662c4a7cf2816653434491fdb9239",
+    "c_web_showcase/js/stage.js": "9b9fe56d99f003fc2dbab903166ae5c4080546c5ad43ec18bace4484b59086c0",
+    "c_web_showcase/js/ui.js": "d1ff1c5122cc9e32c4e8cc246eaf28007f113c9d9370fd7fb64cf4fd90b79dce",
+    "c_web_showcase/prepare_data.py": "719e6eb65677f8f627a3e5399ba0be3c036f62ecc5d98f896eb982fc9e2b7380",
+    "c_web_showcase/prepare_interactive_data.py": "c6f7ae4678ea6dbbb523867ea47b726968b8fe2d4473584d1986297633cbb853",
+    "c_web_showcase/run.py": "b7ffa39fdb404caab90ee90d9b850f70180a98da4ddf758b7307623c403f6559",
+    "c_web_showcase/vendor/three/LICENSE": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+    "c_web_showcase/vendor/three/addons/controls/OrbitControls.js": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+    "c_web_showcase/vendor/three/addons/environments/RoomEnvironment.js": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014",
+    "c_web_showcase/vendor/three/addons/geometries/RoundedBoxGeometry.js": "d20aeaf7077c459a8d952d215738d7b44fba028440bb862d84b622a34f0c80bb",
+    "c_web_showcase/vendor/three/addons/lines/LineMaterial.js": "4a58808a6e3a48f2a98eb2a410022ae648f801eaae89d457fcd662b077a7cf27",
+    "c_web_showcase/vendor/three/addons/lines/LineSegments2.js": "9dcce823f86d7f00c4faa8c80ea3833fa86bf4957f394a1f64f3b126f6eea661",
+    "c_web_showcase/vendor/three/addons/lines/LineSegmentsGeometry.js": "213a12e0e1ea878495d4998817cb83b1945441f19194267dba108c3a9e8f31ac",
+    "c_web_showcase/vendor/three/addons/renderers/CSS2DRenderer.js": "7de0bb70e3c1d6da58416353ed7140a7a7743ece99d73b56eb62bc2dd79bfed5",
+    "c_web_showcase/vendor/three/three.module.min.js": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+  },
+  "cleanup": {
+    "chrome_stopped": true,
+    "temporary_server_stopped": true,
+    "existing_8765_service_untouched": true
+  },
+  "passed": true
+}

@@ -1,0 +1,46 @@
+/* Small additions to the original CarClear shell; app.css retains the layout. */
+.name small { color: var(--c); font: 500 11px var(--mono); vertical-align: middle; }
+.name { font-family: var(--sans); font-size: 20px; }
+.home { cursor: pointer; }
+.stage-title strong { margin-top: 4px; font-family: var(--serif), "Noto Serif CJK SC", serif; font-size: 29px; }
+.panel h1 { font-family: var(--serif), "Noto Serif CJK SC", serif; font-size: 31px; line-height: 1.3; }
+.panel .learn { line-height: 1.75; }
+.research-block { margin-bottom: 14px; }
+.research-block > b:first-child { display: block; margin-bottom: 4px; color: var(--c); font-size: 13px; }
+.learn .research-takeaway {
+  padding: 12px 14px;
+  border-left: 3px solid var(--good);
+  border-radius: 0 10px 10px 0;
+  background: rgba(92,225,169,.055);
+}
+.research-takeaway strong { color: var(--good); }
+.readout .big { font-family: var(--serif), "Noto Serif CJK SC", serif; font-size: 25px; margin-bottom: 5px; }
+.readout small { display: block; max-width: 330px; color: var(--muted); line-height: 1.5; margin-top: 5px; }
+.panel .panel-readout {
+  position: static;
+  width: 100%;
+  max-width: none;
+  margin: 16px 0 22px;
+  padding: 12px 14px;
+  backdrop-filter: none;
+}
+.panel-readout .row { flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.panel-readout .row b { margin-left: auto; text-align: right; overflow-wrap: anywhere; }
+.panel-readout small { max-width: none; }
+.modal-card { width: min(660px, 100%); }
+.modal-card h2 { font-size: 25px; line-height: 1.4; padding-right: 22px; }
+.modal-card h3 { font-size: 16px; color: var(--c); }
+.modal-card a { color: #8ef0ff; text-underline-offset: 4px; }
+.modal-card svg { display: block; max-width: 100%; height: auto; }
+.modal-card table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+.modal-card th, .modal-card td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; }
+.modal-card .kicker { color: var(--c); font: 500 12px var(--mono); }
+.stage-wrap { transition: background .45s ease; }
+.ctl input[type=range] { cursor: ew-resize; }
+@media(max-width: 860px) {
+  .name { font-size: 17px; }
+  .stage-title strong { font-size: 24px; }
+  .readout { top: 80px; max-width: min(290px, calc(100% - 32px)); padding: 9px 11px; }
+  .readout .big { font-size: 21px; }
+  .readout small { font-size: 11px; }
+}

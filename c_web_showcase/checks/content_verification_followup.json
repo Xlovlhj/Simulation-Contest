@@ -1,0 +1,73 @@
+{
+  "scope": "Only shortened electric/results titles at 1440 and corrected same-target evidence assertion; original 32-check report preserved.",
+  "source_hashes": {
+    "js/app.js": "9a09b1919ec676730e36eff7eba7c49afbe617625689e0f65d700704b47bb813",
+    "css/research.css": "79441caf8584a797cb3feb5d23867082a95022c21ff726ae59a8dfc41a8356c7",
+    "js/chapters/index.js": "2fc89e9608da62364f4e76d3db43f5adea79f484941fb035ab7bca3e267c3fd5",
+    "js/chapters/research-anatomy.js": "e5e59d467893e7a10ca8f3b45d3fb92453ebbd08ad767f6ce6a437b8cfaf9e54",
+    "js/chapters/research-drive.js": "c7bece13d8886783f6b5ab82258a2c8cc1d127de48aa3d20c2d2d653a586d0ff",
+    "js/chapters/research-battery.js": "8660981c4d8d960bad03903a9952c93c0b51bda0c9bdeb05a2b7dad271647476",
+    "js/chapters/research-electric.js": "8139be8fc1108f271a62c9019105f71e9aef26de37972d860133cd75315aabee",
+    "js/chapters/research-climate.js": "41c60b867a89883483ad3c713921bdd0a6e4474f4735e94ce8aaafe0407a7195",
+    "js/chapters/research-results.js": "fa3f6ffe23bdaf1200dcf06f342dc93022603b9fe02c6fb2f3f7992b076b19a2"
+  },
+  "checks": [
+    {
+      "name": "electric 1440 no overflow",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440,
+        "panel": 364,
+        "panelWidth": 364,
+        "title": "问题三 · 策略选择 · 4 / 6 |  | 先选方案，再调温控 |  | 先比较72组方案，再每5秒更新温控动作。 |  | 把几个开关一起调 | "
+      }
+    },
+    {
+      "name": "research-results 1440 no overflow",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440,
+        "panel": 364,
+        "panelWidth": 364,
+        "title": "研究结论 · 同条件对照 · 6 / 6 |  | 停车后，还能省多少电 |  | 90分钟驾驶，再加120分钟停车温控，比较完整过程。 |  | 节能 11.835% | 优化用电量"
+      }
+    },
+    {
+      "name": "results evidence corrected literal check",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "同目标对照": true,
+          "共同目标24℃": true,
+          "0.826": true,
+          "2.661": true
+        },
+        "explanation": "The first check expected 相同24℃; the displayed wording is 共同目标24℃. No website wording was changed to satisfy the test."
+      }
+    },
+    {
+      "name": "no JavaScript exceptions or failed requests",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failed_requests": []
+      }
+    },
+    {
+      "name": "sources unchanged during focused check",
+      "passed": true
+    }
+  ],
+  "cleanup": {
+    "chrome_stopped": true,
+    "server_thread_stopped": true,
+    "test_port": 34243,
+    "user_port_8765_untouched": true
+  },
+  "passed": true
+}

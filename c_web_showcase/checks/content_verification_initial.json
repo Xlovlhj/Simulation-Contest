@@ -1,0 +1,357 @@
+{
+  "purpose": "Focused QA of C-problem research narration and retained interactive scenes; no physics sweep.",
+  "port": 42179,
+  "checks": [
+    {
+      "name": "chapter navigation follows research story",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "1920 anatomy text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 245,
+          "client": 245
+        }
+      }
+    },
+    {
+      "name": "anatomy canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "homepage saving values and comparison range visible",
+      "passed": true,
+      "details": {
+        "text": "25℃少用 11.83% 的电\n40℃高温\n节能 9.85%\n−10℃低温\n节能 0.70%\n90分钟驾驶＋120分钟停车温控 · 模型对照",
+        "hidden": false
+      }
+    },
+    {
+      "name": "1920 drive text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 354,
+          "client": 354
+        }
+      }
+    },
+    {
+      "name": "drive canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "drive model/result evidence opens",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "14.0542": true,
+          "2.035013": true,
+          "七参数": true,
+          "SOC": true
+        }
+      }
+    },
+    {
+      "name": "1920 battery text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 309,
+          "client": 309
+        }
+      }
+    },
+    {
+      "name": "battery canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "calibration evidence retains improvement and voltage deterioration",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "0.826": true,
+          "2.661": true,
+          "7.720": true,
+          "15.038": true,
+          "升至": true
+        }
+      }
+    },
+    {
+      "name": "1920 electric text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 276,
+          "client": 276
+        }
+      }
+    },
+    {
+      "name": "electric canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "actual regen control updates mode and net recovery",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "electric floating chart opens research method",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "72": true,
+          "每 5 秒": true,
+          "65%": true,
+          "校准": true
+        }
+      }
+    },
+    {
+      "name": "1920 climate text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 358,
+          "client": 358
+        }
+      }
+    },
+    {
+      "name": "climate canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "climate evidence includes whole journey and initial-state distinction",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "11.835": true,
+          "9.850": true,
+          "0.699": true,
+          "SOC80%": true,
+          "SOC94%": true,
+          "24℃": true
+        }
+      }
+    },
+    {
+      "name": "actual -10C button updates weather",
+      "passed": true,
+      "details": {
+        "temperature": -10,
+        "weather": "snow",
+        "snow": true,
+        "sun": false,
+        "heat": false
+      }
+    },
+    {
+      "name": "actual 40C button updates weather",
+      "passed": true,
+      "details": {
+        "temperature": 40,
+        "weather": "heat",
+        "snow": false,
+        "sun": true,
+        "heat": true
+      }
+    },
+    {
+      "name": "1920 research-results text fits",
+      "passed": true,
+      "details": {
+        "w": 1920,
+        "doc": 1920,
+        "body": 1920,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 318,
+          "client": 318
+        }
+      }
+    },
+    {
+      "name": "research-results canvas and controls remain",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "results readout remains in panel with stage clear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "same-target scope updates without restoring stage card",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "results evidence opens",
+      "passed": false,
+      "details": {
+        "open": true,
+        "found": {
+          "相同24℃": false,
+          "0.826": true,
+          "2.661": true
+        }
+      }
+    },
+    {
+      "name": "baseline evidence and static analysis retained",
+      "passed": true,
+      "details": {
+        "open": true,
+        "found": {
+          "14.0542": true,
+          "七参数": true,
+          "25℃": true
+        }
+      }
+    },
+    {
+      "name": "390 anatomy text fits without horizontal page overflow",
+      "passed": true,
+      "details": {
+        "w": 390,
+        "doc": 390,
+        "body": 390,
+        "panel": 390,
+        "panelClient": 390,
+        "readout": {
+          "scroll": 227,
+          "client": 227
+        }
+      }
+    },
+    {
+      "name": "390 research-results text fits without horizontal page overflow",
+      "passed": true,
+      "details": {
+        "w": 390,
+        "doc": 390,
+        "body": 390,
+        "panel": 390,
+        "panelClient": 390,
+        "readout": {
+          "scroll": 344,
+          "client": 344
+        }
+      }
+    },
+    {
+      "name": "1280 anatomy text fits without horizontal page overflow",
+      "passed": true,
+      "details": {
+        "w": 1280,
+        "doc": 1280,
+        "body": 1280,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 245,
+          "client": 245
+        }
+      }
+    },
+    {
+      "name": "1280 research-results text fits without horizontal page overflow",
+      "passed": true,
+      "details": {
+        "w": 1280,
+        "doc": 1280,
+        "body": 1280,
+        "panel": 364,
+        "panelClient": 364,
+        "readout": {
+          "scroll": 318,
+          "client": 318
+        }
+      }
+    },
+    {
+      "name": "no JavaScript exception",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no failed requests or HTTP errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "source files unchanged during checks",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "screenshots": [
+    ".runtime/research_content_check/1920-01-anatomy.png",
+    ".runtime/research_content_check/1920-02-drive.png",
+    ".runtime/research_content_check/1920-03-battery.png",
+    ".runtime/research_content_check/1920-04-electric.png",
+    ".runtime/research_content_check/1920-05-climate.png",
+    ".runtime/research_content_check/1920-climate--10.png",
+    ".runtime/research_content_check/1920-climate-40.png",
+    ".runtime/research_content_check/1920-06-research-results.png",
+    ".runtime/research_content_check/390-anatomy.png",
+    ".runtime/research_content_check/390-research-results.png",
+    ".runtime/research_content_check/1280-anatomy.png",
+    ".runtime/research_content_check/1280-research-results.png"
+  ],
+  "source_hashes": {
+    "js/app.js": "9a09b1919ec676730e36eff7eba7c49afbe617625689e0f65d700704b47bb813",
+    "css/research.css": "79441caf8584a797cb3feb5d23867082a95022c21ff726ae59a8dfc41a8356c7",
+    "js/chapters/index.js": "2fc89e9608da62364f4e76d3db43f5adea79f484941fb035ab7bca3e267c3fd5",
+    "js/chapters/research-anatomy.js": "e5e59d467893e7a10ca8f3b45d3fb92453ebbd08ad767f6ce6a437b8cfaf9e54",
+    "js/chapters/research-drive.js": "c7bece13d8886783f6b5ab82258a2c8cc1d127de48aa3d20c2d2d653a586d0ff",
+    "js/chapters/research-battery.js": "8660981c4d8d960bad03903a9952c93c0b51bda0c9bdeb05a2b7dad271647476",
+    "js/chapters/research-electric.js": "e71b076f437da975be578eae314c9703efcd1542afc825f6461a59c2e6f88ffd",
+    "js/chapters/research-climate.js": "41c60b867a89883483ad3c713921bdd0a6e4474f4735e94ce8aaafe0407a7195",
+    "js/chapters/research-results.js": "c8eab9a8e389f8558276ff83f383a01bc2b9be2de5b54ecef7eaa48124f474e7"
+  },
+  "console": [],
+  "passed": false
+}

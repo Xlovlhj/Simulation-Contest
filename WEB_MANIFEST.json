@@ -1,0 +1,347 @@
+{
+  "branch": "xqw-c-web",
+  "date_beijing": "2026-10-20",
+  "file_count_excluding_manifest": 66,
+  "bytes_excluding_manifest": 2107439,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 134,
+      "sha256": "472bac9416a9e84faab29e155d7a91863b29313bef1424acde08e79e904b2647"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 18357,
+      "sha256": "b9818d8ab18bec20118b63f253586d01d692347ed69e04677eb6c1d68a7ae647"
+    },
+    {
+      "path": "C题网页与视频设计方案.md",
+      "bytes": 13107,
+      "sha256": "1d486ab9d6ae5a3f3654f6f5f7444afaf3114f22f491d91069fc7be10496fdc5"
+    },
+    {
+      "path": "C题网页待确认事项.md",
+      "bytes": 15768,
+      "sha256": "08d0de2d3a934f4173c70f8c800ba83e96345bfe1488c393391afaa8990e37a6"
+    },
+    {
+      "path": "PROJECT_PLAN.md",
+      "bytes": 814,
+      "sha256": "ba33f5f8872f1354d92e8d04fe40d439c8d7fc42339a55aed6d8e35ed1f273f4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2857,
+      "sha256": "a9047e535af96a2a27f93d9b0a0266ead9b7a6b599057e05ec4f8b9fd07a010c"
+    },
+    {
+      "path": "c_web_showcase/.gitignore",
+      "bytes": 308,
+      "sha256": "313a121c2f592a82c1f3dcb59c777477fde3c8545ea7e1050526fb2599446b37"
+    },
+    {
+      "path": "c_web_showcase/LICENSE",
+      "bytes": 1073,
+      "sha256": "25ef108aeda07f4bfd5c2baacdbfcf21f9a818698f78fc6f2e1f11d337f0e793"
+    },
+    {
+      "path": "c_web_showcase/LICENSE-CONTENT.md",
+      "bytes": 802,
+      "sha256": "466b57b7efb9aa14c6ea67f392f585c08a2ff6867c7f2a6721170026d9c0e47f"
+    },
+    {
+      "path": "c_web_showcase/README.md",
+      "bytes": 5531,
+      "sha256": "62ff9400b92f39d87a5a09c8e45deba8294deac8186eb186205c39d575199326"
+    },
+    {
+      "path": "c_web_showcase/SOURCE_VERSION.json",
+      "bytes": 995,
+      "sha256": "680a676a0ad4fab602ed7fd51bdf64683d8ecbc3f4f8b4e4a889746df21fd952"
+    },
+    {
+      "path": "c_web_showcase/THIRD_PARTY_NOTICES.md",
+      "bytes": 1725,
+      "sha256": "96b9136a605609f736a609ac499823d80b7977eda1c138e4a1d3aadaa473be4c"
+    },
+    {
+      "path": "c_web_showcase/browser_session.py",
+      "bytes": 6144,
+      "sha256": "1b9acc6b5caf2e324f139e87029fd094ee207be1819566347ba4b4e015ba9546"
+    },
+    {
+      "path": "c_web_showcase/checks/README.md",
+      "bytes": 738,
+      "sha256": "8764ca0501a53892fe8373150dbb4a274051d0eb4162374ed06ab6c528c99025"
+    },
+    {
+      "path": "c_web_showcase/checks/content_verification_followup.json",
+      "bytes": 2827,
+      "sha256": "e4e18d569bce040c89233939ef5a7a287630a56477917b5e98c7963c81e0994d"
+    },
+    {
+      "path": "c_web_showcase/checks/content_verification_initial.json",
+      "bytes": 8918,
+      "sha256": "ef30e73b6bd1005efe8df2ccd2fbef81c5b79fffb6625311ae1fcd32b5c25d85"
+    },
+    {
+      "path": "c_web_showcase/checks/standalone_verification.json",
+      "bytes": 8171,
+      "sha256": "fd98defc3351564a4678b33d07e996ee547e5436b2e3c192b9f19741e86e8ce8"
+    },
+    {
+      "path": "c_web_showcase/compute.py",
+      "bytes": 7323,
+      "sha256": "33a5572b0bfc20a7adda2393ea786a7b833d8c0d0cf97316d86bcb7edecd4517"
+    },
+    {
+      "path": "c_web_showcase/css/app.css",
+      "bytes": 12353,
+      "sha256": "e1fb755628cc50078e516d3123668f97164499054a17c29c9e98a326a820bde4"
+    },
+    {
+      "path": "c_web_showcase/css/research.css",
+      "bytes": 2362,
+      "sha256": "79441caf8584a797cb3feb5d23867082a95022c21ff726ae59a8dfc41a8356c7"
+    },
+    {
+      "path": "c_web_showcase/data/README.md",
+      "bytes": 2402,
+      "sha256": "b7e788f3f722223e9d8de88b146176018592eb2ad0ebd37b3d041177bbc172be"
+    },
+    {
+      "path": "c_web_showcase/data/physics-validation.json",
+      "bytes": 406,
+      "sha256": "99a01f51e212b52a6344216555fd3b34a737e6dff5086ea77a9028b16657619c"
+    },
+    {
+      "path": "c_web_showcase/data/research-parameters.json",
+      "bytes": 6330,
+      "sha256": "1566fac6f32af13e39a7f3ead64cdfb421f0999ec444e501d5359fc693e69c7f"
+    },
+    {
+      "path": "c_web_showcase/data/research-results.json",
+      "bytes": 78436,
+      "sha256": "45b00d2c797e2324b8b8a30105309b62b507347cf019459bd8c944396a6a5347"
+    },
+    {
+      "path": "c_web_showcase/fonts/OFL.txt",
+      "bytes": 4549,
+      "sha256": "00134bcaf1aff473272bdb78e947e142192ea87621eaafb1c36f8534ff2d2022"
+    },
+    {
+      "path": "c_web_showcase/fonts/fonts.css",
+      "bytes": 6337,
+      "sha256": "0752e66dde6b424ff92009d430311beb5718206ac4d5bf69f8ce853aee00c13f"
+    },
+    {
+      "path": "c_web_showcase/fonts/geist-latin-1.woff2",
+      "bytes": 29288,
+      "sha256": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608"
+    },
+    {
+      "path": "c_web_showcase/fonts/geist-latin-ext-0.woff2",
+      "bytes": 16540,
+      "sha256": "58a6b173d5ca1dec92166ea3c6cb1a84a4144556d10928ac14e8e6b40e4787bd"
+    },
+    {
+      "path": "c_web_showcase/fonts/geist-mono-latin-3.woff2",
+      "bytes": 23108,
+      "sha256": "5f3d6ad60f29d6cb708414ec6887163d63bf197377ef5417d2483ff31ace6c3b"
+    },
+    {
+      "path": "c_web_showcase/fonts/geist-mono-latin-ext-2.woff2",
+      "bytes": 14712,
+      "sha256": "745994b5cd950ec201b66526375f057d540847cccfc70f4f24f5f571d26d3923"
+    },
+    {
+      "path": "c_web_showcase/fonts/instrument-serif-latin-5.woff2",
+      "bytes": 15684,
+      "sha256": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702"
+    },
+    {
+      "path": "c_web_showcase/fonts/instrument-serif-latin-7.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d"
+    },
+    {
+      "path": "c_web_showcase/fonts/instrument-serif-latin-ext-4.woff2",
+      "bytes": 8444,
+      "sha256": "a04fc7ed18a8037149ce0bfda58076709d8e0840e136ed00abbdc196b7992443"
+    },
+    {
+      "path": "c_web_showcase/fonts/instrument-serif-latin-ext-6.woff2",
+      "bytes": 7828,
+      "sha256": "a8c4bd7cd7073180e740d2d83a616b5cb0845579b73207eeafeae8532e70c901"
+    },
+    {
+      "path": "c_web_showcase/index.html",
+      "bytes": 3058,
+      "sha256": "f9e9510e66528e5ffaec25fee0c504f598d7d7a34e23740092c9987d4269b3c2"
+    },
+    {
+      "path": "c_web_showcase/interaction_checks.py",
+      "bytes": 9295,
+      "sha256": "bf8084d982cb76bcae7bf9a333f576825c657a58654c95415c171bdc214415ac"
+    },
+    {
+      "path": "c_web_showcase/js/app.js",
+      "bytes": 11347,
+      "sha256": "9a09b1919ec676730e36eff7eba7c49afbe617625689e0f65d700704b47bb813"
+    },
+    {
+      "path": "c_web_showcase/js/car.js",
+      "bytes": 30294,
+      "sha256": "c24f3ce6be4cb38a39cc38563ebf8e294bc4ec0b852cee98302ab1a81c3f5046"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/index.js",
+      "bytes": 797,
+      "sha256": "2fc89e9608da62364f4e76d3db43f5adea79f484941fb035ab7bca3e267c3fd5"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-anatomy.js",
+      "bytes": 9468,
+      "sha256": "e5e59d467893e7a10ca8f3b45d3fb92453ebbd08ad767f6ce6a437b8cfaf9e54"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-battery.js",
+      "bytes": 14800,
+      "sha256": "8660981c4d8d960bad03903a9952c93c0b51bda0c9bdeb05a2b7dad271647476"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-climate.js",
+      "bytes": 12506,
+      "sha256": "41c60b867a89883483ad3c713921bdd0a6e4474f4735e94ce8aaafe0407a7195"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-drive.js",
+      "bytes": 10329,
+      "sha256": "c7bece13d8886783f6b5ab82258a2c8cc1d127de48aa3d20c2d2d653a586d0ff"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-electric.js",
+      "bytes": 13228,
+      "sha256": "8139be8fc1108f271a62c9019105f71e9aef26de37972d860133cd75315aabee"
+    },
+    {
+      "path": "c_web_showcase/js/chapters/research-results.js",
+      "bytes": 17603,
+      "sha256": "fa3f6ffe23bdaf1200dcf06f342dc93022603b9fe02c6fb2f3f7992b076b19a2"
+    },
+    {
+      "path": "c_web_showcase/js/kit.js",
+      "bytes": 5652,
+      "sha256": "582429d950020bb5fa54d6c76246b90c194067d5ac947a65e062be070b0ccd52"
+    },
+    {
+      "path": "c_web_showcase/js/research/physics.js",
+      "bytes": 11092,
+      "sha256": "114d969992e5d052e114a92c6725d80303e4354b92bb2b142d54faae5859101f"
+    },
+    {
+      "path": "c_web_showcase/js/research/results.js",
+      "bytes": 1412,
+      "sha256": "acebc3a20c524abc5fd0d24e1ceec9476d8b0c963a340d75862618d04b37868b"
+    },
+    {
+      "path": "c_web_showcase/js/research/vehicle.js",
+      "bytes": 7122,
+      "sha256": "45975a717cd181359abf750028d4685d224a6e54141a74a1e1e4b66e3ef2ccae"
+    },
+    {
+      "path": "c_web_showcase/js/research/weather.js",
+      "bytes": 7688,
+      "sha256": "3362f92c1b17df825b0106e8d5743494895662c4a7cf2816653434491fdb9239"
+    },
+    {
+      "path": "c_web_showcase/js/stage.js",
+      "bytes": 7222,
+      "sha256": "9b9fe56d99f003fc2dbab903166ae5c4080546c5ad43ec18bace4484b59086c0"
+    },
+    {
+      "path": "c_web_showcase/js/ui.js",
+      "bytes": 4598,
+      "sha256": "d1ff1c5122cc9e32c4e8cc246eaf28007f113c9d9370fd7fb64cf4fd90b79dce"
+    },
+    {
+      "path": "c_web_showcase/prepare_data.py",
+      "bytes": 19807,
+      "sha256": "719e6eb65677f8f627a3e5399ba0be3c036f62ecc5d98f896eb982fc9e2b7380"
+    },
+    {
+      "path": "c_web_showcase/prepare_interactive_data.py",
+      "bytes": 4386,
+      "sha256": "c6f7ae4678ea6dbbb523867ea47b726968b8fe2d4473584d1986297633cbb853"
+    },
+    {
+      "path": "c_web_showcase/run.py",
+      "bytes": 12314,
+      "sha256": "b7ffa39fdb404caab90ee90d9b850f70180a98da4ddf758b7307623c403f6559"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/controls/OrbitControls.js",
+      "bytes": 32134,
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/environments/RoomEnvironment.js",
+      "bytes": 3606,
+      "sha256": "85869bdd22f7cf0b22e68dcefe6cb710480af0f5c901a76f7a7764fd07fc8014"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/geometries/RoundedBoxGeometry.js",
+      "bytes": 4625,
+      "sha256": "d20aeaf7077c459a8d952d215738d7b44fba028440bb862d84b622a34f0c80bb"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/lines/LineMaterial.js",
+      "bytes": 10986,
+      "sha256": "4a58808a6e3a48f2a98eb2a410022ae648f801eaae89d457fcd662b077a7cf27"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/lines/LineSegments2.js",
+      "bytes": 9607,
+      "sha256": "9dcce823f86d7f00c4faa8c80ea3833fa86bf4957f394a1f64f3b126f6eea661"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/lines/LineSegmentsGeometry.js",
+      "bytes": 4693,
+      "sha256": "213a12e0e1ea878495d4998817cb83b1945441f19194267dba108c3a9e8f31ac"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/addons/renderers/CSS2DRenderer.js",
+      "bytes": 4701,
+      "sha256": "7de0bb70e3c1d6da58416353ed7140a7a7743ece99d73b56eb62bc2dd79bfed5"
+    },
+    {
+      "path": "c_web_showcase/vendor/three/three.module.min.js",
+      "bytes": 691648,
+      "sha256": "08fd7545d13d2c7fb65ab691530a802dafefd638596501854f267d0fb13c39e7"
+    },
+    {
+      "path": "docs/preview.png",
+      "bytes": 790921,
+      "sha256": "8c844a5bd40ed6b4b5a3d48363f9365345213736e9e13ef509ae9d638c3a39c5"
+    }
+  ],
+  "security_audit": {
+    "status": "passed",
+    "known_local_secret_values_checked": 2,
+    "selected_files": 66,
+    "credential_findings": 0,
+    "scope": "Exact local AK/SK, token/private-key and credential URL patterns, nested archives and extracted PDF text; no general PII classification."
+  },
+  "manifest_excluded_from_own_hash_list": true,
+  "runtime_validation": "c_web_showcase/checks/standalone_verification.json"
+}

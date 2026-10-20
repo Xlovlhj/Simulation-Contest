@@ -1,0 +1,30 @@
+{
+  "upstream": "https://github.com/bdeeps/carclear",
+  "demo": "https://glassbox.how/carclear/",
+  "commit": "b60fa6e87277d65cb6b8bdc6bf82133bead202f6",
+  "downloaded_date_beijing": "2026-10-20",
+  "method": "git clone --depth 1",
+  "license_code": "MIT",
+  "license_content": "CC BY 4.0 (see LICENSE-CONTENT.md)",
+  "reused_visual_sources": [
+    "js/stage.js",
+    "js/kit.js",
+    "js/car.js"
+  ],
+  "scientific_source": "../CCSF2605207fj",
+  "paper_sha256": "b2c8ad32d60ec8173858ce516908564bdcc22f1ad0a62635122746c3c6184f1c",
+  "scope": "local C-problem showcase; original code physics not used for research metrics",
+  "retained_ui_shell": [
+    "index.html",
+    "js/app.js",
+    "css/app.css",
+    "js/ui.js"
+  ],
+  "adapted_original_scenes": [
+    "js/chapters/anatomy.js",
+    "js/chapters/electric.js",
+    "js/chapters/drive.js"
+  ],
+  "current_entry": "js/app.js",
+  "revision": "2026-10-20: preserve original CarClear interactive architecture; previous dashboard entry archived"
+}

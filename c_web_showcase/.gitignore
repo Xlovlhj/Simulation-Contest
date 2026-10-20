@@ -1,0 +1,17 @@
+.DS_Store
+
+# Local C showcase computation and browser state
+.runtime/
+runs/
+output/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
+.env.*
+*.local.json
+# Optional export intermediates; the active page reads the two research JSONs.
+data/showcase.json
+data/export_validation.json
+data/independent_validation.json

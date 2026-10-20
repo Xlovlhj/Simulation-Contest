@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "cases": 72,
+  "scalar_comparisons": 1080,
+  "max_relative_error": 3.45361705727353e-15,
+  "method": "JS current-state outputs compared to original model.py battery_current/motor_flow functions extracted with Python AST; both parameter sets, 4 speeds, 3 modes and 3 temperatures. No drive cycle rerun.",
+  "scope": "Static algebra only; not full control protocol verification."
+}
