@@ -1,0 +1,5 @@
+# Deliverable hashes are calculated over the original bytes.
+* -text
+*.mp4 -filter -diff -merge -text
+*.zip -diff -merge
+*.pdf -diff -merge

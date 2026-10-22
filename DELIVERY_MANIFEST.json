@@ -1,0 +1,64 @@
+{
+  "date_beijing": "2026-10-22",
+  "team_id": "CSF2605207",
+  "problem": "C",
+  "purpose": "Final paper, supporting materials and primary repository demo",
+  "primary_demo": "CCSF2605207fz.mp4",
+  "video": {
+    "width": 3840,
+    "height": 2160,
+    "duration_s": 175,
+    "fps": 30,
+    "frames": 5250,
+    "chinese_subtitles": 25,
+    "music": "Carefree — Kevin MacLeod, CC BY 4.0"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 140,
+      "sha256": "4c213f9c28405420f56aeb5fb04051261f6b6f4e4f9e7f4c6344fa781daf480e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 64,
+      "sha256": "d92546e17055a63e2948b6e38b7cf3d32b69aafa2fa76bac13c0192b62c94bc8"
+    },
+    {
+      "path": "CCSF2605207.pdf",
+      "bytes": 1290073,
+      "sha256": "1d7e4d1d145e3ea4e3f96fe6012426174f31fc55ac2e1cd540e73f00fed9100c"
+    },
+    {
+      "path": "CCSF2605207fj.zip",
+      "bytes": 19104347,
+      "sha256": "36903d3741e39603151783684cde7eeee20ce2eb7d8645acc2227435c315ee24"
+    },
+    {
+      "path": "CCSF2605207fz.mp4",
+      "bytes": 35466973,
+      "sha256": "07a564b1da82a3be0097c79e67d4dea612ae527daf36de36b657c3acccc992f4"
+    },
+    {
+      "path": "CCSF2605207fz.srt",
+      "bytes": 2682,
+      "sha256": "564c366c109abefcce4abf0d99233e409491b767768387044cca5bd027af8a3d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2110,
+      "sha256": "2aedcdfb38048dbcadc6bf8525daaa07035afc7db2db0f6c1ad79ccd6b30b1e6"
+    },
+    {
+      "path": "docs/demo-preview.jpg",
+      "bytes": 91313,
+      "sha256": "5579f898aff9ffdb5cdc8f61019bee17feaa40f7187c509814f7c4a7b0bf1a62"
+    },
+    {
+      "path": "docs/主Demo说明.md",
+      "bytes": 5239,
+      "sha256": "0c51de2974a8810aecf57f6ad426617b496eeb6800a5be52f0323b6c93d2d9c5"
+    }
+  ],
+  "manifest_excluded_from_own_hash_list": true
+}
