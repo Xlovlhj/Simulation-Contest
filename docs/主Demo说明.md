@@ -2,6 +2,10 @@
 
 更新日期：2026-10-22。队伍编号：CSF2605207。
 
+**首页展示方式：**上方使用22秒无声GIF自动循环，依次截取用户提供的`2140439755.mp4`中12—20秒、43—50秒、150—157秒；下方通过[GitHub视频附件](https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0)嵌入完整轻量视频，点击播放，带原字幕与音乐。GIF约1.78MB、640×368、10fps；完整轻量版7010611字节、640×368、21fps、约175.04秒，H.264/AAC。轻量版使用GitHub免费范围内的附件上传，没有创建议题或发布评论。
+
+正式比赛视频仍为下面的3840×2160原片；轻量播放版和GIF用于仓库浏览。GIF不含音轨，画面内容保留原字幕；音乐与网页素材署名见文末。
+
 **[查看／下载4K主Demo](../CCSF2605207fz.mp4)** · [SRT字幕](../CCSF2605207fz.srt)
 
 主Demo已完成，用三维车辆和交互网页展示电动车节能研究：先讲研究目标和主要结论，再展示能耗模型、实测校准、控制策略与完整过程对比。视频文件保留赛题命名 `CCSF2605207fz.mp4`。
@@ -47,7 +51,7 @@ main只收录最终论文、支撑附件、成果视频及必要展示说明。�
 
 完整研究工程保留在[ybs-c](https://github.com/Xlovlhj/Simulation-Contest/tree/ybs-c)，网页源码保留在[xqw-c-web](https://github.com/Xlovlhj/Simulation-Contest/tree/xqw-c-web)。网页分支是2026-10-20快照，后续本地录制新增的Q1入口和4K工具尚未同步到该分支；最终附件与各开发分支分别保留自己的版本记录。
 
-main所有文件直接存储于Git，下载本页材料不需要Git LFS。文件大小及SHA-256见根目录`DELIVERY_MANIFEST.json`。
+main内的正式文件与动图直接存储于Git，不需要Git LFS；轻量完整视频另托管于GitHub视频附件服务。文件大小及SHA-256见根目录`DELIVERY_MANIFEST.json`，该清单也记录附件URL和源文件摘要。
 
 ## 音乐来源与署名
 

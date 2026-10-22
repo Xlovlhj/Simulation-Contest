@@ -46,19 +46,57 @@
     },
     {
       "path": "README.md",
-      "bytes": 2110,
-      "sha256": "2aedcdfb38048dbcadc6bf8525daaa07035afc7db2db0f6c1ad79ccd6b30b1e6"
+      "bytes": 2639,
+      "sha256": "43c863cc70d8fcd38ecf483eb9bd52b0efd9ff00e2ffda6704dad2566bab3fe7"
     },
     {
-      "path": "docs/demo-preview.jpg",
-      "bytes": 91313,
-      "sha256": "5579f898aff9ffdb5cdc8f61019bee17feaa40f7187c509814f7c4a7b0bf1a62"
+      "path": "docs/demo-preview.gif",
+      "bytes": 1778658,
+      "sha256": "289b0ff6ec537703963750568756c73f8f89da82b3e598281a001d0aad97ba50"
     },
     {
       "path": "docs/主Demo说明.md",
-      "bytes": 5239,
-      "sha256": "0c51de2974a8810aecf57f6ad426617b496eeb6800a5be52f0323b6c93d2d9c5"
+      "bytes": 6059,
+      "sha256": "8a559b1d8def9fc6eec7937fcc5088c3c8ff7afe973bd3f78c936d46228a148a"
     }
   ],
-  "manifest_excluded_from_own_hash_list": true
+  "manifest_excluded_from_own_hash_list": true,
+  "homepage_preview": {
+    "animated_gif": {
+      "path": "docs/demo-preview.gif",
+      "width": 640,
+      "height": 368,
+      "fps": 10,
+      "duration_s": 22,
+      "loop": "infinite",
+      "audio": false,
+      "source_intervals_s": [
+        [
+          12,
+          20
+        ],
+        [
+          43,
+          50
+        ],
+        [
+          150,
+          157
+        ]
+      ]
+    },
+    "full_video_attachment": {
+      "source_filename": "2140439755.mp4",
+      "url": "https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0",
+      "bytes": 7010611,
+      "sha256": "c5a91888f40bf351ebaa9b970646bf242e4b381807042b5084a96f5a7a4820dc",
+      "width": 640,
+      "height": 368,
+      "fps": 21,
+      "duration_s_approx": 175.04,
+      "autoplay": false,
+      "playback": "Click to play full video with sound"
+    },
+    "formal_4k_video_unchanged": true
+  }
 }

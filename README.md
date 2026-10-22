@@ -6,9 +6,17 @@
 
 ## Demo · 2分55秒看懂我们的研究
 
-[![点击观看或下载4K成果展示视频](docs/demo-preview.jpg)](CCSF2605207fz.mp4)
+![车辆拆解、模型结果与节能结论：22秒自动循环预览](docs/demo-preview.gif)
 
-**[▶ 观看／下载完整视频](CCSF2605207fz.mp4)** · [字幕](CCSF2605207fz.srt) · [视频内容与素材署名](docs/主Demo说明.md)
+上方为**22秒无声循环预览**。下方是完整视频，点击播放即可观看全部内容；如播放器默认静音，打开音量即可听到背景音乐。
+
+### 完整视频 · 点击播放
+
+https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0
+
+轻量播放版：**2分55秒、约7.01MB**。查看图表细节可下载下面的4K原片。
+
+**[下载4K高清原片](CCSF2605207fz.mp4)** · [字幕](CCSF2605207fz.srt) · [视频内容与素材署名](docs/主Demo说明.md)
 
 **4K（3840×2160） · 2分55秒 · 35.47 MB · 中文字幕与背景音乐**
 
@@ -22,10 +30,11 @@
 |---|---|
 | [CCSF2605207.pdf](CCSF2605207.pdf) | 最终论文 |
 | [CCSF2605207fj.zip](CCSF2605207fj.zip) | 最终支撑附件 |
-| [CCSF2605207fz.mp4](CCSF2605207fz.mp4) | 最终4K成果展示视频，同时作为本仓库主Demo |
+| [CCSF2605207fz.mp4](CCSF2605207fz.mp4) | 最终4K成果展示视频 |
+| [2140439755.mp4](https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0) | 完整视频的轻量播放版，约7.01MB |
 | [CCSF2605207fz.srt](CCSF2605207fz.srt) | 视频字幕，方便查看文字内容 |
 
-`main`集中放最终材料。文件大小及SHA-256见[交付清单](DELIVERY_MANIFEST.json)。视频已包含字幕和音乐，可直接下载播放。
+`main`集中放最终材料。文件大小及SHA-256见[交付清单](DELIVERY_MANIFEST.json)。视频已包含字幕和音乐；首页提供完整轻量播放器，4K原片可下载播放。
 
 ## 开发资料
 
