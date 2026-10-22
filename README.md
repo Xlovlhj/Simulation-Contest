@@ -31,7 +31,6 @@ https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0
 | [CCSF2605207.pdf](CCSF2605207.pdf) | 最终论文 |
 | [CCSF2605207fj.zip](CCSF2605207fj.zip) | 最终支撑附件 |
 | [CCSF2605207fz.mp4](CCSF2605207fz.mp4) | 最终4K成果展示视频 |
-| [2140439755.mp4](https://github.com/user-attachments/assets/6d940969-16aa-4ca6-ab41-3dbfe4024da0) | 完整视频的轻量播放版，约7.01MB |
 | [CCSF2605207fz.srt](CCSF2605207fz.srt) | 视频字幕，方便查看文字内容 |
 
 `main`集中放最终材料。文件大小及SHA-256见[交付清单](DELIVERY_MANIFEST.json)。视频已包含字幕和音乐；首页提供完整轻量播放器，4K原片可下载播放。
